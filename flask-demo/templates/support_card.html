@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}Support Cards{% endblock %}
+
+{% block content %}
+
+<style>
+    .support-page {
+        min-height: calc(100vh - 72px);
+        background: #dcdcdc;
+        padding: 28px 0 45px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .support-container {
+        width: 1100px;
+        max-width: 92%;
+        margin: 0 auto;
+    }
+
+    .support-title {
+        font-size: 32px;
+        font-weight: 900;
+        color: #000;
+        margin-bottom: 25px;
+    }
+
+    .support-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+    }
+
+    .support-card {
+        display: block;
+        background: #d8d8d8;
+        border-radius: 13px;
+        padding: 12px 10px 14px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+        transition: 0.18s ease;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .support-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+    }
+
+    .support-image-box {
+        width: 165px;
+        height: 165px;
+        margin: 0 auto 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .support-image {
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .support-name {
+        font-size: 17px;
+        color: #0000cc;
+        line-height: 1.25;
+        min-height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-break: break-word;
+    }
+
+    @media (max-width: 1000px) {
+        .support-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media (max-width: 760px) {
+        .support-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 560px) {
+        .support-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .support-image-box {
+            width: 140px;
+            height: 140px;
+        }
+
+        .support-image {
+            width: 135px;
+            height: 135px;
+        }
+    }
+</style>
+
+<div class="support-page">
+    <div class="support-container">
+
+        <h1 class="support-title">Support Card List</h1>
+
+        <div class="support-grid">
+            {% for card in support_cards %}
+
+            <a class="support-card" href="{{ url_for('support_detail', card_id=card.id) }}">
+
+                <div class="support-image-box">
+                    <img
+                        class="support-image"
+                        src="{{ url_for('static', filename='images/support_cards/' ~ card.thumb_image) }}"
+                        alt="{{ card.name }}"
+                    >
+                </div>
+
+                <div class="support-name">
+                    {{ card.name }}
+                </div>
+
+            </a>
+
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,6 @@
+card_id,section,event_id,title,detail,sort_order
+taiki_shuttle,chain,lesson_one,"(›) Lesson One: Party Hearty","Speed (7)|Power (7)|Taiki Shuttle bond (5)",1
+taiki_shuttle,chain,lesson_two,"(››) Lesson Two: The Show Must Go On","Speed (7)|Power (7)|Skill Pt (15)|Taiki Shuttle bond (5)",2
+taiki_shuttle,chain,lesson_three,"(›››) Lesson Three: Live in the Moment","Speed (10)|Power (10)|Skill Pt (20)|Taiki Shuttle bond (5)",3
+taiki_shuttle,random,yes_lets_hug,"Yes! Let's Hug ☆","Speed (5)|Power (5)|Taiki Shuttle bond (5)",1
+taiki_shuttle,random,party_tonight,"Yeehaw! Party Tonight ☆","Speed (10)|Power (5)|Skill Pt (10)",2

@@ -6,6 +6,7 @@ Home
 
 {% block content %}
 
+<!-- Màn hình Home đầu tiên -->
 <div class="uma-home">
 
     <div class="decor-circle circle-1"></div>
@@ -23,10 +24,69 @@ Home
 
 </div>
 
+<!-- Phần Database khi kéo xuống -->
+<section class="database-section">
+
+    <h2>Database</h2>
+
+    <div class="database-grid">
+
+        <a href="{{ url_for('characters') }}" class="database-card">
+            <div class="card-icon">
+                <img src="{{ url_for('static', filename='images/characters.png') }}" alt="Characters">
+            </div>
+            <h3>Characters</h3>
+        </a>
+
+        <a href="{{ url_for('support_card') }}" class="database-card">
+            <div class="card-icon">
+                <img src="{{ url_for('static', filename='images/support_card.png') }}" alt="Support Card">
+            </div>
+            <h3>Support Card</h3>
+        </a>
+
+        <a href="{{ url_for('banner_history') }}" class="database-card">
+            <div class="card-icon same-icon">
+                <img src="{{ url_for('static', filename='images/banner_history.png') }}" alt="Banner History">
+            </div>
+            <h3>Banner History</h3>
+        </a>
+
+        <a href="{{ url_for('tier_list') }}" class="database-card">
+            <div class="card-icon same-icon">
+                <img src="{{ url_for('static', filename='images/tier_list.png') }}" alt="Tier List">
+            </div>
+            <h3>Tier List</h3>
+        </a>
+
+        <a href="{{ url_for('cm_guide') }}" class="database-card">
+            <div class="card-icon same-icon">
+                <img src="{{ url_for('static', filename='images/cm_guide.png') }}" alt="CM Guide">
+            </div>
+            <h3>CM Guide</h3>
+        </a>
+
+        <a href="{{ url_for('scenario_guide') }}" class="database-card">
+            <div class="card-icon same-icon">
+                <img src="{{ url_for('static', filename='images/scenario_guide.png') }}" alt="Scenario Guide">
+            </div>
+            <h3>Scenario Guide</h3>
+        </a>
+
+    </div>
+
+</section>
+
 <style>
     .content-wrapper {
         padding: 0 !important;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* ================= HOME HERO ================= */
 
     .uma-home {
         width: 100%;
@@ -89,7 +149,7 @@ Home
     .main-text h1 {
         margin: 0;
 
-        font-size: 52px;
+        font-size: 46px;
         font-weight: 900;
         line-height: 1.25;
         letter-spacing: 1px;
@@ -180,6 +240,112 @@ Home
         opacity: 0.25;
     }
 
+    /* ================= DATABASE SECTION ================= */
+
+    .database-section {
+        min-height: 100vh;
+        padding: 50px 80px 70px;
+
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 122, 200, 0.25), transparent 22%),
+            radial-gradient(circle at 90% 20%, rgba(83, 221, 255, 0.28), transparent 25%),
+            linear-gradient(135deg, #f8fbff 0%, #f1efff 45%, #fff4fb 100%);
+    }
+
+    .database-section h2 {
+        font-size: 38px;
+        font-weight: 900;
+        margin-bottom: 28px;
+
+        color: #2f2b68;
+    }
+
+    .database-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+    }
+
+    .database-card {
+        min-height: 230px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 22px;
+        border: 3px solid rgba(255, 255, 255, 0.95);
+
+        text-decoration: none;
+
+        box-shadow:
+            0 10px 25px rgba(90, 73, 145, 0.16),
+            inset 0 0 20px rgba(255, 255, 255, 0.5);
+
+        transition: 0.25s;
+    }
+
+    .database-card:hover {
+        text-decoration: none;
+        transform: translateY(-8px) scale(1.03);
+
+        box-shadow:
+            0 18px 35px rgba(255, 79, 163, 0.28),
+            inset 0 0 22px rgba(255, 255, 255, 0.65);
+    }
+
+    .card-icon {
+        width: 170px;
+        height: 130px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 18px;
+
+        border-radius: 20px;
+
+        background: linear-gradient(135deg, #f4f1ff, #e8f8ff);
+        border: 3px solid #ffffff;
+
+        overflow: hidden;
+
+        box-shadow:
+            inset 0 0 18px rgba(255, 255, 255, 0.8),
+            0 6px 15px rgba(90, 73, 145, 0.12);
+    }
+
+    .same-icon {
+        background: linear-gradient(135deg, #eef3ff, #f7efff);
+    }
+
+    .card-icon img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+        padding: 14px;
+
+        background: transparent;
+    }
+
+    .database-card h3 {
+        margin: 0;
+
+        font-size: 24px;
+        font-weight: 800;
+
+        color: #2f2b68;
+        text-align: center;
+    }
+
+    .database-card:hover h3 {
+        color: #ff4fa3;
+    }
+
     @keyframes lightSweep {
         0% {
             transform: skewX(-20deg) translateX(-130%);
@@ -204,13 +370,27 @@ Home
         }
     }
 
-    @media (max-width: 900px) {
-        .main-text {
-            width: 92%;
+    @media (max-width: 1000px) {
+        .database-grid {
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .main-text h1 {
-            font-size: 32px;
+            font-size: 34px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .database-section {
+            padding: 35px 22px;
+        }
+
+        .database-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .main-text h1 {
+            font-size: 28px;
         }
 
         .main-text p {

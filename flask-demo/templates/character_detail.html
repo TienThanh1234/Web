@@ -1,0 +1,540 @@
+```html
+{% extends "base.html" %}
+
+{% block title %}
+{{ character.name }}
+{% endblock %}
+
+{% block content %}
+
+{% macro rank_image(rank) %}
+<img class="rank-img"
+     src="{{ url_for('static', filename='images/icons/ranks/' ~ (rank|trim|lower) ~ '.png') }}"
+     alt="{{ rank }}">
+{% endmacro %}
+
+<div class="detail-page">
+
+    <div class="character-detail-container">
+
+        <a href="{{ url_for('characters') }}" class="back-link">← Back to Character List</a>
+
+        <h1 class="character-title">{{ character.name }}</h1>
+        <p class="character-version">[{{ character.version }}]</p>
+
+        <div class="character-image-box">
+            <img src="{{ url_for('static', filename='images/characters/' + character.image) }}"
+                 alt="{{ character.name }}">
+        </div>
+
+        <div class="top-info-box">
+
+            <div class="info-row single">
+                <div class="info-cell">
+                    <b>Japanese name</b>
+                    <span>{{ character.japanese_name }}</span>
+                </div>
+            </div>
+
+            <div class="info-row three">
+                <div class="info-cell">
+                    <b>Voice actor</b>
+                    <span>{{ character.voice_actor if character.voice_actor else "Unknown" }}</span>
+                </div>
+
+                <div class="info-cell">
+                    <b>Release date</b>
+                    <span>{{ character.release_date }}</span>
+                </div>
+            </div>
+
+            <div class="info-row three">
+                <div class="info-cell">
+                    <b>Birthday</b>
+                    <span>{{ character.birthday if character.birthday else "Unknown" }}</span>
+                </div>
+
+                <div class="info-cell">
+                    <b>Height</b>
+                    <span>{{ character.height_cm if character.height_cm else "Unknown" }}</span>
+                </div>
+
+                <div class="info-cell">
+                    <b>Three sizes</b>
+                    <span>{{ character.three_sizes if character.three_sizes else "Unknown" }}</span>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Base stats</h2>
+
+        <div class="table-box">
+
+            <div class="stars-row">★</div>
+
+            <div class="stat-row">
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/speed.png') }}" alt="Speed">
+                    <span>{{ character.base_speed_1 }}</span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/stamina.png') }}" alt="Stamina">
+                    <span>{{ character.base_stamina_1 }}</span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/power.png') }}" alt="Power">
+                    <span>{{ character.base_power_1 }}</span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/guts.png') }}" alt="Guts">
+                    <span>{{ character.base_guts_1 }}</span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/wis.png') }}" alt="Wisdom">
+                    <span>{{ character.base_wit_1 }}</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="table-box">
+
+            <div class="stars-row">★★★★★</div>
+
+            <div class="stat-row">
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/speed.png') }}" alt="Speed">
+                    <span>{{ character.base_speed_5 }}</span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/stamina.png') }}" alt="Stamina">
+                    <span>{{ character.base_stamina_5 }}</span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/power.png') }}" alt="Power">
+                    <span>{{ character.base_power_5 }}</span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/guts.png') }}" alt="Guts">
+                    <span>{{ character.base_guts_5 }}</span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/wis.png') }}" alt="Wisdom">
+                    <span>{{ character.base_wit_5 }}</span>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Stat bonuses</h2>
+
+        <div class="table-box">
+            <div class="stat-row">
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/speed.png') }}" alt="Speed">
+                    <span>
+                        {% if character.bonus_speed|int > 0 %}
+                            {{ character.bonus_speed }}%
+                        {% else %}
+                            -
+                        {% endif %}
+                    </span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/stamina.png') }}" alt="Stamina">
+                    <span>
+                        {% if character.bonus_stamina|int > 0 %}
+                            {{ character.bonus_stamina }}%
+                        {% else %}
+                            -
+                        {% endif %}
+                    </span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/power.png') }}" alt="Power">
+                    <span>
+                        {% if character.bonus_power|int > 0 %}
+                            {{ character.bonus_power }}%
+                        {% else %}
+                            -
+                        {% endif %}
+                    </span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/guts.png') }}" alt="Guts">
+                    <span>
+                        {% if character.bonus_guts|int > 0 %}
+                            {{ character.bonus_guts }}%
+                        {% else %}
+                            -
+                        {% endif %}
+                    </span>
+                </div>
+
+                <div class="stat-cell">
+                    <img class="stat-img" src="{{ url_for('static', filename='images/icons/stats/wis.png') }}" alt="Wisdom">
+                    <span>
+                        {% if character.bonus_wit|int > 0 %}
+                            {{ character.bonus_wit }}%
+                        {% else %}
+                            -
+                        {% endif %}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Aptitude</h2>
+
+        <div class="aptitude-box">
+
+            <div class="aptitude-title">Surface</div>
+
+            <div class="aptitude-row two">
+                <div class="aptitude-cell">
+                    <span>Turf</span>
+                    {{ rank_image(character.turf) }}
+                </div>
+
+                <div class="aptitude-cell">
+                    <span>Dirt</span>
+                    {{ rank_image(character.dirt) }}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="aptitude-box">
+
+            <div class="aptitude-title">Distance</div>
+
+            <div class="aptitude-row four">
+                <div class="aptitude-cell">
+                    <span>Short</span>
+                    {{ rank_image(character.short) }}
+                </div>
+
+                <div class="aptitude-cell">
+                    <span>Mile</span>
+                    {{ rank_image(character.mile) }}
+                </div>
+
+                <div class="aptitude-cell">
+                    <span>Medium</span>
+                    {{ rank_image(character.medium) }}
+                </div>
+
+                <div class="aptitude-cell">
+                    <span>Long</span>
+                    {{ rank_image(character.long) }}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="aptitude-box">
+
+            <div class="aptitude-title">Strategy</div>
+
+            <div class="aptitude-row four">
+                <div class="aptitude-cell">
+                    <span>Front</span>
+                    {{ rank_image(character.front) }}
+                </div>
+
+                <div class="aptitude-cell">
+                    <span>Pace</span>
+                    {{ rank_image(character.pace) }}
+                </div>
+
+                <div class="aptitude-cell">
+                    <span>Late</span>
+                    {{ rank_image(character.late) }}
+                </div>
+
+                <div class="aptitude-cell">
+                    <span>End</span>
+                    {{ rank_image(character['end']) }}
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+    .content-wrapper {
+        padding: 0 !important;
+    }
+
+    .detail-page {
+        min-height: calc(100vh - 72px);
+        padding: 28px 0 45px;
+        background: #dcdcdc;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .character-detail-container {
+        width: 800px;
+        max-width: 92%;
+        margin: 0 auto;
+    }
+
+    .character-detail-container,
+    .character-detail-container * {
+        letter-spacing: 0;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-bottom: 15px;
+        color: #2f59c5;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    .character-title {
+        text-align: center;
+        font-size: 34px;
+        margin: 0;
+        color: #222;
+    }
+
+    .character-version {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #444;
+        margin: 5px 0 18px;
+    }
+
+    .character-image-box {
+        width: 320px;
+        height: 360px;
+        margin: 0 auto 25px auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .character-image-box img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .top-info-box {
+        overflow: hidden;
+        border-radius: 3px;
+        margin-bottom: 30px;
+        background: white;
+    }
+
+    .info-row {
+        display: grid;
+        min-height: 52px;
+    }
+
+    .info-row.single {
+        grid-template-columns: 1fr;
+        background: #e9fbfb;
+    }
+
+    .info-row.three {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .info-row:nth-child(2) {
+        background: #ffffff;
+    }
+
+    .info-row:nth-child(3) {
+        background: #e9fbfb;
+    }
+
+    .info-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 14px;
+        color: #111;
+    }
+
+    .info-cell b {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    .info-cell span {
+        font-size: 14px;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 28px;
+        margin: 22px 0 12px;
+        color: #111;
+    }
+
+    .table-box {
+        background: #ffffff;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .stars-row {
+        height: 34px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #e9fbfb;
+        color: #d9b72f;
+        letter-spacing: 4px;
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .stat-row {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 14px 20px 12px;
+    }
+
+    .stat-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 7px;
+        font-size: 14px;
+        color: #111;
+    }
+
+    .stat-img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .aptitude-box {
+        background: #ffffff;
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 14px;
+    }
+
+    .aptitude-title {
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #e7f6f6;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: #111111;
+    }
+
+    .aptitude-row {
+        display: grid;
+        padding: 12px 0 14px;
+        background: #ffffff;
+    }
+
+    .aptitude-row.two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aptitude-row.four {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .aptitude-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 5px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: #111111;
+    }
+
+    .aptitude-cell span {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .rank-img {
+        width: 38px;
+        height: 38px;
+        object-fit: contain;
+        display: block;
+    }
+
+    @media (max-width: 650px) {
+        .character-detail-container {
+            max-width: 95%;
+        }
+
+        .info-row.three {
+            grid-template-columns: 1fr;
+        }
+
+        .stat-row {
+            padding: 12px 6px;
+            gap: 4px;
+        }
+
+        .stat-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .rank-img {
+            width: 34px;
+            height: 34px;
+        }
+
+        .aptitude-row.four {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 10px;
+        }
+    }
+</style>
+
+{% endblock %}
+```

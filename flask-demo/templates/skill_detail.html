@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+
+{% block title %}{{ skill.name }}{% endblock %}
+
+{% block content %}
+
+<style>
+    .skill-page {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #1f2a33;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-bottom: 18px;
+        color: #2d73ff;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    .skill-section-title {
+        font-size: 26px;
+        font-weight: 800;
+        margin-bottom: 28px;
+        border-left: 3px solid #ff9b3d;
+        padding-left: 14px;
+    }
+
+    .skill-main-box {
+        border: 1px solid #cccccc;
+        margin-bottom: 38px;
+        background: #ffffff;
+    }
+
+    .skill-header {
+        text-align: center;
+        padding: 14px 0 10px;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .skill-icon {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 8px;
+    }
+
+    .skill-name {
+        font-weight: 800;
+        color: #111111;
+    }
+
+    .skill-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .skill-table th {
+        width: 40%;
+        background: #fafafa;
+        font-weight: 800;
+        text-align: center;
+        padding: 15px;
+        border-right: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .skill-table td {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .upgraded-title {
+        font-size: 26px;
+        font-weight: 800;
+        margin: 10px 0 26px;
+    }
+
+    .upgrade-card {
+        border: 1px solid #cccccc;
+        background: #ffffff;
+        margin-bottom: 18px;
+        padding: 14px 10px;
+    }
+
+    .upgrade-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .upgrade-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .upgrade-icon {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        margin-bottom: 5px;
+    }
+
+    .upgrade-name {
+        color: #2d73ff;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    .upgrade-name:hover {
+        text-decoration: underline;
+    }
+
+    .required-sp {
+        font-weight: 800;
+        white-space: nowrap;
+        padding-top: 62px;
+    }
+
+    .upgrade-effect {
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px dotted #cccccc;
+        font-size: 15px;
+    }
+</style>
+
+<div class="skill-page">
+
+    <a class="back-link" href="{{ url_for('skills') }}">
+        ← Back to Skills
+    </a>
+
+    <h1 class="skill-section-title">Normal Skill Effect</h1>
+
+    <div class="skill-main-box">
+
+        <div class="skill-header">
+            <img class="skill-icon"
+                 src="{{ url_for('static', filename='images/skills/' + skill.icon) }}"
+                 alt="{{ skill.name }}">
+
+            <div class="skill-name">
+                {{ skill.name }}
+            </div>
+        </div>
+
+        <table class="skill-table">
+            <tr>
+                <th>Rarity</th>
+                <td>{{ skill.rarity }}</td>
+            </tr>
+
+            <tr>
+                <th>Description</th>
+                <td>{{ skill.description }}</td>
+            </tr>
+            {% if skill.category == "buff" and skill.base_duration %}
+            <tr>
+                <th>Base Duration</th>
+                <td>{{ skill.base_duration }}</td>
+            </tr>
+            {% endif %}
+
+            <tr>
+                <th>Effect</th>
+                <td>{{ skill.effect }}</td>
+            </tr>
+
+            <tr>
+                <th>Skill Points</th>
+                <td>
+                    {% if skill.skill_points %}
+                        {{ skill.skill_points }}
+                    {% elif skill.required_sp %}
+                        {{ skill.required_sp }}
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <h2 class="upgraded-title">Upgraded Skills</h2>
+
+    {% for upgrade in skill.upgraded_skills %}
+
+        <div class="upgrade-card">
+
+            <div class="upgrade-top">
+
+                <div class="upgrade-left">
+                    <img class="upgrade-icon"
+                         src="{{ url_for('static', filename='images/skills/' + upgrade.icon) }}"
+                         alt="{{ upgrade.name }}">
+
+                    <a href="#" class="upgrade-name">
+                        {{ upgrade.name }}
+                    </a>
+                </div>
+
+                <div class="required-sp">
+                    Required SP: {{ upgrade.required_sp }}
+                </div>
+
+            </div>
+
+            <div class="upgrade-effect">
+                <div>{{ upgrade.description }}</div>
+                {% if upgrade.category == "buff" and upgrade.base_duration %}
+                    <div><b>Base Duration:</b> {{ upgrade.base_duration }}</div>
+                {% endif %}
+            </div>
+
+            <div class="upgrade-real-effect">
+                    <b>Effect:</b> {{ upgrade.effect }}
+            </div>
+        </div>
+
+        </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

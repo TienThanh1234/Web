@@ -1,0 +1,12 @@
+card_id,effect_name,lb0,lb1,lb2,lb3,lb4
+taiki_shuttle,Friendship Bonus,20%,21%,23%,25%,25%
+taiki_shuttle,Training Effectiveness,0%,0%,0%,5%,10%
+taiki_shuttle,Initial Friendship,15,16,18,20,20
+taiki_shuttle,Race Bonus,5%,5%,5%,5%,5%
+taiki_shuttle,Fan Bonus,10%,11%,13%,15%,15%
+taiki_shuttle,Hint Level,Lv2,Lv2,Lv3,Lv3,Lv4
+taiki_shuttle,Hint Frequency,40%,45%,50%,55%,60%
+taiki_shuttle,Specialty Priority,35,40,45,50,50
+taiki_shuttle,Skill Pts Bonus,1,1,1,1,1
+taiki_shuttle,Speed Bonus,2,2,2,2,2
+taiki_shuttle,Power Bonus,0,1,1,1,1

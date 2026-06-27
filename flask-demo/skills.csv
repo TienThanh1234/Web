@@ -1,0 +1,558 @@
+id,name,icon,rarity,description,effect,skill_points,type,parent_id,required_sp,category,base_duration
+right_handed,Right-Handed ○,stat_speed.png,Normal,Moderately increase performance on right-handed tracks.,Give stat Speed boost (40),90,normal,,
+right_handed_o,Right-Handed ◎,stat_speed.png,Upgraded,Increase performance on right-handed tracks.,Give stat Speed boost (60),,upgrade,right_handed,110
+right_handed_demon,Right-Handed Demon,super_stat_speed.png,Upgraded,"Increase proficiency in right-handed tracks, increasing Speed and Power.",Give stat Speed boost (60) and Power boost (60),,upgrade,right_handed,130
+
+left_handed_o,Left-Handed ◎,stat_speed.png,Upgraded,Increase performance on left-handed tracks.,Give stat Speed boost (60),,upgrade,left_handed,110
+left_handed,Left-Handed ○,stat_speed.png,Normal,Moderately increase performance on left-handed tracks.,Give stat Speed boost (40),90,normal,,
+
+spring_runner_o,Spring Runner ◎,stat_speed.png,Upgraded,Increase performance in spring.,Give stat Speed boost (60),,upgrade,spring_runner,110
+spring_runner,Spring Runner ○,stat_speed.png,Normal,Moderately increase performance in spring.,Give stat Speed boost (40),90,normal,,
+spring_spectacle,Spring Spectacle,super_stat_speed.png,Upgraded,"Increase performance in spring, boosting Speed and Power.",Give stat Speed boost (60) and Power boost (60),,upgrade,spring_runner,130
+
+summer_runner_o,Summer Runner ◎,stat_speed.png,Upgraded,Increase performance in summer.,Give stat Speed boost (60),,upgrade,summer_runner,110
+summer_runner,Summer Runner ○,stat_speed.png,Normal,Moderately increase performance in summer.,Give stat Speed boost (40),90,normal,,
+
+fall_runner_o,Fall Runner ◎,stat_speed.png,Upgraded,Increase performance in fall.,Give stat Speed boost (60),,upgrade,fall_runner,110
+fall_runner,Fall Runner ○,stat_speed.png,Normal,Moderately increase performance in fall.,Give stat Speed boost (40),90,normal,,
+fall_frenzy,Fall Frenzy,super_stat_speed.png,Upgraded,"Increase performance in fall, boosting Speed and Power.",Give stat Speed boost (60) and Power boost (60),,upgrade,fall_runner,130
+
+winter_runner_o,Winter Runner ◎,stat_speed.png,Upgraded,Increase performance in winter.,Give stat Speed boost (60),,upgrade,winter_runner,110
+winter_runner,Winter Runner ○,stat_speed.png,Normal,Moderately increase performance in winter.,Give stat Speed boost (40),90,normal,,
+
+outer_post_proficiency_o,Outer Post Proficiency ◎,stat_speed.png,Upgraded,Increase performance in brackets 6-8.,Give stat Speed boost (60),,upgrade,outer_post_proficiency,110
+outer_post_proficiency,Outer Post Proficiency ○,stat_speed.png,Normal,Moderately increase performance in brackets 6-8.,Give stat Speed boost (40),90,normal,,
+
+maverick_o,Maverick ◎,stat_speed.png,Upgraded,Greatly increase performance when no other runners are using the same strategy.,Give stat Speed boost (60),,upgrade,maverick,110
+maverick,Maverick ○,stat_speed.png,Normal,Increase performance when no other runners are using the same strategy.,Give stat Speed boost (40),90,normal,,
+
+long_shot_o,Long Shot ◎,stat_speed.png,Upgraded,Increase performance when 4th favorite or below.,Give stat Speed boost (60),,upgrade,long_shot,110
+long_shot,Long Shot ○,stat_speed.png,Normal,Moderately increase performance when 4th favorite or below.,Give stat Speed boost (40),90,normal,,
+
+sympathy,Sympathy,stat_speed.png,Normal,Moderately increase performance when many runners share a sympathetic heart.,Give stat Speed boost (40),90,normal,,
+lone_wolf,Lone Wolf,stat_speed.png,Normal,Moderately increase performance when no other runners have the heart of a lone wolf.,Give stat Speed boost (40),90,normal,,
+
+tokyo_racecourse_o,Tokyo Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Tokyo Racecourse.,Give stat Stamina boost (60),,upgrade,tokyo_racecourse,110
+tokyo_racecourse,Tokyo Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Tokyo Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+nakayama_racecourse_o,Nakayama Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Nakayama Racecourse.,Give stat Stamina boost (60),,upgrade,nakayama_racecourse,110
+nakayama_racecourse,Nakayama Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Nakayama Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+hanshin_racecourse_o,Hanshin Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Hanshin Racecourse.,Give stat Stamina boost (60),,upgrade,hanshin_racecourse,110
+hanshin_racecourse,Hanshin Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Hanshin Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+kyoto_racecourse_o,Kyoto Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Kyoto Racecourse.,Give stat Stamina boost (60),,upgrade,kyoto_racecourse,110
+kyoto_racecourse,Kyoto Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Kyoto Racecourse.,Give stat Stamina boost (40),90,normal,,
+yodo_invicta,Yodo Invicta,super_stat_stamina.png,Upgraded,"Increase performance at Kyoto Racecourse, boosting Stamina and Wit.",Give stat Stamina boost (60) and Wit boost (60),,upgrade,kyoto_racecourse,130
+
+chukyo_racecourse_o,Chukyo Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Chukyo Racecourse.,Give stat Stamina boost (60),,upgrade,chukyo_racecourse,110
+chukyo_racecourse,Chukyo Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Chukyo Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+sapporo_racecourse_o,Sapporo Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Sapporo Racecourse.,Give stat Stamina boost (60),,upgrade,sapporo_racecourse,110
+sapporo_racecourse,Sapporo Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Sapporo Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+hakodate_racecourse_o,Hakodate Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Hakodate Racecourse.,Give stat Stamina boost (60),,upgrade,hakodate_racecourse,110
+hakodate_racecourse,Hakodate Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Hakodate Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+fukushima_racecourse_o,Fukushima Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Fukushima Racecourse.,Give stat Stamina boost (60),,upgrade,fukushima_racecourse,110
+fukushima_racecourse,Fukushima Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Fukushima Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+niigata_racecourse_o,Niigata Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Niigata Racecourse.,Give stat Stamina boost (60),,upgrade,niigata_racecourse,110
+niigata_racecourse,Niigata Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Niigata Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+kokura_racecourse_o,Kokura Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Kokura Racecourse.,Give stat Stamina boost (60),,upgrade,kokura_racecourse,110
+kokura_racecourse,Kokura Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Kokura Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+standard_distance_o,Standard Distance ◎,stat_stamina.png,Upgraded,Increase performance over standard distances (multiples of 400m).,Give stat Stamina boost (60),,upgrade,standard_distance,110
+standard_distance,Standard Distance ○,stat_stamina.png,Normal,Moderately increase performance over standard distances (multiples of 400m).,Give stat Stamina boost (40),90,normal,,
+
+non_standard_distance_o,Non-Standard Distance ◎,stat_stamina.png,Upgraded,Increase performance over non-standard distances (non-multiples of 400m).,Give stat Stamina boost (60),,upgrade,non_standard_distance,110
+non_standard_distance,Non-Standard Distance ○,stat_stamina.png,Normal,Moderately increase performance over non-standard distances (non-multiples of 400m).,Give stat Stamina boost (40),90,normal,,
+
+oi_racecourse_o,Oi Racecourse ◎,stat_stamina.png,Upgraded,Increase performance at Oi Racecourse.,Give stat Stamina boost (60),,upgrade,oi_racecourse,110
+oi_racecourse,Oi Racecourse ○,stat_stamina.png,Normal,Moderately increase performance at Oi Racecourse.,Give stat Stamina boost (40),90,normal,,
+
+firm_conditions_o,Firm Conditions ◎,stat_power.png,Upgraded,Increase performance on firm ground.,Give stat Power boost (60),,upgrade,firm_conditions,110
+firm_conditions,Firm Conditions ○,stat_power.png,Normal,Moderately increase performance on firm ground.,Give stat Power boost (40),90,normal,,
+firm_course_menace,Firm Course Menace,super_stat_power.png,Upgraded,"Increase performance on firm ground, boosting Power and Speed.",Give stat Power boost (60) and Speed boost (60),,upgrade,firm_conditions,130
+
+wet_conditions_o,Wet Conditions ◎,stat_power.png,Upgraded,"Increase performance on good, soft, and heavy ground.",Give stat Power boost (60),,upgrade,wet_conditions,110
+wet_conditions,Wet Conditions ○,stat_power.png,Normal,"Moderately increase performance on good, soft, and heavy ground.",Give stat Power boost (40),90,normal,,
+
+competitive_spirit_o,Competitive Spirit ◎,stat_power.png,Upgraded,Increase performance when many other runners are using the same strategy.,Give stat Power boost (60),,upgrade,competitive_spirit,110
+competitive_spirit,Competitive Spirit ○,stat_power.png,Normal,Moderately increase performance when many other runners are using the same strategy.,Give stat Power boost (40),90,normal,,
+
+sunny_days_o,Sunny Days ◎,stat_guts.png,Upgraded,Increase performance in sunny weather.,Give stat Guts boost (60),,upgrade,sunny_days,110
+sunny_days,Sunny Days ○,stat_guts.png,Normal,Moderately increase performance in sunny weather.,Give stat Guts boost (40),90,normal,,
+
+cloudy_days_o,Cloudy Days ◎,stat_guts.png,Upgraded,Increase performance in cloudy weather.,Give stat Guts boost (60),,upgrade,cloudy_days,110
+cloudy_days,Cloudy Days ○,stat_guts.png,Normal,Moderately increase performance in cloudy weather.,Give stat Guts boost (40),90,normal,,
+
+rainy_days_o,Rainy Days ◎,stat_guts.png,Upgraded,Increase performance in rainy weather.,Give stat Guts boost (60),,upgrade,rainy_days,110
+rainy_days,Rainy Days ○,stat_guts.png,Normal,Moderately increase performance in rainy weather.,Give stat Guts boost (40),90,normal,,
+
+snowy_days_o,Snowy Days ◎,stat_guts.png,Upgraded,Increase performance in snowy weather.,Give stat Guts boost (60),,upgrade,snowy_days,110
+snowy_days,Snowy Days ○,stat_guts.png,Normal,Moderately increase performance in snowy weather.,Give stat Guts boost (40),90,normal,,
+
+target_in_sight_o,Target in Sight ◎,stat_guts.png,Upgraded,Increase performance when the favorite is using the same strategy.,Give stat Guts boost (60),,upgrade,target_in_sight,110
+target_in_sight,Target in Sight ○,stat_guts.png,Normal,Moderately increase performance when the favorite is using the same strategy.,Give stat Guts boost (40),90,normal,,
+
+inner_post_proficiency_o,Inner Post Proficiency ◎,stat_wit.png,Upgraded,Increase performance in brackets 1-3.,Give stat Wit boost (60),,upgrade,inner_post_proficiency,110
+inner_post_proficiency,Inner Post Proficiency ○,stat_wit.png,Normal,Moderately increase performance in brackets 1-3.,Give stat Wit boost (40),90,normal,,
+
+front_runner_savvy_o,Front Runner Savvy ◎,stat_wit.png,Upgraded,Increase ability to get into a good position. (Front Runner),Give stat Wit boost (60),,upgrade,front_runner_savvy,110
+front_runner_savvy,Front Runner Savvy ○,stat_wit.png,Normal,Moderately increase ability to get into a good position. (Front Runner),Give stat Wit boost (40),90,normal,,
+
+pace_chaser_savvy_o,Pace Chaser Savvy ◎,stat_wit.png,Upgraded,Increase ability to get into a good position. (Pace Chaser),Give stat Wit boost (60),,upgrade,pace_chaser_savvy,110
+pace_chaser_savvy,Pace Chaser Savvy ○,stat_wit.png,Normal,Moderately increase ability to get into a good position. (Pace Chaser),Give stat Wit boost (40),90,normal,,
+
+late_surger_savvy_o,Late Surger Savvy ◎,stat_wit.png,Upgraded,Increase ability to get into a good position. (Late Surger),Give stat Wit boost (60),,upgrade,late_surger_savvy,110
+late_surger_savvy,Late Surger Savvy ○,stat_wit.png,Normal,Moderately increase ability to get into a good position. (Late Surger),Give stat Wit boost (40),90,normal,,
+
+end_closer_savvy_o,End Closer Savvy ◎,stat_wit.png,Upgraded,Increase ability to get into a good position. (End Closer),Give stat Wit boost (60),,upgrade,end_closer_savvy,110
+end_closer_savvy,End Closer Savvy ○,stat_wit.png,Normal,Moderately increase ability to get into a good position. (End Closer),Give stat Wit boost (40),90,normal,,
+towards_the_scenery_i_seek,Towards the Scenery I Seek,stat_speed.png,Normal,Moderately increase performance in pursuit of that long sought-after scenery.,Give stat Speed boost (40),,normal,,,,
+show_me_what_lies_beyond,Show Me What Lies Beyond!,stat_speed.png,Normal,Moderately increase Silence Suzuka's performance thanks to the desire to see her running reach new heights.,Give stat Speed boost (40),,normal,,,,
+chin_up_derby_umamusume,"Chin Up, Derby Umamusume!",stat_speed.png,Normal,"Feel closer to being Japan's top racer, moderately increasing performance.",Give stat Speed boost (40),,normal,,,,
+unchanging,Unchanging,super_stat_speed.png,Upgraded,Greatly increase performance with the same ambition of days past.,Give stat Speed boost (80),,normal,,,,
+unquenched_thirst,Unquenched Thirst,stat_stamina.png,Normal,Moderately increase performance with the desire to race.,Give stat Stamina boost (40),,normal,,,,
+hoiya_have_a_good_run,Hoiya! Have a Good Run!,stat_stamina.png,Normal,Moderately increase Silence Suzuka's performance thanks to a charm that guarantees a satisfying run.,Give stat Stamina boost (40),,normal,,,,
+long_race_enthusiast,Long Race Enthusiast,stat_stamina.png,Normal,Increase performance in Long Turf races. This skill is exclusive to the event.,Give stat Stamina boost (60),,normal,,,,
+for_the_team,For the Team,super_stat_stamina.png,Upgraded,"The whole team feels super determined to win this special race, greatly increasing performance.",Give stat Stamina boost (80),,normal,,,,
+as_a_friend_and_rival,As a Friend and Rival,stat_power.png,Normal,Moderately increase Silence Suzuka's performance through the happiness felt seeing a friend find their running style.,Give stat Power boost (40),,normal,,,,
+mile_race_enthusiast,Mile Race Enthusiast,stat_power.png,Normal,Increase performance in Mile Turf races. This skill is exclusive to the event.,Give stat Power boost (60),,normal,,,,
+restraint,Restraint,stat_wit.png,Normal,Increase Wit and moderately decrease the chance of being Rushed.,Give stat Wit boost (60) and Decreased Rush Chance (-3),160,normal,,,,
+medium_race_enthusiast,Medium Race Enthusiast,stat_wit.png,Normal,Increase performance in Medium Turf races. This skill is exclusive to the event.,Give stat Wit boost (60),,normal,,,,
+lucky_seven,Lucky Seven,lucky7.png,Normal,Moderately good things may happen when in bracket 7.,Give stat Speed boost (40) and Stamina boost (40) and Power boost (40).,110,normal,,
+super_lucky_seven,Super Lucky Seven,super_lucky7.png,Upgraded,Good things may happen when in bracket 7.,Give stat Speed boost (60) and Stamina boost (60) and Power boost (60).,,upgrade,lucky_seven,110
+
+right_handed_bad,Right-Handed ×,negative_speed.png,Negative,Moderately decrease performance on right-handed tracks.,Give stat Speed Down (-40),,negative,,50,negative
+left_handed_bad,Left-Handed ×,negative_speed.png,Negative,Moderately decrease performance on left-handed tracks.,Give stat Speed Down (-40),,negative,,50,negative
+spring_runner_bad,Spring Runner ×,negative_speed.png,Negative,Moderately decrease performance in spring.,Give stat Speed Down (-40),,negative,,50,negative
+summer_runner_bad,Summer Runner ×,negative_speed.png,Negative,Moderately decrease performance in summer.,Give stat Speed Down (-40),,negative,,50,negative
+fall_runner_bad,Fall Runner ×,negative_speed.png,Negative,Moderately decrease performance in fall.,Give stat Speed Down (-40),,negative,,50,negative
+winter_runner_bad,Winter Runner ×,negative_speed.png,Negative,Moderately decrease performance in winter.,Give stat Speed Down (-40),,negative,,50,negative
+outer_post_averseness,Outer Post Averseness,negative_speed.png,Negative,Moderately decrease performance in brackets 6-8.,Give stat Speed Down (-40),,negative,,50,negative
+g1_averseness,G1 Averseness,negative_speed.png,Negative,Moderately decrease performance in G1 or otherwise important races.,Give stat Speed Down (-40),,negative,,50,negative
+heart_3d_nail_art,♡ 3D Nail Art,negative_speed.png,Negative,Moderately decrease performance on firm ground.,Give stat Speed Down (-40),,negative,,50,negative
+creeping_anxiety,Creeping Anxiety,negative_speed.png,Negative,Moderately decrease performance due to Trainer's anxiety.,Give stat Speed Down (-40),,negative,,50,negative
+corner_recovery_bad,Corner Recovery ×,negative_recovery.png,Negative,Moderately lose endurance on a corner with inefficient turning.,Stamina Drain (-0.02),100,normal,,,negative
+ramp_revulsion,Ramp Revulsion,negative_recovery.png,Negative,Moderately increase fatigue on an uphill.,Stamina Drain (-0.02),100,normal,,,negative
+packphobia,Packphobia,negative_recovery.png,Negative,Moderately lose endurance when surrounded.,Stamina Drain (-0.02),100,normal,,,negative
+
+tokyo_racecourse_bad,Tokyo Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Tokyo Racecourse.,Give stat Stamina Down (-40),,normal,,50,negative
+nakayama_racecourse_bad,Nakayama Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Nakayama Racecourse.,Give stat Stamina Down (-40),,normal,,50,negative
+hanshin_racecourse_bad,Hanshin Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Hanshin Racecourse.,Give stat Stamina Down (-40),,normal,,50,negative
+kyoto_racecourse_bad,Kyoto Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Kyoto Racecourse.,Give stat Stamina Down (-40),,normal,,50,negative
+chukyo_racecourse_bad,Chukyo Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Chukyo Racecourse.,Give stat Stamina Down (-40),,normal,,50,negative
+sapporo_racecourse_bad,Sapporo Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Sapporo Racecourse.,Give stat Stamina Down (-40),,normal,,40,negative
+hakodate_racecourse_bad,Hakodate Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Hakodate Racecourse.,Give stat Stamina Down (-40),,normal,,40,negative
+fukushima_racecourse_bad,Fukushima Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Fukushima Racecourse.,Give stat Stamina Down (-40),,normal,,40,negative
+niigata_racecourse_bad,Niigata Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Niigata Racecourse.,Give stat Stamina Down (-40),,normal,,40,negative
+kokura_racecourse_bad,Kokura Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Kokura Racecourse.,Give stat Stamina Down (-40),,normal,,40,negative
+standard_distance_bad,Standard Distance ×,negative_stamina.png,Negative,Moderately decrease performance over standard distances (multiples of 400m).,Give stat Stamina Down (-40),,normal,,50,negative
+non_standard_distance_bad,Non-Standard Distance ×,negative_stamina.png,Negative,Moderately decrease performance over non-standard distances (non-multiples of 400m).,Give stat Stamina Down (-40),,normal,,50,negative
+paddock_fright,Paddock Fright,negative_stamina.png,Negative,Moderately decrease performance when the favorite.,Give stat Stamina Down (-40),,normal,,50,negative
+oi_racecourse_bad,Oi Racecourse ×,negative_stamina.png,Negative,Moderately decrease performance at Oi Racecourse.,Give stat Stamina Down (-40),,normal,,50,negative
+
+firm_conditions_bad,Firm Conditions ×,negative_power.png,Negative,Moderately decrease performance on firm ground.,Give stat Power Down (-40),,normal,,50,negative
+wet_conditions_bad,Wet Conditions ×,negative_power.png,Negative,"Moderately decrease performance on good, soft, and heavy ground.",Give stat Power Down (-40),,normal,,50,negative
+wallflower,Wallflower,negative_power.png,Negative,Moderately decrease performance when many other runners are using the same strategy.,Give stat Power Down (-40),,normal,,50,negative
+rainy_days_bad,Rainy Days ×,negative_guts.png,Negative,Moderately decrease performance in rainy weather.,Give stat Guts Down (-40),,normal,,50,negative
+ninety_nine_problems,99 Problems,negative_guts.png,Negative,"Get overwhelmed by powerful opponents, moderately decreasing Guts and Wit.",Give stat Guts Down (-40) and Wit Down (-40),,normal,,0,negative
+inner_post_averseness,Inner Post Averseness,negative_wit.png,Negative,Moderately decrease performance in brackets 1-3.,Give stat Wit Down (-40),,normal,,50,negative
+
+swinging_maestro,Swinging Maestro,super_recovery_stamina.png,Upgraded,Recover endurance on a corner with efficient turning [Skills will be activated on a random corner].,Stamina recovery (0.055),,upgrade,corner_recovery,170,recovery
+corner_recovery,Corner Recovery,recovery_stamina.png,Normal,Slightly recover endurance on a corner with efficient turning [Skills will be activated on a random corner].,Stamina recovery (0.015),170,normal,,,recovery
+breath_of_fresh_air,Breath of Fresh Air,super_recovery_stamina.png,Upgraded,Recover endurance on a straight [Skills will be activated on a random straight].,Stamina recovery (0.055),,upgrade,straightaway_recovery,170,recovery
+straightaway_recovery,Straightaway Recovery,recovery_stamina.png,Normal,Slightly recover endurance on a straight [Skills will be activated on a random straight].,Stamina recovery (0.015),170,normal,,,recovery
+iron_will,Iron Will,super_recovery_stamina.png,Upgraded,Recover endurance when the way ahead is jammed early-race or mid-race [Skills will be activated when being blocked ahead for 1s in early race or mid race].,Stamina recovery (0.055),,upgrade,lay_low,160,recovery
+lay_low,Lay Low,recovery_stamina.png,Normal,Slightly recover endurance when the way ahead is jammed early-race or mid-race [Skills will be activated when being blocked ahead for 1s in early race or mid race].,Stamina recovery (0.015),160,normal,,,recovery
+indomitable,Indomitable,super_recovery_stamina.png,Upgraded,Recover endurance when passed by another runner mid-race.,Stamina recovery (0.055),,upgrade,pace_strategy,170,recovery
+pace_strategy,Pace Strategy,recovery_stamina.png,Normal,Slightly recover endurance when passed by another runner mid-race.,Stamina recovery (0.015),170,normal,,,recovery
+unruffled,Unruffled,super_recovery_stamina.png,Upgraded,Recover endurance when surrounded mid-race.,Stamina recovery (0.055),,upgrade,calm_in_a_crowd,170,recovery
+calm_in_a_crowd,Calm in a Crowd,recovery_stamina.png,Normal,Slightly recover endurance when surrounded mid-race.,Stamina recovery (0.015),170,normal,,,recovery
+
+calm_and_collected,Calm and Collected,super_recovery_stamina.png,Upgraded,Decrease fatigue upon approaching mid-race [Activate when you are in 5th pos in CM and 6th pos in LoH or higher in a random point before going to mid race]. (Pace Chaser),Stamina recovery (0.055),,upgrade,stamina_to_spare,180,recovery
+stamina_to_spare,Stamina to Spare,recovery_stamina.png,Normal,Slightly decrease fatigue upon approaching mid-race [Activate when you are in the 5th pos or higher in a random point before going to mid-race]. (Pace Chaser),Stamina recovery (0.015),180,normal,,,recovery
+race_planner,Race Planner,super_recovery_stamina.png,Upgraded,Decrease fatigue mid-race [Activate when you are in 5th pos in CM anh 6th in LoH or higher in a random point of mid-race]. (Pace Chaser),Stamina recovery (0.055),,upgrade,preferred_position,180,recovery
+preferred_position,Preferred Position,recovery_stamina.png,Normal,Slightly decrease fatigue mid-race [Activate when you are in 5th pos in CM anh 6th in LoH or higher in a random point of mid-race]. (Pace Chaser),Stamina recovery (0.015),180,normal,,,recovery
+sleeping_lion,Sleeping Lion,super_recovery_stamina.png,Upgraded,Decrease fatigue mid-race [Activate when the distance between your uma and the 1st uma is >= 75m]. (End Closer),Stamina recovery (0.055),,upgrade,standing_by,180,recovery
+standing_by,Standing By,recovery_stamina.png,Normal,Slightly decrease fatigue mid-race [Activate when the distance between your uma and the 1st uma is >= 75m]. (End Closer),Stamina recovery (0.015),180,normal,,,recovery
+wait_and_see,Wait-and-See,recovery_stamina.png,Normal,Slightly decrease fatigue and very slightly increase acceleration when positioned toward the back mid-race. (Sprint),Stamina recovery (0.015) and Acceleration boost (0.1),160,normal,,,recovery
+keen_eye,Keen Eye,super_recovery_stamina.png,Upgraded,"Decrease fatigue, then moderately decrease velocity of runners ahead when positioned toward the back upon approaching mid-race. [Activate when your uma is 6th pos in CM and 7th in LoH or worse at a random point in latter early-race] (Mile)",Stamina recovery (0.055) and Decrease current Speed (-0.2),,upgrade,watchful_eye,160,recovery
+watchful_eye,Watchful Eye,recovery_stamina.png,Normal,"Slightly decrease fatigue, then very slightly decrease velocity of runners ahead when positioned toward the back upon approaching mid-race. [Activate when your uma is 6th pos or worse at a random point in latter early-race] (Mile)",Stamina recovery (0.015) and Decrease current Speed (-0.05),160,normal,,,recovery
+trackblazer,Trackblazer,super_recovery_stamina.png,Upgraded,Decrease fatigue when positioned toward the front mid-race. [Activate when your uma is at 3rd pos in both CM and LoH or better] (Medium),Stamina recovery (0.055),,upgrade,rosy_outlook,160,recovery
+rosy_outlook,Rosy Outlook,recovery_stamina.png,Normal,Slightly decrease fatigue when positioned toward the front mid-race. [Activate when your uma is at 3rd pos in both CM and LoH or better] (Medium),Stamina recovery (0.015),160,normal,,,recovery
+cooldown,Cooldown,super_recovery_stamina.png,Upgraded,Decrease fatigue by taking a breather upon entering a straight. [Activates randomly during a straight in mid-race] (Long),Stamina recovery (0.055),,upgrade,deep_breaths,160,recovery
+deep_breaths,Deep Breaths,recovery_stamina.png,Normal,Slightly decrease fatigue by taking a breather upon entering a straight [Activates randomly during a straight in mid-race.]. (Long),Stamina recovery (0.015),160,normal,,,recovery
+adrenaline_rush,Adrenaline Rush,super_recovery_stamina.png,Upgraded,Regain the energy to run when close to exhausting strength. [Activates when your stamina is <= 30%] (Long),Stamina recovery (0.055),,upgrade,extra_tank,160,recovery
+extra_tank,Extra Tank,recovery_stamina.png,Normal,Slightly regain the energy to run when close to exhausting strength. [Activates when your stamina is <= 30%] (Long),Stamina recovery (0.015),160,normal,,,recovery
+
+miraculous_step,Miraculous Step,super_recovery_stamina.png,Upgraded,Decrease fatigue when moving sideways. [Activates while changing lanes after 10s into the race] (Medium),Stamina recovery (0.055),,upgrade,soft_step,160,recovery
+soft_step,Soft Step,recovery_stamina.png,Normal,Slightly decrease fatigue when moving sideways. [Activates while changing lanes after 10s into the race] (Medium),Stamina recovery (0.015),160,normal,,,recovery
+vip_pass,VIP Pass,super_recovery_stamina.png,Upgraded,Decrease fatigue when determined to pass another runner. (Long),Stamina recovery (0.055),,upgrade,passing_pro,160,recovery
+passing_pro,Passing Pro,recovery_stamina.png,Normal,Slightly decrease fatigue when determined to pass another runner. (Long),Stamina recovery (0.015),160,normal,,,recovery
+restless,Restless,super_recovery_stamina.png,Upgraded,Reduce fatigue on an uphill. [Activates while running uphill after 10s into the race] (Front Runner),Stamina recovery (0.055),,upgrade,moxie,170,recovery
+moxie,Moxie,recovery_stamina.png,Normal,Slightly reduce fatigue on an uphill. [Activates while running uphill after 10s into the race] (Front Runner),Stamina recovery (0.015),170,normal,,,recovery
+gourmand,Gourmand,super_recovery_stamina.png,Upgraded,Recover endurance mid-race. [Activate at a random point in mid-race] (Pace Chaser),Stamina recovery (0.055),,upgrade,hydrate,180,recovery
+hydrate,Hydrate,recovery_stamina.png,Normal,Slightly recover endurance mid-race. [Activate at a random point in mid-race] (Pace Chaser),Stamina recovery (0.015),180,normal,,,recovery
+relax,Relax,super_recovery_stamina.png,Upgraded,Recover endurance late-race. [Activates at a random point in late-race] (Late Surger),Stamina recovery (0.055),,upgrade,a_small_breather,180,recovery
+a_small_breather,A Small Breather,recovery_stamina.png,Normal,Slightly recover endurance late-race. [Activates at a random point in late-race] (Late Surger),Stamina recovery (0.015),180,normal,,,recovery
+go_home_specialist,Go-Home Specialist,super_recovery_stamina.png,Upgraded,Reduce fatigue on a downhill. [Activates while running downhill after 10s have elapsed] (End Closer),Stamina recovery (0.055),,upgrade,after_school_stroll,180,recovery
+after_school_stroll,After-School Stroll,recovery_stamina.png,Normal,Slightly reduce fatigue on a downhill. [Activates while running downhill after 10s have elapsed] (End Closer),Stamina recovery (0.015),180,normal,,,recovery
+serenity,Serenity,super_recovery_stamina.png,Upgraded,Regain composure by calming down when the way ahead is jammed. [Activates when your uma is blocked in 1s after 10s into the race] (End Closer),Stamina recovery (0.055),,upgrade,levelheaded,180,recovery
+levelheaded,Levelheaded,recovery_stamina.png,Normal,Slightly regain composure by calming down when the way ahead is jammed. [Activates when your uma is blocked in 1s after 10s into the race] (End Closer),Stamina recovery (0.015),180,normal,,,recovery
+triple_7s,Triple 7s,recovery_stamina.png,Normal,Slightly gain energy with 777m remaining.,Stamina recovery (0.015),160,normal,,,recovery
+shake_it_out,Shake It Out,recovery_stamina.png,Normal,Slightly recover endurance after activating many skills late-race. [Activates when 3 late-race skills are activated],Stamina recovery (0.015),100,normal,,,recovery
+
+lie_in_wait,Lie in Wait,super_recovery_stamina.png,Upgraded,Recover endurance when positioned toward the back upon approaching mid-race. [Activates when your uma is in 5th pos in CM and 6th pos in LoH or worse at a random point in latter early-race.] (Late Surger),Stamina recovery (0.055),,upgrade,be_still,180,recovery
+be_still,Be Still,recovery_stamina.png,Normal,Slightly recover endurance when positioned toward the back upon approaching mid-race. [Activates when your uma is in 5th pos in CM and 6th pos in LoH or worse at a random point in latter early-race.] (Late Surger),Stamina recovery (0.015),180,normal,,,recovery
+master_of_the_sands,Master of the Sands,super_recovery_stamina.png,Unique,Recover endurance and increase velocity when positioned toward the back mid-race. [Activates when your uma is in 5th pos in CM and 6th pos in LoH or worse at a random point in mid-race] (Dirt),Stamina recovery (0.055) and Increase Target Speed (0.35),,upgrade,familiar_ground,180,recovery
+familiar_ground,Familiar Ground,recovery_stamina.png,Normal,Slightly recover endurance when positioned toward the back mid-race. [Activates when your uma is in 5th pos in CM and 6th pos in LoH or worse at a random point in mid-race] (Dirt),Stamina recovery (0.015),180,normal,,,recovery
+of_calm_mind,Of Calm Mind,recovery_stamina.png,Upgraded,If positioned in the midpack around when the mid-race starts, slightly decrease velocity and greatly recover endurance. [Activates when your uma is from 4 <= pos <= 7 in CM and 5 <= pos <= 10 in LoH at a random point in former mid-race] (Long),Stamina recovery (0.075) and Speed Decrease (-0.15),,upgrade,free_spirited,170,recovery
+free_spirited,Free-Spirited,recovery_stamina.png,Normal,If positioned in the midpack around when the mid-race starts slightly decrease velocity and moderately recover endurance. (Long),Stamina recovery (0.035) and Speed debuff (-0.15),170,normal,,,recovery
+
+corner_adept,Corner Adept ○,speed_skill.png,Normal,Slightly increase velocity on a corner with skilled turning. [Activates on a random corner],Increase target speed (0.15),180,normal,,,buff,2.4s
+straightaway_adept,Straightaway Adept,speed_skill.png,Normal,Slightly increase velocity on a straight. [Activates on a random straight],Increase target speed (0.15),170,normal,,,buff,2.4s
+ramp_up,Ramp Up,speed_skill.png,Normal,Slightly increase velocity when passing another runner mid-race.,Increase target speed (0.15),170,normal,,,buff,1.8s 
+homestretch_haste,Homestretch Haste,speed_skill.png,Normal,Slightly increase velocity in the last spurt.,Increase target speed (0.15),180,normal,,,buff,2.4s
+fast_paced,Fast-Paced,speed_skill.png,Normal,Slightly increase ability to go to the front mid-race. [Activates when your uma is 5th pos in CM and 6th pos in LoH or higher at a random point in mid-race] (Front Runner),Increase target speed (0.15),180,normal,,,buff,3s
+prepared_to_pass,Prepared to Pass,speed_skill.png,Normal,Slightly increase ability to break out of the pack on the final corner. [Activates when your uma is in 5th pos in CM and 6th pos in LoH at a random point in the final corner] (Pace Chaser),Increase target speed (0.15),180,normal,,,buff,1.8
+position_pilfer,Position Pilfer,speed_skill.png,Normal,Slightly increase velocity mid-race. [Activates when your uma is in 6th pos in CM and 7th pos in LoH at random point in mid-race] (Late Surger),Increase target speed (0.15),180,normal,,,buff,2.4
+outer_swell,Outer Swell,speed_skill.png,Normal,Slightly increase velocity when passing another runner on the outside on the final corner. [Activates when your uma has passed another uma after reaching the final corner and the uma you have passed is more inner fence than yours.] (Late Surger),Increase target speed (0.15),180,normal,,,buff,3s
+masterful_gambit,Masterful Gambit,speed_skill.png,Normal,Slightly move up in preparation to close the gap when positioned toward the back late-race. [Activates when your uma has a distance >= 50m with 1st pos uma at late-race] (End Closer),Increase target speed (0.15),180,normal,,,buff,3s
+gap_closer,Gap Closer,speed_skill.png,Normal,Slightly increase spurting ability when positioned toward the back late-race. [Activates when your uma is 6th pos in CM and 7th pos in LoH or worse at a random point in late-race] (Sprint),Increase target speed (0.15) and Acceleration (0.05),160,normal,,,buff,3s
+productive_plan,Productive Plan,speed_skill.png,Normal,Slightly widen the margin when positioned toward the front early-race. [Activates when your uma is 5th pos in CM and 6th pos in LoH or better at a random point in early-race after 5s into the race] (Mile),Increase target speed (0.15),160,normal,,,buff,3s
+up_tempo,Up-Tempo,speed_skill.png,Normal,Slightly increase positioning ability when positioned toward the front mid-race. [Activates when your uma is 5th pos in CM and 6th pos in LoH or better at a random point in mid-race] (Medium),Increase target speed (0.15),160,normal,,,buff,2.4s
+steadfast,Steadfast,speed_skill.png,Normal,Slightly increase ability to fight back when passed by another runner on the final corner. [Activates when your uma is being passed by another uma at the final corner] (Medium),Increase target speed (0.15) and Acceleration (0.05),160,normal,,,buff,3s
+inside_scoop,Inside Scoop,speed_skill.png,Normal,Slightly increase velocity when near the inner rail on the final corner. [Activates when your uma runs near the fench at the final corner] (Long),Increase target speed (0.15),160,normal,,,buff,3s
+shifting_gears,Shifting Gears,speed_skill.png,Normal,Slightly increase passing ability when positioned toward the front mid-race. [Activates when your uma is 5th pos in CM and 6th pos in LoH at a random point in mid-race] (Mile),Increase target speed (0.15),160,normal,,,buff,2.4s
+unyielding_spirit,Unyielding Spirit,speed_skill.png,Normal,Slightly increase passing ability. [Activates when your uma is going to pass another uma after 5s into the race] (Mile),Increase target speed (0.15),120,normal,,,buff,2.4s
+
+keeping_the_lead,Keeping the Lead,speed_skill.png,Normal,Slightly increase ability to maintain the lead when leading by a fair margin mid-race. (Long),Increase target speed (0.15),160,normal,,,buff,2.4s
+pressure,Pressure,speed_skill.png,Normal,Slightly increase velocity when passing another runner late-race. (Long),Increase target speed (0.15),180,normal,,,buff,2.4s
+huge_lead,Huge Lead,speed_skill.png,Normal,Slightly increase ability to maintain the lead when leading by a large margin mid-race. (Sprint),Increase target speed (0.15),180,normal,,,buff,2.4s
+
+sprint_straightaways_o,Sprint Straightaways ◎,speed_skill.png,Upgraded,Moderately increase velocity on a straight. [Activates on a random straight] (Sprint),Increase target speed (0.25),,upgrade,sprint_straightaways,110,buff,3s
+sprint_straightaways,Sprint Straightaways ○,speed_skill.png,Normal,Slightly increase velocity on a straight. [Activates on a random straight] (Sprint),Increase target speed (0.15),100,normal,,,buff,3s
+sprint_corners_o,Sprint Corners ◎,speed_skill.png,Upgraded,Moderately increase velocity on a corner. [Activates on a random corner] (Sprint),Increase target speed (0.25),,upgrade,sprint_corners,110,buff,3s
+sprint_corners,Sprint Corners ○,speed_skill.png,Normal,Slightly increase velocity on a corner. [Activates on a random corner] (Sprint),Increase target speed (0.15),100,normal,,,buff,3s
+mile_straightaways_o,Mile Straightaways ◎,speed_skill.png,Upgraded,Moderately increase velocity on a straight. [Activates on a random straight] (Mile),Increase target speed (0.25),,upgrade,mile_straightaways,110,buff,3s
+mile_straightaways,Mile Straightaways ○,speed_skill.png,Normal,Slightly increase velocity on a straight. [Activates on a random straight] (Mile),Increase target speed (0.15),100,normal,,,buff,3s
+mile_corners_o,Mile Corners ◎,speed_skill.png,Upgraded,Moderately increase velocity on a corner. [Activates on a random corner] (Mile),Increase target speed (0.25),,upgrade,mile_corners,110,buff,3s
+mile_corners,Mile Corners ○,speed_skill.png,Normal,Slightly increase velocity on a corner. [Activates on a random corner] (Mile),Increase target speed (0.15),100,normal,,,buff,3s
+medium_straightaways_o,Medium Straightaways ◎,speed_skill.png,Upgraded,Moderately increase velocity on a straight. [Activates on a random straight] (Medium),Increase target speed (0.25),,upgrade,medium_straightaways,110,buff,3s
+medium_straightaways,Medium Straightaways ○,speed_skill.png,Normal,Slightly increase velocity on a straight. [Activates on a random straight] (Medium),Increase target speed (0.15),100,normal,,,buff,3s
+medium_corners_o,Medium Corners ◎,speed_skill.png,Upgraded,Moderately increase velocity on a corner. [Activates on a random corner]  (Medium),Increase target speed (0.25),,upgrade,medium_corners,110,buff,3s
+medium_corners,Medium Corners ○,speed_skill.png,Normal,Slightly increase velocity on a corner. [Activates on a random corner] (Medium),Increase target speed (0.15),100,normal,,,buff,3s
+long_straightaways_o,Long Straightaways ◎,speed_skill.png,Upgraded,Moderately increase velocity on a straight. [Activates on a random straight] (Long),Increase target speed (0.25),,upgrade,long_straightaways,110,buff,3s
+long_straightaways,Long Straightaways ○,speed_skill.png,Normal,Slightly increase velocity on a straight. [Activates on a random straight] (Long),Increase target speed (0.15),100,normal,,,buff,3s
+long_corners_o,Long Corners ◎,speed_skill.png,Upgraded,Moderately increase velocity on a corner. [Activates on a random corner] (Long),Increase target speed (0.25),,upgrade,long_corners,110,buff,3s
+long_corners,Long Corners ○,speed_skill.png,Normal,Slightly increase velocity on a corner. [Activates on a random corner] (Long),Increase target speed (0.15),100,normal,,,buff,3s
+front_runner_straightaways_o,Front Runner Straightaways ◎,speed_skill.png,Upgraded,Moderately increase velocity on a straight. [Activates on a random straight] (Front Runner),Increase target speed (0.25),,upgrade,front_runner_straightaways,140,buff,3s
+front_runner_straightaways,Front Runner Straightaways ○,speed_skill.png,Normal,Slightly increase velocity on a straight. [Activates on a random straight] (Front Runner),Increase target speed (0.15),130,normal,,,buff,3s
+
+
+introduction_to_physiology,Introduction to Physiology,unique_skill_heal.png,Unique,Moderately recover endurance and slightly increase velocity for a moderate duration when sitting off the pace on a corner in the second half of the race.,Stamina recovery (0.035),,normal,,,unique,4s
+clear_heart,Clear Heart,unique_skill_heal.png,Unique,Recover endurance when well-positioned mid-race.,Stamina recovery (0.055),,normal,,,unique,
+super_duper_stoked,Super-Duper Stoked,unique_skill_heal.png,Unique,Moderately recover endurance with a glance at nearby runners when positioned toward the back on the final corner.,Stamina recovery (0.035),,normal,,,unique,
+u_ma2,U=ma2,unique_skill_heal.png,Unique,Recover endurance and moderately increase velocity for a moderate duration when sitting off the pace on a corner in the second half of the race.,Stamina recovery (0.055),,normal,,,unique,4s
+pure_heart,Pure Heart,unique_skill_heal.png,Unique,Greatly recover endurance when well-positioned mid-race.,Stamina recovery (0.075),,normal,,,unique,
+super_duper_climax,Super-Duper Climax,unique_skill_heal.png,Unique,Recover endurance with a glance at nearby runners when positioned toward the back on the final corner.,Stamina recovery (0.055),,normal,,,unique,
+running_idle,Running Idle,negative_recovery.png,Negative,Moderately increase fatigue when in the lead by too large of a margin.,Stamina Drain (-0.02),100,normal,,,negative,
+superior_heal,Superior Heal,unique_skill_heal.png,Unique,Greatly recover endurance with a gentle light when overtaken toward the back mid-race.,Stamina recovery (0.075),,normal,,,unique,
+dazzl_n_diver,Dazzl'n ♪ Diver,unique_skill_heal.png,Unique,Recover endurance by relaxing after activating 2 skills when positioned midpack mid-race.,Stamina recovery (0.055),,normal,,,unique,
+every_rose_has_its_fangs,Every Rose Has Its Fangs,unique_skill_heal.png,Unique,Suck endurance from runners ahead when well-positioned and pressured by another runner mid-race.,Stamina recovery (0.055),,normal,,,unique,
+cheers_of_a_fellow_dreamer,Cheers of a Fellow Dreamer,super_recovery_stamina.png,Upgraded,Recover Silence Suzuka's endurance on a corner in the second half of the race through a friend's cheers of support.,Stamina recovery (0.055),,normal,,,recovery,
+ready_go,"Ready, Go!",unique_skill_heal.png,Unique,Moderately recover endurance and slightly increase velocity with newfound resolve when in midpack around halfway through the race.,Stamina recovery (0.035),,normal,,,unique,5s
+go_go_mun,"Go, Go, Mun!",unique_skill_heal.png,Unique,Recover endurance and moderately increase velocity with newfound resolve when in midpack around halfway through the race.,Stamina recovery (0.055),,normal,,,unique,5s
+keep_pushing_ahead,Keep Pushing Ahead,unique_skill.png,Unique,"If positioned toward the front from the start of the race until the second half of the race, good vibes recover endurance and moderately increase velocity steadily.",Stamina recovery (0.055),,normal,,,unique,6s
+front_runner_corners,Front Runner Corners ○,speed_skill.png,Normal,Slightly increase velocity on a corner. (Front Runner),Increase target speed (0.15),130,normal,,,buff,3s
+front_runner_corners_o,Front Runner Corners ◎,speed_skill.png,Upgraded,Moderately increase velocity on a corner. (Front Runner),Increase target speed (0.25),,upgrade,front_runner_corners,140,buff,3s
+leader_s_pride,Leader's Pride,speed_skill.png,Normal,Slightly increase ability to pass or challenge another runner early-race or mid-race. (Front Runner),Increase target speed (0.15),180,normal,,,buff,3s
+top_runner,Top Runner,super_speed_skill.png,Upgraded,Increase ability to pass or challenge another runner early-race or mid-race. (Front Runner),Increase target speed (0.35),,upgrade,leader_s_pride,180,buff,3s
+pace_chaser_straightaways,Pace Chaser Straightaways ○,speed_skill.png,Normal,Slightly increase velocity on a straight. (Pace Chaser),Increase target speed (0.15),130,normal,,,buff,3s
+pace_chaser_straightaways_o,Pace Chaser Straightaways ◎,speed_skill.png,Upgraded,Moderately increase velocity on a straight. (Pace Chaser),Increase target speed (0.25),,upgrade,pace_chaser_straightaways,140,buff,3s
+pace_chaser_corners,Pace Chaser Corners ○,speed_skill.png,Normal,Slightly increase velocity on a corner. (Pace Chaser),Increase target speed (0.15),130,normal,,,buff,3s
+pace_chaser_corners_o,Pace Chaser Corners ◎,speed_skill.png,Upgraded,Moderately increase velocity on a corner. (Pace Chaser),Increase target speed (0.25),,upgrade,pace_chaser_corners,140,buff,3s
+late_surger_straightaways,Late Surger Straightaways ○,speed_skill.png,Normal,Slightly increase velocity on a straight. (Late Surger),Increase target speed (0.15),130,normal,,,buff,3s
+late_surger_straightaways_o,Late Surger Straightaways ◎,speed_skill.png,Upgraded,Moderately increase velocity on a straight. (Late Surger),Increase target speed (0.25),,upgrade,late_surger_straightaways,140,buff,3s
+late_surger_corners,Late Surger Corners ○,speed_skill.png,Normal,Slightly increase velocity on a corner. (Late Surger),Increase target speed (0.15),130,normal,,,buff,3s
+late_surger_corners_o,Late Surger Corners ◎,speed_skill.png,Upgraded,Moderately increase velocity on a corner. (Late Surger),Increase target speed (0.25),,upgrade,late_surger_corners,140,buff,3s
+1_500_000_cc,"1,500,000 CC",speed_skill.png,Normal,Slightly increase velocity on an uphill. (Late Surger),Increase target speed (0.15),120,normal,,,buff,2.4s
+15_000_000_cc,"15,000,000 CC",super_speed_skill.png,Upgraded,Increase velocity on an uphill. (Late Surger),Increase target speed (0.35),,upgrade,1_500_000_cc,120,buff,2.4s
+end_closer_straightaways,End Closer Straightaways ○,speed_skill.png,Normal,Slightly increase velocity on a straight. (End Closer),Increase target speed (0.15),130,normal,,,buff,3s
+end_closer_straightaways_o,End Closer Straightaways ◎,speed_skill.png,Upgraded,Moderately increase velocity on a straight. (End Closer),Increase target speed (0.25),,upgrade,end_closer_straightaways,140,buff,3s
+moonlit_flash,Moonlit Flash,super_speed_skill.png,Upgraded,Increase velocity on straights. (End Closer),Increase target speed (0.35),,upgrade,end_closer_straightaways,150,buff,3s
+end_closer_corners,End Closer Corners ○,speed_skill.png,Normal,Slightly increase velocity on a corner. (End Closer),Increase target speed (0.15),130,normal,,,buff,3s
+end_closer_corners_o,End Closer Corners ◎,speed_skill.png,Upgraded,Moderately increase velocity on a corner. (End Closer),Increase target speed (0.25),,upgrade,end_closer_corners,140,buff,3s
+uma_stan,Uma Stan,speed_skill.png,Normal,Slightly increase velocity when close to many runners.,Increase target speed (0.15),160,normal,,,buff,3s
+superstan,Superstan,super_speed_skill.png,Upgraded,Increase velocity when close to many runners.,Increase target speed (0.35),,upgrade,uma_stan,160,buff,3s
+tail_held_high,Tail Held High,speed_skill.png,Normal,Slightly increase velocity after activating many skills mid-race.,Increase target speed (0.15),100,normal,,,buff,3s
+tail_nine,Tail Nine,super_speed_skill.png,Upgraded,Increase velocity after activating many skills mid-race.,Increase target speed (0.35),,upgrade,tail_held_high,180,buff,3s
+slipstream,Slipstream,speed_skill.png,Normal,Slightly decrease wind resistance when following directly behind another runner.,Increase target speed (0.15),160,normal,,,buff,3s
+playtime_s_over,Playtime's Over!,speed_skill.png,Normal,Slightly increase velocity when followed by another runner directly behind for a long time.,Increase target speed (0.15),160,normal,,,buff,3s
+see_ya_later,See Ya Later!,super_speed_skill.png,Upgraded,Increase velocity when followed by another runner directly behind for a long time.,Increase target speed (0.35),,upgrade,playtime_s_over,160,buff,3s
+top_pick,Top Pick,speed_skill.png,Normal,Slightly increase velocity when engaged in a challenge mid-race. (Dirt),Increase target speed (0.15),180,normal,,,buff,2.4s
+trending_in_the_charts,Trending in the Charts!,super_speed_skill.png,Upgraded,Increase velocity when engaged in a challenge mid-race. (Dirt),Increase target speed (0.35),,upgrade,top_pick,180,buff,2.4s
+all_i_ve_got,All I've Got,speed_skill.png,Normal,Slightly increase velocity when well-positioned on a straight in the last spurt. (Medium),Increase target speed (0.15),160,normal,,,buff,2.4s
+come_what_may,Come What May,super_speed_skill.png,Upgraded,Increase velocity when well-positioned on a straight in the last spurt. (Medium),Increase target speed (0.35),,upgrade,all_i_ve_got,160,buff,2.4s
+feature_act,Feature Act,speed_skill.png,Normal,Slightly increase velocity when positioned toward the front upon approaching late-race. (Long),Increase target speed (0.15),160,normal,,,buff,2.4s
+headliner,Headliner,speed_skill.png,Upgraded,Increase velocity when positioned toward the front upon approaching late-race. (Long),Increase target speed (0.35),,upgrade,feature_act,160,buff,2.4s
+early_start,Early Start,speed_skill.png,Normal,Very slightly increase velocity for a medium duration when positioned toward the back mid-race. (End Closer),Increase target speed (0.05),180,normal,,,buff,4s
+daring_strike,Daring Strike,super_speed_skill.png,Upgraded,Moderately increase velocity for a medium duration when positioned toward the back mid-race. (End Closer),Increase target speed (0.25),,upgrade,early_start,180,buff,4s
+risky_business,Risky Business,speed_skill.png,Normal,"Moderately increase velocity in the second half of the race, but also greatly increase fatigue sometimes.",Increase target speed (0.25),120,normal,,,buff,1.8s
+nothing_ventured,Nothing Ventured,super_speed_skill.png,Upgraded,"Greatly increase velocity in the second half of the race, but also greatly increase fatigue sometimes.",Increase target speed (0.45),,upgrade,risky_business,120,buff,1.8s
+light_as_a_feather,Light as a Feather,speed_skill.png,Normal,Slightly increase velocity when positioned toward the front upon approaching late-race. (Sprint),Increase target speed (0.15),160,normal,,,buff,2.4s
+in_high_spirits,In High Spirits,super_speed_skill.png,Upgraded,Increase velocity when positioned toward the front upon approaching late-race. (Sprint),Increase target speed (0.35),,upgrade,light_as_a_feather,160,buff,2.4s
+fighting_spirit,Fighting Spirit,speed_skill.png,Normal,"When engaged in a challenge midpack mid-race, very slightly recover endurance and slightly increase velocity. (Medium)",Increase target speed (0.15),160,normal,,,buff,1.8s
+burning_soul,Burning Soul,super_speed_skill.png,Upgraded,"When engaged in a challenge midpack mid-race, moderately recover endurance and moderately increase velocity. (Medium)",Increase target speed (0.25),,upgrade,fighting_spirit,160,buff,1.8s
+eager,Eager,speed_skill.png,Normal,"When positioned toward the back mid-race, slightly increase velocity. (Medium)",Increase target speed (0.15),160,normal,,,buff,2.4s
+elated,Elated,super_speed_skill.png,Upgraded,"When positioned toward the back mid-race, increase velocity. (Medium)",Increase target speed (0.35),,upgrade,eager,160,buff,2.4s
+pumped,Pumped,speed_skill.png,Normal,"When positioned toward the back on the final corner, slightly increase velocity. (Mile)",Increase target speed (0.15),160,normal,,,buff,1.8s
+full_of_vigor,Full of Vigor,super_speed_skill.png,Upgraded,"When positioned toward the back on the final corner, increase velocity. (Mile)",Increase target speed (0.35),,upgrade,pumped,160,buff,1.8s
+fearless,Fearless,speed_skill.png,Normal,"When positioned in the midpack during the second half of the race, slightly increase velocity and very minimally increase acceleration. (Late Surger)",Increase target speed (0.15),180,normal,,,buff,1.8s
+dauntless,Dauntless,super_speed_skill.png,Upgraded,"When positioned in the midpack during the second half of the race, increase velocity and very slightly increase acceleration. (Late Surger)",Increase target speed (0.35),,upgrade,fearless,180,buff,1.8s
+with_all_my_soul,With All My Soul,speed_skill.png,Normal,"When positioned toward the front mid-race, slightly increase velocity and minimally decrease the velocity of runners behind the user. (Medium)",Increase target speed (0.15) and Decrease Speed (-0.035),160,normal,,,buff,1.8s
+wild_wind,Wild Wind,super_speed_skill.png,Upgraded,"When positioned toward the front mid-race, increase velocity and slightly decrease the velocity of runners behind the user. (Medium)",Increase target speed (0.35) and Decrease Speed (-0.15),,upgrade,with_all_my_soul,160,buff,1.8s
+full_throttle,Full Throttle,speed_skill.png,Normal,Greatly consume endurance mid-race and moderately increase velocity. (Late Surger),Increase target speed (0.25),160,normal,,,buff,2.4s
+keep_going,Keep Going!,super_speed_skill.png,Upgraded,Greatly consume endurance mid-race and greatly increase velocity. (Late Surger),Increase target speed (0.45),,upgrade,full_throttle,160,buff,2.4s
+downhill_speedster,Downhill Speedster,speed_skill.png,Normal,Slightly increase velocity on downhills.,Increase target speed (0.15),170,normal,,,buff,2.4s
+professor_of_curvature,Professor of Curvature,super_speed_skill.png,Upgraded,Increase velocity on a corner with skilled turning.,Increase target speed (0.35),,upgrade,corner_adept,180,buff,2.4s
+beeline_burst,Beeline Burst,super_speed_skill.png,Upgraded,Increase velocity on a straight.,Increase target speed (0.35),,upgrade,straightaway_adept,170,buff,2.4s
+it_s_on,It's On!,super_speed_skill.png,Upgraded,Increase velocity when passing another runner mid-race.,Increase target speed (0.35),,upgrade,ramp_up,170,buff,1.8s
+in_body_and_mind,In Body and Mind,super_speed_skill.png,Upgraded,Increase velocity in the last spurt.,Increase target speed (0.35),,upgrade,homestretch_haste,170,buff,2.4s
+escape_artist,Escape Artist,super_speed_skill.png,Upgraded,Increase ability to go to the front mid-race. (Front Runner),Increase target speed (0.35),,upgrade,fast_paced,180,buff,3s
+speed_star,Speed Star,super_speed_skill.png,Upgraded,Increase ability to break out of the pack on the final corner. (Pace Chaser),Increase target speed (0.35),,upgrade,prepared_to_pass,180,buff,1.8s
+fast_furious,Fast & Furious,super_speed_skill.png,Upgraded,Increase velocity mid-race. (Late Surger),Increase target speed (0.35),,upgrade,position_pilfer,180,buff,2.4s
+rising_dragon,Rising Dragon,super_speed_skill.png,Upgraded,Increase velocity when passing another runner on the outside on the final corner. (Late Surger),Increase target speed (0.35),,upgrade,outer_swell,180,buff,3s
+sturm_und_drang,Sturm und Drang,super_speed_skill.png,Upgraded,Move up in preparation to close the gap when positioned toward the back late-race. (End Closer),Increase target speed (0.35),,upgrade,masterful_gambit,180,buff,3s
+blinding_flash,Blinding Flash,super_speed_skill.png,Upgraded,Increase spurting ability when positioned toward the back late-race. (Sprint),Increase target speed (0.35),,upgrade,gap_closer,160,buff,3s
+mile_maven,Mile Maven,super_speed_skill.png,Upgraded,Widen the margin when positioned toward the front early-race. (Mile),Increase target speed (0.35),,upgrade,productive_plan,160,buff,3s
+killer_tunes,Killer Tunes,super_speed_skill.png,Upgraded,Increase positioning ability when positioned toward the front mid-race. (Medium),Increase target speed (0.35),,upgrade,up_tempo,160,buff,2.4s
+unyielding,Unyielding,super_speed_skill.png,Upgraded,Increase ability to fight back when passed by another runner on the final corner. (Medium),Increase target speed (0.35),,upgrade,steadfast,160,buff,3s
+innate_experience,Innate Experience,super_speed_skill.png,Upgraded,Increase velocity when near the inner rail on the final corner. (Long),Increase target speed (0.35),,upgrade,inside_scoop,160,buff,3s
+staggering_lead,Staggering Lead,super_speed_skill.png,Upgraded,Increase ability to maintain the lead when leading by a large margin mid-race. (Sprint),Increase target speed (0.35),,upgrade,huge_lead,170,buff,3s
+changing_gears,Changing Gears,super_speed_skill.png,Upgraded,Increase passing ability when positioned toward the front mid-race. (Mile),Increase target speed (0.35),,upgrade,shifting_gears,160,buff,2.4s
+big_sisterly,Big-Sisterly,super_speed_skill.png,Upgraded,Increase passing ability. (Mile),Increase target speed (0.35),,upgrade,unyielding_spirit,120,buff,2.4s
+vanguard_spirit,Vanguard Spirit,super_speed_skill.png,Upgraded,Increase ability to maintain the lead when leading by a fair margin mid-race. (Long),Increase target speed (0.35),,upgrade,keeping_the_lead,160,buff,3s
+overwhelming_pressure,Overwhelming Pressure,super_speed_skill.png,Upgraded,Increase velocity when passing another runner late-race. (Long),Increase target speed (0.35),,upgrade,pressure,160,buff,3s
+dream_run,Dream Run,super_speed_skill.png,Special (Event only),Increase velocity on the final straight due to a strong desire to cross the finish line carrying everyone's hopes and dreams.,Increase target speed (0.35),,normal,,,buff,5s
+flash_forward,Flash Forward,super_speed_skill.png,Upgraded,Increase velocity on a straight. (Medium),Increase target speed (0.35),,upgrade,medium_straightaways,150,buff,3s
+blast_forward,Blast Forward,super_speed_skill.png,Upgraded,Increase velocity on a straight. (Long),Increase target speed (0.35),,upgrade,long_straightaways,150,buff,3s
+refraction_arc,Refraction Arc,super_speed_skill.png,Upgraded,Increase velocity on corners. (Medium),Increase target speed (0.35),,upgrade,medium_corners,150,buff,3s
+certain_victory,Certain Victory,speed_unique_skill.png,Unique,Greatly increase velocity with an indomitable fighting spirit on the final straight after being on the heels of another runner toward the front on the final corner or later.,Increase target speed (0.45),,normal,,,unique,5s
+legacy_of_the_strong,Legacy of the Strong,unique_skill.png,Unique,Increase velocity continuously when pressured by another runner and running out of energy toward the front on the final corner or later.,Increase target speed (0.35),,normal,,,unique,6s
+warning_shot,Warning Shot!,unique_skill.png,Unique,Slightly increase velocity with a long spurt starting halfway through the race.,Increase target speed (0.15),,normal,,,unique,6s
+xceleration,Xceleration,unique_skill.png,Unique,Become stronger at challenging rivals and moderately increase velocity when positioned toward the front with 200m or less remaining.,Increase target speed (0.25),,normal,,,unique,5s
+red_ace,Red Ace,unique_skill.png,Unique,Slightly swell with the determination to be number one when positioned toward the front in the second half of the race.,Increase target speed (0.15),,normal,,,unique,5s
+focused_mind,Focused Mind,unique_skill.png,Unique,Moderately increase velocity with a strong turn of foot when passing another runner toward the back on the final straight.,Increase target speed (0.25),,normal,,,unique,5s
+corazon_ardiente,Corazón ☆ Ardiente,unique_skill.png,Unique,Slightly hang on to the advantage when positioned toward the front with energy to spare on the final straight.,Increase target speed (0.15),,normal,,,unique,5s
+empress_s_pride,Empress's Pride,unique_skill.png,Unique,Moderately increase velocity with the stride of an empress when passing another runner from midpack or further back on the final corner.,Increase target speed (0.25),,normal,,,unique,5s
+1st_place_kiss,1st Place Kiss☆,unique_skill.png,Unique,Slightly increase ability to break out of the pack on the straight after engaging in a challenge toward the front on the final corner or later.,Increase target speed (0.15),,normal,,,unique,5s
+v_is_for_victory,V Is for Victory!,unique_skill.png,Unique,Moderately increase velocity with winning ambition when positioned toward the front on the final straight after engaging in a challenge on the final corner or later.,Increase target speed (0.25),,normal,,,unique,5s
+class_rep_speed_bakushin,Class Rep + Speed = Bakushin,unique_skill.png,Unique,Moderately increase velocity with BAKUSHIN power when engaged in a challenge toward the front in the second half of the race.,Increase target speed (0.25),,normal,,,unique,5s
+luck_be_with_me,Luck Be with Me!,unique_skill.png,Unique,Moderately clear a path forward with the power of divination when the way ahead is jammed late-race.,Increase target speed (0.25),,normal,,,unique,5s
+i_can_win_sometimes_right,"I Can Win Sometimes, Right?",unique_skill.png,Unique,Moderately increase velocity with an arousal of fighting spirit when positioned 3rd and about to lose late-race.,Increase target speed (0.25),,normal,,,unique,5s
+call_me_king,Call Me King,unique_skill.png,Unique,Increase velocity in a true display of skill with 200m remaining after racing calmly.,Increase target speed (0.35),,normal,,,unique,5s
+shooting_star,Shooting Star,unique_skill.png,Unique,Ride the momentum to increase velocity and very slightly increase acceleration after passing another runner toward the front late-race.,Increase target speed (0.35),,normal,,,unique,5s
+the_view_from_the_lead_is_mine,The View from the Lead Is Mine!,unique_skill.png,Unique,Increase velocity by drawing on all remaining strength when in the lead by a fair margin in the second half of the race.,Increase target speed (0.35),,normal,,,unique,5s
+sky_high_teio_step,Sky-High Teio Step,unique_skill.png,Unique,Greatly increase velocity with flashy footwork when closing the gap to runners ahead on the final straight.,Increase target speed (0.45),,normal,,,unique,5s
+triumphant_pulse,Triumphant Pulse,unique_skill.png,Unique,Greatly increase ability to break out of the pack by opening up a path when positioned toward the front with 200m remaining.,Increase target speed (0.45),,normal,,,unique,5s
+anchors_aweigh,Anchors Aweigh!,unique_skill.png,Unique,Moderately increase velocity steadily with a long spurt starting halfway through the race.,Increase target speed (0.25),,normal,,,unique,6s
+cut_and_drive,Cut and Drive!,unique_skill.png,Unique,Become stronger at challenging rivals and increase velocity when positioned toward the front with 200m or less remaining.,Increase target speed (0.35),,normal,,,unique,5s
+resplendent_red_ace,Resplendent Red Ace,unique_skill.png,Unique,Swell with the determination to be number one when positioned toward the front in the second half of the race.,Increase target speed (0.25),,normal,,,unique,5s
+where_there_s_a_will_there_s_a_way,"Where There's a Will, There's a Way",unique_skill.png,Unique,Increase velocity with a strong turn of foot when passing another runner toward the back on the final straight.,Increase target speed (0.35),,normal,,,unique,5s
+the_duty_of_dignity_calls,The Duty of Dignity Calls,unique_skill.png,Unique,Increase velocity with the determination to not be overtaken when positioned toward the front on the final corner.,Increase target speed (0.35),,normal,,,unique,5s
+victoria_por_plancha,Victoria por plancha ☆,unique_skill.png,Unique,Hang onto the advantage when positioned toward the front with energy to spare on the final straight.,Increase target speed (0.25),,normal,,,unique,5s
+this_dance_is_for_vittoria,This Dance Is for Vittoria!,unique_skill.png,Unique,Increase velocity with royal brilliance when positioned toward the front and close to the runner ahead or behind on the final corner or later.,Increase target speed (0.35),,normal,,,unique,5s
+behold_thine_emperor_s_divine_might,Behold Thine Emperor's Divine Might,unique_skill.png,Unique,Greatly increase velocity on the final straight after passing another runner 3 times late-race.,Increase target speed (0.45),,normal,,,unique,5s
+blazing_pride,Blazing Pride,unique_skill.png,Unique,Increase velocity with the stride of an empress when passing another runner from midpack or further back on the final corner.,Increase target speed (0.35),,normal,,,unique,5s
+win_q_e_d,∴win Q.E.D.,unique_skill.png,Unique,Increase velocity by deriving the winning equation when passing another runner toward the front on the final corner or later.,Increase target speed (0.35),,normal,,,unique,5s
+flashylanding,Flashy☆Landing,unique_skill.png,Unique,Increase ability to break out of the pack on the straight after engaging in a challenge toward the front on the final corner or later.,Increase target speed (0.25),,normal,,,unique,5s
+g00_1st_f,G00 1st. F∞;,unique_skill.png,Unique,Increase velocity when positioned toward the front after making it to the final straight without faltering.,Increase target speed (0.35),,normal,,,unique,5s
+blue_rose_closer,Blue Rose Closer,unique_skill.png,Unique,Increase velocity with strong willpower on the final straight after passing another runner in the front part of the pack on the final corner or later.,Increase target speed (0.35),,normal,,,unique,5s
+our_ticket_to_win,Our Ticket to Win!,unique_skill.png,Unique,Increase velocity with winning ambition when positioned toward the front on the final straight after engaging in a challenge on the final corner or later.,Increase target speed (0.35),,normal,,,unique,5s
+genius_x_bakushin_victory,Genius x Bakushin = Victory,unique_skill.png,Unique,Increase velocity with BAKUSHIN power when engaged in a challenge toward the front in the second half of the race.,Increase target speed (0.35),,normal,,,unique,5s
+i_see_victory_in_my_future,I See Victory in My Future!,unique_skill.png,Unique,Clear a path forward with the power of divination when the way ahead is jammed late-race.,Increase target speed (0.35),,normal,,,unique,5s
+just_a_little_farther,Just a Little Farther!,unique_skill.png,Unique,Increase velocity with flaring fighting spirit when positioned 3rd and about to lose late-race.,Increase target speed (0.35),,normal,,,unique,5s
+prideful_king,Prideful King,unique_skill.png,Unique,Greatly increase velocity in a true display of skill with 200m remaining after racing calmly.,Increase target speed (0.45),,normal,,,unique,5s
+lookatcurren,#LookatCurren,unique_skill.png,Unique,Gain momentum and begin to advance when passing another runner while well-positioned around halfway through the race.,Increase target speed (0.25),,normal,,,unique,5s
+nemesis,Nemesis,unique_skill.png,Unique,Increase velocity with smoldering ambition when moving up from midpack on the final corner or later.,Increase target speed (0.35),,normal,,,unique,5s
+sparklystardom,SPARKLY☆STARDOM,unique_skill.png,Unique,Become empowered to keep the spotlight when positioned toward the front and close to the runner behind on a straight mid-race.,Increase target speed (0.25),,normal,,,unique,5s
+shadow_break,Shadow Break,unique_skill.png,Unique,"Increase velocity with beastly strength when passing another runner on the outside on the final corner or later. If the skill user engaged in a challenge mid-race, greatly increase velocity instead.",Increase target speed (0.45),,normal,,,unique,5s
+eternal_moments,Eternal Moments,unique_skill.png,Unique,Increase velocity when starting to make a move from a position toward the front mid-race.,Increase target speed (0.35),,normal,,,unique,5s
+flowerymaneuver,Flowery☆Maneuver,unique_skill.png,Unique,"Increase velocity when passing another runner toward the front on the final corner. If passing toward the back, increase acceleration instead.",Increase target speed (0.35),,normal,,,unique,5s
+you_and_me_one_on_one,You and Me! One-on-One!,unique_skill.png,Unique,Increase velocity on the final straight after passing another runner on the outside toward the back on the final corner or later.,Increase target speed (0.35),,normal,,,unique,5s
+lights_of_vaudeville,Lights of Vaudeville,unique_skill.png,Unique,Greatly increase velocity with a dazzling display when just breaking out of the pack toward the front on the final straight.,Increase target speed (0.45),,normal,,,unique,5s
+keep_it_real,KEEP IT REAL.,unique_skill.png,Unique,Moderately increase acceleration steadily with a wink when starting to make a move from midpack in the second half of the race.,Increase acceleration (0.3),,normal,,,unique,6s
+a_kiss_for_courage,A Kiss for Courage,unique_skill.png,Unique,Increase velocity enthusiastically when positioned toward the front in the second half of the race after recovering endurance with a skill.,Increase target speed (0.35),,normal,,,unique,5s
+i_never_goof_up,I Never Goof Up!,unique_skill.png,Unique,Aim for the front with unwavering determination when passing another runner from midpack or further back on a corner late-race.,Increase target speed (0.25),,normal,,,unique,5s
+schwarzes_schwert,Schwarzes Schwert,unique_skill.png,Unique,Increase velocity in a dash for the lead after running calmly and according to plan up until the final straight.,Increase target speed (0.35),,normal,,,unique,5s
+bountiful_harvest,Bountiful Harvest,unique_skill.png,Unique,Increase velocity with a surge of great fortune when pressured by another runner toward the back in the second half of the race.,Increase target speed (0.35),,normal,,,unique,5s
+yummyspeed,YUMMY☆SPEED!,unique_skill.png,Unique,Kick forward hard with renewed vigor when starting to get tired while well-positioned halfway through the race.,Increase target speed (0.25),,normal,,,unique,5s
+omg_the_final_sprint,OMG! (ﾟ∀ﾟ) The Final Sprint! ☆,unique_skill.png,Unique,Increase velocity and navigation with the pure euphoria of being within breathing distance of precious waifus after passing another runner 2 times late-race.,Increase target speed (0.35),,normal,,,unique,5s
+give_mummy_a_hug,Give Mummy a Hug ♡,unique_skill.png,Unique,Increase ability to break out of the pack when well-positioned and close to the runner ahead on the final straight.,Increase target speed (0.25),,normal,,,unique,5s
+a_princess_must_seize_victory,A Princess Must Seize Victory!,unique_skill.png,Unique,Increase velocity with pretty princess power when engaged in a challenge on the final straight.,Increase target speed (0.35),,normal,,,unique,5s
+chasing_after_you,Chasing After You,unique_skill.png,Unique,"Chase after an unseen friend when in midpack in the second half of the race, moderately increasing velocity steadily and very slightly intimidating runners ahead.",Increase target speed (0.25),,normal,,,unique,6s
+arrows_whistle_shadows_disperse,"Arrows Whistle, Shadows Disperse",unique_skill.png,Unique,Increase velocity with a blazing spirit when pressured by another runner in the front part of the pack on the final corner or later.,Increase target speed (0.35),,normal,,,unique,5s
+dancing_in_the_leaves,Dancing in the Leaves,unique_skill.png,Unique,Increase ability to break out of the pack when engaged in a challenge in midpack on the final corner.,Increase target speed (0.25),,normal,,,unique,5s
+pop_polish,Pop & Polish,unique_skill.png,Unique,Get hyped and increase velocity when pressured by or passing another runner while well-positioned on the final straight.,Increase target speed (0.35),,normal,,,unique,5s
+festive_miracle,Festive Miracle,unique_skill.png,Unique,Control breathing and kick forward hard toward victory in the second half of the race after recovering endurance with skills at least 3 times.,Increase target speed (0.25),,normal,,,unique,5s
+presents_from_x,Presents from X,unique_skill.png,Unique,Increase velocity by deriving a path to victory mid-race after staying well-positioned from the start of the race up until the second half.,Increase target speed (0.35),,normal,,,unique,5s
+fairy_tale,Fairy Tale,unique_skill.png,Unique,Increase velocity with the excitement of running when engaged in a challenge while well-positioned in the second half of the race.,Increase target speed (0.35),,normal,,,unique,5s
+white_lightning_comin_through,White Lightning Comin' Through!,unique_skill.png,Unique,Bolt down the track like lightning when well-positioned or aiming for the front from midpack on a straight in the second half of the race.,Increase target speed (0.35),,normal,,,unique,5s
+barcarole_of_blessings,Barcarole of Blessings,unique_skill.png,Unique,"Increase velocity for a moderate duration when in the front part of the pack with 400m remaining. If at least 7 skills have been activated, greatly increase velocity for a moderate duration instead.",Increase target speed (0.45),,normal,,,unique,4s
+114th_time_s_the_charm,114th Time's the Charm,unique_skill.png,Unique,"Give max effort when far from the lead on the final corner, moderately increasing velocity steadily for a duration proportional to distance from the lead.",Increase target speed (0.25),,normal,,,unique,
+ambition_to_surpass_the_sakura,Ambition to Surpass the Sakura,unique_skill.png,Unique,Increase velocity with blossoming ambition when well-positioned and close to the runner ahead with 300m or less remaining.,Increase target speed (0.35),,normal,,,unique,5s
+a_lifelong_dream_a_moment_s_flight,"A Lifelong Dream, A Moment's Flight",unique_skill.png,Unique,"Seize the moment when close to the runner behind on the final straight, slightly consuming endurance to greatly increase velocity for a moderate duration.",Increase target speed (0.45),,normal,,,unique,4s
+operation_cacao,Operation Cacao,unique_skill.png,Unique,Take a slight breather and increase velocity when in the front part of the pack and detecting another runner coming from behind on a corner mid-race.,Increase target speed (0.35),,normal,,,unique,5s
+guten_appetit,Guten Appetit ♪,unique_skill.png,Unique,Increase velocity continuously with a patissiere's pride on the final straight after passing another runner 3 times on the final corner or later.,Increase target speed (0.35),,normal,,,unique,6s
+shooting_star_of_dioskouroi,Shooting Star of Dioskouroi,unique_skill.png,Unique,"Increase velocity with guidance from the stars when far from the lead on the final straight. If positioned around the very back, greatly increase velocity instead.",Increase target speed (0.35),,normal,,,unique,5s
+victory_cheer,Victory Cheer!,unique_skill.png,Unique,"Moderately increase velocity when positioned toward the front on the third corner in the second half of the race. Or, kick forward hard when toward the front on the backstretch late-race.",Increase target speed (0.25),,normal,,,unique,5s
+eternal_encompassing_shine,Eternal Encompassing Shine,unique_skill.png,Unique,"If well-positioned at the start of the final straight, her strong willpower to win increases velocity. If positioned near the front, greatly increase velocity instead.",Increase target speed (0.45),,normal,,,unique,5s
+lovely_spring_breeze,Lovely Spring Breeze,unique_skill.png,Unique,"From the midpack in the second half of the race, slightly increase velocity steadily for a duration based on remaining endurance.",Increase target speed (0.15),,normal,,,unique,
+ravissant,Ravissant,unique_skill.png,Unique,"When passing another racer at the front part of the pack on the final corner or later, perform a dazzling display that greatly increases velocity for a moderate duration.",Increase target speed (0.45),,normal,,,unique,4s
+break_it_down,Break It Down!,unique_skill.png,Unique,"If positioned toward the front on a straight late-race, increase velocity with high spirits. If the straight is on the backstretch, also increase acceleration very slightly.",Increase target speed (0.35),,normal,,,unique,5s
+peerless_dance_of_flowering_flames,Peerless Dance of Flowering Flames,unique_skill.png,Unique,"If the user passes another runner on the final corner or later, increase velocity with fiery fighting spirit when in the front part of the pack with 300m or less remaining.",Increase target speed (0.35),,normal,,,unique,5s
+gogogoal,Go☆Go☆Goal!,unique_skill.png,Unique,"If the user passes another runner on the final corner or later, increase velocity from the midpack onward on the final straight. If the user isn't one of the top favorites, muster resolve to keep steadily increasing velocity.",Increase target speed (0.35),,normal,,,unique,6s
+all_charged_it_s_go_time,All Charged! It's Go Time!,unique_skill.png,Unique,"Moderately increase velocity when positioned toward the front with about 300m remaining. If coming out of an uphill, greatly increase velocity instead.",Increase target speed (0.45),,normal,,,unique,5s
+best_day_ever,Best Day Ever,unique_skill.png,Unique,"If well-positioned late-race on the final corner or later, increase velocity. If there's a large distance left to the finish, also increase acceleration very slightly with perfect form.",Increase target speed (0.35),,normal,,,unique,5s
+one_true_color,One True Color,unique_skill.png,Unique,"If positioned toward the front with 350m or less remaining and there is another Umamusume close behind, the determination to stay ahead makes it easier to break out of the pack.",Increase target speed (0.25),,normal,,,unique,5s
+now_we_re_cruisin,Now We're Cruisin'!,unique_skill.png,Unique,"When competing for the lead if positioned in the midpack or further for the first half of the race, show off some Edo spirit and greatly increase velocity.",Increase target speed (0.45),,normal,,,unique,5s
+victory_belongs_to_mestrelitzia,Victory Belongs to Me—Strelitzia! ☆,unique_skill.png,Unique,"If positioned toward the back and racing calmly until the start of the final corner, when there are 300m remaining, cast a magic spell to increase velocity continuously.",Increase target speed (0.35),,normal,,,unique,6s
+joyful_voyage,Joyful Voyage!,unique_skill.png,Unique,"If positioned toward the front with 200m remaining, increase velocity. Then, if also positioned near the leading Umamusume, gather strength to move slightly forward.",Increase target speed (0.35),,normal,,,unique,5s
+wherever_this_wonder_leads,Wherever This Wonder Leads,unique_skill.png,Unique,"If positioned midpack on a downhill just before late-race and there's a large distance left to the finish, enjoy the race to the fullest, increasing velocity.",Increase target speed (0.35),,normal,,,unique,5s
+trigger_beat,trigger:BEAT,unique_skill.png,Unique,"When near the inner rail midpack on the final corner or later, calculate the path to victory, increasing velocity and ability to navigate smoothly on the final straight.",Increase target speed (0.35),,normal,,,unique,5s
+dreams_donned_with_pride,Dreams Donned with Pride!,unique_skill.png,Unique,"If the user activates another skill on the final corner late-race, take the crowd's cheers to heart and moderately increase velocity. If racing at Nakayama Racecourse, greatly increase velocity instead.",Increase target speed (0.45),,normal,,,unique,5s
+defeatist,Defeatist,negative_accel.png,Negative,Moderately increase urge to give up when positioned around the very back on the final straight.,Decrease current speed (-0.2),100,normal,,,negative,3s
+reckless,Reckless,negative_accel.png,Negative,Moderately increase carelessness when in the lead with around 200m remaining.,Decrease current speed (-0.2),100,normal,,,negative,3s
+blatant_fear,Blatant Fear,super_negative_accel.png,Upgraded,Greatly decrease velocity on a corner in the second half of the race due to Trainer's obvious anxiety.,Decrease current speed (-0.3),,normal,,,negative,5s
+corner_acceleration,Corner Acceleration ○,acceleration_skill.png,Normal,Slightly increase acceleration on a corner with masterful turning.,Increase acceleration (0.2),180,normal,,,buff,3s
+corner_connoisseur,Corner Connoisseur,super_acceleration_skill.png,Upgraded,Increase acceleration on a corner with masterful turning.,Increase acceleration (0.4),,upgrade,corner_acceleration,180,buff,3s
+straightaway_acceleration,Straightaway Acceleration,acceleration_skill.png,Normal,Slightly increase acceleration on a straight.,Increase acceleration (0.2),170,normal,,,buff,3s
+rushing_gale,Rushing Gale!,super_acceleration_skill.png,Upgraded,Increase acceleration on a straight.,Increase acceleration (0.4),,upgrade,straightaway_acceleration,170,buff,3s
+nimble_navigator,Nimble Navigator,acceleration_skill.png,Normal,Slightly increase maneuverability when the way ahead is blocked in the last spurt.,Increase acceleration (0.2),150,normal,,,buff,3s
+no_stopping_me,No Stopping Me!,super_acceleration_skill.png,Upgraded,Increase maneuverability when the way ahead is blocked in the last spurt.,Increase acceleration (0.4),,upgrade,nimble_navigator,150,buff,3s
+early_lead,Early Lead,acceleration_skill.png,Normal,Slightly increase ability to go to the front early-race. (Front Runner),Increase acceleration (0.2),120,normal,,,buff,1.2s
+taking_the_lead,Taking the Lead,super_acceleration_skill.png,Upgraded,Increase ability to go to the front early-race. (Front Runner),Increase acceleration (0.4),,upgrade,early_lead,120,buff,1.2s
+final_push,Final Push,acceleration_skill.png,Normal,Slightly increase ability to keep the lead on the final corner. (Front Runner),Increase acceleration (0.2),180,normal,,,buff,3s
+unrestrained,Unrestrained,super_acceleration_skill.png,Upgraded,Increase ability to keep the lead on the final corner. (Front Runner),Increase acceleration (0.4),,upgrade,final_push,180,buff,3s
+slick_surge,Slick Surge,acceleration_skill.png,Normal,Slightly increase acceleration late-race. (Late Surger),Increase acceleration (0.2),180,normal,,,buff,1.8s
+on_your_left,On Your Left!,super_acceleration_skill.png,Upgraded,Increase acceleration late-race. (Late Surger),Increase acceleration (0.4),,upgrade,slick_surge,180,buff,1.8s
+straightaway_spurt,Straightaway Spurt,acceleration_skill.png,Normal,Slightly increase acceleration on a straight in the last spurt. (End Closer),Increase acceleration (0.2),180,normal,,,buff,0.9s
+encroaching_shadow,Encroaching Shadow,super_acceleration_skill.png,Upgraded,Increase acceleration on a straight in the last spurt. (End Closer),Increase acceleration (0.4),,upgrade,straightaway_spurt,180,buff,0.9s
+sprinting_gear,Sprinting Gear,acceleration_skill.png,Normal,Slightly increase acceleration on a straight. (Sprint),Increase acceleration (0.2),160,normal,,,buff,3s
+turbo_sprint,Turbo Sprint,super_acceleration_skill.png,Upgraded,Increase acceleration on a straight. (Sprint),Increase acceleration (0.4),,upgrade,sprinting_gear,160,buff,3s
+updrafters,Updrafters,acceleration_skill.png,Normal,Slightly increase passing ability when positioned toward the back late-race. (Mile),Increase acceleration (0.2),160,normal,,,buff,3s
+furious_feat,Furious Feat,super_acceleration_skill.png,Upgraded,Increase passing ability when positioned toward the back late-race. (Mile),Increase acceleration (0.4),,upgrade,updrafters,160,buff,3s
+countermeasure,Countermeasure,acceleration_skill.png,Normal,Slightly increase passing ability when positioned toward the front upon approaching late-race. (Sprint),Increase acceleration (0.2),160,normal,,,buff,3s
+plan_x,Plan X,super_acceleration_skill.png,Upgraded,Increase passing ability when positioned toward the front upon approaching late-race. (Sprint),Increase acceleration (0.4),,upgrade,countermeasure,160,buff,3s
+acceleration,Acceleration,acceleration_skill.png,Normal,Slightly increase acceleration when passing another runner mid-race. (Mile),Increase acceleration (0.2),,normal,,,buff,3s
+step_on_the_gas,Step on the Gas!,super_acceleration_skill.png,Upgraded,Increase acceleration when passing another runner mid-race. (Mile),Increase acceleration (0.4),,upgrade,acceleration,160,buff,3s
+second_wind,Second Wind,acceleration_skill.png,Normal,Slightly increase acceleration when not in the lead mid-race. (Front Runner),Increase acceleration (0.2),180,normal,,,buff,3s
+reignition,Reignition,super_acceleration_skill.png,Upgraded,Increase acceleration when not in the lead mid-race. (Front Runner),Increase acceleration (0.4),,upgrade,second_wind,180,buff,3s
+shrewd_step,Shrewd Step,acceleration_skill.png,Normal,Slightly increase ability to navigate smoothly. (Pace Chaser),Increase acceleration (0.2),120,normal,,,buff,3s
+technician,Technician,super_acceleration_skill.png,Upgraded,Moderately increase ability to navigate smoothly. (Pace Chaser),Increase acceleration (0.3),,upgrade,shrewd_step,120,buff,3s
+straight_descent,Straight Descent,acceleration_skill.png,Normal,Slightly improve running on a downhill. (Pace Chaser),Increase acceleration (0.2),120,normal,,,buff,3s
+determined_descent,Determined Descent,super_acceleration_skill.png,Upgraded,Moderately improve running on a downhill. (Pace Chaser),Increase acceleration (0.3),,upgrade,straight_descent,120,buff,3s
+tactical_tweak,Tactical Tweak,acceleration_skill.png,Normal,Slightly increase acceleration when positioned toward the back mid-race. (Pace Chaser),Increase acceleration (0.2),120,normal,,,buff,3s
+shatterproof,Shatterproof,super_acceleration_skill.png,Upgraded,Moderately increase acceleration when positioned toward the back mid-race. (Pace Chaser),Increase acceleration (0.3),,upgrade,tactical_tweak,120,buff,3s
+fighter,Fighter,acceleration_skill.png,Normal,Slightly increase acceleration for a medium duration when trying to pass another runner. (Late Surger),Increase acceleration (0.2),120,normal,,,buff,4s
+hard_worker,Hard Worker,super_acceleration_skill.png,Upgraded,Moderately increase acceleration for a medium duration when trying to pass another runner. (Late Surger),Increase acceleration (0.3),,upgrade,fighter,120,buff,4s
+highlander,Highlander,acceleration_skill.png,Normal,Slightly improve running on an uphill.,Increase acceleration (0.2),160,normal,,,buff,3s
+groundwork,Groundwork,acceleration_skill.png,Normal,Slightly increase acceleration after activating many skills early-race.,Increase acceleration (0.2),100,normal,,,buff,3s
+head_on,Head-On,acceleration_skill.png,Normal,Slightly increase acceleration when positioned toward the front late-race. (Pace Chaser),Increase acceleration (0.2),180,normal,,,buff,1.8s
+neck_and_neck,Neck and Neck,super_acceleration_skill.png,Upgraded,Increase acceleration when positioned toward the front late-race. (Pace Chaser),Increase acceleration (0.4),,upgrade,head_on,180,buff,1.8s
+take_the_chance,Take the Chance,acceleration_skill.png,Normal,"If positioned toward the back late-race, slightly increase acceleration. (Medium)",Increase acceleration (0.2),160,normal,,,buff,1.2s
+from_the_brink,From the Brink,super_acceleration_skill.png,Upgraded,"If positioned toward the back late-race, increase acceleration. (Medium)",Increase acceleration (0.4),,upgrade,take_the_chance,160,buff,1.2s
+feel_the_burn,Feel the Burn!,unique_skill.png,Unique,Moderately increase acceleration in an attempt to move up on a corner late-race.,Increase acceleration (0.3),,normal,,,unique,4s
+red_shift_lp1211_m,Red Shift/LP1211-M,unique_skill.png,Unique,Increase acceleration by shifting gears when positioned toward the front on the final corner or later.,Increase acceleration (0.4),,normal,,,unique,4s
+shooting_for_victory,Shooting for Victory!,unique_skill.png,Unique,"Increase acceleration with a pow, a wow, and a bang when well-positioned upon approaching the final straight.",Increase acceleration (0.4),,normal,,,unique,4s
+let_s_pump_some_iron,Let's Pump Some Iron!,unique_skill.png,Unique,Increase acceleration in an attempt to move up on a corner late-race.,Increase acceleration (0.4),,normal,,,unique,4s
+angling_and_scheming,Angling and Scheming,unique_skill.png,Unique,Increase acceleration at an opportune moment when in the lead on a corner late-race.,Increase acceleration (0.4),,normal,,,unique,4s
+condor_s_fury,Condor's Fury,unique_skill.png,Unique,Increase acceleration with blazing passion when aiming for the front from midpack on the final corner.,Increase acceleration (0.4),,normal,,,unique,4s
+moving_past_and_beyond,"Moving Past, and Beyond",unique_skill.png,Unique,"Having run the race calmly, increase acceleration with hardened determination when making a move mid-race, or on a crucial corner late-race whilst in midpack.",Increase acceleration (0.4),,normal,,,unique,4s
+budding_blossom,Budding Blossom,unique_skill.png,Unique,"If the user engaged in a challenge on a mid-race corner, increase acceleration when well-positioned late-race at least halfway through the final corner.",Increase acceleration (0.4),,normal,,,unique,4s
+louder_tracen_cheer,Louder! Tracen Cheer!,unique_skill.png,Unique,"If the user stays toward the very back during the first half of the race without being rushed, unleash fighting spirit to increase acceleration on the final straight.",Increase acceleration (0.4),,normal,,,unique,4s
+prudent_positioning,Prudent Positioning,navigation_skill.png,Normal,Increase navigation early-race.,Increase Lane Movement Speed (0.035),120,normal,,,buff,3s
+center_stage,Center Stage,super_navigation_skill.png,Upgraded,Greatly increase navigation early-race.,Increase Lane Movement Speed (0.045),,upgrade,prudent_positioning,120,buff,3s
+go_with_the_flow,Go with the Flow,navigation_skill.png,Normal,Moderately increase navigation late-race.,Increase Lane Movement Speed (0.025),120,normal,,,buff,3s
+lane_legerdemain,Lane Legerdemain,super_navigation_skill.png,Upgraded,Increase navigation late-race.,Increase Lane Movement Speed (0.035),,upgrade,go_with_the_flow,120,buff,3s
+meticulous_measures,Meticulous Measures,navigation_skill.png,Normal,Moderately prepare to make for the finish line for a medium duration mid-race. (Sprint),Increase Lane Movement Speed (0.025),140,normal,,,buff,4s
+thunderbolt_step,Thunderbolt Step,navigation_skill.png,Normal,Moderately avoid becoming surrounded for a medium duration when positioned toward the back mid-race. (Medium),Increase Lane Movement Speed (0.025),140,normal,,,buff,4s
+dodging_danger,Dodging Danger,navigation_skill.png,Normal,Moderately avoid becoming surrounded early-race. (Front Runner),Increase Lane Movement Speed (0.025),110,normal,,,buff,3s
+forward_march,"Forward, March!",navigation_skill.png,Normal,Moderately prepare to aim for the front late-race. (Dirt),Increase Lane Movement Speed (0.025),140,normal,,,buff,3s
+perfect_prep,Perfect Prep!,super_navigation_skill.png,Upgraded,Prepare to make for the finish line for a medium duration mid-race. (Sprint),Increase Lane Movement Speed (0.035),upgrade,meticulous_measures,140,buff,4s
+lightning_step,Lightning Step,super_navigation_skill.png,Upgraded,Avoid becoming surrounded for a medium duration when positioned toward the back mid-race. (Medium),Increase Lane Movement Speed (0.035),upgrade,thunderbolt_step,140,buff,4s
+sixth_sense,Sixth Sense,super_navigation_skill.png,Upgraded,Avoid becoming surrounded early-race. (Front Runner),Increase Lane Movement Speed (0.035),,upgrade,dodging_danger,110,buff,3s
+lead_the_charge,Lead the Charge!,super_navigation_skill.png,Upgraded,Prepare to aim for the front late-race. (Dirt),Increase Lane Movement Speed (0.035),upgrade,forward_march,140,buff,3s
+focus,Focus,start_skill.png,Normal,Slightly decrease time lost to slow starts.,Improve Start Reaction Time (0.9),140,normal,,,buff,
+concentration,Concentration,super_start_skill.png,Upgraded,Decrease time lost to slow starts.,Improve Start Reaction Time (0.4),,upgrade,focus,140,buff,
+gatekept,Gatekept,negative_start.png,Normal,Moderately increase time lost to slow starts.,Worsen Start Reaction Time (1.5),70,normal,,,negative,
+feelin_a_bit_silly,Feelin' a Bit Silly,negative_start.png,Normal,Greatly decrease the racer's proficiency in starting races. Effects include slow starts and reduced starting acceleration. Removed at the end of the Career playthrough.,Decrease acceleration (-18),,normal,,,negative,2s
+you_re_not_the_boss_of_me,You're Not the Boss of Me!,negative_start.png,Normal,Increase time lost to slow starts and moderately decrease Wit.,Decrease performance,0,normal,,,negative,
+hawkeye,Hawkeye,vision_skill.png,Normal,Moderately widen field of view with heightened observation early-race. (Medium),Increase Field of View (10),110,normal,,,buff,3s
+studious,Studious,vision_skill.png,Normal,Slightly widen field of view with heightened observation mid-race. (Late Surger),Increase Field of View (5),120,normal,,,buff,3s
+i_can_see_right_through_you,I Can See Right Through You,vision_skill.png,Normal,Slightly widen field of view with situational awareness when moving sideways. (End Closer),Increase Field of View (5),110,normal,,,buff,3s
+strategist,Strategist,vision_skill.png,Normal,Slightly widen field of view when positioned toward the back late-race. (End Closer),Increase Field of View (5),110,normal,,,buff,3s
+clairvoyance,Clairvoyance,super_vision_skill.png,Upgraded,Widen field of view with heightened observation early-race. (Medium),Increase Field of View (15),,upgrade,hawkeye,110,buff,3s
+the_bigger_picture,The Bigger Picture,super_vision_skill.png,Upgraded,Widen field of view with heightened observation mid-race. (Late Surger),Increase Field of View (15),,upgrade,studious,120,buff,3s
+the_coast_is_clear,The Coast Is Clear!,super_vision_skill.png,Upgraded,Moderately widen field of view with situational awareness when moving sideways. (End Closer),Increase Field of View (10),,upgrade,i_can_see_right_through_you,110,buff,3s
+crusader,Crusader,super_vision_skill.png,Upgraded,Widen field of view when positioned toward the back late-race. (End Closer),Increase Field of View (15),,upgrade,strategist,110,buff,3s
+ignited_spirit_spd,Ignited Spirit SPD,ignited.png,Normal,"Burn bright with team spirit, slightly increasing velocity in proportion to the total Speed of racing team members mid-race.",Increase target speed (Special scaling),200,normal,,,buff,1.8s
+ignited_spirit_guts,Ignited Spirit GUTS,ignited.png,Normal,"Burn bright with team spirit, very slightly increasing vigor in proportion to the total Guts of racing team members late-race.",Increase target speed (Special scaling),200,normal,,,buff,1.8s
+burning_spirit_spd,Burning Spirit SPD,burning.png,Upgraded,"Burn bright with team spirit, increasing velocity in proportion to the total Speed of racing team members mid-race.",Increase target speed (Special scaling),200,normal,,,buff,1.8s
+burning_spirit_guts,Burning Spirit GUTS,burning.png,Upgraded,"Burn bright with team spirit, increasing vigor in proportion to the total Guts of racing team members late-race.",Increase target speed (Special scaling),200,normal,,,buff,1.8s
+ignited_spirit_sta,Ignited Spirit STA,ignited_stam.png,Normal,"Burn bright with team spirit, slightly recovering endurance in proportion to the total Stamina of racing team members mid-race.",Stamina recovery (Special scaling),200,normal,,,recovery,
+burning_spirit_sta,Burning Spirit STA,burning_stam.png,Upgraded,"Burn bright with team spirit, recovering endurance in proportion to the total Stamina of racing team members mid-race.",Stamina recovery (Special scaling),200,normal,,,recovery,
+ignited_spirit_pwr,Ignited Spirit PWR,ignited.png,Normal,"Burn bright with team spirit, slightly increasing acceleration in proportion to the total Power of racing team members late-race.",Increase acceleration (Special scaling),200,normal,,,buff,1.2s
+burning_spirit_pwr,Burning Spirit PWR,burning.png,Upgraded,"Burn bright with team spirit, increasing acceleration in proportion to the total Power of racing team members late-race.",Increase acceleration (Special scaling),200,normal,,,buff,1.2s
+ignited_spirit_wit,Ignited Spirit WIT,ignited_wit.png,Normal,"Burn bright with team spirit, slightly increasing strategic navigation for a medium duration in proportion to the total Wit of racing team members early-race.",,200,normal,,,buff,4s
+burning_spirit_wit,Burning Spirit WIT,burning_wit.png,Upgraded,"Burn bright with team spirit, increasing strategic navigation for a medium duration in proportion to the total Wit of racing team members early-race.",,200,normal,,,buff,4s
+glittering_star,Glittering Star,unique_skill.png,Normal,Very slightly control breathing and kick forward in the second half of the race. Effect is increased in proportion to number of career wins.,Increase target speed (Special scaling),200,normal,,,buff,1.2s
+radiant_star,Radiant Star,unique_skill.png,Upgraded,Control breathing and kick forward in the second half of the race. Effect is increased in proportion to number of career wins.,Increase target speed (Special scaling),200,normal,,,buff,1.2s
+hesitant_front_runners,Hesitant Front Runners,debuff_speed.png,Normal,Slightly decrease velocity of front runners late-race.,Decrease current speed (-0.15),130,normal,,,debuff,3s
+hesitant_pace_chasers,Hesitant Pace Chasers,debuff_speed.png,Normal,Slightly decrease velocity of pace chasers late-race.,Decrease current speed (-0.15),130,normal,,,debuff,3s
+hesitant_late_surgers,Hesitant Late Surgers,debuff_speed.png,Normal,Slightly decrease velocity of late surgers late-race.,Decrease current speed (-0.15),130,normal,,,debuff,3s
+hesitant_end_closers,Hesitant End Closers,debuff_speed.png,Normal,Slightly decrease velocity of end closers late-race.,Decrease current speed (-0.15),130,normal,,,debuff,3s
+intimidate,Intimidate,debuff_speed.png,Normal,Moderately intimidate runners behind when positioned toward the front early-race. (Sprint),Decrease current speed (-0.2),170,normal,,,debuff,3s
+speed_eater,Speed Eater,debuff_speed.png,Normal,Slightly steal velocity from runners behind when positioned toward the front mid-race. (Mile),Decrease current speed (-0.15),160,normal,,,debuff,3s
+greed_for_speed,Greed for Speed,super_debuff_speed.png,Upgraded,Moderately steal velocity from runners behind when positioned toward the front mid-race. (Mile),Decrease current speed (-0.2),,upgrade,speed_eater,160,debuff,3s
+tether,Tether,debuff_speed.png,Normal,Slightly decrease velocity of runners ahead when positioned toward the back late-race. (Medium),Decrease current speed (-0.15),160,normal,,,debuff,3s
+dominator,Dominator,super_debuff_speed.png,Upgraded,Decrease velocity of runners ahead when positioned toward the back late-race. (Medium),Decrease current speed (-0.25),,upgrade,tether,160,debuff,3s
+intense_gaze,Intense Gaze,debuff_speed.png,Normal,Slightly unnerve runners in focus late-race. (End Closer),Decrease current speed (-0.15),180,normal,,,debuff,3s
+petrifying_gaze,Petrifying Gaze,super_debuff_speed.png,Upgraded,Unnerve runners in focus late-race. (End Closer),Decrease current speed (-0.25),upgrade,intense_gaze,180,debuff,3s
+adored_by_all,Adored by All,super_debuff_speed.png,Upgraded,Intimidate runners behind when positioned toward the front early-race. (Sprint),Decrease current speed (-0.25),upgrade,intimidate,170,debuff,3s
+opening_gambit,Opening Gambit,debuff_acceleration.png,Normal,Slightly dull movement for runners ahead when positioned toward the back early-race. (Mile),Decrease acceleration (-0.1),160,normal,,,debuff,3s
+restart,Restart,debuff_acceleration.png,Normal,Slightly dull movement for runners ahead when not in the lead early-race. (Front Runner),Decrease acceleration (-0.1),130,normal,,,debuff,3s
+battle_formation,Battle Formation,super_debuff_acceleration.png,Upgraded,Dull movement for runners ahead when positioned toward the back early-race. (Mile),Decrease acceleration (-0.3),160,normal,,,debuff,3s
+frenzied_front_runners,Frenzied Front Runners,debuff_wit.png,Normal,Increase time needed for front runners to calm down when they become rushed.,Increase Rush Time (5),130,normal,,,debuff,
+frenzied_pace_chasers,Frenzied Pace Chasers,debuff_wit.png,Normal,Increase time needed for pace chasers to calm down when they become rushed.,Increase Rush Time (5),130,normal,,,debuff,
+frenzied_late_surgers,Frenzied Late Surgers,debuff_wit.png,Normal,Increase time needed for late surgers to calm down when they become rushed.,Increase Rush Time (5),130,normal,,,debuff,
+frenzied_end_closers,Frenzied End Closers,debuff_wit.png,Normal,Increase time needed for end closers to calm down when they become rushed.,Increase Rush Time (5),130,normal,,,debuff,
+trick_front,Trick (Front),debuff_stamina.png,Normal,Slightly increase fatigue for rushed runners behind when positioned toward the front mid-race.,Stamina Drain (-0.01),140,normal,,,debuff,
+tantalizing_trick,Tantalizing Trick,super_debuff_stamina.png,Upgraded,Increase fatigue for rushed runners behind when positioned toward the front mid-race.,Stamina Drain (-0.03),,upgrade,trick_front,140,debuff,
+trick_rear,Trick (Rear),debuff_stamina.png,Normal,Slightly increase fatigue for rushed runners ahead when positioned toward the back mid-race.,Stamina Drain (-0.01),140,normal,,,debuff,
+subdued_front_runners,Subdued Front Runners,debuff_stamina.png,Normal,Slightly increase fatigue for front runners early-race.,Stamina Drain (-0.01),130,normal,,,debuff,
+flustered_front_runners,Flustered Front Runners,debuff_stamina.png,Normal,Slightly increase fatigue for front runners mid-race.,Stamina Drain (-0.01),130,normal,,,debuff,
+subdued_pace_chasers,Subdued Pace Chasers,debuff_stamina.png,Normal,Slightly increase fatigue for pace chasers early-race.,Stamina Drain (-0.01),130,normal,,,debuff,
+flustered_pace_chasers,Flustered Pace Chasers,debuff_stamina.png,Normal,Slightly increase fatigue for pace chasers mid-race.,Stamina Drain (-0.01),130,normal,,,debuff,
+subdued_late_surgers,Subdued Late Surgers,debuff_stamina.png,Normal,Slightly increase fatigue for late surgers early-race.,Stamina Drain (-0.01),130,normal,,,debuff,
+flustered_late_surgers,Flustered Late Surgers,debuff_stamina.png,Normal,Slightly increase fatigue for late surgers mid-race.,Stamina Drain (-0.01),130,normal,,,debuff,
+subdued_end_closers,Subdued End Closers,debuff_stamina.png,Normal,Slightly increase fatigue for end closers early-race.,Stamina Drain (-0.01),130,normal,,,debuff,
+flustered_end_closers,Flustered End Closers,debuff_stamina.png,Normal,Slightly increase fatigue for end closers mid-race.,Stamina Drain (-0.01),130,normal,,,debuff,
+stop_right_there,Stop Right There!,debuff_stamina.png,Normal,Slightly cause panic in and very slightly dull movement for runners ahead when positioned toward the back early-race. (Sprint),Stamina Drain (-0.01) and Decrease Acceleration (-0.1),170,normal,,,debuff,1.2s
+you_ve_got_no_shot,You've Got No Shot,super_debuff_stamina.png,Upgraded,Cause panic in and moderately dull movement for runners ahead when positioned toward the back early-race. (Sprint),Stamina Drain (-0.03) and Decrease Acceleration (-0.2),,upgrade,stop_right_there,170,debuff,1.2s
+murmur,Murmur,debuff_stamina.png,Normal,Slightly disturb runners directly ahead mid-race. (Medium),Stamina Drain (-0.01),160,normal,,,debuff,
+mystifying_murmur,Mystifying Murmur,super_debuff_stamina.png,Upgraded,Disturb runners directly ahead mid-race. (Medium),Stamina Drain (-0.03),,upgrade,murmur,160,debuff,
+stamina_eater,Stamina Eater,debuff_stamina.png,Normal,Very slightly steal endurance from runners ahead when positioned toward the back mid-race. (Long),Stamina Drain (-0.005) and Stamina Recovery (0.015),160,normal,,,debuff,
+stamina_siphon,Stamina Siphon,super_debuff_stamina.png,Upgraded,Slightly steal endurance from runners ahead when positioned toward the back mid-race. (Long),Stamina Drain (-0.01) and Stamina Recovery (0.035),,upgrade,stamina_eater,160,debuff,
+sharp_gaze,Sharp Gaze,debuff_stamina.png,Normal,Slightly startle other runners late-race. (Late Surger),Stamina Drain (-0.01),180,normal,,,debuff,
+all_seeing_eyes,All-Seeing Eyes,debuff_stamina.png,Upgraded,Startle other runners late-race. (Late Surger),Stamina Drain (-0.03),,upgrade,sharp_gaze,180,debuff,
+smoke_screen,Smoke Screen,debuff_vision.png,Normal,Moderately narrow the field of view for runners ahead late-race. (Long),Decrease Field of View (-5),110,normal,,,debuff,3s
+illusionist,Illusionist,debuff_vision.png,Upgraded,Narrow the field of view for runners ahead late-race. (Long),Decrease Field of View (-10),,upgrade,smoke_screen,110,debuff,3s
+disorient,Disorient,super_debuff_vision.png,Normal,Slightly narrow the field of view for runners behind when positioned toward the front late-race. (Pace Chaser),Decrease Field of View (-3),110,normal,,,debuff,3s
+dazzling_disorientation,Dazzling Disorientation,super_debuff_vision.png,Upgraded,Moderately narrow the field of view for runners behind when positioned toward the front late-race. (Pace Chaser),Decrease Field of View (-5),,upgrade,disorient,110,debuff,3s
+best_in_japan,Best in Japan,Best_in_Japan.png,Upgraded,"Everyone's expectations strongly inspire the user, increasing velocity on the final corner. (Long) [Activates at a random point on a final corner]",Increase target speed (0.35),360,normal,,,buff,3s

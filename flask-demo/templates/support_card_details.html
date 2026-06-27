@@ -1,0 +1,719 @@
+{% extends "base.html" %}
+
+{% block title %}{{ card.name }}{% endblock %}
+
+{% block content %}
+
+<style>
+    .support-detail-page {
+        min-height: calc(100vh - 72px);
+        background: #dcdcdc;
+        padding: 24px 0 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000;
+    }
+
+    .support-detail-container {
+        width: 1100px;
+        max-width: 94%;
+        margin: 0 auto;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-bottom: 14px;
+        color: #0044cc;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    .support-top-box {
+        background: #e7fbfb;
+        padding: 18px 24px;
+        display: flex;
+        gap: 28px;
+        align-items: stretch;
+        margin-bottom: 22px;
+    }
+
+    .support-main-image {
+        width: 270px;
+        height: 345px;
+        object-fit: cover;
+        border: 2px solid #111;
+        background: #fff;
+    }
+
+    .support-info {
+        flex: 1;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .support-title-small {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .support-name {
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .info-line {
+        border-top: 2px solid #222;
+        width: 220px;
+        margin: 0 auto 22px;
+        padding-top: 18px;
+    }
+
+    .info-label {
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .rarity-icon {
+        height: 36px;
+    }
+
+    .type-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 8px;
+    }
+
+    .release-date {
+        font-size: 14px;
+    }
+
+    .unique-effect-box {
+        background: #e7fbfb;
+        border-radius: 4px;
+        padding: 12px 14px;
+        margin-bottom: 24px;
+    }
+
+    .unique-effect-title {
+        font-weight: 800;
+        margin-bottom: 6px;
+    }
+
+    .unique-effect-text {
+        line-height: 1.45;
+        font-size: 16px;
+    }
+
+    .effect-table-title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+
+    .effect-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #ffffff;
+        table-layout: auto;
+        margin-bottom: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .effect-table th,
+    .effect-table td {
+        border: 1px solid #cccccc;
+        padding: 22px 14px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        color: #000000;
+        vertical-align: middle;
+    }
+
+    .effect-table th {
+        font-size: 18px;
+        font-weight: 800;
+        background: #ffffff;
+    }
+
+    .effect-table th:first-child,
+    .effect-table td:first-child {
+        width: 240px;
+        min-width: 240px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #003344;
+        white-space: nowrap;
+    }
+
+    .support-skill-section {
+        margin-top: 34px;
+        width: 100%;
+    }
+
+    .support-skill-title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 900;
+        margin-bottom: 12px;
+    }
+
+    .support-skill-note {
+        text-align: center;
+        font-size: 16px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .support-skill-item {
+        background: #f4f4f4;
+        border-radius: 6px;
+        padding: 16px 18px;
+        margin-bottom: 12px;
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        min-height: 82px;
+    }
+
+    .support-skill-icon-box {
+        width: 64px;
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    .support-skill-icon {
+        width: 52px;
+        height: 52px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 4px;
+    }
+
+    .support-skill-detail-link {
+        color: #0000cc;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    .support-skill-detail-link:hover {
+        text-decoration: underline;
+    }
+
+    .support-skill-content {
+        flex: 1;
+        padding-top: 2px;
+    }
+
+    .support-skill-name {
+        display: inline-block;
+        font-weight: 900;
+        font-size: 18px;
+        margin-bottom: 7px;
+        color: #000000;
+        text-decoration: none;
+        line-height: 1.25;
+    }
+
+    .support-skill-name:hover {
+        text-decoration: underline;
+    }
+
+    .support-skill-name.highlight {
+        background: #ffc83d;
+        padding: 5px 16px;
+        border-radius: 5px;
+    }
+
+    .support-skill-description {
+        font-size: 17px;
+        line-height: 1.45;
+        color: #000000;
+    }
+
+    .stat-gain-box {
+        background: #f4f4f4;
+        border-radius: 6px;
+        padding: 16px 18px;
+        margin-bottom: 12px;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .stat-gain-icon {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .stat-gain-title {
+        font-weight: 900;
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .stat-gain-text {
+        font-size: 17px;
+        line-height: 1.45;
+    }
+
+    .training-events-section {
+        margin-top: 42px;
+    }
+
+    .training-events-title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 26px;
+    }
+
+    .training-event-group-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin: 24px 0 14px;
+    }
+
+    .training-event-button-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 16px;
+    }
+
+    .training-event-button {
+        border: 1px solid #d0d0d0;
+        background: #f7f7f7;
+        border-radius: 12px;
+        padding: 14px 18px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+        transition: 0.15s ease;
+    }
+
+    .training-event-button:hover {
+        background: #ffffff;
+        transform: translateY(-2px);
+    }
+
+    .training-event-button.active {
+        background: #ffffff;
+        border-color: #888888;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+    }
+
+    .training-event-detail {
+        display: none;
+        background: #ffffff;
+        margin: 10px 0 18px;
+        overflow: hidden;
+        width: 390px;
+        max-width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+    }
+
+    .training-event-detail.active {
+        display: block;
+    }
+
+    .training-event-detail-header {
+        background: #e5e5e5;
+        padding: 12px 18px;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.45;
+    }
+
+    .training-event-detail-body {
+        padding: 14px 18px;
+        font-size: 20px;
+        line-height: 1.55;
+    }
+
+    @media (max-width: 760px) {
+        .support-top-box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .support-main-image {
+            width: 240px;
+            height: 310px;
+        }
+
+        .info-line {
+            width: 100%;
+        }
+
+        .effect-table th,
+        .effect-table td {
+            font-size: 14px;
+            padding: 13px 8px;
+        }
+
+        .effect-table th:first-child,
+        .effect-table td:first-child {
+            width: auto;
+            min-width: 130px;
+            font-size: 14px;
+            white-space: normal;
+        }
+
+        .support-skill-item {
+            padding: 12px;
+            gap: 12px;
+        }
+
+        .support-skill-icon-box {
+            width: 54px;
+        }
+
+        .support-skill-icon {
+            width: 46px;
+            height: 46px;
+        }
+
+        .support-skill-name {
+            font-size: 16px;
+        }
+
+        .support-skill-description {
+            font-size: 15px;
+        }
+
+        .support-skill-note {
+            font-size: 14px;
+        }
+
+        .stat-gain-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .training-events-title {
+            font-size: 26px;
+        }
+
+        .training-event-group-title {
+            font-size: 21px;
+        }
+
+        .training-event-button {
+            font-size: 16px;
+            padding: 12px 14px;
+        }
+
+        .training-event-detail-header,
+        .training-event-detail-body {
+            font-size: 16px;
+        }
+    }
+</style>
+
+<div class="support-detail-page">
+    <div class="support-detail-container">
+
+        <a href="{{ url_for('support_card') }}" class="back-link">← Back to Support Cards</a>
+
+        <div class="support-top-box">
+
+            <img
+                class="support-main-image"
+                src="{{ url_for('static', filename='images/support_cards/' ~ card.image) }}"
+                alt="{{ card.name }}"
+            >
+
+            <div class="support-info">
+
+                <div class="support-title-small">
+                    {{ card.title }}
+                </div>
+
+                <div class="support-name">
+                    {{ card.name }}
+                </div>
+
+                <div class="info-line">
+                    <div class="info-label">Rarity</div>
+
+                    <img
+                        class="rarity-icon"
+                        src="{{ url_for('static', filename='images/rarity/' ~ card.rarity|lower ~ '.png') }}"
+                        alt="{{ card.rarity }}"
+                    >
+                </div>
+
+                <div class="info-line">
+                    <div class="info-label">Type</div>
+
+                    <img
+                        class="type-icon"
+                        src="{{ url_for('static', filename='images/support_types/' ~ card.type|lower ~ '.png') }}"
+                        alt="{{ card.type }}"
+                    >
+                </div>
+
+                <div class="info-line">
+                    <div class="info-label">Release date</div>
+                    <div class="release-date">{{ card.release_date }}</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="unique-effect-box">
+            <div class="unique-effect-title">Unique Effect</div>
+            <div class="unique-effect-text">
+                {{ card.unique_effect }}
+            </div>
+        </div>
+
+        <div class="effect-table-title">Support Effects</div>
+
+        <table class="effect-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Lv.30</th>
+                    <th>Lv.35</th>
+                    <th>Lv.40</th>
+                    <th>Lv.45</th>
+                    <th>Lv.50</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for effect in effects %}
+                <tr>
+                    <td>{{ effect.effect_name }}</td>
+                    <td>{{ effect.lb0 }}</td>
+                    <td>{{ effect.lb1 }}</td>
+                    <td>{{ effect.lb2 }}</td>
+                    <td>{{ effect.lb3 }}</td>
+                    <td>{{ effect.lb4 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% if hint_skills %}
+        <div class="support-skill-section">
+            <div class="support-skill-title">Support hints</div>
+
+            <div class="support-skill-note">
+                One will be randomly granted when getting a hint during training
+            </div>
+
+            {% for skill in hint_skills %}
+            <div class="support-skill-item">
+
+                <div class="support-skill-icon-box">
+                    <img
+                        class="support-skill-icon"
+                        src="{{ url_for('static', filename='images/skills/' ~ skill.icon) }}"
+                        alt="{{ skill.name }}"
+                    >
+
+                    <a
+                        class="support-skill-detail-link"
+                        href="{{ url_for('skill_detail', skill_id=skill.id) }}"
+                    >
+                        Details
+                    </a>
+                </div>
+
+                <div class="support-skill-content">
+                    <a
+                        class="support-skill-name {% if skill.highlight == 'yes' %}highlight{% endif %}"
+                        href="{{ url_for('skill_detail', skill_id=skill.id) }}"
+                    >
+                        {{ skill.name }}
+                    </a>
+
+                    <div class="support-skill-description">
+                        {{ skill.short_description }}
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+
+            {% if stat_gain_list %}
+            <div class="stat-gain-box">
+
+                {% if card.stat_icon %}
+                <img
+                    class="stat-gain-icon"
+                    src="{{ url_for('static', filename='images/support_cards/' ~ card.stat_icon) }}"
+                    alt="Stat gain"
+                >
+                {% endif %}
+
+                <div>
+                    <div class="stat-gain-title">Stat gain</div>
+
+                    <div class="stat-gain-text">
+                        {% for stat in stat_gain_list %}
+                            {{ stat }}<br>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if event_skills %}
+        <div class="support-skill-section">
+            <div class="support-skill-title">Skills from events</div>
+
+            {% for skill in event_skills %}
+            <div class="support-skill-item">
+
+                <div class="support-skill-icon-box">
+                    <img
+                        class="support-skill-icon"
+                        src="{{ url_for('static', filename='images/skills/' ~ skill.icon) }}"
+                        alt="{{ skill.name }}"
+                    >
+
+                    <a
+                        class="support-skill-detail-link"
+                        href="{{ url_for('skill_detail', skill_id=skill.id) }}"
+                    >
+                        Details
+                    </a>
+                </div>
+
+                <div class="support-skill-content">
+                    <a
+                        class="support-skill-name {% if skill.highlight == 'yes' %}highlight{% endif %}"
+                        href="{{ url_for('skill_detail', skill_id=skill.id) }}"
+                    >
+                        {{ skill.name }}
+                    </a>
+
+                    <div class="support-skill-description">
+                        {{ skill.short_description }}
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if chain_events or random_events %}
+        <div class="training-events-section">
+            <div class="training-events-title">Training Events</div>
+
+            {% if chain_events %}
+            <div class="training-event-group">
+                <div class="training-event-group-title">Chain Events</div>
+
+                <div class="training-event-button-list">
+                    {% for event in chain_events %}
+                    <button
+                        type="button"
+                        class="training-event-button"
+                        onclick="toggleTrainingEvent('chain-{{ event.event_id }}', this)"
+                    >
+                        {{ event.title }}
+                    </button>
+                    {% endfor %}
+                </div>
+
+                {% for event in chain_events %}
+                <div class="training-event-detail" id="event-chain-{{ event.event_id }}">
+                    <div class="training-event-detail-header">
+                        {{ event.title }}
+                    </div>
+
+                    <div class="training-event-detail-body">
+                        {% for line in event.detail_lines %}
+                            {{ line }}<br>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if random_events %}
+            <div class="training-event-group">
+                <div class="training-event-group-title">Random Events</div>
+
+                <div class="training-event-button-list">
+                    {% for event in random_events %}
+                    <button
+                        type="button"
+                        class="training-event-button"
+                        onclick="toggleTrainingEvent('random-{{ event.event_id }}', this)"
+                    >
+                        {{ event.title }}
+                    </button>
+                    {% endfor %}
+                </div>
+
+                {% for event in random_events %}
+                <div class="training-event-detail" id="event-random-{{ event.event_id }}">
+                    <div class="training-event-detail-header">
+                        {{ event.title }}
+                    </div>
+
+                    <div class="training-event-detail-body">
+                        {% for line in event.detail_lines %}
+                            {{ line }}<br>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+
+<script>
+    function toggleTrainingEvent(eventKey, clickedButton) {
+        const target = document.getElementById("event-" + eventKey);
+
+        if (!target) {
+            return;
+        }
+
+        const isOpen = target.classList.contains("active");
+
+        const allDetails = document.querySelectorAll(".training-event-detail");
+        allDetails.forEach(function(detail) {
+            detail.classList.remove("active");
+        });
+
+        const allButtons = document.querySelectorAll(".training-event-button");
+        allButtons.forEach(function(button) {
+            button.classList.remove("active");
+        });
+
+        if (!isOpen) {
+            target.classList.add("active");
+
+            if (clickedButton) {
+                clickedButton.classList.add("active");
+            }
+        }
+    }
+</script>
+
+{% endblock %}

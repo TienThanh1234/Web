@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{% block title %}
+My Character List
+{% endblock %}
+
+{% block content %}
+
+<div class="characters-page">
+
+    <h1>My Character List</h1>
+
+    <div class="characters-grid">
+
+        {% for character in characters %}
+        <a href="{{ url_for('character_detail', slug=character.slug) }}" class="character-card">
+
+            <div class="character-image">
+                <img src="{{ url_for('static', filename='images/characters/' + character.image) }}"
+                     alt="{{ character.name }}">
+            </div>
+
+            <h3>{{ character.name }}</h3>
+
+            <p class="version">
+                [{{ character.version }}]
+            </p>
+
+            <div class="stars">
+                {% for i in range(character.rarity) %}
+                    ★
+                {% endfor %}
+            </div>
+
+            <div class="aptitude-box">
+                <span>Turf {{ character.turf }}</span>
+                <span>Dirt {{ character.dirt }}</span>
+                <span>Short {{ character.short }}</span>
+                <span>Mile {{ character.mile }}</span>
+            </div>
+
+        </a>
+        {% endfor %}
+
+    </div>
+
+</div>
+
+<style>
+    .content-wrapper {
+        padding: 0 !important;
+    }
+
+    .characters-page {
+        min-height: calc(100vh - 72px);
+        padding: 35px 55px;
+        background: #f5f5f5;
+    }
+
+    .characters-page h1 {
+        font-size: 36px;
+        font-weight: 800;
+        color: #111111;
+        margin-bottom: 25px;
+    }
+
+    .characters-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+    }
+
+    .character-card {
+        min-height: 330px;
+        padding: 14px 12px 16px;
+
+        background: #dddddd;
+        border-radius: 12px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.18);
+        transition: 0.2s;
+    }
+
+    .character-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .character-image {
+        width: 100%;
+        height: 155px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 12px;
+        overflow: hidden;
+    }
+
+    .character-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .character-card h3 {
+        margin: 0;
+
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.15;
+
+        color: #0000aa;
+        text-align: center;
+    }
+
+    .version {
+        margin: 8px 0 0;
+
+        font-size: 15px;
+        font-weight: 600;
+        color: #5c4b1f;
+        text-align: center;
+    }
+
+    .stars {
+        margin-top: 10px;
+
+        font-size: 18px;
+        color: #f2c230;
+        letter-spacing: 3px;
+    }
+
+    .aptitude-box {
+        margin-top: 12px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .aptitude-box span {
+        padding: 4px 8px;
+
+        background: #ffffff;
+        border-radius: 999px;
+
+        font-size: 12px;
+        font-weight: 700;
+        color: #333333;
+    }
+
+    @media (max-width: 1200px) {
+        .characters-grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media (max-width: 900px) {
+        .characters-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 650px) {
+        .characters-page {
+            padding: 25px 18px;
+        }
+
+        .characters-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .character-card h3 {
+            font-size: 19px;
+        }
+    }
+</style>
+
+{% endblock %}

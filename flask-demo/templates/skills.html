@@ -1,0 +1,426 @@
+{% extends "base.html" %}
+
+{% block title %}Skills{% endblock %}
+
+{% block content %}
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .skills-page {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111111;
+    }
+
+    .skills-title {
+        font-size: 28px;
+        font-weight: 900;
+        margin-bottom: 18px;
+        border-left: 4px solid #ff9b3d;
+        padding-left: 14px;
+    }
+
+    /* Search box */
+    .skill-search-wrapper {
+        position: relative;
+        width: 100%;
+        margin-bottom: 22px;
+    }
+
+    #skillSearchInput {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 18px;
+        border: 2px solid #999999;
+        border-radius: 6px;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    #skillSearchInput:focus {
+        border-color: #4b63ff;
+    }
+
+    .skill-search-results {
+        display: none;
+        position: absolute;
+        top: 52px;
+        left: 0;
+        right: 0;
+        max-height: 330px;
+        overflow-y: auto;
+        background: #ffffff;
+        border: 1px solid #aaaaaa;
+        border-radius: 6px;
+        z-index: 9999;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    }
+
+    .search-result-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 14px;
+        cursor: pointer;
+        border-bottom: 1px solid #dddddd;
+        background: #ffffff;
+    }
+
+    .search-result-item:hover {
+        background: #eeeeee;
+    }
+
+    .search-result-icon {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .search-result-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-result-name {
+        font-size: 17px;
+        font-weight: 800;
+        color: #1d3fcf;
+    }
+
+    .search-result-description {
+        margin-top: 4px;
+        font-size: 14px;
+        color: #444444;
+        line-height: 1.35;
+    }
+
+    /* Box category phía trên, KHÔNG scroll */
+    .category-box {
+        width: 100%;
+        border: 1px solid #cccccc;
+        background: #ffffff;
+        margin-bottom: 32px;
+    }
+
+    .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category-item {
+        min-height: 92px;
+        border-right: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+        color: #2d73ff;
+        font-weight: 800;
+    }
+
+    .category-item:hover {
+        text-decoration: none;
+        background-color: #f3f3f3;
+        color: #f06ca9;
+    }
+
+    .category-icon {
+        width: 38px;
+        height: 38px;
+        object-fit: contain;
+        margin-bottom: 7px;
+    }
+
+    .skill-section {
+        margin-top: 32px;
+        scroll-margin-top: 90px;
+    }
+
+    .skill-section-title {
+        font-size: 26px;
+        font-weight: 900;
+        margin-bottom: 14px;
+        border-left: 4px solid #ff9b3d;
+        padding-left: 12px;
+    }
+
+    /* Đây mới là cửa sổ nhỏ có scrollbar */
+    .skill-scroll-window {
+        max-height: 560px;
+        overflow-y: auto;
+        border: 1px solid #dddddd;
+        background: #ffffff;
+    }
+
+    .skills-list {
+        width: 100%;
+        background: white;
+    }
+
+    .skill-row {
+        display: grid;
+        grid-template-columns: 70px 380px 1fr 80px;
+        align-items: center;
+
+        min-height: 56px;
+        padding: 4px 14px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .skill-row:nth-child(odd) {
+        background-color: #eeeeee;
+    }
+
+    .skill-row:nth-child(even) {
+        background-color: #ffffff;
+    }
+
+    .skill-icon {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+    }
+
+    .skill-name {
+        font-size: 20px;
+        color: #111111;
+        white-space: nowrap;
+    }
+
+    .skill-description {
+        font-size: 19px;
+        color: #111111;
+        line-height: 1.35;
+    }
+
+    .skill-more {
+        color: #514bdb;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: right;
+    }
+
+    .skill-more:hover {
+        text-decoration: underline;
+    }
+
+    .empty-skill-message {
+        padding: 18px;
+        color: #777777;
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .category-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .skill-row {
+            grid-template-columns: 58px 1fr 60px;
+            gap: 8px;
+        }
+
+        .skill-description {
+            grid-column: 2 / 4;
+            font-size: 15px;
+        }
+
+        .skill-name {
+            font-size: 16px;
+        }
+
+        .skill-more {
+            font-size: 15px;
+        }
+    }
+</style>
+
+<div class="skills-page">
+
+    <h1 class="skills-title">Skills</h1>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="skill-search-wrapper">
+        <input
+            type="text"
+            id="skillSearchInput"
+            placeholder="Search skill..."
+            autocomplete="off"
+        >
+
+        <div id="skillSearchResults" class="skill-search-results"></div>
+    </div>
+
+    <!-- Box category phía trên, không có scrollbar -->
+    <div class="category-box">
+        <div class="category-grid">
+
+            {% for category in categories %}
+                <a class="category-item" href="#{{ category.id }}-skills">
+                    <img class="category-icon"
+                         src="{{ url_for('static', filename='images/skills/' + category.icon) }}"
+                         alt="{{ category.name }}">
+
+                    <div>{{ category.name }}</div>
+                </a>
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <!-- Các section skill, phần này mới có scrollbar -->
+    {% for category in categories %}
+
+        <div class="skill-section" id="{{ category.id }}-skills">
+
+            <h2 class="skill-section-title">
+                {{ category.section_title if category.section_title else category.name + " Skills" }}
+            </h2>
+
+            <div class="skill-scroll-window">
+
+                <div class="skills-list">
+
+                    {% if grouped_skills[category.id] %}
+
+                        {% for skill in grouped_skills[category.id] %}
+
+                            <div
+                                id="skill-{{ skill.id }}"
+                                class="skill-row skill-item"
+                                data-search="{{ skill.display_name }} {{ skill.name }} {{ skill.short_description }} {{ skill.description }}"
+                                data-name="{{ skill.display_name }}"
+                                data-description="{{ skill.short_description }}"
+                                data-icon="{{ url_for('static', filename='images/skills/' + skill.icon) }}"
+                                {% if skill.type == "upgrade" %}
+                                    data-url="{{ url_for('skill_detail', skill_id=skill.parent_id) }}"
+                                {% else %}
+                                    data-url="{{ url_for('skill_detail', skill_id=skill.id) }}"
+                                {% endif %}
+                            >
+
+                                <img class="skill-icon"
+                                     src="{{ url_for('static', filename='images/skills/' + skill.icon) }}"
+                                     alt="{{ skill.name }}">
+
+                                <div class="skill-name">
+                                    {{ skill.display_name }}
+                                </div>
+
+                                <div class="skill-description">
+                                    {{ skill.short_description }}
+                                </div>
+
+                                {% if skill.type == "upgrade" %}
+                                    <a class="skill-more" href="{{ url_for('skill_detail', skill_id=skill.parent_id) }}">
+                                        More
+                                    </a>
+                                {% else %}
+                                    <a class="skill-more" href="{{ url_for('skill_detail', skill_id=skill.id) }}">
+                                        More
+                                    </a>
+                                {% endif %}
+
+                            </div>
+
+                        {% endfor %}
+
+                    {% else %}
+
+                        <div class="empty-skill-message">
+                            No skills in this category yet.
+                        </div>
+
+                    {% endif %}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+</div>
+
+<script>
+    const searchInput = document.getElementById("skillSearchInput");
+    const searchResults = document.getElementById("skillSearchResults");
+
+    const skillItems = Array.from(document.querySelectorAll(".skill-item"));
+
+    searchInput.addEventListener("input", function () {
+        const keyword = searchInput.value.toLowerCase().trim();
+
+        searchResults.innerHTML = "";
+
+        if (keyword === "") {
+            searchResults.style.display = "none";
+            return;
+        }
+
+        const matchedSkills = skillItems.filter(function (item) {
+            const searchText = item.dataset.search.toLowerCase();
+            return searchText.includes(keyword);
+        });
+
+        if (matchedSkills.length === 0) {
+            const emptyItem = document.createElement("div");
+            emptyItem.className = "search-result-item";
+            emptyItem.textContent = "No skill found.";
+            searchResults.appendChild(emptyItem);
+            searchResults.style.display = "block";
+            return;
+        }
+
+        matchedSkills.forEach(function (skillItem) {
+            const resultItem = document.createElement("div");
+            resultItem.className = "search-result-item";
+
+            const resultIcon = document.createElement("img");
+            resultIcon.className = "search-result-icon";
+            resultIcon.src = skillItem.dataset.icon;
+            resultIcon.alt = skillItem.dataset.name;
+
+            const resultText = document.createElement("div");
+            resultText.className = "search-result-text";
+
+            const resultName = document.createElement("div");
+            resultName.className = "search-result-name";
+            resultName.textContent = skillItem.dataset.name;
+
+            const resultDescription = document.createElement("div");
+            resultDescription.className = "search-result-description";
+            resultDescription.textContent = skillItem.dataset.description;
+
+            resultText.appendChild(resultName);
+            resultText.appendChild(resultDescription);
+
+            resultItem.appendChild(resultIcon);
+            resultItem.appendChild(resultText);
+
+            resultItem.addEventListener("click", function () {
+                window.location.href = skillItem.dataset.url;
+            });
+
+            searchResults.appendChild(resultItem);
+        });
+
+        searchResults.style.display = "block";
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".skill-search-wrapper")) {
+            searchResults.style.display = "none";
+        }
+    });
+</script>
+
+{% endblock %}
