@@ -118,7 +118,7 @@
                 <div class="support-image-box">
                     <img
                         class="support-image"
-                        src="{{ url_for('static', filename='images/support_cards/' ~ card.thumb_image) }}"
+                        src="{{ url_for('static', filename='images/support_cards/' ~ card.type|lower ~ '/' ~ card.thumb_image) }}"
                         alt="{{ card.name }}"
                     >
                 </div>
