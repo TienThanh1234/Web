@@ -1,9 +1,25 @@
 import csv
 import re
+from functools import wraps
 from flask import Flask, abort, render_template, request, redirect, url_for, session
 
 app = Flask(__name__)
 app.secret_key = "Mashkyrielight@!#1234567890"
+
+
+# =========================
+# COMMON HELPERS
+# =========================
+
+def login_required(function):
+    @wraps(function)
+    def wrapper(*args, **kwargs):
+        if "username" not in session:
+            return redirect(url_for("login"))
+
+        return function(*args, **kwargs)
+
+    return wrapper
 
 
 def make_short_description(text):
@@ -14,6 +30,19 @@ def make_short_description(text):
     text = re.sub(r"\s*\[[^\]]*\]", "", text)
 
     return text.strip()
+
+
+def text_to_id(text):
+    """Đổi tên skill/event thành dạng id dùng được trong URL."""
+    if text is None:
+        return ""
+
+    text = text.strip().lower()
+    text = text.replace("◎", "oo")
+    text = text.replace("○", "o")
+    text = re.sub(r"[^a-z0-9]+", "_", text)
+
+    return text.strip("_")
 
 
 # =========================
@@ -46,83 +75,6 @@ def load_character_details():
             character_detail_list.append(row)
 
     return character_detail_list
-
-
-# =========================
-# SUPPORT CARD
-# =========================
-
-def load_support_cards():
-    support_cards = []
-
-    with open("support_cards.csv", newline="", encoding="utf-8-sig") as file:
-        reader = csv.DictReader(file)
-
-        for row in reader:
-            # Nếu chưa có thumb_image thì tự dùng image luôn
-            if row.get("thumb_image") is None or row.get("thumb_image", "").strip() == "":
-                row["thumb_image"] = row.get("image", "")
-
-            row["hint_skill_ids"] = row.get("hint_skill_ids", "")
-            row["event_skill_ids"] = row.get("event_skill_ids", "")
-            row["highlight_skill_ids"] = row.get("highlight_skill_ids", "")
-            row["stat_gain"] = row.get("stat_gain", "")
-            row["stat_icon"] = row.get("stat_icon", "")
-            row["random_events"] = row.get("random_events", "")
-
-            support_cards.append(row)
-
-    return support_cards
-
-
-def load_support_card_effects(card_id):
-    effects = []
-
-    with open("support_card_effects.csv", newline="", encoding="utf-8-sig") as file:
-        reader = csv.DictReader(file)
-
-        for row in reader:
-            if row.get("card_id", "").strip() == card_id:
-                effects.append(row)
-
-    return effects
-
-def load_support_card_training_events(card_id):
-    chain_events = []
-    random_events = []
-
-    with open("support_card_training_events.csv", newline="", encoding="utf-8-sig") as file:
-        reader = csv.DictReader(file)
-
-        for row in reader:
-            if row.get("card_id", "").strip() != card_id:
-                continue
-
-            row["section"] = row.get("section", "").strip().lower()
-            row["event_id"] = row.get("event_id", "").strip()
-            row["title"] = row.get("title", "").strip()
-            row["detail"] = row.get("detail", "")
-            row["sort_order"] = int(row.get("sort_order", 0))
-
-            detail_lines = []
-
-            for line in row["detail"].split("|"):
-                line = line.strip()
-
-                if line != "":
-                    detail_lines.append(line)
-
-            row["detail_lines"] = detail_lines
-
-            if row["section"] == "chain":
-                chain_events.append(row)
-            elif row["section"] == "random":
-                random_events.append(row)
-
-    chain_events.sort(key=lambda event: event["sort_order"])
-    random_events.sort(key=lambda event: event["sort_order"])
-
-    return chain_events, random_events
 
 
 # =========================
@@ -265,17 +217,6 @@ def group_skills_by_category():
     return categories, grouped_skills
 
 
-def get_normal_skills():
-    skills = load_skills()
-    normal_skills = []
-
-    for skill in skills:
-        if skill.get("type", "") == "normal":
-            normal_skills.append(skill)
-
-    return normal_skills
-
-
 def get_skill_detail(skill_id):
     skills = load_skills()
 
@@ -317,6 +258,236 @@ def get_skill_detail(skill_id):
     return selected_skill
 
 
+def make_skill_lookup_by_name():
+    skill_lookup = {}
+
+    for skill in load_skills():
+        name = skill.get("name", "").strip()
+        skill_id = skill.get("id", "").strip()
+
+        if name != "" and skill_id != "":
+            skill_lookup[text_to_id(name)] = skill_id
+
+    return skill_lookup
+
+
+# =========================
+# SUPPORT CARD
+# =========================
+
+def load_support_cards():
+    support_cards = []
+
+    with open("support_cards.csv", newline="", encoding="utf-8-sig") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            # Nếu chưa có thumb_image thì tự dùng image luôn
+            if row.get("thumb_image") is None or row.get("thumb_image", "").strip() == "":
+                row["thumb_image"] = row.get("image", "")
+
+            row["hint_skill_ids"] = row.get("hint_skill_ids", "")
+            row["event_skill_ids"] = row.get("event_skill_ids", "")
+            row["highlight_skill_ids"] = row.get("highlight_skill_ids", "")
+            row["stat_gain"] = row.get("stat_gain", "")
+            row["stat_icon"] = row.get("stat_icon", "")
+            row["random_events"] = row.get("random_events", "")
+
+            support_cards.append(row)
+
+    return support_cards
+
+
+def get_support_card_by_id(card_id):
+    support_cards = load_support_cards()
+
+    for item in support_cards:
+        if item.get("id", "").strip() == card_id:
+            return item
+
+    return None
+
+
+def load_support_card_effects(card_id):
+    effects = []
+
+    with open("support_card_effects.csv", newline="", encoding="utf-8-sig") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            if row.get("card_id", "").strip() == card_id:
+                effects.append(row)
+
+    return effects
+
+
+def split_event_title(title):
+    title = title.strip()
+
+    if title.startswith("(") and ")" in title:
+        index = title.find(")")
+        mark = title[:index + 1]
+        clean_title = title[index + 1:].strip()
+
+        return mark, clean_title
+
+    return "", title
+
+
+def parse_event_line(raw_line, skill_lookup):
+    raw_line = raw_line.strip()
+    line_type = "normal"
+
+    # Dòng bắt đầu bằng ! sẽ được tô màu cam.
+    # Ví dụ: !Randomly either, !or, !Event chain ended
+    if raw_line.startswith("!"):
+        line_type = "note"
+        raw_line = raw_line[1:].strip()
+
+    line = {
+        "text": raw_line,
+        "type": line_type,
+        "prefix": "",
+        "skill_name": "",
+        "skill_id": "",
+        "suffix": ""
+    }
+
+    # Dạng 1:
+    # Mile Corners ○ hint +2
+    hint_match = re.match(r"^(.+?)\s+hint\s+(.+)$", raw_line, re.IGNORECASE)
+
+    if hint_match:
+        skill_name = hint_match.group(1).strip()
+        suffix = "hint " + hint_match.group(2).strip()
+
+        normalized_skill_name = text_to_id(skill_name)
+        skill_id = skill_lookup.get(normalized_skill_name, normalized_skill_name)
+
+        line["skill_name"] = skill_name
+        line["skill_id"] = skill_id
+        line["suffix"] = suffix
+
+        return line
+
+    # Dạng 2:
+    # Obtain Running Idle skill
+    obtain_match = re.match(r"^Obtain\s+(.+?)\s+skill$", raw_line, re.IGNORECASE)
+
+    if obtain_match:
+        skill_name = obtain_match.group(1).strip()
+
+        normalized_skill_name = text_to_id(skill_name)
+        skill_id = skill_lookup.get(normalized_skill_name, normalized_skill_name)
+
+        line["prefix"] = "Obtain"
+        line["skill_name"] = skill_name
+        line["skill_id"] = skill_id
+        line["suffix"] = "skill"
+
+        return line
+
+    return line
+
+def parse_event_choices(detail, skill_lookup):
+    choices = []
+
+    if detail is None:
+        return choices
+
+    # Dạng mới:
+    # Top::...||Bot::...
+    # Dạng cũ:
+    # Speed +7|Power +7|Taiki Shuttle bond +5
+    if "||" in detail or "::" in detail:
+        choice_blocks = detail.split("||")
+    else:
+        choice_blocks = [detail]
+
+    for block in choice_blocks:
+        block = block.strip()
+
+        if block == "":
+            continue
+
+        if "::" in block:
+            label, lines_text = block.split("::", 1)
+            label = label.strip()
+        else:
+            label = ""
+            lines_text = block
+
+        lines = []
+
+        for raw_line in lines_text.split("|"):
+            raw_line = raw_line.strip()
+
+            if raw_line == "":
+                continue
+
+            lines.append(parse_event_line(raw_line, skill_lookup))
+
+        choices.append({
+            "label": label,
+            "label_class": label.lower(),
+            "lines": lines
+        })
+
+    return choices
+
+
+def make_legacy_detail_lines(choices):
+    detail_lines = []
+
+    for choice in choices:
+        label = choice.get("label", "")
+
+        if label != "":
+            detail_lines.append(label)
+
+        for line in choice.get("lines", []):
+            detail_lines.append(line.get("text", ""))
+
+    return detail_lines
+
+
+def load_support_card_training_events(card_id):
+    chain_events = []
+    random_events = []
+    skill_lookup = make_skill_lookup_by_name()
+
+    with open("support_card_training_events.csv", newline="", encoding="utf-8-sig") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            if row.get("card_id", "").strip() != card_id:
+                continue
+
+            row["section"] = row.get("section", "").strip().lower()
+            row["event_id"] = row.get("event_id", "").strip()
+            row["title"] = row.get("title", "").strip()
+            row["detail"] = row.get("detail", "")
+            row["sort_order"] = int(row.get("sort_order", 0))
+
+            mark, clean_title = split_event_title(row["title"])
+            row["mark"] = mark
+            row["clean_title"] = clean_title
+            row["choices"] = parse_event_choices(row["detail"], skill_lookup)
+
+            # Giữ lại detail_lines để template cũ không bị lỗi ngay.
+            row["detail_lines"] = make_legacy_detail_lines(row["choices"])
+
+            if row["section"] == "chain":
+                chain_events.append(row)
+            elif row["section"] == "random":
+                random_events.append(row)
+
+    chain_events.sort(key=lambda event: event["sort_order"])
+    random_events.sort(key=lambda event: event["sort_order"])
+
+    return chain_events, random_events
+
+
 # =========================
 # LOGIN
 # =========================
@@ -337,10 +508,8 @@ def login():
 
 
 @app.route("/home")
+@login_required
 def home():
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     username = session["username"]
     return render_template("home.html", username=username)
 
@@ -350,19 +519,15 @@ def home():
 # =========================
 
 @app.route("/characters")
+@login_required
 def characters():
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     character_list = load_characters()
     return render_template("characters.html", characters=character_list)
 
 
 @app.route("/characters/<slug>")
+@login_required
 def character_detail(slug):
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     character_list = load_characters()
 
     for character in character_list:
@@ -377,10 +542,8 @@ def character_detail(slug):
 # =========================
 
 @app.route("/skills")
+@login_required
 def skills():
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     categories, grouped_skills = group_skills_by_category()
 
     return render_template(
@@ -391,10 +554,8 @@ def skills():
 
 
 @app.route("/skills/<skill_id>")
+@login_required
 def skill_detail(skill_id):
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     skill = get_skill_detail(skill_id)
 
     if skill is None:
@@ -409,10 +570,8 @@ def skill_detail(skill_id):
 
 @app.route("/support-card")
 @app.route("/supports")
+@login_required
 def support_card():
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     support_cards = load_support_cards()
 
     return render_template(
@@ -423,18 +582,9 @@ def support_card():
 
 @app.route("/support-card/<card_id>")
 @app.route("/supports/<card_id>")
+@login_required
 def support_detail(card_id):
-    if "username" not in session:
-        return redirect(url_for("login"))
-
-    support_cards = load_support_cards()
-
-    card = None
-
-    for item in support_cards:
-        if item.get("id", "").strip() == card_id:
-            card = item
-            break
+    card = get_support_card_by_id(card_id)
 
     if card is None:
         abort(404)
@@ -453,7 +603,6 @@ def support_detail(card_id):
     )
 
     stat_gain_list = []
-
     stat_gain_text = card.get("stat_gain", "")
 
     if stat_gain_text is not None and stat_gain_text.strip() != "":
@@ -476,34 +625,26 @@ def support_detail(card_id):
 # =========================
 
 @app.route("/banner-history")
+@login_required
 def banner_history():
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     return render_template("banner_history.html")
 
 
 @app.route("/tier-list")
+@login_required
 def tier_list():
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     return render_template("tier_list.html")
 
 
 @app.route("/cm-guide")
+@login_required
 def cm_guide():
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     return render_template("cm_guide.html")
 
 
 @app.route("/scenario-guide")
+@login_required
 def scenario_guide():
-    if "username" not in session:
-        return redirect(url_for("login"))
-
     return render_template("scenario_guide.html")
 
 
