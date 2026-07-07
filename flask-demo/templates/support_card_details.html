@@ -81,11 +81,20 @@
 {% macro render_event_line(line) %}
 <div class="event-line {% if line.type == 'note' %}event-note{% endif %}">
     {% if line.skill_name %}
-        <a
+        {% if line.prefix %}
+            {{ line.prefix }}
+        {% endif %}
+
+        <a 
             class="skill-hint-link"
             href="{{ url_for('skill_detail', skill_id=line.skill_id) }}"
-        >{{ line.skill_name }}</a>
-        {{ line.suffix }}
+        >
+            {{ line.skill_name }}
+        </a>
+
+        {% if line.suffix %}
+            {{ line.suffix }}
+        {% endif %}
     {% else %}
         {{ line.text }}
     {% endif %}
