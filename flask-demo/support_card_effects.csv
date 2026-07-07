@@ -10,3 +10,1061 @@ taiki_shuttle,Specialty Priority,35,40,45,50,50
 taiki_shuttle,Skill Pts Bonus,1,1,1,1,1
 taiki_shuttle,Speed Bonus,2,2,2,2,2
 taiki_shuttle,Power Bonus,0,1,1,1,1
+el_condor_pasa,Friendship Bonus,15%,16%,18%,20%,20%
+el_condor_pasa,Race Bonus,5%,6%,7%,8%,10%
+el_condor_pasa,Fan Bonus,15%,16%,17%,18%,20%
+el_condor_pasa,Specialty Priority,35,38,42,46,50
+el_condor_pasa,Mood Effect,20%,23%,26%,30%,30%
+el_condor_pasa,Initial Friendship Gauge,15,16,18,20,20
+el_condor_pasa,Training Effectiveness,0%,1%,3%,5%,5%
+el_condor_pasa,Power Bonus,0,0,0,0,1
+seeking_the_pearl,Friendship Bonus,25%,26%,27%,28%,30%
+seeking_the_pearl,Initial Friendship Gauge,25,26,27,28,30
+seeking_the_pearl,Specialty Priority,50,53,57,61,65
+seeking_the_pearl,Race Bonus,1%,2%,3%,5%,5%
+seeking_the_pearl,Fan Bonus,5%,6%,8%,10%,10%
+seeking_the_pearl,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 1
+seeking_the_pearl,Hint Frequency,20%,20%,20%,20%,20%
+seeking_the_pearl,Skill Point Bonus,1,1,1,1,1
+seeking_the_pearl,Speed Bonus,0,1,1,1,1
+seeking_the_pearl,Initial Power,0,0,0,15,30
+air_shakur,Friendship Bonus,15%,16%,18%,20%,20%
+air_shakur,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 1
+air_shakur,Hint Frequency,20%,20%,20%,20%,20%
+air_shakur,Specialty Priority,35,40,45,50,50
+air_shakur,Initial Friendship Gauge,15,16,18,20,20
+air_shakur,Race Bonus,1%,2%,3%,5%,5%
+air_shakur,Fan Bonus,5%,6%,8%,10%,10%
+air_shakur,Power Bonus,0,1,1,1,1
+air_shakur,Mood Effect,0,0,0,15%,30%
+narita_top_road,Friendship Bonus,25%,26%,27%,28%,30%
+narita_top_road,Speed Bonus,1,1,1,1,1
+narita_top_road,Initial Friendship Gauge,15,15,15,15,15
+narita_top_road,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+narita_top_road,Hint Frequency,20%,23%,26%,30%,30%
+narita_top_road,Specialty Priority,20,25,30,35,35
+narita_top_road,Power Bonus,0,1,1,1,1
+narita_top_road,Race Bonus,0,0,0,5%,10%
+narita_top_road,Fan Bonus,0,0,0,10%,15%
+tosen_jordan,Friendship Bonus,15%,16%,18%,20%,20%
+tosen_jordan,Initial Speed,25,27,30,32,35
+tosen_jordan,Initial Friendship Gauge,20,21,23,25,25
+tosen_jordan,Specialty Priority,35,40,45,50,50
+tosen_jordan,Training Effectiveness,5%,5%,5%,5%,5%
+tosen_jordan,Race Bonus,1%,2%,3%,5%,5%
+tosen_jordan,Fan Bonus,5%,6%,8%,10%,10%
+tosen_jordan,Speed Bonus,0,1,1,1,1
+tosen_jordan,Initial Power,0,0,0,15,30
+matikanefukukitaru,Friendship Bonus,15%,16%,18%,20%,20%
+matikanefukukitaru,Initial Speed,10,15,20,25,30
+matikanefukukitaru,Initial Stamina,10,15,20,25,30
+matikanefukukitaru,Initial Power,10,15,20,25,30
+matikanefukukitaru,Initial Guts,10,15,20,25,30
+matikanefukukitaru,Initial Wit,10,15,20,25,30
+matikanefukukitaru,Mood Effect,20%,23%,26%,30%,30%
+matikanefukukitaru,Initial Friendship Gauge,15,16,18,20,20
+matikanefukukitaru,Training Effectiveness,0,5%,10%,10%,10%
+matikanefukukitaru,Race Bonus,0,0,0,5%,10%
+matikanefukukitaru,Fan Bonus,0,0,0,10%,15%
+silence_suzuka,Friendship Bonus,20%,21%,23%,25%,25%
+silence_suzuka,Initial Friendship Gauge,10,10,10,10,10
+silence_suzuka,Specialty Priority,35,40,45,50,50
+silence_suzuka,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 2
+silence_suzuka,Hint Frequency,20%,22%,25%,27%,30%
+silence_suzuka,Speed Bonus,0,1,1,1,1
+silence_suzuka,Mood Effect,0,0,0,15%,30%
+mayano_top_gun,Friendship Bonus,20%,21%,23%,25%,25%
+mayano_top_gun,Mood Effect,40%,42%,45%,47%,50%
+mayano_top_gun,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+mayano_top_gun,Hint Frequency,40%,42%,45%,47%,50%
+mayano_top_gun,Training Effectiveness,5%,5%,5%,5%,5%
+mayano_top_gun,Race Bonus,1%,2%,3%,5%,5%
+mayano_top_gun,Fan Bonus,5%,6%,8%,10%,10%
+mayano_top_gun,Speed Bonus,0,1,1,1,1
+mayano_top_gun,Specialty Priority,0,0,0,40,80
+zenno_rob_roy,Friendship Bonus,15%,15%,15%,15%,20%
+zenno_rob_roy,Initial Friendship Gauge,20,21,23,25,25
+zenno_rob_roy,Specialty Priority,35,40,45,50,50
+zenno_rob_roy,Training Effectiveness,5%,5%,5%,5%,5%
+zenno_rob_roy,Mood Effect,20%,22%,25%,27%,30%
+zenno_rob_roy,Speed Bonus,0,1,1,1,1
+zenno_rob_roy,Hint Levels,0,0,0,Lv 2,Lv 3
+zenno_rob_roy,Hint Frequency,0,0,0,30%,40%
+sweep_tosho,Friendship Bonus,25%,27%,30%,32%,35%
+sweep_tosho,Race Bonus,5%,6%,7%,8%,10%
+sweep_tosho,Fan Bonus,15%,16%,17%,18%,20%
+sweep_tosho,Specialty Priority,50,53,57,61,65
+sweep_tosho,Initial Speed,20,21,23,25,25
+sweep_tosho,Skill Point Bonus,0,1,1,1,1
+sweep_tosho,Mood Effect,0,0,0,15%,30%
+narita_brian,Friendship Bonus,25%,26%,27%,28%,30%
+narita_brian,Training Effectiveness,5%,5%,5%,5%,5%
+narita_brian,Race Bonus,1%,2%,3%,5%,5%
+narita_brian,Fan Bonus,5%,6%,8%,10%,10%
+narita_brian,Specialty Priority,20,25,30,35,35
+narita_brian,Speed Bonus,0,1,1,1,1
+narita_brian,Hint Levels,0,0,0,Lv 2,Lv 3
+narita_brian,Hint Frequency,0,0,0,30%,40%
+gold_ship,Friendship Bonus,20%,21%,23%,25%,25%
+gold_ship,Mood Effect,15%,16%,17%,18%,20%
+gold_ship,Training Effectiveness,5%,6%,7%,8%,10%
+gold_ship,Initial Friendship Gauge,10,12,15,17,20
+gold_ship,Skill Point Bonus,0,1,1,1,1
+gold_ship,Hint Levels,0,0,0,Lv 2,Lv 3
+gold_ship,Hint Frequency,0,0,0,30%,40%
+kawakami_princess,Friendship Bonus,25%,26%,27%,28%,30%
+kawakami_princess,Race Bonus,5%,6%,7%,8%,10%
+kawakami_princess,Fan Bonus,15%,16%,17%,18%,20%
+kawakami_princess,Initial Speed,20,21,23,25,25
+kawakami_princess,Mood Effect,20%,23%,26%,30%,30%
+kawakami_princess,Specialty Priority,20,25,30,35,35
+kawakami_princess,Power Bonus,0,1,1,1,1
+kawakami_princess,Initial Friendship Gauge,0,0,0,15,30
+kitasan_black,Friendship Bonus,20%,21%,23%,25%,25%
+kitasan_black,Initial Friendship Gauge,25,27,30,32,35
+kitasan_black,Training Effectiveness,5%,6%,8%,10%,10%
+kitasan_black,Race Bonus,5%,5%,5%,5%,5%
+kitasan_black,Fan Bonus,10%,11%,13%,15%,15%
+kitasan_black,Mood Effect,20%,23%,26%,30%,30%
+kitasan_black,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+kitasan_black,Hint Frequency,20%,23%,26%,30%,30%
+kitasan_black,Power Bonus,0,1,1,1,1
+kitasan_black,Specialty Priority,0,0,0,40,80
+twin_turbo,Friendship Bonus,15%,16%,18%,20%,20%
+twin_turbo,Mood Effect,40%,45%,50%,55%,60%
+twin_turbo,Initial Friendship Gauge,20,21,23,25,25
+twin_turbo,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+twin_turbo,Hint Frequency,30%,33%,36%,40%,40%
+twin_turbo,Specialty Priority,20,25,30,35,35
+twin_turbo,Speed Bonus,0,1,1,1,1
+twin_turbo,Training Effectiveness,0,0,0,5%,10%
+special_week,Friendship Bonus,25%,27%,30%,32%,35%
+special_week,Initial Friendship Gauge,5,6,8,10,10
+special_week,Mood Effect,20%,23%,26%,30%,30%
+special_week,Race Bonus,1%,2%,3%,5%,5%
+special_week,Fan Bonus,5%,6%,8%,10%,10%
+special_week,Speed Bonus,0,1,1,1,1
+special_week,Specialty Priority,0,0,0,15,30
+silence_suzuka_ssr02,Friendship Bonus,25%,27%,30%,32%,35%
+silence_suzuka_ssr02,Specialty Priority,50,53,57,61,65
+silence_suzuka_ssr02,Mood Effect,30%,33%,36%,40%,40%
+silence_suzuka_ssr02,Initial Friendship Gauge,20,21,23,25,25
+silence_suzuka_ssr02,Race Bonus,5%,5%,5%,5%,5%
+silence_suzuka_ssr02,Fan Bonus,10%,11%,13%,15%,15%
+silence_suzuka_ssr02,Skill Point Bonus,0,1,1,1,1
+silence_suzuka_ssr02,Initial Speed,0,0,0,15,30
+tokai_teio,Friendship Bonus,15%,16%,18%,20%,20%
+tokai_teio,Mood Effect,40%,45%,50%,55%,60%
+tokai_teio,Initial Friendship Gauge,20,21,23,25,25
+tokai_teio,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+tokai_teio,Hint Frequency,30%,33%,36%,40%,40%
+tokai_teio,Specialty Priority,20,25,30,35,35
+tokai_teio,Power Bonus,0,1,1,1,1
+tokai_teio,Race Bonus,0,0,0,5%,10%
+tokai_teio,Fan Bonus,0,0,0,10%,15%
+gold_city,Friendship Bonus,15%,16%,18%,20%,20%
+gold_city,Hint Levels,Lv 2,Lv 2,Lv 3,Lv 3,Lv 4
+gold_city,Hint Frequency,40%,45%,50%,55%,60%
+gold_city,Initial Friendship Gauge,20,21,23,25,25
+gold_city,Mood Effect,20%,23%,26%,30%,30%
+gold_city,Training Effectiveness,5%,5%,5%,5%,5%
+gold_city,Power Bonus,0,1,1,1,1
+gold_city,Race Bonus,0,0,0,5%,10%
+gold_city,Fan Bonus,0,0,0,10%,15%
+sakura_bakushin_o,Friendship Bonus,15%,16%,18%,20%,20%
+sakura_bakushin_o,Race Bonus,5%,6%,7%,8%,10%
+sakura_bakushin_o,Fan Bonus,15%,16%,17%,18%,20%
+sakura_bakushin_o,Mood Effect,30%,33%,36%,40%,40%
+sakura_bakushin_o,Initial Friendship Gauge,20,21,23,25,25
+sakura_bakushin_o,Specialty Priority,35,40,45,50,50
+sakura_bakushin_o,Initial Speed,15,16,18,20,20
+sakura_bakushin_o,Speed Bonus,0,1,1,1,1
+sakura_bakushin_o,Training Effectiveness,0,0,0,5%,10%
+nishino_flower,Friendship Bonus,15%,16%,18%,20%,20%
+nishino_flower,Initial Friendship Gauge,25,27,30,32,35
+nishino_flower,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+nishino_flower,Hint Frequency,40%,42%,45%,47%,50%
+nishino_flower,Training Effectiveness,5%,6%,8%,10%,10%
+nishino_flower,Race Bonus,5%,5%,5%,5%,5%
+nishino_flower,Fan Bonus,10%,11%,13%,15%,15%
+nishino_flower,Mood Effect,20%,23%,26%,30%,30%
+nishino_flower,Speed Bonus,0,1,1,1,1
+nishino_flower,Initial Speed,0,0,0,15,30
+biko_pegasus,Friendship Bonus,20%,21%,23%,25%,25%
+biko_pegasus,Training Effectiveness,10%,11%,12%,13%,15%
+biko_pegasus,Initial Speed,25,27,30,32,35
+biko_pegasus,Race Bonus,5%,6%,7%,8%,10%
+biko_pegasus,Fan Bonus,15%,16%,17%,18%,20%
+biko_pegasus,Specialty Priority,20,25,30,35,35
+biko_pegasus,Speed Bonus,0,1,1,1,1
+biko_pegasus,Initial Friendship Gauge,0,0,0,15,30
+curren_chan_sr,Friendship Bonus,15%,16%,18%,20%,20%
+curren_chan_sr,Initial Friendship Gauge,25,26,27,28,30
+curren_chan_sr,Specialty Priority,50,53,57,61,65
+curren_chan_sr,Training Effectiveness,5%,6%,7%,8%,10%
+curren_chan_sr,Initial Speed,15,16,18,20,20
+curren_chan_sr,Hint Levels,0,Lv 1,Lv 1,Lv 2,Lv 2
+curren_chan_sr,Hint Frequency,0,20%,25%,30%,30%
+curren_chan_sr,Speed Bonus,0,0,0,0,1
+vodka_sr,Friendship Bonus,20%,21%,22%,23%,25%
+vodka_sr,Mood Effect,40%,42%,45%,47%,50%
+vodka_sr,Initial Friendship Gauge,15,16,18,20,20
+vodka_sr,Specialty Priority,20,25,30,35,35
+vodka_sr,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 1
+vodka_sr,Hint Frequency,10%,10%,10%,10%,10%
+vodka_sr,Race Bonus,0,1%,3%,5%,5%
+vodka_sr,Fan Bonus,0,5%,7%,10%,10%
+vodka_sr,Power Bonus,0,0,0,0,1
+shinko_windy_sr,Friendship Bonus,20%,21%,22%,23%,25%
+shinko_windy_sr,Race Bonus,5%,6%,7%,8%,10%
+shinko_windy_sr,Fan Bonus,15%,16%,17%,18%,20%
+shinko_windy_sr,Initial Speed,20,21,22,23,25
+shinko_windy_sr,Mood Effect,20%,23%,26%,30%,30%
+shinko_windy_sr,Specialty Priority,20,25,30,35,35
+shinko_windy_sr,Training Effectiveness,0,1%,3%,5%,5%
+shinko_windy_sr,Speed Bonus,0,0,0,0,1
+sweep_tosho_sr,Friendship Bonus,25%,26%,27%,28%,30%
+sweep_tosho_sr,Specialty Priority,35,38,42,46,50
+sweep_tosho_sr,Mood Effect,30%,32%,35%,37%,40%
+sweep_tosho_sr,Initial Friendship Gauge,20,21,22,23,25
+sweep_tosho_sr,Race Bonus,5%,5%,5%,5%,5%
+sweep_tosho_sr,Fan Bonus,10%,11%,12%,13%,15%
+sweep_tosho_sr,Training Effectiveness,0,1%,3%,5%,5%
+sweep_tosho_sr,Skill Point Bonus,0,0,0,0,1
+eishin_flash_sr,Friendship Bonus,15%,16%,18%,20%,20%
+eishin_flash_sr,Mood Effect,40%,42%,45%,47%,50%
+eishin_flash_sr,Initial Friendship Gauge,20,21,22,23,25
+eishin_flash_sr,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+eishin_flash_sr,Hint Frequency,30%,32%,35%,37%,40%
+eishin_flash_sr,Specialty Priority,20,25,30,35,35
+eishin_flash_sr,Training Effectiveness,0,1%,3%,5%,5%
+eishin_flash_sr,Speed Bonus,0,0,0,0,1
+narita_taishin_sr,Friendship Bonus,15%,16%,18%,20%,20%
+narita_taishin_sr,Initial Friendship Gauge,25,26,27,28,30
+narita_taishin_sr,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+narita_taishin_sr,Hint Frequency,30%,32%,35%,37%,40%
+narita_taishin_sr,Training Effectiveness,5%,6%,7%,8%,10%
+narita_taishin_sr,Race Bonus,5%,5%,5%,5%,5%
+narita_taishin_sr,Fan Bonus,10%,11%,12%,13%,15%
+narita_taishin_sr,Mood Effect,20%,23%,26%,30%,30%
+narita_taishin_sr,Initial Speed,0,10,15,20,20
+narita_taishin_sr,Speed Bonus,0,0,0,0,1
+king_halo_sr,Friendship Bonus,15%,16%,18%,20%,20%
+king_halo_sr,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+king_halo_sr,Hint Frequency,40%,42%,45%,47%,50%
+king_halo_sr,Initial Friendship Gauge,20,21,22,23,25
+king_halo_sr,Mood Effect,20%,23%,26%,30%,30%
+king_halo_sr,Training Effectiveness,5%,5%,5%,5%,5%
+king_halo_sr,Specialty Priority,0,30,45,60,60
+king_halo_sr,Power Bonus,0,0,0,0,1
+narita_top_road_r,Friendship Bonus,15%,16%,17%,18%,20%
+narita_top_road_r,Initial Friendship Gauge,15,16,18,20,20
+narita_top_road_r,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+narita_top_road_r,Hint Frequency,20%,23%,26%,30%,30%
+narita_top_road_r,Specialty Priority,20,25,30,35,35
+narita_top_road_r,Power Bonus,0,0,0,0,1
+narita_brian_r,Friendship Bonus,15%,16%,17%,18%,20%
+narita_brian_r,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+narita_brian_r,Hint Frequency,30%,32%,35%,37%,40%
+narita_brian_r,Training Effectiveness,5%,5%,5%,5%,5%
+narita_brian_r,Race Bonus,1%,2%,3%,5%,5%
+narita_brian_r,Fan Bonus,5%,6%,8%,10%,10%
+narita_brian_r,Specialty Priority,20,25,30,35,35
+narita_brian_r,Speed Bonus,0,0,0,0,1
+shinko_windy_r,Friendship Bonus,15%,16%,17%,18%,20%
+shinko_windy_r,Race Bonus,5%,5%,5%,5%,5%
+shinko_windy_r,Fan Bonus,10%,11%,12%,13%,15%
+shinko_windy_r,Mood Effect,15%,18%,21%,25%,25%
+shinko_windy_r,Initial Speed,15,16,18,20,20
+shinko_windy_r,Specialty Priority,20,25,30,35,35
+shinko_windy_r,Speed Bonus,0,0,0,0,1
+kawakami_princess,Friendship Bonus,15%,16%,17%,18%,20%
+kawakami_princess,Race Bonus,5%,5%,5%,5%,5%
+kawakami_princess,Fan Bonus,10%,11%,12%,13%,15%
+kawakami_princess,Mood Effect,15%,18%,21%,25%,25%
+kawakami_princess,Initial Speed,15,16,18,20,20
+kawakami_princess,Specialty Priority,20,25,30,35,35
+kawakami_princess,Power Bonus,0,0,0,0,1
+kitasan_black_r,Friendship Bonus,10%,11%,13%,15%,15%
+kitasan_black_r,Initial Friendship Gauge,20,21,22,23,25
+kitasan_black_r,Mood Effect,15%,18%,21%,25%,25%
+kitasan_black_r,Training Effectiveness,5%,5%,5%,5%,5%
+kitasan_black_r,Race Bonus,1%,2%,3%,5%,5%
+kitasan_black_r,Fan Bonus,5%,6%,8%,10%,10%
+kitasan_black_r,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+kitasan_black_r,Hint Frequency,20%,23%,26%,30%,30%
+kitasan_black_r,Power Bonus,0,0,0,0,1
+twin_turbo_r,Friendship Bonus,10%,11%,13%,15%,15%
+twin_turbo_r,Mood Effect,25%,27%,30%,32%,35%
+twin_turbo_r,Initial Friendship Gauge,15,16,18,20,20
+twin_turbo_r,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+twin_turbo_r,Hint Frequency,20%,23%,26%,30%,30%
+twin_turbo_r,Specialty Priority,20,25,30,35,35
+twin_turbo_r,Speed Bonus,0,0,0,0,1
+sweep_tosho_r,Friendship Bonus,10%,11%,13%,15%,15%
+sweep_tosho_r,Race Bonus,5%,5%,5%,5%,5%
+sweep_tosho_r,Fan Bonus,10%,11%,12%,13%,15%
+sweep_tosho_r,Mood Effect,15%,18%,21%,25%,25%
+sweep_tosho_r,Initial Wit,15,16,18,20,20
+sweep_tosho_r,Initial Friendship Gauge,15,16,18,20,20
+sweep_tosho_r,Specialty Priority,20,25,30,35,35
+sweep_tosho_r,Skill Point Bonus,0,0,0,0,1
+silence_suzuka_r,Friendship Bonus,15%,16%,17%,18%,20%
+silence_suzuka_r,Specialty Priority,35,38,42,46,50
+silence_suzuka_r,Mood Effect,15%,18%,21%,25%,25%
+silence_suzuka_r,Initial Friendship Gauge,15,16,18,20,20
+silence_suzuka_r,Race Bonus,1%,2%,3%,5%,5%
+silence_suzuka_r,Fan Bonus,5%,6%,8%,10%,10%
+silence_suzuka_r,Skill Point Bonus,0,0,0,0,1
+tokai_teio,Friendship Bonus,10%,11%,13%,15%,15%
+tokai_teio_r,Mood Effect,25%,27%,30%,32%,35%
+tokai_teio_r,Initial Friendship Gauge,15,16,18,20,20
+tokai_teio_r,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+tokai_teio_r,Hint Frequency,20%,23%,26%,30%,30%
+tokai_teio_r,Specialty Priority,20,25,30,35,35
+tokai_teio_r,Power Bonus,0,0,0,0,1
+maruzensky_r,Friendship Bonus,10%,11%,13%,15%,15%
+maruzensky_r,Training Effectiveness,5%,6%,7%,8%,10%
+maruzensky_r,Initial Speed,20,21,22,23,25
+maruzensky_r,Race Bonus,5%,5%,5%,5%,5%
+maruzensky_r,Fan Bonus,10%,11%,12%,13%,15%
+maruzensky_r,Specialty Priority,20,25,30,35,35
+maruzensky_r,Power Bonus,0,0,0,0,1
+gold_city_r,Friendship Bonus,10%,11%,13%,15%,15%
+gold_city_r,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+gold_city_r,Hint Frequency,30%,32%,35%,37%,40%
+gold_city_r,Mood Effect,15%,18%,21%,25%,25%
+gold_city_r,Training Effectiveness,5%,5%,5%,5%,5%
+gold_city_r,Initial Friendship Gauge,15,16,18,20,20
+gold_city_r,Power Bonus,0,0,0,0,1
+sakura_bakushin_o_r,Friendship Bonus,10%,11%,13%,15%,15%
+sakura_bakushin_o_r,Race Bonus,5%,5%,5%,5%,5%
+sakura_bakushin_o_r,Fan Bonus,10%,11%,12%,13%,15%
+sakura_bakushin_o_r,Mood Effect,15%,18%,21%,25%,25%
+sakura_bakushin_o_r,Initial Speed,15,16,18,20,20
+sakura_bakushin_o_r,Initial Friendship Gauge,15,16,18,20,20
+sakura_bakushin_o_r,Specialty Priority,20,25,30,35,35
+sakura_bakushin_o_r,Speed Bonus,0,0,0,0,1
+eishin_flash_r,Friendship Bonus,10%,11%,13%,15%,15%
+eishin_flash_r,Mood Effect,25%,27%,30%,32%,35%
+eishin_flash_r,Initial Friendship Gauge,15,16,18,20,20
+eishin_flash_r,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+eishin_flash_r,Hint Frequency,20%,23%,26%,30%,30%
+eishin_flash_r,Specialty Priority,20,25,30,35,35
+eishin_flash_r,Speed Bonus,0,0,0,0,1
+narita_taishin_r,Friendship Bonus,10%,11%,13%,15%,15%
+narita_taishin_r,Initial Friendship Gauge,20,21,22,23,25
+narita_taishin_r,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+narita_taishin_r,Hint Frequency,30%,32%,35%,37%,40%
+narita_taishin_r,Mood Effect,15%,18%,21%,25%,25%
+narita_taishin_r,Training Effectiveness,5%,5%,5%,5%,5%
+narita_taishin_r,Race Bonus,1%,2%,3%,5%,5%
+narita_taishin_r,Fan Bonus,5%,6%,8%,10%,10%
+narita_taishin_r,Speed Bonus,0,0,0,0,1
+nishino_flower_r,Friendship Bonus,10%,11%,13%,15%,15%
+nishino_flower_r,Initial Friendship Gauge,20,21,22,23,25
+nishino_flower_r,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+nishino_flower_r,Hint Frequency,30%,32%,35%,37%,40%
+nishino_flower_r,Mood Effect,15%,18%,21%,25%,25%
+nishino_flower_r,Training Effectiveness,5%,5%,5%,5%,5%
+nishino_flower_r,Race Bonus,1%,2%,3%,5%,5%
+nishino_flower_r,Fan Bonus,5%,6%,8%,10%,10%
+nishino_flower_r,Speed Bonus,0,0,0,0,1
+biko_pegasus_r,Friendship Bonus,10%,11%,13%,15%,15%
+biko_pegasus_r,Training Effectiveness,5%,6%,7%,8%,10%
+biko_pegasus_r,Initial Speed,20,21,22,23,25
+biko_pegasus_r,Race Bonus,5%,5%,5%,5%,5%
+biko_pegasus_r,Fan Bonus,10%,11%,12%,13%,15%
+biko_pegasus_r,Specialty Priority,20,25,30,35,35
+biko_pegasus_r,Speed Bonus,0,0,0,0,1
+king_halo_r,Friendship Bonus,10%,11%,13%,15%,15%
+king_halo_r,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+king_halo_r,Hint Frequency,30%,32%,35%,37%,40%
+king_halo_r,Mood Effect,15%,18%,21%,25%,25%
+king_halo_r,Training Effectiveness,5%,5%,5%,5%,5%
+king_halo_r,Initial Friendship Gauge,15,16,18,20,20
+king_halo_r,Power Bonus,0,0,0,0,1
+
+zenno_rob_roy_stamina,Friendship Bonus,25%,26%,27%,28%,30%
+zenno_rob_roy_stamina,Initial Stamina,25,26,27,28,30
+zenno_rob_roy_stamina,Initial Guts,25,26,27,28,30
+zenno_rob_roy_stamina,Initial Friendship Gauge,15,16,18,20,20
+zenno_rob_roy_stamina,Race Bonus,1%,2%,3%,5%,5%
+zenno_rob_roy_stamina,Fan Bonus,5%,6%,8%,10%,10%
+zenno_rob_roy_stamina,Specialty Priority,20,25,30,35,35
+zenno_rob_roy_stamina,Stamina Bonus,0,1,1,1,1
+zenno_rob_roy_stamina,Hint Levels,0,0,0,Lv 2,Lv 3
+zenno_rob_roy_stamina,Hint Frequency,0,0,0,30%,40%
+ikuno_dictus_stamina,Friendship Bonus,25%,26%,27%,28%,30%
+ikuno_dictus_stamina,Race Bonus,5%,6%,7%,8%,10%
+ikuno_dictus_stamina,Fan Bonus,15%,16%,17%,18%,20%
+ikuno_dictus_stamina,Initial Friendship Gauge,20,21,23,25,25
+ikuno_dictus_stamina,Mood Effect,20%,23%,26%,30%,30%
+ikuno_dictus_stamina,Initial Guts,15,16,18,20,20
+ikuno_dictus_stamina,Stamina Bonus,0,1,1,1,1
+ikuno_dictus_stamina,Hint Levels,0,0,0,Lv 2,Lv 3
+ikuno_dictus_stamina,Hint Frequency,0,0,0,30%,40%
+symboli_rudolf_stamina,Friendship Bonus,20%,21%,23%,25%,25%
+symboli_rudolf_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+symboli_rudolf_stamina,Hint Frequency,40%,42%,45%,47%,50%
+symboli_rudolf_stamina,Training Effectiveness,5%,6%,8%,10%,10%
+symboli_rudolf_stamina,Initial Friendship Gauge,15,16,18,20,20
+symboli_rudolf_stamina,Specialty Priority,20,25,30,35,35
+symboli_rudolf_stamina,Guts Bonus,0,1,1,1,1
+symboli_rudolf_stamina,Race Bonus,0,0,0,5%,10%
+symboli_rudolf_stamina,Fan Bonus,0,0,0,10%,15%
+mejiro_bright_stamina,Friendship Bonus,20%,21%,23%,25%,25%
+mejiro_bright_stamina,Initial Friendship Gauge,25,26,27,28,30
+mejiro_bright_stamina,Specialty Priority,35,40,45,50,50
+mejiro_bright_stamina,Race Bonus,1%,2%,3%,5%,5%
+mejiro_bright_stamina,Fan Bonus,5%,6%,8%,10%,10%
+mejiro_bright_stamina,Guts Bonus,0,1,1,1,1
+mejiro_bright_stamina,Initial Stamina,0,0,0,15,30
+meisho_doto_stamina,Friendship Bonus,20%,21%,23%,25%,25%
+meisho_doto_stamina,Initial Stamina,25,27,30,32,35
+meisho_doto_stamina,Initial Guts,25,27,30,32,35
+meisho_doto_stamina,Training Effectiveness,5%,5%,5%,5%,5%
+meisho_doto_stamina,Initial Friendship Gauge,15,16,18,20,20
+meisho_doto_stamina,Specialty Priority,20,25,30,35,35
+meisho_doto_stamina,Stamina Bonus,0,1,1,1,1
+meisho_doto_stamina,Hint Levels,0,0,0,Lv 2,Lv 3
+meisho_doto_stamina,Hint Frequency,0,0,0,30%,40%
+manhattan_cafe_stamina,Friendship Bonus,25%,27%,30%,32%,35%
+manhattan_cafe_stamina,Initial Friendship Gauge,20,21,23,25,25
+manhattan_cafe_stamina,Specialty Priority,35,40,45,50,50
+manhattan_cafe_stamina,Initial Stamina,15,16,18,20,20
+manhattan_cafe_stamina,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+manhattan_cafe_stamina,Hint Frequency,20%,23%,26%,30%,30%
+manhattan_cafe_stamina,Stamina Bonus,0,1,1,1,1
+manhattan_cafe_stamina,Race Bonus,0,0,0,5%,10%
+manhattan_cafe_stamina,Fan Bonus,0,0,0,10%,15%
+narita_brian_stamina,Friendship Bonus,25%,27%,30%,32%,35%
+narita_brian_stamina,Initial Friendship Gauge,20,21,23,25,25
+narita_brian_stamina,Mood Effect,20%,23%,26%,30%,30%
+narita_brian_stamina,Training Effectiveness,5%,5%,5%,5%,5%
+narita_brian_stamina,Specialty Priority,20,25,30,35,35
+narita_brian_stamina,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 1
+narita_brian_stamina,Hint Frequency,20%,20%,20%,20%,20%
+narita_brian_stamina,Skill Point Bonus,0,1,1,1,1
+narita_brian_stamina,Race Bonus,0,0,0,5%,10%
+narita_brian_stamina,Fan Bonus,0,0,0,10%,15%
+nakayama_festa_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+nakayama_festa_stamina,Initial Stamina,25,26,27,28,30
+nakayama_festa_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+nakayama_festa_stamina,Hint Frequency,40%,42%,45%,47%,50%
+nakayama_festa_stamina,Initial Friendship Gauge,20,21,23,25,25
+nakayama_festa_stamina,Specialty Priority,35,40,45,50,50
+nakayama_festa_stamina,Mood Effect,20%,23%,26%,30%,30%
+nakayama_festa_stamina,Stamina Bonus,0,1,1,1,1
+nakayama_festa_stamina,Training Effectiveness,0,0,0,5%,10%
+silence_suzuka_stamina,Friendship Bonus,20%,21%,23%,25%,25%
+silence_suzuka_stamina,Initial Stamina,25,27,30,32,35
+silence_suzuka_stamina,Mood Effect,20%,23%,26%,30%,30%
+silence_suzuka_stamina,Race Bonus,1%,2%,3%,5%,5%
+silence_suzuka_stamina,Fan Bonus,5%,6%,8%,10%,10%
+silence_suzuka_stamina,Specialty Priority,20,25,30,35,35
+silence_suzuka_stamina,Stamina Bonus,0,1,1,1,1
+silence_suzuka_stamina,Initial Friendship Gauge,0,0,0,15,30
+winning_ticket_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+winning_ticket_stamina,Initial Friendship Gauge,25,27,30,32,35
+winning_ticket_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+winning_ticket_stamina,Hint Frequency,40%,42%,45%,47%,50%
+winning_ticket_stamina,Mood Effect,20%,23%,26%,30%,30%
+winning_ticket_stamina,Guts Bonus,0,1,1,1,1
+winning_ticket_stamina,Race Bonus,0,0,0,5%,10%
+winning_ticket_stamina,Fan Bonus,0,0,0,10%,15%
+sakura_chiyono_o_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+sakura_chiyono_o_stamina,Mood Effect,40%,45%,50%,55%,60%
+sakura_chiyono_o_stamina,Initial Friendship Gauge,20,21,23,25,25
+sakura_chiyono_o_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+sakura_chiyono_o_stamina,Hint Frequency,30%,33%,36%,40%,40%
+sakura_chiyono_o_stamina,Specialty Priority,20,25,30,35,35
+sakura_chiyono_o_stamina,Stamina Bonus,0,1,1,1,1
+sakura_chiyono_o_stamina,Race Bonus,0,0,0,5%,10%
+sakura_chiyono_o_stamina,Fan Bonus,0,0,0,10%,15%
+satono_diamond_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+satono_diamond_stamina,Race Bonus,5%,6%,7%,8%,10%
+satono_diamond_stamina,Fan Bonus,15%,16%,17%,18%,20%
+satono_diamond_stamina,Mood Effect,30%,33%,36%,40%,40%
+satono_diamond_stamina,Initial Friendship Gauge,20,21,23,25,25
+satono_diamond_stamina,Specialty Priority,35,40,45,50,50
+satono_diamond_stamina,Initial Stamina,15,16,18,20,20
+satono_diamond_stamina,Guts Bonus,0,1,1,1,1
+satono_diamond_stamina,Training Effectiveness,0,0,0,5%,10%
+gold_ship_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+gold_ship_stamina,Hint Levels,Lv 2,Lv 2,Lv 3,Lv 3,Lv 4
+gold_ship_stamina,Hint Frequency,40%,45%,50%,55%,60%
+gold_ship_stamina,Initial Friendship Gauge,20,21,23,25,25
+gold_ship_stamina,Mood Effect,20%,23%,26%,30%,30%
+gold_ship_stamina,Training Effectiveness,5%,5%,5%,5%,5%
+gold_ship_stamina,Stamina Bonus,0,1,1,1,1
+gold_ship_stamina,Initial Stamina,0,0,0,15,30
+seiun_sky_stamina,Friendship Bonus,25%,27%,30%,32%,35%
+seiun_sky_stamina,Specialty Priority,50,53,57,61,65
+seiun_sky_stamina,Mood Effect,30%,33%,36%,40%,40%
+seiun_sky_stamina,Initial Friendship Gauge,20,21,23,25,25
+seiun_sky_stamina,Race Bonus,5%,5%,5%,5%,5%
+seiun_sky_stamina,Fan Bonus,10%,11%,13%,15%,15%
+seiun_sky_stamina,Stamina Bonus,0,1,1,1,1
+seiun_sky_stamina,Hint Levels,0,0,0,Lv 2,Lv 3
+seiun_sky_stamina,Hint Frequency,0,0,0,30%,40%
+tamamo_cross_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+tamamo_cross_stamina,Initial Friendship Gauge,25,27,30,32,35
+tamamo_cross_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+tamamo_cross_stamina,Hint Frequency,40%,42%,45%,47%,50%
+tamamo_cross_stamina,Training Effectiveness,5%,6%,8%,10%,10%
+tamamo_cross_stamina,Race Bonus,5%,5%,5%,5%,5%
+tamamo_cross_stamina,Fan Bonus,10%,11%,13%,15%,15%
+tamamo_cross_stamina,Mood Effect,20%,23%,26%,30%,30%
+tamamo_cross_stamina,Stamina Bonus,0,1,1,1,1
+tamamo_cross_stamina,Initial Stamina,0,0,0,15,30
+super_creek_stamina,Friendship Bonus,20%,21%,23%,25%,25%
+super_creek_stamina,Training Effectiveness,10%,11%,12%,13%,15%
+super_creek_stamina,Initial Stamina,25,27,30,32,35
+super_creek_stamina,Race Bonus,5%,6%,7%,8%,10%
+super_creek_stamina,Fan Bonus,15%,16%,17%,18%,20%
+super_creek_stamina,Specialty Priority,20,25,30,35,35
+super_creek_stamina,Stamina Bonus,0,1,1,1,1
+super_creek_stamina,Initial Friendship Gauge,0,0,0,15,30
+mejiro_mcqueen_stamina,Friendship Bonus,25%,26%,27%,28%,30%
+mejiro_mcqueen_stamina,Specialty Priority,35,40,45,50,50
+mejiro_mcqueen_stamina,Mood Effect,20%,23%,26%,30%,30%
+mejiro_mcqueen_stamina,Initial Friendship Gauge,15,16,18,20,20
+mejiro_mcqueen_stamina,Race Bonus,1%,2%,3%,5%,5%
+mejiro_mcqueen_stamina,Fan Bonus,5%,6%,8%,10%,10%
+mejiro_mcqueen_stamina,Guts Bonus,0,1,1,1,1
+mejiro_mcqueen_stamina,Hint Levels,0,0,0,Lv 1,Lv 2
+mejiro_mcqueen_stamina,Hint Frequency,0,0,0,5%,10%
+rice_shower_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+rice_shower_stamina,Mood Effect,40%,42%,45%,47%,50%
+rice_shower_stamina,Initial Friendship Gauge,12,13,15,15,15
+rice_shower_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+rice_shower_stamina,Hint Frequency,30%,33%,36%,40%,40%
+rice_shower_stamina,Specialty Priority,20,25,30,35,35
+rice_shower_stamina,Guts Bonus,0,1,1,1,1
+rice_shower_stamina,Race Bonus,0,0,0,1%,5%
+rice_shower_stamina,Fan Bonus,0,0,0,10%,15%
+tokai_teio_sr_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+tokai_teio_sr_stamina,Training Effectiveness,5%,6%,7%,8%,10%
+tokai_teio_sr_stamina,Race Bonus,5%,6%,7%,8%,10%
+tokai_teio_sr_stamina,Fan Bonus,15%,16%,17%,18%,20%
+tokai_teio_sr_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+tokai_teio_sr_stamina,Hint Frequency,40%,42%,45%,47%,50%
+tokai_teio_sr_stamina,Initial Friendship Gauge,0,10,15,20,20
+tokai_teio_sr_stamina,Skill Point Bonus,0,0,0,0,1
+mejiro_ryan_sr_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+mejiro_ryan_sr_stamina,Mood Effect,40%,42%,45%,47%,50%
+mejiro_ryan_sr_stamina,Race Bonus,5%,5%,5%,5%,5%
+mejiro_ryan_sr_stamina,Fan Bonus,10%,11%,12%,13%,15%
+mejiro_ryan_sr_stamina,Specialty Priority,20,25,30,35,35
+mejiro_ryan_sr_stamina,Initial Friendship Gauge,0,10,15,20,20
+mejiro_ryan_sr_stamina,Stamina Bonus,0,0,0,0,1
+tosen_jordan_sr_stamina,Friendship Bonus,25%,26%,27%,28%,30%
+tosen_jordan_sr_stamina,Initial Friendship Gauge,25,26,27,28,30
+tosen_jordan_sr_stamina,Specialty Priority,35,38,42,46,50
+tosen_jordan_sr_stamina,Mood Effect,20%,23%,26%,30%,30%
+tosen_jordan_sr_stamina,Initial Stamina,15,16,18,20,20
+tosen_jordan_sr_stamina,Hint Levels,0,Lv 1,Lv 1,Lv 2,Lv 2
+tosen_jordan_sr_stamina,Hint Frequency,0,20%,25%,30%,30%
+tosen_jordan_sr_stamina,Stamina Bonus,0,0,0,0,1
+zenno_rob_roy_sr_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+zenno_rob_roy_sr_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+zenno_rob_roy_sr_stamina,Hint Frequency,40%,42%,45%,47%,50%
+zenno_rob_roy_sr_stamina,Mood Effect,30%,32%,35%,37%,40%
+zenno_rob_roy_sr_stamina,Training Effectiveness,5%,5%,5%,5%,5%
+zenno_rob_roy_sr_stamina,Initial Friendship Gauge,15,16,18,20,20
+zenno_rob_roy_sr_stamina,Specialty Priority,0,30,45,60,60
+zenno_rob_roy_sr_stamina,Stamina Bonus,0,0,0,0,1
+mayano_top_gun_sr_stamina,Friendship Bonus,20%,21%,22%,23%,25%
+mayano_top_gun_sr_stamina,Training Effectiveness,5%,6%,7%,8%,10%
+mayano_top_gun_sr_stamina,Initial Stamina,25,26,27,28,30
+mayano_top_gun_sr_stamina,Race Bonus,5%,5%,5%,5%,5%
+mayano_top_gun_sr_stamina,Fan Bonus,10%,11%,12%,13%,15%
+mayano_top_gun_sr_stamina,Specialty Priority,20,25,30,35,35
+mayano_top_gun_sr_stamina,Mood Effect,0,10%,15%,20%,20%
+mayano_top_gun_sr_stamina,Skill Point Bonus,0,0,0,0,1
+manhattan_cafe_sr_stamina,Friendship Bonus,15%,16%,18%,20%,20%
+manhattan_cafe_sr_stamina,Race Bonus,5%,6%,7%,8%,10%
+manhattan_cafe_sr_stamina,Fan Bonus,15%,16%,17%,18%,20%
+manhattan_cafe_sr_stamina,Mood Effect,30%,32%,35%,37%,40%
+manhattan_cafe_sr_stamina,Initial Friendship Gauge,20,21,22,23,25
+manhattan_cafe_sr_stamina,Specialty Priority,35,38,42,46,50
+manhattan_cafe_sr_stamina,Initial Stamina,15,16,18,20,20
+manhattan_cafe_sr_stamina,Hint Levels,0,Lv 1,Lv 1,Lv 2,Lv 2
+manhattan_cafe_sr_stamina,Hint Frequency,0,20%,25%,30%,30%
+manhattan_cafe_sr_stamina,Stamina Bonus,0,0,0,0,1
+mejiro_bright_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+mejiro_bright_r_stamina,Initial Friendship Gauge,20,21,22,23,25
+mejiro_bright_r_stamina,Race Bonus,1%,2%,3%,5%,5%
+mejiro_bright_r_stamina,Fan Bonus,5%,6%,8%,10%,10%
+mejiro_bright_r_stamina,Specialty Priority,20,25,30,35,35
+mejiro_bright_r_stamina,Guts Bonus,0,0,0,0,1
+nakayama_festa_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+nakayama_festa_r_stamina,Initial Stamina,20,21,22,23,25
+nakayama_festa_r_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+nakayama_festa_r_stamina,Hint Frequency,30%,32%,35%,37%,40%
+nakayama_festa_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+nakayama_festa_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+nakayama_festa_r_stamina,Specialty Priority,20,25,30,35,35
+nakayama_festa_r_stamina,Stamina Bonus,0,0,0,0,1
+tosen_jordan_r_stamina,Friendship Bonus,15%,16%,17%,18%,20%
+tosen_jordan_r_stamina,Initial Friendship Gauge,20,21,22,23,25
+tosen_jordan_r_stamina,Specialty Priority,35,38,42,46,50
+tosen_jordan_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+tosen_jordan_r_stamina,Initial Stamina,15,16,18,20,20
+tosen_jordan_r_stamina,Stamina Bonus,0,0,0,0,1
+sakura_chiyono_o_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+sakura_chiyono_o_r_stamina,Mood Effect,25%,27%,30%,32%,35%
+sakura_chiyono_o_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+sakura_chiyono_o_r_stamina,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+sakura_chiyono_o_r_stamina,Hint Frequency,20%,23%,26%,30%,30%
+sakura_chiyono_o_r_stamina,Specialty Priority,20,25,30,35,35
+sakura_chiyono_o_r_stamina,Stamina Bonus,0,0,0,0,1
+zenno_rob_roy_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+zenno_rob_roy_r_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+zenno_rob_roy_r_stamina,Hint Frequency,30%,32%,35%,37%,40%
+zenno_rob_roy_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+zenno_rob_roy_r_stamina,Training Effectiveness,5%,5%,5%,5%,5%
+zenno_rob_roy_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+zenno_rob_roy_r_stamina,Stamina Bonus,0,0,0,0,1
+satono_diamond_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+satono_diamond_r_stamina,Race Bonus,5%,5%,5%,5%,5%
+satono_diamond_r_stamina,Fan Bonus,10%,11%,12%,13%,15%
+satono_diamond_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+satono_diamond_r_stamina,Initial Stamina,15,16,18,20,20
+satono_diamond_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+satono_diamond_r_stamina,Specialty Priority,20,25,30,35,35
+satono_diamond_r_stamina,Guts Bonus,0,0,0,0,1
+gold_ship_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+gold_ship_r_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+gold_ship_r_stamina,Hint Frequency,30%,32%,35%,37%,40%
+gold_ship_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+gold_ship_r_stamina,Training Effectiveness,5%,5%,5%,5%,5%
+gold_ship_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+gold_ship_r_stamina,Stamina Bonus,0,0,0,0,1
+mejiro_mcqueen_r_stamina,Friendship Bonus,15%,16%,17%,18%,20%
+mejiro_mcqueen_r_stamina,Specialty Priority,35,38,42,46,50
+mejiro_mcqueen_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+mejiro_mcqueen_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+mejiro_mcqueen_r_stamina,Race Bonus,1%,2%,3%,5%,5%
+mejiro_mcqueen_r_stamina,Fan Bonus,5%,6%,8%,10%,10%
+mejiro_mcqueen_r_stamina,Guts Bonus,0,0,0,0,1
+tm_opera_o_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+tm_opera_o_r_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+tm_opera_o_r_stamina,Hint Frequency,30%,32%,35%,37%,40%
+tm_opera_o_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+tm_opera_o_r_stamina,Training Effectiveness,5%,5%,5%,5%,5%
+tm_opera_o_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+tm_opera_o_r_stamina,Stamina Bonus,0,0,0,0,1
+seiun_sky_r_stamina,Friendship Bonus,15%,16%,17%,18%,20%
+seiun_sky_r_stamina,Specialty Priority,35,38,42,46,50
+seiun_sky_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+seiun_sky_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+seiun_sky_r_stamina,Race Bonus,1%,2%,3%,5%,5%
+seiun_sky_r_stamina,Fan Bonus,5%,6%,8%,10%,10%
+seiun_sky_r_stamina,Stamina Bonus,0,0,0,0,1
+rice_shower_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+rice_shower_r_stamina,Mood Effect,25%,27%,30%,32%,35%
+rice_shower_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+rice_shower_r_stamina,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+rice_shower_r_stamina,Hint Frequency,20%,23%,26%,30%,30%
+rice_shower_r_stamina,Specialty Priority,20,25,30,35,35
+rice_shower_r_stamina,Guts Bonus,0,0,0,0,1
+super_creek_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+super_creek_r_stamina,Training Effectiveness,5%,6%,7%,8%,10%
+super_creek_r_stamina,Initial Stamina,20,21,22,23,25
+super_creek_r_stamina,Race Bonus,5%,5%,5%,5%,5%
+super_creek_r_stamina,Fan Bonus,10%,11%,12%,13%,15%
+super_creek_r_stamina,Specialty Priority,20,25,30,35,35
+super_creek_r_stamina,Stamina Bonus,0,0,0,0,1
+tamamo_cross_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+tamamo_cross_r_stamina,Initial Friendship Gauge,20,21,22,23,25
+tamamo_cross_r_stamina,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+tamamo_cross_r_stamina,Hint Frequency,30%,32%,35%,37%,40%
+tamamo_cross_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+tamamo_cross_r_stamina,Training Effectiveness,5%,5%,5%,5%,5%
+tamamo_cross_r_stamina,Race Bonus,1%,2%,3%,5%,5%
+tamamo_cross_r_stamina,Fan Bonus,5%,6%,8%,10%,10%
+tamamo_cross_r_stamina,Stamina Bonus,0,0,0,0,1
+mayano_top_gun_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+mayano_top_gun_r_stamina,Training Effectiveness,5%,6%,7%,8%,10%
+mayano_top_gun_r_stamina,Initial Stamina,20,21,22,23,25
+mayano_top_gun_r_stamina,Race Bonus,5%,5%,5%,5%,5%
+mayano_top_gun_r_stamina,Fan Bonus,10%,11%,12%,13%,15%
+mayano_top_gun_r_stamina,Specialty Priority,20,25,30,35,35
+mayano_top_gun_r_stamina,Skill Point Bonus,0,0,0,0,1
+manhattan_cafe_r_stamina,Friendship Bonus,10%,11%,13%,15%,15%
+manhattan_cafe_r_stamina,Race Bonus,5%,5%,5%,5%,5%
+manhattan_cafe_r_stamina,Fan Bonus,10%,11%,12%,13%,15%
+manhattan_cafe_r_stamina,Mood Effect,15%,18%,21%,25%,25%
+manhattan_cafe_r_stamina,Initial Stamina,15,16,18,20,20
+manhattan_cafe_r_stamina,Initial Friendship Gauge,15,16,18,20,20
+manhattan_cafe_r_stamina,Specialty Priority,20,25,30,35,35
+manhattan_cafe_r_stamina,Stamina Bonus,0,0,0,0,1
+
+card_id,effect_name,lb0,lb1,lb2,lb3,lb4
+air_groove_power,Friendship Bonus,20%,21%,23%,25%,25%
+air_groove_power,Mood Effect,40%,45%,50%,55%,60%
+air_groove_power,Specialty Priority,50,53,57,61,65
+air_groove_power,Initial Stamina,15,16,18,20,20
+air_groove_power,Initial Power,15,16,18,20,20
+air_groove_power,Initial Friendship Gauge,15,15,15,15,15
+air_groove_power,Stamina Bonus,0,1,1,1,1
+air_groove_power,Race Bonus,0,0,0,5%,10%
+air_groove_power,Fan Bonus,0,0,0,10%,15%
+haru_urara_power,Friendship Bonus,15%,16%,18%,20%,20%
+haru_urara_power,Initial Friendship Gauge,25,26,27,28,30
+haru_urara_power,Race Bonus,5%,6%,7%,8%,10%
+haru_urara_power,Fan Bonus,15%,16%,17%,18%,20%
+haru_urara_power,Hint Frequency,40%,45%,50%,55%,60%
+haru_urara_power,Mood Effect,20%,23%,26%,30%,30%
+haru_urara_power,Initial Power,15,16,18,20,20
+haru_urara_power,Skill Point Bonus,0,1,1,1,1
+haru_urara_power,Training Effectiveness,0,0,0,5%,10%
+kawakami_princess_power,Friendship Bonus,25%,27%,30%,32%,35%
+kawakami_princess_power,Specialty Priority,50,53,57,61,65
+kawakami_princess_power,Initial Friendship Gauge,20,21,23,25,25
+kawakami_princess_power,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 1
+kawakami_princess_power,Hint Frequency,20%,20%,20%,20%,20%
+kawakami_princess_power,Power Bonus,0,1,1,1,1
+kawakami_princess_power,Initial Power,0,0,0,15,30
+daiwa_scarlet_power,Friendship Bonus,25%,27%,30%,32%,35%
+daiwa_scarlet_power,Initial Friendship Gauge,25,26,27,28,30
+daiwa_scarlet_power,Race Bonus,5%,6%,7%,8%,10%
+daiwa_scarlet_power,Fan Bonus,15%,16%,17%,18%,20%
+daiwa_scarlet_power,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+daiwa_scarlet_power,Hint Frequency,20%,23%,26%,30%,30%
+daiwa_scarlet_power,Stamina Bonus,0,1,1,1,1
+daiwa_scarlet_power,Initial Power,0,0,0,15,30
+agnes_digital_power,Friendship Bonus,20%,21%,23%,25%,25%
+agnes_digital_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+agnes_digital_power,Hint Frequency,40%,42%,45%,47%,50%
+agnes_digital_power,Power Bonus,1,1,1,1,1
+agnes_digital_power,Initial Friendship Gauge,20,21,23,25,25
+agnes_digital_power,Race Bonus,1%,2%,3%,5%,5%
+agnes_digital_power,Fan Bonus,5%,6%,8%,10%,10%
+agnes_digital_power,Specialty Priority,20,25,30,35,35
+agnes_digital_power,Stamina Bonus,0,1,1,1,1
+agnes_digital_power,Mood Effect,0,0,0,15%,30%
+admire_vega_power,Friendship Bonus,25%,26%,27%,28%,30%
+admire_vega_power,Training Effectiveness,10%,11%,12%,13%,15%
+admire_vega_power,Initial Friendship Gauge,15,16,18,20,20
+admire_vega_power,Specialty Priority,20,25,30,35,35
+admire_vega_power,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 1
+admire_vega_power,Hint Frequency,20%,20%,20%,20%,20%
+admire_vega_power,Power Bonus,0,1,1,1,1
+admire_vega_power,Race Bonus,0,0,0,5%,10%
+admire_vega_power,Fan Bonus,0,0,0,10%,15%
+marvelous_sunday_power,Friendship Bonus,20%,21%,23%,25%,25%
+marvelous_sunday_power,Initial Stamina,25,27,30,32,35
+marvelous_sunday_power,Initial Power,25,27,30,32,35
+marvelous_sunday_power,Race Bonus,5%,6%,7%,8%,10%
+marvelous_sunday_power,Fan Bonus,15%,16%,17%,18%,20%
+marvelous_sunday_power,Initial Friendship Gauge,15,16,18,20,20
+marvelous_sunday_power,Stamina Bonus,0,1,1,1,1
+daitaku_helios_power,Friendship Bonus,25%,26%,27%,28%,30%
+daitaku_helios_power,Mood Effect,40%,42%,45%,47%,50%
+daitaku_helios_power,Race Bonus,5%,6%,7%,8%,10%
+daitaku_helios_power,Fan Bonus,15%,16%,17%,18%,20%
+daitaku_helios_power,Training Effectiveness,5%,5%,5%,5%,5%
+daitaku_helios_power,Specialty Priority,20,25,30,35,35
+daitaku_helios_power,Skill Point Bonus,0,1,1,1,1
+daitaku_helios_power,Hint Levels,0,0,0,Lv 2,Lv 3
+daitaku_helios_power,Hint Frequency,0,0,0,30%,40%
+tamamo_cross_power,Friendship Bonus,20%,21%,23%,25%,25%
+tamamo_cross_power,Mood Effect,40%,45%,50%,55%,60%
+tamamo_cross_power,Race Bonus,5%,6%,7%,8%,10%
+tamamo_cross_power,Fan Bonus,15%,16%,17%,18%,20%
+tamamo_cross_power,Specialty Priority,50,53,57,61,65
+tamamo_cross_power,Initial Friendship Gauge,15,16,18,20,20
+tamamo_cross_power,Stamina Bonus,0,1,1,1,1
+tamamo_cross_power,Initial Power,0,0,0,15,30
+rice_shower_power,Friendship Bonus,25%,26%,27%,28%,30%
+rice_shower_power,Specialty Priority,35,40,45,50,50
+rice_shower_power,Initial Friendship Gauge,15,16,18,20,20
+rice_shower_power,Race Bonus,1%,2%,3%,5%,5%
+rice_shower_power,Fan Bonus,5%,6%,8%,10%,10%
+rice_shower_power,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 1
+rice_shower_power,Hint Frequency,20%,20%,20%,20%,20%
+rice_shower_power,Power Bonus,0,1,1,1,1
+rice_shower_power,Training Effectiveness,0,0,0,5%,10%
+daiwa_scarlet_power_2,Friendship Bonus,20%,21%,23%,25%,25%
+daiwa_scarlet_power_2,Initial Power,25,26,27,28,30
+daiwa_scarlet_power_2,Specialty Priority,15,16,17,18,20
+daiwa_scarlet_power_2,Training Effectiveness,5%,5%,5%,5%,5%
+daiwa_scarlet_power_2,Initial Friendship Gauge,10,11,13,15,15
+daiwa_scarlet_power_2,Power Bonus,0,1,1,1,1
+daiwa_scarlet_power_2,Hint Levels,0,0,0,Lv 2,Lv 3
+daiwa_scarlet_power_2,Hint Frequency,0,0,0,30%,40%
+king_halo_power,Friendship Bonus,25%,26%,27%,28%,30%
+king_halo_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+king_halo_power,Hint Frequency,40%,42%,45%,47%,50%
+king_halo_power,Training Effectiveness,5%,6%,8%,10%,10%
+king_halo_power,Specialty Priority,35,40,45,50,50
+king_halo_power,Initial Friendship Gauge,15,16,18,20,20
+king_halo_power,Power Bonus,0,1,1,1,1
+king_halo_power,Initial Power,0,0,0,15,30
+bamboo_memory_power,Friendship Bonus,20%,21%,23%,25%,25%
+bamboo_memory_power,Training Effectiveness,10%,11%,12%,13%,15%
+bamboo_memory_power,Initial Friendship Gauge,20,22,25,27,30
+bamboo_memory_power,Initial Power,15,17,20,22,25
+bamboo_memory_power,Race Bonus,1%,2%,3%,5%,5%
+bamboo_memory_power,Fan Bonus,5%,6%,8%,10%,10%
+bamboo_memory_power,Skill Point Bonus,0,1,1,1,1
+bamboo_memory_power,Hint Levels,0,0,0,Lv 2,Lv 3
+bamboo_memory_power,Hint Frequency,0,0,0,30%,40%
+yaeno_muteki_power,Friendship Bonus,15%,16%,18%,20%,20%
+yaeno_muteki_power,Hint Levels,Lv 2,Lv 2,Lv 3,Lv 3,Lv 4
+yaeno_muteki_power,Hint Frequency,40%,45%,50%,55%,60%
+yaeno_muteki_power,Mood Effect,30%,33%,36%,40%,40%
+yaeno_muteki_power,Training Effectiveness,5%,5%,5%,5%,5%
+yaeno_muteki_power,Initial Friendship Gauge,15,16,18,20,20
+yaeno_muteki_power,Power Bonus,0,1,1,1,1
+yaeno_muteki_power,Race Bonus,0,0,0,5%,10%
+yaeno_muteki_power,Fan Bonus,0,0,0,10%,15%
+winning_ticket_power,Friendship Bonus,15%,16%,18%,20%,20%
+winning_ticket_power,Initial Friendship Gauge,20,22,25,27,30
+winning_ticket_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+winning_ticket_power,Hint Frequency,30%,33%,36%,40%,40%
+winning_ticket_power,Training Effectiveness,5%,5%,5%,5%,5%
+winning_ticket_power,Specialty Priority,20,25,30,35,35
+winning_ticket_power,Power Bonus,0,1,1,1,1
+winning_ticket_power,Mood Effect,0,0,0,15%,30%
+oguri_cap_power,Friendship Bonus,15%,16%,18%,20%,20%
+oguri_cap_power,Mood Effect,40%,45%,50%,55%,60%
+oguri_cap_power,Initial Friendship Gauge,20,21,23,25,25
+oguri_cap_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+oguri_cap_power,Hint Frequency,30%,33%,36%,40%,40%
+oguri_cap_power,Specialty Priority,20,25,30,35,35
+oguri_cap_power,Power Bonus,0,1,1,1,1
+oguri_cap_power,Training Effectiveness,0,0,0,5%,10%
+vodka_power,Friendship Bonus,25%,27%,30%,32%,35%
+vodka_power,Specialty Priority,50,53,57,61,65
+vodka_power,Mood Effect,30%,33%,36%,40%,40%
+vodka_power,Initial Friendship Gauge,20,21,23,25,25
+vodka_power,Race Bonus,5%,5%,5%,5%,5%
+vodka_power,Fan Bonus,10%,11%,13%,15%,15%
+vodka_power,Power Bonus,0,1,1,1,1
+vodka_power,Hint Levels,0,0,0,Lv 2,Lv 3
+vodka_power,Hint Frequency,0,0,0,30%,40%
+el_condor_pasa_power,Friendship Bonus,15%,16%,18%,20%,20%
+el_condor_pasa_power,Race Bonus,5%,6%,7%,8%,10%
+el_condor_pasa_power,Fan Bonus,15%,16%,17%,18%,20%
+el_condor_pasa_power,Mood Effect,30%,33%,36%,40%,40%
+el_condor_pasa_power,Initial Friendship Gauge,20,21,23,25,25
+el_condor_pasa_power,Specialty Priority,35,40,45,50,50
+el_condor_pasa_power,Initial Power,15,16,18,20,20
+el_condor_pasa_power,Power Bonus,0,1,1,1,1
+el_condor_pasa_power,Training Effectiveness,0,0,0,5%,10%
+smart_falcon_power,Friendship Bonus,15%,16%,18%,20%,20%
+smart_falcon_power,Mood Effect,40%,45%,50%,55%,60%
+smart_falcon_power,Initial Friendship Gauge,20,21,23,25,25
+smart_falcon_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+smart_falcon_power,Hint Frequency,30%,33%,36%,40%,40%
+smart_falcon_power,Specialty Priority,20,25,30,35,35
+smart_falcon_power,Stamina Bonus,0,1,1,1,1
+smart_falcon_power,Race Bonus,0,0,0,5%,10%
+smart_falcon_power,Fan Bonus,0,0,0,10%,15%
+sakura_bakushin_o_sr_power,Friendship Bonus,15%,16%,18%,20%,20%
+sakura_bakushin_o_sr_power,Race Bonus,5%,6%,7%,8%,10%
+sakura_bakushin_o_sr_power,Fan Bonus,15%,16%,17%,18%,20%
+sakura_bakushin_o_sr_power,Specialty Priority,35,38,42,46,50
+sakura_bakushin_o_sr_power,Training Effectiveness,5%,5%,5%,5%,5%
+sakura_bakushin_o_sr_power,Initial Power,15,16,18,20,20
+sakura_bakushin_o_sr_power,Initial Friendship Gauge,0,10,15,20,20
+sakura_bakushin_o_sr_power,Power Bonus,0,0,0,0,1
+special_week_sr_power,Friendship Bonus,20%,21%,22%,23%,25%
+special_week_sr_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+special_week_sr_power,Hint Frequency,30%,32%,35%,37%,40%
+special_week_sr_power,Mood Effect,20%,23%,26%,30%,30%
+special_week_sr_power,Race Bonus,1%,2%,3%,4%,5%
+special_week_sr_power,Fan Bonus,5%,6%,7%,8%,10%
+special_week_sr_power,Initial Stamina,0,10,15,20,20
+special_week_sr_power,Stamina Bonus,0,0,0,0,1
+inari_one_sr_power,Friendship Bonus,20%,21%,22%,23%,25%
+inari_one_sr_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+inari_one_sr_power,Hint Frequency,40%,42%,45%,47%,50%
+inari_one_sr_power,Training Effectiveness,5%,5%,5%,5%,5%
+inari_one_sr_power,Initial Power,15,16,18,20,20
+inari_one_sr_power,Initial Friendship Gauge,15,16,18,20,20
+inari_one_sr_power,Specialty Priority,0,30,45,60,60
+inari_one_sr_power,Power Bonus,0,0,0,0,1
+fine_motion_sr_power,Friendship Bonus,20%,21%,22%,23%,25%
+fine_motion_sr_power,Training Effectiveness,5%,6%,7%,8%,10%
+fine_motion_sr_power,Race Bonus,5%,5%,5%,5%,5%
+fine_motion_sr_power,Fan Bonus,10%,11%,12%,13%,15%
+fine_motion_sr_power,Specialty Priority,20,25,30,35,35
+fine_motion_sr_power,Hint Levels,0,Lv 1,Lv 1,Lv 2,Lv 2
+fine_motion_sr_power,Hint Frequency,0,20%,25%,30%,30%
+fine_motion_sr_power,Skill Point Bonus,0,0,0,0,1
+nishino_flower_sr_power,Friendship Bonus,15%,16%,18%,20%,20%
+nishino_flower_sr_power,Race Bonus,5%,6%,7%,8%,10%
+nishino_flower_sr_power,Fan Bonus,15%,16%,17%,18%,20%
+nishino_flower_sr_power,Mood Effect,30%,32%,35%,37%,40%
+nishino_flower_sr_power,Initial Friendship Gauge,20,21,22,23,25
+nishino_flower_sr_power,Specialty Priority,35,38,42,46,50
+nishino_flower_sr_power,Initial Power,15,16,18,20,20
+nishino_flower_sr_power,Hint Levels,0,Lv 1,Lv 1,Lv 2,Lv 2
+nishino_flower_sr_power,Hint Frequency,0,20%,25%,30%,30%
+nishino_flower_sr_power,Power Bonus,0,0,0,0,1
+daitaku_helios_sr_power,Friendship Bonus,15%,16%,18%,20%,20%
+daitaku_helios_sr_power,Race Bonus,5%,6%,7%,8%,10%
+daitaku_helios_sr_power,Fan Bonus,15%,16%,17%,18%,20%
+daitaku_helios_sr_power,Mood Effect,30%,32%,35%,37%,40%
+daitaku_helios_sr_power,Initial Friendship Gauge,20,21,22,23,25
+daitaku_helios_sr_power,Specialty Priority,35,38,42,46,50
+daitaku_helios_sr_power,Initial Power,15,16,18,20,20
+daitaku_helios_sr_power,Hint Levels,0,Lv 1,Lv 1,Lv 2,Lv 2
+daitaku_helios_sr_power,Hint Frequency,0,20%,25%,30%,30%
+daitaku_helios_sr_power,Power Bonus,0,0,0,0,1
+hishi_amazon_sr_power,Friendship Bonus,25%,26%,27%,28%,30%
+hishi_amazon_sr_power,Specialty Priority,35,38,42,46,50
+hishi_amazon_sr_power,Mood Effect,30%,32%,35%,37%,40%
+hishi_amazon_sr_power,Initial Friendship Gauge,20,21,22,23,25
+hishi_amazon_sr_power,Race Bonus,5%,5%,5%,5%,5%
+hishi_amazon_sr_power,Fan Bonus,10%,11%,12%,13%,15%
+hishi_amazon_sr_power,Initial Power,0,10,15,20,20
+hishi_amazon_sr_power,Stamina Bonus,0,0,0,0,1
+agnes_digital_sr_power,Friendship Bonus,15%,16%,18%,20%,20%
+agnes_digital_sr_power,Initial Friendship Gauge,25,26,27,28,30
+agnes_digital_sr_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+agnes_digital_sr_power,Hint Frequency,30%,32%,35%,37%,40%
+agnes_digital_sr_power,Training Effectiveness,5%,6%,7%,8%,10%
+agnes_digital_sr_power,Race Bonus,5%,5%,5%,5%,5%
+agnes_digital_sr_power,Fan Bonus,10%,11%,12%,13%,15%
+agnes_digital_sr_power,Mood Effect,20%,23%,26%,30%,30%
+agnes_digital_sr_power,Initial Power,0,10,15,20,20
+agnes_digital_sr_power,Skill Point Bonus,0,0,0,0,1
+biwa_hayahide_sr_power,Friendship Bonus,15%,16%,18%,20%,20%
+biwa_hayahide_sr_power,Initial Friendship Gauge,25,26,27,28,30
+biwa_hayahide_sr_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+biwa_hayahide_sr_power,Hint Frequency,30%,32%,35%,37%,40%
+biwa_hayahide_sr_power,Training Effectiveness,5%,6%,7%,8%,10%
+biwa_hayahide_sr_power,Race Bonus,5%,5%,5%,5%,5%
+biwa_hayahide_sr_power,Fan Bonus,10%,11%,12%,13%,15%
+biwa_hayahide_sr_power,Mood Effect,20%,23%,26%,30%,30%
+biwa_hayahide_sr_power,Specialty Priority,0,30,45,60,60
+biwa_hayahide_sr_power,Stamina Bonus,0,0,0,0,1
+mihono_bourbon_sr_power,Friendship Bonus,25%,26%,27%,28%,30%
+mihono_bourbon_sr_power,Specialty Priority,35,38,42,46,50
+mihono_bourbon_sr_power,Mood Effect,30%,32%,35%,37%,40%
+mihono_bourbon_sr_power,Initial Friendship Gauge,20,21,22,23,25
+mihono_bourbon_sr_power,Race Bonus,5%,5%,5%,5%,5%
+mihono_bourbon_sr_power,Fan Bonus,10%,11%,12%,13%,15%
+mihono_bourbon_sr_power,Initial Power,0,10,15,20,20
+mihono_bourbon_sr_power,Power Bonus,0,0,0,0,1
+mejiro_ryan_sr_power,Friendship Bonus,15%,16%,18%,20%,20%
+mejiro_ryan_sr_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 3
+mejiro_ryan_sr_power,Hint Frequency,40%,42%,45%,47%,50%
+mejiro_ryan_sr_power,Initial Friendship Gauge,20,21,22,23,25
+mejiro_ryan_sr_power,Mood Effect,20%,23%,26%,30%,30%
+mejiro_ryan_sr_power,Training Effectiveness,5%,5%,5%,5%,5%
+mejiro_ryan_sr_power,Race Bonus,0,1%,3%,5%,5%
+mejiro_ryan_sr_power,Fan Bonus,0,5%,7%,10%,10%
+mejiro_ryan_sr_power,Stamina Bonus,0,0,0,0,1
+admire_vega_r_power,Friendship Bonus,15%,16%,17%,18%,20%
+admire_vega_r_power,Training Effectiveness,5%,6%,7%,8%,10%
+admire_vega_r_power,Initial Friendship Gauge,15,16,18,20,20
+admire_vega_r_power,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+admire_vega_r_power,Hint Frequency,20%,23%,26%,30%,30%
+admire_vega_r_power,Specialty Priority,20,25,30,35,35
+admire_vega_r_power,Power Bonus,0,0,0,0,1
+inari_one_r_power,Friendship Bonus,15%,16%,17%,18%,20%
+inari_one_r_power,Initial Power,20,21,22,23,25
+inari_one_r_power,Training Effectiveness,5%,5%,5%,5%,5%
+inari_one_r_power,Initial Friendship Gauge,15,16,18,20,20
+inari_one_r_power,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+inari_one_r_power,Hint Frequency,20%,23%,26%,30%,30%
+inari_one_r_power,Power Bonus,0,0,0,0,1
+bamboo_memory_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+bamboo_memory_r_power,Training Effectiveness,5%,6%,7%,8%,10%
+bamboo_memory_r_power,Initial Friendship Gauge,20,21,22,23,25
+bamboo_memory_r_power,Initial Power,15,16,18,20,20
+bamboo_memory_r_power,Race Bonus,1%,2%,3%,5%,5%
+bamboo_memory_r_power,Fan Bonus,5%,6%,8%,10%,10%
+bamboo_memory_r_power,Skill Point Bonus,0,0,0,0,1
+yaeno_muteki_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+yaeno_muteki_r_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+yaeno_muteki_r_power,Hint Frequency,30%,32%,35%,37%,40%
+yaeno_muteki_r_power,Mood Effect,15%,18%,21%,25%,25%
+yaeno_muteki_r_power,Training Effectiveness,5%,5%,5%,5%,5%
+yaeno_muteki_r_power,Initial Friendship Gauge,15,16,18,20,20
+yaeno_muteki_r_power,Power Bonus,0,0,0,0,1
+daitaku_helios_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+daitaku_helios_r_power,Race Bonus,5%,5%,5%,5%,5%
+daitaku_helios_r_power,Fan Bonus,10%,11%,12%,13%,15%
+daitaku_helios_r_power,Mood Effect,15%,18%,21%,25%,25%
+daitaku_helios_r_power,Initial Power,15,16,18,20,20
+daitaku_helios_r_power,Initial Friendship Gauge,15,16,18,20,20
+daitaku_helios_r_power,Specialty Priority,20,25,30,35,35
+daitaku_helios_r_power,Power Bonus,0,0,0,0,1
+oguri_cap_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+oguri_cap_r_power,Mood Effect,25%,27%,30%,32%,35%
+oguri_cap_r_power,Initial Friendship Gauge,15,16,18,20,20
+oguri_cap_r_power,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+oguri_cap_r_power,Hint Frequency,20%,23%,26%,30%,30%
+oguri_cap_r_power,Specialty Priority,20,25,30,35,35
+oguri_cap_r_power,Power Bonus,0,0,0,0,1
+vodka_r_power,Friendship Bonus,15%,16%,17%,18%,20%
+vodka_r_power,Specialty Priority,35,38,42,46,50
+vodka_r_power,Mood Effect,15%,18%,21%,25%,25%
+vodka_r_power,Initial Friendship Gauge,15,16,18,20,20
+vodka_r_power,Race Bonus,1%,2%,3%,5%,5%
+vodka_r_power,Fan Bonus,5%,6%,8%,10%,10%
+vodka_r_power,Power Bonus,0,0,0,0,1
+el_condor_pasa_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+el_condor_pasa_r_power,Race Bonus,5%,5%,5%,5%,5%
+el_condor_pasa_r_power,Fan Bonus,10%,11%,12%,13%,15%
+el_condor_pasa_r_power,Mood Effect,15%,18%,21%,25%,25%
+el_condor_pasa_r_power,Initial Power,15,16,18,20,20
+el_condor_pasa_r_power,Initial Friendship Gauge,15,16,18,20,20
+el_condor_pasa_r_power,Specialty Priority,20,25,30,35,35
+el_condor_pasa_r_power,Power Bonus,0,0,0,0,1
+hishi_amazon_r_power,Friendship Bonus,15%,16%,17%,18%,20%
+hishi_amazon_r_power,Specialty Priority,35,38,42,46,50
+hishi_amazon_r_power,Mood Effect,15%,18%,21%,25%,25%
+hishi_amazon_r_power,Initial Friendship Gauge,15,16,18,20,20
+hishi_amazon_r_power,Race Bonus,1%,2%,3%,5%,5%
+hishi_amazon_r_power,Fan Bonus,5%,6%,8%,10%,10%
+hishi_amazon_r_power,Stamina Bonus,0,0,0,0,1
+agnes_digital_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+agnes_digital_r_power,Initial Friendship Gauge,20,21,22,23,25
+agnes_digital_r_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+agnes_digital_r_power,Hint Frequency,30%,32%,35%,37%,40%
+agnes_digital_r_power,Mood Effect,15%,18%,21%,25%,25%
+agnes_digital_r_power,Training Effectiveness,5%,5%,5%,5%,5%
+agnes_digital_r_power,Race Bonus,1%,2%,3%,5%,5%
+agnes_digital_r_power,Fan Bonus,5%,6%,8%,10%,10%
+agnes_digital_r_power,Skill Point Bonus,0,0,0,0,1
+biwa_hayahide_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+biwa_hayahide_r_power,Initial Friendship Gauge,20,21,22,23,25
+biwa_hayahide_r_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+biwa_hayahide_r_power,Hint Frequency,30%,32%,35%,37%,40%
+biwa_hayahide_r_power,Mood Effect,15%,18%,21%,25%,25%
+biwa_hayahide_r_power,Training Effectiveness,5%,5%,5%,5%,5%
+biwa_hayahide_r_power,Race Bonus,1%,2%,3%,5%,5%
+biwa_hayahide_r_power,Fan Bonus,5%,6%,8%,10%,10%
+biwa_hayahide_r_power,Stamina Bonus,0,0,0,0,1
+mihono_bourbon_r_power,Friendship Bonus,15%,16%,17%,18%,20%
+mihono_bourbon_r_power,Specialty Priority,35,38,42,46,50
+mihono_bourbon_r_power,Mood Effect,15%,18%,21%,25%,25%
+mihono_bourbon_r_power,Initial Friendship Gauge,15,16,18,20,20
+mihono_bourbon_r_power,Race Bonus,1%,2%,3%,5%,5%
+mihono_bourbon_r_power,Fan Bonus,5%,6%,8%,10%,10%
+mihono_bourbon_r_power,Power Bonus,0,0,0,0,1
+mejiro_ryan_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+mejiro_ryan_r_power,Hint Levels,Lv 2,Lv 2,Lv 2,Lv 2,Lv 2
+mejiro_ryan_r_power,Hint Frequency,30%,32%,35%,37%,40%
+mejiro_ryan_r_power,Mood Effect,15%,18%,21%,25%,25%
+mejiro_ryan_r_power,Training Effectiveness,5%,5%,5%,5%,5%
+mejiro_ryan_r_power,Initial Friendship Gauge,15,16,18,20,20
+mejiro_ryan_r_power,Stamina Bonus,0,0,0,0,1
+smart_falcon_r_power,Friendship Bonus,10%,11%,13%,15%,15%
+smart_falcon_r_power,Mood Effect,25%,27%,30%,32%,35%
+smart_falcon_r_power,Initial Friendship Gauge,15,16,18,20,20
+smart_falcon_r_power,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+smart_falcon_r_power,Hint Frequency,20%,23%,26%,30%,30%
+smart_falcon_r_power,Specialty Priority,20,25,30,35,35
+smart_falcon_r_power,Stamina Bonus,0,0,0,0,1
+
+

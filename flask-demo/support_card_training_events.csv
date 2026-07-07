@@ -1,6 +1,491 @@
 card_id,section,event_id,title,detail,sort_order
-taiki_shuttle,chain,lesson_one,"(›) Lesson One: Party Hearty","Speed (7)|Power (7)|Taiki Shuttle bond (5)",1
-taiki_shuttle,chain,lesson_two,"(››) Lesson Two: The Show Must Go On","Speed (7)|Power (7)|Skill Pt (15)|Taiki Shuttle bond (5)",2
-taiki_shuttle,chain,lesson_three,"(›››) Lesson Three: Live in the Moment","Speed (10)|Power (10)|Skill Pt (20)|Taiki Shuttle bond (5)",3
-taiki_shuttle,random,yes_lets_hug,"Yes! Let's Hug ☆","Speed (5)|Power (5)|Taiki Shuttle bond (5)",1
-taiki_shuttle,random,party_tonight,"Yeehaw! Party Tonight ☆","Speed (10)|Power (5)|Skill Pt (10)",2
+taiki_shuttle,chain,lesson_one,"(›) Lesson One: Party Hearty","Speed +7|Power +7|Taiki Shuttle bond +5",1
+taiki_shuttle,chain,lesson_two,"(››) Lesson Two: The Show Must Go On","Top::!Randomly either|Power +15|Mile Corners ○ hint +2|Taiki Shuttle bond +5|!or|Power +10|!Event chain ended||Bot::Speed +10|Taiki Shuttle bond +5",2
+taiki_shuttle,chain,lesson_three,"(›››) Lesson Three: Live in the Moment","Speed +10|Power +10|Guts +10|Mile Maven hint +1|Taiki Shuttle bond +5",3
+taiki_shuttle,random,lets_hug,"Yes! Let's Hug ☆","Top::Speed +10|Taiki Shuttle bond +5||Bot::Speed +5|Power +5|Taiki Shuttle bond +5",1
+taiki_shuttle,random,party_tonight,"Yeehaw! Party Tonight ☆","Speed +10|Power +5|Skill Pt +10",2
+el_condor_pasa,chain,with_passion_and_joy,(❯) With Passion and Joy!,Top::Energy +10|Speed +5|Power +5|El Condor Pasa bond +5||Bot::Energy -10|Speed +15|Power +10|El Condor Pasa bond +5,1
+el_condor_pasa,chain,muddy_heroes,(❯❯) Muddy Heroes,Energy -10|Speed +15|Power +15|Pace Chaser Corners ○ hint +1|El Condor Pasa bond +7,2
+el_condor_pasa,random,blazing_fire,Blazing Fire!,Top::Stamina +10|El Condor Pasa bond +5||Bot::Energy -10|Power +20|El Condor Pasa bond +5,1
+el_condor_pasa,random,secret_notebook,Secret Notebook!,Top::Power +10|El Condor Pasa bond +5||Bot::Sunny Days ○ hint +1|El Condor Pasa bond +5,2
+seeking_the_pearl,chain,it_ll_all_turn_out_fine,"(›) It'll All Turn Out Fine","Speed +10|Wit +10|Maximum Energy +4|Seeking the Pearl bond +5",1
+seeking_the_pearl,chain,re_start,(❯❯) Re: START!,Top::Energy +10|Wit +10|Updrafters hint +2|Seeking the Pearl bond +5||Bot::Power +20|Skill points +10|Light as a Feather hint +2|Seeking the Pearl bond +5,2
+seeking_the_pearl,chain,you_are_me,(❯❯❯) You Are Me,Top::Energy +10|Wit +10|Updrafters hint +2|Seeking the Pearl bond +5||Bot::Power +20|Skill points +10|Light as a Feather hint +2|Seeking the Pearl bond +5|(›››)|You Are Me|Speed +14|Guts +7|Wit +7|Dauntless hint +1|Seeking the Pearl bond +5,3
+seeking_the_pearl,random,full_power_passion,Full-Power Passion!,Top::Energy +10|Mood +1|Seeking the Pearl bond +5||Bot::Power +5|Guts +5|Seeking the Pearl bond +5,1
+seeking_the_pearl,random,full_power_thinking,Full-Power Thinking!,Top::Energy +10|Mood +1|Seeking the Pearl bond +5||Bot::Power +5|Guts +5|Seeking the Pearl bond +5||Top::Wit +20|Seeking the Pearl bond +5||Bot::Energy -10|Uma Stan hint +3|Seeking the Pearl bond +5,2
+air_shakur,chain,both_high_and_low,(❯) Both High and Low,Top::Speed +10|Power +10|Air Shakur bond +5||Bot::Eager hint +1|Air Shakur bond +5,1
+air_shakur,chain,bpm_in_sync,(❯❯) BPM in Sync,Speed +15|End Closer Straightaways ○ hint +1|Air Shakur bond +5,2
+air_shakur,chain,connected_eqs,(❯❯❯) Connected EQs,Speed +10|Skill points +10|Serenity hint +1|Air Shakur bond +5,3
+air_shakur,random,verification_required,//Verification Required,Top::Energy +10|Guts +5|Air Shakur bond +5||Bot::Energy -10|Stamina +5|Guts +10|Air Shakur bond +5,1
+air_shakur,random,absolute_desire,//Absolute Desire,Top::Pace Strategy hint +1|Air Shakur bond +5||Bot::Maximum Energy +4|Guts +5|Air Shakur bond +5,2
+narita_top_road,chain,anything_for_my_classmates,(❯) Anything for My Classmates,(›) Anything for My Classmates(››) Great Expectations(›››) Rivals Know Best|(›)|Anything for My Classmates|Mood +1|Energy -10|Speed +7|Stamina +7|Wit +7|Pace Chaser Savvy ○ hint +1|Narita Top Road bond +5,1
+narita_top_road,chain,great_expectations,(❯❯) Great Expectations,Top::Energy -10|Speed +15|Stamina +15|Pressure hint +1|Narita Top Road bond +5||Bot::Energy +20|Skill points +10|Narita Top Road bond +5,2
+narita_top_road,chain,rivals_know_best,(❯❯❯) Rivals Know Best,Energy -10|Speed +15|Stamina +15|Skill points +20|Firm Course Menace hint +1|Narita Top Road bond +5,3
+narita_top_road,random,a_thorough_inspection,A Thorough Inspection,Top::Energy +20|Narita Top Road bond +5||Bot::Energy -10|Speed +25|Narita Top Road bond +5,1
+narita_top_road,random,a_diligent_effort,A Diligent Effort,Top::Stamina +10|Narita Top Road bond +5||Bot::Up-Tempo hint +1|Narita Top Road bond +5,2
+tosen_jordan,chain,leave_it_to_the_roomie,(❯) Leave It to the Roomie,Top::Speed +10|Stamina +5|Tosen Jordan bond +5||Bot::Energy +10|Tosen Jordan bond +5,1
+tosen_jordan,chain,a_gal_s_gotta_glam,(❯❯) A Gal's Gotta Glam,A Gal's Gotta Glam|Speed +10|Skill points +10,2
+tosen_jordan,chain,if_you_got_it_own_it,"(❯❯❯) If You Got It, Own It",!Randomly either|Energy -10|Speed +15|Breath of Fresh Air hint +3|!or|Energy -10|Speed +10|Straightaway Recovery hint +3,3
+tosen_jordan,random,doomscrolling_the_time_away,Doomscrolling the Time Away,Top::Mood +1|Speed +5|Tosen Jordan bond +5||Bot::Stamina +10|Tosen Jordan bond +5,1
+tosen_jordan,random,sponsored_posts_can_be_low_key_sus,Sponsored Posts Can Be Low-Key Sus,Top::Energy +10|Mood +1|Tosen Jordan bond +5||Bot::Lucky Seven hint +1|Tosen Jordan bond +5,2
+matikanefukukitaru,chain,mystery_fortune_ritual,(❯) Mystery Fortune Ritual!,Top::!Randomly either|All stats +7|Matikanefukukitaru bond +7|!or|Wit +4|!Event chain ended||Bot::Energy +5|Matikanefukukitaru bond +5|!Event chain ended,1
+matikanefukukitaru,chain,fortune_favors_the_friends,(❯❯) Fortune Favors the Friends!,Top::!Randomly either|All stats +7|Matikanefukukitaru bond +7|!or|Wit +4|!Event chain ended||Bot::Energy +5|Matikanefukukitaru bond +5|!Event chain ended,2
+matikanefukukitaru,chain,finding_miraculous_joy,(❯❯❯) Finding Miraculous Joy!,!Randomly either|All stats +7|Skill points +77|Super Lucky Seven hint +3|Matikanefukukitaru bond +7|!or|All stats +7|Skill points +7|Super Lucky Seven hint +1|Matikanefukukitaru bond +7|!or|Skill points +7|Lucky Seven hint +3|Matikanefukukitaru bond +7,3
+matikanefukukitaru,random,maximum_spirituality,Maximum Spirituality,Top::Wit +5|Skill points +15|Matikanefukukitaru bond +5||Bot::Energy -10|Speed +5|Stamina +5|Power +5|Matikanefukukitaru bond +5,1
+matikanefukukitaru,random,when_piety_and_kindness_intersect,When Piety and Kindness Intersect,Top::Skill points +30|Matikanefukukitaru bond +5||Bot::Energy +20|Matikanefukukitaru bond +5,2
+silence_suzuka,chain,guided_to_scenery,(❯) Guided to Scenery,Speed +15,1
+silence_suzuka,chain,shared_scenery,(❯❯) Shared Scenery,Skill points +20,2
+silence_suzuka,chain,the_scenery_ahead,(❯❯❯) The Scenery Ahead,Speed +15|Trackblazer hint +1,3
+silence_suzuka,random,on_and_on,On and On,Top::Speed +10|Stamina +5|Silence Suzuka bond +5||Bot::Speed +15|Silence Suzuka bond +5,1
+silence_suzuka,random,what_should_i_do,What Should I Do?,Top::Speed +5|Stamina +5|Wit +5|Silence Suzuka bond +5||Bot::Left-Handed ○ hint +1|Silence Suzuka bond +5,2
+mayano_top_gun,chain,just_because,(❯) Just Because ♪,Top::!Randomly either|Mood +1|Speed +20|Guts +10|Head-On hint +1|Mayano Top Gun bond +5|!or|Energy -10|Mood +1|Guts +10|Mayano Top Gun bond +5||Mid::Wit +15|Mayano Top Gun bond +5||Bot::Energy +20|Stamina +10|Competitive Spirit ○ hint +1|!Event chain ended,1
+mayano_top_gun,chain,a_wonderful_weekend,(❯❯) A Wonderful Weekend ♪,Speed +10|Guts +5,2
+mayano_top_gun,chain,special_gifts_for_a_special_day,(❯❯❯) Special Gifts for a Special Day ♪,Energy +10|Speed +10|Guts +5|Restless hint +1|Mayano Top Gun bond +5,3
+mayano_top_gun,random,snack_advice_for_mayano,Snack Advice for Mayano!,Top::Stamina +5|Guts +5|Mayano Top Gun bond +5||Bot::Stamina +10|Mayano Top Gun bond +5,1
+mayano_top_gun,random,fashion_advice_for_mayano,Fashion Advice for Mayano!,Top::Straightaway Adept hint +1|Mayano Top Gun bond +5||Bot::Stamina +10|Mayano Top Gun bond +5,2
+zenno_rob_roy,chain,the_bookworm_and_the_secret_meeting,(❯) The Bookworm and the Secret Meeting,(›) The Bookworm and the Secret Meeting(››) The Bookworm and the Mage's Event(›››) The Bookworm and Her Froggy Friend|(›)|The Bookworm and the Secret Meeting|Skill points +15,1
+zenno_rob_roy,chain,the_bookworm_and_the_mage_s_event,(❯❯) The Bookworm and the Mage's Event,Top::Stamina +5|Right-Handed ○ hint +2|Zenno Rob Roy bond +5||Mid::Speed +5|Left-Handed ○ hint +2|Zenno Rob Roy bond +5||Bot::Wit +30|Zenno Rob Roy bond +5,2
+zenno_rob_roy,chain,the_bookworm_and_her_froggy_friend,(❯❯❯) The Bookworm and Her Froggy Friend,Skill points +20|Lie in Wait hint +1,3
+zenno_rob_roy,random,book_lover_quirks,Book-lover Quirks,Top::Speed +5|Wit +5|Zenno Rob Roy bond +5||Bot::Energy +10|Power +5|Zenno Rob Roy bond +5,1
+zenno_rob_roy,random,a_tale_entrusted,A Tale Entrusted,Top::Stamina +10|Wit +10|Zenno Rob Roy bond +5||Bot::Medium Straightaways ○ hint +1|Zenno Rob Roy bond +5,2
+sweep_tosho,chain,fickle_genius_magical_girl_sweepy,(❯) Fickle Genius Magical Girl Sweepy ☆,Top::!Randomly either|Mood +1|Straightaway Spurt hint +2|Sweep Tosho bond +5|!or|Mood -1|Wit +5|Sweep Tosho bond +5||Bot::Skill points +15|Sweep Tosho bond +5,1
+sweep_tosho,chain,a_drop_of_black_magic,(❯❯) A Drop of Black Magic ☆,Top::!Randomly either|Energy +10|Skill points +20|Sweep Tosho bond +5|!or|Energy -10|Skill points +15|Sweep Tosho bond +5||Bot::Wit +10|Sweep Tosho bond +5,2
+sweep_tosho,chain,her_mood_like_a_flower,(❯❯❯) Her Mood Like a Flower ☆,Speed +5|Wit +5|Crusader hint +1,3
+sweep_tosho,random,miracle_escape,Miracle ☆ Escape!,Top::Energy +10|Speed +5|Sweep Tosho bond +5||Bot::Energy -10|Speed +20|Sweep Tosho bond +5,1
+sweep_tosho,random,wonderful_mistake,Wonderful ☆ Mistake!,Top::!Randomly either|Energy -15|Skill points +40|!or|Energy -20|Skill points +40|Sweep Tosho bond +5||Bot::Get Charming ○ status|Sweep Tosho bond +5,2
+narita_brian,chain,brian_the_race_planner,"(❯) Brian, the Race Planner","Maximum Energy +4|Speed +5",1
+narita_brian,chain,only_a_sister_knows,(❯❯) Only a Sister Knows,"Energy -10|Speed +20",2
+narita_brian,chain,running_for_the_dream,(❯❯❯) Running for the Dream,"Energy -10|Speed +20|Shatterproof hint +1",3
+narita_brian,random,student_council_member,Student Council Member!,Top::Mood +1|Speed +5|Narita Brian bond +5||Bot::Maximum Energy +4|Narita Brian bond +5,1
+narita_brian,random,lone_wolf,Lone Wolf,Lone Wolf hint +1|Narita Brian bond +5,2
+gold_ship,chain,raising_the_uma_lord_s_castle,(❯) Raising the Uma Lord's Castle,Top::Maximum Energy +4|Gold Ship bond +5||Bot::Speed +10|Gold Ship bond +5,1
+gold_ship,chain,plotting_the_uma_lord_s_dungeon,(❯❯) Plotting the Uma Lord's Dungeon,Energy -15|Speed +5|Stamina +5|Long Straightaways ○ hint +1,2
+gold_ship,chain,assembling_the_uma_lord_s_minions,(❯❯❯) Assembling the Uma Lord's Minions,Top::!Randomly either|Energy -10|Speed +5|Stamina +5|Inside Scoop hint +3|Gold Ship bond +5|!or|Energy -10|Speed +10|Stamina +10|Innate Experience hint +3|Gold Ship bond +5||Bot::Energy +10|Maverick ○ hint +1,3
+gold_ship,random,adventurer_gold_ship,Adventurer Gold Ship,Top::Stamina +15|Gold Ship bond +5||Bot::Guts +10|Skill points +15|Gold Ship bond +5,1
+gold_ship,random,revive_the_brand_golshi_s_yakisoba,Revive the Brand! Golshi's Yakisoba,Top::Stamina +5|Mood +1|Gold Ship bond +5||Bot::Hanshin Racecourse ○ hint +1|Gold Ship bond +5,2
+kawakami_princess,chain,modestly_boldly,(❯) Modestly! Boldly!,Top::Mood +1|Speed +5|Kawakami Princess bond +5||Bot::Skill points +10|Tether hint +1|Kawakami Princess bond +5,1
+kawakami_princess,chain,princess_power_to_the_max,(❯❯) Princess Power ☆ to the Max!,Speed +5|Guts +5,2
+kawakami_princess,chain,hit_it_princess_road,(❯❯❯) Hit It! Princess Road!,Top::Speed +15|Guts +15|Center Stage hint +1|Kawakami Princess bond +5||Bot::Energy +25|Skill points +25,3
+kawakami_princess,random,princess_punch,Princess Punch!,Top::Guts +10|Kawakami Princess bond +5||Bot::Mood +1|Kawakami Princess bond +5,1
+kawakami_princess,random,princess_escape,Princess Escape!,Top::Energy +10|Kawakami Princess bond +5||Bot::Steadfast hint +1|Kawakami Princess bond +5,2
+kitasan_black,chain,chasing_brilliance,(❯) Chasing Brilliance,Mood +1|Speed +2|Power +2|Wit +2|Kitasan Black bond +5,1
+kitasan_black,chain,paying_it_forward,(❯❯) Paying It Forward,Top::Energy +10|Mood +1|Kitasan Black bond +5||Bot::Speed +5 / +10|Straightaway Adept hint +1/+3|Kitasan Black bond +5,2
+kitasan_black,chain,we_walk_together,(❯❯❯) We Walk Together,!Randomly either|Speed +5|Power +5|Kitasan Black bond +5|Professor of Curvature hint +1|!or|Speed +10|Power +10|Kitasan Black bond +5|Professor of Curvature hint +3,3
+kitasan_black,random,ah_friendship,"Ah, Friendship",Top::Mood +1|Power +5|Kitasan Black bond +5||Bot::Energy +10|Kitasan Black bond +5,1
+kitasan_black,random,ah_home_sweet_home,"Ah, Home Sweet Home",Top::Speed +5|Power +10|Kitasan Black bond +5||Bot::Get Practice Perfect ○ status|Kitasan Black bond +5,2
+twin_turbo,chain,i_m_not_afraid,(❯) I'm Not Afraid!,Top::!Randomly either|Speed +10|Twin Turbo bond +5|!or|Energy -10|Speed +10|!Event chain ended||Bot::Energy +20|!Event chain ended,1
+twin_turbo,chain,can_t_catch_me,(❯❯) Can't Catch Me!,Top::!Randomly either|Speed +15|Leader's Pride hint +3|Twin Turbo bond +5|!or|Energy -10|Speed +10|!Event chain ended||Bot::Energy +25|!Event chain ended,2
+twin_turbo,chain,turbo_is_strong,(❯❯❯) Turbo Is Strong!,Top::!Randomly either|Energy -10|Speed +5|Early Lead hint +3|!or|Energy -10|Speed +25|Taking the Lead hint +3|Twin Turbo bond +5||Bot::Energy +15|Watchful Eye hint +3,3
+twin_turbo,random,just_start_running,Just Start Running!,Top::Speed +20|Mood -1||Bot::Energy -10|Power +20|Twin Turbo bond +5,1
+twin_turbo,random,i_m_all_fired_up,I'm All Fired Up!,Top::Energy +15|Twin Turbo bond +5||Bot::Early Lead hint +1|Twin Turbo bond +5,2
+special_week,chain,someday_i_ll_be_just_like_her,"(❯) Someday I'll Be Just Like Her!",Energy +10|Speed +5,1
+special_week,chain,just_a_little_closer,(❯❯) Just a Little Closer,Top::Energy -10|Speed +15|Special Week bond +5||Mid::Energy -10|Skill points +20|Special Week bond +5||Bot::Energy -10|Shake It Out hint +1|Special Week bond +5,2
+special_week,chain,forms_of_aspiration,(❯❯❯) Forms of Aspiration,!Randomly either|Energy +10|Speed +5|Hydrate hint +1/+3|!or|Energy +10|Speed +10|Skill points +10|Gourmand hint +3,3
+special_week,random,watch_where_you_re_going,Watch Where You're Going!,Top::Extra Tank hint +1|Special Week bond +5||Bot::Guts +15|Special Week bond +5,1
+special_week,random,so_many_options,So Many Options!,Top::Energy +10|Mood +1|Special Week bond +5||Bot::Energy -10|Stamina +15|Skill points +15|Special Week bond +5,2
+silence_suzuka_ssr02,chain,letters,(❯) Letters → ?,"Speed +10|Restart hint +1|Silence Suzuka bond +5",1
+silence_suzuka_ssr02,chain,letters_feelings,(❯❯) Letters → Feelings → ?,"Speed +10|Power +10|Mood +1|Focus hint +1|Silence Suzuka bond +5",2
+silence_suzuka_ssr02,chain,letters_feelings_wait_for_me_okay,"(❯❯❯) Letters → Feelings → Wait for Me, Okay?","Speed +10|Unrestrained hint +2|Silence Suzuka bond +5",3
+silence_suzuka_ssr02,random,on_and_on,On and On,Top::Speed +10|Stamina +5|Silence Suzuka bond +5||Bot::Speed +15|Silence Suzuka bond +5,1
+silence_suzuka_ssr02,random,what_should_i_do,What Should I Do?,Top::Speed +5|Stamina +5|Wit +5|Silence Suzuka bond +5||Bot::Left-Handed ○ hint +1|Silence Suzuka bond +5,2
+tokai_teio,chain,premonitions_of_a_performer,(❯) Premonitions of a Performer,Energy +10|Speed +5,1
+tokai_teio,chain,short_interlude,(❯❯) Short Interlude,Energy +10|Speed +5|Wit +5,2
+tokai_teio,chain,legendary_act,(❯❯❯) Legendary Act,Energy +10|Speed +5|Rushing Gale! hint +1|Tokai Teio bond +5,3
+tokai_teio,random,my_way_or,"My Way, Or...",Top::Mood +1|Skill points +15|Tokai Teio bond +5||Bot::Guts +15|Tokai Teio bond +5,1
+tokai_teio,random,my_weapon,My Weapon,Top::Mood +1|Guts +10|Tokai Teio bond +5||Bot::Pace Chaser Straightaways ○ hint +1|Tokai Teio bond +5,2
+gold_city,chain,pride,(❯) Pride,Energy +20|Mood +1|Go with the Flow hint +1|Gold City bond +5,1
+gold_city,chain,struggle,(❯❯) Struggle,Energy +20|Speed +10|Stamina +10|Gold City bond +5,2
+gold_city,chain,one_step,(❯❯❯) One Step,Energy +10|Speed +10|Stamina +10|Keen Eye hint +2|Gold City bond +5,3
+gold_city,random,08_36_crap_i_overslept,"08:36 / Crap, I Overslept",Top::Mood -1|Skill points +45|Gold City bond +5||Bot::Energy +10|Wit +5|Gold City bond +5,1
+gold_city,random,13_12_lunch_break_gotta_get_myself_together,"13:12 / Lunch Break Gotta Get Myself Together",Top::Skill points +30|Gold City bond +5||Bot::A Small Breather hint +1|Gold City bond +5,2
+sakura_bakushin_o,chain,bakushin_s_cooking,(❯) Bakushin's Cooking!,"Speed +10",1
+sakura_bakushin_o,chain,bakushin_s_love,(❯❯) Bakushin's Love!,"Speed +5|Power +5",2
+sakura_bakushin_o,chain,bakushin_s_huge_success,(❯❯❯) Bakushin's Huge Success!,Speed +10|Power +5|Turbo Sprint hint +1,3
+sakura_bakushin_o,random,genius_efficiency,Genius Efficiency!,Top::Speed +15|Sakura Bakushin O bond +5||Bot::Speed +5|Power +10|Sakura Bakushin O bond +5,1
+sakura_bakushin_o,random,enough_to_break_into_a_dash,Enough to Break into a Dash!,Top::Gap Closer hint +1|Sakura Bakushin O bond +5||Bot::Energy -10|Speed +10|Power +5|Sakura Bakushin O bond +5,2
+nishino_flower,chain,how_i_can_help,(❯) How I Can Help,Maximum Energy +4|Skill points +10|Countermeasure hint +2|Nishino Flower bond +5,1
+nishino_flower,chain,aspiring_to_adulthood,(❯❯) Aspiring to Adulthood,Top::Energy -10|Wit +30|Nishino Flower bond +5||Bot::Wit +5|Skill points +15|Nishino Flower bond +5,2
+nishino_flower,chain,what_s_important,(❯❯❯) What's Important!,Speed +5|Wit +10|Beeline Burst hint +1/+3 or Straightaway Adept hint +1,3
+nishino_flower,random,warmth_love_and_lunch,"Warmth, Love, and Lunch",Top::Get Charming ○ status|Nishino Flower bond +5||Bot::Energy +20|Nishino Flower bond +5,1
+nishino_flower,random,let_s_bloom_beautifully,Let's Bloom Beautifully ♪,Top::Wit +15|Nishino Flower bond +5||Bot::Speed +10|Power +5|Nishino Flower bond +5,2
+biko_pegasus,chain,passionate_promises_heroic_ambitions,"(❯) Passionate Promises, Heroic Ambitions!","Speed +5|Guts +5",1
+biko_pegasus,chain,brace_yourself_training_with_carrot_ranger,(❯❯) Brace Yourself: Training with Carrot Ranger!,"Speed +5|Guts +5",2
+biko_pegasus,chain,showdown_glorious_victory,(❯❯❯) Showdown! Glorious Victory!,"Speed +5|Power +5|Guts +5|Plan X hint +1",3
+biko_pegasus,random,a_hero_s_woes,A Hero's Woes,Top::Energy +15|Biko Pegasus bond +5||Bot::Energy +5|Power +5|Biko Pegasus bond +5,1
+biko_pegasus,random,preparing_my_special_move,Preparing My Special Move!,Top::Sprint Straightaways ○ hint +1|Biko Pegasus bond +5||Bot::Energy +30|Biko Pegasus bond +5,2
+curren_chan_sr,chain,awildcurrenappeared,(❯) #AWildCurrenAppeared,Top::Speed +20|Curren Chan bond +5||Bot::Skill points +10|Shrewd Step hint +1|Curren Chan bond +5,1
+curren_chan_sr,chain,cutefluffyoverload,(❯❯) #CuteFluffyOverload,Sprint Corners ○ hint +1|Curren Chan bond +5,2
+curren_chan_sr,random,uruniquecuteness,#UrUniqueCuteness,Top::Speed +5|Wit +10|Curren Chan bond +5||Bot::Speed +10|Power +5|Curren Chan bond +5,1
+curren_chan_sr,random,cuteness4u,#Cuteness4U ☆,Top::Skill points +15|Curren Chan bond +5||Bot::Intimidate hint +1|Curren Chan bond +5,2
+vodka_sr,chain,slacking_off_at_sundown,(❯) Slacking Off at Sundown,Top::Maximum Energy +4|Power +10|Vodka bond +5||Bot::!Randomly either|Speed +15|Mile Corners ○ hint +1|Vodka bond +5|!or|Speed +5|Vodka bond +5,1
+vodka_sr,chain,persistence_pays_off,(❯❯) Persistence Pays Off,Speed +15|Skill points +15,2
+vodka_sr,random,the_coolest_line,The Coolest Line,Top::Power +10|Vodka bond +5||Bot::Power +5|Skill points +15|Vodka bond +5,1
+vodka_sr,random,enemies_on_main_street,Enemies on Main Street,Top::Nimble Navigator hint +1|Vodka bond +5||Bot::Power +5|Skill points +15|Vodka bond +5,2
+shinko_windy_sr,chain,dig_here_windy,"(❯) Dig Here, Windy!",Top::Speed +10|Shinko Windy bond +5||Bot::Energy -5|Skill points +30|Shinko Windy bond +5,1
+shinko_windy_sr,chain,c_mon_gates_open_already,"(❯❯) C'mon Gates, Open Already!","!Randomly either|Speed +10|Skill points +15|Shifting Gears hint +3|Shinko Windy bond +5|!or|Speed +5|Skill points +10|Shinko Windy bond +5",2
+shinko_windy_sr,random,chomp_extermination,Chomp Extermination!,Top::Speed +3|Mood +1|Shinko Windy bond +5||Bot::Energy +10|Skill points +5|Shinko Windy bond +5,1
+shinko_windy_sr,random,chomp_attack,Chomp Attack!,Top::Skill points +15|Shinko Windy bond +5||Bot::Speed +3|Unyielding Spirit hint +1|Shinko Windy bond +5,2
+sweep_tosho_sr,chain,some_very_green_friends,(❯) Some Very Green Friends,Top::Speed +5|Skill points +10|Lucky Seven hint +1|Sweep Tosho bond +5||Bot::Mood -1|Maverick ○ hint +5|!Event chain ended,1
+sweep_tosho_sr,chain,premeditated_mischief,(❯❯) Premeditated Mischief,Top::Speed +10|Skill points +20|Levelheaded hint +1|Sweep Tosho bond +5||Bot::Mood -1|Lone Wolf hint +1,2
+sweep_tosho_sr,random,miracle_escape,Miracle ☆ Escape!,Top::Energy +10|Speed +5|Sweep Tosho bond +5||Bot::Energy -10|Speed +20|Sweep Tosho bond +5,1
+sweep_tosho_sr,random,wonderful_mistake,Wonderful ☆ Mistake!,Top::!Randomly either|Energy -15|Skill points +40|!or|Energy -20|Skill points +40|Sweep Tosho bond +5||Bot::Get Charming ○ status|Sweep Tosho bond +5,2
+eishin_flash_sr,chain,a_good_manager,(❯) A Good Manager,Maximum Energy +4|Energy +10|Mood +1,1
+eishin_flash_sr,chain,a_good_friend,(❯❯) A Good Friend,Energy +20|Homestretch Haste hint +1,2
+eishin_flash_sr,random,unforeseen_lunch,Unforeseen Lunch,Top::Energy +15|Eishin Flash bond +5||Bot::Speed +5|Guts +5|Eishin Flash bond +5,1
+eishin_flash_sr,random,responding_to_the_unforeseen,Responding to the Unforeseen,Top::Guts +10|Eishin Flash bond +5||Bot::Target in Sight ○ hint +1|Eishin Flash bond +5,2
+narita_taishin_sr,chain,nighttime_secret,(❯) Nighttime Secret,Speed +5|Stamina +5,1
+narita_taishin_sr,chain,enjoy_the_musical,(❯❯) Enjoy the Musical!,Speed +5|Stamina +5|Power +5|I Can See Right Through You hint +1,2
+narita_taishin_sr,random,just_leave_me_alone,Just Leave Me Alone,Top::Stamina +5|Skill points +15|Narita Taishin bond +5||Bot::Power +5|Skill points +15|Narita Taishin bond +5,1
+narita_taishin_sr,random,just_don_t_bother_me,Just Don't Bother Me,Top::Pressure hint +1|Narita Taishin bond +5||Bot::Skill points +30|Narita Taishin bond +5,2
+king_halo_sr,chain,first_rate_coaching,(❯) First-Rate Coaching,Speed +10,1
+king_halo_sr,chain,first_rate_advice,(❯❯) First-Rate Advice,Speed +15|Skill points +15,2
+king_halo_sr,random,you_may_socialize_with_me,You May Socialize With Me!,Top::Energy -20|Speed +10|Power +10|Wit +5|King Halo bond +5||Bot::Mood -1|Guts +25|King Halo bond +5,1
+king_halo_sr,random,you_may_advise_me,You May Advise Me!,Top::Guts +10|Wit +5|King Halo bond +5||Bot::Homestretch Haste hint +1|King Halo bond +5,2
+narita_top_road_r,random,a_thorough_inspection,A Thorough Inspection,Top::Energy +20|Narita Top Road bond +5||Bot::Energy -10|Speed +25|Narita Top Road bond +5,1
+narita_top_road_r,random,a_diligent_effort,A Diligent Effort,Top::Stamina +10|Narita Top Road bond +5||Bot::Up-Tempo hint +1|Narita Top Road bond +5,2
+narita_brian_r,random,student_council_member,Student Council Member!,Top::Mood +1|Speed +5|Narita Brian bond +5||Bot::Maximum Energy +4|Narita Brian bond +5,1
+narita_brian_r,random,lone_wolf,Lone Wolf,Lone Wolf hint +1|Narita Brian bond +5,2
+shinko_windy_r,random,chomp_extermination,Chomp Extermination!,Top::Speed +3|Mood +1|Shinko Windy bond +5||Bot::Energy +10|Skill points +5|Shinko Windy bond +5,1
+shinko_windy_r,random,chomp_attack,Chomp Attack!,Top::Skill points +15|Shinko Windy bond +5||Bot::Speed +3|Unyielding Spirit hint +1|Shinko Windy bond +5,2
+kawakami_princess_r,random,princess_punch,Princess Punch!,Top::Guts +10|Kawakami Princess bond +5||Bot::Mood +1|Kawakami Princess bond +5,1
+kawakami_princess_r,random,princess_escape,Princess Escape!,Top::Energy +10|Kawakami Princess bond +5||Bot::Steadfast hint +1|Kawakami Princess bond +5,2
+kitasan_black_r,random,ah_friendship,"Ah, Friendship",Top::Mood +1|Power +5|Kitasan Black bond +5||Bot::Energy +10|Kitasan Black bond +5,1
+kitasan_black_r,random,ah_home_sweet_home,"Ah, Home Sweet Home",Top::Speed +5|Power +10|Kitasan Black bond +5||Bot::Get Practice Perfect ○ status|Kitasan Black bond +5,2
+twin_turbo_r,random,just_start_running,Just Start Running!,Top::Speed +20|Mood -1||Bot::Energy -10|Power +20|Twin Turbo bond +5,1
+twin_turbo_r,random,i_m_all_fired_up,I'm All Fired Up!,Top::Energy +15|Twin Turbo bond +5||Bot::Early Lead hint +1|Twin Turbo bond +5,2
+sweep_tosho_r,random,miracle_escape,Miracle ☆ Escape!,Top::Energy +10|Speed +5|Sweep Tosho bond +5||Bot::Energy -10|Speed +20|Sweep Tosho bond +5,1
+sweep_tosho_r,random,wonderful_mistake,Wonderful ☆ Mistake!,Top::!Randomly either|Energy -15|Skill points +40|!or|Energy -20|Skill points +40|Sweep Tosho bond +5||Bot::Get Charming ○ status|Sweep Tosho bond +5,2
+silence_suzuka_r,random,on_and_on,On and On,Top::Speed +10|Stamina +5|Silence Suzuka bond +5||Bot::Speed +15|Silence Suzuka bond +5,1
+silence_suzuka_r,random,what_should_i_do,What Should I Do?,Top::Speed +5|Stamina +5|Wit +5|Silence Suzuka bond +5||Bot::Left-Handed ○ hint +1|Silence Suzuka bond +5,2
+tokai_teio_r,random,my_way_or,"My Way, Or...",Top::Mood +1|Skill points +15|Tokai Teio bond +5||Bot::Guts +15|Tokai Teio bond +5,1
+tokai_teio_r,random,my_weapon,My Weapon,Top::Mood +1|Guts +10|Tokai Teio bond +5||Bot::Pace Chaser Straightaways ○ hint +1|Tokai Teio bond +5,2
+maruzensky_r,random,for_an_adorable_younger_student,For an Adorable Younger Student,Top::Early Lead hint +1|Maruzensky bond +5||Bot::Energy +5|Speed +10|Maruzensky bond +5,1
+maruzensky_r,random,drive_destination,Drive Destination,Top::Speed +5|Mood +1|Maruzensky bond +5||Bot::Wit +5|Mood +1|Maruzensky bond +5,2
+gold_city_r,random,08_36_crap_i_overslept,"08:36 / Crap, I Overslept",Top::Mood -1|Skill points +45|Gold City bond +5||Bot::Energy +10|Wit +5|Gold City bond +5,1
+gold_city_r,random,13_12_lunch_break_gotta_get_myself_together,"13:12 / Lunch Break Gotta Get Myself Together",Top::Skill points +30|Gold City bond +5||Bot::A Small Breather hint +1|Gold City bond +5,2
+sakura_bakushin_o_r,random,genius_efficiency,Genius Efficiency!,Top::Speed +15|Sakura Bakushin O bond +5||Bot::Speed +5|Power +10|Sakura Bakushin O bond +5,1
+sakura_bakushin_o_r,random,enough_to_break_into_a_dash,Enough to Break into a Dash!,Top::Gap Closer hint +1|Sakura Bakushin O bond +5||Bot::Energy -10|Speed +10|Power +5|Sakura Bakushin O bond +5,2
+eishin_flash_r,random,unforeseen_lunch,Unforeseen Lunch,Top::Energy +15|Eishin Flash bond +5||Bot::Speed +5|Guts +5|Eishin Flash bond +5,1
+eishin_flash_r,random,responding_to_the_unforeseen,Responding to the Unforeseen,Top::Guts +10|Eishin Flash bond +5||Bot::Target in Sight ○ hint +1|Eishin Flash bond +5,2
+narita_taishin_r,random,just_leave_me_alone,Just Leave Me Alone,Top::Stamina +5|Skill points +15|Narita Taishin bond +5||Bot::Power +5|Skill points +15|Narita Taishin bond +5,1
+narita_taishin_r,random,just_don_t_bother_me,Just Don't Bother Me,Top::Pressure hint +1|Narita Taishin bond +5||Bot::Skill points +30|Narita Taishin bond +5,2
+nishino_flower_r,random,warmth_love_and_lunch,"Warmth, Love, and Lunch",Top::Get Charming ○ status|Nishino Flower bond +5||Bot::Energy +20|Nishino Flower bond +5,1
+nishino_flower_r,random,let_s_bloom_beautifully,Let's Bloom Beautifully ♪,Top::Wit +15|Nishino Flower bond +5||Bot::Speed +10|Power +5|Nishino Flower bond +5,2
+biko_pegasus_r,random,a_hero_s_woes,A Hero's Woes,Top::Energy +15|Biko Pegasus bond +5||Bot::Energy +5|Power +5|Biko Pegasus bond +5,1
+biko_pegasus_r,random,preparing_my_special_move,Preparing My Special Move!,Top::Sprint Straightaways ○ hint +1|Biko Pegasus bond +5||Bot::Energy +30|Biko Pegasus bond +5,2
+king_halo_r,random,you_may_socialize_with_me,You May Socialize With Me!,Top::Energy -20|Speed +10|Power +10|Wit +5|King Halo bond +5||Bot::Mood -1|Guts +25|King Halo bond +5,1
+king_halo_r,random,you_may_advise_me,You May Advise Me!,Top::Guts +10|Wit +5|King Halo bond +5||Bot::Homestretch Haste hint +1|King Halo bond +5,2
+
+zenno_rob_roy_stamina,chain,a_half_remembered_book,(❯) A Half-Remembered Book,Stamina +10|Wit +10|Studious hint +1|Zenno Rob Roy bond +5,1
+zenno_rob_roy_stamina,chain,cooking_up_a_rainbow,(❯❯) Cooking Up a Rainbow,Stamina +10|Skill points +10|Tactical Tweak hint +1|Zenno Rob Roy bond +5,2
+zenno_rob_roy_stamina,chain,hobbies_bring_us_together,(❯❯❯) Hobbies Bring Us Together,Stamina +10|Clairvoyance hint +1|Zenno Rob Roy bond +5,3
+zenno_rob_roy_stamina,random,book_lover_quirks,Book-lover Quirks,Top::Speed +5|Wit +5|Zenno Rob Roy bond +5||Bot::Energy +10|Power +5|Zenno Rob Roy bond +5,1
+zenno_rob_roy_stamina,random,a_tale_entrusted,A Tale Entrusted,Top::Stamina +10|Wit +10|Zenno Rob Roy bond +5||Bot::Medium Straightaways ○ hint +1|Zenno Rob Roy bond +5,2
+ikuno_dictus_stamina,chain,ikuno_style_cuteness_research,(❯) Ikuno-style Cuteness Research,Maximum Energy +4|Stamina +15|Wit +5|Ikuno Dictus bond +5,1
+ikuno_dictus_stamina,chain,glasses_style_umadol_song,(❯❯) Glasses-style Umadol Song ☆,Top::Energy +15|Ikuno Dictus bond +10||Bot::Get Practice Perfect ○ status|Ikuno Dictus bond +10,2
+ikuno_dictus_stamina,chain,ikuno_style_socializing,(❯❯❯) Ikuno-style Socializing,!Randomly either|Energy +15|Stamina +15|Guts +8|Wit +8|Keep Going! hint +3|Ikuno Dictus bond +5|!or|Energy +10|Stamina +8|Guts +5|Wit +5|Full Throttle hint +3|Ikuno Dictus bond +5,3
+ikuno_dictus_stamina,random,ikuno_style_flawless_method,Ikuno-Style Flawless Method,Top::Wit +10|Ikuno Dictus bond +5||Bot::Skill points +30|Ikuno Dictus bond +5,1
+ikuno_dictus_stamina,random,ikuno_style_management,Ikuno-Style Management,Top::Stamina +20|Ikuno Dictus bond +5||Bot::Trick (Rear) hint +1|Ikuno Dictus bond +5,2
+symboli_rudolf_stamina,chain,fires_that_do_not_cross,(❯) Fires That Do Not Cross,Stamina +10|Skill points +10|Symboli Rudolf bond +5,1
+symboli_rudolf_stamina,chain,that_which_generates_heat,(❯❯) That Which Generates Heat,Top::Energy +10|Skill points +10|Soft Step hint +1|Symboli Rudolf bond +5||Bot::Energy -10|Stamina +25|Guts +25|Symboli Rudolf bond -5/+5|!Event chain ended,2
+symboli_rudolf_stamina,chain,passions_that_guide,(❯❯❯) Passions That Guide,Stamina +10|Skill points +30|Burning Soul hint +1|Symboli Rudolf bond +5,3
+symboli_rudolf_stamina,random,the_emperor_s_encouragement,The Emperor's Encouragement,Top::Speed +10|Symboli Rudolf bond +5||Bot::Energy -10|Skill points +30|Symboli Rudolf bond +5,1
+symboli_rudolf_stamina,random,the_student_council_president_s_thoughtfulness,The Student Council President's Thoughtfulness,Top::Rainy Days ○ hint +1|Symboli Rudolf bond +5||Bot::Stamina +15|Symboli Rudolf bond +5,2
+mejiro_bright_stamina,chain,i_ll_help_search,(❯) I'll Help Search!,Top::Mood +1|Stamina +10|Mejiro Bright bond +10||Bot::Energy +10|Wit +10|Mejiro Bright bond +10,1
+mejiro_bright_stamina,chain,i_ll_go_on_stage,(❯❯) I'll Go on Stage!,Stamina +15|Early Start hint +1,2
+mejiro_bright_stamina,chain,i_ll_win,(❯❯❯) I'll Win!,Stamina +15|Overwhelming Pressure hint +1|Mejiro Bright bond +5,3
+mejiro_bright_stamina,random,slow_and_leisurely,Slow and Leisurely,Top::Stamina +15|Guts +5|Mejiro Bright bond +5||Bot::Speed +15|Power +5|Mejiro Bright bond +5,1
+mejiro_bright_stamina,random,sure_and_steady,Sure and Steady,Top::Energy +10|Deep Breaths hint +1|Mejiro Bright bond +5||Bot::Wit +20|Mejiro Bright bond +5,2
+meisho_doto_stamina,chain,doomsday_for_the_overlord,(❯) Doomsday for the Overlord?!,Top::Energy +10|Meisho Doto bond +5||Bot::Stamina +5|Medium Corners ○ hint +1|Meisho Doto bond +5,1
+meisho_doto_stamina,chain,coupon_gone_wrong,(❯❯) Coupon Gone Wrong,Speed +3|Stamina +3|Power +3|Skill points +10,2
+meisho_doto_stamina,chain,new_recruit,(❯❯❯) New Recruit,Energy -20|Speed +5|Stamina +10|Killer Tunes hint +3|Meisho Doto bond +5,3
+meisho_doto_stamina,random,i_will_change,I... Will Change,Top::Energy +10|Mood +1|Meisho Doto bond +5||Bot::Guts +15|Meisho Doto bond +5,1
+meisho_doto_stamina,random,please_buy_some_carrots,Please... Buy Some Carrots,Top::Energy +10|Wit +5|Meisho Doto bond +5||Bot::Pace Chaser Corners ○ hint +1|Meisho Doto bond +5,2
+manhattan_cafe_stamina,chain,drawn_in,(❯) Drawn In,Stamina +10|Wit +5,1
+manhattan_cafe_stamina,chain,discovery,(❯❯) Discovery,Top::!Randomly either|Stamina +10|Wit +10|Long Corners ○ hint +1|Manhattan Cafe bond +5|!or|Energy +15|Long Corners ○ hint +1|Get Night Owl status|Manhattan Cafe bond +5||Bot::Energy +15|Manhattan Cafe bond +5,2
+manhattan_cafe_stamina,chain,shadowing,(❯❯❯) Shadowing,Stamina +15|Stamina Siphon hint +1|Manhattan Cafe bond +5,3
+manhattan_cafe_stamina,random,solo_nighttime_run,Solo Nighttime Run,Top::Stamina +10|Manhattan Cafe bond +5||Bot::Energy +10|Stamina +5|Manhattan Cafe bond +5,1
+manhattan_cafe_stamina,random,a_taste_of_silence,A Taste of Silence,Top::Stamina +5|Skill points +15|Manhattan Cafe bond +5||Bot::Non-Standard Distance ○ hint +1|Manhattan Cafe bond +5,2
+narita_brian_stamina,chain,target_across_time,(❯) Target Across Time,Stamina +10,1
+narita_brian_stamina,chain,lord_of_the_ducks,(❯❯) Lord of the Ducks,Top::!Randomly either|Maximum Energy +4|Stamina +10|Up-Tempo hint +1|Narita Brian bond +5|!or|Guts +10|Narita Brian bond -5||Bot::Wit +10|Narita Brian bond +5,2
+narita_brian_stamina,chain,battlefield_experience,(❯❯❯) Battlefield Experience,Energy -5|Stamina +5|Beeline Burst hint +2|Narita Brian bond +5,3
+narita_brian_stamina,random,student_council_member,Student Council Member!,Top::Mood +1|Speed +5|Narita Brian bond +5||Bot::Maximum Energy +4|Narita Brian bond +5,1
+narita_brian_stamina,random,lone_wolf,Lone Wolf,Lone Wolf hint +1|Narita Brian bond +5,2
+nakayama_festa_stamina,chain,night_of_ill_portent,(❯) Night of Ill Portent,Top::Stamina +10|Guts +5|Skill points +10|Nakayama Festa bond +5|※ Will affect the outcome of the 3rd event||Bot::Energy -10|Skill points +5|Nakayama Festa bond +5|※ Will affect the outcome of the 3rd event,1
+nakayama_festa_stamina,chain,midday_match,(❯❯) Midday Match,Skill points +25|Nakayama Festa bond +5,2
+nakayama_festa_stamina,chain,sundown_sinks_into_night,(❯❯❯) Sundown Sinks into Night,!Randomly either|※ Can only happen if you chose the 1st option during the 1st event|Skill points +40|Uma Stan hint +1|Nakayama Festa bond +5|!or|※ Can only happen if you chose the 2nd option during the 1st event|Stamina +15|Guts +15|Skill points +20|Come What May hint +3|Nakayama Festa bond +5|!or|※ Can only happen if you chose the 2nd option during the 1st event|Mood -1|Guts +10|All I've Got hint +3|Nakayama Festa bond +5,3
+nakayama_festa_stamina,random,sundown_showdown,Sundown Showdown,Top::Energy +15|Nakayama Festa bond +5||Bot::Guts +15|Nakayama Festa bond +5,1
+nakayama_festa_stamina,random,sundown_solo_supper,Sundown Solo Supper,Top::Nakayama Racecourse ○ hint +1|Nakayama Festa bond +5||Bot::Hanshin Racecourse ○ hint +1|Nakayama Festa bond +5,2
+silence_suzuka_stamina,chain,a_winning_vocalist,(❯) A Winning Vocalist,Top::Guts +10|Hydrate hint +1||Bot::Speed +10|Soft Step hint +1,1
+silence_suzuka_stamina,chain,a_dream_dance,(❯❯) A Dream Dance,Stamina +10|Skill points +10,2
+silence_suzuka_stamina,chain,a_stage_to_remember,(❯❯❯) A Stage to Remember,Speed +5|Stamina +5|Concentration hint +1,3
+silence_suzuka_stamina,random,on_and_on,On and On,Top::Speed +10|Stamina +5|Silence Suzuka bond +5||Bot::Speed +15|Silence Suzuka bond +5,1
+silence_suzuka_stamina,random,what_should_i_do,What Should I Do?,Top::Speed +5|Stamina +5|Wit +5|Silence Suzuka bond +5||Bot::Left-Handed ○ hint +1|Silence Suzuka bond +5,2
+winning_ticket_stamina,chain,tickezoexpedition,(❯) Tickezo☆Expedition!,Speed +10|Stamina +10|Triple 7s hint +1|Winning Ticket bond +5,1
+winning_ticket_stamina,chain,tickezofriendship,(❯❯) Tickezo☆Friendship!,"Top::Stamina +10|Guts +10|1,500,000 CC hint +1|Medium Straightaways ○ hint +1|Winning Ticket bond +10||Bot::Energy +25|Maverick ○ hint +3|Winning Ticket bond -5|!Event chain ended",2
+winning_ticket_stamina,chain,tickezonight_fever,(❯❯❯) Tickezo☆Night Fever!,"Speed +15|Stamina +15|Guts +15|Hard Worker hint +2",3
+winning_ticket_stamina,random,full_power_muscles,Full-Power Muscles!,Top::Stamina +5|Skill points +15|Winning Ticket bond +5||Bot::Mood +1|Skill points +15|Winning Ticket bond +5,1
+winning_ticket_stamina,random,full_power_racing,Full-Power Racing!,Top::Late Surger Corners ○ hint +1|Winning Ticket bond +5||Bot::Skill points +30|Winning Ticket bond +5,2
+sakura_chiyono_o_stamina,chain,one_step_toward_blooming,(❯) One Step toward Blooming!,Skill points +15|Stamina to Spare hint +1|Sakura Chiyono O bond +5,1
+sakura_chiyono_o_stamina,chain,blooming_hope,(❯❯) Blooming Hope!,Top::!Randomly either|Stamina +30|Mood +1|Medium Straightaways ○ hint +1|Heal a negative status effect|Sakura Chiyono O bond +5|!or|Energy -10|Guts +25|Sakura Chiyono O bond +5||Bot::Energy +20|Mood +1|Sakura Chiyono O bond +5,2
+sakura_chiyono_o_stamina,chain,someday_i_ll_bloom,"(❯❯❯) Someday, I'll Bloom!",Top::!Randomly either|Energy -15|Stamina +10|Skill points +5|Speed Star hint +1|Sakura Chiyono O bond +5|!or|Energy -15|Stamina +30|Skill points +20|Speed Star hint +3|Sakura Chiyono O bond +5||Bot::Speed +5|Stamina +10|Power +5|Skill points +30|Sakura Chiyono O bond +5,3
+sakura_chiyono_o_stamina,random,today_s_words_of_wisdom,Today's Words of Wisdom!,Top::Energy -10|Power +20|Sakura Chiyono O bond +5||Bot::Energy +5|Skill points +10|Sakura Chiyono O bond +5,1
+sakura_chiyono_o_stamina,random,until_i_bloom,Until I Bloom...,Top::Energy +5|Stamina +5|Sakura Chiyono O bond +5||Bot::Spring Runner ○ hint +1|Sakura Chiyono O bond +5,2
+satono_diamond_stamina,chain,hope_bearer,(❯) Hope Bearer,Energy +10|Stamina +2|Guts +2|Wit +3|All I've Got hint +2,1
+satono_diamond_stamina,chain,diamond_fixation,(❯❯) Diamond Fixation,Top::Wit +15|Satono Diamond bond +5||Bot::!Randomly either|Mood -1|Guts +20|!or|Energy +25|Stamina +10|Satono Diamond bond +5,2
+satono_diamond_stamina,chain,only_for_you,(❯❯❯) Only for You,Top::Energy -10|Stamina +40|Iron Will hint +2|Satono Diamond bond +5||Bot::Energy +15|Guts +5|Iron Will hint +2|Satono Diamond bond +5,3
+satono_diamond_stamina,random,i_love_new_things,I Love New Things!,Top::Guts +10|Satono Diamond bond +5||Bot::Energy -10|Stamina +20|Satono Diamond bond +5,1
+satono_diamond_stamina,random,i_love_complicated_things,I Love Complicated Things!,Top::Stamina +5|Guts +10|Satono Diamond bond +5||Bot::Hesitant Front Runners hint +1|Satono Diamond bond +5,2
+gold_ship_stamina,chain,fervor_air_basketball,(❯) Fervor! Air Basketball!,Energy -10|Stamina +25|Skill points +10|Early Start hint +1|Gold Ship bond +5,1
+gold_ship_stamina,chain,respect_the_salmon,(❯❯) Respect the Salmon!,Energy -10|Stamina +10|Guts +25|Skill points +10|End Closer Savvy ○ hint +1|Gold Ship bond +5,2
+gold_ship_stamina,chain,can_t_spell_rival_without_friend,"(❯❯❯) Can't Spell ""Rival"" without ""Friend""!",Stamina +20|Skill points +15|Corner Connoisseur hint +2|Risky Business hint +1|Gold Ship bond +5,3
+gold_ship_stamina,random,adventurer_gold_ship,Adventurer Gold Ship,Top::Stamina +15|Gold Ship bond +5||Bot::Guts +10|Skill points +15|Gold Ship bond +5,1
+gold_ship_stamina,random,revive_the_brand_golshi_s_yakisoba,Revive the Brand! Golshi's Yakisoba,Top::Stamina +5|Mood +1|Gold Ship bond +5||Bot::Hanshin Racecourse ○ hint +1|Gold Ship bond +5,2
+seiun_sky_stamina,chain,be_strategic,(❯) Be Strategic ☆,Top::Energy +10|Wit +5|Mood +1|Dodging Danger hint +1|Seiun Sky bond +5||Bot::Skill points +30|Second Wind hint +1|Seiun Sky bond -5|!Event chain ended,1
+seiun_sky_stamina,chain,beware_of_the_trap,(❯❯) Beware of the Trap,Speed +15|Stamina +15,2
+seiun_sky_stamina,chain,it_s_all_to_win,(❯❯❯) It's All to Win,!Randomly either|Energy +10|Speed +5|Stamina +5|Wit +5|Skill points +5|Mood +1|Fast-Paced hint +1|!or|Energy +10|Speed +10|Stamina +10|Wit +10|Skill points +30|Mood +1|Escape Artist hint +3,3
+seiun_sky_stamina,random,recruiting_cat_catchers,Recruiting Cat Catchers,Top::Energy +10|Wit +5|Seiun Sky bond +5||Bot::Energy -10|Speed +15|Stamina +5|Seiun Sky bond +5,1
+seiun_sky_stamina,random,recruiting_advisors,Recruiting Advisors,Top::Wit +15|Seiun Sky bond +5||Bot::Keeping the Lead hint +1|Seiun Sky bond +5,2
+tamamo_cross_stamina,chain,beef_pork_chicken_curry,"(❯) Beef, Pork, Chicken, Curry!",Stamina +10|Power +5|Mood +1|Tamamo Cross bond +5,1
+tamamo_cross_stamina,chain,got_my_priorities_straight,(❯❯) Got My Priorities Straight,"Stamina +15|Power +5|Guts +5|Tail Held High hint +1|Tamamo Cross bond +5",2
+tamamo_cross_stamina,chain,my_flaws_make_me_who_i_am,(❯❯❯) My Flaws Make Me Who I Am!,"Stamina +10|Power +10|Fast & Furious hint +2|Tamamo Cross bond +5",3
+tamamo_cross_stamina,random,tamamo_s_school_tour,Tamamo's School Tour,Top::Wit +10|Tamamo Cross bond +5||Bot::Stamina +5|Guts +5|Tamamo Cross bond +5,1
+tamamo_cross_stamina,random,a_battle_i_can_t_lose,A Battle I Can't Lose!,Top::Calm in a Crowd hint +1|Tamamo Cross bond +5||Bot::Stamina +5|Wit +5|Tamamo Cross bond +5,2
+super_creek_stamina,chain,freshly_made_in_ample_amounts,(❯) Freshly Made in Ample Amounts,Energy +10|Stamina +5,1
+super_creek_stamina,chain,the_taste_of_warmth,(❯❯) The Taste of Warmth,Stamina +5|Power +5,2
+super_creek_stamina,chain,have_a_second_helping,(❯❯❯) Have a Second Helping!,Stamina +10|Power +5|Swinging Maestro hint +1,3
+super_creek_stamina,random,leave_it_to_me_to_help_out,Leave it to Me to Help Out! ♪,Top::Energy +15|Super Creek bond +5||Bot::Stamina +10|Super Creek bond +5,1
+super_creek_stamina,random,leave_it_to_me_to_be_considerate,Leave it to Me to Be Considerate! ♪,Top::Deep Breaths hint +1|Super Creek bond +5||Bot::Energy +10|Stamina +5|Super Creek bond +5,2
+mejiro_mcqueen_stamina,chain,expectations_are_power,(❯) Expectations Are Power,Stamina +10,1
+mejiro_mcqueen_stamina,chain,expectations_are_affection,(❯❯) Expectations Are Affection,Mood +1|Stamina +10,2
+mejiro_mcqueen_stamina,chain,meeting_expectations,(❯❯❯) Meeting Expectations,!Randomly either|Energy -10|Stamina +10|Cooldown hint +3|!or|Energy -10|Deep Breaths hint +1,3
+mejiro_mcqueen_stamina,random,to_maintain_my_weight,To Maintain My Weight,Top::Energy -10|Stamina +15|Mejiro McQueen bond +5||Bot::Maximum Energy +4|Stamina +5|Mejiro McQueen bond +5,1
+mejiro_mcqueen_stamina,random,to_reach_the_greatest_heights,To Reach the Greatest Heights,Top::Stamina +5|Guts +5|Mejiro McQueen bond +5||Bot::Early Lead hint +1|Mejiro McQueen bond +5,2
+rice_shower_stamina,chain,a_page_from_a_windy_day,(❯) A Page from a Windy Day,Guts +10|Rice Shower bond +5,1
+rice_shower_stamina,chain,a_page_from_a_day_spent_with_friends,(❯❯) A Page from a Day Spent with Friends,Stamina +10|Rice Shower bond +5,2
+rice_shower_stamina,chain,a_page_from_a_day_of_hard_work,(❯❯❯) A Page from a Day of Hard Work,!Randomly either|Energy -10|Extra Tank hint +1|Rice Shower bond +5|!or|Energy -10|Adrenaline Rush hint +1|Rice Shower bond +5|!or|Energy -10|Stamina +5|Guts +5|Adrenaline Rush hint +3|Rice Shower bond +5,3
+rice_shower_stamina,random,a_page_of_flower_shop_assistance,A Page of Flower Shop Assistance,Top::Mood +2|Rice Shower bond +5||Bot::Stamina +10|Rice Shower bond +5,1
+rice_shower_stamina,random,a_page_about_cloudy_weather,A Page About Cloudy Weather,Top::Speed +5|Guts +5|Rice Shower bond +5||Bot::Firm Conditions ○ hint +1|Rice Shower bond +5,2
+tokai_teio_sr_stamina,chain,a_selfish_desire,(❯) A Selfish (?) Desire,Maximum Energy +4|Skill points +10|Tokai Teio bond +5,1
+tokai_teio_sr_stamina,chain,spreading_the_love_of_dance,(❯❯) Spreading the Love of Dance!,Top::Skill points +15|Medium Corners ○ hint +1|Tokai Teio bond +5||Bot::Energy +20|Tokai Teio bond +5,2
+tokai_teio_sr_stamina,random,my_way_or,"My Way, Or...",Top::Mood +1|Skill points +15|Tokai Teio bond +5||Bot::Guts +15|Tokai Teio bond +5,1
+tokai_teio_sr_stamina,random,my_weapon,My Weapon,Top::Mood +1|Guts +10|Tokai Teio bond +5||Bot::Pace Chaser Straightaways ○ hint +1|Tokai Teio bond +5,2
+mejiro_ryan_sr_stamina,chain,all_roads_lead_to_gains,(❯) All Roads Lead to Gains!,Stamina +10|Mejiro Ryan bond +5,1
+mejiro_ryan_sr_stamina,chain,success_starts_with_reps,(❯❯) Success Starts with Reps!,Top::Energy +25|Mejiro Ryan bond +5||Bot::Stamina +10|Power +5|Late Surger Straightaways ○ hint +2|Mejiro Ryan bond +5,2
+mejiro_ryan_sr_stamina,random,my_muscles_and_me_onward_to_tomorrow,"My Muscles and Me, Onward to Tomorrow!",Top::Energy -10|Power +15|Mejiro Ryan bond +5||Bot::Maximum Energy +4|Power +5|Mejiro Ryan bond +5,1
+mejiro_ryan_sr_stamina,random,it_s_not_like_i_like_romance,It's Not Like I Like Romance!,Top::Pace Strategy hint +1|Mejiro Ryan bond +5||Bot::Energy +30|Mejiro Ryan bond +5,2
+tosen_jordan_sr_stamina,chain,nail_artist_on_the_turf,(❯) Nail Artist on the Turf,Top::!Randomly either|Skill points +40|Tosen Jordan bond +5|!or|Skill points +10|Mood -1||Bot::Stamina +10|Tosen Jordan bond +5,1
+tosen_jordan_sr_stamina,chain,not_just_for_show,(❯❯) Not Just for Show,Top::!Randomly either|Energy +10|Ramp Up hint +3|Tosen Jordan bond +5|!or|Ramp Up hint +1||Bot::Energy -5|Stamina +20|Tosen Jordan bond +5,2
+tosen_jordan_sr_stamina,random,doomscrolling_the_time_away,Doomscrolling the Time Away,Top::Mood +1|Speed +5|Tosen Jordan bond +5||Bot::Stamina +10|Tosen Jordan bond +5,1
+tosen_jordan_sr_stamina,random,sponsored_posts_can_be_low_key_sus,Sponsored Posts Can Be Low-Key Sus,Top::Energy +10|Mood +1|Tosen Jordan bond +5||Bot::Lucky Seven hint +1|Tosen Jordan bond +5,2
+zenno_rob_roy_sr_stamina,chain,the_bookworm_and_the_magical_girl,(❯) The Bookworm and the Magical Girl,Top::Stamina +5|Wit +5|Zenno Rob Roy bond +5||Bot::Energy +20|Power +10|Zenno Rob Roy bond +5|!Event chain ended,1
+zenno_rob_roy_sr_stamina,chain,someday_i_ll_be_the_main_character,"(❯❯) Someday, I'll Be the Main Character",Stamina +10|Wit +10|Sharp Gaze hint +1,2
+zenno_rob_roy_sr_stamina,random,book_lover_quirks,Book-lover Quirks,Top::Speed +5|Wit +5|Zenno Rob Roy bond +5||Bot::Energy +10|Power +5|Zenno Rob Roy bond +5,1
+zenno_rob_roy_sr_stamina,random,a_tale_entrusted,A Tale Entrusted,Top::Stamina +10|Wit +10|Zenno Rob Roy bond +5||Bot::Medium Straightaways ○ hint +1|Zenno Rob Roy bond +5,2
+mayano_top_gun_sr_stamina,chain,still_taxiing,(❯) Still Taxiing?,Skill points +30|Mayano Top Gun bond +5,1
+mayano_top_gun_sr_stamina,chain,take_off_toward_trendy,(❯❯) Take Off toward Trendy ♪,Stamina +10|Skill points +15|Focus hint +1|Mayano Top Gun bond +5,2
+mayano_top_gun_sr_stamina,random,snack_advice_for_mayano,Snack Advice for Mayano!,Top::Stamina +5|Guts +5|Mayano Top Gun bond +5||Bot::Stamina +10|Mayano Top Gun bond +5,1
+mayano_top_gun_sr_stamina,random,fashion_advice_for_mayano,Fashion Advice for Mayano!,Top::Straightaway Adept hint +1|Mayano Top Gun bond +5||Bot::Stamina +10|Mayano Top Gun bond +5,2
+manhattan_cafe_sr_stamina,chain,invitation_on_a_rainy_day,(❯) Invitation on a Rainy Day,Energy +15|Skill points +15,1
+manhattan_cafe_sr_stamina,chain,invitation_on_a_stormy_day,(❯❯) Invitation on a Stormy Day,Stamina +15|Studious hint +1|Manhattan Cafe bond +5,2
+manhattan_cafe_sr_stamina,random,solo_nighttime_run,Solo Nighttime Run,Top::Stamina +10|Manhattan Cafe bond +5||Bot::Energy +10|Stamina +5|Manhattan Cafe bond +5,1
+manhattan_cafe_sr_stamina,random,a_taste_of_silence,A Taste of Silence,Top::Stamina +5|Skill points +15|Manhattan Cafe bond +5||Bot::Non-Standard Distance ○ hint +1|Manhattan Cafe bond +5,2
+mejiro_bright_r_stamina,random,slow_and_leisurely,Slow and Leisurely,Top::Stamina +15|Guts +5|Mejiro Bright bond +5||Bot::Speed +15|Power +5|Mejiro Bright bond +5,1
+mejiro_bright_r_stamina,random,sure_and_steady,Sure and Steady,Top::Energy +10|Deep Breaths hint +1|Mejiro Bright bond +5||Bot::Wit +20|Mejiro Bright bond +5,2
+nakayama_festa_r_stamina,random,sundown_showdown,Sundown Showdown,Top::Energy +15|Nakayama Festa bond +5||Bot::Guts +15|Nakayama Festa bond +5,1
+nakayama_festa_r_stamina,random,sundown_solo_supper,Sundown Solo Supper,Top::Nakayama Racecourse ○ hint +1|Nakayama Festa bond +5||Bot::Hanshin Racecourse ○ hint +1|Nakayama Festa bond +5,2
+tosen_jordan_r_stamina,random,doomscrolling_the_time_away,Doomscrolling the Time Away,Top::Mood +1|Speed +5|Tosen Jordan bond +5||Bot::Stamina +10|Tosen Jordan bond +5,1
+tosen_jordan_r_stamina,random,sponsored_posts_can_be_low_key_sus,Sponsored Posts Can Be Low-Key Sus,Top::Energy +10|Mood +1|Tosen Jordan bond +5||Bot::Lucky Seven hint +1|Tosen Jordan bond +5,2
+sakura_chiyono_o_r_stamina,random,today_s_words_of_wisdom,Today's Words of Wisdom!,Top::Energy -10|Power +20|Sakura Chiyono O bond +5||Bot::Energy +5|Skill points +10|Sakura Chiyono O bond +5,1
+sakura_chiyono_o_r_stamina,random,until_i_bloom,Until I Bloom...,Top::Energy +5|Stamina +5|Sakura Chiyono O bond +5||Bot::Spring Runner ○ hint +1|Sakura Chiyono O bond +5,2
+zenno_rob_roy_r_stamina,random,book_lover_quirks,Book-lover Quirks,Top::Speed +5|Wit +5|Zenno Rob Roy bond +5||Bot::Energy +10|Power +5|Zenno Rob Roy bond +5,1
+zenno_rob_roy_r_stamina,random,a_tale_entrusted,A Tale Entrusted,Top::Stamina +10|Wit +10|Zenno Rob Roy bond +5||Bot::Medium Straightaways ○ hint +1|Zenno Rob Roy bond +5,2
+satono_diamond_r_stamina,random,i_love_new_things,I Love New Things!,Top::Guts +10|Satono Diamond bond +5||Bot::Energy -10|Stamina +20|Satono Diamond bond +5,1
+satono_diamond_r_stamina,random,i_love_complicated_things,I Love Complicated Things!,Top::Stamina +5|Guts +10|Satono Diamond bond +5||Bot::Hesitant Front Runners hint +1|Satono Diamond bond +5,2
+gold_ship_r_stamina,random,adventurer_gold_ship,Adventurer Gold Ship,Top::Stamina +15|Gold Ship bond +5||Bot::Guts +10|Skill points +15|Gold Ship bond +5,1
+gold_ship_r_stamina,random,revive_the_brand_golshi_s_yakisoba,Revive the Brand! Golshi's Yakisoba,Top::Stamina +5|Mood +1|Gold Ship bond +5||Bot::Hanshin Racecourse ○ hint +1|Gold Ship bond +5,2
+mejiro_mcqueen_r_stamina,random,to_maintain_my_weight,To Maintain My Weight,Top::Energy -10|Stamina +15|Mejiro McQueen bond +5||Bot::Maximum Energy +4|Stamina +5|Mejiro McQueen bond +5,1
+mejiro_mcqueen_r_stamina,random,to_reach_the_greatest_heights,To Reach the Greatest Heights,Top::Stamina +5|Guts +5|Mejiro McQueen bond +5||Bot::Early Lead hint +1|Mejiro McQueen bond +5,2
+tm_opera_o_r_stamina,random,etude_to_victory,Etude to Victory,Top::Speed +5|Skill points +30|Mood -1|TM Opera O bond +5||Bot::Power +5|Skill points +15|TM Opera O bond +5,1
+tm_opera_o_r_stamina,random,beyond_our_limited_time,Beyond Our Limited Time,Top::Energy +10|Skill points +15|TM Opera O bond +5||Bot::Non-Standard Distance ○ hint +1|TM Opera O bond +5,2
+seiun_sky_r_stamina,random,recruiting_cat_catchers,Recruiting Cat Catchers,Top::Energy +10|Wit +5|Seiun Sky bond +5||Bot::Energy -10|Speed +15|Stamina +5|Seiun Sky bond +5,1
+seiun_sky_r_stamina,random,recruiting_advisors,Recruiting Advisors,Top::Wit +15|Seiun Sky bond +5||Bot::Keeping the Lead hint +1|Seiun Sky bond +5,2
+rice_shower_r_stamina,random,a_page_of_flower_shop_assistance,A Page of Flower Shop Assistance,Top::Mood +2|Rice Shower bond +5||Bot::Stamina +10|Rice Shower bond +5,1
+rice_shower_r_stamina,random,a_page_about_cloudy_weather,A Page About Cloudy Weather,Top::Speed +5|Guts +5|Rice Shower bond +5||Bot::Firm Conditions ○ hint +1|Rice Shower bond +5,2
+super_creek_r_stamina,random,leave_it_to_me_to_help_out,Leave it to Me to Help Out! ♪,Top::Energy +15|Super Creek bond +5||Bot::Stamina +10|Super Creek bond +5,1
+super_creek_r_stamina,random,leave_it_to_me_to_be_considerate,Leave it to Me to Be Considerate! ♪,Top::Deep Breaths hint +1|Super Creek bond +5||Bot::Energy +10|Stamina +5|Super Creek bond +5,2
+tamamo_cross_r_stamina,random,tamamo_s_school_tour,Tamamo's School Tour,Top::Wit +10|Tamamo Cross bond +5||Bot::Stamina +5|Guts +5|Tamamo Cross bond +5,1
+tamamo_cross_r_stamina,random,a_battle_i_can_t_lose,A Battle I Can't Lose!,Top::Calm in a Crowd hint +1|Tamamo Cross bond +5||Bot::Stamina +5|Wit +5|Tamamo Cross bond +5,2
+mayano_top_gun_r_stamina,random,snack_advice_for_mayano,Snack Advice for Mayano!,Top::Stamina +5|Guts +5|Mayano Top Gun bond +5||Bot::Stamina +10|Mayano Top Gun bond +5,1
+mayano_top_gun_r_stamina,random,fashion_advice_for_mayano,Fashion Advice for Mayano!,Top::Straightaway Adept hint +1|Mayano Top Gun bond +5||Bot::Stamina +10|Mayano Top Gun bond +5,2
+manhattan_cafe_r_stamina,random,solo_nighttime_run,Solo Nighttime Run,Top::Stamina +10|Manhattan Cafe bond +5||Bot::Energy +10|Stamina +5|Manhattan Cafe bond +5,1
+manhattan_cafe_r_stamina,random,a_taste_of_silence,A Taste of Silence,Top::Stamina +5|Skill points +15|Manhattan Cafe bond +5||Bot::Non-Standard Distance ○ hint +1|Manhattan Cafe bond +5,2
+
+air_groove_power,chain,my_source_of_admiration,(❯) My Source of Admiration,Mood +1|Power +10|Fearless hint +1|Air Groove bond +5,1
+air_groove_power,chain,you_make_me_who_i_am,(❯❯) You Make Me Who I Am,Top::Power +7|Wit +7|Take the Chance hint +1|Air Groove bond +5||Bot::Skill points +10|Updrafters hint +1|Air Groove bond +5,2
+air_groove_power,chain,dynamic_duo,(❯❯❯) Dynamic Duo,Power +10|Wit +10|Lie in Wait hint +1|Air Groove bond +5,3
+air_groove_power,random,strict_but_gracious,Strict but Gracious,Top::Go with the Flow hint +1|Air Groove bond +5||Bot::Energy +10|Wit +10|Air Groove bond +5,1
+air_groove_power,random,agile_but_strong,Agile but Strong,Top::Power +15|Air Groove bond +5||Bot::Speed +10|Stamina +5|Air Groove bond +5,2
+haru_urara_power,chain,a_wonderful_wedding,(❯) A Wonderful Wedding?,!Randomly either|Energy +15|Get Charming ○ status|Haru Urara bond +5|!or|Energy +15|Haru Urara bond +5,1
+haru_urara_power,chain,the_theme_s_decided,(❯❯) The Theme's Decided!,Top::Energy +25|Haru Urara bond +5||Bot::Mood +2|Heal a negative status effect|Haru Urara bond +5,2
+haru_urara_power,chain,the_gift_of_excitement,(❯❯❯) The Gift of Excitement,Energy +50|Hard Worker hint +1|Haru Urara bond +5,3
+haru_urara_power,random,urara_s_study_review,Urara's ☆ Study Review,Top::Energy +10|Wit +5|Haru Urara bond +5||Bot::Mood +1|Wit +5|Haru Urara bond +5,1
+haru_urara_power,random,urara_s_long_shot_dash,Urara's ☆ Long Shot Dash!,Top::Long Shot ○ hint +1|Haru Urara bond +5||Bot::Mood +1|Energy +10|Haru Urara bond +5,2
+kawakami_princess_power,chain,oh_my_ghost_hunt,(❯) OH! MY! Ghost Hunt!,Energy -5|Power +10|Kawakami Princess bond +5,1
+kawakami_princess_power,chain,allies_assemble_a_princess_must_be_regal,(❯❯) Allies Assemble! A Princess Must Be Regal!,Energy -10|Power +20|Kawakami Princess bond +5,2
+kawakami_princess_power,chain,together_as_one_grand_ghost_hunting_finale,(❯❯❯) Together as One! Grand Ghost Hunting Finale!,Energy -15|Power +30|Unyielding hint +1|Kawakami Princess bond +5,3
+kawakami_princess_power,random,princess_punch,Princess Punch!,Top::Guts +10|Kawakami Princess bond +5||Bot::Mood +1|Kawakami Princess bond +5,1
+kawakami_princess_power,random,princess_escape,Princess Escape!,Top::Energy +10|Kawakami Princess bond +5||Bot::Steadfast hint +1|Kawakami Princess bond +5,2
+daiwa_scarlet_power,chain,distant_feelings,(❯) Distant Feelings,Top::Stamina +10|Feature Act hint +2|Daiwa Scarlet bond +5||Bot::Power +10|Up-Tempo hint +2|Daiwa Scarlet bond +5,1
+daiwa_scarlet_power,chain,an_important_signal,(❯❯) An Important Signal,Skill points +20|Daiwa Scarlet bond +5,2
+daiwa_scarlet_power,chain,this_is_who_i_am,(❯❯❯) This is Who I Am,Power +15|Wit +15|Neck and Neck hint +1|Daiwa Scarlet bond +5,3
+daiwa_scarlet_power,random,i_m_going_to_win_tomorrow,I'm Going to Win Tomorrow!,Top::Wit +10|Daiwa Scarlet bond +5||Bot::Mood +1|Skill points +15|Daiwa Scarlet bond +5,1
+daiwa_scarlet_power,random,this_is_nothing,This Is Nothing!,Top::Stamina to Spare hint +1|Daiwa Scarlet bond +5||Bot::Energy +20|Mood +1|Daiwa Scarlet bond +5,2
+agnes_digital_power,chain,a_simp_s_aesthetics,(❯) A Simp's Aesthetics,Skill points +30|Agnes Digital bond +5,1
+agnes_digital_power,chain,a_simp_s_burdens,(❯❯) A Simp's Burdens,Top::Stamina +15|Hydrate hint +1|Agnes Digital bond +5||Bot::Wit +15|Focus hint +1|Agnes Digital bond +5,2
+agnes_digital_power,chain,a_simp_s_lifestyle,(❯❯❯) A Simp's Lifestyle,Top::!Randomly either|Power +15|Skill points +20|Lead the Charge! hint +3|!or|Power +10|Skill points +15|Lead the Charge! hint +1||Bot::!Randomly either|Speed +35|Uma Stan hint +5|Agnes Digital bond +5|!or|Speed +35|Uma Stan hint +1|Agnes Digital bond +5,3
+agnes_digital_power,random,umamusume_deficiency,Umamusume Deficiency!,Top::Energy +5|Speed +5|Agnes Digital bond +5||Bot::Speed +5|Power +5|Agnes Digital bond +5,1
+agnes_digital_power,random,heavy_romance,Heavy Romance,Top::Rainy Days ○ hint +1|Agnes Digital bond +5||Bot::Wet Conditions ○ hint +1|Agnes Digital bond +5,2
+admire_vega_power,chain,ayabe_shows_concern,(❯) Ayabe Shows Concern,Top::!Randomly either|Power +5|Wit +15|Flustered Pace Chasers hint +2|Admire Vega bond +5|!or|Power +5|Wit +10|Admire Vega bond +5||Bot::Energy +15|Admire Vega bond +5,1
+admire_vega_power,chain,ayabe_doesn_t_cut_corners,(❯❯) Ayabe Doesn't Cut Corners,Power +7|Wit +7,2
+admire_vega_power,chain,ayabe_won_t_be_disheartened,(❯❯❯) Ayabe Won't Be Disheartened!,Top::Power +15|Wit +10|Daring Strike hint +1|Admire Vega bond +5||Bot::Speed +15|Skill points +30|Admire Vega bond +5,3
+admire_vega_power,random,awkward_triangulum,Awkward Triangulum,Top::Power +15|Admire Vega bond +5||Bot::Energy +10|Admire Vega bond +5,1
+admire_vega_power,random,lonesome_cepheus,Lonesome Cepheus,Top::Subdued Pace Chasers hint +1|Admire Vega bond +5||Bot::Wit +10|Admire Vega bond +5,2
+marvelous_sunday_power,chain,marvelous_guidance,(❯) Marvelous Guidance ☆,Speed +10,1
+marvelous_sunday_power,chain,dazzling_and_marvelous,(❯❯) Dazzling and Marvelous ☆,Top::Energy +10|Marvelous Sunday bond +5||Bot::Cloudy Days ○ hint +2|Marvelous Sunday bond +5|!Event chain ended,2
+marvelous_sunday_power,chain,pure_white_marvelousness,(❯❯❯) Pure White Marvelousness ☆,!Randomly either|Speed +5|Skill points +5|Fast & Furious hint +3|Marvelous Sunday bond +5|!or|Speed +5|Skill points +10|Position Pilfer hint +3|Marvelous Sunday bond +5,3
+marvelous_sunday_power,random,marvelous_no_question,"Marvelous, No Question ☆",Top::Energy +10|Speed +5|Marvelous Sunday bond +5||Bot::Mood +1|Speed +5|Marvelous Sunday bond +5,1
+marvelous_sunday_power,random,how_to_be_more_marvelous,How To Be More Marvelous ☆,Top::Energy +10|Mood +1|Marvelous Sunday bond +5||Bot::Hanshin Racecourse ○ hint +1|Marvelous Sunday bond +5,2
+daitaku_helios_power,chain,a_legendary_smile_in_the_house,(❯) A Legendary Smile in the House!,Top::Energy -5|Power +15|(random) Early Lead hint +1|Daitaku Helios bond +5||Bot::Energy +10|Speed +15|Pace Chaser Corners ○ hint +1|!Event chain ended,1
+daitaku_helios_power,chain,helios_s_hype_channel,(❯❯) Helios's ☆ Hype Channel!,Energy -5|Power +10|Skill points +20,2
+daitaku_helios_power,chain,a_smile_for_the_world,(❯❯❯) A Smile for the World,!Randomly either|Energy -10|Speed +20|Power +20|Escape Artist hint +3|Daitaku Helios bond +5|!or|Energy -10|Speed +10|Power +10|Fast-Paced hint +3|Daitaku Helios bond +5,3
+daitaku_helios_power,random,encounter_with_the_sun,Encounter With the Sun ☆,Top::Power +10|Daitaku Helios bond +5||Bot::Get Hot Topic status|Daitaku Helios bond +5,1
+daitaku_helios_power,random,smiles_forever,Smiles Forever,Top::Speed +5|Power +10|Daitaku Helios bond +5||Bot::Long Shot ○ hint +1|Daitaku Helios bond +5,2
+tamamo_cross_power,chain,mummy_hunt_drop_the_jokes,(❯) Mummy Hunt! Drop the Jokes!,Top::Power +10|Tamamo Cross bond +5||Bot::Energy +20|Speed +10|Wet Conditions ○ hint +1|!Event chain ended,1
+tamamo_cross_power,chain,mummy_hunt_the_hunter_awakens,(❯❯) Mummy Hunt! The Hunter Awakens!,Speed +10|Power +10,2
+tamamo_cross_power,chain,mummy_hunt_terrifyingly_tender,(❯❯❯) Mummy Hunt! Terrifyingly Tender,"!Randomly either|Speed +5|Power +5|15,000,000 CC hint +1|!or|Speed +15|Power +15|15,000,000 CC hint +3",3
+tamamo_cross_power,random,tamamo_s_school_tour,Tamamo's School Tour,Top::Wit +10|Tamamo Cross bond +5||Bot::Stamina +5|Guts +5|Tamamo Cross bond +5,1
+tamamo_cross_power,random,a_battle_i_can_t_lose,A Battle I Can't Lose!,Top::Calm in a Crowd hint +1|Tamamo Cross bond +5||Bot::Stamina +5|Wit +5|Tamamo Cross bond +5,2
+rice_shower_power,chain,rainy_day_floating_flowers,"(❯) Rainy Day, Floating Flowers",Top::Power +10|Rice Shower bond +5||Bot::Skill points +40|Passing Pro hint +1|!Event chain ended,1
+rice_shower_power,chain,magical_flowers_forever_fair,"(❯❯) Magical Flowers, Forever Fair",Top::Stamina +5|Power +10|Rice Shower bond +5||Bot::Energy +15|Power +5|Rice Shower bond +5,2
+rice_shower_power,chain,a_bouquet_fluttering_in_the_sun,(❯❯❯) A Bouquet Fluttering in the Sun,"Stamina +5|Power +5|Wit +5|Swinging Maestro hint +1|Rice Shower bond +5",3
+rice_shower_power,random,a_page_of_flower_shop_assistance,A Page of Flower Shop Assistance,Top::Mood +2|Rice Shower bond +5||Bot::Stamina +10|Rice Shower bond +5,1
+rice_shower_power,random,a_page_about_cloudy_weather,A Page About Cloudy Weather,Top::Speed +5|Guts +5|Rice Shower bond +5||Bot::Firm Conditions ○ hint +1|Rice Shower bond +5,2
+daiwa_scarlet_power_2,chain,number_one_reactions,(❯) Number One Reactions?,Top::Speed +3|Power +3|Wit +3|Daiwa Scarlet bond +5||Bot::Energy +15|!Event chain ended,1
+daiwa_scarlet_power_2,chain,learning_to_look_scared,(❯❯) Learning to Look Scared,Power +5|Wit +5,2
+daiwa_scarlet_power_2,chain,poolside_fun,(❯❯❯) Poolside Fun,!Randomly either|Energy -5|Power +10|Race Planner hint +3|!or|Energy -5|Power +5|Preferred Position hint +3,3
+daiwa_scarlet_power_2,random,i_m_going_to_win_tomorrow,I'm Going to Win Tomorrow!,Top::Wit +10|Daiwa Scarlet bond +5||Bot::Mood +1|Skill points +15|Daiwa Scarlet bond +5,1
+daiwa_scarlet_power_2,random,this_is_nothing,This Is Nothing!,Top::Stamina to Spare hint +1|Daiwa Scarlet bond +5||Bot::Energy +20|Mood +1|Daiwa Scarlet bond +5,2
+king_halo_power,chain,a_captivating_invitation,(❯) A Captivating Invitation,Top::Power +10|Stop Right There! hint +1|King Halo bond +5||Bot::Guts +10|Uma Stan hint +1|King Halo bond +5,1
+king_halo_power,chain,dancer_s_pride,(❯❯) Dancer's Pride,Top::Energy -5|Stamina +15|Power +15|Skill points +20|King Halo bond +5||Bot::Energy +15|Skill points +20|King Halo bond +5,2
+king_halo_power,chain,glittering_star_of_the_ball,(❯❯❯) Glittering Star of the Ball,!Randomly either|Energy -10|Power +20|Gap Closer hint +3|!or|Energy -10|Power +40|Blinding Flash hint +3,3
+king_halo_power,random,you_may_socialize_with_me,You May Socialize With Me!,Top::Energy -20|Speed +10|Power +10|Wit +5|King Halo bond +5||Bot::Mood -1|Guts +25|King Halo bond +5,1
+king_halo_power,random,you_may_advise_me,You May Advise Me!,Top::Guts +10|Wit +5|King Halo bond +5||Bot::Homestretch Haste hint +1|King Halo bond +5,2
+bamboo_memory_power,chain,ready_for_the_test,(❯) Ready for the Test!,Energy -5|Stamina +3|Power +3|Guts +3|Competitive Spirit ○ hint +1|Bamboo Memory bond +5,1
+bamboo_memory_power,chain,no_one_is_above_discipline,(❯❯) No One Is Above Discipline!,Top::!Randomly either|Maximum Energy +4|Energy -10|Stamina +15|Power +20|Guts +15|Homestretch Haste hint +1|Bamboo Memory bond +5|!or|Energy -15|Stamina +15|Power +20|Guts +10|Bamboo Memory bond +5|!or|Energy -20|Stamina +10|Guts +10|Obtain Running Idle skill||Mid::Energy -5|Stamina +10|Power +10|Mood +1|Bamboo Memory bond +5||Bot::Energy +30|Hesitant Late Surgers hint +1|!Event chain ended,2
+bamboo_memory_power,chain,someday_i_ll_be_your_rival,"(❯❯❯) Someday, I'll Be Your Rival!",!Randomly either|Maximum Energy +4|Energy -5|Stamina +15|Power +20|Rising Dragon hint +3|Bamboo Memory bond +5|!or|Energy -15|Stamina +10|Power +15|Outer Swell hint +3|Bamboo Memory bond +5,3
+bamboo_memory_power,random,overthrow_the_rival,Overthrow the Rival!,Top::Guts +10|Bamboo Memory bond +5||Bot::Maximum Energy +4|Energy -5|Bamboo Memory bond +5,1
+bamboo_memory_power,random,tons_of_trouble,Tons of Trouble!,Top::Stamina +5|Guts +5|Bamboo Memory bond +5||Bot::Energy -10|Standard Distance ○ hint +5|Bamboo Memory bond +5,2
+yaeno_muteki_power,chain,yaeno_s_off_site_training,(❯) Yaeno's Off-Site Training,Speed +5|Power +5|Skill points +10|Subdued Late Surgers hint +1|Hesitant Late Surgers hint +1,1
+yaeno_muteki_power,chain,a_reasonable_diet_vs_an_explosive_diet,(❯❯) A Reasonable Diet vs. an Explosive Diet,Top::Energy +20|Skill points +30|Yaeno Muteki bond +5||Bot::Energy +10|Wit +10|Skill points +10|Playtime's Over! hint +3|!Event chain ended,2
+yaeno_muteki_power,chain,yaeno_muteki_s_love_song_nightmare,(❯❯❯) Yaeno Muteki's Love Song Nightmare,!Randomly either|Energy -10|Speed +10|Stamina +10|Power +20|It's On! hint +3|!or|Energy -10|It's On! hint +1,3
+yaeno_muteki_power,random,firm_and_plain_yet_close_to_virtue,"Firm and Plain, Yet Close to Virtue",Top::Speed +10|Yaeno Muteki bond +5||Bot::Power +5|Mood +1|Yaeno Muteki bond +5,1
+yaeno_muteki_power,random,the_will_to_protect,The Will to Protect!,Top::Stamina +10|Power +10|Yaeno Muteki bond +5||Bot::Medium Corners ○ hint +1|Yaeno Muteki bond +5,2
+winning_ticket_power,chain,hot_derby_special,(❯) Hot Derby Special!,Stamina +5|Power +5,1
+winning_ticket_power,chain,special_rival_training,(❯❯) Special Rival Training!,Energy -10|Stamina +5|Power +5,2
+winning_ticket_power,chain,dream_fulfilling_challenge,(❯❯❯) Dream-Fulfilling Challenge!,Energy -30|Stamina +5|Power +5|In Body and Mind hint +2,3
+winning_ticket_power,random,full_power_muscles,Full-Power Muscles!,Top::Stamina +5|Skill points +15|Winning Ticket bond +5||Bot::Mood +1|Skill points +15|Winning Ticket bond +5,1
+winning_ticket_power,random,full_power_racing,Full-Power Racing!,Top::Late Surger Corners ○ hint +1|Winning Ticket bond +5||Bot::Skill points +30|Winning Ticket bond +5,2
+oguri_cap_power,chain,a_plushie,(❯) A Plushie...,Maximum Energy +4|Power +5,1
+oguri_cap_power,chain,how_should_i_respond,(❯❯) How Should I Respond?,Top::Power +5|Skill points +10|Stamina to Spare hint +1|Oguri Cap bond +5||Bot::Stamina +5|Skill points +10|Outer Swell hint +1|Oguri Cap bond +5,2
+oguri_cap_power,chain,what_i_want_to_say,(❯❯❯) What I Want to Say,Top::!Randomly either|Power +10|Guts +5|Skill points +10|Oguri Cap bond +5|Furious Feat hint +1|!or|Power +15|Guts +10|Skill points +15|Oguri Cap bond +5|Furious Feat hint +3||Bot::Energy +30,3
+oguri_cap_power,random,how_should_i_respond,How Should I Respond?,Top::Energy +5|Power +5|Oguri Cap bond +5||Bot::Energy -10|Guts +15|Oguri Cap bond +5,1
+oguri_cap_power,random,conquering_the_crowds,Conquering the Crowds,Top::Power +5|Skill points +15|Oguri Cap bond +5||Bot::Nakayama Racecourse ○ hint +1|Oguri Cap bond +5,2
+vodka_power,chain,gotta_follow_my_heart,(❯) Gotta Follow My Heart,Power +10|Skill points +15|Vodka bond +5,1
+vodka_power,chain,a_vow_to_the_setting_sun,(❯❯) A Vow to the Setting Sun,Power +15|Skill points +15|Updrafters hint +2|Vodka bond +5,2
+vodka_power,chain,put_that_on_the_record_okay,"(❯❯❯) Put That on the Record, Okay?",Power +25|Skill points +30|Breath of Fresh Air hint +2|Vodka bond +5,3
+vodka_power,random,the_coolest_line,The Coolest Line,Top::Power +10|Vodka bond +5||Bot::Power +5|Skill points +15|Vodka bond +5,1
+vodka_power,random,enemies_on_main_street,Enemies on Main Street,Top::Nimble Navigator hint +1|Vodka bond +5||Bot::Power +5|Skill points +15|Vodka bond +5,2
+el_condor_pasa_power,chain,world_class,(❯) World Class,Power +10|Guts +10|El Condor Pasa bond +5,1
+el_condor_pasa_power,chain,uma_me,(❯❯) Uma-me,Top::Energy +30|El Condor Pasa bond +5||Bot::Stamina to Spare hint +1|El Condor Pasa bond +5|!Event chain ended,2
+el_condor_pasa_power,chain,luchadora_el,(❯❯❯) Luchadora El!,Power +15|Killer Tunes hint +2,3
+el_condor_pasa_power,random,blazing_fire,Blazing Fire!,Top::Stamina +10|El Condor Pasa bond +5||Bot::Energy -10|Power +20|El Condor Pasa bond +5,1
+el_condor_pasa_power,random,secret_notebook,Secret Notebook!,Top::Power +10|El Condor Pasa bond +5||Bot::Sunny Days ○ hint +1|El Condor Pasa bond +5,2
+smart_falcon_power,chain,always_on_stage,(❯) Always on Stage ☆,Top::Wit +10|Groundwork hint +1|Smart Falcon bond +5||Bot::Energy +25|Focus hint +1|Smart Falcon bond +5|!Event chain ended,1
+smart_falcon_power,chain,shining_always_and_everywhere,(❯❯) Shining Always and Everywhere ☆,Speed +10|Power +10|Top Pick hint +1,2
+smart_falcon_power,chain,my_umadol_way,(❯❯❯) My Umadol Way! ☆,!Randomly either|Maximum Energy +4|Stamina +5|Power +5|Wit +5|Prudent Positioning hint +1|!or|Maximum Energy +4|Stamina +15|Power +15|Wit +15|Center Stage hint +3,3
+smart_falcon_power,random,chants_are_the_life_of_a_concert,Chants Are the Life of a Concert ☆,Top::Stamina +5|Guts +10|Smart Falcon bond +5||Bot::Wit +15|Smart Falcon bond +5,1
+smart_falcon_power,random,if_i_m_cute_come_to_my_show,"If I'm Cute, Come to My Show! ☆",Top::Energy -10|Power +10|Final Push hint +1|Smart Falcon bond +5||Bot::Energy +10|Wit +5|Smart Falcon bond +5,2
+sakura_bakushin_o_sr_power,chain,a_bakushin_greeting,(❯) A Bakushin Greeting!,Top::Energy -10|Speed +30|Sakura Bakushin O bond +5||Bot::Energy -10|Skill points +30|Sakura Bakushin O bond +5,1
+sakura_bakushin_o_sr_power,chain,the_value_of_greetings,(❯❯) The Value of Greetings,Energy -10|Power +10|Tail Held High hint +2|Sakura Bakushin O bond +5,2
+sakura_bakushin_o_sr_power,random,genius_efficiency,Genius Efficiency!,Top::Speed +15|Sakura Bakushin O bond +5||Bot::Speed +5|Power +10|Sakura Bakushin O bond +5,1
+sakura_bakushin_o_sr_power,random,enough_to_break_into_a_dash,Enough to Break into a Dash!,Top::Gap Closer hint +1|Sakura Bakushin O bond +5||Bot::Energy -10|Speed +10|Power +5|Sakura Bakushin O bond +5,2
+special_week_sr_power,chain,unspoken_feelings,(❯) Unspoken Feelings,Energy +15|Mood +1|Special Week bond +5,1
+special_week_sr_power,chain,a_small_thank_you,(❯❯) A Small Thank You,!Randomly either|Energy +10|Head-On hint +3|Special Week bond +5|!or|Energy +10,2
+special_week_sr_power,random,watch_where_you_re_going,Watch Where You're Going!,Top::Extra Tank hint +1|Special Week bond +5||Bot::Guts +15|Special Week bond +5,1
+special_week_sr_power,random,so_many_options,So Many Options!,Top::Energy +10|Mood +1|Special Week bond +5||Bot::Energy -10|Stamina +15|Skill points +15|Special Week bond +5,2
+inari_one_sr_power,chain,don_t_give_up,(❯) Don't Give Up!,Energy -10|Speed +12|Power +12|Inari One bond +5,1
+inari_one_sr_power,chain,a_good_ruckus,(❯❯) A Good Ruckus!,Top::Energy -5|Mood +2|Speed +3|Power +3|Guts +3|Inari One bond +5||Bot::Energy -5|Speed +10|Oi Racecourse ○ hint +3|Inari One bond +5,2
+inari_one_sr_power,random,let_s_tussle_booyah,Let's Tussle! Booyah!,Top::Energy -5|Power +15|Inari One bond +5||Bot::Mood +1|Guts +5|Inari One bond +5,1
+inari_one_sr_power,random,mikoshi_heave_ho,"Mikoshi, Heave Ho!",Top::Skill points +15|Inari One bond +5||Bot::Kyoto Racecourse ○ hint +1|Inari One bond +5,2
+fine_motion_sr_power,chain,what_even_is_normal,(❯) What Even Is Normal?,Energy +15|Power +5|Skill points +10,1
+fine_motion_sr_power,chain,clovers_for_you_too,(❯❯) Clovers For You Too ♪,Skill points +20|Steadfast hint +2,2
+fine_motion_sr_power,random,wonderful_new_shoes,Wonderful New Shoes,Top::Speed +5|Skill points +10|Fine Motion bond +5||Bot::Energy -10|Stamina +5|Skill points +20|Fine Motion bond +5,1
+fine_motion_sr_power,random,reminiscent_clover,Reminiscent Clover,Top::Corner Adept ○ hint +1|Fine Motion bond +5||Bot::Guts +15|Fine Motion bond +5,2
+nishino_flower_sr_power,chain,i_want_you_to_rest,(❯) I Want You to Rest!,Mood +1|Speed +3|Power +3|Wit +3,1
+nishino_flower_sr_power,chain,i_want_to_say_thank_you,(❯❯) I Want to Say Thank You!,Top::Power +5|Straightaway Adept hint +1|Nishino Flower bond +5||Bot::Wit +5|Straightaway Acceleration hint +1|Nishino Flower bond +5,2
+nishino_flower_sr_power,random,warmth_love_and_lunch,"Warmth, Love, and Lunch",Top::Get Charming ○ status|Nishino Flower bond +5||Bot::Energy +20|Nishino Flower bond +5,1
+nishino_flower_sr_power,random,let_s_bloom_beautifully,Let's Bloom Beautifully ♪,Top::Wit +15|Nishino Flower bond +5||Bot::Speed +10|Power +5|Nishino Flower bond +5,2
+daitaku_helios_sr_power,chain,bff_party,(❯) #BFF #Party!,Top::Power +10|Daitaku Helios bond +5||Bot::Speed +10|Daitaku Helios bond +5,1
+daitaku_helios_sr_power,chain,lol_party_round2,(❯❯) #LOL #Party! #Round2,Top::Power +10|(random) Speed +10|Straight Descent hint +1/+3|Daitaku Helios bond +5||Bot::Energy +20|Watchful Eye hint +1|Daitaku Helios bond +5,2
+daitaku_helios_sr_power,random,encounter_with_the_sun,Encounter With the Sun ☆,Top::Power +10|Daitaku Helios bond +5||Bot::Get Hot Topic status|Daitaku Helios bond +5,1
+daitaku_helios_sr_power,random,smiles_forever,Smiles Forever,Top::Speed +5|Power +10|Daitaku Helios bond +5||Bot::Long Shot ○ hint +1|Daitaku Helios bond +5,2
+hishi_amazon_sr_power,chain,true_to_myself,(❯) True to Myself,Speed +5|Power +5|Hishi Amazon bond +5,1
+hishi_amazon_sr_power,chain,a_hishiama_solution,(❯❯) A Hishiama Solution,Speed +10|Masterful Gambit hint +1,2
+hishi_amazon_sr_power,random,hishiama_s_struggles_problem_children,Hishiama's Struggles: Problem Children,Top::Energy +10|Wit +5|Hishi Amazon bond +5||Bot::Energy -10|Speed +10|Guts +5|Hishi Amazon bond +5,1
+hishi_amazon_sr_power,random,hishiama_s_struggles_final_stretch,Hishiama's Struggles: Final Stretch,Top::Hesitant End Closers hint +1|Hishi Amazon bond +5||Bot::Power +5|Skill points +15|Hishi Amazon bond +5,2
+agnes_digital_sr_power,chain,happy_otaku_life,(❯) Happy Otaku Life,Power +10,1
+agnes_digital_sr_power,chain,my_love_for_umamusume_is_eternal,(❯❯) My Love for Umamusume is Eternal!,Speed +5|Power +10|Frenzied End Closers hint +1,2
+agnes_digital_sr_power,random,umamusume_deficiency,Umamusume Deficiency!,Top::Energy +5|Speed +5|Agnes Digital bond +5||Bot::Speed +5|Power +5|Agnes Digital bond +5,1
+agnes_digital_sr_power,random,heavy_romance,Heavy Romance,Top::Rainy Days ○ hint +1|Agnes Digital bond +5||Bot::Wet Conditions ○ hint +1|Agnes Digital bond +5,2
+biwa_hayahide_sr_power,chain,a_big_sister_s_job,(❯) A Big Sister's Job,Energy -10|Power +15,1
+biwa_hayahide_sr_power,chain,training_in_theory,(❯❯) Training in Theory,!Randomly either|Energy -20|Power +5|Pressure hint +1|!or|Energy -10|Stamina +5|Power +15|Biwa Hayahide bond +5|Pressure hint +3,2
+biwa_hayahide_sr_power,random,last_minute_modal_theory,Last-Minute Modal Theory,Top::Power +15|Biwa Hayahide bond +5||Bot::Speed +10|Skill points +15|Biwa Hayahide bond +5,1
+biwa_hayahide_sr_power,random,step_out_of_your_comfort_zone_theory,Step-Out-of-Your-Comfort-Zone Theory,Top::Energy -10|Inside Scoop hint +1|Biwa Hayahide bond +5||Bot::Energy +10|Stamina +10|Biwa Hayahide bond +5,2
+mihono_bourbon_sr_power,chain,i_m_not_a_cyborg,(❯) I'm Not a Cyborg,Top::Guts +10|Skill points +15|Mihono Bourbon bond +5||Bot::Energy -10|Corner Recovery ○ hint +1|(random) Mihono Bourbon bond -5|!Event chain ended,1
+mihono_bourbon_sr_power,chain,new_values_installed,(❯❯) New Values Installed,Energy -10|Power +5|Guts +5|Front Runner Straightaways ○ hint +1|Mihono Bourbon bond +5,2
+mihono_bourbon_sr_power,random,do_no_harm,Do No Harm,Top::Energy -10|Stamina +5|Power +15|Mihono Bourbon bond +5||Bot::Energy +10|Wit +5|Mihono Bourbon bond +5,1
+mihono_bourbon_sr_power,random,orders_must_be_followed,Orders Must Be Followed,Top::Focus hint +1|Mihono Bourbon bond +5||Bot::Speed +10|Skill points +15|Mihono Bourbon bond +5,2
+mejiro_ryan_sr_power,chain,where_cool_comes_from,(❯) Where Cool Comes From,Power +5|Skill points +15|Mejiro Ryan bond +5,1
+mejiro_ryan_sr_power,chain,carried_by_cheers,(❯❯) Carried by Cheers,Power +15|Nimble Navigator hint +1|Mejiro Ryan bond +5,2
+mejiro_ryan_sr_power,random,my_muscles_and_me_onward_to_tomorrow,"My Muscles and Me, Onward to Tomorrow!",Top::Energy -10|Power +15|Mejiro Ryan bond +5||Bot::Maximum Energy +4|Power +5|Mejiro Ryan bond +5,1
+mejiro_ryan_sr_power,random,it_s_not_like_i_like_romance,It's Not Like I Like Romance!,Top::Pace Strategy hint +1|Mejiro Ryan bond +5||Bot::Energy +30|Mejiro Ryan bond +5,2
+admire_vega_r_power,random,awkward_triangulum,Awkward Triangulum,Top::Power +15|Admire Vega bond +5||Bot::Energy +10|Admire Vega bond +5,1
+admire_vega_r_power,random,lonesome_cepheus,Lonesome Cepheus,Top::Subdued Pace Chasers hint +1|Admire Vega bond +5||Bot::Wit +10|Admire Vega bond +5,2
+inari_one_r_power,random,let_s_tussle_booyah,Let's Tussle! Booyah!,Top::Energy -5|Power +15|Inari One bond +5||Bot::Mood +1|Guts +5|Inari One bond +5,1
+inari_one_r_power,random,mikoshi_heave_ho,"Mikoshi, Heave Ho!",Top::Skill points +15|Inari One bond +5||Bot::Kyoto Racecourse ○ hint +1|Inari One bond +5,2
+bamboo_memory_r_power,random,overthrow_the_rival,Overthrow the Rival!,Top::Guts +10|Bamboo Memory bond +5||Bot::Maximum Energy +4|Energy -5|Bamboo Memory bond +5,1
+bamboo_memory_r_power,random,tons_of_trouble,Tons of Trouble!,Top::Stamina +5|Guts +5|Bamboo Memory bond +5||Bot::Energy -10|Standard Distance ○ hint +5|Bamboo Memory bond +5,2
+yaeno_muteki_r_power,random,firm_and_plain_yet_close_to_virtue,"Firm and Plain, Yet Close to Virtue",Top::Speed +10|Yaeno Muteki bond +5||Bot::Power +5|Mood +1|Yaeno Muteki bond +5,1
+yaeno_muteki_r_power,random,the_will_to_protect,The Will to Protect!,Top::Stamina +10|Power +10|Yaeno Muteki bond +5||Bot::Medium Corners ○ hint +1|Yaeno Muteki bond +5,2
+daitaku_helios_r_power,random,encounter_with_the_sun,Encounter With the Sun ☆,Top::Power +10|Daitaku Helios bond +5||Bot::Get Hot Topic status|Daitaku Helios bond +5,1
+daitaku_helios_r_power,random,smiles_forever,Smiles Forever,Top::Speed +5|Power +10|Daitaku Helios bond +5||Bot::Long Shot ○ hint +1|Daitaku Helios bond +5,2
+oguri_cap_r_power,random,how_should_i_respond,How Should I Respond?,Top::Energy +5|Power +5|Oguri Cap bond +5||Bot::Energy -10|Guts +15|Oguri Cap bond +5,1
+oguri_cap_r_power,random,conquering_the_crowds,Conquering the Crowds,Top::Power +5|Skill points +15|Oguri Cap bond +5||Bot::Nakayama Racecourse ○ hint +1|Oguri Cap bond +5,2
+vodka_r_power,random,the_coolest_line,The Coolest Line,Top::Power +10|Vodka bond +5||Bot::Power +5|Skill points +15|Vodka bond +5,1
+vodka_r_power,random,enemies_on_main_street,Enemies on Main Street,Top::Nimble Navigator hint +1|Vodka bond +5||Bot::Power +5|Skill points +15|Vodka bond +5,2
+el_condor_pasa_r_power,random,blazing_fire,Blazing Fire!,Top::Stamina +10|El Condor Pasa bond +5||Bot::Energy -10|Power +20|El Condor Pasa bond +5,1
+el_condor_pasa_r_power,random,secret_notebook,Secret Notebook!,Top::Power +10|El Condor Pasa bond +5||Bot::Sunny Days ○ hint +1|El Condor Pasa bond +5,2
+hishi_amazon_r_power,random,hishiama_s_struggles_problem_children,Hishiama's Struggles: Problem Children,Top::Energy +10|Wit +5|Hishi Amazon bond +5||Bot::Energy -10|Speed +10|Guts +5|Hishi Amazon bond +5,1
+hishi_amazon_r_power,random,hishiama_s_struggles_final_stretch,Hishiama's Struggles: Final Stretch,Top::Hesitant End Closers hint +1|Hishi Amazon bond +5||Bot::Power +5|Skill points +15|Hishi Amazon bond +5,2
+agnes_digital_r_power,random,umamusume_deficiency,Umamusume Deficiency!,Top::Energy +5|Speed +5|Agnes Digital bond +5||Bot::Speed +5|Power +5|Agnes Digital bond +5,1
+agnes_digital_r_power,random,heavy_romance,Heavy Romance,Top::Rainy Days ○ hint +1|Agnes Digital bond +5||Bot::Wet Conditions ○ hint +1|Agnes Digital bond +5,2
+biwa_hayahide_r_power,random,last_minute_modal_theory,Last-Minute Modal Theory,Top::Power +15|Biwa Hayahide bond +5||Bot::Speed +10|Skill points +15|Biwa Hayahide bond +5,1
+biwa_hayahide_r_power,random,step_out_of_your_comfort_zone_theory,Step-Out-of-Your-Comfort-Zone Theory,Top::Energy -10|Inside Scoop hint +1|Biwa Hayahide bond +5||Bot::Energy +10|Stamina +10|Biwa Hayahide bond +5,2
+mihono_bourbon_r_power,random,do_no_harm,Do No Harm,Top::Energy -10|Stamina +5|Power +15|Mihono Bourbon bond +5||Bot::Energy +10|Wit +5|Mihono Bourbon bond +5,1
+mihono_bourbon_r_power,random,orders_must_be_followed,Orders Must Be Followed,Top::Focus hint +1|Mihono Bourbon bond +5||Bot::Speed +10|Skill points +15|Mihono Bourbon bond +5,2
+mejiro_ryan_r_power,random,my_muscles_and_me_onward_to_tomorrow,"My Muscles and Me, Onward to Tomorrow!",Top::Energy -10|Power +15|Mejiro Ryan bond +5||Bot::Maximum Energy +4|Power +5|Mejiro Ryan bond +5,1
+mejiro_ryan_r_power,random,it_s_not_like_i_like_romance,It's Not Like I Like Romance!,Top::Pace Strategy hint +1|Mejiro Ryan bond +5||Bot::Energy +30|Mejiro Ryan bond +5,2
+smart_falcon_r_power,random,chants_are_the_life_of_a_concert,Chants Are the Life of a Concert ☆,Top::Stamina +5|Guts +10|Smart Falcon bond +5||Bot::Wit +15|Smart Falcon bond +5,1
+smart_falcon_r_power,random,if_i_m_cute_come_to_my_show,"If I'm Cute, Come to My Show! ☆",Top::Energy -10|Power +10|Final Push hint +1|Smart Falcon bond +5||Bot::Energy +10|Wit +5|Smart Falcon bond +5,2
+
