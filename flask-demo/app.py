@@ -1,10 +1,28 @@
 import csv
+import os
 import re
 from functools import wraps
-from flask import Flask, abort, render_template, request, redirect, url_for, session
+
+from flask import (
+    Flask,
+    abort,
+    redirect,
+    render_template,
+    request,
+    session,
+    url_for,
+)
+from werkzeug.security import check_password_hash, generate_password_hash
+
 
 app = Flask(__name__)
-app.secret_key = "Mashkyrielight@!#1234567890"
+app.secret_key = os.environ.get(
+    "SECRET_KEY",
+    "Mashkyrielight@!#1234567890"
+)
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+USERS_FILE = os.path.join(BASE_DIR, "users.csv")
 
 
 # =========================
@@ -43,6 +61,73 @@ def text_to_id(text):
     text = re.sub(r"[^a-z0-9]+", "_", text)
 
     return text.strip("_")
+
+
+# =========================
+# ACCOUNT HELPERS
+# =========================
+
+def ensure_users_file():
+    """Tạo users.csv và tài khoản admin mặc định nếu file chưa tồn tại."""
+    if os.path.exists(USERS_FILE):
+        return
+
+    with open(USERS_FILE, "w", newline="", encoding="utf-8-sig") as file:
+        writer = csv.DictWriter(
+            file,
+            fieldnames=["username", "password_hash"]
+        )
+        writer.writeheader()
+        writer.writerow({
+            "username": "admin",
+            "password_hash": generate_password_hash("123")
+        })
+
+
+def load_users():
+    ensure_users_file()
+    users = []
+
+    with open(USERS_FILE, newline="", encoding="utf-8-sig") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            username = (row.get("username") or "").strip()
+            password_hash = (row.get("password_hash") or "").strip()
+
+            if username == "" or password_hash == "":
+                continue
+
+            users.append({
+                "username": username,
+                "password_hash": password_hash
+            })
+
+    return users
+
+
+def find_user(username):
+    normalized_username = username.strip().lower()
+
+    for user in load_users():
+        if user["username"].lower() == normalized_username:
+            return user
+
+    return None
+
+
+def create_user(username, password):
+    ensure_users_file()
+
+    with open(USERS_FILE, "a", newline="", encoding="utf-8-sig") as file:
+        writer = csv.DictWriter(
+            file,
+            fieldnames=["username", "password_hash"]
+        )
+        writer.writerow({
+            "username": username,
+            "password_hash": generate_password_hash(password)
+        })
 
 
 # =========================
@@ -489,29 +574,110 @@ def load_support_card_training_events(card_id):
 
 
 # =========================
-# LOGIN
+# HOME
 # =========================
 
-@app.route("/", methods=["GET", "POST"])
-def login():
-    if request.method == "POST":
-        username = request.form.get("username")
-        password = request.form.get("password")
+@app.route("/")
+@app.route("/home")
+def home():
+    return render_template(
+        "home.html",
+        username=session.get("username")
+    )
 
-        if username == "admin" and password == "123":
-            session["username"] = username
-            return redirect(url_for("home"))
-        else:
-            return render_template("login.html", error="Wrong username or password")
+
+# =========================
+# AUTHENTICATION
+# =========================
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if "username" in session:
+        return redirect(url_for("home"))
+
+    if request.method == "POST":
+        username = request.form.get("username", "").strip()
+        password = request.form.get("password", "")
+
+        if username == "" or password == "":
+            return render_template(
+                "login.html",
+                error="Please enter both username and password.",
+                entered_username=username
+            )
+
+        user = find_user(username)
+
+        if user is None or not check_password_hash(
+            user["password_hash"],
+            password
+        ):
+            return render_template(
+                "login.html",
+                error="Wrong username or password.",
+                entered_username=username
+            )
+
+        session["username"] = user["username"]
+
+        return redirect(url_for("home"))
 
     return render_template("login.html")
 
 
-@app.route("/home")
-@login_required
-def home():
-    username = session["username"]
-    return render_template("home.html", username=username)
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if "username" in session:
+        return redirect(url_for("home"))
+
+    if request.method == "POST":
+        username = request.form.get("username", "").strip()
+        password = request.form.get("password", "")
+        confirm_password = request.form.get("confirm_password", "")
+
+        if not re.fullmatch(r"[A-Za-z0-9_]{3,30}", username):
+            return render_template(
+                "register.html",
+                error=(
+                    "Username must be 3-30 characters and contain only "
+                    "letters, numbers, or underscores."
+                ),
+                entered_username=username
+            )
+
+        if len(password) < 6:
+            return render_template(
+                "register.html",
+                error="Password must contain at least 6 characters.",
+                entered_username=username
+            )
+
+        if password != confirm_password:
+            return render_template(
+                "register.html",
+                error="The confirmation password does not match.",
+                entered_username=username
+            )
+
+        if find_user(username) is not None:
+            return render_template(
+                "register.html",
+                error="This username is already registered.",
+                entered_username=username
+            )
+
+        create_user(username, password)
+        session["username"] = username
+
+        return redirect(url_for("home"))
+
+    return render_template("register.html")
+
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for("home"))
 
 
 # =========================
@@ -630,10 +796,17 @@ def banner_history():
     return render_template("banner_history.html")
 
 
-@app.route("/tier-list")
+@app.route("/items")
 @login_required
-def tier_list():
-    return render_template("tier_list.html")
+def items():
+    return render_template("items.html")
+
+
+# Giữ đường dẫn cũ để tránh lỗi các link chưa sửa
+@app.route("/item")
+@login_required
+def item():
+    return redirect(url_for("items"))
 
 
 @app.route("/cm-guide")

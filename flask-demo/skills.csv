@@ -553,6 +553,6 @@ sharp_gaze,Sharp Gaze,debuff_stamina.png,Normal,Slightly startle other runners l
 all_seeing_eyes,All-Seeing Eyes,debuff_stamina.png,Upgraded,Startle other runners late-race. (Late Surger),Stamina Drain (-0.03),,upgrade,sharp_gaze,180,debuff,
 smoke_screen,Smoke Screen,debuff_vision.png,Normal,Moderately narrow the field of view for runners ahead late-race. (Long),Decrease Field of View (-5),110,normal,,,debuff,3s
 illusionist,Illusionist,debuff_vision.png,Upgraded,Narrow the field of view for runners ahead late-race. (Long),Decrease Field of View (-10),,upgrade,smoke_screen,110,debuff,3s
-disorient,Disorient,super_debuff_vision.png,Normal,Slightly narrow the field of view for runners behind when positioned toward the front late-race. (Pace Chaser),Decrease Field of View (-3),110,normal,,,debuff,3s
+disorient,Disorient,debuff_vision.png,Normal,Slightly narrow the field of view for runners behind when positioned toward the front late-race. (Pace Chaser),Decrease Field of View (-3),110,normal,,,debuff,3s
 dazzling_disorientation,Dazzling Disorientation,super_debuff_vision.png,Upgraded,Moderately narrow the field of view for runners behind when positioned toward the front late-race. (Pace Chaser),Decrease Field of View (-5),,upgrade,disorient,110,debuff,3s
 best_in_japan,Best in Japan,Best_in_Japan.png,Upgraded,"Everyone's expectations strongly inspire the user, increasing velocity on the final corner. (Long) [Activates at a random point on a final corner]",Increase target speed (0.35),360,normal,,,buff,3s
