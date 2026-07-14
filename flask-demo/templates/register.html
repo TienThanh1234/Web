@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+
+{% block title %}Create Account | Thanh's Uma Website{% endblock %}
+
+{% block content %}
+
+<style>
+    .auth-page {
+        min-height: calc(100vh - 135px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 15px;
+        background: linear-gradient(
+            135deg,
+            #fff1f7,
+            #fff8d9,
+            #eeeeff
+        );
+    }
+
+    .auth-card {
+        width: 100%;
+        max-width: 460px;
+        padding: 38px 35px;
+
+        background-color: #ffffff;
+        border: 1px solid #f1d9e5;
+        border-radius: 18px;
+
+        box-shadow: 0 15px 35px rgba(240, 108, 169, 0.18);
+    }
+
+    .auth-icon {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 17px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 28px;
+
+        background: linear-gradient(
+            135deg,
+            #ffca42,
+            #f06ca9,
+            #7479ff
+        );
+    }
+
+    .auth-title {
+        margin-bottom: 6px;
+        text-align: center;
+        font-size: 29px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .auth-subtitle {
+        margin-bottom: 27px;
+        color: #777777;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .auth-card label {
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .auth-card .form-control {
+        height: 49px;
+        border-radius: 9px;
+    }
+
+    .auth-submit {
+        width: 100%;
+        height: 49px;
+        margin-top: 8px;
+
+        border: none;
+        border-radius: 9px;
+
+        color: #ffffff;
+        background: linear-gradient(
+            90deg,
+            #f06ca9,
+            #7479ff
+        );
+
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .auth-bottom {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .auth-bottom a {
+        color: #f06ca9;
+        font-weight: 800;
+    }
+</style>
+
+<div class="auth-page">
+    <div class="auth-card">
+
+        <div class="auth-icon">
+            <i class="fa-solid fa-user-plus"></i>
+        </div>
+
+        <h1 class="auth-title">Create Account</h1>
+
+        <p class="auth-subtitle">
+            Create an account to access all website features
+        </p>
+
+        {% if error %}
+            <div class="alert alert-danger">
+                <i class="fa-solid fa-circle-exclamation mr-2"></i>
+                {{ error }}
+            </div>
+        {% endif %}
+
+        <form
+            method="POST"
+            action="{{ url_for('register') }}"
+        >
+            <div class="form-group">
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    id="username"
+                    type="text"
+                    name="username"
+                    class="form-control"
+                    value="{{ entered_username | default('') }}"
+                    placeholder="At least 3 characters"
+                    autocomplete="username"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="At least 6 characters"
+                    autocomplete="new-password"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="confirm_password">
+                    Confirm Password
+                </label>
+
+                <input
+                    id="confirm_password"
+                    type="password"
+                    name="confirm_password"
+                    class="form-control"
+                    placeholder="Enter the password again"
+                    autocomplete="new-password"
+                    required
+                >
+            </div>
+
+            <button
+                type="submit"
+                class="auth-submit"
+            >
+                Create Account
+            </button>
+        </form>
+
+        <div class="auth-bottom">
+            Already have an account?
+
+            <a href="{{ url_for('login') }}">
+                Sign In
+            </a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -18,14 +18,45 @@ Home
     <div class="speed-line line-3"></div>
 
     <div class="main-text">
-        <h1>WELCOME, NƠI TÔI SẼ CHỈ CHO BẠN TẤT CẢ NHỮNG GÌ VỀ GAME UMAMUSUME</h1>
-        <p>Thanh's Uma Website</p>
+
+        {% if session.get("username") %}
+
+            <h1>
+                WELCOME BACK, {{ session.get("username") | upper }}!
+            </h1>
+
+            <p class="hero-description">
+                Explore everything about Umamusume
+            </p>
+
+            <div class="hero-auth-actions">
+                <a href="#database" class="hero-button hero-database-button">
+                    <i class="fa-solid fa-database"></i>
+                    Explore Database
+                </a>
+
+                <a href="{{ url_for('logout') }}" class="hero-button hero-logout-button">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </div>
+
+        </div>
+
+        {% else %}
+
+            <h1>
+                WELCOME, NƠI TÔI SẼ CHỈ CHO BẠN TẤT CẢ NHỮNG GÌ VỀ GAME UMAMUSUME
+            </h1>
+
+        {% endif %}
+
     </div>
 
 </div>
 
 <!-- Phần Database khi kéo xuống -->
-<section class="database-section">
+<section class="database-section" id="database">
 
     <h2>Database</h2>
 
@@ -52,11 +83,11 @@ Home
             <h3>Banner History</h3>
         </a>
 
-        <a href="{{ url_for('tier_list') }}" class="database-card">
+        <a href="{{ url_for('item') }}" class="database-card">
             <div class="card-icon same-icon">
-                <img src="{{ url_for('static', filename='images/tier_list.png') }}" alt="Tier List">
+                <img src="{{ url_for('static', filename='images/item.png') }}" alt="Item">
             </div>
-            <h3>Tier List</h3>
+            <h3>Item</h3>
         </a>
 
         <a href="{{ url_for('cm_guide') }}" class="database-card">
@@ -345,6 +376,117 @@ Home
     .database-card:hover h3 {
         color: #ff4fa3;
     }
+
+    .hero-description {
+    margin-top: 22px;
+    margin-bottom: 0;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    color: #fff66d;
+
+    text-shadow:
+        2px 2px 0 #ff4fa3,
+        4px 4px 0 #6747d6,
+        0 0 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Nút đăng nhập và tạo tài khoản trên Home */
+.hero-auth-actions {
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+.hero-button {
+    min-width: 175px;
+    padding: 13px 23px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+
+    border: 2px solid #ffffff;
+    border-radius: 999px;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(56, 35, 120, 0.24);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.hero-button:hover {
+    color: #ffffff;
+    text-decoration: none;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 13px 27px rgba(56, 35, 120, 0.32);
+}
+
+.hero-login-button {
+    background: rgba(47, 43, 104, 0.78);
+}
+
+.hero-login-button:hover {
+    background: #2f2b68;
+}
+
+.hero-register-button {
+    background: linear-gradient(
+        90deg,
+        #ff4fa3,
+        #d75bd1,
+        #7479ff
+    );
+}
+
+.hero-register-button:hover {
+    background: linear-gradient(
+        90deg,
+        #ec3c91,
+        #bd45ba,
+        #5d63ea
+    );
+}
+
+.hero-database-button {
+    background: linear-gradient(
+        90deg,
+        #ff4fa3,
+        #7479ff
+    );
+}
+
+.hero-logout-button {
+    background: rgba(47, 43, 104, 0.78);
+}
+
+.guest-message {
+    margin-top: 19px;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
 
     @keyframes lightSweep {
         0% {

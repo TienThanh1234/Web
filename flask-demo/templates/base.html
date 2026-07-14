@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>{% block title %}Thanh's Uma Website{% endblock %}</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    >
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
     <style>
         * {
@@ -17,32 +25,50 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
+            min-height: 100vh;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #ffffff;
+            color: #111111;
         }
 
-        /* Navbar chính */
+        /* ================= NAVBAR ================= */
+
         .custom-navbar {
             min-height: 72px;
-            background-color: white;
             padding: 0 35px;
-            border-bottom: 1px solid #eeeeee;
+
             display: flex;
             align-items: center;
+
+            background-color: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            box-shadow: 0 3px 14px rgba(47, 43, 104, 0.07);
+
+            position: relative;
+            z-index: 10000;
         }
 
-        /* Logo kiểu Uma Musume */
+        /* ================= LOGO ================= */
+
         .uma-logo {
+            margin-right: 35px;
+
+            display: inline-block;
+
+            font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
             font-size: 28px;
             font-weight: 900;
-            font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif;
             font-style: italic;
             letter-spacing: 1px;
+            line-height: 1;
             text-transform: uppercase;
             text-decoration: none;
             white-space: nowrap;
-            margin-right: 35px;
 
             background: linear-gradient(
                 180deg,
@@ -64,7 +90,7 @@
                 4px 4px 0 #6a71ff;
 
             transform: skewX(-10deg);
-            display: inline-block;
+            transition: transform 0.2s ease;
         }
 
         .uma-logo:hover {
@@ -72,141 +98,421 @@
             transform: skewX(-10deg) scale(1.03);
         }
 
-        /* Menu giữa */
+        /* ================= NAVIGATION ================= */
+
         .navbar-nav {
             align-items: center;
         }
 
         .custom-navbar .nav-link {
+            position: relative;
+
+            padding: 25px 16px !important;
+
             color: #111111 !important;
             font-size: 16px;
             font-weight: 800;
-            padding: 25px 16px !important;
             letter-spacing: 1.5px;
-            white-space: nowrap;
             text-transform: uppercase;
+            white-space: nowrap;
+
+            transition: color 0.2s ease;
         }
 
-        .custom-navbar .nav-link:hover {
+        .custom-navbar .nav-link:hover,
+        .custom-navbar .nav-link.active {
             color: #f06ca9 !important;
         }
 
-        /* Database dropdown */
+        .custom-navbar .nav-link.active::after {
+            content: "";
+
+            position: absolute;
+            left: 16px;
+            right: 16px;
+            bottom: 15px;
+
+            height: 3px;
+            border-radius: 999px;
+
+            background: linear-gradient(
+                90deg,
+                #f06ca9,
+                #7479ff
+            );
+        }
+
+        /* ================= DATABASE DROPDOWN ================= */
+
         .database-dropdown {
             position: relative;
         }
 
         .dropdown-arrow {
-            font-size: 10px;
             margin-left: 6px;
+            font-size: 10px;
         }
 
         .database-menu {
             display: none;
+
             position: absolute;
             top: 68px;
             left: 0;
-            min-width: 240px;
-            background-color: white;
+
+            min-width: 245px;
+            padding: 7px 0;
+
+            background-color: #ffffff;
             border: 1px solid #eeeeee;
-            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
-            z-index: 9999;
+            border-radius: 0 0 12px 12px;
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.16);
+
+            overflow: hidden;
+            z-index: 99999;
         }
 
         .database-menu a {
-            display: block;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
             padding: 13px 18px;
+
             color: #111111;
-            text-decoration: none;
             font-size: 14px;
             font-weight: 800;
             letter-spacing: 1px;
+            text-decoration: none;
             text-transform: uppercase;
             white-space: nowrap;
+
+            transition:
+                background-color 0.2s ease,
+                color 0.2s ease,
+                padding-left 0.2s ease;
         }
 
-        .database-menu a:hover {
-            background-color: #ffe6f2;
+        .database-menu a i {
+            width: 18px;
+            color: #7479ff;
+            text-align: center;
+        }
+
+        .database-menu a:hover,
+        .database-menu a.active {
+            padding-left: 23px;
+
             color: #f06ca9;
+            background-color: #ffe6f2;
         }
 
-        .database-dropdown:hover .database-menu {
+        .database-dropdown:hover .database-menu,
+        .database-dropdown:focus-within .database-menu {
             display: block;
         }
 
-        /* Icons bên phải */
+        /* ================= RIGHT AREA ================= */
+
         .right-icons {
+            margin-left: auto;
+
             display: flex;
             align-items: center;
-            gap: 17px;
-            margin-left: auto;
+            gap: 14px;
         }
 
-        .right-icons a {
+        .social-icon {
+            width: 35px;
+            height: 35px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
             color: #111111;
-            font-size: 17px;
+            font-size: 16px;
             text-decoration: none;
+
+            transition:
+                color 0.2s ease,
+                background-color 0.2s ease,
+                transform 0.2s ease;
         }
 
-        .right-icons a:hover {
+        .social-icon:hover {
             color: #f06ca9;
+            background-color: #ffe6f2;
+            text-decoration: none;
+            transform: translateY(-2px);
         }
+
+        /* ================= USERNAME ================= */
+
+        .user-welcome {
+            max-width: 180px;
+            padding: 8px 12px;
+
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            border: 1px solid #ece8ff;
+            border-radius: 22px;
+
+            color: #514d72;
+            background-color: #f8f6ff;
+
+            font-size: 13px;
+            font-weight: 800;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .user-welcome i {
+            color: #7479ff;
+        }
+
+        /* ================= AUTH BUTTONS ================= */
+
+        .auth-nav-link,
+        .auth-nav-button {
+            min-height: 38px;
+            padding: 8px 15px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+
+            border-radius: 22px;
+
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 0.8px;
+            text-decoration: none;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            transition:
+                color 0.2s ease,
+                background-color 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .auth-nav-link {
+            border: 2px solid #f06ca9;
+
+            color: #f06ca9;
+            background-color: #ffffff;
+        }
+
+        .auth-nav-link:hover {
+            color: #ffffff;
+            background-color: #f06ca9;
+            text-decoration: none;
+
+            transform: translateY(-1px);
+
+            box-shadow:
+                0 5px 13px rgba(240, 108, 169, 0.24);
+        }
+
+        .auth-nav-button {
+            border: 2px solid transparent;
+
+            color: #ffffff;
+
+            background: linear-gradient(
+                90deg,
+                #f06ca9,
+                #d75bd1,
+                #7479ff
+            );
+        }
+
+        .auth-nav-button:hover {
+            color: #ffffff;
+            text-decoration: none;
+
+            transform: translateY(-1px);
+
+            box-shadow:
+                0 6px 14px rgba(116, 121, 255, 0.28);
+        }
+
+        .logout-button {
+            border-color: #7479ff;
+            background: #7479ff;
+        }
+
+        .logout-button:hover {
+            background: #5f65e8;
+        }
+
+        /* ================= CONTENT ================= */
+
+        .content-wrapper {
+            padding: 30px 40px;
+        }
+
+        /* ================= MOBILE MENU ================= */
 
         .navbar-toggler {
+            margin-left: auto;
+
             border: none;
             outline: none;
-            margin-left: auto;
+
+            color: #2f2b68;
+            font-size: 22px;
         }
 
         .navbar-toggler:focus {
             outline: none;
         }
 
-        .content-wrapper {
-            padding: 30px 40px;
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 1199px) {
+            .custom-navbar {
+                padding: 0 22px;
+            }
+
+            .uma-logo {
+                margin-right: 22px;
+                font-size: 24px;
+            }
+
+            .custom-navbar .nav-link {
+                padding-left: 11px !important;
+                padding-right: 11px !important;
+                font-size: 14px;
+            }
+
+            .right-icons {
+                gap: 9px;
+            }
+
+            .user-welcome {
+                max-width: 130px;
+            }
         }
 
-        /* Responsive cho màn hình nhỏ */
         @media (max-width: 991px) {
             .custom-navbar {
                 height: auto;
+                min-height: 72px;
                 padding: 12px 20px;
             }
 
             .uma-logo {
-                font-size: 24px;
                 margin-right: 0;
+                font-size: 23px;
+            }
+
+            .navbar-collapse {
+                padding-top: 13px;
+            }
+
+            .navbar-nav {
+                align-items: stretch;
             }
 
             .custom-navbar .nav-link {
-                padding: 10px 0 !important;
+                padding: 11px 0 !important;
+            }
+
+            .custom-navbar .nav-link.active::after {
+                display: none;
             }
 
             .database-menu {
-                position: static;
                 display: none;
-                box-shadow: none;
+
+                position: static;
+
+                min-width: 100%;
+                margin-bottom: 8px;
+                padding: 2px 0 4px 15px;
+
                 border: none;
-                padding-left: 15px;
+                border-left: 3px solid #f06ca9;
+                border-radius: 0;
+
+                box-shadow: none;
             }
 
-            .database-dropdown:hover .database-menu {
+            .database-dropdown:hover .database-menu,
+            .database-dropdown:focus-within .database-menu {
                 display: block;
             }
 
             .database-menu a {
-                padding: 10px 0;
-                font-size: 14px;
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+
+            .database-menu a:hover,
+            .database-menu a.active {
+                padding-left: 17px;
             }
 
             .right-icons {
                 margin-top: 12px;
                 margin-left: 0;
-                padding-bottom: 10px;
+                padding: 12px 0 5px;
+
+                flex-wrap: wrap;
+
+                border-top: 1px solid #eeeeee;
+            }
+
+            .user-welcome {
+                max-width: none;
+            }
+
+            .content-wrapper {
+                padding: 24px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .uma-logo {
+                max-width: 245px;
+
+                font-size: 20px;
+                line-height: 1.05;
+                white-space: normal;
+            }
+
+            .right-icons {
+                gap: 8px;
+            }
+
+            .auth-nav-link,
+            .auth-nav-button {
+                padding: 8px 12px;
+                font-size: 11px;
+            }
+
+            .content-wrapper {
+                padding: 20px 15px;
             }
         }
     </style>
+
+    {% block extra_css %}
+    {% endblock %}
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg custom-navbar">
@@ -216,60 +522,235 @@
             Thanh's Uma Website
         </a>
 
-        <!-- Nút menu khi màn hình nhỏ -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Nút menu trên điện thoại -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
             <i class="fa-solid fa-bars"></i>
         </button>
 
-        <!-- Phần menu có thể collapse -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+        >
 
+            <!-- Menu bên trái -->
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('home') }}">
-                        HOME
+                    <a
+                        class="nav-link
+                        {% if request.endpoint == 'home' %}
+                            active
+                        {% endif %}"
+                        href="{{ url_for('home') }}"
+                    >
+                        Home
                     </a>
                 </li>
 
                 <li class="nav-item database-dropdown">
-                    <a class="nav-link" href="#">
-                        DATABASE <span class="dropdown-arrow">▼</span>
+
+                    <a
+                        class="nav-link
+                        {% if request.endpoint in [
+                            'characters',
+                            'character_detail',
+                            'support_card',
+                            'support_detail',
+                            'banner_history',
+                            'items',
+                            'cm_guide',
+                            'scenario_guide',
+                            'skills',
+                            'skill_detail'
+                        ] %}
+                            active
+                        {% endif %}"
+                        href="#"
+                    >
+                        Database
+                        <span class="dropdown-arrow">▼</span>
                     </a>
 
                     <div class="database-menu">
-                        <a href="{{ url_for('characters') }}">Characters</a>
-                        <a href="{{ url_for('support_card') }}">Support Card</a>
-                        <a href="{{ url_for('banner_history') }}">Banner History</a>
-                        <a href="{{ url_for('tier_list') }}">Tier List</a>
-                        <a href="{{ url_for('cm_guide') }}">CM Guide</a>
-                        <a href="{{ url_for('scenario_guide') }}">Scenario Guide</a>
-                        <a href="{{ url_for('skills') }}">Skills</a>
+
+                        <a
+                            class="
+                            {% if request.endpoint in [
+                                'characters',
+                                'character_detail'
+                            ] %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('characters') }}"
+                        >
+                            <i class="fa-solid fa-person-running"></i>
+                            Characters
+                        </a>
+
+                        <a
+                            class="
+                            {% if request.endpoint in [
+                                'support_card',
+                                'support_detail'
+                            ] %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('support_card') }}"
+                        >
+                            <i class="fa-solid fa-address-card"></i>
+                            Support Card
+                        </a>
+
+                        <a
+                            class="
+                            {% if request.endpoint == 'banner_history' %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('banner_history') }}"
+                        >
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            Banner History
+                        </a>
+
+                        <a
+                            class="
+                            {% if request.endpoint == 'items' %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('items') }}"
+                        >
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            Items
+                        </a>
+
+                        <a
+                            class="
+                            {% if request.endpoint == 'cm_guide' %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('cm_guide') }}"
+                        >
+                            <i class="fa-solid fa-trophy"></i>
+                            CM Guide
+                        </a>
+
+                        <a
+                            class="
+                            {% if request.endpoint == 'scenario_guide' %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('scenario_guide') }}"
+                        >
+                            <i class="fa-solid fa-map"></i>
+                            Scenario Guide
+                        </a>
+
+                        <a
+                            class="
+                            {% if request.endpoint in [
+                                'skills',
+                                'skill_detail'
+                            ] %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('skills') }}"
+                        >
+                            <i class="fa-solid fa-bolt"></i>
+                            Skills
+                        </a>
+
                     </div>
                 </li>
 
             </ul>
 
-            <!-- Icon bên phải -->
+            <!-- Phần bên phải -->
             <div class="right-icons">
-                <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a
+                    class="social-icon"
+                    href="mailto:"
+                    title="Email"
+                    aria-label="Email"
+                >
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+
+                <a
+                    class="social-icon"
+                    href="#"
+                    title="Facebook"
+                    aria-label="Facebook"
+                >
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                {% if session.get("username") %}
+
+                    <span
+                        class="user-welcome"
+                        title="{{ session.get('username') }}"
+                    >
+                        <i class="fa-solid fa-circle-user"></i>
+                        {{ session.get("username") }}
+                    </span>
+
+                    <a
+                        class="auth-nav-button logout-button"
+                        href="{{ url_for('logout') }}"
+                    >
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+
+                {% else %}
+
+                    <a
+                        class="auth-nav-link"
+                        href="{{ url_for('login') }}"
+                    >
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </a>
+
+                    <a
+                        class="auth-nav-button"
+                        href="{{ url_for('register') }}"
+                    >
+                        <i class="fa-solid fa-user-plus"></i>
+                        Create Account
+                    </a>
+
+                {% endif %}
+
             </div>
 
         </div>
     </nav>
 
-    <!-- Nội dung từng trang -->
-    <div class="content-wrapper">
+    <!-- Nội dung của từng trang -->
+    <main class="content-wrapper">
         {% block content %}
         {% endblock %}
-    </div>
+    </main>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+    {% block extra_js %}
+    {% endblock %}
 
 </body>
 </html>
