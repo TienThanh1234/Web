@@ -1,0 +1,21 @@
+﻿card_id,effect_name,lb0,lb1,lb2,lb3,lb4
+maruzensky,Friendship Bonus,20%,21%,23%,25%,25%
+maruzensky,Initial Friendship Gauge,25,26,27,28,30
+maruzensky,Speed Bonus,1,1,1,1,1
+maruzensky,Race Bonus,1%,2%,3%,5%,5%
+maruzensky,Fan Bonus,5%,6%,8%,10%,10%
+maruzensky,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+maruzensky,Hint Frequency,20%,23%,26%,30%,30%
+maruzensky,Specialty Priority,20,25,30,35,35
+maruzensky,Power Bonus,0,1,1,1,1
+maruzensky,Mood Effect,0,0,0,15%,30%
+seeking_the_pearl_30095,Friendship Bonus,25%,26%,27%,28%,30%
+seeking_the_pearl_30095,Initial Friendship Gauge,25,26,27,28,30
+seeking_the_pearl_30095,Specialty Priority,50,53,57,61,65
+seeking_the_pearl_30095,Race Bonus,1%,2%,3%,5%,5%
+seeking_the_pearl_30095,Fan Bonus,5%,6%,8%,10%,10%
+seeking_the_pearl_30095,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 1,Lv 1
+seeking_the_pearl_30095,Hint Frequency,20%,20%,20%,20%,20%
+seeking_the_pearl_30095,Skill Point Bonus,1,1,1,1,1
+seeking_the_pearl_30095,Speed Bonus,0,1,1,1,1
+seeking_the_pearl_30095,Initial Power,0,0,0,15,30

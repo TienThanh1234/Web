@@ -1,0 +1,11 @@
+﻿card_id,section,event_id,title,detail,sort_order
+maruzensky,chain,a_seaside_resort_love_is_in_the_air,"(❯) A Seaside Resort, Love is in the Air",!Randomly either|Speed +10|!or|Speed +15|Wit +5|Maruzensky bond +15,1
+maruzensky,chain,thrilling_memories_still_in_my_heart,(❯❯) Thrilling Memories Still in My Heart,"A Seaside Resort, Love is in the Air|!Randomly either|Speed +10|!or|Speed +15|Wit +5|Maruzensky bond +15|!Randomly either|Speed +10|!or|Speed +15|Power +5|Focus hint +1|Maruzensky bond +15",2
+maruzensky,chain,shine_on_forever,(❯❯❯) Shine On Forever,"A Seaside Resort, Love is in the Air|!Randomly either|Speed +10|!or|Speed +15|Wit +5|Maruzensky bond +15|Thrilling Memories Still in My Heart|!Randomly either|Speed +10|!or|Speed +15|Power +5|Focus hint +1|Maruzensky bond +15|Speed +30|Wit +10|Top Runner hint +1",3
+maruzensky,random,for_an_adorable_younger_student,For an Adorable Younger Student,Top::Early Lead hint +1|Maruzensky bond +5||Bot::Energy +5|Speed +10|Maruzensky bond +5,1
+maruzensky,random,drive_destination,Drive Destination,Top::Early Lead hint +1|Maruzensky bond +5||Bot::Energy +5|Speed +10|Maruzensky bond +5||Top::Speed +5|Mood +1|Maruzensky bond +5||Bot::Wit +5|Mood +1|Maruzensky bond +5,2
+seeking_the_pearl_30095,chain,it_ll_all_turn_out_fine,(❯) It'll All Turn Out Fine,Speed +10|Wit +10|Maximum Energy +4|Seeking the Pearl bond +5,1
+seeking_the_pearl_30095,chain,re_start,(❯❯) Re: START!,Top::Energy +10|Wit +10|Updrafters hint +2|Seeking the Pearl bond +5||Bot::Power +20|Skill points +10|Light as a Feather hint +2|Seeking the Pearl bond +5,2
+seeking_the_pearl_30095,chain,you_are_me,(❯❯❯) You Are Me,Top::Energy +10|Wit +10|Updrafters hint +2|Seeking the Pearl bond +5||Bot::Power +20|Skill points +10|Light as a Feather hint +2|Seeking the Pearl bond +5|Speed +14|Guts +7|Wit +7|Dauntless hint +1|Seeking the Pearl bond +5,3
+seeking_the_pearl_30095,random,full_power_passion,Full-Power Passion!,Top::Energy +10|Mood +1|Seeking the Pearl bond +5||Bot::Power +5|Guts +5|Seeking the Pearl bond +5,1
+seeking_the_pearl_30095,random,full_power_thinking,Full-Power Thinking!,Top::Energy +10|Mood +1|Seeking the Pearl bond +5||Bot::Power +5|Guts +5|Seeking the Pearl bond +5||Top::Wit +20|Seeking the Pearl bond +5||Bot::Energy -10|Uma Stan hint +3|Seeking the Pearl bond +5,2

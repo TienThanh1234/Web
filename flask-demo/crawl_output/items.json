@@ -1,0 +1,2669 @@
+[
+  {
+    "id": "sprint_racing_shoes",
+    "name": "Sprint Racing Shoes",
+    "image": "sprint_racing_shoes.png",
+    "description": "The hottest new shoe from a popular sprinting brand. Used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning short-distance races",
+      "Bought in Tazuna's Daily Shop",
+      "Circle Item Requests",
+      "Limited missions",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00001.png"
+  },
+  {
+    "id": "mile_racing_shoes",
+    "name": "Mile Racing Shoes",
+    "image": "mile_racing_shoes.png",
+    "description": "A bestseller that revolutionized the mile shoe industry. Used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning mile races",
+      "Bought in Tazuna's Daily Shop",
+      "Circle Item Requests",
+      "Limited missions",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00004.png"
+  },
+  {
+    "id": "medium_racing_shoes",
+    "name": "Medium Racing Shoes",
+    "image": "medium_racing_shoes.png",
+    "description": "The medium-distance shoes you can always trust. Used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning medium-distance races",
+      "Bought in Tazuna's Daily Shop",
+      "Circle Item Requests",
+      "Limited missions",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00007.png"
+  },
+  {
+    "id": "long_racing_shoes",
+    "name": "Long Racing Shoes",
+    "image": "long_racing_shoes.png",
+    "description": "Shoes from the \"Light Weight\" series that'll keep you light on your feet over long distances. Used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning long-distance races",
+      "Bought in Tazuna's Daily Shop",
+      "Circle Item Requests",
+      "Limited missions",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "10",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00010.png"
+  },
+  {
+    "id": "dirt_racing_shoes",
+    "name": "Dirt Racing Shoes",
+    "image": "dirt_racing_shoes.png",
+    "description": "Brand-name shoes that keep clean in the sloppiest of dirt. Used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning dirt terrain races",
+      "Bought in Tazuna's Daily Shop",
+      "Circle Item Requests",
+      "Limited missions",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "13",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00013.png"
+  },
+  {
+    "id": "toughness_30",
+    "name": "Toughness 30",
+    "image": "toughness_30.png",
+    "description": "Drink this for revitalization! Restores 30 TP.",
+    "uses": [
+      "30 TP refill"
+    ],
+    "how_to_get": [
+      "Limited missions",
+      "Limited events",
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "32",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00032.png"
+  },
+  {
+    "id": "carrot_jelly_mini",
+    "name": "Carrot Jelly Mini",
+    "image": "carrot_jelly_mini.png",
+    "description": "A jolt of energy that lasts for hours! Restores 1 RP.",
+    "uses": [
+      "1 RP refill"
+    ],
+    "how_to_get": [
+      "Limited missions",
+      "Limited events",
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "34",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00034.png"
+  },
+  {
+    "id": "carrot_jelly",
+    "name": "Carrot Jelly",
+    "image": "carrot_jelly.png",
+    "description": "A must-have for veteran trainers! Restores 5 RP.",
+    "uses": [
+      "5 RP refill"
+    ],
+    "how_to_get": [
+      "Limited missions",
+      "Limited events",
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "35",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00035.png"
+  },
+  {
+    "id": "trainee_scout_ticket",
+    "name": "Trainee Scout Ticket",
+    "image": "trainee_scout_ticket.png",
+    "description": "A ticket used to scout trainees. Can be used from the scout list.",
+    "uses": [
+      "One pull from the character gacha"
+    ],
+    "how_to_get": [
+      "Bought with Rainbow Horseshoes",
+      "Bought with Gold Horseshoes",
+      "Bought with Silver Horseshoes",
+      "Bought with Clovers",
+      "Bought with Friend Points",
+      "Limited events",
+      "Limited missions",
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "41",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00041.png"
+  },
+  {
+    "id": "carats",
+    "name": "Carats",
+    "image": "carats.png",
+    "description": "A rainbow-colored jewel in the shape of a carrot. It holds mystical power.",
+    "uses": [
+      "Pulling from gacha banners",
+      "TP or RP refill",
+      "Buying one additional ticket for Champions Meetings"
+    ],
+    "how_to_get": [
+      "In-App purchases",
+      "Various missions",
+      "Training races rare drop",
+      "Winning trophies for the first time",
+      "Team Trials rank rewards",
+      "Circle Rank rewards",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "43",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00043.png"
+  },
+  {
+    "id": "dream_glimmer",
+    "name": "Dream Glimmer",
+    "image": "dream_glimmer.png",
+    "description": "Glimmers with the power of an Umamusume's dream come true. Used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character to 4 and beyond",
+      "Raising the hint levels of innate character skills"
+    ],
+    "how_to_get": [
+      "URA Finals race reward",
+      "Bought with Rainbow Horseshoes",
+      "Bought with Gold Horseshoes",
+      "Mission reward",
+      "Promo codes",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "44",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00044.png"
+  },
+  {
+    "id": "prize_coin",
+    "name": "Prize Coin",
+    "image": "prize_coin.png",
+    "description": "A coin used in the Prize Derby. Obtainable through events.",
+    "uses": [
+      "Spinning the event roulette"
+    ],
+    "how_to_get": [
+      "Playing during story events"
+    ],
+    "item_type": "",
+    "game_id": "45",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00045.png"
+  },
+  {
+    "id": "silver_cleat",
+    "name": "Silver Cleat",
+    "image": "silver_cleat.png",
+    "description": "A silver amulet in the shape of a cleat. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Horseshoe shop exchange"
+    ],
+    "how_to_get": [
+      "Converting R rarity support cards"
+    ],
+    "item_type": "",
+    "game_id": "48",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00048.png"
+  },
+  {
+    "id": "gold_cleat",
+    "name": "Gold Cleat",
+    "image": "gold_cleat.png",
+    "description": "A gold amulet in the shape of a cleat. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Horseshoe shop exchange"
+    ],
+    "how_to_get": [
+      "Converting SR rarity support cards"
+    ],
+    "item_type": "",
+    "game_id": "49",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00049.png"
+  },
+  {
+    "id": "rainbow_cleat",
+    "name": "Rainbow Cleat",
+    "image": "rainbow_cleat.png",
+    "description": "A rainbow amulet in the shape of a cleat. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Horseshoe shop exchange"
+    ],
+    "how_to_get": [
+      "Converting SSR rarity support cards"
+    ],
+    "item_type": "",
+    "game_id": "50",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00050.png"
+  },
+  {
+    "id": "clover",
+    "name": "Clover",
+    "image": "clover.png",
+    "description": "A lucky four-leaf clover. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Clover shop exchange"
+    ],
+    "how_to_get": [
+      "Character Pieces conversion",
+      "Converted from unused Gacha Exchange Points after the end of a banner"
+    ],
+    "item_type": "",
+    "game_id": "57",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00057.png"
+  },
+  {
+    "id": "event_points",
+    "name": "Event Points",
+    "image": "event_points.png",
+    "description": "Obtainable through events. Various rewards can be obtained by collecting these.",
+    "uses": [
+      "Earning rewards from the event reward point ladder"
+    ],
+    "how_to_get": [
+      "Playing during story events"
+    ],
+    "item_type": "",
+    "game_id": "58",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00058.png"
+  },
+  {
+    "id": "monies",
+    "name": "Monies",
+    "image": "monies.png",
+    "description": "Preparation is key. Can be used in various situations and places at Tracen Academy.",
+    "uses": [
+      "Buying various items in Tazuna's Daily Shop",
+      "Leveling up support cards",
+      "Raising the Awakening level of characters",
+      "Raising the hint level of characters' innate skills",
+      "Borrowing characters from other trainers for inspiration"
+    ],
+    "how_to_get": [
+      "Bought with Circle Points",
+      "Bought with Clovers",
+      "Daily races",
+      "Training run reward",
+      "Training races drop",
+      "Limited missions",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "59",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00059.png"
+  },
+  {
+    "id": "february_s_winner_s_sash",
+    "name": "February S. Winner's Sash",
+    "image": "february_s_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 February Stakes. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the February Stakes race",
+      "Bought with Friend Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "69",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00069.png"
+  },
+  {
+    "id": "takamatsunomiya_kinen_winner_s_sash",
+    "name": "Takamatsunomiya Kinen Winner's Sash",
+    "image": "takamatsunomiya_kinen_winner_s_sash.png",
+    "description": "Proof of winning the sprint G1 Takamatsunomiya Kinen. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Takamatsunomiya Kinen race",
+      "Bought with Friend Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "70",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00070.png"
+  },
+  {
+    "id": "osaka_hai_winner_s_sash",
+    "name": "Osaka Hai Winner's Sash",
+    "image": "osaka_hai_winner_s_sash.png",
+    "description": "Proof of winning the medium G1 Osaka Hai. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Osaka Hai race",
+      "Bought with Circle Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "71",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00071.png"
+  },
+  {
+    "id": "oka_sho_winner_s_sash",
+    "name": "Oka Sho Winner's Sash",
+    "image": "oka_sho_winner_s_sash.png",
+    "description": "Proof of winning the classic-year G1 Oka Sho. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Oka Sho race",
+      "Bought with Clovers",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "72",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00072.png"
+  },
+  {
+    "id": "satsuki_sho_winner_s_sash",
+    "name": "Satsuki Sho Winner's Sash",
+    "image": "satsuki_sho_winner_s_sash.png",
+    "description": "Proof of winning the classic-year G1 Satsuki Sho. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Satsuki Sho race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "73",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00073.png"
+  },
+  {
+    "id": "tenno_sho_spring_winner_s_sash",
+    "name": "Tenno Sho (Spring) Winner's Sash",
+    "image": "tenno_sho_spring_winner_s_sash.png",
+    "description": "Proof of winning the long G1 Tenno Sho (Spring). Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Tenno Sho (Spring) race",
+      "Bought with Clovers",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "74",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00074.png"
+  },
+  {
+    "id": "nhk_mile_c_winner_s_sash",
+    "name": "NHK Mile C. Winner's Sash",
+    "image": "nhk_mile_c_winner_s_sash.png",
+    "description": "Proof of winning the classic-year G1 NHK Mile Cup. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the NHK Mile Cup race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "75",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00075.png"
+  },
+  {
+    "id": "victoria_mile_winner_s_sash",
+    "name": "Victoria Mile Winner's Sash",
+    "image": "victoria_mile_winner_s_sash.png",
+    "description": "Proof of winning the mile G1 Victoria Mile. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Victoria Mile race",
+      "Bought with Friend Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "76",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00076.png"
+  },
+  {
+    "id": "japanese_oaks_winner_s_sash",
+    "name": "Japanese Oaks Winner's Sash",
+    "image": "japanese_oaks_winner_s_sash.png",
+    "description": "Proof of winning the classic-year G1 Japanese Oaks. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Oaks race",
+      "Bought with Clovers",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "77",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00077.png"
+  },
+  {
+    "id": "japanese_derby_winner_s_sash",
+    "name": "Japanese Derby Winner's Sash",
+    "image": "japanese_derby_winner_s_sash.png",
+    "description": "Proof of winning the classic-year G1 Japanese Derby. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Japan Derby race",
+      "Bought with Friend Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "78",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00078.png"
+  },
+  {
+    "id": "yasuda_kinen_winner_s_sash",
+    "name": "Yasuda Kinen Winner's Sash",
+    "image": "yasuda_kinen_winner_s_sash.png",
+    "description": "Proof of winning the mile G1 Yasuda Kinen. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Yasuda Kinen race",
+      "Bought with Friend Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "79",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00079.png"
+  },
+  {
+    "id": "takarazuka_kinen_winner_s_sash",
+    "name": "Takarazuka Kinen Winner's Sash",
+    "image": "takarazuka_kinen_winner_s_sash.png",
+    "description": "Proof of winning the medium G1 Takarazuka Kinen. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Takarazuka Kinen race",
+      "Bought with Circle Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "80",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00080.png"
+  },
+  {
+    "id": "sprinters_s_winner_s_sash",
+    "name": "Sprinters S. Winner's Sash",
+    "image": "sprinters_s_winner_s_sash.png",
+    "description": "Proof of winning the sprint G1 Sprinters Stakes. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Sprinters Stakes race",
+      "Bought with Circle Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "81",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00081.png"
+  },
+  {
+    "id": "shuka_sho_winner_s_sash",
+    "name": "Shuka Sho Winner's Sash",
+    "image": "shuka_sho_winner_s_sash.png",
+    "description": "Proof of winning the classic-year G1 Shuka Sho. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Shuuka Sho race",
+      "Bought with Clovers",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "82",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00082.png"
+  },
+  {
+    "id": "kikuka_sho_winner_s_sash",
+    "name": "Kikuka Sho Winner's Sash",
+    "image": "kikuka_sho_winner_s_sash.png",
+    "description": "Proof of winning the classic-year G1 Kikuka Sho. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Kikka Sho race",
+      "Bought with Rainbow Horseshoes",
+      "Bought with Gold Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "83",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00083.png"
+  },
+  {
+    "id": "tenno_sho_autumn_winner_s_sash",
+    "name": "Tenno Sho (Autumn) Winner's Sash",
+    "image": "tenno_sho_autumn_winner_s_sash.png",
+    "description": "Proof of winning the medium G1 Tenno Sho (Autumn). Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Tenno Sho (Autumn) race",
+      "Bought with Clovers",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "84",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00084.png"
+  },
+  {
+    "id": "mile_ch_winner_s_sash",
+    "name": "Mile Ch. Winner's Sash",
+    "image": "mile_ch_winner_s_sash.png",
+    "description": "Proof of winning the mile G1 Mile Championship. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Mile Championship race",
+      "Bought with Friend Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "85",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00085.png"
+  },
+  {
+    "id": "queen_elizabeth_ii_cup_winner_s_sash",
+    "name": "Queen Elizabeth II Cup Winner's Sash",
+    "image": "queen_elizabeth_ii_cup_winner_s_sash.png",
+    "description": "Proof of winning the medium G1 Queen Elizabeth II Cup. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Queen Elizabeth Cup race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "86",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00086.png"
+  },
+  {
+    "id": "japan_cup_winner_s_sash",
+    "name": "Japan Cup Winner's Sash",
+    "image": "japan_cup_winner_s_sash.png",
+    "description": "Proof of winning the medium G1 Japan Cup. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Japan Cup race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "87",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00087.png"
+  },
+  {
+    "id": "champions_cup_winner_s_sash",
+    "name": "Champions Cup Winner's Sash",
+    "image": "champions_cup_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 Champions Cup. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Champions Cup race",
+      "Bought with Clovers",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "88",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00088.png"
+  },
+  {
+    "id": "hanshin_j_f_winner_s_sash",
+    "name": "Hanshin J.F. Winner's Sash",
+    "image": "hanshin_j_f_winner_s_sash.png",
+    "description": "Proof of winning the junior-year G1 Hanshin J.F. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Hanshin Juvenile Fillies race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "89",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00089.png"
+  },
+  {
+    "id": "asahi_hai_f_s_winner_s_sash",
+    "name": "Asahi Hai F.S. Winner's Sash",
+    "image": "asahi_hai_f_s_winner_s_sash.png",
+    "description": "Proof of winning the junior-year G1 Asahi Hai F.S. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Asahi Hai Futurity Stakes race",
+      "Bought with Circle Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "90",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00090.png"
+  },
+  {
+    "id": "arima_kinen_winner_s_sash",
+    "name": "Arima Kinen Winner's Sash",
+    "image": "arima_kinen_winner_s_sash.png",
+    "description": "Proof of winning the long G1 Arima Kinen. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Arima Kinen race",
+      "Bought with Rainbow Horseshoes",
+      "Bought with Gold Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "91",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00091.png"
+  },
+  {
+    "id": "hopeful_s_winner_s_sash",
+    "name": "Hopeful S. Winner's Sash",
+    "image": "hopeful_s_winner_s_sash.png",
+    "description": "Proof of winning the junior-year G1 Hopeful Stakes. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Hopeful Stakes race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "92",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00092.png"
+  },
+  {
+    "id": "alarm_clock",
+    "name": "Alarm Clock",
+    "image": "alarm_clock.png",
+    "description": "Don't be late on race day! Lets you try a Career goal race again.",
+    "uses": [
+      "Redoing a failed objective race"
+    ],
+    "how_to_get": [
+      "Bought with Clovers",
+      "Bought in Tazuna's Daily Shop",
+      "Limited missions"
+    ],
+    "item_type": "",
+    "game_id": "95",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00095.png"
+  },
+  {
+    "id": "daily_race_ticket",
+    "name": "Daily Race Ticket",
+    "image": "daily_race_ticket.png",
+    "description": "Required to run in a Daily Race.",
+    "uses": [
+      "Participating in daily races"
+    ],
+    "how_to_get": [
+      "Automatically obtained at daily reset (5 AM Server time)"
+    ],
+    "item_type": "",
+    "game_id": "96",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00096.png"
+  },
+  {
+    "id": "legend_race_ticket",
+    "name": "Legend Race Ticket",
+    "image": "legend_race_ticket.png",
+    "description": "Required to run in a Legend Race.",
+    "uses": [
+      "Participating in legend races"
+    ],
+    "how_to_get": [
+      "Automatically obtained at daily reset (5 AM Server time) during legend race events"
+    ],
+    "item_type": "",
+    "game_id": "97",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00097.png"
+  },
+  {
+    "id": "friend_points",
+    "name": "Friend Points",
+    "image": "friend_points.png",
+    "description": "Proof of friendship between trainers. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Friend Pt. shop exchange"
+    ],
+    "how_to_get": [
+      "Team Trials races",
+      "Clearing daily missions",
+      "Have other trainers borrow your support cards"
+    ],
+    "item_type": "",
+    "game_id": "98",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00098.png"
+  },
+  {
+    "id": "japan_dirt_derby_winner_s_sash",
+    "name": "Japan Dirt Derby Winner's Sash",
+    "image": "japan_dirt_derby_winner_s_sash.png",
+    "description": "Proof of winning the classic-year G1 Japan Derby. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Japan Dirt Derby race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "101",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00101.png"
+  },
+  {
+    "id": "jbc_sprint_winner_s_sash",
+    "name": "JBC Sprint Winner's Sash",
+    "image": "jbc_sprint_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 JBC Sprint. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the JBC Sprint race",
+      "Bought with Circle Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "102",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00102.png"
+  },
+  {
+    "id": "jbc_classic_winner_s_sash",
+    "name": "JBC Classic Winner's Sash",
+    "image": "jbc_classic_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 JBC Classic. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the JBC Classic race",
+      "Bought with Clovers",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "103",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00103.png"
+  },
+  {
+    "id": "jbc_ladies_classic_winner_s_sash",
+    "name": "JBC Ladies’ Classic Winner's Sash",
+    "image": "jbc_ladies_classic_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 JBC Ladies' Classic. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the JBC Ladies' Classic race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "104",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00104.png"
+  },
+  {
+    "id": "teio_sho_winner_s_sash",
+    "name": "Teio Sho Winner's Sash",
+    "image": "teio_sho_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 Teio Sho. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Teio Sho race",
+      "Bought with Circle Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "105",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00105.png"
+  },
+  {
+    "id": "tokyo_daishoten_winner_s_sash",
+    "name": "Tokyo Daishoten Winner's Sash",
+    "image": "tokyo_daishoten_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 Tokyo Daishoten. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Tokyo Daishoten race",
+      "Bought with Friend Points",
+      "Bought in Tazuna's Daily Shop",
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "106",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00106.png"
+  },
+  {
+    "id": "support_points",
+    "name": "Support Points",
+    "image": "support_points.png",
+    "description": "A strange force capable of drawing out one's abilities. Can be used to level up Support Cards.",
+    "uses": [
+      "Increasing the level of support cards"
+    ],
+    "how_to_get": [
+      "Daily races",
+      "Limited missions",
+      "Training run reward",
+      "Training races random drop",
+      "Team Trials races",
+      "Bought with Friend Points",
+      "Bought with Rainbow Horseshoes",
+      "Bought with Gold Horseshoes",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop"
+    ],
+    "item_type": "",
+    "game_id": "110",
+    "cap": "able of drawing out one's abilities. Can be used to level up Support Cards. ID: 110 {item_cap} 999",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00110.png"
+  },
+  {
+    "id": "support_card_scout_ticket",
+    "name": "Support Card Scout Ticket",
+    "image": "support_card_scout_ticket.png",
+    "description": "Used for scouting Support Cards. Can be used from the scout list.",
+    "uses": [
+      "One pull from the support card gacha"
+    ],
+    "how_to_get": [
+      "Bought with Rainbow Horseshoes",
+      "Bought with Gold Horseshoes",
+      "Bought with Silver Horseshoes",
+      "Bought with Clovers",
+      "Bought with Friend Points",
+      "Limited events",
+      "Limited missions"
+    ],
+    "item_type": "",
+    "game_id": "111",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00111.png"
+  },
+  {
+    "id": "3_make_debut_scout_race_1",
+    "name": "3★ Make Debut Scout Race 1",
+    "image": "3_make_debut_scout_race_1.png",
+    "description": "A ticket that can be used in the 3★ Guaranteed Make Debut Scout Race 1. Can be used from the scout list.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"Make Debut 1R\" character gacha"
+    ],
+    "how_to_get": [
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "113",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00113.png"
+  },
+  {
+    "id": "ssr_make_debut_scout_race_1",
+    "name": "SSR Make Debut Scout Race 1",
+    "image": "ssr_make_debut_scout_race_1.png",
+    "description": "A ticket that can be used in the SSR Guaranteed Make Debut Scout. Can be used from the scout list.",
+    "uses": [
+      "One pull from the SSR guaranteed \"Make Debut 1R\" support card gacha"
+    ],
+    "how_to_get": [
+      "Mission reward"
+    ],
+    "item_type": "",
+    "game_id": "114",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00114.png"
+  },
+  {
+    "id": "goddess_statue",
+    "name": "Goddess Statue",
+    "image": "goddess_statue.png",
+    "description": "Some say this grants the blessing of the Three Goddesses. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Character shard shop exchange"
+    ],
+    "how_to_get": [
+      "Pulling characters from Gacha banners",
+      "Rare drop from training races",
+      "Limited events",
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "115",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00115.png"
+  },
+  {
+    "id": "pleasing_parfait",
+    "name": "Pleasing Parfait",
+    "image": "pleasing_parfait.png",
+    "description": "Raises a runner's mood to Great. Can be used in modes such as Team Trials.",
+    "uses": [
+      "Raising the mood of a character to perfect condition"
+    ],
+    "how_to_get": [
+      "Bought in Tazuna's Daily Shop",
+      "Bought with Clovers",
+      "Limited missions"
+    ],
+    "item_type": "",
+    "game_id": "116",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00116.png"
+  },
+  {
+    "id": "sunshine_doll",
+    "name": "Sunshine Doll",
+    "image": "sunshine_doll.png",
+    "description": "Changes the weather to Sunny and track conditions to Firm. Can be used in modes such as Team Trials.",
+    "uses": [
+      "Changing a race's weather to \"Sunny\" and the track condition to \"Good\""
+    ],
+    "how_to_get": [
+      "Bought with Clovers",
+      "Limited missions"
+    ],
+    "item_type": "",
+    "game_id": "117",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00117.png"
+  },
+  {
+    "id": "rainfall_doll",
+    "name": "Rainfall Doll",
+    "image": "rainfall_doll.png",
+    "description": "Changes the weather to Rain and track conditions to Heavy. Can be used in modes such as Team Trials.",
+    "uses": [
+      "Changing a race's weather to \"Rainy\" and the track condition to \"Bad\""
+    ],
+    "how_to_get": [
+      "Bought with Clovers",
+      "Limited missions"
+    ],
+    "item_type": "",
+    "game_id": "118",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00118.png"
+  },
+  {
+    "id": "inner_post_raffle_ball",
+    "name": "Inner Post Raffle Ball",
+    "image": "inner_post_raffle_ball.png",
+    "description": "Moves a runner to an inner bracket (1–3). Can be used in modes such as Team Trials.",
+    "uses": [
+      "Changing your gate block to an inner block (between 1st and 3rd)"
+    ],
+    "how_to_get": [
+      "Bought with Clovers",
+      "Limited missions"
+    ],
+    "item_type": "",
+    "game_id": "119",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00119.png"
+  },
+  {
+    "id": "outer_post_raffle_ball",
+    "name": "Outer Post Raffle Ball",
+    "image": "outer_post_raffle_ball.png",
+    "description": "Moves a runner to an outer bracket (6–8). Can be used in modes such as Team Trials.",
+    "uses": [
+      "Changing your gate block to an outer block (between 6th and 8th)"
+    ],
+    "how_to_get": [
+      "Bought with Clovers",
+      "Limited missions"
+    ],
+    "item_type": "",
+    "game_id": "120",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00120.png"
+  },
+  {
+    "id": "sprint_racing_shoes_10",
+    "name": "Sprint Racing Shoes",
+    "image": "sprint_racing_shoes_10.png",
+    "description": "The hottest new shoe from a popular sprinting brand. Used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning short-distance races",
+      "Bought in Tazuna's Daily Shop",
+      "Circle Item Requests",
+      "Limited missions",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "10",
+    "cap": "able of drawing out one's abilities. Can be used to level up Support Cards. ID: 110 {item_cap} 999",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00001.png"
+  },
+  {
+    "id": "follow_slot_boost",
+    "name": "Follow Slot Boost",
+    "image": "follow_slot_boost.png",
+    "description": "The more, the merrier! Allows you to increase your maximum Follow count by 1.",
+    "uses": [
+      "Increasing the maximum amount of trainers you can follow by one"
+    ],
+    "how_to_get": [
+      "Bought with Friend Points"
+    ],
+    "item_type": "",
+    "game_id": "132",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00132.png"
+  },
+  {
+    "id": "bookmark_of_reminiscence",
+    "name": "Bookmark of Reminiscence",
+    "image": "bookmark_of_reminiscence.png",
+    "description": "A bookmark which lets you recall memories made with horsegirls in the past.",
+    "uses": [
+      "Unlocking one past story event (including its event-exclusive support card)"
+    ],
+    "how_to_get": [
+      "Limited story event reward"
+    ],
+    "item_type": "",
+    "game_id": "133",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00133.png"
+  },
+  {
+    "id": "club_points",
+    "name": "Club Points",
+    "image": "club_points.png",
+    "description": "Proof of Club solidarity. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Trainer Medal exchange"
+    ],
+    "how_to_get": [
+      "Contributing to item requests within Circles",
+      "Have other trainers borrow your representative horsegirl",
+      "Completing daily missions"
+    ],
+    "item_type": "",
+    "game_id": "134",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00134.png"
+  },
+  {
+    "id": "2_make_debut_scout_race_1",
+    "name": "2★+ Make Debut Scout Race 1",
+    "image": "2_make_debut_scout_race_1.png",
+    "description": "A ticket that can be used in 2★+ Guaranteed Make Debut Scout Race 1. Can be used from the scout list.",
+    "uses": [
+      "One pull from the ★2 or above guaranteed \"Make Debut 1R\" character gacha"
+    ],
+    "how_to_get": [
+      "Mission reward",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "135",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00135.png"
+  },
+  {
+    "id": "sr_make_debut_scout_race_1",
+    "name": "SR+ Make Debut Scout Race 1",
+    "image": "sr_make_debut_scout_race_1.png",
+    "description": "A ticket that can be used in SR+ Guaranteed Make Debut Scout Race 1. Can be used from the scout list.",
+    "uses": [
+      "One pull from the SR or above guaranteed \"Make Debut 1R\" support card gacha"
+    ],
+    "how_to_get": [
+      "Bought with Rainbow Horseshoes",
+      "Bought with Gold Horseshoes",
+      "Bought with Silver Horseshoes",
+      "Limited events",
+      "Limited mission reward"
+    ],
+    "item_type": "",
+    "game_id": "136",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00136.png"
+  },
+  {
+    "id": "umabako_2_3_voucher",
+    "name": "Umabako 2 3★ Voucher",
+    "image": "umabako_2_3_voucher.png",
+    "description": "Can be exchanged for a 3★ trainee of your choice from the list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the Umabako 2 character pool"
+    ],
+    "how_to_get": [
+      "Redeeming promo codes of all 4 blu-rays of the Uma Musume anime (season 2)"
+    ],
+    "item_type": "",
+    "game_id": "140",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00140.png"
+  },
+  {
+    "id": "half_anniversary_ssr_voucher",
+    "name": "Half Anniversary SSR Voucher",
+    "image": "half_anniversary_ssr_voucher.png",
+    "description": "Can be exchanged for an SSR Support Card of your choice from the list.",
+    "uses": [
+      "Obtaining an SSR support card of your choice from the Half Anniversary support card pool"
+    ],
+    "how_to_get": [
+      "Half Anniversary limited missions"
+    ],
+    "item_type": "",
+    "game_id": "141",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00141.png"
+  },
+  {
+    "id": "rainbow_uncap_crystal",
+    "name": "Rainbow Uncap Crystal",
+    "image": "rainbow_uncap_crystal.png",
+    "description": "A rainbow gem capable of tapping into hidden potential. Uncaps an SSR Support Card.",
+    "uses": [
+      "Limit Breaking an SSR Support Card once (アイテム tab on the uncap screen)"
+    ],
+    "how_to_get": [
+      "Limited events",
+      "Combining 20 Rainbow Limit Break Fragments"
+    ],
+    "item_type": "",
+    "game_id": "144",
+    "cap": "able of tapping into hidden potential. Uncaps an SSR Support Card. ID: 144 {item_cap} 99",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00144.png"
+  },
+  {
+    "id": "gold_uncap_crystal",
+    "name": "Gold Uncap Crystal",
+    "image": "gold_uncap_crystal.png",
+    "description": "A gold gem capable of tapping into hidden potential. Uncaps an SR Support Card.",
+    "uses": [
+      "Limit Breaking an SR Support Card once (アイテム tab on the uncap screen)"
+    ],
+    "how_to_get": [
+      "Limited events",
+      "Combining 20 Gold Limit Break Fragments"
+    ],
+    "item_type": "",
+    "game_id": "145",
+    "cap": "able of tapping into hidden potential. Uncaps an SR Support Card. ID: 145 {item_cap} 99",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00145.png"
+  },
+  {
+    "id": "rainbow_crystal_shard",
+    "name": "Rainbow Crystal Shard",
+    "image": "rainbow_crystal_shard.png",
+    "description": "Fragments of a rainbow gem capable of tapping into hidden potential. Can be exchanged at the shop for a Rainbow Uncap Crystal.",
+    "uses": [
+      "Combining to create Rainbow Limit Break Crystals (20 fragments for 1 crystal)"
+    ],
+    "how_to_get": [
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "149",
+    "cap": "able of tapping into hidden potential. Can be exchanged at the shop for a Rainbow Uncap Crystal. ID: 149 {item_cap} 99",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00149.png"
+  },
+  {
+    "id": "gold_crystal_shard",
+    "name": "Gold Crystal Shard",
+    "image": "gold_crystal_shard.png",
+    "description": "Fragments of a gold gem capable of tapping into hidden potential. Can be exchanged at the shop for a Gold Uncap Crystal.",
+    "uses": [
+      "Combining to create Gold Limit Break Crystals (20 fragments for 1 crystal)"
+    ],
+    "how_to_get": [
+      "Limited events",
+      "Limited missions"
+    ],
+    "item_type": "",
+    "game_id": "150",
+    "cap": "able of tapping into hidden potential. Can be exchanged at the shop for a Gold Uncap Crystal. ID: 150 {item_cap} 99",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00150.png"
+  },
+  {
+    "id": "3_make_debut_scout_race_2",
+    "name": "3★ Make Debut Scout Race 2",
+    "image": "3_make_debut_scout_race_2.png",
+    "description": "A ticket that can be used for scouting Trainees released before Oct 31, 2025. Can be used from the scout list.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"Make Debut 2R\" character gacha"
+    ],
+    "how_to_get": [
+      "Limited events",
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "152",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00152.png"
+  },
+  {
+    "id": "ssr_make_debut_scout_race_2",
+    "name": "SSR Make Debut Scout Race 2",
+    "image": "ssr_make_debut_scout_race_2.png",
+    "description": "A ticket that can be used for scouting Support Cards released before Oct 31, 2025. Can be used from the scout list.",
+    "uses": [
+      "One pull from the SSR guaranteed \"Make Debut 2R\" support card gacha"
+    ],
+    "how_to_get": [
+      "Mission reward",
+      "Promo codes",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "153",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00153.png"
+  },
+  {
+    "id": "2_make_debut_scout_race_2",
+    "name": "2★+ Make Debut Scout Race 2",
+    "image": "2_make_debut_scout_race_2.png",
+    "description": "A ticket that can be used for scouting Trainees released before Oct 31, 2025. Can be used from the scout list.",
+    "uses": [
+      "One pull from the ★2 or above guaranteed \"Make Debut 2R\" character gacha"
+    ],
+    "how_to_get": [
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "154",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00154.png"
+  },
+  {
+    "id": "sr_make_debut_scout_race_2",
+    "name": "SR+ Make Debut Scout Race 2",
+    "image": "sr_make_debut_scout_race_2.png",
+    "description": "A ticket that can be used for scouting Support Cards released before Oct 31, 2025. Can be used from the scout list.",
+    "uses": [
+      "One pull from the SR or above guaranteed \"Make Debut 2R\" support card gacha"
+    ],
+    "how_to_get": [
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "155",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00155.png"
+  },
+  {
+    "id": "test_coins",
+    "name": "Test Coins",
+    "image": "test_coins.png",
+    "description": "A token granted for passing a Trainer Aptitude Test. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Trial coin shop exchange"
+    ],
+    "how_to_get": [
+      "Playing during Trainer's Proficiency Exam events"
+    ],
+    "item_type": "",
+    "game_id": "156",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00156.png"
+  },
+  {
+    "id": "carnival_pts",
+    "name": "Carnival Pts",
+    "image": "carnival_pts.png",
+    "description": "Obtained by participating in the Racing Carnival. Can be exchanged at the shop for various items.",
+    "uses": [
+      "Carnival point shop exchange"
+    ],
+    "how_to_get": [
+      "Playing during Racing Carnival events"
+    ],
+    "item_type": "",
+    "game_id": "159",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00159.png"
+  },
+  {
+    "id": "book_of_hints",
+    "name": "Book of Hints",
+    "image": "book_of_hints.png",
+    "description": "A book with tips on running. Contributes to Hint Level.",
+    "uses": [
+      "Raising the Hint Level of a normal skill for a character"
+    ],
+    "how_to_get": [
+      "Bought with Friend Points",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "160",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00160.png"
+  },
+  {
+    "id": "textbook_of_hints",
+    "name": "Textbook of Hints",
+    "image": "textbook_of_hints.png",
+    "description": "A comprehensive textbook on running. Contributes to Hint Level.",
+    "uses": [
+      "Raising the Hint Level of a normal skill for a character"
+    ],
+    "how_to_get": [
+      "Bought with Friend Points",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "161",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00161.png"
+  },
+  {
+    "id": "rare_book_of_hints",
+    "name": "Rare Book of Hints",
+    "image": "rare_book_of_hints.png",
+    "description": "A lengthy book with tips on running. Contributes to Hint Level.",
+    "uses": [
+      "Raising the Hint Level of a rare skill for a character"
+    ],
+    "how_to_get": [
+      "Bought with Friend Points",
+      "Mission reward",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "162",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00162.png"
+  },
+  {
+    "id": "rare_textbook_of_hints",
+    "name": "Rare Textbook of Hints",
+    "image": "rare_textbook_of_hints.png",
+    "description": "A lengthy and comprehensive textbook on running. Contributes to Hint Level.",
+    "uses": [
+      "Raising the Hint Level of a rare skill for a character"
+    ],
+    "how_to_get": [
+      "Bought with Friend Points",
+      "Mission reward",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "163",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00163.png"
+  },
+  {
+    "id": "1st_anniversary_3_voucher",
+    "name": "1st Anniversary 3★ Voucher",
+    "image": "1st_anniversary_3_voucher.png",
+    "description": "Can be exchanged for a 3★ Trainee of your choice from the list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the 1st Anniversary character pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 1st anniversary"
+    ],
+    "item_type": "",
+    "game_id": "164",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00164.png"
+  },
+  {
+    "id": "1st_anniversary_ssr_voucher",
+    "name": "1st Anniversary SSR Voucher",
+    "image": "1st_anniversary_ssr_voucher.png",
+    "description": "Can be exchanged for an SSR Support Card of your choice from the list.",
+    "uses": [
+      "Obtaining an SSR support card of your choice from the 1st Anniversary support card pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 1st anniversary"
+    ],
+    "item_type": "",
+    "game_id": "165",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00165.png"
+  },
+  {
+    "id": "daily_legend_race_ticket",
+    "name": "Daily Legend Race Ticket",
+    "image": "daily_legend_race_ticket.png",
+    "description": "Grants entry to a Daily Legend Race.",
+    "uses": [
+      "Participating in daily legend races"
+    ],
+    "how_to_get": [
+      "Automatically obtained at daily reset"
+    ],
+    "item_type": "",
+    "game_id": "168",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00168.png"
+  },
+  {
+    "id": "adds_music_to_the_jukebox",
+    "name": "Adds music to the Jukebox.",
+    "image": "adds_music_to_the_jukebox.png",
+    "description": "",
+    "uses": [
+      "Adding new songs to the lobby jukebox"
+    ],
+    "how_to_get": [
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "170",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00170.png"
+  },
+  {
+    "id": "star_fruit",
+    "name": "Star Fruit",
+    "image": "star_fruit.png",
+    "description": "A peculiar star-shaped fruit. Restores 30 TP.",
+    "uses": [
+      "30 TP refill"
+    ],
+    "how_to_get": [
+      "Limited Events"
+    ],
+    "item_type": "",
+    "game_id": "174",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00174.png"
+  },
+  {
+    "id": "kawasaki_kinen_winner_s_sash",
+    "name": "Kawasaki Kinen Winner's Sash",
+    "image": "kawasaki_kinen_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 Kawasaki Kinen. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Kawasaki Kinen race",
+      "Bought with Silver Horseshoes",
+      "Bought in Tazuna's Daily Shop"
+    ],
+    "item_type": "",
+    "game_id": "175",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00175.png"
+  },
+  {
+    "id": "zen_nippon_junior_yushun_winner_s_sash",
+    "name": "Zen-Nippon Junior Yushun Winner's Sash",
+    "image": "zen_nippon_junior_yushun_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 Zen-Nippon Junior Yushun. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Zen-Nippon Junior Yushun race",
+      "Bought in Tazuna's Daily Shop"
+    ],
+    "item_type": "",
+    "game_id": "176",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00176.png"
+  },
+  {
+    "id": "kashiwa_kinen_winner_s_sash",
+    "name": "Kashiwa Kinen Winner's Sash",
+    "image": "kashiwa_kinen_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 Kashiwa Kinen. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Kashiwa Kinen race",
+      "Bought with Friend Points",
+      "Bought in Tazuna's Daily Shop"
+    ],
+    "item_type": "",
+    "game_id": "177",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00177.png"
+  },
+  {
+    "id": "1_5_year_anniversary_ssr_voucher",
+    "name": "1.5-Year Anniversary SSR Voucher",
+    "image": "1_5_year_anniversary_ssr_voucher.png",
+    "description": "Can be exchanged for an SSR Support Card of your choice from the list.",
+    "uses": [
+      "Obtaining an SSR support card of your choice from the 1.5th Anniversary support card pool"
+    ],
+    "how_to_get": [
+      "Mission reward",
+      "Limited purchase during the 1.5th anniversary"
+    ],
+    "item_type": "",
+    "game_id": "178",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00178.png"
+  },
+  {
+    "id": "m_c_nambu_hai_winner_s_sash",
+    "name": "M.C. Nambu Hai Winner's Sash",
+    "image": "m_c_nambu_hai_winner_s_sash.png",
+    "description": "Proof of winning the dirt G1 M.C. Nambu Hai. Can be used to raise Potential Level.",
+    "uses": [
+      "Raising the awakening level of a character"
+    ],
+    "how_to_get": [
+      "Winning the Mile CS Nambu Hai race",
+      "Bought with Circle Points",
+      "Bought in Tazuna's Daily Shop"
+    ],
+    "item_type": "",
+    "game_id": "179",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00179.png"
+  },
+  {
+    "id": "ornament",
+    "name": "Ornament",
+    "image": "ornament.png",
+    "description": "Ornaments used to decorate the tree in Sparkly Magic Show.",
+    "uses": [
+      "Earning various rewards from the KIRARA MAGIC SHOW event"
+    ],
+    "how_to_get": [
+      "Playing during the KIRARA MAGIC SHOW event"
+    ],
+    "item_type": "",
+    "game_id": "189",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00189.png"
+  },
+  {
+    "id": "gallery_key",
+    "name": "Gallery Key",
+    "image": "gallery_key.png",
+    "description": "A key that can be used in the Archive's Gallery to unlock your memories with an Umamusume.",
+    "uses": [
+      "Unlocking entries in the horsegirl directory"
+    ],
+    "how_to_get": [
+      "Bought with Friend Points"
+    ],
+    "item_type": "",
+    "game_id": "190",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00190.png"
+  },
+  {
+    "id": "3_make_debut_scout_race_3",
+    "name": "3★ Make Debut Scout Race 3",
+    "image": "3_make_debut_scout_race_3.png",
+    "description": "A ticket that can be used for scouting Trainees released before Nov 9, 2026. Can be used from the Scout list.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"Make Debut 3R\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "191",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00191.png"
+  },
+  {
+    "id": "ssr_make_debut_scout_race_3",
+    "name": "SSR Make Debut Scout Race 3",
+    "image": "ssr_make_debut_scout_race_3.png",
+    "description": "A ticket that can be used for scouting Support Cards released before Nov 9, 2026. Can be used from the Scout list.",
+    "uses": [
+      "One pull from the SSR guaranteed \"Make Debut 3R\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "192",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00192.png"
+  },
+  {
+    "id": "2_make_debut_scout_race_3",
+    "name": "2★+ Make Debut Scout Race 3",
+    "image": "2_make_debut_scout_race_3.png",
+    "description": "A ticket that can be used for scouting Trainees released before Nov 9, 2026. Can be used from the Scout list.",
+    "uses": [
+      "One pull from the ★2 or above guaranteed \"Make Debut 3R\" character gacha"
+    ],
+    "how_to_get": [
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "193",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00193.png"
+  },
+  {
+    "id": "sr_make_debut_scout_race_3",
+    "name": "SR+ Make Debut Scout Race 3",
+    "image": "sr_make_debut_scout_race_3.png",
+    "description": "A ticket that can be used for scouting Support Cards released before Nov 9, 2026. Can be used from the Scout list.",
+    "uses": [
+      "One pull from the SR or above guaranteed \"Make Debut 3R\" character gacha"
+    ],
+    "how_to_get": [
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "194",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00194.png"
+  },
+  {
+    "id": "spark_research_report",
+    "name": "Spark Research Report",
+    "image": "spark_research_report.png",
+    "description": "A Spark research report created by Agnes Tachyon. Can be used for Spark Enhancement.",
+    "uses": [
+      "Raising the number of stars for a Stat, Aptitude or Unique Skill spark by one (maximum 3)"
+    ],
+    "how_to_get": [
+      "Playing during \"Agnes Tachyon's Spark Research\" events"
+    ],
+    "item_type": "",
+    "game_id": "195",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00195.png"
+  },
+  {
+    "id": "2nd_anniversary_3_voucher",
+    "name": "2nd Anniversary 3★ Voucher",
+    "image": "2nd_anniversary_3_voucher.png",
+    "description": "Can be exchanged for a 3★ Trainee of your choice from the list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the 2nd Anniversary character pool (all up to Dec 31 2022)"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 2nd anniversary"
+    ],
+    "item_type": "",
+    "game_id": "196",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00196.png"
+  },
+  {
+    "id": "2nd_anniversary_ssr_voucher",
+    "name": "2nd Anniversary SSR Voucher",
+    "image": "2nd_anniversary_ssr_voucher.png",
+    "description": "Can be exchanged for an SSR Support Card of your choice from the list.",
+    "uses": [
+      "Obtaining an SSR support card of your choice from the 2nd Anniversary support card pool (all up to Dec 31 2022)"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 2nd anniversary"
+    ],
+    "item_type": "",
+    "game_id": "197",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00197.png"
+  },
+  {
+    "id": "entry_ticket",
+    "name": "Entry Ticket",
+    "image": "entry_ticket.png",
+    "description": "A ticket for entry in the Champions Meeting. Does not carry over to the next event.",
+    "uses": [
+      "Participating in the first 2 rounds of the Champions Meeting"
+    ],
+    "how_to_get": [
+      "Automatically obtained at noon (server time) when the Champions Meeting is underway",
+      "Champions Meeting daily mission",
+      "Bought with carats"
+    ],
+    "item_type": "",
+    "game_id": "198",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00198.png"
+  },
+  {
+    "id": "2_5th_anniversary_3_exchange_ticket",
+    "name": "2.5th Anniversary ★3 Exchange Ticket",
+    "image": "2_5th_anniversary_3_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a ★3 character of your liking from a list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the 2.5th Anniversary character pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 2.5th anniversary"
+    ],
+    "item_type": "",
+    "game_id": "204",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00204.png"
+  },
+  {
+    "id": "2_5th_anniversary_ssr_exchange_ticket",
+    "name": "2.5th Anniversary SSR Exchange Ticket",
+    "image": "2_5th_anniversary_ssr_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a SSR support card of your liking from a list.",
+    "uses": [
+      "Obtaining an SSR Support card of your choice from the 2.5th Anniversary support card pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 2.5th anniversary"
+    ],
+    "item_type": "",
+    "game_id": "205",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00205.png"
+  },
+  {
+    "id": "novice_trainer_support_3_exchange_ticket",
+    "name": "Novice Trainer Support ★3 Exchange Ticket",
+    "image": "novice_trainer_support_3_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a ★3 character of your liking from a list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice"
+    ],
+    "how_to_get": [
+      "Limited purchase"
+    ],
+    "item_type": "",
+    "game_id": "206",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00206.png"
+  },
+  {
+    "id": "novice_trainer_support_ssr_exchange_ticket",
+    "name": "Novice Trainer Support SSR Exchange Ticket",
+    "image": "novice_trainer_support_ssr_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for an SSR support card of your liking from a list.",
+    "uses": [
+      "Obtaining an SSR support card of your choice"
+    ],
+    "how_to_get": [
+      "Limited purchase"
+    ],
+    "item_type": "",
+    "game_id": "207",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00207.png"
+  },
+  {
+    "id": "3_5th_wish_gaze_gacha",
+    "name": "★3 5th WISH&GAZE Gacha",
+    "image": "3_5th_wish_gaze_gacha.png",
+    "description": "A ticket to pull from the \"★3 5th WISH&GAZE\" banner with, including the characters that appeared during the WISH and GAZE concerts and were released by 2023/09/20. Usable at the Gacha menu.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"5th WISH&GAZE\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "209",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00209.png"
+  },
+  {
+    "id": "anime_season_3_celebration_3_exchange_ticket",
+    "name": "Anime Season 3 Celebration ★3 Exchange Ticket",
+    "image": "anime_season_3_celebration_3_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a ★3 character of your liking from a list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the \"Anime Season 3 Celebration\" character pool"
+    ],
+    "how_to_get": [
+      "Limited purchase between the 1st January 2024 and the 29th February 2024"
+    ],
+    "item_type": "",
+    "game_id": "210",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00210.png"
+  },
+  {
+    "id": "support_card_exchange_ticket",
+    "name": "Support Card Exchange Ticket",
+    "image": "support_card_exchange_ticket.png",
+    "description": "Mostly received as part of the Training Pass",
+    "uses": [
+      "Exchanging for an SSR card of your liking from a given list in the Support Card Exchange shop"
+    ],
+    "how_to_get": [
+      "Raising your level in the Training Pass"
+    ],
+    "item_type": "",
+    "game_id": "211",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00211.png"
+  },
+  {
+    "id": "3rd_anniversary_3_exchange_ticket",
+    "name": "3rd Anniversary ★3 Exchange Ticket",
+    "image": "3rd_anniversary_3_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a ★3 character of your liking from a list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the 3rd Anniversary character pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 3rd Anniversary"
+    ],
+    "item_type": "",
+    "game_id": "213",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00213.png"
+  },
+  {
+    "id": "3rd_anniversary_ssr_exchange_ticket",
+    "name": "3rd Anniversary SSR Exchange Ticket",
+    "image": "3rd_anniversary_ssr_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for an SSR support card of your liking from a list.",
+    "uses": [
+      "Obtaining an SSR support card of your choice from the 3rd Anniversary support card pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 3rd Anniversary"
+    ],
+    "item_type": "",
+    "game_id": "214",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00214.png"
+  },
+  {
+    "id": "3_5th_yell_new_gate_gacha_ticket",
+    "name": "★3 5th YELL&NEW GATE Gacha Ticket",
+    "image": "3_5th_yell_new_gate_gacha_ticket.png",
+    "description": "A ticket to pull from the \"★3 5th YELL&NEW GATE\" banner with, including the characters that appeared during the YELL and NEW GATE concerts and were released by 2024/3/21. Usable at the Gacha menu.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"5th YELL&NEW GATE\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "215",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00215.png"
+  },
+  {
+    "id": "umabako_3_3_exchange_ticket",
+    "name": "Umabako 3 ★3 Exchange Ticket",
+    "image": "umabako_3_3_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a ★3 character of your liking from a list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the Umabako 3 character pool"
+    ],
+    "how_to_get": [
+      "Redeeming promo codes of all 4 blu-rays of the Uma Musume anime (season 3)"
+    ],
+    "item_type": "",
+    "game_id": "216",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00216.png"
+  },
+  {
+    "id": "3_make_debut_gacha_4r",
+    "name": "★3 Make Debut Gacha 4R",
+    "image": "3_make_debut_gacha_4r.png",
+    "description": "A ticket to pull from the ★3 guaranteed \"Make Debut 4R\" character gacha with. Usable at the gacha menu.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"Make Debut 4R\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "218",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00218.png"
+  },
+  {
+    "id": "ssr_make_debut_gacha_4r",
+    "name": "SSR Make Debut Gacha 4R",
+    "image": "ssr_make_debut_gacha_4r.png",
+    "description": "A ticket to pull from the SSR guaranteed \"Make Debut 4R\" character gacha with. Usable at the gacha menu.",
+    "uses": [
+      "One pull from the SSR guaranteed \"Make Debut 4R\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "219",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00219.png"
+  },
+  {
+    "id": "2_make_debut_gacha_4r",
+    "name": "★2 Make Debut Gacha 4R",
+    "image": "2_make_debut_gacha_4r.png",
+    "description": "A ticket to pull from the ★2 or above guaranteed \"Make Debut 4R\" character gacha with. Usable at the gacha menu.",
+    "uses": [
+      "One pull from the ★2 or above guaranteed \"Make Debut 4R\" character gacha"
+    ],
+    "how_to_get": [
+      "Scenario record rewards",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "220",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00220.png"
+  },
+  {
+    "id": "sr_make_debut_gacha_4r",
+    "name": "SR Make Debut Gacha 4R",
+    "image": "sr_make_debut_gacha_4r.png",
+    "description": "A ticket to pull from the SR or above guaranteed \"Make Debut 4R\" character gacha with. Usable at the gacha menu.",
+    "uses": [
+      "One pull from the SR or above guaranteed \"Make Debut 4R\" character gacha"
+    ],
+    "how_to_get": [
+      "Scenario record rewards",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "221",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00221.png"
+  },
+  {
+    "id": "space_journey_juice",
+    "name": "Space Journey Juice",
+    "image": "space_journey_juice.png",
+    "description": "Deluxe juice treasured throughout the galaxy.",
+    "uses": [
+      "30 TP refill"
+    ],
+    "how_to_get": [
+      "Limited event"
+    ],
+    "item_type": "",
+    "game_id": "222",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00222.png"
+  },
+  {
+    "id": "kfc_original_bucket",
+    "name": "KFC Original Bucket",
+    "image": "kfc_original_bucket.png",
+    "description": "A bucket filled with lots of fried chicken, flavored with the legendary seven spices and herbs.",
+    "uses": [
+      "100 TP refill"
+    ],
+    "how_to_get": [
+      "Limited event"
+    ],
+    "item_type": "",
+    "game_id": "223",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00223.png"
+  },
+  {
+    "id": "summer_heat_refresher",
+    "name": "Summer Heat Refresher",
+    "image": "summer_heat_refresher.png",
+    "description": "Drinks to gather during the UMA Summer event.",
+    "uses": [
+      "Earning various rewards from the UMA Summer event"
+    ],
+    "how_to_get": [
+      "Playing during the UMA Summer event"
+    ],
+    "item_type": "",
+    "game_id": "230",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00230.png"
+  },
+  {
+    "id": "circle_points",
+    "name": "Circle Points",
+    "image": "circle_points.png",
+    "description": "Proof of the unity of your circle.",
+    "uses": [
+      "Circle point shop exchange"
+    ],
+    "how_to_get": [
+      "Contributing to item requests within Circles",
+      "Have other trainers borrow your representative horsegirl",
+      "Completing daily missions"
+    ],
+    "item_type": "",
+    "game_id": "231",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00231.png"
+  },
+  {
+    "id": "kfc_biscuit",
+    "name": "KFC Biscuit",
+    "image": "kfc_biscuit.png",
+    "description": "A biscuit with a crispy outside and an inside filled with honey maple syrup.",
+    "uses": [
+      "5 RP refill"
+    ],
+    "how_to_get": [
+      "Limited event"
+    ],
+    "item_type": "",
+    "game_id": "233",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00233.png"
+  },
+  {
+    "id": "3_make_debut_gacha_5r",
+    "name": "★3 Make Debut Gacha 5R",
+    "image": "3_make_debut_gacha_5r.png",
+    "description": "A ticket to pull from the ★3 guaranteed \"Make Debut 5R\" character gacha with. Usable at the gacha menu.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"Make Debut 5R\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "234",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00234.png"
+  },
+  {
+    "id": "ssr_make_debut_gacha_5r",
+    "name": "SSR Make Debut Gacha 5R",
+    "image": "ssr_make_debut_gacha_5r.png",
+    "description": "A ticket to pull from the SSR guaranteed \"Make Debut 5R\" character gacha with. Usable at the gacha menu.",
+    "uses": [
+      "One pull from the SSR guaranteed \"Make Debut 5R\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "235",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00235.png"
+  },
+  {
+    "id": "2_make_debut_gacha_5r",
+    "name": "★2 Make Debut Gacha 5R",
+    "image": "2_make_debut_gacha_5r.png",
+    "description": "A ticket to pull from the ★2 or above guaranteed \"Make Debut 5R\" character gacha with. Usable at the gacha menu.",
+    "uses": [
+      "One pull from the ★2 or above guaranteed \"Make Debut 5R\" character gacha"
+    ],
+    "how_to_get": [
+      "Scenario record rewards",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "236",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00236.png"
+  },
+  {
+    "id": "sr_make_debut_gacha_5r",
+    "name": "SR Make Debut Gacha 5R",
+    "image": "sr_make_debut_gacha_5r.png",
+    "description": "A ticket to pull from the SR or above guaranteed \"Make Debut 5R\" character gacha with. Usable at the gacha menu.",
+    "uses": [
+      "One pull from the SR or above guaranteed \"Make Debut 5R\" character gacha"
+    ],
+    "how_to_get": [
+      "Scenario record rewards",
+      "Limited events"
+    ],
+    "item_type": "",
+    "game_id": "237",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00237.png"
+  },
+  {
+    "id": "3_5th_anniversary_3_exchange_ticket",
+    "name": "3.5th Anniversary ★3 Exchange Ticket",
+    "image": "3_5th_anniversary_3_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a ★3 character of your liking from a list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the 3.5th Anniversary character pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 3.5th Anniversary"
+    ],
+    "item_type": "",
+    "game_id": "254",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00254.png"
+  },
+  {
+    "id": "3_5th_anniversary_ssr_exchange_ticket",
+    "name": "3.5th Anniversary SSR Exchange Ticket",
+    "image": "3_5th_anniversary_ssr_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for an SSR support card of your liking from a list.",
+    "uses": [
+      "Obtaining an SSR support card of your choice from the 3.5th Anniversary support card pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 3.5th Anniversary"
+    ],
+    "item_type": "",
+    "game_id": "255",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00255.png"
+  },
+  {
+    "id": "hall_of_fame_capacity_increase",
+    "name": "Hall of Fame Capacity Increase",
+    "image": "hall_of_fame_capacity_increase.png",
+    "description": "A larger hall makes for a larger race!",
+    "uses": [
+      "Increase the capacity of the Hall of Fame by 5 for 30 carats each"
+    ],
+    "how_to_get": [
+      "Bought in the Hall of Fame menu"
+    ],
+    "item_type": "",
+    "game_id": "256",
+    "cap": "acity Increase A larger hall makes for a larger race! ID: 256 {item_cap} – Uses: Increase the capacity of the Hall of Fame by 5 for 30 carats each How to get: Bought in the Hall of Fame menu",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00256.png"
+  },
+  {
+    "id": "3_5th_wish_gacha_ticket",
+    "name": "★3 5th -WISH- Gacha Ticket",
+    "image": "3_5th_wish_gacha_ticket.png",
+    "description": "A ticket to pull from the \"★3 5th EVENT WISH\" banner with, including the characters that appeared during the -WISH- concert and were released by 2023/7/10. Usable at the Gacha menu.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"5th EVENT WISH\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "258",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00258.png"
+  },
+  {
+    "id": "3_5th_gaze_gacha_ticket",
+    "name": "★3 5th -GAZE- Gacha Ticket",
+    "image": "3_5th_gaze_gacha_ticket.png",
+    "description": "A ticket to pull from the \"★3 5th EVENT GAZE\" banner with, including the characters that appeared during the -GAZE- concert and were released by 2023/9/11. Usable at the Gacha menu.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"5th EVENT GAZE\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "259",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00259.png"
+  },
+  {
+    "id": "hat_sable",
+    "name": "Hat-Sablé",
+    "image": "hat_sable.png",
+    "description": "Confectionary super popular in BoCity! It'll blow your hat off!",
+    "uses": [
+      "30 TP refill"
+    ],
+    "how_to_get": [
+      "Limited event"
+    ],
+    "item_type": "",
+    "game_id": "264",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00264.png"
+  },
+  {
+    "id": "3_guaranteed_beginning_of_a_new_era_gacha",
+    "name": "★3 Guaranteed \"BEGINNING OF A NEW ERA\" Gacha",
+    "image": "3_guaranteed_beginning_of_a_new_era_gacha.png",
+    "description": "A ★3 Guaranteed Gacha Ticket commemorating the \"BEGINNING OF A NEW ERA\" movie, featuring all characters up to the 31st December 2024",
+    "uses": [
+      "One pull from the ★3 guaranteed \"BEGINNING OF A NEW ERA\" character gacha"
+    ],
+    "how_to_get": [
+      "Buying the \"BEGINNING OF A NEW ERA\" Blu-Ray"
+    ],
+    "item_type": "",
+    "game_id": "265",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00265.png"
+  },
+  {
+    "id": "2th_anniversary_3_exchange_ticket",
+    "name": "2th Anniversary ★3 Exchange Ticket",
+    "image": "2th_anniversary_3_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a ★3 character of your liking from a list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from the 4th Anniversary character pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 4th anniversary"
+    ],
+    "item_type": "",
+    "game_id": "270",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00270.png"
+  },
+  {
+    "id": "4th_anniversary_ssr_exchange_ticket",
+    "name": "4th Anniversary SSR Exchange Ticket",
+    "image": "4th_anniversary_ssr_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for an SSR support card of your liking from a list.",
+    "uses": [
+      "Obtaining an SSR support card of your choice from the 4th Anniversary support card pool"
+    ],
+    "how_to_get": [
+      "Limited purchase during the 4th anniversary"
+    ],
+    "item_type": "",
+    "game_id": "271",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00271.png"
+  },
+  {
+    "id": "3_5th_yell_gacha_ticket",
+    "name": "★3 5th -YELL- Gacha Ticket",
+    "image": "3_5th_yell_gacha_ticket.png",
+    "description": "A ticket to pull from the \"★3 5th YELL\" banner with, including the characters that appeared during the YELL concert and were released by 2024/1/31. Usable at the Gacha menu.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"5th YELL\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "273",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00273.png"
+  },
+  {
+    "id": "3_5th_new_gate_gacha_ticket",
+    "name": "★3 5th -NEW GATE- Gacha Ticket",
+    "image": "3_5th_new_gate_gacha_ticket.png",
+    "description": "A ticket to pull from the \"★3 5th NEW GATE\" banner with, including the characters that appeared during the NEW GATE concert and were released by 2024/3/21. Usable at the Gacha menu.",
+    "uses": [
+      "One pull from the ★3 guaranteed \"5th NEW GATE\" character gacha"
+    ],
+    "how_to_get": [
+      "Promo codes"
+    ],
+    "item_type": "",
+    "game_id": "274",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00274.png"
+  },
+  {
+    "id": "cinderella_gray_anime_3_exchange_ticket",
+    "name": "\"Cinderella Gray\" Anime ★3 Exchange Ticket",
+    "image": "cinderella_gray_anime_3_exchange_ticket.png",
+    "description": "A voucher that can be exchanged for a ★3 character of your liking from a list.",
+    "uses": [
+      "Obtaining a ★3 character of your choice from a list."
+    ],
+    "how_to_get": [
+      "Limited purchase"
+    ],
+    "item_type": "",
+    "game_id": "278",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_00278.png"
+  },
+  {
+    "id": "scout_points",
+    "name": "Scout Points",
+    "image": "scout_points.png",
+    "description": "Obtained by participating in the Aim for the Stars! Dream Team Scout Race. Used to scout team members.",
+    "uses": [
+      "Recruiting new team members in the \"Aim for the Strongest Team!\" event"
+    ],
+    "how_to_get": [
+      "Participating in scouting races during the \"Aim for the Strongest Team!\" event"
+    ],
+    "item_type": "",
+    "game_id": "1001",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_01001.png"
+  },
+  {
+    "id": "scout_race_ticket",
+    "name": "Scout Race Ticket",
+    "image": "scout_race_ticket.png",
+    "description": "A ticket for entry in the Aim for the Stars! Dream Team Scout Race. Does not carry over to the next event.",
+    "uses": [
+      "Participate in scouting races during the \"Aim for the Strongest Team!\" event"
+    ],
+    "how_to_get": [
+      "Daily reset during the \"Aim for the Strongest Team!\" event",
+      "Limited Mission reward",
+      "Consuming Carrot Jelly during the \"Aim for the Strongest Team!\" event"
+    ],
+    "item_type": "",
+    "game_id": "2001",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_02001.png"
+  },
+  {
+    "id": "league_ticket",
+    "name": "League Ticket",
+    "image": "league_ticket.png",
+    "description": "A ticket for entry in a League of Heroes race. Does not carry over to the next event.",
+    "uses": [
+      "Participating in Main Stage races of the League of Heroes"
+    ],
+    "how_to_get": [
+      "Automatically obtained at noon (server time) when the League of Heroes is underway"
+    ],
+    "item_type": "",
+    "game_id": "3001",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_03001.png"
+  },
+  {
+    "id": "spark_strenghtening_report",
+    "name": "Spark Strenghtening Report",
+    "image": "spark_strenghtening_report.png",
+    "description": "A paper on the spark of horsegirls.",
+    "uses": [
+      "Raising the number of stars for a Stat, Aptitude or Unique Skill spark by one (maximum 3)"
+    ],
+    "how_to_get": [
+      "Limited purchase"
+    ],
+    "item_type": "",
+    "game_id": "5001",
+    "cap": "",
+    "source_url": "https://gametora.com/umamusume/items",
+    "source_image_url": "https://gametora.com/images/umamusume/items/item_icon_05001.png"
+  }
+]
