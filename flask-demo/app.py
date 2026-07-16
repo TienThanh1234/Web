@@ -2,6 +2,7 @@ import csv
 import os
 import re
 from functools import wraps
+from pathlib import Path
 
 from flask import (
     Flask,
@@ -21,8 +22,8 @@ app.secret_key = os.environ.get(
     "Mashkyrielight@!#1234567890"
 )
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-USERS_FILE = os.path.join(BASE_DIR, "users.csv")
+BASE_DIR = Path(__file__).resolve().parent
+USERS_FILE = BASE_DIR / "users.csv"
 
 
 # =========================
@@ -537,42 +538,175 @@ def make_legacy_detail_lines(choices):
 
 
 def load_support_card_training_events(card_id):
-    chain_events = []
-    random_events = []
-    skill_lookup = make_skill_lookup_by_name()
+    """
+    Đọc toàn bộ Training Events của một support card từ:
+    support_card_training_events.csv
 
-    with open("support_card_training_events.csv", newline="", encoding="utf-8-sig") as file:
+    Trả về:
+    date_events, chain_events, random_events, special_events
+    """
+
+    grouped_events = {
+        "date": [],
+        "chain": [],
+        "random": [],
+        "special": []
+    }
+
+    csv_path = BASE_DIR / "support_card_training_events.csv"
+
+    if not csv_path.exists():
+        raise FileNotFoundError(
+            f"Không tìm thấy file Training Events: {csv_path}"
+        )
+
+    normalized_card_id = str(card_id).strip().lower()
+
+    section_aliases = {
+        "date": "date",
+        "dates": "date",
+
+        "chain": "chain",
+        "chain_event": "chain",
+        "chain_events": "chain",
+
+        "random": "random",
+        "random_event": "random",
+        "random_events": "random",
+
+        "special": "special",
+        "special_event": "special",
+        "special_events": "special"
+    }
+
+    with csv_path.open(
+        mode="r",
+        encoding="utf-8-sig",
+        newline=""
+    ) as file:
+        reader = csv.DictReader(file)
+
+        # Xử lý khoảng trắng hoặc BOM trong tên cột
+        if reader.fieldnames:
+            reader.fieldnames = [
+                str(column).strip().lstrip("\ufeff")
+                for column in reader.fieldnames
+            ]
+
+        required_columns = {
+            "card_id",
+            "section",
+            "event_id",
+            "title",
+            "detail",
+            "sort_order"
+        }
+
+        actual_columns = set(reader.fieldnames or [])
+
+        missing_columns = required_columns - actual_columns
+
+        if missing_columns:
+            raise ValueError(
+                "File support_card_training_events.csv thiếu cột: "
+                + ", ".join(sorted(missing_columns))
+                + f"\nHeader hiện tại: {reader.fieldnames}"
+            )
+
+        for row in reader:
+            row_card_id = str(
+                row.get("card_id", "")
+            ).strip().lower()
+
+            # Chỉ lấy event của support card đang mở
+            if row_card_id != normalized_card_id:
+                continue
+
+            raw_section = str(
+                row.get("section", "")
+            ).strip().lower()
+
+            section = section_aliases.get(raw_section)
+
+            if section is None:
+                print(
+                    "[TRAINING EVENTS] Bỏ qua section không hợp lệ:",
+                    raw_section
+                )
+                continue
+
+            try:
+                sort_order = int(
+                    str(row.get("sort_order", "0")).strip() or 0
+                )
+            except ValueError:
+                sort_order = 0
+
+            event = {
+                "card_id": row_card_id,
+                "section": section,
+                "event_id": str(
+                    row.get("event_id", "")
+                ).strip(),
+
+                "title": str(
+                    row.get("title", "")
+                ).strip(),
+
+                "detail": str(
+                    row.get("detail", "")
+                ).strip(),
+
+                "sort_order": sort_order
+            }
+
+            grouped_events[section].append(event)
+
+    # Sắp xếp event theo sort_order
+    for section_name in grouped_events:
+        grouped_events[section_name].sort(
+            key=lambda event: event["sort_order"]
+        )
+
+    print(
+        f"[TRAINING EVENTS] card_id={normalized_card_id} | "
+        f"date={len(grouped_events['date'])} | "
+        f"chain={len(grouped_events['chain'])} | "
+        f"random={len(grouped_events['random'])} | "
+        f"special={len(grouped_events['special'])}"
+    )
+
+    return (
+        grouped_events["date"],
+        grouped_events["chain"],
+        grouped_events["random"],
+        grouped_events["special"]
+    )
+# =========================
+# ITEMS
+# =========================
+def load_items():
+    items = []
+
+    with open(
+        "items.csv",
+        "r",
+        encoding="utf-8-sig",
+        newline=""
+    ) as file:
         reader = csv.DictReader(file)
 
         for row in reader:
-            if row.get("card_id", "").strip() != card_id:
-                continue
+            items.append({
+                "id": row.get("id", "").strip(),
+                "name": row.get("name", "").strip(),
+                "image": row.get("image", "").strip(),
+                "description": row.get("description", "").strip(),
+                "uses": row.get("uses", "").strip(),
+                "how_to_get": row.get("how_to_get", "").strip()
+            })
 
-            row["section"] = row.get("section", "").strip().lower()
-            row["event_id"] = row.get("event_id", "").strip()
-            row["title"] = row.get("title", "").strip()
-            row["detail"] = row.get("detail", "")
-            row["sort_order"] = int(row.get("sort_order", 0))
-
-            mark, clean_title = split_event_title(row["title"])
-            row["mark"] = mark
-            row["clean_title"] = clean_title
-            row["choices"] = parse_event_choices(row["detail"], skill_lookup)
-
-            # Giữ lại detail_lines để template cũ không bị lỗi ngay.
-            row["detail_lines"] = make_legacy_detail_lines(row["choices"])
-
-            if row["section"] == "chain":
-                chain_events.append(row)
-            elif row["section"] == "random":
-                random_events.append(row)
-
-    chain_events.sort(key=lambda event: event["sort_order"])
-    random_events.sort(key=lambda event: event["sort_order"])
-
-    return chain_events, random_events
-
-
+    return items
 # =========================
 # HOME
 # =========================
@@ -756,7 +890,7 @@ def support_detail(card_id):
         abort(404)
 
     effects = load_support_card_effects(card_id)
-    chain_events, random_events = load_support_card_training_events(card_id)
+    date_events, chain_events, random_events, special_events = load_support_card_training_events(card_id)
 
     hint_skills = get_skills_by_ids(
         card.get("hint_skill_ids", ""),
@@ -782,10 +916,23 @@ def support_detail(card_id):
         event_skills=event_skills,
         stat_gain_list=stat_gain_list,
         chain_events=chain_events,
-        random_events=random_events
+        random_events=random_events,
+        date_events=date_events,
+        special_events=special_events
     )
 
+# =========================
+# ITEMS ROUTES
+# =========================
 
+@app.route("/items")
+def item_list():
+    items = load_items()
+
+    return render_template(
+        "items.html",
+        items=items
+    )
 # =========================
 # OTHER ROUTES
 # =========================

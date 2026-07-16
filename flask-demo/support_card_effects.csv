@@ -1,4 +1,14 @@
 card_id,effect_name,lb0,lb1,lb2,lb3,lb4
+maruzensky,Friendship Bonus,20%,21%,23%,25%,25%
+maruzensky,Initial Friendship Gauge,25,26,27,28,30
+maruzensky,Speed Bonus,1,1,1,1,1
+maruzensky,Race Bonus,1%,2%,3%,5%,5%
+maruzensky,Fan Bonus,5%,6%,8%,10%,10%
+maruzensky,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
+maruzensky,Hint Frequency,20%,23%,26%,30%,30%
+maruzensky,Specialty Priority,20,25,30,35,35
+maruzensky,Power Bonus,0,1,1,1,1
+maruzensky,Mood Effect,0,0,0,15%,30%
 taiki_shuttle,Friendship Bonus,20%,21%,23%,25%,25%
 taiki_shuttle,Training Effectiveness,0%,0%,0%,5%,10%
 taiki_shuttle,Initial Friendship,15,16,18,20,20
@@ -1745,5 +1755,72 @@ fuji_kiseki_r_wit,Hint Levels,Lv 1,Lv 1,Lv 1,Lv 2,Lv 2
 fuji_kiseki_r_wit,Hint Frequency,20%,23%,26%,30%,30%
 fuji_kiseki_r_wit,Specialty Priority,20,25,30,35,35
 fuji_kiseki_r_wit,Wit Bonus,0,0,0,0,1
+
+sasami_anshinzawa_friend,Mood Effect,40%,45%,50%,55%,60%
+sasami_anshinzawa_friend,Event Effectiveness,10%,20%,30%,40%,50%
+sasami_anshinzawa_friend,Initial Friendship Gauge,20,21,23,25,25
+sasami_anshinzawa_friend,Skill Point Bonus,0,1,1,1,1
+sasami_anshinzawa_friend,Event Recovery,0,0,0,30%,60%
+riko_kashimoto_friend,Initial Friendship Gauge,25,26,27,28,30
+riko_kashimoto_friend,Race Bonus,5%,6%,7%,8%,10%
+riko_kashimoto_friend,Fan Bonus,15%,16%,17%,18%,20%
+riko_kashimoto_friend,Event Effectiveness,25%,27%,30%,32%,35%
+riko_kashimoto_friend,Failure Protection,15%,16%,18%,20%,20%
+riko_kashimoto_friend,Energy Cost Reduction,10%,11%,13%,15%,15%
+riko_kashimoto_friend,Event Recovery,20%,23%,26%,30%,30%
+riko_kashimoto_friend,Training Effectiveness,0,5%,10%,10%,10%
+riko_kashimoto_friend,Initial Stamina,0,0,0,15,30
+tazuna_hayakawa_friend,Initial Friendship Gauge,25,26,27,28,30
+tazuna_hayakawa_friend,Event Recovery,40%,45%,50%,55%,60%
+tazuna_hayakawa_friend,Event Effectiveness,25%,27%,30%,32%,35%
+tazuna_hayakawa_friend,Failure Protection,20%,22%,25%,27%,30%
+tazuna_hayakawa_friend,Energy Cost Reduction,15%,17%,20%,22%,25%
+tazuna_hayakawa_friend,Training Effectiveness,0,5%,10%,10%,10%
+tazuna_hayakawa_friend,Initial Speed,0,0,0,15,30
+aoi_kiryuin_sr_friend,Initial Friendship Gauge,20,21,22,23,25
+aoi_kiryuin_sr_friend,Event Recovery,40%,42%,45%,47%,50%
+aoi_kiryuin_sr_friend,Event Effectiveness,25%,26%,27%,28%,30%
+aoi_kiryuin_sr_friend,Failure Protection,20%,21%,22%,23%,25%
+aoi_kiryuin_sr_friend,Energy Cost Reduction,15%,16%,17%,18%,20%
+aoi_kiryuin_sr_friend,Initial Wit,0,10,15,20,20
+aoi_kiryuin_sr_friend,Training Effectiveness,0,0,0,0,5%
+sasami_anshinzawa_r_friend,Mood Effect,25%,27%,30%,32%,35%
+sasami_anshinzawa_r_friend,Event Effectiveness,5%,10%,15%,20%,25%
+sasami_anshinzawa_r_friend,Initial Friendship Gauge,15,16,18,20,20
+sasami_anshinzawa_r_friend,Skill Point Bonus,0,0,0,0,1
+riko_kashimoto_r_friend,Initial Friendship Gauge,20,21,22,23,25
+riko_kashimoto_r_friend,Race Bonus,5%,5%,5%,5%,5%
+riko_kashimoto_r_friend,Fan Bonus,10%,11%,12%,13%,15%
+riko_kashimoto_r_friend,Event Effectiveness,20%,21%,22%,23%,25%
+riko_kashimoto_r_friend,Event Recovery,20%,23%,26%,30%,30%
+riko_kashimoto_r_friend,Failure Protection,10%,11%,13%,15%,15%
+riko_kashimoto_r_friend,Energy Cost Reduction,5%,6%,8%,10%,10%
+riko_kashimoto_r_friend,Training Effectiveness,0,0,0,0,5%
+tazuna_hayakawa_r_friend,Initial Friendship Gauge,20,21,23,25,25
+tazuna_hayakawa_r_friend,Event Recovery,30%,32%,35%,37%,40%
+tazuna_hayakawa_r_friend,Event Effectiveness,20%,21%,22%,23%,25%
+tazuna_hayakawa_r_friend,Failure Protection,20%,22%,25%,27%,30%
+tazuna_hayakawa_r_friend,Energy Cost Reduction,15%,16%,17%,18%,20%
+tazuna_hayakawa_r_friend,Training Effectiveness,0,0,0,0,5%
+aoi_kiryuin_r_friend,Initial Friendship Gauge,20,21,22,23,25
+aoi_kiryuin_r_friend,Event Recovery,30%,32%,35%,37%,40%
+aoi_kiryuin_r_friend,Event Effectiveness,20%,21%,22%,23%,25%
+aoi_kiryuin_r_friend,Failure Protection,15%,16%,17%,18%,20%
+aoi_kiryuin_r_friend,Energy Cost Reduction,10%,11%,12%,13%,15%
+aoi_kiryuin_r_friend,Training Effectiveness,0,0,0,0,5%
+
+throne_group,Friendship Bonus,25%,27%,30%,32%,35%
+throne_group,Initial Friendship Gauge,25,27,30,32,35
+throne_group,Training Effectiveness,5%,5%,5%,5%,5%
+throne_group,Initial Speed,15,16,18,20,20
+throne_group,Event Recovery,20%,23%,26%,30%,30%
+throne_group,Failure Protection,15%,16%,18%,20%,20%
+throne_group,Wit Friendship Recovery,1,1,1,2,2
+throne_group,Speed Bonus,0,1,1,1,1
+throne_group,Race Bonus,0,0,0,5%,10%
+throne_group,Fan Bonus,0,0,0,10%,15%
+
+
+
 
 
