@@ -85,7 +85,7 @@
             {{ line.prefix }}
         {% endif %}
 
-        <a 
+        <a
             class="skill-hint-link"
             href="{{ url_for('skill_detail', skill_id=line.skill_id) }}"
         >
@@ -101,62 +101,157 @@
 </div>
 {% endmacro %}
 
-{% macro render_event_choices(event) %}
-{% if event.choices %}
-    {% for choice in event.choices %}
-    <div class="training-event-choice {% if choice.label_class == 'bot' %}choice-bot{% endif %} {% if not choice.label %}no-label{% endif %}">
-        {% if choice.label %}
-        <div class="choice-pill">{{ choice.label }}</div>
-        {% endif %}
+{% macro render_raw_event_line(raw_line) %}
+    {% set raw_text = (raw_line or '')|trim %}
 
+    {% if raw_text %}
+    <div class="event-line {% if raw_text[:1] == '!' %}event-note{% endif %}">
+        {% if raw_text[:1] == '!' %}
+            {{ raw_text[1:]|trim }}
+        {% else %}
+            {{ raw_text }}
+        {% endif %}
+    </div>
+    {% endif %}
+{% endmacro %}
+
+{% macro render_title_condition(event) %}
+    {% set raw_title = event.title or '' %}
+    {% set title_parts = raw_title.split('|') %}
+
+    {#
+        Dữ liệu crawler cũ có thể bị dính điều kiện vào title:
+        "A Pleasant Practice Partner?|Dating starts".
+        Nếu backend chưa tạo clean_title thì hiển thị phần sau dấu | như một dòng note.
+    #}
+    {% if not event.clean_title and title_parts|length > 1 %}
+    <div class="training-event-choice no-label event-condition-block">
         <div class="choice-lines">
-            {% for line in choice.lines %}
-                {{ render_event_line(line) }}
+            {% for condition in title_parts[1:] %}
+                {{ render_raw_event_line('!' ~ condition) }}
             {% endfor %}
         </div>
     </div>
-    {% endfor %}
-{% else %}
-    <div class="training-event-choice no-label">
-        <div class="choice-lines">
-            {% for line in event.detail_lines %}
-                <div class="event-line">{{ line }}</div>
-            {% endfor %}
+    {% endif %}
+{% endmacro %}
+
+{% macro render_event_choices(event) %}
+    {{ render_title_condition(event) }}
+
+    {% if event.choices %}
+        {% for choice in event.choices %}
+        <div class="training-event-choice
+                    {% if choice.label_class == 'bot' %}choice-bot{% endif %}
+                    {% if not choice.label %}no-label{% endif %}">
+            {% if choice.label %}
+            <div class="choice-pill">{{ choice.label }}</div>
+            {% endif %}
+
+            <div class="choice-lines">
+                {% for line in choice.lines %}
+                    {{ render_event_line(line) }}
+                {% endfor %}
+            </div>
         </div>
-    </div>
-{% endif %}
+        {% endfor %}
+
+    {% elif event.detail_lines %}
+        <div class="training-event-choice no-label">
+            <div class="choice-lines">
+                {% for line in event.detail_lines %}
+                    {% if line is mapping %}
+                        {{ render_event_line(line) }}
+                    {% else %}
+                        {{ render_raw_event_line(line) }}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+    {% elif event.detail %}
+        {#
+            Fallback cho dữ liệu CSV thô:
+            - || tách Top/Mid/Bot
+            - :: tách nhãn lựa chọn và nội dung
+            - | xuống dòng
+            - ! ở đầu dòng dùng màu note
+        #}
+        {% for raw_block in event.detail.split('||') %}
+            {% set block = raw_block|trim %}
+
+            {% if block %}
+                {% set choice_parts = block.split('::', 1) %}
+
+                {% if choice_parts|length == 2 %}
+                    {% set choice_label = choice_parts[0]|trim %}
+                    {% set choice_content = choice_parts[1] %}
+                {% else %}
+                    {% set choice_label = '' %}
+                    {% set choice_content = block %}
+                {% endif %}
+
+                <div class="training-event-choice
+                            {% if choice_label|lower in ['bot', 'bottom', 'lower'] %}choice-bot{% endif %}
+                            {% if not choice_label %}no-label{% endif %}">
+                    {% if choice_label %}
+                    <div class="choice-pill">{{ choice_label }}</div>
+                    {% endif %}
+
+                    <div class="choice-lines">
+                        {% for raw_line in choice_content.split('|') %}
+                            {{ render_raw_event_line(raw_line) }}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+
+    {% else %}
+        <div class="training-event-choice no-label">
+            <div class="choice-lines">
+                <div class="event-line event-empty">No event information available.</div>
+            </div>
+        </div>
+    {% endif %}
 {% endmacro %}
 
 {% macro render_training_event_detail(event, group_key) %}
-<div class="training-event-detail" id="event-{{ group_key }}-{{ event.event_id }}">
-    <div class="training-event-card-header">
-        {% if event.mark %}
-            <div class="event-mark">{{ event.mark }}</div>
-        {% endif %}
+    {% set display_title = event.clean_title or event.title or '' %}
 
-        <div class="event-title">
-            {{ event.clean_title or event.title }}
+    <div
+        class="training-event-detail"
+        id="event-{{ group_key }}-{{ event.event_id }}"
+    >
+        <div class="training-event-card-header">
+            {% if event.mark %}
+                <div class="event-mark">{{ event.mark }}</div>
+            {% endif %}
+
+            <div class="event-title">
+                {{ display_title.split('|')[0] }}
+            </div>
         </div>
-    </div>
 
-    {{ render_event_choices(event) }}
-</div>
+        {{ render_event_choices(event) }}
+    </div>
 {% endmacro %}
 
 {% macro render_training_group(title, group_key, events) %}
 {% if events %}
-<div class="training-event-group">
+<div class="training-event-group" data-event-group="{{ group_key }}">
     <div class="training-event-group-title">{{ title }}</div>
 
     <div class="training-event-button-list">
         {% for event in events %}
-        <button
-            type="button"
-            class="training-event-button"
-            onclick="toggleTrainingEvent('{{ group_key }}-{{ event.event_id }}', this)"
-        >
-            {{ event.clean_title or event.title }}
-        </button>
+            {% set display_title = event.clean_title or event.title or '' %}
+
+            <button
+                type="button"
+                class="training-event-button"
+                onclick="toggleTrainingEvent('{{ group_key }}-{{ event.event_id }}', this)"
+            >
+                {{ display_title.split('|')[0] }}
+            </button>
         {% endfor %}
     </div>
 
@@ -429,6 +524,15 @@
         margin-bottom: 26px;
     }
 
+    .training-events-level-note {
+        margin: 0 0 24px;
+        font-size: 15px;
+        line-height: 1.4;
+        font-style: italic;
+        color: #555555;
+        text-align: left;
+    }
+
     .training-event-group-title {
         font-size: 24px;
         font-weight: 900;
@@ -469,7 +573,7 @@
         background: #ffffff;
         margin: 10px 0 18px;
         overflow: hidden;
-        width: 390px;
+        width: 760px;
         max-width: 100%;
         border: 1px solid #d0d0d0;
         border-radius: 0 0 5px 5px;
@@ -495,7 +599,7 @@
 
     .event-title {
         font-size: 22px;
-        font-weight: 400;
+        font-weight: 800;
         line-height: 1.25;
     }
 
@@ -544,6 +648,15 @@
 
     .event-note {
         color: #ff4d25;
+    }
+
+    .event-condition-block {
+        background: #fff7ee;
+    }
+
+    .event-empty {
+        color: #777777;
+        font-style: italic;
     }
 
     .skill-hint-link {
@@ -655,7 +768,10 @@
     }
 </style>
 
-<div class="support-detail-page">
+<div
+    class="support-detail-page"
+    data-skill-url-template="{{ url_for('skill_detail', skill_id='__SKILL_ID__') }}"
+>
     <div class="support-detail-container">
         <a href="{{ url_for('support_card') }}" class="back-link">← Back to Support Cards</a>
 
@@ -708,15 +824,24 @@
 
         <div class="effect-table-title">Support Effects</div>
 
+        {% set rarity_key = card.rarity|upper %}
+
+        {% if rarity_key == 'SR' %}
+            {% set effect_levels = [25, 30, 35, 40, 45] %}
+        {% elif rarity_key == 'R' %}
+            {% set effect_levels = [20, 25, 30, 35, 40] %}
+        {% else %}
+            {% set effect_levels = [30, 35, 40, 45, 50] %}
+        {% endif %}
+
         <table class="effect-table">
             <thead>
                 <tr>
                     <th></th>
-                    <th>Lv.30</th>
-                    <th>Lv.35</th>
-                    <th>Lv.40</th>
-                    <th>Lv.45</th>
-                    <th>Lv.50</th>
+
+                    {% for level in effect_levels %}
+                        <th>Lv.{{ level }}</th>
+                    {% endfor %}
                 </tr>
             </thead>
 
@@ -744,15 +869,68 @@
 
         {{ render_skill_section('Skills from events', event_skills) }}
 
-        {% if chain_events or random_events %}
+        {% set date_events = date_events|default([]) %}
+        {% set chain_events = chain_events|default([]) %}
+        {% set random_events = random_events|default([]) %}
+        {% set special_events = special_events|default([]) %}
+
         <div class="training-events-section">
             <div class="training-events-title">Training Events</div>
 
-            {{ render_training_group('Chain Events', 'chain', chain_events) }}
-            {{ render_training_group('Random Events', 'random', random_events) }}
+            {% set card_type_key = (card.type|default(''))|trim|lower %}
+            {% set card_id_key = (card.id|default(''))|trim|lower %}
+            {% set rarity_key = (card.rarity|default(''))|trim|upper %}
+            {% set is_friend_or_group =
+                card_type_key in ['friend', 'group', 'pal']
+                or card_id_key[-7:] == '_friend'
+                or card_id_key[-6:] == '_group'
+            %}
+
+            {% if is_friend_or_group %}
+                <div class="training-events-level-note">
+                    {% if rarity_key == 'SSR' %}
+                        Stats will be at levels 30 / 35 / 40 / 45 / 50.
+                    {% elif rarity_key == 'SR' %}
+                        Stats will be at levels 25 / 30 / 35 / 40 / 45.
+                    {% elif rarity_key == 'R' %}
+                        Stats will be at levels 20 / 25 / 30 / 35 / 40.
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            {{ render_training_group(
+                'Dates',
+                'date',
+                date_events
+            ) }}
+
+            {{ render_training_group(
+                'Chain Events',
+                'chain',
+                chain_events
+            ) }}
+
+            {{ render_training_group(
+                'Random Events',
+                'random',
+                random_events
+            ) }}
+
+            {{ render_training_group(
+                'Special Events',
+                'special',
+                special_events
+            ) }}
+
+            {% if not date_events
+                and not chain_events
+                and not random_events
+                and not special_events %}
+                <div class="training-event-empty">
+                    No training event data was found for this support card.
+                </div>
+            {% endif %}
         </div>
-        {% endif %}
-    </div>
 </div>
 
 <script>
@@ -763,15 +941,29 @@
             return;
         }
 
+        const group = clickedButton
+            ? clickedButton.closest(".training-event-group")
+            : null;
+
         const isOpen = target.classList.contains("active");
 
-        document.querySelectorAll(".training-event-detail").forEach(function(detail) {
-            detail.classList.remove("active");
-        });
+        if (group) {
+            group.querySelectorAll(".training-event-detail").forEach(function(detail) {
+                detail.classList.remove("active");
+            });
 
-        document.querySelectorAll(".training-event-button").forEach(function(button) {
-            button.classList.remove("active");
-        });
+            group.querySelectorAll(".training-event-button").forEach(function(button) {
+                button.classList.remove("active");
+            });
+        } else {
+            document.querySelectorAll(".training-event-detail").forEach(function(detail) {
+                detail.classList.remove("active");
+            });
+
+            document.querySelectorAll(".training-event-button").forEach(function(button) {
+                button.classList.remove("active");
+            });
+        }
 
         if (!isOpen) {
             target.classList.add("active");
@@ -781,6 +973,116 @@
             }
         }
     }
+
+    function eventSkillNameToId(skillName) {
+        return String(skillName || "")
+            .trim()
+            .toLowerCase()
+            .replace(/◎/g, "oo")
+            .replace(/○/g, "o")
+            .replace(/×/g, "x")
+            .replace(/[☆★]/g, "")
+            .replace(/\([^)]*\)/g, " ")
+            .replace(/[^a-z0-9]+/g, "_")
+            .replace(/^_+|_+$/g, "");
+    }
+
+    function findEventSkillParts(rawText) {
+        const text = String(rawText || "").trim();
+
+        if (!text) {
+            return null;
+        }
+
+        /*
+            Ví dụ:
+            Obtain Running Idle skill
+            Obtain Corner Recovery × skill
+            (random) Obtain Wallflower skill
+
+            Giữ nguyên chữ "Obtain" ở ngoài link. Chỉ tên skill được bấm.
+            Regex này áp dụng cho cả skill thường và negative skill.
+        */
+        let match = text.match(/^(.*?\bObtain\s+)(.+?)(\s+skill\b.*)$/i);
+
+        if (match) {
+            return {
+                prefix: match[1],
+                skillName: match[2].trim(),
+                suffix: match[3]
+            };
+        }
+
+        /*
+            Ví dụ:
+            Corner Adept ○ hint +1
+            Nothing Ventured hint +3
+        */
+        match = text.match(/^(.+?)(\s+hint\s*\+\s*\d+.*)$/i);
+
+        if (match) {
+            return {
+                prefix: "",
+                skillName: match[1].trim(),
+                suffix: match[2]
+            };
+        }
+
+        return null;
+    }
+
+    function addEventSkillLinks() {
+        const page = document.querySelector(".support-detail-page");
+
+        if (!page) {
+            return;
+        }
+
+        const skillUrlTemplate = page.dataset.skillUrlTemplate || "";
+
+        if (!skillUrlTemplate) {
+            return;
+        }
+
+        document.querySelectorAll(".training-events-section .event-line").forEach(function(line) {
+            // Dòng đã được backend render link đúng rồi thì giữ nguyên.
+            if (line.querySelector("a.skill-hint-link")) {
+                return;
+            }
+
+            const rawText = line.textContent.trim();
+            const parts = findEventSkillParts(rawText);
+
+            if (!parts) {
+                return;
+            }
+
+            const skillId = eventSkillNameToId(parts.skillName);
+
+            if (!skillId) {
+                return;
+            }
+
+            const link = document.createElement("a");
+            link.className = "skill-hint-link";
+            link.href = skillUrlTemplate.replace("__SKILL_ID__", encodeURIComponent(skillId));
+            link.textContent = parts.skillName;
+
+            line.replaceChildren();
+
+            if (parts.prefix) {
+                line.appendChild(document.createTextNode(parts.prefix));
+            }
+
+            line.appendChild(link);
+
+            if (parts.suffix) {
+                line.appendChild(document.createTextNode(parts.suffix));
+            }
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", addEventSkillLinks);
 </script>
 
 {% endblock %}

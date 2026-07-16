@@ -1,0 +1,305 @@
+{% extends "base.html" %}
+
+{% block title %}Items{% endblock %}
+
+{% block content %}
+
+<style>
+    .items-page {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 24px 20px 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111111;
+    }
+
+    .items-title {
+        margin: 0 0 26px;
+        padding-left: 14px;
+
+        font-size: 30px;
+        font-weight: 900;
+
+        border-left: 5px solid #ff9b3d;
+    }
+
+    /* Danh sách item */
+    .items-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 54px;
+        align-items: stretch;
+    }
+
+    /* Một item */
+    .item-card {
+        padding: 20px 21px 24px;
+
+        background: #dedede;
+        border-radius: 15px;
+
+        font-size: 21px;
+        line-height: 1.55;
+
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+
+        transition:
+            transform 0.18s ease,
+            box-shadow 0.18s ease;
+    }
+
+    .item-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    /* Icon và tên item */
+    .item-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        margin-bottom: 12px;
+    }
+
+    .item-icon-box {
+        width: 68px;
+        height: 68px;
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #ffffff;
+        border: 2px solid #999999;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .item-icon {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .item-name {
+        margin: 0;
+
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+
+    /* Mô tả */
+    .item-description {
+        margin: 8px 0 12px;
+
+        font-size: 21px;
+        font-style: italic;
+        line-height: 1.55;
+    }
+
+    /* Các tiêu đề Uses, How to get */
+    .item-section {
+        margin-top: 12px;
+    }
+
+    .item-section-title {
+        margin: 0 0 8px;
+
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .item-list {
+        margin: 0;
+        padding-left: 54px;
+
+        font-size: 20px;
+        line-height: 1.45;
+    }
+
+    .item-list li {
+        padding-left: 2px;
+        margin-bottom: 1px;
+    }
+
+    .item-empty {
+        grid-column: 1 / -1;
+
+        padding: 35px;
+        text-align: center;
+
+        background: #eeeeee;
+        border-radius: 14px;
+
+        font-size: 20px;
+        color: #666666;
+    }
+
+    /* Tablet */
+    @media (max-width: 900px) {
+        .items-grid {
+            gap: 24px;
+        }
+
+        .item-card {
+            font-size: 18px;
+        }
+
+        .item-name {
+            font-size: 22px;
+        }
+
+        .item-description,
+        .item-section-title {
+            font-size: 19px;
+        }
+
+        .item-list {
+            font-size: 18px;
+            padding-left: 40px;
+        }
+    }
+
+    /* Điện thoại */
+    @media (max-width: 700px) {
+        .items-page {
+            padding: 18px 12px 35px;
+        }
+
+        .items-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .item-card {
+            padding: 18px;
+        }
+
+        .item-header {
+            gap: 14px;
+        }
+
+        .item-icon-box {
+            width: 60px;
+            height: 60px;
+        }
+    }
+</style>
+
+<div class="items-page">
+
+    <h1 class="items-title">Items</h1>
+
+    <div class="items-grid">
+
+        {% for item in items %}
+
+            {#
+                Dữ liệu uses và how_to_get trong CSV được ngăn bằng dấu |
+                Ví dụ:
+                Raising the awakening level of a character|Another use
+            #}
+
+            {% set uses_list =
+                item.uses.split('|')
+                if item.uses
+                else []
+            %}
+
+            {% set how_to_get_list =
+                item.how_to_get.split('|')
+                if item.how_to_get
+                else []
+            %}
+
+            <article class="item-card">
+
+                <div class="item-header">
+
+                    <div class="item-icon-box">
+                        <img
+                            class="item-icon"
+                            src="{{ url_for(
+                                'static',
+                                filename='images/items/' ~ item.image
+                            ) }}"
+                            alt="{{ item.name }}"
+                            loading="lazy"
+                            onerror="
+                                this.onerror = null;
+                                this.src = '{{ url_for(
+                                    'static',
+                                    filename='images/default_item.png'
+                                ) }}';
+                            "
+                        >
+                    </div>
+
+                    <h2 class="item-name">
+                        {{ item.name }}
+                    </h2>
+
+                </div>
+
+                {% if item.description %}
+                    <p class="item-description">
+                        {{ item.description }}
+                    </p>
+                {% endif %}
+
+                {% if uses_list %}
+                    <section class="item-section">
+
+                        <h3 class="item-section-title">
+                            Uses:
+                        </h3>
+
+                        <ul class="item-list">
+                            {% for use in uses_list %}
+                                {% if use.strip() %}
+                                    <li>{{ use.strip() }}</li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+
+                    </section>
+                {% endif %}
+
+                {% if how_to_get_list %}
+                    <section class="item-section">
+
+                        <h3 class="item-section-title">
+                            How to get:
+                        </h3>
+
+                        <ul class="item-list">
+                            {% for method in how_to_get_list %}
+                                {% if method.strip() %}
+                                    <li>{{ method.strip() }}</li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+
+                    </section>
+                {% endif %}
+
+            </article>
+
+        {% else %}
+
+            <div class="item-empty">
+                No items found.
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -22,8 +22,190 @@
         font-size: 32px;
         font-weight: 900;
         color: #000;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
+
+    /* =========================
+       SEARCH + FILTERS
+       ========================= */
+
+    .support-filter-panel {
+        background: #ececec;
+        border: 1px solid #c8c8c8;
+        border-radius: 14px;
+        padding: 16px 18px 18px;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.14);
+    }
+
+    .support-search-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+
+    .support-search-input {
+        flex: 1;
+        min-width: 0;
+        height: 44px;
+        border: 2px solid #9a9a9a;
+        border-radius: 12px;
+        background: #ffffff;
+        padding: 0 15px;
+        font-size: 16px;
+        color: #111111;
+        outline: none;
+        transition: 0.16s ease;
+    }
+
+    .support-search-input:focus {
+        border-color: #555555;
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .support-clear-button {
+        height: 44px;
+        min-width: 82px;
+        border: 1px solid #aaaaaa;
+        border-radius: 12px;
+        background: #d3d3d3;
+        color: #111111;
+        font-size: 15px;
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.15s ease;
+    }
+
+    .support-clear-button:hover {
+        background: #c5c5c5;
+    }
+
+    .filter-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    .filter-button {
+        cursor: pointer;
+        transition: 0.16s ease;
+        user-select: none;
+    }
+
+    .filter-button:hover {
+        transform: translateY(-2px);
+    }
+
+    /* Rarity */
+    .rarity-filter {
+    min-width: 74px;
+    height: 38px;
+    padding: 0 15px;
+    border: 1px solid #a7a7a7;
+    border-radius: 18px;
+    background: linear-gradient(#eeeeee, #bdbdbd);
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1;
+    text-shadow: 0 1px 2px #666666;
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.9),
+        0 2px 3px rgba(0, 0, 0, 0.18);
+}
+
+.rarity-filter.active {
+    border-color: #ffffff;
+    background: linear-gradient(#8d8d8d, #555555);
+    box-shadow:
+        0 0 0 2px #555555,
+        0 0 12px 4px rgba(255, 255, 255, 0.95),
+        0 0 18px 7px rgba(255, 227, 94, 0.75);
+    transform: translateY(-2px);
+}
+
+    /* Support type */
+    .type-filter {
+        width: 48px;
+        height: 48px;
+        padding: 4px;
+        border: 2px solid #bbbbbb;
+        border-radius: 10px;
+        background: linear-gradient(#eeeeee, #c6c6c6);
+        box-shadow:
+            inset 0 1px 1px rgba(255, 255, 255, 0.95),
+            0 2px 4px rgba(0, 0, 0, 0.18);
+    }
+
+    .type-filter img {
+        width: 36px;
+        height: 36px;
+        display: block;
+        object-fit: contain;
+        margin: 0 auto;
+        filter: grayscale(1) saturate(0);
+        opacity: 0.62;
+        transition: 0.16s ease;
+        pointer-events: none;
+    }
+
+    .type-filter.active {
+        border-color: #ffffff;
+        background: #ffffff;
+        box-shadow:
+            0 0 0 2px var(--type-color),
+            0 0 12px 4px rgba(255, 255, 255, 0.95),
+            0 0 18px 7px color-mix(in srgb, var(--type-color) 70%, transparent);
+        transform: translateY(-2px);
+    }
+
+    .type-filter.active img {
+        filter: none;
+        opacity: 1;
+    }
+
+    .type-filter[data-type="speed"] {
+        --type-color: #1fb0f4;
+    }
+
+    .type-filter[data-type="stamina"] {
+        --type-color: #ff6d64;
+    }
+
+    .type-filter[data-type="power"] {
+        --type-color: #ff9a1c;
+    }
+
+    .type-filter[data-type="guts"] {
+        --type-color: #ff5f9e;
+    }
+
+    .type-filter[data-type="wit"] {
+        --type-color: #11bf87;
+    }
+
+    .type-filter[data-type="friend"] {
+        --type-color: #7bd92f;
+    }
+
+    .type-filter[data-type="group"] {
+        --type-color: #8068da;
+    }
+
+    .support-filter-status {
+        margin-top: 14px;
+        text-align: center;
+        color: #555555;
+        font-size: 14px;
+    }
+
+    /* =========================
+       ORIGINAL CARD UI
+       ========================= */
 
     .support-grid {
         display: grid;
@@ -76,6 +258,16 @@
         word-break: break-word;
     }
 
+    .support-no-results {
+        display: none;
+        background: #eeeeee;
+        border-radius: 12px;
+        padding: 34px 16px;
+        text-align: center;
+        color: #666666;
+        font-size: 17px;
+    }
+
     @media (max-width: 1000px) {
         .support-grid {
             grid-template-columns: repeat(4, 1fr);
@@ -89,6 +281,14 @@
     }
 
     @media (max-width: 560px) {
+        .support-search-row {
+            flex-direction: column;
+        }
+
+        .support-clear-button {
+            width: 100%;
+        }
+
         .support-grid {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -110,29 +310,297 @@
 
         <h1 class="support-title">Support Card List</h1>
 
-        <div class="support-grid">
+        <div class="support-filter-panel">
+
+            <div class="support-search-row">
+                <input
+                    id="supportSearch"
+                    class="support-search-input"
+                    type="search"
+                    placeholder="Search by card name or title..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="clearFilters"
+                    class="support-clear-button"
+                    type="button"
+                >
+                    Clear
+                </button>
+            </div>
+
+            <div class="filter-row">
+                {% for rarity in ['SSR', 'SR', 'R'] %}
+                <button
+                    type="button"
+                    class="filter-button rarity-filter"
+                    data-rarity="{{ rarity }}"
+                    aria-pressed="false"
+                >
+                    {{ rarity }}
+                </button>
+                {% endfor %}
+            </div>
+
+            <div class="filter-row">
+                {% set support_types = [
+                    ('speed', 'Speed'),
+                    ('stamina', 'Stamina'),
+                    ('power', 'Power'),
+                    ('guts', 'Guts'),
+                    ('wit', 'Wit'),
+                    ('friend', 'Friend'),
+                    ('group', 'Group')
+                ] %}
+
+                {% for type_id, type_name in support_types %}
+                <button
+                    type="button"
+                    class="filter-button type-filter"
+                    data-type="{{ type_id }}"
+                    title="{{ type_name }}"
+                    aria-label="{{ type_name }}"
+                    aria-pressed="false"
+                >
+                    <img
+                        src="{{ url_for(
+                            'static',
+                            filename='images/support_types/' ~ type_id ~ '.png'
+                        ) }}"
+                        alt="{{ type_name }}"
+                    >
+                </button>
+                {% endfor %}
+            </div>
+
+            <div id="filterStatus" class="support-filter-status"></div>
+
+        </div>
+
+        <div class="support-grid" id="supportGrid">
             {% for card in support_cards %}
 
-            <a class="support-card" href="{{ url_for('support_detail', card_id=card.id) }}">
+                {% set normalized_type = (card.type|default(''))|trim|lower %}
 
-                <div class="support-image-box">
-                    <img
-                        class="support-image"
-                        src="{{ url_for('static', filename='images/support_cards/' ~ card.type|lower ~ '/' ~ card.thumb_image) }}"
-                        alt="{{ card.name }}"
-                    >
-                </div>
+                {% if normalized_type == 'pal' %}
+                    {% set normalized_type = 'friend' %}
+                {% elif normalized_type == 'intelligence' %}
+                    {% set normalized_type = 'wit' %}
+                {% endif %}
 
-                <div class="support-name">
-                    {{ card.name }}
-                </div>
+                <a
+                    class="support-card"
+                    href="{{ url_for('support_detail', card_id=card.id) }}"
+                    data-rarity="{{ (card.rarity|default(''))|trim|upper }}"
+                    data-type="{{ normalized_type }}"
+                    data-search="{{ (
+                        (card.name|default('')) ~ ' ' ~
+                        (card.title|default('')) ~ ' ' ~
+                        (card.id|default(''))
+                    )|lower|e }}"
+                >
 
-            </a>
+                    <div class="support-image-box">
+                        <img
+                            class="support-image"
+                            src="{{ url_for(
+                                'static',
+                                filename='images/support_cards/' ~
+                                    card.type|lower ~ '/' ~
+                                    card.thumb_image
+                            ) }}"
+                            alt="{{ card.name }}"
+                        >
+                    </div>
+
+                    <div class="support-name">
+                        {{ card.name }}
+                    </div>
+
+                </a>
 
             {% endfor %}
         </div>
 
+        <div id="noResults" class="support-no-results">
+            No support cards match the selected filters.
+        </div>
+
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("supportSearch");
+        const clearButton = document.getElementById("clearFilters");
+        const rarityButtons = Array.from(
+            document.querySelectorAll(".rarity-filter")
+        );
+        const typeButtons = Array.from(
+            document.querySelectorAll(".type-filter")
+        );
+        const cards = Array.from(
+            document.querySelectorAll(".support-card")
+        );
+        const status = document.getElementById("filterStatus");
+        const noResults = document.getElementById("noResults");
+
+        const selectedRarities = new Set();
+        const selectedTypes = new Set();
+
+        function normalizeText(value) {
+            return String(value || "")
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .trim();
+        }
+
+        function refreshButton(button, selectedSet, dataKey) {
+            const value = button.dataset[dataKey];
+            const active = selectedSet.has(value);
+
+            button.classList.toggle("active", active);
+            button.setAttribute(
+                "aria-pressed",
+                active ? "true" : "false"
+            );
+        }
+
+        function refreshAllButtons() {
+            rarityButtons.forEach(function (button) {
+                refreshButton(
+                    button,
+                    selectedRarities,
+                    "rarity"
+                );
+            });
+
+            typeButtons.forEach(function (button) {
+                refreshButton(
+                    button,
+                    selectedTypes,
+                    "type"
+                );
+            });
+        }
+
+        function toggleValue(setObject, value) {
+            if (setObject.has(value)) {
+                setObject.delete(value);
+            } else {
+                setObject.add(value);
+            }
+        }
+
+        function applyFilters() {
+            const query = normalizeText(searchInput.value);
+            let visibleCount = 0;
+
+            cards.forEach(function (card) {
+                const cardRarity = card.dataset.rarity || "";
+                const cardType = card.dataset.type || "";
+                const searchable = normalizeText(
+                    card.dataset.search
+                );
+
+                const rarityMatches =
+                    selectedRarities.size === 0
+                    || selectedRarities.has(cardRarity);
+
+                const typeMatches =
+                    selectedTypes.size === 0
+                    || selectedTypes.has(cardType);
+
+                const searchMatches =
+                    query === ""
+                    || searchable.includes(query);
+
+                const showCard =
+                    rarityMatches
+                    && typeMatches
+                    && searchMatches;
+
+                card.hidden = !showCard;
+
+                if (showCard) {
+                    visibleCount += 1;
+                }
+            });
+
+            noResults.style.display =
+                visibleCount === 0 ? "block" : "none";
+
+            const activeRarities =
+                Array.from(selectedRarities).join(", ");
+
+            const activeTypes =
+                Array.from(selectedTypes)
+                    .map(function (type) {
+                        return type.charAt(0).toUpperCase()
+                            + type.slice(1);
+                    })
+                    .join(", ");
+
+            const statusParts = [
+                "Showing " + visibleCount
+                + " of " + cards.length + " cards"
+            ];
+
+            if (activeRarities) {
+                statusParts.push(activeRarities);
+            }
+
+            if (activeTypes) {
+                statusParts.push(activeTypes);
+            }
+
+            status.textContent = statusParts.join(" · ");
+        }
+
+        rarityButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                toggleValue(
+                    selectedRarities,
+                    button.dataset.rarity
+                );
+
+                refreshAllButtons();
+                applyFilters();
+            });
+        });
+
+        typeButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                toggleValue(
+                    selectedTypes,
+                    button.dataset.type
+                );
+
+                refreshAllButtons();
+                applyFilters();
+            });
+        });
+
+        searchInput.addEventListener(
+            "input",
+            applyFilters
+        );
+
+        clearButton.addEventListener("click", function () {
+            selectedRarities.clear();
+            selectedTypes.clear();
+            searchInput.value = "";
+
+            refreshAllButtons();
+            applyFilters();
+            searchInput.focus();
+        });
+
+        refreshAllButtons();
+        applyFilters();
+    });
+</script>
 
 {% endblock %}
