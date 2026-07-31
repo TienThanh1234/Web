@@ -24,7 +24,25 @@ app.secret_key = os.environ.get(
 
 BASE_DIR = Path(__file__).resolve().parent
 USERS_FILE = BASE_DIR / "users.csv"
+RACES_CSV = BASE_DIR / "races.csv"
 
+def read_csv_file(file_path):
+    rows = []
+
+    try:
+        with open(
+            file_path,
+            "r",
+            encoding="utf-8-sig",
+            newline=""
+        ) as file:
+            reader = csv.DictReader(file)
+            rows = list(reader)
+
+    except FileNotFoundError:
+        print(f"Không tìm thấy file: {file_path}")
+
+    return rows
 
 # =========================
 # COMMON HELPERS
@@ -130,7 +148,56 @@ def create_user(username, password):
             "password_hash": generate_password_hash(password)
         })
 
+# =========================
+# RACES
+# =========================
+def load_races():
+    return read_csv_file("races.csv")
 
+
+def load_items_by_id():
+    items = read_csv_file("items.csv")
+
+    return {
+        item.get("id", "").strip(): item
+        for item in items
+        if item.get("id", "").strip()
+    }
+
+
+def load_race_rewards(race_slug):
+    reward_rows = read_csv_file("race_rewards.csv")
+    items_by_id = load_items_by_id()
+
+    rewards = []
+
+    for reward in reward_rows:
+        if reward.get("race_slug", "").strip() != race_slug:
+            continue
+
+        item_id = reward.get("item_id", "").strip()
+        item = items_by_id.get(item_id, {})
+
+        rewards.append({
+            "item_id": item_id,
+            "item_name": item.get("name", item_id),
+            "item_image": item.get("image", "default_item.png"),
+            "quantity": reward.get("quantity", ""),
+            "drop_rate": reward.get("drop_rate", ""),
+            "sort_order": reward.get("sort_order", "")
+        })
+
+    return rewards
+
+
+def load_race_fans(race_slug):
+    fan_rows = read_csv_file("race_fans.csv")
+
+    return [
+        row
+        for row in fan_rows
+        if row.get("race_slug", "").strip() == race_slug
+    ]
 # =========================
 # CHARACTER
 # =========================
@@ -933,6 +1000,50 @@ def item_list():
         "items.html",
         items=items
     )
+
+# =========================
+# RACES ROUTES
+# =========================
+
+@app.route("/races")
+def races():
+    race_list = load_races()
+
+    racetracks = sorted({
+        race["racetrack"]
+        for race in race_list
+        if race.get("racetrack") and race["racetrack"] != "Varies"
+    })
+
+    return render_template(
+        "races.html",
+        races=race_list,
+        racetracks=racetracks
+    )
+
+@app.route("/races/<slug>")
+def race_detail(slug):
+    race = next(
+        (
+            race
+            for race in load_races()
+            if race.get("slug", "").strip() == slug
+        ),
+        None
+    )
+
+    if race is None:
+        abort(404)
+
+    rewards = load_race_rewards(slug)
+    fans = load_race_fans(slug)
+
+    return render_template(
+        "races_detail.html",
+        race=race,
+        rewards=rewards,
+        fans=fans
+    )
 # =========================
 # OTHER ROUTES
 # =========================
@@ -941,6 +1052,8 @@ def item_list():
 @login_required
 def banner_history():
     return render_template("banner_history.html")
+
+
 
 
 @app.route("/items")
