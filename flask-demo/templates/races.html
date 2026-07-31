@@ -1,0 +1,1005 @@
+{% extends "base.html" %}
+
+{% block title %}Races{% endblock %}
+
+{% block content %}
+
+<style>
+    .race-page {
+        min-height: calc(100vh - 72px);
+        background: #f7f7f7;
+        padding: 24px 0 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .race-container {
+        width: 1320px;
+        max-width: 96%;
+        margin: 0 auto;
+    }
+
+    .race-page-title {
+        margin-bottom: 20px;
+        color: #222222;
+        font-size: 34px;
+        font-weight: 800;
+    }
+
+    /* ================= FILTER BOX ================= */
+
+    .race-filter-box {
+        margin-bottom: 40px;
+        padding: 28px 32px;
+        border: 2px solid #82c3c3;
+        border-radius: 9px;
+        background: #eeeeee;
+    }
+
+    .reset-race-filters {
+        display: inline-block;
+        margin-bottom: 14px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        color: #5d4df5;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .reset-race-filters:hover {
+        text-decoration: underline;
+    }
+
+    .race-search {
+        width: 100%;
+        height: 48px;
+        margin-bottom: 16px;
+        padding: 0 12px;
+        border: 2px solid #c7c7c7;
+        border-radius: 8px;
+        background: #ffffff;
+        font-size: 20px;
+    }
+
+    .race-filter-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .race-filter-label {
+        width: 120px;
+        color: #111111;
+        font-size: 20px;
+    }
+
+    .race-select {
+        min-width: 195px;
+        height: 48px;
+        padding: 0 12px;
+        border: 2px solid #c7c7c7;
+        border-radius: 7px;
+        background: #ffffff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .race-checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        margin-top: 14px;
+    }
+
+    .race-checkbox-label {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-size: 19px;
+        cursor: pointer;
+    }
+
+    .race-checkbox-label input {
+        width: 26px;
+        height: 26px;
+        accent-color: #5f5bea;
+        cursor: pointer;
+    }
+
+    /* ================= GRADE FILTERS ================= */
+
+    .race-grade-filters {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin-top: 17px;
+    }
+
+    .race-grade-button {
+        padding: 0;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+
+        /*
+         * Mặc định: làm badge tối đi để dễ thấy badge nào đang được chọn.
+         * Nhiều grade có thể active cùng lúc vì JS dùng Set.
+         */
+        opacity: 0.58;
+        filter: brightness(0.45) saturate(0.55);
+
+        transition:
+            transform 0.15s ease,
+            filter 0.15s ease,
+            opacity 0.15s ease;
+    }
+
+    .race-grade-button img {
+        display: block;
+        width: auto;
+        height: 42px;
+        object-fit: contain;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    /* Hover badge chưa chọn: sáng lên nhẹ để báo có thể click */
+    .race-grade-button:hover {
+        transform: translateY(-2px);
+        opacity: 0.82;
+        filter: brightness(0.72) saturate(0.8);
+    }
+
+    /*
+     * Badge đang được chọn:
+     * trả lại màu ảnh gốc + sáng hơn một chút.
+     * Có thể chọn GIII + GII + các grade khác cùng lúc.
+     */
+    .race-grade-button.active {
+        transform: translateY(-3px) scale(1.05);
+        opacity: 1;
+        filter:
+            brightness(1.12)
+            saturate(1.18)
+            drop-shadow(0 2px 5px rgba(0, 0, 0, 0.25));
+    }
+
+    .race-grade-button.active:hover {
+        opacity: 1;
+        filter:
+            brightness(1.2)
+            saturate(1.22)
+            drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+    }
+
+    /* ================= RACE LIST ================= */
+
+    .race-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .race-item {
+        min-height: 108px;
+        padding: 9px 14px;
+
+        display: grid;
+        grid-template-columns:
+            180px
+            minmax(285px, 1fr)
+            120px
+            125px
+            115px
+            105px;
+        align-items: center;
+        column-gap: 16px;
+
+        background: #f7f7f7;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .race-item:nth-child(even) {
+        background: #eeeeee;
+    }
+
+    /* Banner */
+
+    .race-list-banner-box {
+        width: 176px;
+        height: 88px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .race-list-banner {
+        display: block;
+        width: 176px;
+        height: 88px;
+        object-fit: contain;
+        border: 1px solid #9a6b3d;
+        border-radius: 4px;
+    }
+
+    /* Race name */
+
+    .race-list-name {
+        padding-left: 5px;
+        color: #111111;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+
+    /* Race information columns */
+
+    .race-list-column {
+        min-width: 0;
+    }
+
+    .race-list-main {
+        margin-bottom: 5px;
+        color: #111111;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    .race-list-sub {
+        color: #454545;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
+
+    /* Grade and Details */
+
+    .race-list-grade-column {
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .race-list-grade-image {
+        display: block;
+        width: 96px;
+        height: 38px;
+        object-fit: contain;
+    }
+
+    .race-list-grade-fallback {
+        min-width: 96px;
+        min-height: 35px;
+        padding: 3px 17px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #ffffff;
+        background: #35bd57;
+        border-bottom: 4px solid #248c3e;
+
+        font-size: 21px;
+        font-weight: 800;
+
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            88% 50%,
+            100% 100%,
+            0 100%
+        );
+    }
+
+    .race-list-details {
+        margin-top: 3px;
+        color: #604cff;
+        font-size: 18px;
+        line-height: 1.2;
+        text-decoration: none;
+    }
+
+    .race-list-details:hover {
+        color: #3e2bd9;
+        text-decoration: underline;
+    }
+
+    .race-empty {
+        display: none;
+        padding: 30px;
+        background: #ffffff;
+        color: #555555;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 1100px) {
+        .race-item {
+            grid-template-columns:
+                165px
+                minmax(220px, 1fr)
+                110px
+                110px
+                100px
+                100px;
+            column-gap: 10px;
+        }
+
+        .race-list-banner-box,
+        .race-list-banner {
+            width: 160px;
+            height: 80px;
+        }
+
+        .race-list-name {
+            font-size: 20px;
+        }
+
+        .race-list-main,
+        .race-list-sub {
+            font-size: 17px;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .race-item {
+            grid-template-columns: 150px 1fr 100px;
+            row-gap: 13px;
+        }
+
+        .race-list-column {
+            display: none;
+        }
+
+        .race-list-banner-box,
+        .race-list-banner {
+            width: 145px;
+            height: 73px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .race-filter-box {
+            padding: 20px 15px;
+        }
+
+        .race-filter-row {
+            display: block;
+        }
+
+        .race-filter-label {
+            width: auto;
+            margin-bottom: 5px;
+        }
+
+        .race-select {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 520px) {
+        .race-item {
+            grid-template-columns: 110px 1fr;
+            padding: 12px 8px;
+        }
+
+        .race-list-banner-box,
+        .race-list-banner {
+            width: 105px;
+            height: 55px;
+        }
+
+        .race-list-name {
+            padding-left: 8px;
+            font-size: 17px;
+        }
+
+        .race-list-grade-column {
+            grid-column: 1 / 3;
+        }
+    }
+</style>
+
+
+<div class="race-page">
+    <div class="race-container">
+
+        <h1 class="race-page-title">Race Database</h1>
+
+        <section class="race-filter-box">
+
+            <button
+                type="button"
+                class="reset-race-filters"
+                id="resetRaceFilters"
+            >
+                × Reset filters
+            </button>
+
+            <input
+                type="text"
+                id="raceSearch"
+                class="race-search"
+                placeholder="Search races"
+                autocomplete="off"
+            >
+
+            <div class="race-filter-row">
+                <label
+                    class="race-filter-label"
+                    for="racetrackFilter"
+                >
+                    Racetrack:
+                </label>
+
+                <select
+                    id="racetrackFilter"
+                    class="race-select"
+                >
+                    <option value="">Any</option>
+
+                    {% for racetrack in racetracks %}
+                        <option value="{{ racetrack|lower }}">
+                            {{ racetrack }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="race-filter-row">
+                <label
+                    class="race-filter-label"
+                    for="directionFilter"
+                >
+                    Direction:
+                </label>
+
+                <select
+                    id="directionFilter"
+                    class="race-select"
+                >
+                    <option value="">Any</option>
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                    <option value="straight">Straight</option>
+                    <option value="varies">Varies</option>
+                </select>
+            </div>
+
+            <div class="race-filter-row">
+                <label
+                    class="race-filter-label"
+                    for="seasonFilter"
+                >
+                    Season:
+                </label>
+
+                <select
+                    id="seasonFilter"
+                    class="race-select"
+                >
+                    <option value="">Any</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                    <option value="winter">Winter</option>
+                </select>
+            </div>
+
+            <div class="race-filter-row">
+                <label
+                    class="race-filter-label"
+                    for="timeFilter"
+                >
+                    Time of Day:
+                </label>
+
+                <select
+                    id="timeFilter"
+                    class="race-select"
+                >
+                    <option value="">Any</option>
+                    <option value="daytime">Daytime</option>
+                    <option value="nighttime">Nighttime</option>
+                </select>
+            </div>
+
+            <div class="race-checkbox-group">
+                <label class="race-checkbox-label">
+                    <input
+                        type="checkbox"
+                        class="surface-filter"
+                        value="turf"
+                    >
+                    Turf
+                </label>
+
+                <label class="race-checkbox-label">
+                    <input
+                        type="checkbox"
+                        class="surface-filter"
+                        value="dirt"
+                    >
+                    Dirt
+                </label>
+            </div>
+
+            <div class="race-checkbox-group">
+                {% for distance in ["Short", "Mile", "Medium", "Long"] %}
+                    <label class="race-checkbox-label">
+                        <input
+                            type="checkbox"
+                            class="distance-filter"
+                            value="{{ distance|lower }}"
+                        >
+                        {{ distance }}
+                    </label>
+                {% endfor %}
+            </div>
+
+            <div class="race-checkbox-group">
+                <label class="race-checkbox-label">
+                    <input
+                        type="checkbox"
+                        class="core-filter"
+                        value="true"
+                    >
+                    Core Distance
+                </label>
+
+                <label class="race-checkbox-label">
+                    <input
+                        type="checkbox"
+                        class="core-filter"
+                        value="false"
+                    >
+                    Non-Core Distance
+                </label>
+            </div>
+
+            {# ============================================================
+               GRADE FILTER IMAGES
+               Đổi tên file ở đây nếu file trong static/images/races/grades
+               của bạn có tên khác.
+               ============================================================ #}
+            {% set grade_filter_images = {
+                "Pre-OP": "pre_op.png",
+                "OP": "op.png",
+                "GIII": "giii.png",
+                "GII": "gii.png",
+                "GI": "gi.png"
+            } %}
+
+            <div class="race-grade-filters">
+                {% for grade in ["Pre-OP", "OP", "GIII", "GII", "GI"] %}
+                    <button
+                        type="button"
+                        class="race-grade-button"
+                        data-grade="{{ grade }}"
+                        title="{{ grade }}"
+                    >
+                        <img
+                            src="{{ url_for(
+                                'static',
+                                filename='images/races/grades/' ~ grade_filter_images[grade]
+                            ) }}"
+                            alt="{{ grade }}"
+                        >
+                    </button>
+                {% endfor %}
+            </div>
+
+        </section>
+
+
+        <section class="race-list" id="raceList">
+
+            {% for race in races %}
+
+                {% if race.career_class == "Junior Class" %}
+                    {% set career_class_display = "Junior C." %}
+                {% elif race.career_class == "Classic Class" %}
+                    {% set career_class_display = "Classic C." %}
+                {% elif race.career_class == "Senior Class" %}
+                    {% set career_class_display = "Senior C." %}
+                {% else %}
+                    {% set career_class_display = race.career_class %}
+                {% endif %}
+
+                {% if race.schedule_half == "First Half" %}
+                    {% set schedule_half_display = "Early" %}
+                {% elif race.schedule_half == "Second Half" %}
+                    {% set schedule_half_display = "Late" %}
+                {% else %}
+                    {% set schedule_half_display = race.schedule_half %}
+                {% endif %}
+
+                <article
+                    class="race-item"
+                    data-name="{{ race.name|lower }}"
+                    data-racetrack="{{ race.racetrack|lower }}"
+                    data-direction="{{ race.direction|lower }}"
+                    data-season="{{ race.season|lower }}"
+                    data-time="{{ race.time_of_day|lower }}"
+                    data-surface="{{ race.terrain|lower }}"
+                    data-distance="{{ race.distance_type|lower }}"
+                    data-core="{{ race.core_distance|default('', true)|string|lower }}"
+                    data-grade="{{ race.grade }}"
+                >
+
+                    <div class="race-list-banner-box">
+                        <img
+                            class="race-list-banner"
+                            src="{{ url_for(
+                                'static',
+                                filename='images/races/banners/' ~ race.image
+                            ) }}"
+                            alt="{{ race.name }}"
+                        >
+                    </div>
+
+                    <div class="race-list-name">
+                        {{ race.name }}
+                    </div>
+
+                    <div class="race-list-column">
+                        <div class="race-list-main">
+                            {{ career_class_display }}
+                        </div>
+
+                        <div class="race-list-sub">
+                            {{ schedule_half_display }}
+                            {{ race.schedule_month[:3] }}
+                        </div>
+                    </div>
+
+                    <div class="race-list-column">
+                        <div class="race-list-main">
+                            {{ race.terrain }}
+
+                            {% if race.direction == "Right" %}
+                                →
+                            {% elif race.direction == "Left" %}
+                                ←
+                            {% elif race.direction == "Straight" %}
+                                ↑
+                            {% endif %}
+                        </div>
+
+                        <div class="race-list-sub">
+                            {{ race.racetrack }}
+                        </div>
+                    </div>
+
+                    <div class="race-list-column">
+                        <div class="race-list-main">
+                            {{ race.distance_type }}
+                        </div>
+
+                        <div class="race-list-sub">
+                            {% if race.distance_m and race.distance_m != "Varies" %}
+                                {{ race.distance_m }} m
+                            {% else %}
+                                Varies
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="race-list-grade-column">
+
+                        {% if race.grade_badge_image %}
+                            <img
+                                class="race-list-grade-image"
+                                src="{{ url_for(
+                                    'static',
+                                    filename='images/races/grades/' ~
+                                             race.grade_badge_image
+                                ) }}"
+                                alt="{{ race.grade }}"
+                                onerror="
+                                    this.style.display = 'none';
+                                    this.nextElementSibling.style.display = 'flex';
+                                "
+                            >
+
+                            <div
+                                class="race-list-grade-fallback"
+                                style="display: none;"
+                            >
+                                {{ race.grade }}
+                            </div>
+                        {% else %}
+                            <div class="race-list-grade-fallback">
+                                {{ race.grade }}
+                            </div>
+                        {% endif %}
+
+                        <a
+                            class="race-list-details"
+                            href="{{ url_for(
+                                'race_detail',
+                                slug=race.slug
+                            ) }}"
+                        >
+                            Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+            {% endfor %}
+
+            <div class="race-empty" id="raceEmpty">
+                No races matched the selected filters.
+            </div>
+
+        </section>
+
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput =
+            document.getElementById("raceSearch");
+
+        const racetrackFilter =
+            document.getElementById("racetrackFilter");
+
+        const directionFilter =
+            document.getElementById("directionFilter");
+
+        const seasonFilter =
+            document.getElementById("seasonFilter");
+
+        const timeFilter =
+            document.getElementById("timeFilter");
+
+        const surfaceFilters =
+            document.querySelectorAll(".surface-filter");
+
+        const distanceFilters =
+            document.querySelectorAll(".distance-filter");
+
+        const coreFilters =
+            document.querySelectorAll(".core-filter");
+
+        const gradeButtons =
+            document.querySelectorAll(".race-grade-button");
+
+        const raceItems =
+            document.querySelectorAll(".race-item");
+
+        const resetButton =
+            document.getElementById("resetRaceFilters");
+
+        const emptyMessage =
+            document.getElementById("raceEmpty");
+
+        const selectedGrades = new Set();
+
+
+        function getCheckedValues(selector) {
+            return Array.from(
+                document.querySelectorAll(selector + ":checked")
+            ).map(function (input) {
+                return input.value;
+            });
+        }
+
+
+        function filterRaces() {
+            const searchValue =
+                searchInput.value.trim().toLowerCase();
+
+            const racetrackValue =
+                racetrackFilter.value;
+
+            const directionValue =
+                directionFilter.value;
+
+            const seasonValue =
+                seasonFilter.value;
+
+            const timeValue =
+                timeFilter.value;
+
+            const selectedSurfaces =
+                getCheckedValues(".surface-filter");
+
+            const selectedDistances =
+                getCheckedValues(".distance-filter");
+
+            const selectedCoreValues =
+                getCheckedValues(".core-filter");
+
+            let visibleCount = 0;
+
+            raceItems.forEach(function (raceItem) {
+                const name =
+                    raceItem.dataset.name;
+
+                const racetrack =
+                    raceItem.dataset.racetrack;
+
+                const direction =
+                    raceItem.dataset.direction;
+
+                const season =
+                    raceItem.dataset.season;
+
+                const time =
+                    raceItem.dataset.time;
+
+                const surface =
+                    raceItem.dataset.surface;
+
+                const distance =
+                    raceItem.dataset.distance;
+
+                const core =
+                    raceItem.dataset.core;
+
+                const grade =
+                    raceItem.dataset.grade;
+
+                const matchesSearch =
+                    !searchValue ||
+                    name.includes(searchValue);
+
+                const matchesRacetrack =
+                    !racetrackValue ||
+                    racetrack === racetrackValue;
+
+                const matchesDirection =
+                    !directionValue ||
+                    direction === directionValue;
+
+                const matchesSeason =
+                    !seasonValue ||
+                    season === seasonValue;
+
+                const matchesTime =
+                    !timeValue ||
+                    time === timeValue;
+
+                const matchesSurface =
+                    selectedSurfaces.length === 0 ||
+                    selectedSurfaces.includes(surface);
+
+                const matchesDistance =
+                    selectedDistances.length === 0 ||
+                    selectedDistances.includes(distance);
+
+                const matchesCore =
+                    selectedCoreValues.length === 0 ||
+                    selectedCoreValues.includes(core);
+
+                const matchesGrade =
+                    selectedGrades.size === 0 ||
+                    selectedGrades.has(grade);
+
+                const shouldDisplay =
+                    matchesSearch &&
+                    matchesRacetrack &&
+                    matchesDirection &&
+                    matchesSeason &&
+                    matchesTime &&
+                    matchesSurface &&
+                    matchesDistance &&
+                    matchesCore &&
+                    matchesGrade;
+
+                raceItem.style.display =
+                    shouldDisplay ? "grid" : "none";
+
+                if (shouldDisplay) {
+                    visibleCount++;
+                }
+            });
+
+            emptyMessage.style.display =
+                visibleCount === 0 ? "block" : "none";
+        }
+
+
+        gradeButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                const grade =
+                    button.dataset.grade;
+
+                if (selectedGrades.has(grade)) {
+                    selectedGrades.delete(grade);
+                    button.classList.remove("active");
+                } else {
+                    selectedGrades.add(grade);
+                    button.classList.add("active");
+                }
+
+                filterRaces();
+            });
+        });
+
+
+        searchInput.addEventListener(
+            "input",
+            filterRaces
+        );
+
+        racetrackFilter.addEventListener(
+            "change",
+            filterRaces
+        );
+
+        directionFilter.addEventListener(
+            "change",
+            filterRaces
+        );
+
+        seasonFilter.addEventListener(
+            "change",
+            filterRaces
+        );
+
+        timeFilter.addEventListener(
+            "change",
+            filterRaces
+        );
+
+        [
+            ...surfaceFilters,
+            ...distanceFilters,
+            ...coreFilters
+        ].forEach(function (input) {
+            input.addEventListener(
+                "change",
+                filterRaces
+            );
+        });
+
+
+        resetButton.addEventListener("click", function () {
+            searchInput.value = "";
+            racetrackFilter.value = "";
+            directionFilter.value = "";
+            seasonFilter.value = "";
+            timeFilter.value = "";
+
+            document
+                .querySelectorAll(
+                    ".surface-filter, " +
+                    ".distance-filter, " +
+                    ".core-filter"
+                )
+                .forEach(function (input) {
+                    input.checked = false;
+                });
+
+            selectedGrades.clear();
+
+            gradeButtons.forEach(function (button) {
+                button.classList.remove("active");
+            });
+
+            filterRaces();
+        });
+
+
+        filterRaces();
+    });
+</script>
+
+{% endblock %}

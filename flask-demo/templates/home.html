@@ -46,7 +46,7 @@ Home
         {% else %}
 
             <h1>
-                WELCOME, NƠI TÔI SẼ CHỈ CHO BẠN TẤT CẢ NHỮNG GÌ VỀ GAME UMAMUSUME
+                WELCOME, NƠI TÔI SẼ CHỈ CHO BẠN TẤT CẢ NHỮNG GÌ VỀ UMAMUSUME!
             </h1>
 
         {% endif %}
@@ -102,6 +102,13 @@ Home
                 <img src="{{ url_for('static', filename='images/scenario_guide.png') }}" alt="Scenario Guide">
             </div>
             <h3>Scenario Guide</h3>
+        </a>
+
+        <a href="{{ url_for('races') }}" class="database-card">
+            <div class="database-image-box">
+                <img src="{{ url_for('static',filename='images/races.png') }}" alt="Races">
+            </div>
+            <h3 class="database-card-title">Races</h3>
         </a>
 
     </div>

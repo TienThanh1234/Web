@@ -1,0 +1,710 @@
+{% extends "base.html" %}
+
+{% block title %}{{ race.name }}{% endblock %}
+
+{% block content %}
+
+<style>
+    .race-detail-page {
+        min-height: calc(100vh - 72px);
+
+        /* Bù padding của content-wrapper trong base.html */
+        margin: -30px -40px;
+        padding: 28px 28px 55px;
+
+        background: #dedede;
+        color: #111;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .race-detail-container {
+        width: 1120px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* ================= HEADER ================= */
+
+    .race-detail-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .race-detail-name {
+        margin: 0 0 20px;
+
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .race-detail-banner {
+        width: 176px;
+        height: 88px;
+
+        object-fit: contain;
+
+        border: 1px solid #996b3d;
+        border-radius: 4px;
+    }
+
+    .race-grade-wrapper {
+        min-height: 70px;
+        margin-top: 22px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .race-grade-image {
+        width: 165px;
+        max-height: 65px;
+        object-fit: contain;
+    }
+
+    /* Dùng khi không có ảnh huy hiệu grade */
+
+    .race-grade-fallback {
+        min-width: 165px;
+        padding: 4px 30px;
+
+        color: #ffffff;
+        background: #35bd57;
+        border-bottom: 5px solid #268d40;
+
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 1.1;
+
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            87% 50%,
+            100% 100%,
+            0 100%
+        );
+    }
+
+    .race-trophy-image {
+        width: 175px;
+        height: 185px;
+        margin: 27px 0 34px;
+
+        object-fit: contain;
+    }
+
+    /* ================= INFORMATION ================= */
+
+    .race-information {
+        width: 560px;
+        max-width: 100%;
+        margin: 0 auto;
+
+        background: #ffffff;
+    }
+
+    .race-information-row {
+        min-height: 51px;
+
+        display: grid;
+        grid-template-columns: minmax(210px, 1.2fr) minmax(150px, 0.8fr);
+        align-items: center;
+    }
+
+    .race-information-row:nth-child(even) {
+        background: #dff2f4;
+    }
+
+    .race-information-label,
+    .race-information-value {
+        padding: 10px 16px;
+
+        font-size: 23px;
+        line-height: 1.3;
+    }
+
+    .race-information-label {
+        font-weight: 700;
+    }
+
+    .race-information-value {
+        text-align: left;
+    }
+
+    /* ================= SCHEDULE ================= */
+
+    .race-schedule-section {
+        margin-top: 29px;
+    }
+
+    .race-section-title {
+        margin: 0 0 12px;
+
+        text-align: center;
+
+        font-size: 29px;
+        font-weight: 500;
+    }
+
+    .race-schedule-card {
+        width: 100%;
+        background: #ffffff;
+    }
+
+    .race-schedule-heading {
+        padding: 16px 20px;
+
+        text-align: center;
+
+        background: #dff2f4;
+
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1.35;
+    }
+
+    .race-schedule-content {
+        padding: 12px 16px 22px;
+    }
+
+    .race-data-block {
+        margin-bottom: 20px;
+    }
+
+    .race-data-label {
+        margin-bottom: 3px;
+
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .race-data-value {
+        font-size: 24px;
+    }
+
+    .race-see-all {
+        margin-left: 18px;
+
+        color: #6551ff;
+        font-size: 21px;
+        text-decoration: none;
+    }
+
+    .race-see-all:hover {
+        color: #4534d6;
+        text-decoration: underline;
+    }
+
+    /* ================= REWARDS ================= */
+
+    .race-rewards-title {
+        margin: 4px 0 13px;
+
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .race-rewards-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(120px, 1fr));
+        gap: 20px 28px;
+    }
+
+    .race-reward-item {
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .race-reward-image {
+        width: 88px;
+        height: 88px;
+
+        object-fit: contain;
+    }
+
+    .race-reward-quantity,
+    .race-reward-rate {
+        font-size: 20px;
+        line-height: 1.45;
+    }
+
+    .race-reward-quantity {
+        margin-top: 5px;
+    }
+
+    /* ================= COURSE IMAGE ================= */
+
+    .race-course-section {
+        margin-top: 35px;
+    }
+
+    .race-course-image {
+        display: block;
+
+        width: 100%;
+        max-width: 1100px;
+        height: auto;
+
+        margin: 0 auto;
+
+        object-fit: contain;
+    }
+
+    .back-to-races {
+        display: inline-block;
+        margin-top: 28px;
+
+        color: #604cff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .back-to-races:hover {
+        text-decoration: underline;
+    }
+
+    /* ================= FAN MODAL ================= */
+
+    .race-fans-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .race-fans-table th,
+    .race-fans-table td {
+        padding: 11px 13px;
+        border-bottom: 1px solid #dddddd;
+
+        font-size: 17px;
+    }
+
+    .race-fans-table th {
+        background: #dff2f4;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 991px) {
+        .race-detail-page {
+            margin: -24px -20px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .race-detail-name {
+            font-size: 30px;
+        }
+
+        .race-information-label,
+        .race-information-value {
+            font-size: 20px;
+        }
+
+        .race-information-row {
+            grid-template-columns: minmax(175px, 1.2fr) 1fr;
+        }
+
+        .race-rewards-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .race-detail-page {
+            margin: -20px -15px;
+            padding: 20px 12px 45px;
+        }
+
+        .race-detail-name {
+            font-size: 27px;
+        }
+
+        .race-information-row {
+            grid-template-columns: 1.35fr 1fr;
+        }
+
+        .race-information-label,
+        .race-information-value {
+            padding: 10px 11px;
+            font-size: 18px;
+        }
+
+        .race-schedule-heading {
+            font-size: 21px;
+        }
+
+        .race-data-label,
+        .race-data-value,
+        .race-rewards-title {
+            font-size: 20px;
+        }
+
+        .race-rewards-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .race-reward-image {
+            width: 78px;
+            height: 78px;
+        }
+    }
+</style>
+
+
+{% macro race_info_row(label, value) %}
+    <div class="race-information-row">
+        <div class="race-information-label">
+            {{ label }}
+        </div>
+
+        <div class="race-information-value">
+            {{ value }}
+        </div>
+    </div>
+{% endmacro %}
+
+
+<div class="race-detail-page">
+    <div class="race-detail-container">
+
+        <!-- ================= HEADER ================= -->
+
+        <section class="race-detail-header">
+            <h1 class="race-detail-name">
+                {{ race.name }}
+            </h1>
+
+            <img
+                class="race-detail-banner"
+                src="{{ url_for(
+                    'static',
+                    filename='images/races/banners/' ~ race.image
+                ) }}"
+                alt="{{ race.name }}"
+            >
+
+            <div class="race-grade-wrapper">
+
+                {% if race.grade_badge_image %}
+                    <img
+                        class="race-grade-image"
+                        src="{{ url_for(
+                            'static',
+                            filename='images/races/grades/' ~
+                                    race.grade_badge_image
+                        ) }}"
+                        alt="{{ race.grade }}"
+                        onerror="
+                            this.style.display = 'none';
+                            this.nextElementSibling.style.display = 'block';
+                        "
+                    >
+
+                    <div
+                        class="race-grade-fallback"
+                        style="display: none;"
+                    >
+                        {{ race.grade }}
+                    </div>
+                {% else %}
+                    <div class="race-grade-fallback">
+                        {{ race.grade }}
+                    </div>
+                {% endif %}
+            </div>
+
+            {% if race.trophy_image %}
+                <img
+                    class="race-trophy-image"
+                    src="{{ url_for(
+                        'static',
+                        filename='images/races/trophies/' ~ race.trophy_image
+                    ) }}"
+                    alt="{{ race.grade }} trophy"
+                >
+            {% endif %}
+
+        </section>
+
+
+
+        <!-- ================= INFORMATION ================= -->
+
+        <section class="race-information">
+
+            {{ race_info_row(
+                "Racetrack",
+                race.racetrack
+            ) }}
+
+            {{ race_info_row(
+                "Direction",
+                race.direction
+            ) }}
+
+            {{ race_info_row(
+                "Participants",
+                race.participants
+            ) }}
+
+            {{ race_info_row(
+                "Grade",
+                race.grade_display or race.grade
+            ) }}
+
+            {{ race_info_row(
+                "Terrain",
+                race.terrain
+            ) }}
+
+            {{ race_info_row(
+                "Distance (type)",
+                race.distance_type
+            ) }}
+
+            {{ race_info_row(
+                "Distance (meters)",
+                race.distance_m
+            ) }}
+
+            {{ race_info_row(
+                "Season",
+                race.season
+            ) }}
+
+            {{ race_info_row(
+                "Time of Day",
+                race.time_of_day
+            ) }}
+
+        </section>
+
+
+        <!-- ================= SCHEDULE ================= -->
+
+        <section class="race-schedule-section">
+
+            <h2 class="race-section-title">
+                Schedule
+            </h2>
+
+            <div class="race-schedule-card">
+
+                <div class="race-schedule-heading">
+                    <div>
+                        {{ race.career_class }}
+                    </div>
+
+                    <div>
+                        {{ race.schedule_month }},
+                        {{ race.schedule_half }}
+                    </div>
+                </div>
+
+                <div class="race-schedule-content">
+
+                    <div class="race-data-block">
+                        <div class="race-data-label">
+                            Fans required
+                        </div>
+
+                        <div class="race-data-value">
+                            {{ race.fans_required }}
+                        </div>
+                    </div>
+
+                    <div class="race-data-block">
+                        <div class="race-data-label">
+                            Fans gained
+                        </div>
+
+                        <div class="race-data-value">
+                            {{ race.first_place_fans }}
+                            for 1st place
+
+                            <a
+                                href="#"
+                                class="race-see-all"
+                                data-toggle="modal"
+                                data-target="#fansModal"
+                            >
+                                See all
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="race-rewards-title">
+                        Rewards
+                    </h3>
+
+                    <div class="race-rewards-grid">
+
+                        {% for reward in rewards %}
+
+                            <div
+                                class="race-reward-item"
+                                title="{{ reward.item_name }}"
+                            >
+                                <img
+                                    class="race-reward-image"
+                                    src="{{ url_for(
+                                        'static',
+                                        filename='images/items/' ~
+                                                 reward.item_image
+                                    ) }}"
+                                    alt="{{ reward.item_name }}"
+                                    data-fallback="{{ url_for(
+                                        'static',
+                                        filename='images/items/default_item.png'
+                                    ) }}"
+                                    onerror="
+                                        this.onerror = null;
+                                        this.src = this.dataset.fallback;
+                                    "
+                                >
+
+                                <div class="race-reward-quantity">
+                                    {{ reward.quantity }}
+                                </div>
+
+                                <div class="race-reward-rate">
+                                    {{ reward.drop_rate }}
+                                </div>
+                            </div>
+
+                        {% else %}
+
+                            <p>
+                                No reward information available.
+                            </p>
+
+                        {% endfor %}
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= COURSE MAP ================= -->
+
+        {% if race.course_image %}
+            <section class="race-course-section">
+                <img
+                    class="race-course-image"
+                    src="{{ url_for(
+                        'static',
+                        filename='images/races/courses/' ~ race.course_image
+                    ) }}"
+                    alt="{{ race.name }} course layout"
+                >
+            </section>
+        {% endif %}
+
+
+        <a
+            href="{{ url_for('races') }}"
+            class="back-to-races"
+        >
+            ← Back to Race Database
+        </a>
+
+    </div>
+</div>
+
+
+<!-- ================= FANS MODAL ================= -->
+
+<div
+    class="modal fade"
+    id="fansModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="fansModalTitle"
+    aria-hidden="true"
+>
+    <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+    >
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5
+                    class="modal-title"
+                    id="fansModalTitle"
+                >
+                    Fans gained — {{ race.name }}
+                </h5>
+
+                <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                >
+                    <span aria-hidden="true">
+                        &times;
+                    </span>
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <table class="race-fans-table">
+
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Fans gained</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        {% for fan in fans %}
+                            <tr>
+                                <td>
+                                    {{ fan.position_name }}
+                                </td>
+
+                                <td>
+                                    {{ fan.fans }}
+                                </td>
+                            </tr>
+
+                        {% else %}
+
+                            <tr>
+                                <td>1st place</td>
+                                <td>
+                                    {{ race.first_place_fans }}
+                                </td>
+                            </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

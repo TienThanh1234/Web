@@ -565,6 +565,7 @@
                             'support_card',
                             'support_detail',
                             'banner_history',
+                            'races',
                             'items',
                             'cm_guide',
                             'scenario_guide',
@@ -619,6 +620,19 @@
                             <i class="fa-solid fa-clock-rotate-left"></i>
                             Banner History
                         </a>
+                        <a
+                            class="
+                            {% if request.endpoint in [
+                                'races',
+                                'race_detail'
+                            ] %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('races') }}"
+                        >
+                            <i class="fa-solid fa-flag-checkered"></i>
+                            Races
+                        </a>    
 
                         <a
                             class="
