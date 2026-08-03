@@ -106,6 +106,47 @@ def text_to_id(text):
     return text.strip("_")
 
 
+
+def normalize_supabase_row(row):
+    """Chuẩn hóa một dòng Supabase thành các chuỗi giống csv.DictReader."""
+    return {
+        str(key): "" if value is None else str(value).strip()
+        for key, value in dict(row or {}).items()
+    }
+
+
+def fetch_all_supabase_rows(
+    table_name,
+    order_column="id",
+    page_size=1000
+):
+    """Đọc toàn bộ dữ liệu Supabase theo từng trang."""
+    rows = []
+    start = 0
+
+    while True:
+        query = supabase.table(table_name).select("*")
+
+        if order_column:
+            query = query.order(order_column)
+
+        response = (
+            query
+            .range(start, start + page_size - 1)
+            .execute()
+        )
+
+        batch = response.data or []
+        rows.extend(batch)
+
+        if len(batch) < page_size:
+            break
+
+        start += page_size
+
+    return rows
+
+
 # =========================
 # ACCOUNT HELPERS
 # =========================
@@ -180,7 +221,8 @@ def load_races():
 
 
 def load_items_by_id():
-    items = read_csv_file("items.csv")
+    """Tạo bảng tra cứu Item theo id từ Supabase."""
+    items = load_items()
 
     return {
         item.get("id", "").strip(): item
@@ -259,34 +301,36 @@ def load_character_details():
 # =========================
 
 def load_skills():
+    """Đọc toàn bộ Skills từ bảng public.skills trên Supabase."""
+    raw_rows = fetch_all_supabase_rows(
+        "skills",
+        order_column="id"
+    )
+
     skills = []
 
-    with open("skills.csv", newline="", encoding="utf-8-sig") as file:
-        reader = csv.DictReader(file)
+    for raw_row in raw_rows:
+        row = normalize_supabase_row(raw_row)
 
-        for row in reader:
-            if not row.get("id"):
-                continue
+        if row.get("id", "") == "":
+            continue
 
-            category = row.get("category", "")
+        category = row.get("category", "")
 
-            if category is None or category.strip() == "":
-                if row.get("rarity", "").strip().lower() == "negative":
-                    category = "negative"
-                else:
-                    category = "passive"
+        if category == "":
+            if row.get("rarity", "").lower() == "negative":
+                category = "negative"
+            else:
+                category = "passive"
 
-            row["category"] = category.strip().lower()
+        row["category"] = category.lower()
+        row["base_duration"] = row.get("base_duration", "")
+        row["short_description"] = make_short_description(
+            row.get("description", "")
+        )
+        row["display_name"] = row.get("name", "")
 
-            row["base_duration"] = row.get("base_duration", "")
-            if row["base_duration"] is None:
-                row["base_duration"] = ""
-            row["base_duration"] = row["base_duration"].strip()
-
-            row["short_description"] = make_short_description(row.get("description", ""))
-            row["display_name"] = row.get("name", "")
-
-            skills.append(row)
+        skills.append(row)
 
     return skills
 
@@ -811,27 +855,31 @@ def load_support_card_training_events(card_id):
 # ITEMS
 # =========================
 def load_items():
+    """Đọc toàn bộ Items từ bảng public.items trên Supabase."""
+    raw_rows = fetch_all_supabase_rows(
+        "items",
+        order_column="id"
+    )
+
     items = []
 
-    with open(
-        "items.csv",
-        "r",
-        encoding="utf-8-sig",
-        newline=""
-    ) as file:
-        reader = csv.DictReader(file)
+    for raw_row in raw_rows:
+        row = normalize_supabase_row(raw_row)
 
-        for row in reader:
-            items.append({
-                "id": row.get("id", "").strip(),
-                "name": row.get("name", "").strip(),
-                "image": row.get("image", "").strip(),
-                "description": row.get("description", "").strip(),
-                "uses": row.get("uses", "").strip(),
-                "how_to_get": row.get("how_to_get", "").strip()
-            })
+        if row.get("id", "") == "":
+            continue
+
+        items.append({
+            "id": row.get("id", ""),
+            "name": row.get("name", ""),
+            "image": row.get("image", ""),
+            "description": row.get("description", ""),
+            "uses": row.get("uses", ""),
+            "how_to_get": row.get("how_to_get", "")
+        })
 
     return items
+
 # =========================
 # HOME
 # =========================
@@ -1039,7 +1087,7 @@ def support_detail(card_id):
             special_events
         ) = load_support_card_training_events(card_id)
 
-        # Phần Skills hiện vẫn đọc từ skills.csv.
+        # Skills hiện được đọc từ bảng public.skills trên Supabase.
         hint_skills = get_skills_by_ids(
             card.get("hint_skill_ids", ""),
             card.get("highlight_skill_ids", "")
@@ -1090,13 +1138,29 @@ def support_detail(card_id):
 # =========================
 
 @app.route("/items")
-def item_list():
-    items = load_items()
+@login_required
+def items():
+    try:
+        item_rows = load_items()
 
-    return render_template(
-        "items.html",
-        items=items
-    )
+        return render_template(
+            "items.html",
+            items=item_rows
+        )
+
+    except Exception:
+        app.logger.exception(
+            "Không thể tải Items từ Supabase."
+        )
+
+        return render_template(
+            "items.html",
+            items=[],
+            load_error=(
+                "Không thể tải dữ liệu Items từ Supabase. "
+                "Hãy kiểm tra bảng items và RLS policy."
+            )
+        ), 500
 
 # =========================
 # RACES ROUTES
@@ -1150,13 +1214,6 @@ def race_detail(slug):
 def banner_history():
     return render_template("banner_history.html")
 
-
-
-
-@app.route("/items")
-@login_required
-def items():
-    return render_template("items.html")
 
 
 # Giữ đường dẫn cũ để tránh lỗi các link chưa sửa
