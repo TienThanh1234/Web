@@ -220,6 +220,69 @@ def load_races():
     return read_csv_file("races.csv")
 
 
+def build_race_slug_by_name():
+    """Tạo bảng tra cứu slug theo tên race, dùng cho linkify_race_names()."""
+    races_by_name = {}
+
+    for race in load_races():
+        name = race.get("name", "").strip()
+        slug = race.get("slug", "").strip()
+
+        if name and slug:
+            races_by_name[name] = slug
+
+    return races_by_name
+
+
+def linkify_race_names(text):
+    """
+    Tự động biến tên race xuất hiện trong 1 đoạn text (vd cột
+    'Conditions' của Secret Events) thành link tới trang race đó.
+
+    Vì dữ liệu race của bạn gộp chung Classic/Senior thành 1 race, nên
+    hậu tố " (Classic)" / " (Senior)" đứng ngay sau tên race trong text
+    vẫn được giữ nguyên hiển thị trong link, nhưng chỉ dùng phần tên
+    race (không tính hậu tố) để tra slug.
+    """
+    if not text:
+        return text
+
+    races_by_name = build_race_slug_by_name()
+
+    if not races_by_name:
+        return text
+
+    # Khớp tên dài trước, để "Tokyo Yushun (Japanese Derby)" (chính
+    # tên race, không phải hậu tố) được match trọn vẹn thay vì dừng
+    # sớm ở "Tokyo Yushun".
+    sorted_names = sorted(races_by_name.keys(), key=len, reverse=True)
+
+    pattern = (
+        "(" + "|".join(re.escape(name) for name in sorted_names) + ")"
+        r"(\s*\((?:Classic|Senior|Junior)\))?"
+    )
+
+    def replace(match):
+        race_name = match.group(1)
+        suffix = match.group(2) or ""
+        slug = races_by_name.get(race_name, "")
+
+        if not slug:
+            return match.group(0)
+
+        url = url_for("race_detail", slug=slug)
+
+        return (
+            f'<a class="tevent-race-link" href="{url}">'
+            f'{race_name}{suffix}</a>'
+        )
+
+    return re.sub(pattern, replace, text)
+
+
+app.jinja_env.filters["linkify_races"] = linkify_race_names
+
+
 def load_items_by_id():
     """Tạo bảng tra cứu Item theo id từ Supabase."""
     items = load_items()
@@ -268,6 +331,25 @@ def load_race_fans(race_slug):
 # CHARACTER
 # =========================
 
+CHARACTER_SKILL_FIELDS = [
+    "unique_skill_ids",
+    "innate_skill_ids",
+    "event_skill_ids",
+    "awakening_lvl2_skill_id",
+    "awakening_lvl2_highlight",
+    "awakening_lvl2_items",
+    "awakening_lvl3_skill_id",
+    "awakening_lvl3_highlight",
+    "awakening_lvl3_items",
+    "awakening_lvl4_skill_id",
+    "awakening_lvl4_highlight",
+    "awakening_lvl4_items",
+    "awakening_lvl5_skill_id",
+    "awakening_lvl5_highlight",
+    "awakening_lvl5_items",
+]
+
+
 def load_characters():
     character_list = []
 
@@ -277,6 +359,14 @@ def load_characters():
         for row in reader:
             row["id"] = int(row["id"])
             row["rarity"] = int(row["rarity"])
+
+            # characters.csv chưa có các cột unique_skill_ids /
+            # innate_skill_ids / awakening_lvlN_... thì tự điền rỗng,
+            # để trang chi tiết không bị lỗi và chỉ đơn giản là không
+            # hiển thị mấy mục đó cho tới khi bạn bổ sung dữ liệu.
+            for field_name in CHARACTER_SKILL_FIELDS:
+                row.setdefault(field_name, "")
+
             character_list.append(row)
 
     return character_list
@@ -294,6 +384,324 @@ def load_character_details():
             character_detail_list.append(row)
 
     return character_detail_list
+
+
+# =========================
+# CHARACTER EPITHETS / SKILLS / AWAKENINGS
+# =========================
+
+def load_character_epithets(character_slug):
+    """
+    Đọc Epithet của 1 character từ character_epithets.csv.
+    Nhiều dòng cùng 'title' sẽ được gộp thành 1 epithet với danh sách requirement.
+    """
+    rows = read_csv_file("character_epithets.csv")
+
+    grouped = {}
+    title_order = []
+
+    for row in rows:
+        if row.get("character_slug", "").strip() != character_slug:
+            continue
+
+        title = row.get("title", "").strip()
+
+        if title == "":
+            continue
+
+        if title not in grouped:
+            grouped[title] = []
+            title_order.append(title)
+
+        requirement = row.get("requirement", "").strip()
+
+        if requirement != "":
+            grouped[title].append(requirement)
+
+    return [
+        {"title": title, "requirements": grouped[title]}
+        for title in title_order
+    ]
+
+
+def get_character_unique_skills(character):
+    """
+    Trả về các bậc (tier) của Unique Skill, kèm nhãn số sao.
+
+    Danh sách skill id được lấy thẳng từ cột 'unique_skill_ids' của
+    chính character (characters.csv) - không qua bảng quan hệ nào cả.
+    Dữ liệu chi tiết skill (tên, icon, mô tả...) luôn được đọc từ
+    bảng public.skills trên Supabase qua get_skills_by_ids().
+
+    Skill gốc (index 0) hiển thị "★ and ★★", mỗi bản nâng cấp
+    tiếp theo tăng thêm 1 sao (★★★+, ★★★★+, ...), giống quy ước của game.
+    """
+    skill_ids_text = character.get("unique_skill_ids", "")
+    skills = get_skills_by_ids(skill_ids_text)
+
+    tiers = []
+
+    for index, skill in enumerate(skills):
+        if index == 0:
+            star_label = "★ and ★★"
+        else:
+            star_label = ("★" * (index + 2)) + "+"
+
+        tiers.append({
+            "star_label": star_label,
+            "skill": skill
+        })
+
+    return tiers
+
+
+def get_character_innate_skills(character):
+    """
+    Trả về danh sách Innate Skill.
+
+    Danh sách skill id lấy từ cột 'innate_skill_ids' của character
+    (characters.csv), dữ liệu chi tiết skill lấy từ Supabase.
+    """
+    return get_skills_by_ids(character.get("innate_skill_ids", ""))
+
+
+def get_character_awakenings(character):
+    """
+    Trả về danh sách Awakening Skill theo từng level (2-5).
+
+    Mỗi level đọc 3 cột trên chính character (characters.csv):
+    awakening_lvlN_skill_id, awakening_lvlN_highlight, awakening_lvlN_items.
+    - Skill (tên, icon, mô tả) lấy từ Supabase qua get_skills_by_ids().
+    - Item icon (Racing Shoes, Winner's Sash, ...) cũng lấy từ Supabase
+      qua load_items_by_id().
+    """
+    items_by_id = load_items_by_id()
+    awakenings = []
+
+    for level in range(2, 6):
+        prefix = f"awakening_lvl{level}_"
+
+        skill_id = character.get(prefix + "skill_id", "").strip()
+        skill = None
+
+        if skill_id != "":
+            matched_skills = get_skills_by_ids(skill_id)
+            skill = matched_skills[0] if matched_skills else None
+
+        item_ids = [
+            item_id.strip()
+            for item_id in character.get(prefix + "items", "").split("|")
+            if item_id.strip()
+        ]
+
+        items = [
+            items_by_id.get(
+                item_id,
+                {
+                    "id": item_id,
+                    "name": item_id,
+                    "image": "",
+                    "description": "",
+                    "uses": "",
+                    "how_to_get": ""
+                }
+            )
+            for item_id in item_ids
+        ]
+
+        if skill is None and not items:
+            continue
+
+        awakenings.append({
+            "level": level,
+            "skill": skill,
+            "highlight": character.get(
+                prefix + "highlight", ""
+            ).strip().lower() == "yes",
+            # Lưu ý: đặt tên là 'materials' chứ không phải 'items',
+            # vì 'items' trùng với method dict.items() có sẵn -> Jinja
+            # sẽ lấy nhầm cái method đó thay vì list dữ liệu của mình.
+            "materials": items
+        })
+
+    return awakenings
+
+
+def get_character_event_skills(character):
+    """
+    Trả về danh sách Skill from events (skill nhận được qua training event).
+
+    Danh sách skill id lấy từ cột 'event_skill_ids' của character
+    (characters.csv), dữ liệu chi tiết skill lấy từ Supabase - giống hệt
+    cách làm với Innate Skill.
+    """
+    return get_skills_by_ids(character.get("event_skill_ids", ""))
+
+
+SCHEDULE_HALF_LABELS = {
+    "first half": "Early",
+    "second half": "Late",
+}
+
+
+def get_races_by_slugs(slugs):
+    """
+    Đọc nhiều Race cùng lúc theo slug, dùng cho mục Objectives ở trang
+    character detail. Hiện tại race vẫn đang lưu ở races.csv (local),
+    chưa đưa lên Supabase, nên đọc thẳng từ đó qua load_races().
+    """
+    normalized_slugs = {
+        slug.strip()
+        for slug in slugs
+        if slug and slug.strip()
+    }
+
+    if not normalized_slugs:
+        return {}
+
+    return {
+        race["slug"]: race
+        for race in load_races()
+        if race.get("slug", "") in normalized_slugs
+    }
+
+
+def get_character_objectives(character_slug):
+    """
+    Trả về danh sách Objective (mốc đua bắt buộc) của 1 character.
+
+    Thứ tự, turn và yêu cầu (Place 1st / Participate in / ...) đọc từ
+    character_objectives.csv - vì đây là dữ liệu riêng theo từng
+    character (cùng 1 race có thể xuất hiện ở turn khác nhau tùy
+    character). Dữ liệu race thật (ảnh, grade, sân đua, cự ly, tháng...)
+    lấy từ bảng public.races trên Supabase qua get_races_by_slugs().
+    """
+    rows = [
+        row
+        for row in read_csv_file("character_objectives.csv")
+        if row.get("character_slug", "").strip() == character_slug
+    ]
+
+    def sort_key(row):
+        try:
+            return int(row.get("sort_order", "") or 0)
+        except ValueError:
+            return 0
+
+    rows.sort(key=sort_key)
+
+    races_by_slug = get_races_by_slugs(
+        [row.get("race_slug", "") for row in rows]
+    )
+
+    objectives = []
+    previous_turn = None
+
+    for index, row in enumerate(rows, start=1):
+        race_slug = row.get("race_slug", "").strip()
+        race = races_by_slug.get(race_slug, {})
+
+        try:
+            turn = int(row.get("turn", "") or 0)
+        except ValueError:
+            turn = 0
+
+        if previous_turn is None:
+            turn_label = f"Turn {turn}"
+        else:
+            turn_label = f"Turn {turn} (previous + {turn - previous_turn})"
+
+        previous_turn = turn
+
+        half_key = race.get("schedule_half", "").strip().lower()
+        half_label = SCHEDULE_HALF_LABELS.get(
+            half_key,
+            race.get("schedule_half", "")
+        )
+
+        month_label = " ".join(
+            part
+            for part in [half_label, race.get("schedule_month", "")]
+            if part
+        )
+
+        distance_m = race.get("distance_m", "")
+
+        info_parts = [
+            race.get("grade", ""),
+            race.get("terrain", ""),
+            (distance_m + "m") if distance_m else "",
+            race.get("distance_type", "")
+        ]
+        info_line = " – ".join(part for part in info_parts if part)
+
+        objectives.append({
+            "index": index,
+            "requirement": row.get("requirement", "").strip(),
+            "race_slug": race_slug,
+            "race_name": race.get("name", race_slug),
+            "race_image": race.get("image", ""),
+            "turn_label": turn_label,
+            "class_label": race.get("career_class", ""),
+            "month_label": month_label,
+            "info_line": info_line
+        })
+
+    return objectives
+
+
+CHARACTER_TRAINING_EVENT_GROUPS = [
+    ("costume", "Costume Events"),
+    ("choices", "Events With Choices"),
+    ("date", "Date Events"),
+    ("secret", "Secret Events"),
+    ("special", "Special Events"),
+    ("after_race", "After a Race"),
+    ("no_choices", "Events Without Choices"),
+]
+
+
+def load_character_training_events(character_slug):
+    """
+    Đọc Training Events của 1 character từ character_training_events.csv,
+    gom nhóm theo cột 'group' (costume / choices / date / secret).
+
+    Cột 'detail' dùng chung 1 cú pháp với Training Events của Support
+    Card (xem render_raw_event_choices trong character_detail.html):
+    - '||' tách các khối lựa chọn (Top / Bot)
+    - '::' tách nhãn lựa chọn và nội dung, ví dụ "Top::Speed +10|..."
+    - '|' xuống dòng trong 1 khối
+    - dòng bắt đầu bằng '!' sẽ được tô màu note (cam)
+    """
+    rows = read_csv_file("character_training_events.csv")
+
+    grouped = {group_key: [] for group_key, _ in CHARACTER_TRAINING_EVENT_GROUPS}
+
+    for row in rows:
+        if row.get("character_slug", "").strip() != character_slug:
+            continue
+
+        group_key = row.get("group", "").strip().lower()
+
+        if group_key not in grouped:
+            continue
+
+        try:
+            sort_order = int(row.get("sort_order", "") or 0)
+        except ValueError:
+            sort_order = 0
+
+        grouped[group_key].append({
+            "event_id": row.get("event_id", "").strip(),
+            "title": row.get("title", "").strip(),
+            "detail": row.get("detail", ""),
+            "sort_order": sort_order
+        })
+
+    for group_key in grouped:
+        grouped[group_key].sort(key=lambda event: event["sort_order"])
+
+    return grouped
 
 
 # =========================
@@ -880,6 +1288,39 @@ def load_items():
 
     return items
 
+
+def get_item_by_id(item_id):
+    """Đọc 1 Item từ Supabase theo id, dùng cho trang chi tiết Item."""
+    normalized_item_id = (item_id or "").strip()
+
+    if normalized_item_id == "":
+        return None
+
+    response = (
+        supabase
+        .table("items")
+        .select("*")
+        .eq("id", normalized_item_id)
+        .limit(1)
+        .execute()
+    )
+
+    rows = response.data or []
+
+    if not rows:
+        return None
+
+    row = normalize_supabase_row(rows[0])
+
+    return {
+        "id": row.get("id", ""),
+        "name": row.get("name", ""),
+        "image": row.get("image", ""),
+        "description": row.get("description", ""),
+        "uses": row.get("uses", ""),
+        "how_to_get": row.get("how_to_get", "")
+    }
+
 # =========================
 # HOME
 # =========================
@@ -1005,7 +1446,18 @@ def character_detail(slug):
 
     for character in character_list:
         if character.get("slug", "") == slug:
-            return render_template("character_detail.html", character=character)
+            return render_template(
+                "character_detail.html",
+                character=character,
+                epithets=load_character_epithets(slug),
+                unique_skills=get_character_unique_skills(character),
+                innate_skills=get_character_innate_skills(character),
+                event_skills=get_character_event_skills(character),
+                awakenings=get_character_awakenings(character),
+                objectives=get_character_objectives(slug),
+                training_events=load_character_training_events(slug),
+                training_event_groups=CHARACTER_TRAINING_EVENT_GROUPS
+            )
 
     return "Character not found", 404
 
@@ -1161,6 +1613,17 @@ def items():
                 "Hãy kiểm tra bảng items và RLS policy."
             )
         ), 500
+
+
+@app.route("/items/<item_id>")
+@login_required
+def item_detail(item_id):
+    item = get_item_by_id(item_id)
+
+    if item is None:
+        abort(404)
+
+    return render_template("item_detail.html", item=item)
 
 # =========================
 # RACES ROUTES

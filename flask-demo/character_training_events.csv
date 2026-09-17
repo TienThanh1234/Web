@@ -1,0 +1,38 @@
+character_slug,group,event_id,title,detail,sort_order
+king-halo,costume,the_outfit_that_suits_me_most,The Outfit That Suits Me Most,Top::Speed +10|Guts +10||Bot::Power +20,1
+king-halo,costume,running_isn_t_everything,Running Isn't Everything,Top::Stamina +20||Bot::Speed +10|Power +10,2
+king-halo,costume,manners_are_common_sense,Manners Are Common Sense,Top::Guts +20|(random) Get Practice Perfect status||Bot::Stamina +10|Wit +10|(random) Get Practice Perfect status,3
+king-halo,choices,movies_are_full_of_learning_opportunities,Movies Are Full of Learning Opportunities,Top::Speed +5|Guts +5||Bot::Stamina +10,1
+king-halo,choices,the_king_knows_no_exhaustion,The King Knows No Exhaustion,Top::Energy +5|Mood +1||Bot::Power +10,2
+king-halo,choices,first_rate_in_studies_too,First-Rate in Studies Too,Top::Wit +10|Skill points +15||Bot::Outer Swell hint +1,3
+king-halo,choices,after_school_soda,After-School Soda,Top::Guts +10|Studious hint +1||Bot::Speed +20,4
+king-halo,choices,three_heads_are_better_than_one,Three Heads Are Better than One,Top::Wit +20||Bot::Stamina +10|Skill points +15,5
+king-halo,choices,sweet_tooth_temptation,Sweet Tooth Temptation,Top::Energy +10|Skill points +5||Bot::!Randomly either (~90%)|Energy +30|Skill points +10|!or (~10%)|Energy +30|Skill points +10|Speed -5|Power +5|Get Slow Metabolism status,6
+king-halo,date,first_rate_spot,First-Rate Spot,Top::Guts +10||Bot::Speed +10,1
+king-halo,date,first_rate_harvest,First-Rate Harvest,Top::Power +5|Guts +5||Bot::Speed +5|Stamina +5,2
+king-halo,date,first_rate_terms,First-Rate Terms,Top::Power +10||Mid::Wit +10||Bot::Guts +10,3
+king-halo,date,crowds_are_no_problem,Crowds Are No Problem,Top::Speed +10||Bot::Power +10,4
+king-halo,date,breaking_curfew_is_second_rate,Breaking Curfew is Second-Rate,Top::Guts +5|Wit +5||Bot::Speed +5|Power +5,5
+king-halo,secret,a_kingly_smile,A Kingly Smile,"conditions::Win the Yasuda Kinen (Classic) or the Yasuda Kinen (Senior)|Win the Satsuki Sho or the Tokyo Yushun (Japanese Derby)|Win the Kikuka Sho or the Arima Kinen|Triggers in Senior Class, Late Dec||reward::All stats +10|Skill points +20",1
+king-halo,secret,after_the_arima_kinen_royal_inheritance,After the Arima Kinen: Royal Inheritance,conditions::Win the Arima Kinen (Senior)||reward::Energy -15|1 random stat +10|Skill points +45|Yayoi Akikawa bond +4||second::After the Arima Kinen: With Gratitude and a Vow,2
+king-halo,special,bonus_at_start,Bonus at start,,1
+king-halo,special,failed_training_get_well_soon,Failed training (Get Well Soon!),,2
+king-halo,special,failed_training_don_t_overdo_it,Failed training (Don't Overdo It!),,3
+king-halo,special,extra_training,Extra Training,,4
+king-halo,special,at_summer_camp_year_2,At Summer Camp (Year 2),,5
+king-halo,special,fan_letter,Fan Letter,,6
+king-halo,special,dance_lesson,Dance Lesson,,7
+king-halo,special,new_year_s_resolutions,New Year's Resolutions,,8
+king-halo,special,new_year_s_shrine_visit,New Year's Shrine Visit,,9
+king-halo,special,acupuncture_just_an_acupuncturist_no_worries,"Acupuncture (Just an Acupuncturist, No Worries! ☆)",,10
+king-halo,after_race,victory_1st,Victory! (1st),,1
+king-halo,after_race,solid_showing_2nd_5th,Solid Showing (2nd-5th),,2
+king-halo,after_race,defeat_6th_or_worse,Defeat (6th or worse),,3
+king-halo,after_race,etsuko_s_elated_coverage,Etsuko's Elated Coverage,,4
+king-halo,after_race,etsuko_s_exhaustive_coverage,Etsuko's Exhaustive Coverage,,5
+king-halo,no_choices,to_pursue_and_be_pursued,To Pursue and Be Pursued,,1
+king-halo,no_choices,we_made_our_debut,We Made Our Debut,,2
+king-halo,no_choices,my_legs,My Legs,,3
+king-halo,no_choices,first_rate_resolve,First-Rate Resolve,,4
+king-halo,no_choices,beyond_the_limelight,Beyond the Limelight,,5
+king-halo,no_choices,the_king_s_worries,The King's Worries,,6
