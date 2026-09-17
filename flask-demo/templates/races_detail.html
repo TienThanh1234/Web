@@ -136,6 +136,28 @@
         text-align: left;
     }
 
+    /* ================= RACE DESCRIPTION ================= */
+
+    .race-description-section {
+        width: 560px;
+        max-width: 100%;
+        margin: 28px auto 0;
+    }
+
+    .race-description-card {
+        padding: 24px 12px;
+
+        background: #dff2f4;
+        border-radius: 6px;
+
+        color: #303030;
+        font-size: 22px;
+        line-height: 1.45;
+
+        /* Giữ nguyên các dòng xuống hàng trong dữ liệu CSV */
+        white-space: pre-line;
+    }
+
     /* ================= SCHEDULE ================= */
 
     .race-schedule-section {
@@ -339,6 +361,11 @@
             font-size: 18px;
         }
 
+        .race-description-card {
+            padding: 18px 12px;
+            font-size: 18px;
+        }
+
         .race-schedule-heading {
             font-size: 21px;
         }
@@ -488,6 +515,28 @@
             ) }}
 
         </section>
+
+
+        <!-- ================= EXTRA RACE INFORMATION ================= -->
+
+        {#
+            Cột được dùng trong races.csv là: description
+
+            Nếu ô description trống hoặc cột chưa tồn tại,
+            toàn bộ bảng này sẽ không xuất hiện.
+        #}
+
+        {% set race_description =
+            race.description|default('', true)|trim
+        %}
+
+        {% if race_description %}
+            <section class="race-description-section">
+                <div class="race-description-card">
+                    {{ race_description }}
+                </div>
+            </section>
+        {% endif %}
 
 
         <!-- ================= SCHEDULE ================= -->

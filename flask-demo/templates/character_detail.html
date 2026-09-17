@@ -1,4 +1,3 @@
-```html
 {% extends "base.html" %}
 
 {% block title %}
@@ -13,7 +12,191 @@
      alt="{{ rank }}">
 {% endmacro %}
 
-<div class="detail-page">
+{% macro render_skill_card(skill, variant='') %}
+<div class="skill-card">
+    <div class="skill-icon-box">
+        <img
+            class="skill-icon"
+            src="{{ url_for('static', filename='images/skills/' ~ skill.icon) }}"
+            alt="{{ skill.name }}"
+        >
+
+        <a class="skill-detail-link" href="{{ url_for('skill_detail', skill_id=skill.id) }}">
+            Details
+        </a>
+    </div>
+
+    <div class="skill-content">
+        <a
+            class="skill-name {% if variant == 'rainbow' %}highlight-rainbow{% elif variant == 'gold' %}highlight-gold{% endif %}"
+            href="{{ url_for('skill_detail', skill_id=skill.id) }}"
+        >
+            {{ skill.name }}
+        </a>
+
+        <div class="skill-description">
+            {{ skill.short_description if skill.short_description else skill.description }}
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro render_raw_tevent_line(raw_line) %}
+    {% set raw_text = (raw_line or '')|trim %}
+
+    {% if raw_text %}
+    <div class="tevent-line {% if raw_text[:1] == '!' %}tevent-note{% endif %}">
+        {% if raw_text[:1] == '!' %}
+            {{ raw_text[1:]|trim }}
+        {% else %}
+            {{ raw_text }}
+        {% endif %}
+    </div>
+    {% endif %}
+{% endmacro %}
+
+{% macro render_tevent_choices(detail) %}
+    {#
+        Cú pháp dùng chung với Training Events của Support Card:
+        - '||' tách các khối lựa chọn (vd Top / Bot)
+        - '::' tách nhãn lựa chọn và nội dung: "Top::Speed +10|Power +10"
+        - '|' xuống dòng trong 1 khối
+        - dòng bắt đầu bằng '!' sẽ tô màu cam (note)
+    #}
+    {% set detail_text = (detail or '')|trim %}
+
+    {% if detail_text %}
+        {% for raw_block in detail_text.split('||') %}
+            {% set block = raw_block|trim %}
+
+            {% if block %}
+                {% set choice_parts = block.split('::', 1) %}
+
+                {% if choice_parts|length == 2 %}
+                    {% set choice_label = choice_parts[0]|trim %}
+                    {% set choice_content = choice_parts[1] %}
+                {% else %}
+                    {% set choice_label = '' %}
+                    {% set choice_content = block %}
+                {% endif %}
+
+                <div class="tevent-choice {% if not choice_label %}no-label{% endif %} {% if loop.index is even %}tevent-choice-alt{% endif %}">
+                    {% if choice_label %}
+                    <div class="tevent-choice-pill">{{ choice_label }}</div>
+                    {% endif %}
+
+                    <div class="tevent-choice-lines">
+                        {% for raw_line in choice_content.split('|') %}
+                            {{ render_raw_tevent_line(raw_line) }}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <div class="tevent-choice no-label">
+            <div class="tevent-choice-lines">
+                <div class="tevent-line tevent-empty">No event information available.</div>
+            </div>
+        </div>
+    {% endif %}
+{% endmacro %}
+
+{% macro render_tevent_condition_reward(detail) %}
+    {% set detail_text = (detail or '')|trim %}
+
+    {% for raw_block in detail_text.split('||') %}
+        {% set block = raw_block|trim %}
+
+        {% if block %}
+            {% set parts = block.split('::', 1) %}
+            {% set section_key = (parts[0]|trim|lower) if parts|length == 2 else '' %}
+            {% set section_content = parts[1] if parts|length == 2 else block %}
+            {% set lines = [] %}
+
+            {% for raw_line in section_content.split('|') %}
+                {% if raw_line.strip() %}
+                    {% set _ = lines.append(raw_line.strip()) %}
+                {% endif %}
+            {% endfor %}
+
+            {% if section_key == 'conditions' %}
+            <div class="tevent-cond-block">
+                <div class="tevent-section-title">Conditions:</div>
+
+                <ul class="tevent-cond-list">
+                    {% for line in lines %}
+                    <li>{{ line | linkify_races | safe }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            {% elif section_key == 'reward' %}
+            <div class="tevent-reward-block">
+                <div class="tevent-section-title">Reward:</div>
+
+                {% for line in lines %}
+                <div class="tevent-line">{{ line }}</div>
+                {% endfor %}
+            </div>
+
+            {% elif section_key == 'second' %}
+            <div class="tevent-second-block">
+                <div class="tevent-section-title">2nd or worse:</div>
+
+                <div class="tevent-second-box">
+                    {% for line in lines %}
+                    <div class="tevent-line">{{ line }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            {% else %}
+            <div class="tevent-choice no-label">
+                <div class="tevent-choice-lines">
+                    {% for line in lines %}
+                        {{ render_raw_tevent_line(line) }}
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{% macro render_tevent_group(title, group_key, events) %}
+{% if events %}
+<div class="tevent-group">
+    <div class="tevent-group-title">{{ title }}</div>
+
+    <div class="tevent-button-list">
+        {% for event in events %}
+        <button
+            type="button"
+            class="tevent-button"
+            onclick="toggleTrainingEvent('{{ group_key }}-{{ event.event_id }}', this)"
+        >
+            {{ event.title }}
+        </button>
+        {% endfor %}
+    </div>
+
+    {% for event in events %}
+    <div class="tevent-detail" id="tevent-{{ group_key }}-{{ event.event_id }}">
+        <div class="tevent-detail-header">{{ event.title }}</div>
+
+        {% if group_key == 'secret' %}
+            {{ render_tevent_condition_reward(event.detail) }}
+        {% else %}
+            {{ render_tevent_choices(event.detail) }}
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+{% endmacro %}
+
+<div class="detail-page" data-skill-url-template="{{ url_for('skill_detail', skill_id='__SKILL_ID__') }}">
 
     <div class="character-detail-container">
 
@@ -272,8 +455,176 @@
 
         </div>
 
+        {% if epithets %}
+        <h2 class="section-title">Epithets</h2>
+
+        <div class="epithet-list">
+            {% for epithet in epithets %}
+            <div class="epithet-box">
+                <div class="epithet-ribbon-cell">
+                    <span class="epithet-ribbon">{{ epithet.title }}</span>
+                </div>
+
+                <ul class="epithet-requirements">
+                    {% for requirement in epithet.requirements %}
+                    <li>{{ requirement }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if unique_skills %}
+        <h2 class="section-title">Unique skills</h2>
+
+        <div class="skill-list">
+            {% for tier in unique_skills %}
+            <div class="tier-bar">{{ tier.star_label }}</div>
+
+            {{ render_skill_card(tier.skill, 'rainbow') }}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if innate_skills %}
+        <h2 class="section-title">Innate skills</h2>
+
+        <div class="skill-list">
+            {% for skill in innate_skills %}
+            {{ render_skill_card(skill) }}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if event_skills %}
+        <h2 class="section-title">Skills from events</h2>
+
+        <div class="skill-list">
+            {% for skill in event_skills %}
+            {{ render_skill_card(skill) }}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if awakenings %}
+        <h2 class="section-title">Awakening skills</h2>
+
+        <div class="skill-list">
+            {% for awakening in awakenings %}
+            <div class="tier-bar">Level {{ awakening.level }}</div>
+
+            {% if awakening.skill %}
+            {{ render_skill_card(awakening.skill, 'gold' if awakening.highlight else '') }}
+            {% endif %}
+
+            {% if awakening.materials %}
+            <div class="awakening-items-row">
+                {% for item in awakening.materials %}
+                {% set item_payload = {
+                    "name": item.get("name", ""),
+                    "image": item.get("image", ""),
+                    "description": item.get("description", ""),
+                    "uses": (
+                        item.get("uses", "").split("|")
+                        if item.get("uses", "")
+                        else []
+                    ),
+                    "how_to_get": (
+                        item.get("how_to_get", "").split("|")
+                        if item.get("how_to_get", "")
+                        else []
+                    )
+                } %}
+                <button
+                    type="button"
+                    class="awakening-item-btn"
+                    title="{{ item.name }}"
+                    onclick='showItemPopup(event, {{ item_payload | tojson }})'
+                >
+                    <img
+                        class="awakening-item-icon"
+                        src="{{ url_for('static', filename='images/items/' ~ item.image) }}"
+                        alt="{{ item.name }}"
+                    >
+                </button>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if objectives %}
+        <h2 class="section-title">Objectives</h2>
+
+        <div class="objective-list">
+            {% for objective in objectives %}
+            <a
+                class="objective-row {{ 'objective-mint' if objective.index is odd else 'objective-white' }}"
+                href="{{ url_for('race_detail', slug=objective.race_slug) }}"
+            >
+                <div class="objective-banner-box">
+                    <img
+                        class="objective-banner"
+                        src="{{ url_for('static', filename='images/races/banners/' ~ objective.race_image) }}"
+                        alt="{{ objective.race_name }}"
+                    >
+                </div>
+
+                <div class="objective-content">
+                    <p class="objective-title">
+                        {{ objective.index }}. {{ objective.requirement }} the {{ objective.race_name }}
+                    </p>
+
+                    <p class="objective-line">{{ objective.turn_label }}</p>
+
+                    <p class="objective-line">
+                        {{ objective.class_label }}{% if objective.month_label %}, {{ objective.month_label }}{% endif %}
+                    </p>
+
+                    {% if objective.info_line %}
+                    <p class="objective-line">{{ objective.info_line }}</p>
+                    {% endif %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if training_events and training_event_groups %}
+        <h2 class="section-title">Training Events</h2>
+
+        <div class="tevent-section">
+            {% for group_key, group_title in training_event_groups %}
+                {{ render_tevent_group(group_title, group_key, training_events.get(group_key, [])) }}
+            {% endfor %}
+        </div>
+        {% endif %}
+
     </div>
 
+</div>
+
+<div id="item-popup" class="item-popup" hidden>
+    <button type="button" class="item-popup-close" onclick="closeItemPopup()">×</button>
+
+    <div class="item-popup-header">
+        <img id="item-popup-icon" class="item-popup-icon" src="" alt="">
+        <h3 id="item-popup-name" class="item-popup-name"></h3>
+    </div>
+
+    <p id="item-popup-description" class="item-popup-description"></p>
+
+    <div id="item-popup-uses-section" class="item-popup-section">
+        <h4>Uses:</h4>
+        <ul id="item-popup-uses" class="item-popup-list"></ul>
+    </div>
+
+    <div id="item-popup-how-section" class="item-popup-section">
+        <h4>How to get:</h4>
+        <ul id="item-popup-how" class="item-popup-list"></ul>
+    </div>
 </div>
 
 <style>
@@ -394,8 +745,9 @@
     .section-title {
         text-align: center;
         font-size: 28px;
+        font-weight: 900;
         margin: 22px 0 12px;
-        color: #111;
+        color: #1c6b66;
     }
 
     .table-box {
@@ -505,6 +857,606 @@
         display: block;
     }
 
+    /* ---------- Epithets ---------- */
+
+    .epithet-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 14px;
+    }
+
+    .epithet-box {
+        background: #ffffff;
+        border-radius: 6px;
+        padding: 20px;
+
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .epithet-ribbon-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .epithet-ribbon {
+        display: inline-block;
+        padding: 10px 22px;
+        background: linear-gradient(180deg, #ffd25a, #f5a623);
+        color: #6b4400;
+        font-weight: 800;
+        font-size: 15px;
+        text-align: center;
+        clip-path: polygon(
+            6% 0%, 94% 0%, 100% 50%, 94% 100%, 6% 100%, 0% 50%
+        );
+    }
+
+    .epithet-requirements {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #111;
+    }
+
+    /* ---------- Skill tier bars (Unique / Awakening) ---------- */
+
+    .skill-list {
+        margin-bottom: 14px;
+    }
+
+    .tier-bar {
+        height: 38px;
+        margin: 14px 0 8px;
+        border-radius: 4px;
+        background: #e0f6f6;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-weight: 700;
+        font-size: 15px;
+        color: #444;
+        letter-spacing: 1px;
+    }
+
+    .skill-list .tier-bar:first-child {
+        margin-top: 0;
+    }
+
+    /* ---------- Skill cards (Unique / Innate / Awakening) ---------- */
+
+    .skill-card {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+
+        background: #ffffff;
+        border-radius: 6px;
+        padding: 16px 18px;
+        margin-bottom: 10px;
+    }
+
+    .skill-icon-box {
+        flex-shrink: 0;
+        width: 60px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .skill-icon {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    .skill-detail-link {
+        font-size: 12px;
+        color: #2f59c5;
+        text-decoration: none;
+    }
+
+    .skill-detail-link:hover {
+        text-decoration: underline;
+    }
+
+    .skill-content {
+        flex: 1;
+        padding-top: 2px;
+    }
+
+    .skill-name {
+        display: inline-block;
+        font-weight: 800;
+        font-size: 17px;
+        margin-bottom: 6px;
+        color: #000;
+        text-decoration: none;
+        line-height: 1.25;
+    }
+
+    .skill-name:hover {
+        text-decoration: underline;
+    }
+
+    .skill-name.highlight-gold {
+        background: #ffc83d;
+        padding: 5px 16px;
+        border-radius: 5px;
+    }
+
+    .skill-name.highlight-rainbow {
+        background: linear-gradient(90deg, #d9f5c4, #ffd0ea, #d9c9ff);
+        padding: 5px 16px;
+        border-radius: 5px;
+    }
+
+    .skill-description {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #222;
+    }
+
+    /* ---------- Awakening item requirements ---------- */
+
+    .awakening-items-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 18px 16px;
+        margin-top: -6px;
+        margin-bottom: 10px;
+    }
+
+    .awakening-item-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        background: #fdf6e3;
+        border: 1px solid #e8d9a0;
+        border-radius: 4px;
+        padding: 2px;
+        display: block;
+        transition: transform 0.12s ease;
+    }
+
+    .awakening-item-btn {
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        display: block;
+    }
+
+    .awakening-item-btn:hover .awakening-item-icon {
+        transform: translateY(-2px);
+        border-color: #d9b400;
+    }
+
+    /* ---------- Objectives ---------- */
+
+    .objective-list {
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 14px;
+    }
+
+    .objective-row {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 14px 20px;
+
+        text-decoration: none;
+        color: inherit;
+        transition: filter 0.12s ease;
+    }
+
+    .objective-row:hover {
+        filter: brightness(0.96);
+    }
+
+    .objective-white {
+        background: #f2f2f2;
+    }
+
+    .objective-mint {
+        background: #dcf1ee;
+    }
+
+    .objective-banner-box {
+        flex-shrink: 0;
+        width: 110px;
+        height: 62px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #ffffff;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .objective-banner {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .objective-content {
+        flex: 1;
+    }
+
+    .objective-title {
+        margin: 0 0 4px;
+        font-size: 17px;
+        font-weight: 800;
+        color: #111;
+        line-height: 1.3;
+    }
+
+    .objective-line {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #222;
+    }
+
+    @media (max-width: 650px) {
+        .objective-row {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .objective-banner-box {
+            width: 100%;
+            height: 70px;
+        }
+    }
+
+    /* ---------- Training Events ---------- */
+
+    .tevent-section {
+        margin-bottom: 14px;
+    }
+
+    .tevent-group {
+        margin-bottom: 10px;
+    }
+
+    .tevent-group-title {
+        font-size: 24px;
+        font-weight: 900;
+        margin: 24px 0 14px;
+        color: #111;
+    }
+
+    .tevent-button-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 16px;
+    }
+
+    .tevent-button {
+        border: 1px solid #d0d0d0;
+        background: #f7f7f7;
+        border-radius: 12px;
+        padding: 14px 18px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+        transition: 0.15s ease;
+        color: #000000;
+    }
+
+    .tevent-button:hover {
+        background: #ffffff;
+        transform: translateY(-2px);
+    }
+
+    .tevent-button.active {
+        background: #ffffff;
+        border-color: #888888;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+    }
+
+    .tevent-detail {
+        display: none;
+        background: #ffffff;
+        margin: 10px 0 18px;
+        overflow: hidden;
+        border: 1px solid #d0d0d0;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+    }
+
+    .tevent-detail.active {
+        display: block;
+    }
+
+    .tevent-detail-header {
+        background: #e5e5e5;
+        padding: 12px 18px 14px;
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 1.25;
+        color: #000000;
+    }
+
+    .tevent-choice {
+        position: relative;
+        padding: 14px 16px 14px 94px;
+        background: #ffffff;
+        border-top: 1px solid #eeeeee;
+        min-height: 82px;
+    }
+
+    .tevent-choice.no-label {
+        padding-left: 18px;
+    }
+
+    .tevent-choice-pill {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 56px;
+        min-height: 38px;
+        border-radius: 12px;
+        background: #eeeeee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        color: #000000;
+    }
+
+    .tevent-choice-lines {
+        font-size: 21px;
+        line-height: 1.35;
+        color: #000000;
+    }
+
+    .tevent-line {
+        margin: 3px 0;
+        white-space: normal;
+    }
+
+    .tevent-choice-alt {
+        background: #dcf1ee;
+    }
+
+    .tevent-section-title {
+        font-weight: 800;
+        font-size: 17px;
+        margin-bottom: 8px;
+        color: #111;
+    }
+
+    .tevent-cond-block {
+        background: #dcf1ee;
+        padding: 14px 18px;
+    }
+
+    .tevent-cond-list {
+        margin: 0;
+        padding-left: 22px;
+        font-size: 16px;
+        line-height: 1.55;
+        color: #111;
+    }
+
+    .tevent-cond-list li {
+        margin-bottom: 3px;
+    }
+
+    .tevent-reward-block {
+        background: #ffffff;
+        border-top: 1px solid #eeeeee;
+        padding: 14px 18px;
+    }
+
+    .tevent-reward-block .tevent-line {
+        font-size: 16px;
+    }
+
+    .tevent-second-block {
+        background: #dcf1ee;
+        border-top: 1px solid #eeeeee;
+        padding: 14px 18px;
+    }
+
+    .tevent-second-box {
+        background: #ffffff;
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin-top: 6px;
+    }
+
+    .tevent-second-box .tevent-line {
+        font-size: 15px;
+    }
+
+    .tevent-note {
+        color: #ff4d25;
+    }
+
+    .tevent-empty {
+        color: #777777;
+        font-style: italic;
+    }
+
+    .tevent-skill-link {
+        color: #5a55ff;
+        text-decoration: none;
+    }
+
+    .tevent-skill-link:hover {
+        text-decoration: underline;
+    }
+
+    .tevent-race-link {
+        color: #5a55ff;
+        text-decoration: none;
+    }
+
+    .tevent-race-link:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 650px) {
+        .tevent-group-title {
+            font-size: 21px;
+        }
+
+        .tevent-button {
+            font-size: 16px;
+            padding: 12px 14px;
+        }
+
+        .tevent-detail-header {
+            font-size: 17px;
+        }
+
+        .tevent-choice {
+            padding-left: 82px;
+        }
+
+        .tevent-choice.no-label {
+            padding-left: 14px;
+        }
+
+        .tevent-choice-pill {
+            left: 14px;
+            width: 50px;
+            font-size: 15px;
+        }
+
+        .tevent-choice-lines {
+            font-size: 17px;
+        }
+    }
+
+    /* ---------- Item detail popup ---------- */
+
+    .item-popup {
+        position: absolute;
+        z-index: 1000;
+        width: 320px;
+        max-width: 88vw;
+
+        background: #dcf1ee;
+        border-radius: 14px;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+        padding: 20px 22px 22px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111111;
+    }
+
+    .item-popup-close {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+
+        border: none;
+        background: transparent;
+        font-size: 22px;
+        line-height: 1;
+        color: #333333;
+        cursor: pointer;
+    }
+
+    .item-popup-header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 10px;
+        padding-right: 22px;
+    }
+
+    .item-popup-icon {
+        width: 56px;
+        height: 56px;
+        flex-shrink: 0;
+        object-fit: contain;
+
+        background: #ffffff;
+        border: 1px solid #999999;
+        border-radius: 6px;
+    }
+
+    .item-popup-name {
+        margin: 0;
+        font-size: 19px;
+        font-weight: 800;
+        line-height: 1.3;
+    }
+
+    .item-popup-description {
+        margin: 0 0 12px;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.5;
+    }
+
+    .item-popup-section {
+        margin-top: 10px;
+    }
+
+    .item-popup-section h4 {
+        margin: 0 0 6px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .item-popup-list {
+        margin: 0;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 650px) {
+        .epithet-box {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+        }
+
+        .epithet-requirements {
+            text-align: left;
+        }
+
+        .skill-card {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .skill-icon-box {
+            flex-direction: row;
+        }
+    }
+
     @media (max-width: 650px) {
         .character-detail-container {
             max-width: 95%;
@@ -536,5 +1488,252 @@
     }
 </style>
 
+<script>
+    function eventSkillNameToId(skillName) {
+        return String(skillName || "")
+            .trim()
+            .toLowerCase()
+            .replace(/◎/g, "oo")
+            .replace(/○/g, "o")
+            .replace(/×/g, "x")
+            .replace(/[☆★]/g, "")
+            .replace(/\([^)]*\)/g, " ")
+            .replace(/[^a-z0-9]+/g, "_")
+            .replace(/^_+|_+$/g, "");
+    }
+
+    function findEventSkillParts(rawText) {
+        var text = String(rawText || "").trim();
+
+        if (!text) {
+            return null;
+        }
+
+        /*
+            Ví dụ:
+            Obtain Running Idle skill
+            Obtain Corner Recovery × skill
+            (random) Obtain Wallflower skill
+
+            Giữ nguyên chữ "Obtain" ở ngoài link. Chỉ tên skill được bấm.
+        */
+        var match = text.match(/^(.*?\bObtain\s+)(.+?)(\s+skill\b.*)$/i);
+
+        if (match) {
+            return {
+                prefix: match[1],
+                skillName: match[2].trim(),
+                suffix: match[3]
+            };
+        }
+
+        /*
+            Ví dụ:
+            Outer Swell hint +1
+            Studious hint +1
+        */
+        match = text.match(/^(.+?)(\s+hint\s*\+\s*\d+.*)$/i);
+
+        if (match) {
+            return {
+                prefix: "",
+                skillName: match[1].trim(),
+                suffix: match[2]
+            };
+        }
+
+        return null;
+    }
+
+    function addTeventSkillLinks() {
+        var page = document.querySelector(".detail-page");
+
+        if (!page) {
+            return;
+        }
+
+        var skillUrlTemplate = page.dataset.skillUrlTemplate || "";
+
+        if (!skillUrlTemplate) {
+            return;
+        }
+
+        document.querySelectorAll(".tevent-line").forEach(function (line) {
+            // Dòng đã có link rồi thì bỏ qua, tránh gắn link 2 lần.
+            if (line.querySelector("a.tevent-skill-link")) {
+                return;
+            }
+
+            var rawText = line.textContent.trim();
+            var parts = findEventSkillParts(rawText);
+
+            if (!parts) {
+                return;
+            }
+
+            var skillId = eventSkillNameToId(parts.skillName);
+
+            if (!skillId) {
+                return;
+            }
+
+            var link = document.createElement("a");
+            link.className = "tevent-skill-link";
+            link.href = skillUrlTemplate.replace("__SKILL_ID__", encodeURIComponent(skillId));
+            link.textContent = parts.skillName;
+
+            line.replaceChildren();
+
+            if (parts.prefix) {
+                line.appendChild(document.createTextNode(parts.prefix));
+            }
+
+            line.appendChild(link);
+
+            if (parts.suffix) {
+                line.appendChild(document.createTextNode(parts.suffix));
+            }
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", addTeventSkillLinks);
+
+    function toggleTrainingEvent(eventKey, clickedButton) {
+        var target = document.getElementById("tevent-" + eventKey);
+
+        if (!target) {
+            return;
+        }
+
+        var group = clickedButton
+            ? clickedButton.closest(".tevent-group")
+            : null;
+
+        var isOpen = target.classList.contains("active");
+
+        if (group) {
+            group.querySelectorAll(".tevent-detail").forEach(function (detail) {
+                detail.classList.remove("active");
+            });
+
+            group.querySelectorAll(".tevent-button").forEach(function (button) {
+                button.classList.remove("active");
+            });
+        }
+
+        if (!isOpen) {
+            target.classList.add("active");
+
+            if (clickedButton) {
+                clickedButton.classList.add("active");
+            }
+        }
+    }
+
+    function showItemPopup(event, item) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        var popup = document.getElementById("item-popup");
+        var iconEl = document.getElementById("item-popup-icon");
+        var nameEl = document.getElementById("item-popup-name");
+        var descEl = document.getElementById("item-popup-description");
+        var usesSection = document.getElementById("item-popup-uses-section");
+        var usesList = document.getElementById("item-popup-uses");
+        var howSection = document.getElementById("item-popup-how-section");
+        var howList = document.getElementById("item-popup-how");
+
+        iconEl.src = "{{ url_for('static', filename='images/items/') }}" + item.image;
+        iconEl.alt = item.name;
+        nameEl.textContent = item.name;
+
+        if (item.description) {
+            descEl.textContent = item.description;
+            descEl.style.display = "";
+        } else {
+            descEl.style.display = "none";
+        }
+
+        usesList.innerHTML = "";
+        var hasUses = false;
+
+        (item.uses || []).forEach(function (use) {
+            var text = use.trim();
+
+            if (text === "") {
+                return;
+            }
+
+            var li = document.createElement("li");
+            li.textContent = text;
+            usesList.appendChild(li);
+            hasUses = true;
+        });
+
+        usesSection.style.display = hasUses ? "" : "none";
+
+        howList.innerHTML = "";
+        var hasHowToGet = false;
+
+        (item.how_to_get || []).forEach(function (method) {
+            var text = method.trim();
+
+            if (text === "") {
+                return;
+            }
+
+            var li = document.createElement("li");
+            li.textContent = text;
+            howList.appendChild(li);
+            hasHowToGet = true;
+        });
+
+        howSection.style.display = hasHowToGet ? "" : "none";
+
+        var buttonRect = event.currentTarget.getBoundingClientRect();
+
+        popup.style.top = (buttonRect.bottom + window.scrollY + 8) + "px";
+        popup.style.left = (buttonRect.left + window.scrollX) + "px";
+        popup.hidden = false;
+
+        // Nếu popup bị tràn ra ngoài mép phải màn hình thì đẩy nó vào lại.
+        requestAnimationFrame(function () {
+            var popupRect = popup.getBoundingClientRect();
+            var overflowRight = popupRect.right - (window.innerWidth - 10);
+
+            if (overflowRight > 0) {
+                popup.style.left = (parseFloat(popup.style.left) - overflowRight) + "px";
+            }
+        });
+    }
+
+    function closeItemPopup() {
+        document.getElementById("item-popup").hidden = true;
+    }
+
+    document.addEventListener("click", function (event) {
+        var popup = document.getElementById("item-popup");
+
+        if (popup.hidden) {
+            return;
+        }
+
+        if (popup.contains(event.target)) {
+            return;
+        }
+
+        if (event.target.closest(".awakening-item-btn")) {
+            return;
+        }
+
+        closeItemPopup();
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeItemPopup();
+        }
+    });
+</script>
+
 {% endblock %}
-```
