@@ -1,3 +1,29 @@
-.env
+
+# ===== Python =====
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ===== Env / secrets =====
+.env
+.env.*
+!.env.example
+
+# ===== Flask / local runtime =====
+instance/
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/

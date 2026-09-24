@@ -1,10 +1,930 @@
 character_slug,sort_order,race_slug,requirement,turn
-king-halo,1,junior_make_debut,Participate in,12
-king-halo,2,hopeful_stakes,Place 5th or better in,24
-king-halo,3,satsuki_sho,Place 5th or better in,31
-king-halo,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
-king-halo,5,kikuka_sho,Participate in,44
-king-halo,6,takamatsunomiya_kinen,Place 1st in,54
-king-halo,7,yasuda_kinen,Place 3rd or better in,59
-king-halo,8,sprinters_stakes,Place 1st in,66
-king-halo,9,tenno_sho_autumn,Place 1st in,68
+special-week-special-dreamer,1,junior_make_debut,Participate in,12
+special-week-special-dreamer,2,kisaragi_sho,Place 5th or better in,27
+special-week-special-dreamer,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+special-week-special-dreamer,4,kikuka_sho,Place 3rd or better in,44
+special-week-special-dreamer,5,tenno_sho_spring,Place 3rd or better in,56
+special-week-special-dreamer,6,japan_cup,Place 2nd or better in,70
+special-week-special-dreamer,7,arima_kinen,Place 1st in,72
+special-week-hopping-vitamin-heart,1,junior_make_debut,Participate in,12
+special-week-hopping-vitamin-heart,2,kisaragi_sho,Place 5th or better in,27
+special-week-hopping-vitamin-heart,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+special-week-hopping-vitamin-heart,4,kikuka_sho,Place 3rd or better in,44
+special-week-hopping-vitamin-heart,5,tenno_sho_spring,Place 3rd or better in,56
+special-week-hopping-vitamin-heart,6,japan_cup,Place 2nd or better in,70
+special-week-hopping-vitamin-heart,7,arima_kinen,Place 1st in,72
+silence-suzuka-silent-innocence,1,junior_make_debut,Participate in,12
+silence-suzuka-silent-innocence,2,,Place 5000th or better in,27
+silence-suzuka-silent-innocence,3,yayoi_sho,Place 5th or better in,29
+silence-suzuka-silent-innocence,4,kobe_shimbun_hai,Place 3rd or better in,42
+silence-suzuka-silent-innocence,5,kinko_sho,Place 1st in,53
+silence-suzuka-silent-innocence,6,takarazuka_kinen,Place 3rd or better in,60
+silence-suzuka-silent-innocence,7,mainichi_okan,Place 1st in,67
+silence-suzuka-silent-innocence,8,tenno_sho_autumn,Place 1st in,68
+tokai-teio-top-of-joyful,1,junior_make_debut,Participate in,12
+tokai-teio-top-of-joyful,2,wakagoma_stakes,Place 3rd or better in,26
+tokai-teio-top-of-joyful,3,satsuki_sho,Place 5th or better in,31
+tokai-teio-top-of-joyful,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+tokai-teio-top-of-joyful,5,kikuka_sho,Place 3rd or better in,44
+tokai-teio-top-of-joyful,6,tenno_sho_spring,Place 3rd or better in,56
+tokai-teio-top-of-joyful,7,japan_cup,Place 2nd or better in,70
+tokai-teio-top-of-joyful,8,arima_kinen,Place 1st in,72
+tokai-teio-beyond-the-horizon,1,junior_make_debut,Participate in,12
+tokai-teio-beyond-the-horizon,2,wakagoma_stakes,Place 3rd or better in,26
+tokai-teio-beyond-the-horizon,3,satsuki_sho,Place 5th or better in,31
+tokai-teio-beyond-the-horizon,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+tokai-teio-beyond-the-horizon,5,kikuka_sho,Place 3rd or better in,44
+tokai-teio-beyond-the-horizon,6,tenno_sho_spring,Place 3rd or better in,56
+tokai-teio-beyond-the-horizon,7,japan_cup,Place 2nd or better in,70
+tokai-teio-beyond-the-horizon,8,arima_kinen,Place 1st in,72
+maruzensky-rouge-formula,1,junior_make_debut,Participate in,12
+maruzensky-rouge-formula,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+maruzensky-rouge-formula,3,spring_stakes,Place 3rd or better in,30
+maruzensky-rouge-formula,4,satsuki_sho,Place 5th or better in,31
+maruzensky-rouge-formula,5,tokyo_yushun_japanese_derby,Place 5th or better in,34
+maruzensky-rouge-formula,6,arima_kinen,Participate in,48
+maruzensky-rouge-formula,7,osaka_hai,Place 1st in,54
+maruzensky-rouge-formula,8,yasuda_kinen,Place 1st in,59
+maruzensky-rouge-formula,9,tenno_sho_autumn,Place 1st in,68
+maruzensky-blasting-off-summer-night,1,junior_make_debut,Participate in,12
+maruzensky-blasting-off-summer-night,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+maruzensky-blasting-off-summer-night,3,spring_stakes,Place 3rd or better in,30
+maruzensky-blasting-off-summer-night,4,satsuki_sho,Place 5th or better in,31
+maruzensky-blasting-off-summer-night,5,tokyo_yushun_japanese_derby,Place 5th or better in,34
+maruzensky-blasting-off-summer-night,6,arima_kinen,Participate in,48
+maruzensky-blasting-off-summer-night,7,osaka_hai,Place 1st in,54
+maruzensky-blasting-off-summer-night,8,yasuda_kinen,Place 1st in,59
+maruzensky-blasting-off-summer-night,9,tenno_sho_autumn,Place 1st in,68
+fuji-kiseki-shooting-star-revue,1,junior_make_debut,Participate in,12
+fuji-kiseki-shooting-star-revue,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+fuji-kiseki-shooting-star-revue,3,yayoi_sho,Place 5th or better in,29
+fuji-kiseki-shooting-star-revue,4,satsuki_sho,Place 5th or better in,31
+fuji-kiseki-shooting-star-revue,5,nhk_mile_cup,Place 5th or better in,33
+fuji-kiseki-shooting-star-revue,6,kikuka_sho,Participate in,44
+fuji-kiseki-shooting-star-revue,7,takamatsunomiya_kinen,Place 3rd or better in,54
+fuji-kiseki-shooting-star-revue,8,yasuda_kinen,Place 3rd or better in,59
+fuji-kiseki-shooting-star-revue,9,tenno_sho_autumn,Place 1st in,68
+fuji-kiseki-shooting-star-revue,10,arima_kinen,Participate in,72
+oguri-cap-starlight-beat,1,junior_make_debut,Participate in,12
+oguri-cap-starlight-beat,2,,Place 3000th or better in,24
+oguri-cap-starlight-beat,3,nhk_mile_cup,Place 5th or better in,33
+oguri-cap-starlight-beat,4,mile_championship,Place 3rd or better in,46
+oguri-cap-starlight-beat,5,arima_kinen,Place 3rd or better in,48
+oguri-cap-starlight-beat,6,,Place 3rd or better in,60
+oguri-cap-starlight-beat,7,tenno_sho_autumn,Place 1st in,68
+oguri-cap-starlight-beat,8,arima_kinen,Place 1st in,72
+gold-ship-red-strife,1,junior_make_debut,Participate in,12
+gold-ship-red-strife,2,hopeful_stakes,Place 5th or better in,24
+gold-ship-red-strife,3,satsuki_sho,Place 5th or better in,31
+gold-ship-red-strife,4,kikuka_sho,Place 3rd or better in,44
+gold-ship-red-strife,5,arima_kinen,Place 3rd or better in,48
+gold-ship-red-strife,6,tenno_sho_spring,Place 3rd or better in,56
+gold-ship-red-strife,7,takarazuka_kinen,Place 1st in,60
+gold-ship-red-strife,8,tenno_sho_autumn,Place 1st in,68
+gold-ship-red-strife,9,arima_kinen,Place 1st in,72
+vodka-wild-top-gear,1,junior_make_debut,Participate in,12
+vodka-wild-top-gear,2,hanshin_juvenile_fillies,Place 5th or better in,23
+vodka-wild-top-gear,3,tulip_sho,Place 5th or better in,29
+vodka-wild-top-gear,4,oka_sho,Place 5th or better in,31
+vodka-wild-top-gear,5,tokyo_yushun_japanese_derby,Place 5th or better in,34
+vodka-wild-top-gear,6,shuuka_sho,Place 3rd or better in,44
+vodka-wild-top-gear,7,arima_kinen,Participate in,48
+vodka-wild-top-gear,8,victoria_mile,Place 3rd or better in,57
+vodka-wild-top-gear,9,yasuda_kinen,Place 2nd or better in,59
+vodka-wild-top-gear,10,tenno_sho_autumn,Place 1st in,68
+daiwa-scarlet-top-of-blue,1,junior_make_debut,Participate in,12
+daiwa-scarlet-top-of-blue,2,tulip_sho,Place 5th or better in,29
+daiwa-scarlet-top-of-blue,3,oka_sho,Place 5th or better in,31
+daiwa-scarlet-top-of-blue,4,oaks,Place 5th or better in,34
+daiwa-scarlet-top-of-blue,5,shuuka_sho,Place 3rd or better in,44
+daiwa-scarlet-top-of-blue,6,queen_elizabeth_cup,Place 3rd or better in,45
+daiwa-scarlet-top-of-blue,7,osaka_hai,Place 3rd or better in,54
+daiwa-scarlet-top-of-blue,8,tenno_sho_autumn,Place 1st in,68
+daiwa-scarlet-top-of-blue,9,arima_kinen,Place 1st in,72
+taiki-shuttle-wild-frontier,1,junior_make_debut,Participate in,12
+taiki-shuttle-wild-frontier,2,shinzan_kinen,Place 5th or better in,25
+taiki-shuttle-wild-frontier,3,nhk_mile_cup,Place 5th or better in,33
+taiki-shuttle-wild-frontier,4,unicorn_stakes,Place 5th or better in,36
+taiki-shuttle-wild-frontier,5,mile_championship,Place 3rd or better in,46
+taiki-shuttle-wild-frontier,6,yasuda_kinen,Place 1st in,59
+taiki-shuttle-wild-frontier,7,sprinters_stakes,Place 1st in,66
+taiki-shuttle-wild-frontier,8,mile_championship,Place 1st in,70
+grass-wonder-rock-piercing-blue,1,junior_make_debut,Participate in,12
+grass-wonder-rock-piercing-blue,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+grass-wonder-rock-piercing-blue,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+grass-wonder-rock-piercing-blue,4,japan_cup,Place 5th or better in,46
+grass-wonder-rock-piercing-blue,5,arima_kinen,Place 3rd or better in,48
+grass-wonder-rock-piercing-blue,6,takarazuka_kinen,Place 3rd or better in,60
+grass-wonder-rock-piercing-blue,7,mainichi_okan,Place 1st in,67
+grass-wonder-rock-piercing-blue,8,arima_kinen,Place 1st in,72
+grass-wonder-saint-jade-healer,1,junior_make_debut,Participate in,12
+grass-wonder-saint-jade-healer,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+grass-wonder-saint-jade-healer,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+grass-wonder-saint-jade-healer,4,japan_cup,Place 5th or better in,46
+grass-wonder-saint-jade-healer,5,arima_kinen,Place 3rd or better in,48
+grass-wonder-saint-jade-healer,6,takarazuka_kinen,Place 3rd or better in,60
+grass-wonder-saint-jade-healer,7,mainichi_okan,Place 1st in,67
+grass-wonder-saint-jade-healer,8,arima_kinen,Place 1st in,72
+hishi-amazon-amazoness-lapis,1,junior_make_debut,Participate in,12
+hishi-amazon-amazoness-lapis,2,hanshin_juvenile_fillies,Place 5th or better in,23
+hishi-amazon-amazoness-lapis,3,oka_sho,Place 5th or better in,31
+hishi-amazon-amazoness-lapis,4,oaks,Place 5th or better in,34
+hishi-amazon-amazoness-lapis,5,shuuka_sho,Place 3rd or better in,44
+hishi-amazon-amazoness-lapis,6,arima_kinen,Place 3rd or better in,48
+hishi-amazon-amazoness-lapis,7,osaka_hai,Place 1st in,54
+hishi-amazon-amazoness-lapis,8,yasuda_kinen,Place 1st in,59
+hishi-amazon-amazoness-lapis,9,japan_cup,Place 1st in,70
+hishi-amazon-amazoness-lapis,10,arima_kinen,Place 1st in,72
+mejiro-mcqueen-elegance-line,1,junior_make_debut,Participate in,12
+mejiro-mcqueen-elegance-line,2,,Place 3000th or better in,24
+mejiro-mcqueen-elegance-line,3,kobe_shimbun_hai,Place 3rd or better in,42
+mejiro-mcqueen-elegance-line,4,kikuka_sho,Place 3rd or better in,44
+mejiro-mcqueen-elegance-line,5,tenno_sho_spring,Place 1st in,56
+mejiro-mcqueen-elegance-line,6,takarazuka_kinen,Place 2nd or better in,60
+mejiro-mcqueen-elegance-line,7,tenno_sho_autumn,Place 1st in,68
+mejiro-mcqueen-end-of-sky,1,junior_make_debut,Participate in,12
+mejiro-mcqueen-end-of-sky,2,,Place 3000th or better in,24
+mejiro-mcqueen-end-of-sky,3,kobe_shimbun_hai,Place 3rd or better in,42
+mejiro-mcqueen-end-of-sky,4,kikuka_sho,Place 3rd or better in,44
+mejiro-mcqueen-end-of-sky,5,tenno_sho_spring,Place 1st in,56
+mejiro-mcqueen-end-of-sky,6,takarazuka_kinen,Place 2nd or better in,60
+mejiro-mcqueen-end-of-sky,7,tenno_sho_autumn,Place 1st in,68
+el-condor-pasa-el-numero-1,1,junior_make_debut,Participate in,12
+el-condor-pasa-el-numero-1,2,tokinominoru_kinen,Place 5th or better in,27
+el-condor-pasa-el-numero-1,3,nhk_mile_cup,Place 5th or better in,33
+el-condor-pasa-el-numero-1,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+el-condor-pasa-el-numero-1,5,mainichi_okan,Place 3rd or better in,43
+el-condor-pasa-el-numero-1,6,takarazuka_kinen,Place 1st in,60
+el-condor-pasa-el-numero-1,7,japan_cup,Place 1st in,70
+el-condor-pasa-el-numero-1,8,arima_kinen,Place 1st in,72
+el-condor-pasa-kukulkan-monk,1,junior_make_debut,Participate in,12
+el-condor-pasa-kukulkan-monk,2,tokinominoru_kinen,Place 5th or better in,27
+el-condor-pasa-kukulkan-monk,3,nhk_mile_cup,Place 5th or better in,33
+el-condor-pasa-kukulkan-monk,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+el-condor-pasa-kukulkan-monk,5,mainichi_okan,Place 3rd or better in,43
+el-condor-pasa-kukulkan-monk,6,takarazuka_kinen,Place 1st in,60
+el-condor-pasa-kukulkan-monk,7,japan_cup,Place 1st in,70
+el-condor-pasa-kukulkan-monk,8,arima_kinen,Place 1st in,72
+tm-opera-o-o-sole-so,1,junior_make_debut,Participate in,12
+tm-opera-o-o-sole-so,2,,Place 5000th or better in,28
+tm-opera-o-o-sole-so,3,satsuki_sho,Place 5th or better in,31
+tm-opera-o-o-sole-so,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+tm-opera-o-o-sole-so,5,arima_kinen,Place 3rd or better in,48
+tm-opera-o-o-sole-so,6,tenno_sho_spring,Place 3rd or better in,56
+tm-opera-o-o-sole-so,7,takarazuka_kinen,Place 3rd or better in,60
+tm-opera-o-o-sole-so,8,japan_cup,Place 2nd or better in,70
+tm-opera-o-o-sole-so,9,arima_kinen,Place 1st in,72
+narita-brian-maverick,1,junior_make_debut,Participate in,12
+narita-brian-maverick,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+narita-brian-maverick,3,satsuki_sho,Place 5th or better in,31
+narita-brian-maverick,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+narita-brian-maverick,5,kikuka_sho,Place 3rd or better in,44
+narita-brian-maverick,6,arima_kinen,Place 3rd or better in,48
+narita-brian-maverick,7,hanshin_daishoten,Place 1st in,54
+narita-brian-maverick,8,tenno_sho_spring,Place 1st in,56
+narita-brian-maverick,9,tenno_sho_autumn,Place 1st in,68
+narita-brian-maverick,10,japan_cup,Place 1st in,70
+narita-brian-maverick,11,arima_kinen,Place 1st in,72
+symboli-rudolf-road-of-emperor,1,junior_make_debut,Participate in,12
+symboli-rudolf-road-of-emperor,2,saudi_arabia_royal_cup,Place 5th or better in,19
+symboli-rudolf-road-of-emperor,3,satsuki_sho,Place 5th or better in,31
+symboli-rudolf-road-of-emperor,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+symboli-rudolf-road-of-emperor,5,kikuka_sho,Place 3rd or better in,44
+symboli-rudolf-road-of-emperor,6,arima_kinen,Place 3rd or better in,48
+symboli-rudolf-road-of-emperor,7,tenno_sho_spring,Place 3rd or better in,56
+symboli-rudolf-road-of-emperor,8,japan_cup,Place 2nd or better in,70
+symboli-rudolf-road-of-emperor,9,arima_kinen,Place 1st in,72
+air-groove-empress-road,1,junior_make_debut,Participate in,12
+air-groove-empress-road,2,hanshin_juvenile_fillies,Place 5th or better in,23
+air-groove-empress-road,3,oka_sho,Place 5th or better in,31
+air-groove-empress-road,4,oaks,Place 5th or better in,34
+air-groove-empress-road,5,shuuka_sho,Place 3rd or better in,44
+air-groove-empress-road,6,osaka_hai,Place 3rd or better in,54
+air-groove-empress-road,7,takarazuka_kinen,Place 3rd or better in,60
+air-groove-empress-road,8,sapporo_kinen,Place 1st in,64
+air-groove-empress-road,9,tenno_sho_autumn,Place 1st in,68
+air-groove-quercus-civilis,1,junior_make_debut,Participate in,12
+air-groove-quercus-civilis,2,hanshin_juvenile_fillies,Place 5th or better in,23
+air-groove-quercus-civilis,3,oka_sho,Place 5th or better in,31
+air-groove-quercus-civilis,4,oaks,Place 5th or better in,34
+air-groove-quercus-civilis,5,shuuka_sho,Place 3rd or better in,44
+air-groove-quercus-civilis,6,osaka_hai,Place 3rd or better in,54
+air-groove-quercus-civilis,7,takarazuka_kinen,Place 3rd or better in,60
+air-groove-quercus-civilis,8,sapporo_kinen,Place 1st in,64
+air-groove-quercus-civilis,9,tenno_sho_autumn,Place 1st in,68
+agnes-digital-super-express-full-color-special,1,junior_make_debut,Participate in,12
+agnes-digital-super-express-full-color-special,2,hyacinth_stakes,Place 3rd or better in,28
+agnes-digital-super-express-full-color-special,3,nhk_mile_cup,Place 5th or better in,33
+agnes-digital-super-express-full-color-special,4,japan_dirt_derby,Place 5th or better in,37
+agnes-digital-super-express-full-color-special,5,mile_championship,Place 3rd or better in,46
+agnes-digital-super-express-full-color-special,6,,Place 3rd or better in,60
+agnes-digital-super-express-full-color-special,7,tenno_sho_autumn,Place 1st in,68
+seiun-sky-blue-cloud-thumbing,1,junior_make_debut,Participate in,12
+seiun-sky-blue-cloud-thumbing,2,,Place 3000th or better in,25
+seiun-sky-blue-cloud-thumbing,3,satsuki_sho,Place 5th or better in,31
+seiun-sky-blue-cloud-thumbing,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+seiun-sky-blue-cloud-thumbing,5,kikuka_sho,Place 3rd or better in,44
+seiun-sky-blue-cloud-thumbing,6,arima_kinen,Place 3rd or better in,48
+seiun-sky-blue-cloud-thumbing,7,tenno_sho_spring,Place 3rd or better in,56
+seiun-sky-blue-cloud-thumbing,8,takarazuka_kinen,Place 3rd or better in,60
+seiun-sky-blue-cloud-thumbing,9,tenno_sho_autumn,Place 1st in,68
+seiun-sky-blue-cloud-thumbing,10,arima_kinen,Place 1st in,72
+biwa-hayahide-pf-victory-formula,1,junior_make_debut,Participate in,12
+biwa-hayahide-pf-victory-formula,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+biwa-hayahide-pf-victory-formula,3,satsuki_sho,Place 5th or better in,31
+biwa-hayahide-pf-victory-formula,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+biwa-hayahide-pf-victory-formula,5,kikuka_sho,Place 3rd or better in,44
+biwa-hayahide-pf-victory-formula,6,tenno_sho_spring,Place 3rd or better in,56
+biwa-hayahide-pf-victory-formula,7,takarazuka_kinen,Place 1st in,60
+biwa-hayahide-pf-victory-formula,8,tenno_sho_autumn,Place 3rd or better in,68
+biwa-hayahide-pf-victory-formula,9,arima_kinen,Place 1st in,72
+mayano-top-gun-scramble-zone,1,junior_make_debut,Participate in,12
+mayano-top-gun-scramble-zone,2,,Place 10000th or better in,37
+mayano-top-gun-scramble-zone,3,kikuka_sho,Place 3rd or better in,44
+mayano-top-gun-scramble-zone,4,arima_kinen,Place 3rd or better in,48
+mayano-top-gun-scramble-zone,5,hanshin_daishoten,Place 2nd or better in,54
+mayano-top-gun-scramble-zone,6,tenno_sho_spring,Place 3rd or better in,56
+mayano-top-gun-scramble-zone,7,takarazuka_kinen,Place 3rd or better in,60
+mayano-top-gun-scramble-zone,8,tenno_sho_autumn,Place 1st in,68
+mayano-top-gun-scramble-zone,9,arima_kinen,Place 1st in,72
+mayano-top-gun-sunlight-bouquet,1,junior_make_debut,Participate in,12
+mayano-top-gun-sunlight-bouquet,2,,Place 10000th or better in,37
+mayano-top-gun-sunlight-bouquet,3,kikuka_sho,Place 3rd or better in,44
+mayano-top-gun-sunlight-bouquet,4,arima_kinen,Place 3rd or better in,48
+mayano-top-gun-sunlight-bouquet,5,hanshin_daishoten,Place 2nd or better in,54
+mayano-top-gun-sunlight-bouquet,6,tenno_sho_spring,Place 3rd or better in,56
+mayano-top-gun-sunlight-bouquet,7,takarazuka_kinen,Place 3rd or better in,60
+mayano-top-gun-sunlight-bouquet,8,tenno_sho_autumn,Place 1st in,68
+mayano-top-gun-sunlight-bouquet,9,arima_kinen,Place 1st in,72
+mihono-bourbon-mb-19890425,1,junior_make_debut,Participate in,12
+mihono-bourbon-mb-19890425,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+mihono-bourbon-mb-19890425,3,spring_stakes,Place 5th or better in,30
+mihono-bourbon-mb-19890425,4,satsuki_sho,Place 5th or better in,31
+mihono-bourbon-mb-19890425,5,tokyo_yushun_japanese_derby,Place 5th or better in,34
+mihono-bourbon-mb-19890425,6,kikuka_sho,Place 3rd or better in,44
+mihono-bourbon-mb-19890425,7,tenno_sho_spring,Place 3rd or better in,56
+mihono-bourbon-mb-19890425,8,japan_cup,Place 2nd or better in,70
+mihono-bourbon-mb-19890425,9,arima_kinen,Place 1st in,72
+mejiro-ryan-straight-line,1,junior_make_debut,Participate in,12
+mejiro-ryan-straight-line,2,junior_cup,Place 3rd or better in,25
+mejiro-ryan-straight-line,3,satsuki_sho,Place 5th or better in,31
+mejiro-ryan-straight-line,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+mejiro-ryan-straight-line,5,kikuka_sho,Place 3rd or better in,44
+mejiro-ryan-straight-line,6,arima_kinen,Place 3rd or better in,48
+mejiro-ryan-straight-line,7,tenno_sho_spring,Place 3rd or better in,56
+mejiro-ryan-straight-line,8,takarazuka_kinen,Place 1st in,60
+mejiro-ryan-straight-line,9,arima_kinen,Place 1st in,72
+hishi-akebono-bono-alla-moda,1,junior_make_debut,Participate in,12
+hishi-akebono-bono-alla-moda,2,,Place 3000th or better in,23
+hishi-akebono-bono-alla-moda,3,,Place 10000th or better in,37
+hishi-akebono-bono-alla-moda,4,sprinters_stakes,Place 3rd or better in,42
+hishi-akebono-bono-alla-moda,5,swan_stakes,Place 3rd or better in,44
+hishi-akebono-bono-alla-moda,6,mile_championship,Place 3rd or better in,46
+hishi-akebono-bono-alla-moda,7,takamatsunomiya_kinen,Place 1st in,54
+hishi-akebono-bono-alla-moda,8,yasuda_kinen,Place 2nd or better in,59
+hishi-akebono-bono-alla-moda,9,sprinters_stakes,Place 1st in,66
+hishi-akebono-bono-alla-moda,10,mile_championship,Place 1st in,70
+rice-shower-rose-dream,1,junior_make_debut,Participate in,12
+rice-shower-rose-dream,2,spring_stakes,Place 5th or better in,30
+rice-shower-rose-dream,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+rice-shower-rose-dream,4,kikuka_sho,Place 3rd or better in,44
+rice-shower-rose-dream,5,nikkei_sho,Place 3rd or better in,54
+rice-shower-rose-dream,6,tenno_sho_spring,Place 1st in,56
+rice-shower-rose-dream,7,takarazuka_kinen,Place 3rd or better in,60
+rice-shower-rose-dream,8,arima_kinen,Place 1st in,72
+agnes-tachyon-tach-nology,1,junior_make_debut,Participate in,12
+agnes-tachyon-tach-nology,2,yayoi_sho,Place 5th or better in,29
+agnes-tachyon-tach-nology,3,satsuki_sho,Place 5th or better in,31
+agnes-tachyon-tach-nology,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+agnes-tachyon-tach-nology,5,kikuka_sho,Place 3rd or better in,44
+agnes-tachyon-tach-nology,6,osaka_hai,Place 3rd or better in,54
+agnes-tachyon-tach-nology,7,takarazuka_kinen,Place 3rd or better in,60
+agnes-tachyon-tach-nology,8,tenno_sho_autumn,Place 1st in,68
+agnes-tachyon-tach-nology,9,arima_kinen,Place 1st in,72
+winning-ticket-go-to-winning,1,junior_make_debut,Participate in,12
+winning-ticket-go-to-winning,2,hopeful_stakes,Place 5th or better in,24
+winning-ticket-go-to-winning,3,yayoi_sho,Place 5th or better in,29
+winning-ticket-go-to-winning,4,satsuki_sho,Place 5th or better in,31
+winning-ticket-go-to-winning,5,tokyo_yushun_japanese_derby,Place 5th or better in,34
+winning-ticket-go-to-winning,6,kikuka_sho,Place 3rd or better in,44
+winning-ticket-go-to-winning,7,osaka_hai,Place 3rd or better in,54
+winning-ticket-go-to-winning,8,takarazuka_kinen,Place 3rd or better in,60
+winning-ticket-go-to-winning,9,arima_kinen,Place 1st in,72
+eishin-flash-meisterschaft,1,junior_make_debut,Participate in,12
+eishin-flash-meisterschaft,2,keisei_hai,Place 5th or better in,25
+eishin-flash-meisterschaft,3,satsuki_sho,Place 5th or better in,31
+eishin-flash-meisterschaft,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+eishin-flash-meisterschaft,5,japan_cup,Participate in,46
+eishin-flash-meisterschaft,6,arima_kinen,Participate in,48
+eishin-flash-meisterschaft,7,osaka_hai,Place 3rd or better in,54
+eishin-flash-meisterschaft,8,tenno_sho_spring,Place 3rd or better in,56
+eishin-flash-meisterschaft,9,tenno_sho_autumn,Place 1st in,68
+eishin-flash-meisterschaft,10,arima_kinen,Place 1st in,72
+curren-chan-fille-eclair,1,junior_make_debut,Participate in,12
+curren-chan-fille-eclair,2,,Place 3000th or better in,23
+curren-chan-fille-eclair,3,fillies_revue,Place 5th or better in,29
+curren-chan-fille-eclair,4,aoi_stakes,Place 5th or better in,34
+curren-chan-fille-eclair,5,hakodate_sprint_stakes,Place 3rd or better in,36
+curren-chan-fille-eclair,6,sprinters_stakes,Place 3rd or better in,42
+curren-chan-fille-eclair,7,ocean_stakes,Place 3rd or better in,53
+curren-chan-fille-eclair,8,takamatsunomiya_kinen,Place 1st in,54
+curren-chan-fille-eclair,9,sprinters_stakes,Place 1st in,66
+gold-city-authentic-1928,1,junior_make_debut,Participate in,12
+gold-city-authentic-1928,2,hanshin_juvenile_fillies,Place 5th or better in,23
+gold-city-authentic-1928,3,satsuki_sho,Place 5th or better in,31
+gold-city-authentic-1928,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+gold-city-authentic-1928,5,kikuka_sho,Place 3rd or better in,44
+gold-city-authentic-1928,6,arima_kinen,Place 3rd or better in,48
+gold-city-authentic-1928,7,osaka_hai,Place 3rd or better in,54
+gold-city-authentic-1928,8,tenno_sho_spring,Place 3rd or better in,56
+gold-city-authentic-1928,9,takarazuka_kinen,Place 3rd or better in,60
+gold-city-authentic-1928,10,japan_cup,Place 1st in,70
+sakura-bakushin-o-sakura-forward,1,junior_make_debut,Participate in,12
+sakura-bakushin-o-sakura-forward,2,keio_hai_junior_stakes,Place 5th or better in,21
+sakura-bakushin-o-sakura-forward,3,spring_stakes,Participate in,30
+sakura-bakushin-o-sakura-forward,4,aoi_stakes,Place 5th or better in,34
+sakura-bakushin-o-sakura-forward,5,sprinters_stakes,Place 3rd or better in,42
+sakura-bakushin-o-sakura-forward,6,takamatsunomiya_kinen,Place 3rd or better in,54
+sakura-bakushin-o-sakura-forward,7,hakodate_sprint_stakes,Place 1st in,60
+sakura-bakushin-o-sakura-forward,8,cbc_sho,Place 1st in,61
+sakura-bakushin-o-sakura-forward,9,centaur_stakes,Place 1st in,65
+sakura-bakushin-o-sakura-forward,10,sprinters_stakes,Place 1st in,66
+sakura-bakushin-o-sakura-forward,11,mile_championship,Place 1st in,70
+super-creek-murmuring-stream,1,junior_make_debut,Participate in,12
+super-creek-murmuring-stream,2,sumire_stakes,Place 3rd or better in,28
+super-creek-murmuring-stream,3,kikuka_sho,Place 3rd or better in,44
+super-creek-murmuring-stream,4,arima_kinen,Place 3rd or better in,48
+super-creek-murmuring-stream,5,osaka_hai,Place 3rd or better in,54
+super-creek-murmuring-stream,6,tenno_sho_spring,Place 3rd or better in,56
+super-creek-murmuring-stream,7,tenno_sho_autumn,Place 1st in,68
+super-creek-murmuring-stream,8,arima_kinen,Place 1st in,72
+smart-falcon-absolute-love,1,junior_make_debut,Participate in,12
+smart-falcon-absolute-love,2,,Place 1st in,25
+smart-falcon-absolute-love,3,satsuki_sho,Participate in,31
+smart-falcon-absolute-love,4,japan_dirt_derby,Place 5th or better in,37
+smart-falcon-absolute-love,5,jbc_classic,Place 3rd or better in,45
+smart-falcon-absolute-love,6,tokyo_daishoten,Place 3rd or better in,48
+smart-falcon-absolute-love,7,february_stakes,Place 1st in,52
+smart-falcon-absolute-love,8,teio_sho,Place 1st in,60
+smart-falcon-absolute-love,9,jbc_classic,Place 1st in,69
+smart-falcon-absolute-love,10,champions_cup,Place 1st in,71
+smart-falcon-absolute-love,11,tokyo_daishoten,Place 1st in,72
+narita-taishin-nevertheless,1,junior_make_debut,Participate in,12
+narita-taishin-nevertheless,2,hopeful_stakes,Place 5th or better in,24
+narita-taishin-nevertheless,3,satsuki_sho,Place 5th or better in,31
+narita-taishin-nevertheless,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+narita-taishin-nevertheless,5,kikuka_sho,Participate in,44
+narita-taishin-nevertheless,6,nikkei_sho,Place 1st in,54
+narita-taishin-nevertheless,7,tenno_sho_spring,Place 3rd or better in,56
+narita-taishin-nevertheless,8,tenno_sho_autumn,Place 1st in,68
+narita-taishin-nevertheless,9,arima_kinen,Place 1st in,72
+haru-urara-uraran-first-prize,1,junior_make_debut,Participate in,12
+haru-urara-uraran-first-prize,2,,Place 5000th or better in,37
+haru-urara-uraran-first-prize,3,,Place 9000th or better in,45
+haru-urara-uraran-first-prize,4,,Place 12000th or better in,48
+haru-urara-uraran-first-prize,5,negishi_stakes,Place 5th or better in,50
+haru-urara-uraran-first-prize,6,february_stakes,Place 5th or better in,52
+haru-urara-uraran-first-prize,7,elm_stakes,Place 5th or better in,63
+haru-urara-uraran-first-prize,8,jbc_sprint,Place 1st in,69
+haru-urara-uraran-first-prize,9,arima_kinen,Participate in,72
+matikanefukukitaru-rising-luck-flood-of-happiness,1,junior_make_debut,Participate in,12
+matikanefukukitaru-rising-luck-flood-of-happiness,2,yayoi_sho,Place 5th or better in,29
+matikanefukukitaru-rising-luck-flood-of-happiness,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+matikanefukukitaru-rising-luck-flood-of-happiness,4,kikuka_sho,Place 3rd or better in,44
+matikanefukukitaru-rising-luck-flood-of-happiness,5,kinko_sho,Place 3rd or better in,53
+matikanefukukitaru-rising-luck-flood-of-happiness,6,takarazuka_kinen,Place 3rd or better in,60
+matikanefukukitaru-rising-luck-flood-of-happiness,7,hakodate_kinen,Place 2nd or better in,61
+matikanefukukitaru-rising-luck-flood-of-happiness,8,arima_kinen,Place 1st in,72
+matikanefukukitaru-good-omenfirst-storm,1,junior_make_debut,Participate in,12
+matikanefukukitaru-good-omenfirst-storm,2,yayoi_sho,Place 5th or better in,29
+matikanefukukitaru-good-omenfirst-storm,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+matikanefukukitaru-good-omenfirst-storm,4,kikuka_sho,Place 3rd or better in,44
+matikanefukukitaru-good-omenfirst-storm,5,kinko_sho,Place 3rd or better in,53
+matikanefukukitaru-good-omenfirst-storm,6,takarazuka_kinen,Place 3rd or better in,60
+matikanefukukitaru-good-omenfirst-storm,7,hakodate_kinen,Place 2nd or better in,61
+matikanefukukitaru-good-omenfirst-storm,8,arima_kinen,Place 1st in,72
+meisho-doto-blue-raging,1,junior_make_debut,Participate in,12
+meisho-doto-blue-raging,2,,Place 6000th or better in,31
+meisho-doto-blue-raging,3,,Place 15000th or better in,44
+meisho-doto-blue-raging,4,nikkei_shinshun_hai,Place 3rd or better in,49
+meisho-doto-blue-raging,5,kinko_sho,Place 1st in,53
+meisho-doto-blue-raging,6,takarazuka_kinen,Place 2nd or better in,60
+meisho-doto-blue-raging,7,tenno_sho_autumn,Place 2nd or better in,68
+meisho-doto-blue-raging,8,japan_cup,Place 2nd or better in,70
+meisho-doto-blue-raging,9,arima_kinen,Place 1st in,72
+nice-nature-poinsettia-ribbon,1,junior_make_debut,Participate in,12
+nice-nature-poinsettia-ribbon,2,wakagoma_stakes,Place 3rd or better in,26
+nice-nature-poinsettia-ribbon,3,kokura_kinen,Place 3rd or better in,39
+nice-nature-poinsettia-ribbon,4,kikuka_sho,Place 3rd or better in,44
+nice-nature-poinsettia-ribbon,5,arima_kinen,Place 3rd or better in,48
+nice-nature-poinsettia-ribbon,6,takarazuka_kinen,Place 3rd or better in,60
+nice-nature-poinsettia-ribbon,7,tenno_sho_autumn,Place 3rd or better in,68
+nice-nature-poinsettia-ribbon,8,chunichi_shimbun_hai,Place 1st in,71
+nice-nature-poinsettia-ribbon,9,arima_kinen,Place 1st in,72
+king-halo-king-of-emeralds,1,junior_make_debut,Participate in,12
+king-halo-king-of-emeralds,2,hopeful_stakes,Place 5th or better in,24
+king-halo-king-of-emeralds,3,satsuki_sho,Place 5th or better in,31
+king-halo-king-of-emeralds,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+king-halo-king-of-emeralds,5,kikuka_sho,Participate in,44
+king-halo-king-of-emeralds,6,takamatsunomiya_kinen,Place 1st in,54
+king-halo-king-of-emeralds,7,yasuda_kinen,Place 3rd or better in,59
+king-halo-king-of-emeralds,8,sprinters_stakes,Place 1st in,66
+king-halo-king-of-emeralds,9,tenno_sho_autumn,Place 1st in,68
+rice-shower-make-up-vampire,1,junior_make_debut,Participate in,12
+rice-shower-make-up-vampire,2,spring_stakes,Place 5th or better in,30
+rice-shower-make-up-vampire,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+rice-shower-make-up-vampire,4,kikuka_sho,Place 3rd or better in,44
+rice-shower-make-up-vampire,5,nikkei_sho,Place 3rd or better in,54
+rice-shower-make-up-vampire,6,tenno_sho_spring,Place 1st in,56
+rice-shower-make-up-vampire,7,takarazuka_kinen,Place 3rd or better in,60
+rice-shower-make-up-vampire,8,arima_kinen,Place 1st in,72
+super-creek-chiffon-ribbon-mummy,1,junior_make_debut,Participate in,12
+super-creek-chiffon-ribbon-mummy,2,sumire_stakes,Place 3rd or better in,28
+super-creek-chiffon-ribbon-mummy,3,kikuka_sho,Place 3rd or better in,44
+super-creek-chiffon-ribbon-mummy,4,arima_kinen,Place 3rd or better in,48
+super-creek-chiffon-ribbon-mummy,5,osaka_hai,Place 3rd or better in,54
+super-creek-chiffon-ribbon-mummy,6,tenno_sho_spring,Place 3rd or better in,56
+super-creek-chiffon-ribbon-mummy,7,tenno_sho_autumn,Place 1st in,68
+super-creek-chiffon-ribbon-mummy,8,arima_kinen,Place 1st in,72
+kawakami-princess-princess-of-pink,1,junior_make_debut,Participate in,12
+kawakami-princess-princess-of-pink,2,,Place 7000th or better in,31
+kawakami-princess-princess-of-pink,3,oaks,Place 5th or better in,34
+kawakami-princess-princess-of-pink,4,shuuka_sho,Place 3rd or better in,44
+kawakami-princess-princess-of-pink,5,queen_elizabeth_cup,Place 3rd or better in,45
+kawakami-princess-princess-of-pink,6,kinko_sho,Place 3rd or better in,53
+kawakami-princess-princess-of-pink,7,victoria_mile,Place 3rd or better in,57
+kawakami-princess-princess-of-pink,8,takarazuka_kinen,Place 3rd or better in,60
+kawakami-princess-princess-of-pink,9,queen_elizabeth_cup,Place 1st in,69
+manhattan-cafe-creeping-black,1,junior_make_debut,Participate in,12
+manhattan-cafe-creeping-black,2,,Place 4000th or better in,26
+manhattan-cafe-creeping-black,3,yayoi_sho,Place 5th or better in,29
+manhattan-cafe-creeping-black,4,st_lite_kinen,Place 3rd or better in,42
+manhattan-cafe-creeping-black,5,kikuka_sho,Place 3rd or better in,44
+manhattan-cafe-creeping-black,6,arima_kinen,Place 3rd or better in,48
+manhattan-cafe-creeping-black,7,tenno_sho_spring,Place 3rd or better in,56
+manhattan-cafe-creeping-black,8,takarazuka_kinen,Place 3rd or better in,60
+manhattan-cafe-creeping-black,9,japan_cup,Place 3rd or better in,70
+manhattan-cafe-creeping-black,10,arima_kinen,Place 1st in,72
+symboli-rudolf-archer-of-the-white-moon,1,junior_make_debut,Participate in,12
+symboli-rudolf-archer-of-the-white-moon,2,saudi_arabia_royal_cup,Place 5th or better in,19
+symboli-rudolf-archer-of-the-white-moon,3,satsuki_sho,Place 5th or better in,31
+symboli-rudolf-archer-of-the-white-moon,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+symboli-rudolf-archer-of-the-white-moon,5,kikuka_sho,Place 3rd or better in,44
+symboli-rudolf-archer-of-the-white-moon,6,arima_kinen,Place 3rd or better in,48
+symboli-rudolf-archer-of-the-white-moon,7,tenno_sho_spring,Place 3rd or better in,56
+symboli-rudolf-archer-of-the-white-moon,8,japan_cup,Place 2nd or better in,70
+symboli-rudolf-archer-of-the-white-moon,9,arima_kinen,Place 1st in,72
+gold-city-akizakura-danzatrice,1,junior_make_debut,Participate in,12
+gold-city-akizakura-danzatrice,2,hanshin_juvenile_fillies,Place 5th or better in,23
+gold-city-akizakura-danzatrice,3,satsuki_sho,Place 5th or better in,31
+gold-city-akizakura-danzatrice,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+gold-city-akizakura-danzatrice,5,kikuka_sho,Place 3rd or better in,44
+gold-city-akizakura-danzatrice,6,arima_kinen,Place 3rd or better in,48
+gold-city-akizakura-danzatrice,7,osaka_hai,Place 3rd or better in,54
+gold-city-akizakura-danzatrice,8,tenno_sho_spring,Place 3rd or better in,56
+gold-city-akizakura-danzatrice,9,takarazuka_kinen,Place 3rd or better in,60
+gold-city-akizakura-danzatrice,10,japan_cup,Place 1st in,70
+tosen-jordan-pop-joker,1,junior_make_debut,Participate in,12
+tosen-jordan-pop-joker,2,hopeful_stakes,Place 5th or better in,24
+tosen-jordan-pop-joker,3,satsuki_sho,Place 5th or better in,31
+tosen-jordan-pop-joker,4,copa_republica_argentina,Place 3rd or better in,45
+tosen-jordan-pop-joker,5,arima_kinen,Participate in,48
+tosen-jordan-pop-joker,6,osaka_hai,Place 3rd or better in,54
+tosen-jordan-pop-joker,7,tenno_sho_spring,Place 3rd or better in,56
+tosen-jordan-pop-joker,8,takarazuka_kinen,Place 3rd or better in,60
+tosen-jordan-pop-joker,9,tenno_sho_autumn,Place 1st in,68
+mejiro-dober-twisted-line,1,junior_make_debut,Participate in,12
+mejiro-dober-twisted-line,2,hanshin_juvenile_fillies,Place 5th or better in,23
+mejiro-dober-twisted-line,3,oka_sho,Place 5th or better in,31
+mejiro-dober-twisted-line,4,oaks,Place 5th or better in,34
+mejiro-dober-twisted-line,5,shuuka_sho,Place 3rd or better in,44
+mejiro-dober-twisted-line,6,arima_kinen,Participate in,48
+mejiro-dober-twisted-line,7,osaka_hai,Place 3rd or better in,54
+mejiro-dober-twisted-line,8,takarazuka_kinen,Place 3rd or better in,60
+mejiro-dober-twisted-line,9,fuchu_uma_musume_stakes,Place 1st in,67
+mejiro-dober-twisted-line,10,queen_elizabeth_cup,Place 1st in,69
+oguri-cap-miraculous-white-star,1,junior_make_debut,Participate in,12
+oguri-cap-miraculous-white-star,2,,Place 3000th or better in,24
+oguri-cap-miraculous-white-star,3,nhk_mile_cup,Place 5th or better in,33
+oguri-cap-miraculous-white-star,4,mile_championship,Place 3rd or better in,46
+oguri-cap-miraculous-white-star,5,arima_kinen,Place 3rd or better in,48
+oguri-cap-miraculous-white-star,6,,Place 3rd or better in,60
+oguri-cap-miraculous-white-star,7,tenno_sho_autumn,Place 1st in,68
+oguri-cap-miraculous-white-star,8,arima_kinen,Place 1st in,72
+biwa-hayahide-noel-rouge-carol,1,junior_make_debut,Participate in,12
+biwa-hayahide-noel-rouge-carol,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+biwa-hayahide-noel-rouge-carol,3,satsuki_sho,Place 5th or better in,31
+biwa-hayahide-noel-rouge-carol,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+biwa-hayahide-noel-rouge-carol,5,kikuka_sho,Place 3rd or better in,44
+biwa-hayahide-noel-rouge-carol,6,tenno_sho_spring,Place 3rd or better in,56
+biwa-hayahide-noel-rouge-carol,7,takarazuka_kinen,Place 1st in,60
+biwa-hayahide-noel-rouge-carol,8,tenno_sho_autumn,Place 3rd or better in,68
+biwa-hayahide-noel-rouge-carol,9,arima_kinen,Place 1st in,72
+fine-motion-noble-seamair,1,junior_make_debut,Participate in,12
+fine-motion-noble-seamair,2,,Place 3000th or better in,24
+fine-motion-noble-seamair,3,oka_sho,Place 5th or better in,31
+fine-motion-noble-seamair,4,oaks,Place 5th or better in,34
+fine-motion-noble-seamair,5,shuuka_sho,Place 3rd or better in,44
+fine-motion-noble-seamair,6,queen_elizabeth_cup,Place 3rd or better in,45
+fine-motion-noble-seamair,7,osaka_hai,Place 3rd or better in,54
+fine-motion-noble-seamair,8,takarazuka_kinen,Place 3rd or better in,60
+fine-motion-noble-seamair,9,sapporo_kinen,Place 3rd or better in,64
+fine-motion-noble-seamair,10,tenno_sho_autumn,Place 1st in,68
+tamamo-cross-with-lightning-speed,1,junior_make_debut,Participate in,12
+tamamo-cross-with-lightning-speed,2,,Place 5000th or better in,29
+tamamo-cross-with-lightning-speed,3,,Place 3rd or better in,49
+tamamo-cross-with-lightning-speed,4,hanshin_daishoten,Place 3rd or better in,54
+tamamo-cross-with-lightning-speed,5,tenno_sho_spring,Place 3rd or better in,56
+tamamo-cross-with-lightning-speed,6,takarazuka_kinen,Place 1st in,60
+tamamo-cross-with-lightning-speed,7,tenno_sho_autumn,Place 1st in,68
+tamamo-cross-with-lightning-speed,8,arima_kinen,Place 1st in,72
+tm-opera-o-blue-dazzle,1,junior_make_debut,Participate in,12
+tm-opera-o-blue-dazzle,2,,Place 5000th or better in,28
+tm-opera-o-blue-dazzle,3,satsuki_sho,Place 5th or better in,31
+tm-opera-o-blue-dazzle,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+tm-opera-o-blue-dazzle,5,arima_kinen,Place 3rd or better in,48
+tm-opera-o-blue-dazzle,6,tenno_sho_spring,Place 3rd or better in,56
+tm-opera-o-blue-dazzle,7,takarazuka_kinen,Place 3rd or better in,60
+tm-opera-o-blue-dazzle,8,japan_cup,Place 2nd or better in,70
+tm-opera-o-blue-dazzle,9,arima_kinen,Place 1st in,72
+haru-urara-first-urara-saku-sakura,1,junior_make_debut,Participate in,12
+haru-urara-first-urara-saku-sakura,2,,Place 5000th or better in,37
+haru-urara-first-urara-saku-sakura,3,,Place 9000th or better in,45
+haru-urara-first-urara-saku-sakura,4,,Place 12000th or better in,48
+haru-urara-first-urara-saku-sakura,5,negishi_stakes,Place 5th or better in,50
+haru-urara-first-urara-saku-sakura,6,february_stakes,Place 5th or better in,52
+haru-urara-first-urara-saku-sakura,7,elm_stakes,Place 5th or better in,63
+haru-urara-first-urara-saku-sakura,8,jbc_sprint,Place 1st in,69
+haru-urara-first-urara-saku-sakura,9,arima_kinen,Participate in,72
+sakura-chiyono-o-hinoshita-kaisanhana-akari,1,junior_make_debut,Participate in,12
+sakura-chiyono-o-hinoshita-kaisanhana-akari,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+sakura-chiyono-o-hinoshita-kaisanhana-akari,3,satsuki_sho,Place 5th or better in,31
+sakura-chiyono-o-hinoshita-kaisanhana-akari,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+sakura-chiyono-o-hinoshita-kaisanhana-akari,5,tenno_sho_autumn,Place 3rd or better in,44
+sakura-chiyono-o-hinoshita-kaisanhana-akari,6,yasuda_kinen,Place 3rd or better in,59
+sakura-chiyono-o-hinoshita-kaisanhana-akari,7,tenno_sho_autumn,Place 1st in,68
+sakura-chiyono-o-hinoshita-kaisanhana-akari,8,japan_cup,Place 2nd or better in,70
+mihono-bourbon-code-glacage,1,junior_make_debut,Participate in,12
+mihono-bourbon-code-glacage,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+mihono-bourbon-code-glacage,3,spring_stakes,Place 5th or better in,30
+mihono-bourbon-code-glacage,4,satsuki_sho,Place 5th or better in,31
+mihono-bourbon-code-glacage,5,tokyo_yushun_japanese_derby,Place 5th or better in,34
+mihono-bourbon-code-glacage,6,kikuka_sho,Place 3rd or better in,44
+mihono-bourbon-code-glacage,7,tenno_sho_spring,Place 3rd or better in,56
+mihono-bourbon-code-glacage,8,japan_cup,Place 2nd or better in,70
+mihono-bourbon-code-glacage,9,arima_kinen,Place 1st in,72
+eishin-flash-collectchocolatier,1,junior_make_debut,Participate in,12
+eishin-flash-collectchocolatier,2,keisei_hai,Place 5th or better in,25
+eishin-flash-collectchocolatier,3,satsuki_sho,Place 5th or better in,31
+eishin-flash-collectchocolatier,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+eishin-flash-collectchocolatier,5,japan_cup,Participate in,46
+eishin-flash-collectchocolatier,6,arima_kinen,Participate in,48
+eishin-flash-collectchocolatier,7,osaka_hai,Place 3rd or better in,54
+eishin-flash-collectchocolatier,8,tenno_sho_spring,Place 3rd or better in,56
+eishin-flash-collectchocolatier,9,tenno_sho_autumn,Place 1st in,68
+eishin-flash-collectchocolatier,10,arima_kinen,Place 1st in,72
+mejiro-ardan-clinochlore-line,1,junior_make_debut,Participate in,12
+mejiro-ardan-clinochlore-line,2,,Place 6000th or better in,30
+mejiro-ardan-clinochlore-line,3,aoba_sho,Place 5th or better in,32
+mejiro-ardan-clinochlore-line,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+mejiro-ardan-clinochlore-line,5,kikuka_sho,Participate in,44
+mejiro-ardan-clinochlore-line,6,osaka_hai,Place 3rd or better in,54
+mejiro-ardan-clinochlore-line,7,takarazuka_kinen,Place 3rd or better in,60
+mejiro-ardan-clinochlore-line,8,mainichi_okan,Place 3rd or better in,67
+mejiro-ardan-clinochlore-line,9,tenno_sho_autumn,Place 1st in,68
+admire-vega-starry-nocturne,1,junior_make_debut,Participate in,12
+admire-vega-starry-nocturne,2,hopeful_stakes,Place 5th or better in,24
+admire-vega-starry-nocturne,3,satsuki_sho,Place 5th or better in,31
+admire-vega-starry-nocturne,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+admire-vega-starry-nocturne,5,kikuka_sho,Participate in,44
+admire-vega-starry-nocturne,6,takarazuka_kinen,Place 3rd or better in,60
+admire-vega-starry-nocturne,7,tenno_sho_autumn,Place 3rd or better in,68
+admire-vega-starry-nocturne,8,japan_cup,Place 1st in,70
+matikanetannhauser-pan-paka-tiru-toto,1,junior_make_debut,Participate in,12
+matikanetannhauser-pan-paka-tiru-toto,2,,Place 5th or better in,24
+matikanetannhauser-pan-paka-tiru-toto,3,satsuki_sho,Place 5th or better in,31
+matikanetannhauser-pan-paka-tiru-toto,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+matikanetannhauser-pan-paka-tiru-toto,5,kikuka_sho,Place 3rd or better in,44
+matikanetannhauser-pan-paka-tiru-toto,6,diamond_stakes,Place 3rd or better in,52
+matikanetannhauser-pan-paka-tiru-toto,7,tenno_sho_spring,Place 3rd or better in,56
+matikanetannhauser-pan-paka-tiru-toto,8,takarazuka_kinen,Place 3rd or better in,60
+matikanetannhauser-pan-paka-tiru-toto,9,japan_cup,Place 3rd or better in,70
+matikanetannhauser-pan-paka-tiru-toto,10,arima_kinen,Place 1st in,72
+kitasan-black-crowning-ooban,1,junior_make_debut,Participate in,12
+kitasan-black-crowning-ooban,2,,Place 5000th or better in,30
+kitasan-black-crowning-ooban,3,st_lite_kinen,Place 3rd or better in,42
+kitasan-black-crowning-ooban,4,kikuka_sho,Place 3rd or better in,44
+kitasan-black-crowning-ooban,5,arima_kinen,Place 3rd or better in,48
+kitasan-black-crowning-ooban,6,osaka_hai,Place 3rd or better in,54
+kitasan-black-crowning-ooban,7,tenno_sho_spring,Place 3rd or better in,56
+kitasan-black-crowning-ooban,8,takarazuka_kinen,Place 3rd or better in,60
+kitasan-black-crowning-ooban,9,tenno_sho_autumn,Place 3rd or better in,68
+kitasan-black-crowning-ooban,10,japan_cup,Place 3rd or better in,70
+kitasan-black-crowning-ooban,11,arima_kinen,Place 1st in,72
+satono-diamond-natural-brilliance,1,junior_make_debut,Participate in,12
+satono-diamond-natural-brilliance,2,satsuki_sho,Place 5th or better in,31
+satono-diamond-natural-brilliance,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+satono-diamond-natural-brilliance,4,kikuka_sho,Place 3rd or better in,44
+satono-diamond-natural-brilliance,5,arima_kinen,Place 3rd or better in,48
+satono-diamond-natural-brilliance,6,osaka_hai,Place 3rd or better in,54
+satono-diamond-natural-brilliance,7,tenno_sho_spring,Place 3rd or better in,56
+satono-diamond-natural-brilliance,8,kyoto_daishoten,Place 1st in,67
+satono-diamond-natural-brilliance,9,tenno_sho_autumn,Place 1st in,68
+satono-diamond-natural-brilliance,10,arima_kinen,Place 1st in,72
+mejiro-bright-brunissage-line,1,junior_make_debut,Participate in,12
+mejiro-bright-brunissage-line,2,hopeful_stakes,Place 5th or better in,24
+mejiro-bright-brunissage-line,3,satsuki_sho,Place 5th or better in,31
+mejiro-bright-brunissage-line,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+mejiro-bright-brunissage-line,5,kikuka_sho,Place 3rd or better in,44
+mejiro-bright-brunissage-line,6,stayers_stakes,Place 3rd or better in,47
+mejiro-bright-brunissage-line,7,tenno_sho_spring,Place 1st in,56
+mejiro-bright-brunissage-line,8,tenno_sho_autumn,Place 3rd or better in,68
+mejiro-bright-brunissage-line,9,arima_kinen,Place 1st in,72
+fuji-kiseki-succes-etoile,1,junior_make_debut,Participate in,12
+fuji-kiseki-succes-etoile,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+fuji-kiseki-succes-etoile,3,yayoi_sho,Place 5th or better in,29
+fuji-kiseki-succes-etoile,4,satsuki_sho,Place 5th or better in,31
+fuji-kiseki-succes-etoile,5,nhk_mile_cup,Place 5th or better in,33
+fuji-kiseki-succes-etoile,6,kikuka_sho,Participate in,44
+fuji-kiseki-succes-etoile,7,takamatsunomiya_kinen,Place 3rd or better in,54
+fuji-kiseki-succes-etoile,8,yasuda_kinen,Place 3rd or better in,59
+fuji-kiseki-succes-etoile,9,tenno_sho_autumn,Place 1st in,68
+fuji-kiseki-succes-etoile,10,arima_kinen,Participate in,72
+seiun-sky-soiree-de-chaton,1,junior_make_debut,Participate in,12
+seiun-sky-soiree-de-chaton,2,,Place 3000th or better in,25
+seiun-sky-soiree-de-chaton,3,satsuki_sho,Place 5th or better in,31
+seiun-sky-soiree-de-chaton,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+seiun-sky-soiree-de-chaton,5,kikuka_sho,Place 3rd or better in,44
+seiun-sky-soiree-de-chaton,6,arima_kinen,Place 3rd or better in,48
+seiun-sky-soiree-de-chaton,7,tenno_sho_spring,Place 3rd or better in,56
+seiun-sky-soiree-de-chaton,8,takarazuka_kinen,Place 3rd or better in,60
+seiun-sky-soiree-de-chaton,9,tenno_sho_autumn,Place 1st in,68
+seiun-sky-soiree-de-chaton,10,arima_kinen,Place 1st in,72
+nishino-flower-tiered-petal,1,junior_make_debut,Participate in,12
+nishino-flower-tiered-petal,2,hanshin_juvenile_fillies,Place 5th or better in,23
+nishino-flower-tiered-petal,3,oka_sho,Place 5th or better in,31
+nishino-flower-tiered-petal,4,oaks,Participate in,34
+nishino-flower-tiered-petal,5,sprinters_stakes,Place 3rd or better in,42
+nishino-flower-tiered-petal,6,takamatsunomiya_kinen,Place 3rd or better in,54
+nishino-flower-tiered-petal,7,yomiuri_milers_cup,Place 3rd or better in,56
+nishino-flower-tiered-petal,8,yasuda_kinen,Place 1st in,59
+nishino-flower-tiered-petal,9,sprinters_stakes,Place 1st in,66
+yaeno-muteki-attack-of-the-four-white-meteors,1,junior_make_debut,Participate in,12
+yaeno-muteki-attack-of-the-four-white-meteors,2,mainichi_hai,Place 5th or better in,30
+yaeno-muteki-attack-of-the-four-white-meteors,3,satsuki_sho,Place 5th or better in,31
+yaeno-muteki-attack-of-the-four-white-meteors,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+yaeno-muteki-attack-of-the-four-white-meteors,5,kikuka_sho,Participate in,44
+yaeno-muteki-attack-of-the-four-white-meteors,6,osaka_hai,Place 3rd or better in,54
+yaeno-muteki-attack-of-the-four-white-meteors,7,yasuda_kinen,Place 3rd or better in,59
+yaeno-muteki-attack-of-the-four-white-meteors,8,takarazuka_kinen,Place 3rd or better in,60
+yaeno-muteki-attack-of-the-four-white-meteors,9,tenno_sho_autumn,Place 1st in,68
+nice-nature-run-win,1,junior_make_debut,Participate in,12
+nice-nature-run-win,2,wakagoma_stakes,Place 3rd or better in,26
+nice-nature-run-win,3,kokura_kinen,Place 3rd or better in,39
+nice-nature-run-win,4,kikuka_sho,Place 3rd or better in,44
+nice-nature-run-win,5,arima_kinen,Place 3rd or better in,48
+nice-nature-run-win,6,takarazuka_kinen,Place 3rd or better in,60
+nice-nature-run-win,7,tenno_sho_autumn,Place 3rd or better in,68
+nice-nature-run-win,8,chunichi_shimbun_hai,Place 1st in,71
+nice-nature-run-win,9,arima_kinen,Place 1st in,72
+king-halo-noble-white-cheer-attire,1,junior_make_debut,Participate in,12
+king-halo-noble-white-cheer-attire,2,hopeful_stakes,Place 5th or better in,24
+king-halo-noble-white-cheer-attire,3,satsuki_sho,Place 5th or better in,31
+king-halo-noble-white-cheer-attire,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+king-halo-noble-white-cheer-attire,5,kikuka_sho,Participate in,44
+king-halo-noble-white-cheer-attire,6,takamatsunomiya_kinen,Place 1st in,54
+king-halo-noble-white-cheer-attire,7,yasuda_kinen,Place 3rd or better in,59
+king-halo-noble-white-cheer-attire,8,sprinters_stakes,Place 1st in,66
+king-halo-noble-white-cheer-attire,9,tenno_sho_autumn,Place 1st in,68
+ines-fujin-all-time-fever,1,junior_make_debut,Participate in,12
+ines-fujin-all-time-fever,2,asahi_hai_futurity_stakes,Place 5th or better in,23
+ines-fujin-all-time-fever,3,satsuki_sho,Place 5th or better in,31
+ines-fujin-all-time-fever,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+ines-fujin-all-time-fever,5,kikuka_sho,Participate in,44
+ines-fujin-all-time-fever,6,osaka_hai,Place 3rd or better in,54
+ines-fujin-all-time-fever,7,takarazuka_kinen,Place 3rd or better in,60
+ines-fujin-all-time-fever,8,tenno_sho_autumn,Place 3rd or better in,68
+ines-fujin-all-time-fever,9,japan_cup,Place 1st in,70
+mejiro-palmer-line-breakthrough,1,junior_make_debut,Participate in,12
+mejiro-palmer-line-breakthrough,2,,Place 9000th or better in,35
+mejiro-palmer-line-breakthrough,3,hakodate_kinen,Place 3rd or better in,37
+mejiro-palmer-line-breakthrough,4,nikkei_shinshun_hai,Place 3rd or better in,49
+mejiro-palmer-line-breakthrough,5,tenno_sho_spring,Place 3rd or better in,56
+mejiro-palmer-line-breakthrough,6,takarazuka_kinen,Place 3rd or better in,60
+mejiro-palmer-line-breakthrough,7,tenno_sho_autumn,Place 3rd or better in,68
+mejiro-palmer-line-breakthrough,8,arima_kinen,Place 1st in,72
+fine-motion-titania,1,junior_make_debut,Participate in,12
+fine-motion-titania,2,,Place 3000th or better in,24
+fine-motion-titania,3,oka_sho,Place 5th or better in,31
+fine-motion-titania,4,oaks,Place 5th or better in,34
+fine-motion-titania,5,shuuka_sho,Place 3rd or better in,44
+fine-motion-titania,6,queen_elizabeth_cup,Place 3rd or better in,45
+fine-motion-titania,7,osaka_hai,Place 3rd or better in,54
+fine-motion-titania,8,takarazuka_kinen,Place 3rd or better in,60
+fine-motion-titania,9,sapporo_kinen,Place 3rd or better in,64
+fine-motion-titania,10,tenno_sho_autumn,Place 1st in,68
+curren-chan-ma-cherie,1,junior_make_debut,Participate in,12
+curren-chan-ma-cherie,2,,Place 3000th or better in,23
+curren-chan-ma-cherie,3,fillies_revue,Place 5th or better in,29
+curren-chan-ma-cherie,4,aoi_stakes,Place 5th or better in,34
+curren-chan-ma-cherie,5,hakodate_sprint_stakes,Place 3rd or better in,36
+curren-chan-ma-cherie,6,sprinters_stakes,Place 3rd or better in,42
+curren-chan-ma-cherie,7,ocean_stakes,Place 3rd or better in,53
+curren-chan-ma-cherie,8,takamatsunomiya_kinen,Place 1st in,54
+curren-chan-ma-cherie,9,sprinters_stakes,Place 1st in,66
+inari-one-inari-yukari-edomurasaki,1,junior_make_debut,Participate in,12
+inari-one-inari-yukari-edomurasaki,2,,Place 3000th or better in,24
+inari-one-inari-yukari-edomurasaki,3,japan_dirt_derby,Place 5th or better in,37
+inari-one-inari-yukari-edomurasaki,4,tokyo_daishoten,Place 1st in,48
+inari-one-inari-yukari-edomurasaki,5,tenno_sho_spring,Place 3rd or better in,56
+inari-one-inari-yukari-edomurasaki,6,takarazuka_kinen,Place 3rd or better in,60
+inari-one-inari-yukari-edomurasaki,7,mainichi_okan,Place 2nd or better in,67
+inari-one-inari-yukari-edomurasaki,8,tenno_sho_autumn,Place 3rd or better in,68
+inari-one-inari-yukari-edomurasaki,9,arima_kinen,Place 1st in,72
+sweep-tosho-platanus-witch,1,junior_make_debut,Participate in,12
+sweep-tosho-platanus-witch,2,hanshin_juvenile_fillies,Place 5th or better in,23
+sweep-tosho-platanus-witch,3,oka_sho,Place 5th or better in,31
+sweep-tosho-platanus-witch,4,oaks,Place 5th or better in,34
+sweep-tosho-platanus-witch,5,shuuka_sho,Place 1st in,44
+sweep-tosho-platanus-witch,6,queen_elizabeth_cup,Place 3rd or better in,45
+sweep-tosho-platanus-witch,7,yasuda_kinen,Place 3rd or better in,59
+sweep-tosho-platanus-witch,8,takarazuka_kinen,Place 1st in,60
+sweep-tosho-platanus-witch,9,tenno_sho_autumn,Place 3rd or better in,68
+sweep-tosho-platanus-witch,10,queen_elizabeth_cup,Place 1st in,69
+taiki-shuttle-bubblegum-memories,1,junior_make_debut,Participate in,12
+taiki-shuttle-bubblegum-memories,2,shinzan_kinen,Place 5th or better in,25
+taiki-shuttle-bubblegum-memories,3,nhk_mile_cup,Place 5th or better in,33
+taiki-shuttle-bubblegum-memories,4,unicorn_stakes,Place 5th or better in,36
+taiki-shuttle-bubblegum-memories,5,mile_championship,Place 3rd or better in,46
+taiki-shuttle-bubblegum-memories,6,yasuda_kinen,Place 1st in,59
+taiki-shuttle-bubblegum-memories,7,sprinters_stakes,Place 1st in,66
+taiki-shuttle-bubblegum-memories,8,mile_championship,Place 1st in,70
+mejiro-dober-vacances-saphir,1,junior_make_debut,Participate in,12
+mejiro-dober-vacances-saphir,2,hanshin_juvenile_fillies,Place 5th or better in,23
+mejiro-dober-vacances-saphir,3,oka_sho,Place 5th or better in,31
+mejiro-dober-vacances-saphir,4,oaks,Place 5th or better in,34
+mejiro-dober-vacances-saphir,5,shuuka_sho,Place 3rd or better in,44
+mejiro-dober-vacances-saphir,6,arima_kinen,Participate in,48
+mejiro-dober-vacances-saphir,7,osaka_hai,Place 3rd or better in,54
+mejiro-dober-vacances-saphir,8,takarazuka_kinen,Place 3rd or better in,60
+mejiro-dober-vacances-saphir,9,fuchu_uma_musume_stakes,Place 1st in,67
+mejiro-dober-vacances-saphir,10,queen_elizabeth_cup,Place 1st in,69
+air-shakur-unsigned,1,junior_make_debut,Participate in,12
+air-shakur-unsigned,2,hopeful_stakes,Place 5th or better in,24
+air-shakur-unsigned,3,satsuki_sho,Place 5th or better in,31
+air-shakur-unsigned,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+air-shakur-unsigned,5,kikuka_sho,Place 3rd or better in,44
+air-shakur-unsigned,6,japan_cup,Participate in,46
+air-shakur-unsigned,7,tenno_sho_spring,Place 5th or better in,56
+air-shakur-unsigned,8,takarazuka_kinen,Place 3rd or better in,60
+air-shakur-unsigned,9,tenno_sho_autumn,Place 3rd or better in,68
+air-shakur-unsigned,10,arima_kinen,Place 1st in,72
+special-week-supreme-commander-of-the-rising-sun,1,junior_make_debut,Participate in,12
+special-week-supreme-commander-of-the-rising-sun,2,kisaragi_sho,Place 5th or better in,27
+special-week-supreme-commander-of-the-rising-sun,3,tokyo_yushun_japanese_derby,Place 5th or better in,34
+special-week-supreme-commander-of-the-rising-sun,4,kikuka_sho,Place 3rd or better in,44
+special-week-supreme-commander-of-the-rising-sun,5,tenno_sho_spring,Place 3rd or better in,56
+special-week-supreme-commander-of-the-rising-sun,6,japan_cup,Place 2nd or better in,70
+special-week-supreme-commander-of-the-rising-sun,7,arima_kinen,Place 1st in,72
+gold-ship-run-fun-watergun,1,junior_make_debut,Participate in,12
+gold-ship-run-fun-watergun,2,hopeful_stakes,Place 5th or better in,24
+gold-ship-run-fun-watergun,3,satsuki_sho,Place 5th or better in,31
+gold-ship-run-fun-watergun,4,kikuka_sho,Place 3rd or better in,44
+gold-ship-run-fun-watergun,5,arima_kinen,Place 3rd or better in,48
+gold-ship-run-fun-watergun,6,tenno_sho_spring,Place 3rd or better in,56
+gold-ship-run-fun-watergun,7,takarazuka_kinen,Place 1st in,60
+gold-ship-run-fun-watergun,8,tenno_sho_autumn,Place 1st in,68
+gold-ship-run-fun-watergun,9,arima_kinen,Place 1st in,72
+mejiro-mcqueen-fair-lady-of-the-waves,1,junior_make_debut,Participate in,12
+mejiro-mcqueen-fair-lady-of-the-waves,2,,Place 3000th or better in,24
+mejiro-mcqueen-fair-lady-of-the-waves,3,kobe_shimbun_hai,Place 3rd or better in,42
+mejiro-mcqueen-fair-lady-of-the-waves,4,kikuka_sho,Place 3rd or better in,44
+mejiro-mcqueen-fair-lady-of-the-waves,5,tenno_sho_spring,Place 1st in,56
+mejiro-mcqueen-fair-lady-of-the-waves,6,takarazuka_kinen,Place 2nd or better in,60
+mejiro-mcqueen-fair-lady-of-the-waves,7,tenno_sho_autumn,Place 1st in,68
+bamboo-memory-ambition-of-the-black-iron,1,junior_make_debut,Participate in,12
+bamboo-memory-ambition-of-the-black-iron,2,,Place 3000th or better in,24
+bamboo-memory-ambition-of-the-black-iron,3,,Place 6000th or better in,29
+bamboo-memory-ambition-of-the-black-iron,4,swan_stakes,Place 3rd or better in,44
+bamboo-memory-ambition-of-the-black-iron,5,takamatsunomiya_kinen,Place 3rd or better in,54
+bamboo-memory-ambition-of-the-black-iron,6,yasuda_kinen,Place 3rd or better in,59
+bamboo-memory-ambition-of-the-black-iron,7,takarazuka_kinen,Participate in,60
+bamboo-memory-ambition-of-the-black-iron,8,sprinters_stakes,Place 1st in,66
+bamboo-memory-ambition-of-the-black-iron,9,mile_championship,Place 1st in,70
+copano-rickey-yin-yang-bagua-lucky-costume,1,junior_make_debut,Participate in,12
+copano-rickey-yin-yang-bagua-lucky-costume,2,,Place 3000th or better in,24
+copano-rickey-yin-yang-bagua-lucky-costume,3,fukuryu_stakes,Place 3rd or better in,31
+copano-rickey-yin-yang-bagua-lucky-costume,4,champions_cup,Place 3rd or better in,47
+copano-rickey-yin-yang-bagua-lucky-costume,5,february_stakes,Place 3rd or better in,52
+copano-rickey-yin-yang-bagua-lucky-costume,6,kashiwa_kinen,Place 3rd or better in,57
+copano-rickey-yin-yang-bagua-lucky-costume,7,teio_sho,Place 3rd or better in,60
+copano-rickey-yin-yang-bagua-lucky-costume,8,mile_championship_nambu_hai,Place 3rd or better in,67
+copano-rickey-yin-yang-bagua-lucky-costume,9,jbc_classic,Place 3rd or better in,69
+copano-rickey-yin-yang-bagua-lucky-costume,10,tokyo_daishoten,Place 1st in,72
+smart-falcon-twilight-triumph,1,junior_make_debut,Participate in,12
+smart-falcon-twilight-triumph,2,,Place 1st in,25
+smart-falcon-twilight-triumph,3,satsuki_sho,Participate in,31
+smart-falcon-twilight-triumph,4,japan_dirt_derby,Place 5th or better in,37
+smart-falcon-twilight-triumph,5,jbc_classic,Place 3rd or better in,45
+smart-falcon-twilight-triumph,6,tokyo_daishoten,Place 3rd or better in,48
+smart-falcon-twilight-triumph,7,february_stakes,Place 1st in,52
+smart-falcon-twilight-triumph,8,teio_sho,Place 1st in,60
+smart-falcon-twilight-triumph,9,jbc_classic,Place 1st in,69
+smart-falcon-twilight-triumph,10,champions_cup,Place 1st in,71
+smart-falcon-twilight-triumph,11,tokyo_daishoten,Place 1st in,72
+winning-ticket-dream-deliverer,1,junior_make_debut,Participate in,12
+winning-ticket-dream-deliverer,2,hopeful_stakes,Place 5th or better in,24
+winning-ticket-dream-deliverer,3,yayoi_sho,Place 5th or better in,29
+winning-ticket-dream-deliverer,4,satsuki_sho,Place 5th or better in,31
+winning-ticket-dream-deliverer,5,tokyo_yushun_japanese_derby,Place 5th or better in,34
+winning-ticket-dream-deliverer,6,kikuka_sho,Place 3rd or better in,44
+winning-ticket-dream-deliverer,7,osaka_hai,Place 3rd or better in,54
+winning-ticket-dream-deliverer,8,takarazuka_kinen,Place 3rd or better in,60
+winning-ticket-dream-deliverer,9,arima_kinen,Place 1st in,72
+narita-taishin-difference-engineer,1,junior_make_debut,Participate in,12
+narita-taishin-difference-engineer,2,hopeful_stakes,Place 5th or better in,24
+narita-taishin-difference-engineer,3,satsuki_sho,Place 5th or better in,31
+narita-taishin-difference-engineer,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+narita-taishin-difference-engineer,5,kikuka_sho,Participate in,44
+narita-taishin-difference-engineer,6,nikkei_sho,Place 1st in,54
+narita-taishin-difference-engineer,7,tenno_sho_spring,Place 3rd or better in,56
+narita-taishin-difference-engineer,8,tenno_sho_autumn,Place 1st in,68
+narita-taishin-difference-engineer,9,arima_kinen,Place 1st in,72
+yukino-bijin-cute-sweet-flower-of-mutsu,1,junior_make_debut,Participate in,12
+yukino-bijin-cute-sweet-flower-of-mutsu,2,hanshin_juvenile_fillies,Place 5th or better in,23
+yukino-bijin-cute-sweet-flower-of-mutsu,3,oka_sho,Place 5th or better in,31
+yukino-bijin-cute-sweet-flower-of-mutsu,4,oaks,Place 5th or better in,34
+yukino-bijin-cute-sweet-flower-of-mutsu,5,queen_stakes,Place 1st in,38
+yukino-bijin-cute-sweet-flower-of-mutsu,6,shuuka_sho,Place 3rd or better in,44
+yukino-bijin-cute-sweet-flower-of-mutsu,7,osaka_hai,Place 3rd or better in,54
+yukino-bijin-cute-sweet-flower-of-mutsu,8,victoria_mile,Place 3rd or better in,57
+yukino-bijin-cute-sweet-flower-of-mutsu,9,queen_elizabeth_cup,Place 1st in,69
+yukino-bijin-cute-sweet-flower-of-mutsu,10,japan_cup,Place 1st in,70
+seeking-the-pearl-rocket-star,1,junior_make_debut,Participate in,12
+seeking-the-pearl-rocket-star,2,daily_hai_junior_stakes,Place 5th or better in,21
+seeking-the-pearl-rocket-star,3,hanshin_juvenile_fillies,Place 5th or better in,23
+seeking-the-pearl-rocket-star,4,oka_sho,Place 5th or better in,31
+seeking-the-pearl-rocket-star,5,nhk_mile_cup,Place 5th or better in,33
+seeking-the-pearl-rocket-star,6,rose_stakes,Place 3rd or better in,41
+seeking-the-pearl-rocket-star,7,mile_championship,Place 3rd or better in,46
+seeking-the-pearl-rocket-star,8,takamatsunomiya_kinen,Place 3rd or better in,54
+seeking-the-pearl-rocket-star,9,yasuda_kinen,Place 3rd or better in,59
+seeking-the-pearl-rocket-star,10,sprinters_stakes,Place 1st in,66
+seeking-the-pearl-rocket-star,11,mile_championship,Place 1st in,70
+agnes-digital-agnesjiangshi,1,junior_make_debut,Participate in,12
+agnes-digital-agnesjiangshi,2,hyacinth_stakes,Place 3rd or better in,28
+agnes-digital-agnesjiangshi,3,nhk_mile_cup,Place 5th or better in,33
+agnes-digital-agnesjiangshi,4,japan_dirt_derby,Place 5th or better in,37
+agnes-digital-agnesjiangshi,5,mile_championship,Place 3rd or better in,46
+agnes-digital-agnesjiangshi,6,,Place 3rd or better in,60
+agnes-digital-agnesjiangshi,7,tenno_sho_autumn,Place 1st in,68
+meisho-doto-dot-o-lantern,1,junior_make_debut,Participate in,12
+meisho-doto-dot-o-lantern,2,,Place 6000th or better in,31
+meisho-doto-dot-o-lantern,3,,Place 15000th or better in,44
+meisho-doto-dot-o-lantern,4,nikkei_shinshun_hai,Place 3rd or better in,49
+meisho-doto-dot-o-lantern,5,kinko_sho,Place 1st in,53
+meisho-doto-dot-o-lantern,6,takarazuka_kinen,Place 2nd or better in,60
+meisho-doto-dot-o-lantern,7,tenno_sho_autumn,Place 2nd or better in,68
+meisho-doto-dot-o-lantern,8,japan_cup,Place 2nd or better in,70
+meisho-doto-dot-o-lantern,9,arima_kinen,Place 1st in,72
+aston-machan-flare,1,junior_make_debut,Participate in,12
+aston-machan-flare,2,fantasy_stakes,Place 5th or better in,21
+aston-machan-flare,3,hanshin_juvenile_fillies,Place 5th or better in,23
+aston-machan-flare,4,fillies_revue,Place 5th or better in,29
+aston-machan-flare,5,oka_sho,Place 5th or better in,31
+aston-machan-flare,6,sprinters_stakes,Place 1st in,42
+aston-machan-flare,7,takamatsunomiya_kinen,Place 3rd or better in,54
+aston-machan-flare,8,sprinters_stakes,Place 1st in,66
+yamanin-zephyr-fluttertail-spirit,1,junior_make_debut,Participate in,12
+yamanin-zephyr-fluttertail-spirit,2,new_zealand_trophy,Place 5th or better in,31
+yamanin-zephyr-fluttertail-spirit,3,aoi_stakes,Place 5th or better in,34
+yamanin-zephyr-fluttertail-spirit,4,sprinters_stakes,Place 3rd or better in,42
+yamanin-zephyr-fluttertail-spirit,5,mile_championship,Place 3rd or better in,46
+yamanin-zephyr-fluttertail-spirit,6,yasuda_kinen,Place 1st in,59
+yamanin-zephyr-fluttertail-spirit,7,sprinters_stakes,Place 1st in,66
+yamanin-zephyr-fluttertail-spirit,8,tenno_sho_autumn,Place 1st in,68
+tamamo-cross-ferocious-thunder,1,junior_make_debut,Participate in,12
+tamamo-cross-ferocious-thunder,2,,Place 5000th or better in,29
+tamamo-cross-ferocious-thunder,3,,Place 3rd or better in,49
+tamamo-cross-ferocious-thunder,4,hanshin_daishoten,Place 3rd or better in,54
+tamamo-cross-ferocious-thunder,5,tenno_sho_spring,Place 3rd or better in,56
+tamamo-cross-ferocious-thunder,6,takarazuka_kinen,Place 1st in,60
+tamamo-cross-ferocious-thunder,7,tenno_sho_autumn,Place 1st in,68
+tamamo-cross-ferocious-thunder,8,arima_kinen,Place 1st in,72
+inari-one-fields-of-gold,1,junior_make_debut,Participate in,12
+inari-one-fields-of-gold,2,,Place 3000th or better in,24
+inari-one-fields-of-gold,3,japan_dirt_derby,Place 5th or better in,37
+inari-one-fields-of-gold,4,tokyo_daishoten,Place 1st in,48
+inari-one-fields-of-gold,5,tenno_sho_spring,Place 3rd or better in,56
+inari-one-fields-of-gold,6,takarazuka_kinen,Place 3rd or better in,60
+inari-one-fields-of-gold,7,mainichi_okan,Place 2nd or better in,67
+inari-one-fields-of-gold,8,tenno_sho_autumn,Place 3rd or better in,68
+inari-one-fields-of-gold,9,arima_kinen,Place 1st in,72
+nakayama-festa-dramatic-turnabout,1,junior_make_debut,Participate in,12
+nakayama-festa-dramatic-turnabout,2,keisei_hai,Place 5th or better in,25
+nakayama-festa-dramatic-turnabout,3,satsuki_sho,Place 5th or better in,31
+nakayama-festa-dramatic-turnabout,4,tokyo_yushun_japanese_derby,Place 5th or better in,34
+nakayama-festa-dramatic-turnabout,5,kikuka_sho,Place 3rd or better in,44
+nakayama-festa-dramatic-turnabout,6,chunichi_shimbun_hai,Place 1st in,47
+nakayama-festa-dramatic-turnabout,7,takarazuka_kinen,Place 1st in,60
+nakayama-festa-dramatic-turnabout,8,japan_cup,Place 1st in,70
