@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+
+{% block title %}
+Trainer Titles
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .content-wrapper {
+        padding: 0 !important;
+    }
+
+    .titles-page {
+        width: 100%;
+        min-height: calc(100vh - 72px);
+        padding: 28px 0 50px;
+        background: #e8e8e8;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #111111;
+    }
+
+    .titles-inner {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+
+    .titles-title {
+        margin: 0 0 10px;
+        padding-left: 14px;
+        font-size: 30px;
+        font-weight: 900;
+        border-left: 5px solid #ff9b3d;
+        color: #111111;
+    }
+
+    .titles-intro {
+        margin: 0 0 20px;
+        font-size: 15px;
+        line-height: 1.55;
+        color: #333333;
+    }
+
+    .titles-search-wrapper {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+    #titleSearchInput {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 16px;
+        border: 1px solid #bbbbbb;
+        border-radius: 6px;
+        outline: none;
+        box-sizing: border-box;
+        background: #ffffff;
+    }
+
+    #titleSearchInput:focus {
+        border-color: #4b63ff;
+        box-shadow: 0 0 0 2px rgba(75, 99, 255, 0.15);
+    }
+
+    .titles-count {
+        margin: 0 0 12px;
+        font-size: 14px;
+        color: #555555;
+    }
+
+    /* ===== LIST: full-width alternating gray rows ===== */
+
+    .titles-list {
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #cfcfcf;
+        background: #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .title-row {
+        display: grid;
+        grid-template-columns: 240px minmax(160px, 1fr) minmax(220px, 1.4fr);
+        align-items: center;
+        gap: 12px 20px;
+        padding: 11px 22px;
+        min-height: 56px;
+        border-bottom: 1px solid #d8d8d8;
+        box-sizing: border-box;
+    }
+
+    /* Xen kẽ xám nhạt / xám đậm hơn — giống GameTora */
+    .title-row:nth-child(odd) {
+        background: #f0f0f0;
+    }
+
+    .title-row:nth-child(even) {
+        background: #e2e2e2;
+    }
+
+    .title-row:hover {
+        background: #d6e8f7;
+    }
+
+    .title-row:last-child {
+        border-bottom: none;
+    }
+
+    .title-badge-cell {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+    }
+
+    .title-badge-cell img {
+        display: block;
+        max-height: 38px;
+        max-width: 220px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Fallback badge khi chưa có ảnh */
+    .title-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        padding: 7px 16px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 800;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background: linear-gradient(180deg, #fff3b0, #f0c040);
+        color: #5a3d00;
+        border: 1px solid #e0b020;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    }
+
+    .title-name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111111;
+        line-height: 1.3;
+    }
+
+    .title-requirement {
+        font-size: 15px;
+        line-height: 1.4;
+        color: #222222;
+    }
+
+    .titles-empty {
+        padding: 48px 20px;
+        text-align: center;
+        color: #666666;
+        font-size: 16px;
+        background: #f0f0f0;
+        border-radius: 8px;
+        border: 1px solid #cfcfcf;
+    }
+
+    @media (max-width: 800px) {
+        .titles-inner {
+            padding: 0 14px;
+        }
+
+        .title-row {
+            grid-template-columns: 1fr;
+            gap: 6px;
+            padding: 14px 16px;
+        }
+
+        .title-badge-cell img {
+            max-height: 34px;
+        }
+
+        .title-name {
+            font-size: 15px;
+        }
+
+        .title-requirement {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div class="titles-page">
+    <div class="titles-inner">
+
+        <h1 class="titles-title">Trainer Titles</h1>
+
+        <p class="titles-intro">
+            This page lists all the possible <b>titles</b> you can obtain during your Uma Musume trainer career.
+            Think of these as achievements that you can get for reaching certain milestones.
+            You can set your preferred title in the menu (Titles / 称号).
+        </p>
+
+        <div class="titles-search-wrapper">
+            <input
+                id="titleSearchInput"
+                type="text"
+                placeholder="Search titles..."
+                autocomplete="off"
+            >
+        </div>
+
+        <p class="titles-count" id="titlesCount">
+            {% if titles %}
+                Found {{ titles|length }} results.
+            {% else %}
+                No titles loaded yet.
+            {% endif %}
+        </p>
+
+        {% if titles %}
+        <div class="titles-list" id="titlesList">
+            {% for title in titles %}
+            <div
+                class="title-row"
+                data-search="{{ (title.name ~ ' ' ~ title.requirement)|lower }}"
+            >
+                <div class="title-badge-cell">
+                    {% if title.image %}
+                    <img
+                        src="{{ url_for('static', filename='images/titles/' ~ title.image) }}"
+                        alt="{{ title.name }}"
+                    >
+                    {% else %}
+                    <span class="title-badge">{{ title.name }}</span>
+                    {% endif %}
+                </div>
+
+                <div class="title-name">{{ title.name }}</div>
+
+                <div class="title-requirement">{{ title.requirement }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="titles-empty">
+            Title data is not available yet.<br>
+            (Coming soon — will be loaded from CSV / crawl)
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+
+<script>
+    (function () {
+        var input = document.getElementById("titleSearchInput");
+        var list = document.getElementById("titlesList");
+        var countEl = document.getElementById("titlesCount");
+
+        if (!input || !list) {
+            return;
+        }
+
+        var rows = Array.prototype.slice.call(list.querySelectorAll(".title-row"));
+
+        input.addEventListener("input", function () {
+            var q = (input.value || "").trim().toLowerCase();
+            var visible = 0;
+
+            rows.forEach(function (row) {
+                var text = row.getAttribute("data-search") || "";
+                var show = !q || text.indexOf(q) !== -1;
+                row.style.display = show ? "" : "none";
+                if (show) {
+                    visible += 1;
+                }
+            });
+
+            if (countEl) {
+                countEl.textContent = "Found " + visible + " results.";
+            }
+        });
+    })();
+</script>
+
+{% endblock %}

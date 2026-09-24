@@ -169,6 +169,12 @@
 <div class="tevent-group">
     <div class="tevent-group-title">{{ title }}</div>
 
+    {% if group_key == 'after_race' %}
+    <p class="tevent-group-note">
+        Stats / skill points will gain when winning G1 / G2-G3 / (Pre-)OP
+    </p>
+    {% endif %}
+
     <div class="tevent-button-list">
         {% for event in events %}
         <button
@@ -1142,8 +1148,17 @@
     .tevent-group-title {
         font-size: 24px;
         font-weight: 900;
-        margin: 24px 0 14px;
+        margin: 24px 0 6px;
         color: #111;
+    }
+
+    .tevent-group-note {
+        margin: 0 0 14px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.4;
+        color: #666666;
+        font-style: italic;
     }
 
     .tevent-button-list {

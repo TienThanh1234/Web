@@ -570,7 +570,8 @@
                             'cm_guide',
                             'scenario_guide',
                             'skills',
-                            'skill_detail'
+                            'skill_detail',
+                            'titles'
                         ] %}
                             active
                         {% endif %}"
@@ -679,6 +680,17 @@
                         >
                             <i class="fa-solid fa-bolt"></i>
                             Skills
+                        </a>
+
+                        <a
+                            class="
+                            {% if request.endpoint == 'titles' %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('titles') }}"
+                        >
+                            <i class="fa-solid fa-medal"></i>
+                            Titles
                         </a>
 
                     </div>
