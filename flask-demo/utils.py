@@ -24,12 +24,10 @@ def read_csv_file(file_path):
     return rows
 
 
-
 def make_short_description(text):
     if text is None:
         return ""
 
-    # Xóa mọi đoạn nằm trong ngoặc vuông: [...]
     text = re.sub(r"\s*\[[^\]]*\]", "", text)
 
     return text.strip()
@@ -48,7 +46,6 @@ def text_to_id(text):
     return text.strip("_")
 
 
-
 def normalize_supabase_row(row):
     """Chuẩn hóa một dòng Supabase thành các chuỗi giống csv.DictReader."""
     return {
@@ -60,9 +57,12 @@ def normalize_supabase_row(row):
 def fetch_all_supabase_rows(
     table_name,
     order_column="id",
-    page_size=1000
+    page_size=1000,
 ):
-    """Đọc toàn bộ dữ liệu Supabase theo từng trang."""
+    """
+    Đọc toàn bộ dữ liệu Supabase theo từng trang.
+    Giống cách skills/items đang dùng.
+    """
     rows = []
     start = 0
 
@@ -70,13 +70,31 @@ def fetch_all_supabase_rows(
         query = supabase.table(table_name).select("*")
 
         if order_column:
-            query = query.order(order_column)
+            try:
+                query = query.order(order_column)
+            except Exception:
+                pass
 
-        response = (
-            query
-            .range(start, start + page_size - 1)
-            .execute()
-        )
+        try:
+            response = (
+                query
+                .range(start, start + page_size - 1)
+                .execute()
+            )
+        except Exception as exc:
+            # Thử không order
+            print(f"[Supabase] {table_name} lỗi: {exc}")
+            try:
+                response = (
+                    supabase
+                    .table(table_name)
+                    .select("*")
+                    .range(start, start + page_size - 1)
+                    .execute()
+                )
+            except Exception as exc2:
+                print(f"[Supabase] {table_name} thất bại: {exc2}")
+                break
 
         batch = response.data or []
         rows.extend(batch)
@@ -87,5 +105,3 @@ def fetch_all_supabase_rows(
         start += page_size
 
     return rows
-
-
