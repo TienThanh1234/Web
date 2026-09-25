@@ -31,6 +31,12 @@ SCHEDULE_HALF_LABELS = {
     "second half": "Late",
 }
 
+# CSV cũ crawl sai: race_slug trống + "Place 3000th or better in" = fan goal
+_FAN_PLACE_RE = re.compile(
+    r"^Place\s+(\d+)(?:st|nd|rd|th)\s+or\s+better\s+in\s*$",
+    re.I,
+)
+
 CHARACTER_TRAINING_EVENT_GROUPS = [
     ("costume", "Costume Events"),
     ("choices", "Events With Choices"),
@@ -129,6 +135,10 @@ def character_lookup_slugs(character_slug, character=None):
     # progressive prefixes: a-b-c-d → a-b-c, a-b, a
     for n in range(len(parts) - 1, 0, -1):
         add("-".join(parts[:n]))
+
+    # underscore variants (CSV đôi khi dùng _)
+    for s in list(candidates):
+        add(s.replace("-", "_"))
 
     return candidates
 
@@ -294,27 +304,73 @@ def _resolve_race(slug, races_by_slug, all_races):
     return norm2, {}
 
 
+def _parse_nolink_objective(race_slug, requirement):
+    """
+    Objective KHÔNG gắn 1 race cụ thể (không link race_detail):
+      - Have at least N fans
+      - Place 3rd or better in 2 G1 races
+      - CSV cũ: race_slug trống + Place 3000th...
+    Trả về (is_nolink, requirement_text).
+    """
+    req = (requirement or "").strip()
+    slug = (race_slug or "").strip()
+
+    if req.lower().startswith("have at least"):
+        return True, req
+
+    # CSV cũ fan: Place 3000th or better in (không có race)
+    match = _FAN_PLACE_RE.match(req)
+    if not slug and match:
+        fans = int(match.group(1))
+        if fans >= 100:
+            return True, f"Have at least {fans} fans"
+
+    if not slug and req:
+        # Mọi objective không có race_slug: fans / G1 races / ...
+        return True, req
+
+    # Có race_slug nhưng text đã là full sentence grade objective
+    low = req.lower()
+    if re.search(r"\b\d+\s+g[123]\s+races?\b", low) or re.search(r"\bin\s+\d+\s+g[123]\b", low):
+        return True, req
+
+    return False, req
+
+
 def get_character_objectives(character_slug, character=None):
+    """
+    Objectives từ character_objectives.csv.
+
+    Fan goal: race_slug trống + requirement "Have at least N fans"
+    (hoặc CSV cũ "Place 3000th or better in").
+    KHÔNG bao giờ lọc bỏ dòng không có race_slug.
+    """
     lookup = set(character_lookup_slugs(character_slug, character))
+    # thêm chính slug trang đang xem
+    lookup.add((character_slug or "").strip())
+    lookup.add((character_slug or "").strip().replace("_", "-"))
 
-    rows = [
-        row
-        for row in read_csv_file("character_objectives.csv")
-        if row.get("character_slug", "").strip() in lookup
-    ]
+    rows = []
+    for row in read_csv_file("character_objectives.csv"):
+        row_slug = (row.get("character_slug") or "").strip()
+        if not row_slug:
+            continue
+        if (
+            row_slug in lookup
+            or row_slug.replace("_", "-") in lookup
+            or row_slug.replace("-", "_") in lookup
+        ):
+            rows.append(row)
 
-    # Bỏ objective không có race (fan goal parse sai)
-    rows = [row for row in rows if (row.get("race_slug") or "").strip()]
-
-    # Dedup
+    # Dedup giữ thứ tự
     deduped = []
     seen = set()
     for row in rows:
         key = (
-            row.get("sort_order", "").strip(),
-            row.get("race_slug", "").strip(),
-            row.get("turn", "").strip(),
-            row.get("requirement", "").strip(),
+            (row.get("sort_order") or "").strip(),
+            (row.get("race_slug") or "").strip(),
+            (row.get("turn") or "").strip(),
+            (row.get("requirement") or "").strip(),
         )
         if key in seen:
             continue
@@ -324,13 +380,13 @@ def get_character_objectives(character_slug, character=None):
 
     def sort_key(row):
         try:
-            return int(row.get("sort_order", "") or 0)
+            return int((row.get("sort_order") or "0").strip() or 0)
         except ValueError:
             return 0
 
     rows.sort(key=sort_key)
 
-    raw_slugs = [row.get("race_slug", "") for row in rows]
+    raw_slugs = [(row.get("race_slug") or "").strip() for row in rows if (row.get("race_slug") or "").strip()]
     races_by_slug = get_races_by_slugs(raw_slugs)
     all_races = {
         (r.get("slug") or "").strip(): r
@@ -342,14 +398,12 @@ def get_character_objectives(character_slug, character=None):
     previous_turn = None
 
     for index, row in enumerate(rows, start=1):
-        race_slug, race = _resolve_race(
-            row.get("race_slug", "").strip(),
-            races_by_slug,
-            all_races,
-        )
+        csv_race_slug = (row.get("race_slug") or "").strip()
+        requirement = (row.get("requirement") or "").strip()
+        is_nolink, requirement = _parse_nolink_objective(csv_race_slug, requirement)
 
         try:
-            turn = int(row.get("turn", "") or 0)
+            turn = int((row.get("turn") or "0").strip() or 0)
         except ValueError:
             turn = 0
 
@@ -359,40 +413,61 @@ def get_character_objectives(character_slug, character=None):
             turn_label = f"Turn {turn} (previous + {turn - previous_turn})"
         previous_turn = turn
 
-        half_key = race.get("schedule_half", "").strip().lower()
+        if is_nolink:
+            objectives.append({
+                "index": index,
+                "requirement": requirement,
+                "race_slug": "",
+                "race_name": "",
+                "race_image": "fans.png",
+                "is_fan_goal": True,   # template legacy
+                "is_nolink_goal": True,
+                "turn_label": turn_label,
+                "class_label": "",
+                "month_label": "",
+                "info_line": "",
+            })
+            continue
+
+        race_slug, race = _resolve_race(csv_race_slug, races_by_slug, all_races)
+
+        half_key = (race.get("schedule_half") or "").strip().lower()
         half_label = SCHEDULE_HALF_LABELS.get(
             half_key,
-            race.get("schedule_half", ""),
+            race.get("schedule_half") or "",
         )
         month_label = " ".join(
             part
-            for part in [half_label, race.get("schedule_month", "")]
+            for part in [half_label, race.get("schedule_month") or ""]
             if part
         )
 
-        distance_m = race.get("distance_m", "")
+        distance_m = race.get("distance_m") or ""
         info_parts = [
-            race.get("grade", ""),
-            race.get("terrain", ""),
-            (distance_m + "m") if distance_m else "",
-            race.get("distance_type", ""),
+            race.get("grade") or "",
+            race.get("terrain") or "",
+            (str(distance_m) + "m") if distance_m else "",
+            race.get("distance_type") or "",
         ]
         info_line = " – ".join(part for part in info_parts if part)
 
         objectives.append({
             "index": index,
-            "requirement": row.get("requirement", "").strip(),
+            "requirement": requirement,
             "race_slug": race_slug,
             "race_name": race.get("name")
             or race_slug.replace("_", " ").replace("-", " ").title(),
             "race_image": race.get("image") or "",
+            "is_fan_goal": False,
+            "is_nolink_goal": False,
             "turn_label": turn_label,
-            "class_label": race.get("career_class", ""),
+            "class_label": race.get("career_class") or "",
             "month_label": month_label,
             "info_line": info_line,
         })
 
     return objectives
+
 
 
 def load_character_training_events(character_slug, character=None):
@@ -437,3 +512,32 @@ def load_character_training_events(character_slug, character=None):
         grouped[group_key].sort(key=sort_key)
 
     return grouped
+
+
+def load_status_effects():
+    """Đọc status_effects.csv → list dict + map name/slug → row."""
+    rows = read_csv_file("status_effects.csv")
+    effects = []
+    by_name = {}
+    by_slug = {}
+
+    for row in rows:
+        name = (row.get("name") or "").strip()
+        slug = (row.get("slug") or "").strip()
+        if not name:
+            continue
+        item = {
+            "id": (row.get("id") or "").strip(),
+            "slug": slug,
+            "name": name,
+            "type": (row.get("type") or "neutral").strip().lower() or "neutral",
+            "description": (row.get("description") or "").strip(),
+        }
+        effects.append(item)
+        by_name[name.lower()] = item
+        # variants without ○/◎ spacing
+        by_name[name.replace("○", "").replace("◎", "").strip().lower()] = item
+        if slug:
+            by_slug[slug] = item
+
+    return effects, by_name, by_slug
