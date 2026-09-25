@@ -109,30 +109,24 @@ def load_characters():
 
         character_list.append(row)
 
-    # Fallback local CSV nếu Supabase trả 0 (RLS / key / bảng sai)
+    # Fallback: data/characters.csv hoặc root characters.csv
     if not character_list:
         print(
-            "[characters] Supabase trả 0 dòng — fallback characters.csv. "
-            "Nếu muốn chỉ dùng Supabase: tắt RLS hoặc thêm policy SELECT cho anon."
+            "[characters] Supabase 0 dòng — đọc CSV trong thư mục data/ (hoặc root)."
         )
-        try:
-            import csv as _csv
-            with open("characters.csv", newline="", encoding="utf-8-sig") as f:
-                for row in _csv.DictReader(f):
-                    try:
-                        row["id"] = int(row.get("id") or 0)
-                    except ValueError:
-                        row["id"] = 0
-                    try:
-                        row["rarity"] = int(row.get("rarity") or 0)
-                    except ValueError:
-                        row["rarity"] = 0
-                    for field_name in CHARACTER_SKILL_FIELDS:
-                        row.setdefault(field_name, "")
-                    if (row.get("slug") or "").strip():
-                        character_list.append(row)
-        except FileNotFoundError:
-            print("[characters] Không có characters.csv để fallback.")
+        for row in read_csv_file("characters.csv"):
+            try:
+                row["id"] = int(float(row.get("id") or 0))
+            except (TypeError, ValueError):
+                row["id"] = 0
+            try:
+                row["rarity"] = int(float(row.get("rarity") or 0))
+            except (TypeError, ValueError):
+                row["rarity"] = 0
+            for field_name in CHARACTER_SKILL_FIELDS:
+                row.setdefault(field_name, "")
+            if (row.get("slug") or "").strip():
+                character_list.append(row)
 
     return character_list
 

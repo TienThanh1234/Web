@@ -1,14 +1,12 @@
-"""Trainer titles (Supabase + CSV fallback)."""
+"""Trainer titles — ưu tiên data/titles.csv, sau đó Supabase."""
 from utils import fetch_all_supabase_rows, normalize_supabase_row, read_csv_file
 
 
 def load_titles():
-    """Đọc Titles từ Supabase; fallback titles.csv nếu rỗng."""
-    raw_rows = fetch_all_supabase_rows("titles", order_column="sort_order")
-
+    # 1) Local backup trong data/
+    rows = read_csv_file("titles.csv")
     titles = []
-    for raw_row in raw_rows:
-        row = normalize_supabase_row(raw_row)
+    for row in rows:
         titles.append({
             "id": (row.get("id") or "").strip(),
             "name": (row.get("name") or "").strip(),
@@ -17,9 +15,11 @@ def load_titles():
             "sort_order": (row.get("sort_order") or "").strip(),
         })
 
+    # 2) Supabase nếu CSV trống
     if not titles:
-        print("[titles] Supabase 0 dòng — fallback titles.csv")
-        for row in read_csv_file("titles.csv"):
+        print("[titles] CSV trống — thử Supabase")
+        for raw in fetch_all_supabase_rows("titles", order_column="sort_order"):
+            row = normalize_supabase_row(raw)
             titles.append({
                 "id": (row.get("id") or "").strip(),
                 "name": (row.get("name") or "").strip(),

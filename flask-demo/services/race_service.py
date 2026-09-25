@@ -9,17 +9,19 @@ from utils import fetch_all_supabase_rows, normalize_supabase_row, read_csv_file
 
 
 def load_races():
-    """Đọc Races từ Supabase; fallback races.csv nếu rỗng."""
+    """Ưu tiên data/races.csv, sau đó Supabase."""
+    races = read_csv_file("races.csv")
+    if races:
+        return races
+
+    print("[races] CSV trống — thử Supabase")
     raw_rows = fetch_all_supabase_rows("races", order_column="slug")
-    races = []
-    for raw_row in raw_rows:
-        row = normalize_supabase_row(raw_row)
+    out_rows = []
+    for raw in raw_rows:
+        row = normalize_supabase_row(raw)
         if (row.get("slug") or "").strip():
-            races.append(row)
-    if not races:
-        print("[races] Supabase 0 dòng — fallback races.csv")
-        races = read_csv_file("races.csv")
-    return races
+            out_rows.append(row)
+    return out_rows
 
 
 
