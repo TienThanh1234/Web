@@ -1,0 +1,579 @@
+id,name,requirement,image,sort_order
+rookie_trainer,Rookie Trainer,Default,rookie_trainer.png,1
+trusted_trainer,Trusted Trainer,Reach Team Rank D,trusted_trainer.png,2
+veteran_trainer,Veteran Trainer,Reach Team Rank B,veteran_trainer.png,3
+top_trainer,Top Trainer,Reach Team Rank A,top_trainer.png,4
+superstar_trainer,Superstar Trainer,Reach Team Rank S,superstar_trainer.png,5
+legendary_trainer,Legendary Trainer,Reach Team Rank SS,legendary_trainer.png,6
+1000_lap_dash,1000 Lap Dash,"Clear 1,000 Career goals",1000_lap_dash.png,7
+good_condition,Good Condition,Acquire positive conditions 100 times in Career,good_condition.png,8
+ura_finale_champion,URA Finale Champion,Win the URA Finale in a Career playthrough,ura_finale_champion.png,9
+master_of_the_big_eight,Master of the Big Eight,Win all of the Big Eight races in Career,master_of_the_big_eight.png,10
+claw_connoisseur,Claw Connoisseur,Obtain 10 or more plushies from one claw machine session,claw_connoisseur.png,11
+mini_maniac,Mini Maniac,Obtain 300 plushies from the claw machine,mini_maniac.png,12
+producer_to_the_stars,Producer to the Stars,"Complete a Career playthrough with at least 1,000,000 fans",producer_to_the_stars.png,13
+conquered_the_sprint,Conquered the Sprint,Place top 2 in a graded sprint race in Career with an Umamusume whose sprint aptitude is E or lower,conquered_the_sprint.png,14
+conquered_the_mile,Conquered the Mile,Place top 2 in a graded mile race in Career with an Umamusume whose mile aptitude is E or lower,conquered_the_mile.png,15
+conquered_the_medium,Conquered the Medium,Place top 2 in a graded medium race in Career with an Umamusume whose medium aptitude is E or lower,conquered_the_medium.png,16
+conquered_the_long,Conquered the Long,Place top 2 in a graded long race in Career with an Umamusume whose long aptitude is E or lower,conquered_the_long.png,17
+conquered_the_dirt,Conquered the Dirt,Place top 2 in a graded dirt race in Career with an Umamusume whose dirt aptitude is E or lower,conquered_the_dirt.png,18
+jack_of_all_trades,Jack of All Trades,"Complete a Career playthrough with an S in track, distance, and style aptitudes",jack_of_all_trades.png,19
+eclipse,Eclipse,Win the URA Finale in Career with a margin of DST in the finals,eclipse.png,20
+wanna_go_for_a_walk,Wanna Go for a Walk?,Enjoy recreation along the riverbank 30 times in Career,wanna_go_for_a_walk.png,21
+steamy_memories,Steamy Memories,Experience a moment where you feel an irreplaceable bond,steamy_memories.png,22
+hot_springs_legend,Hot Springs Legend,Experience moments where you feel an irreplaceable bond with 18 Umamusume,hot_springs_legend.png,23
+skilled,Skilled,Achieve Career rank S or higher 10 times,skilled.png,24
+experienced,Experienced,Achieve Career rank S or higher 50 times,experienced.png,25
+expert,Expert,Achieve Career rank S or higher 200 times,expert.png,26
+master,Master,Achieve Career rank S or higher 500 times,master.png,27
+a_new_hope,A New Hope,Win 100 G1 races,a_new_hope.png,28
+veteran_soldier,Veteran Soldier,Win 500 G1 races,veteran_soldier.png,29
+legend_in_the_making,Legend in the Making,"Win 1,000 G1 races",legend_in_the_making.png,30
+the_greatest_of_all_time,The Greatest of All Time,"Win 2,000 G1 races",the_greatest_of_all_time.png,31
+g3_giant,G3 Giant,Collect all G3 trophies,g3_giant.png,32
+g2_giant,G2 Giant,Collect all G2 trophies,g2_giant.png,33
+g1_giant,G1 Giant,Collect all G1 trophies,g1_giant.png,34
+sapporo_superstar,Sapporo Superstar,Win 200 races at Sapporo Racecourse in Career,sapporo_superstar.png,35
+hakodate_hero,Hakodate Hero,Win 200 races at Hakodate Racecourse in Career,hakodate_hero.png,36
+niigata_knight,Niigata Knight,Win 200 races at Niigata Racecourse in Career,niigata_knight.png,37
+fukushima_fighter,Fukushima Fighter,Win 200 races at Fukushima Racecourse in Career,fukushima_fighter.png,38
+nakayama_knockout,Nakayama Knockout,Win 200 races at Nakayama Racecourse in Career,nakayama_knockout.png,39
+tokyo_tyrant,Tokyo Tyrant,Win 200 races at Tokyo Racecourse in Career,tokyo_tyrant.png,40
+nagoya_nighthawk,Nagoya Nighthawk,Win 200 races at Chukyo Racecourse in Career,nagoya_nighthawk.png,41
+kyoto_conquerer,Kyoto Conquerer,Win 200 races at Kyoto Racecourse in Career,kyoto_conquerer.png,42
+hanshin_hunter,Hanshin Hunter,Win 200 races at Hanshin Racecourse in Career,hanshin_hunter.png,43
+kokura_keeper,Kokura Keeper,Win 200 races at Kokura Racecourse in Career,kokura_keeper.png,44
+oi_all_timer,Oi All-Timer,Win 200 races at Oi Racecourse in Career,oi_all_timer.png,45
+kawasaki_all_timer,Kawasaki All-Timer,Win 200 races at Kawasaki Racecourse in Career,kawasaki_all_timer.png,46
+funabashi_all_timer,Funabashi All-Timer,Win 200 races at Funabashi Racecourse in Career,funabashi_all_timer.png,47
+morioka_all_timer,Morioka All-Timer,Win 200 races at Morioka Racecourse in Career,morioka_all_timer.png,48
+step_by_step,Step By Step,Win 100 Daily Races,step_by_step.png,49
+the_legend_s_first_step,The Legend's First Step,Win 1 Legend Race,the_legend_s_first_step.png,50
+legend_slayer,Legend Slayer,Win 100 Legend Races,legend_slayer.png,51
+no_i_in_team,"No ""I"" in Team",Play Team Trials 100 times,no_i_in_team.png,52
+top_class,Top Class,Reach Class 6 in Team Trials,top_class.png,53
+treasure_hunter,Treasure Hunter,Obtain 100 bonus win rewards in Team Trials,treasure_hunter.png,54
+15_000_000_cc,"15,000,000 CC","Obtain a score of 1,000,000 in Team Trials",15_000_000_cc.png,55
+umapyoi_legend,Umapyoi Legend,Watch Umapyoi Legend,umapyoi_legend.png,56
+brilliant_phantasia,Brilliant Phantasia,Watch Brilliant Phantasia,brilliant_phantasia.png,57
+make_debut,Make Debut!,Watch Make Debut!,make_debut.png,58
+endless_dream,Endless Dream!!,Watch Endless Dream!!,endless_dream.png,59
+next_frontier,NEXT FRONTIER,Watch NEXT FRONTIER,next_frontier.png,60
+unlimited_impact,UNLIMITED IMPACT,Watch UNLIMITED IMPACT,unlimited_impact.png,61
+special_record,Special Record!,Watch Special Record!,special_record.png,62
+signal_of_something_new,Signal of Something New,Watch Signal of Something New,signal_of_something_new.png,63
+a_little_prayer,A Little Prayer,Watch A Little Prayer,a_little_prayer.png,64
+instinctive_speed,Instinctive Speed,Watch Instinctive Speed,instinctive_speed.png,65
+winning_the_soul,Winning the Soul,Watch Winning the Soul,winning_the_soul.png,66
+run_for_our_dream,Run for Our Dream!,Watch Run for Our Dream!,run_for_our_dream.png,67
+triple_dreamer,Triple Dreamer,Watch Run for Our Dream! with a specific formation,triple_dreamer.png,68
+those_tears_are_for_tomorrow_s_sake,Those Tears Are for Tomorrow's Sake!,Watch Those Tears Are for Tomorrow's Sake!,those_tears_are_for_tomorrow_s_sake.png,69
+blaze,BLAZE,Watch BLAZE,blaze.png,70
+never_looking_back,Never Looking Back,Watch Never Looking Back,never_looking_back.png,71
+winnin_5,WINnin' 5,Watch WINnin' 5,winnin_5.png,72
+hoppity_sunny_days,Hoppity Sunny Days♪,Watch Hoppity Sunny Days♪,hoppity_sunny_days.png,73
+transforming,Transforming,Watch Transforming,transforming.png,74
+grow_up_and_shine,Grow Up and Shine!,Watch Grow Up and Shine!,grow_up_and_shine.png,75
+blow_my_gale,Blow My Gale,Watch Blow My Gale,blow_my_gale.png,76
+we_are_dreamers,We are DREAMERS!!,Watch We are DREAMERS!!,we_are_dreamers.png,77
+precious_smiles_beyond_the_future,Precious Smiles (Beyond the Future!),Watch Precious Smiles (Beyond the Future!),precious_smiles_beyond_the_future.png,78
+gaze_on_me,Gaze on Me!,Watch Gaze on Me!,gaze_on_me.png,79
+girls_legend_u,Girls' Legend U,Watch Girls' Legend U,girls_legend_u.png,80
+ms_victoria,Ms. Victoria,Watch Ms. Victoria,ms_victoria.png,81
+superfan,Superfan,Watch 10 unique Winning Concerts,superfan.png,82
+wallflower,Wallflower,Follow 25 trainers,wallflower.png,83
+extrovert,Extrovert,Follow 50 trainers,extrovert.png,84
+popular_kid,Popular Kid,Get 100 followers,popular_kid.png,85
+idol,Idol,Get 200 followers,idol.png,86
+influencer,Influencer,Have your Star Umamusume borrowed 100 times by other trainers in Career,influencer.png,87
+socialite,Socialite,Share a Veteran Umamusume in your Club's chat,socialite.png,88
+advisor,Advisor,Have your Veteran Umamusume be invited to a total of 10 practice races,advisor.png,89
+most_wanted,Most Wanted,Have your Veteran Umamusume be invited to a total of 100 practice races,most_wanted.png,90
+consultant,Consultant,Have your Veteran Umamusume be invited to a total of 500 practice races,consultant.png,91
+professional_front_runner,Professional Front Runner,"Complete a Career playthrough with Concentration, Groundwork, Taking the Lead, and Unrestrained",professional_front_runner.png,92
+professional_pace_chaser,Professional Pace Chaser,"Complete a Career playthrough with Speed Star, It's On!, and Pace Chaser Straightaways ◎",professional_pace_chaser.png,93
+professional_late_surger,Professional Late Surger,"Complete a Career playthrough with On Your Left!, In Body and Mind, and Late Surger Straightaways ◎",professional_late_surger.png,94
+professional_end_closer,Professional End Closer,"Complete a Career playthrough with Daring Strike, It's On!, and End Closer Straightaways ◎",professional_end_closer.png,95
+professional_turner,Professional Turner,Complete a Career playthrough with Professor of Curvature and Corner Connoisseur,professional_turner.png,96
+professional_straight_shot,Professional Straight-Shot,Complete a Career playthrough with Rushing Gale! and Beeline Burst,professional_straight_shot.png,97
+gourmet,Gourmet,"Complete a Career playthrough with Gourmand, Stamina Eater, and Extra Tank",gourmet.png,98
+all_seeing,All-Seeing,Complete a Career playthrough with All-Seeing Eyes and Clairvoyance,all_seeing.png,99
+talent_takes_time,Talent Takes Time,"Complete a Career playthrough with No Stopping Me!, Shake It Out, and Lane Legerdemain",talent_takes_time.png,100
+a_true_trainer,A True Trainer,Raise your Archive level to 100,a_true_trainer.png,101
+diligent,Diligent,Complete all Daily Missions for seven days straight,diligent.png,102
+title_collector,Title Collector,Obtain 100 Titles,title_collector.png,103
+bargain_hunter,Bargain Hunter,Purchase items from the Daily Sale shop 100 times,bargain_hunter.png,104
+strong_bond,Strong Bond,Raise an Umamusume's Bond Level to 10,strong_bond.png,105
+tracen_s_beloved,Tracen's Beloved,Raise three Umamusume's Bond Levels to 10,tracen_s_beloved.png,106
+junior_scout,Junior Scout,Add 15 Trainees to your roster,junior_scout.png,107
+super_scout,Super Scout,Add 100 Trainees to your roster,super_scout.png,108
+polished_talent,Polished Talent,Unlock 5★ for 10 Trainees,polished_talent.png,109
+card_collector,Card Collector,Obtain 30 different Support Cards,card_collector.png,110
+card_expert,Card Expert,Obtain 250 different Support Cards,card_expert.png,111
+penny_pincher,Penny Pincher,"Accumulate 1,000,000 monies",penny_pincher.png,112
+money_mogul,Money Mogul,"Accumulate 10,000,000 monies",money_mogul.png,113
+story_lover,Story Lover,View 100 different stories,story_lover.png,114
+set_off_for_the_brightest_star,Set Off for the Brightest Star,"View all of Main Story Act 1, Chapter 1",set_off_for_the_brightest_star.png,115
+little_big_ambition,Little Big Ambition,"View all of Main Story Act 1, Chapter 2",little_big_ambition.png,116
+embarking_on_the_dream_express,Embarking on the Dream Express,"View all of Main Story Act 1, Chapter 3",embarking_on_the_dream_express.png,117
+roiling_craving,Roiling Craving,"View all of Main Story Act 1, Chapter 4",roiling_craving.png,118
+scenery,Scenery,"View all of Main Story Act 1, Chapter 5",scenery.png,119
+a_dream_in_the_making,A Dream in the Making,"View all of Main Story Act 1, Finale Part 1",a_dream_in_the_making.png,120
+hope_shines_on,Hope Shines On,"View all of Main Story Act 1, Finale Part 2",hope_shines_on.png,121
+team_sirius_s_guiding_light,Team Sirius's Guiding Light,View all of Main Story Act 1,team_sirius_s_guiding_light.png,122
+special_week_new_fan,Special Week New Fan,View Episode 4 of Special Week's Umamusume Story,special_week_new_fan.png,123
+special_week_fan_club,Special Week Fan Club,"Get 10,000,000 total fans for Special Week",special_week_fan_club.png,124
+special_week_biggest_fan,Special Week Biggest Fan,"Get 50,000,000 total fans for Special Week",special_week_biggest_fan.png,125
+special_week_expert,Special Week Expert,"Get 100,000,000 total fans for Special Week",special_week_expert.png,126
+special_week_completionist,Special Week Completionist,Obtain all G1 to G3 trophies with Special Week,special_week_completionist.png,127
+silence_suzuka_new_fan,Silence Suzuka New Fan,View Episode 4 of Silence Suzuka's Umamusume Story,silence_suzuka_new_fan.png,128
+silence_suzuka_fan_club,Silence Suzuka Fan Club,"Get 10,000,000 total fans for Silence Suzuka",silence_suzuka_fan_club.png,129
+silence_suzuka_biggest_fan,Silence Suzuka Biggest Fan,"Get 50,000,000 total fans for Silence Suzuka",silence_suzuka_biggest_fan.png,130
+silence_suzuka_expert,Silence Suzuka Expert,"Get 100,000,000 total fans for Silence Suzuka",silence_suzuka_expert.png,131
+silence_suzuka_completionist,Silence Suzuka Completionist,Obtain all G1 to G3 trophies with Silence Suzuka,silence_suzuka_completionist.png,132
+tokai_teio_new_fan,Tokai Teio New Fan,View Episode 4 of Tokai Teio's Umamusume Story,tokai_teio_new_fan.png,133
+tokai_teio_fan_club,Tokai Teio Fan Club,"Get 10,000,000 total fans for Tokai Teio",tokai_teio_fan_club.png,134
+tokai_teio_biggest_fan,Tokai Teio Biggest Fan,"Get 50,000,000 total fans for Tokai Teio",tokai_teio_biggest_fan.png,135
+tokai_teio_expert,Tokai Teio Expert,"Get 100,000,000 total fans for Tokai Teio",tokai_teio_expert.png,136
+tokai_teio_completionist,Tokai Teio Completionist,Obtain all G1 to G3 trophies with Tokai Teio,tokai_teio_completionist.png,137
+maruzensky_new_fan,Maruzensky New Fan,View Episode 4 of Maruzensky's Umamusume Story,maruzensky_new_fan.png,138
+maruzensky_fan_club,Maruzensky Fan Club,"Get 10,000,000 total fans for Maruzensky",maruzensky_fan_club.png,139
+maruzensky_biggest_fan,Maruzensky Biggest Fan,"Get 50,000,000 total fans for Maruzensky",maruzensky_biggest_fan.png,140
+maruzensky_expert,Maruzensky Expert,"Get 100,000,000 total fans for Maruzensky",maruzensky_expert.png,141
+maruzensky_completionist,Maruzensky Completionist,Obtain all G1 to G3 trophies with Maruzensky,maruzensky_completionist.png,142
+fuji_kiseki_new_fan,Fuji Kiseki New Fan,View Episode 4 of Fuji Kiseki's Umamusume Story,fuji_kiseki_new_fan.png,143
+fuji_kiseki_fan_club,Fuji Kiseki Fan Club,"Get 10,000,000 total fans for Fuji Kiseki",fuji_kiseki_fan_club.png,144
+fuji_kiseki_biggest_fan,Fuji Kiseki Biggest Fan,"Get 50,000,000 total fans for Fuji Kiseki",fuji_kiseki_biggest_fan.png,145
+fuji_kiseki_expert,Fuji Kiseki Expert,"Get 100,000,000 total fans for Fuji Kiseki",fuji_kiseki_expert.png,146
+fuji_kiseki_completionist,Fuji Kiseki Completionist,Obtain all G1 to G3 trophies with Fuji Kiseki,fuji_kiseki_completionist.png,147
+oguri_cap_new_fan,Oguri Cap New Fan,View Episode 4 of Oguri Cap's Umamusume Story,oguri_cap_new_fan.png,148
+oguri_cap_fan_club,Oguri Cap Fan Club,"Get 10,000,000 total fans for Oguri Cap",oguri_cap_fan_club.png,149
+oguri_cap_biggest_fan,Oguri Cap Biggest Fan,"Get 50,000,000 total fans for Oguri Cap",oguri_cap_biggest_fan.png,150
+oguri_cap_expert,Oguri Cap Expert,"Get 100,000,000 total fans for Oguri Cap",oguri_cap_expert.png,151
+oguri_cap_completionist,Oguri Cap Completionist,Obtain all G1 to G3 trophies with Oguri Cap,oguri_cap_completionist.png,152
+gold_ship_new_fan,Gold Ship New Fan,View Episode 4 of Gold Ship's Umamusume Story,gold_ship_new_fan.png,153
+gold_ship_fan_club,Gold Ship Fan Club,"Get 10,000,000 total fans for Gold Ship",gold_ship_fan_club.png,154
+gold_ship_biggest_fan,Gold Ship Biggest Fan,"Get 50,000,000 total fans for Gold Ship",gold_ship_biggest_fan.png,155
+gold_ship_expert,Gold Ship Expert,"Get 100,000,000 total fans for Gold Ship",gold_ship_expert.png,156
+gold_ship_completionist,Gold Ship Completionist,Obtain all G1 to G3 trophies with Gold Ship,gold_ship_completionist.png,157
+vodka_new_fan,Vodka New Fan,View Episode 4 of Vodka's Umamusume Story,vodka_new_fan.png,158
+vodka_fan_club,Vodka Fan Club,"Get 10,000,000 total fans for Vodka",vodka_fan_club.png,159
+vodka_biggest_fan,Vodka Biggest Fan,"Get 50,000,000 total fans for Vodka",vodka_biggest_fan.png,160
+vodka_expert,Vodka Expert,"Get 100,000,000 total fans for Vodka",vodka_expert.png,161
+vodka_completionist,Vodka Completionist,Obtain all G1 to G3 trophies with Vodka,vodka_completionist.png,162
+daiwa_scarlet_new_fan,Daiwa Scarlet New Fan,View Episode 4 of Daiwa Scarlet's Umamusume Story,daiwa_scarlet_new_fan.png,163
+daiwa_scarlet_fan_club,Daiwa Scarlet Fan Club,"Get 10,000,000 total fans for Daiwa Scarlet",daiwa_scarlet_fan_club.png,164
+daiwa_scarlet_biggest_fan,Daiwa Scarlet Biggest Fan,"Get 50,000,000 total fans for Daiwa Scarlet",daiwa_scarlet_biggest_fan.png,165
+daiwa_scarlet_expert,Daiwa Scarlet Expert,"Get 100,000,000 total fans for Daiwa Scarlet",daiwa_scarlet_expert.png,166
+daiwa_scarlet_completionist,Daiwa Scarlet Completionist,Obtain all G1 to G3 trophies with Daiwa Scarlet,daiwa_scarlet_completionist.png,167
+taiki_shuttle_new_fan,Taiki Shuttle New Fan,View Episode 4 of Taiki Shuttle's Umamusume Story,taiki_shuttle_new_fan.png,168
+taiki_shuttle_fan_club,Taiki Shuttle Fan Club,"Get 10,000,000 total fans for Taiki Shuttle",taiki_shuttle_fan_club.png,169
+taiki_shuttle_biggest_fan,Taiki Shuttle Biggest Fan,"Get 50,000,000 total fans for Taiki Shuttle",taiki_shuttle_biggest_fan.png,170
+taiki_shuttle_expert,Taiki Shuttle Expert,"Get 100,000,000 total fans for Taiki Shuttle",taiki_shuttle_expert.png,171
+taiki_shuttle_completionist,Taiki Shuttle Completionist,Obtain all G1 to G3 trophies with Taiki Shuttle,taiki_shuttle_completionist.png,172
+grass_wonder_new_fan,Grass Wonder New Fan,View Episode 4 of Grass Wonder's Umamusume Story,grass_wonder_new_fan.png,173
+grass_wonder_fan_club,Grass Wonder Fan Club,"Get 10,000,000 total fans for Grass Wonder",grass_wonder_fan_club.png,174
+grass_wonder_biggest_fan,Grass Wonder Biggest Fan,"Get 50,000,000 total fans for Grass Wonder",grass_wonder_biggest_fan.png,175
+grass_wonder_expert,Grass Wonder Expert,"Get 100,000,000 total fans for Grass Wonder",grass_wonder_expert.png,176
+grass_wonder_completionist,Grass Wonder Completionist,Obtain all G1 to G3 trophies with Grass Wonder,grass_wonder_completionist.png,177
+hishi_amazon_new_fan,Hishi Amazon New Fan,View Episode 4 of Hishi Amazon's Umamusume Story,hishi_amazon_new_fan.png,178
+hishi_amazon_fan_club,Hishi Amazon Fan Club,"Get 10,000,000 total fans for Hishi Amazon",hishi_amazon_fan_club.png,179
+hishi_amazon_biggest_fan,Hishi Amazon Biggest Fan,"Get 50,000,000 total fans for Hishi Amazon",hishi_amazon_biggest_fan.png,180
+hishi_amazon_expert,Hishi Amazon Expert,"Get 100,000,000 total fans for Hishi Amazon",hishi_amazon_expert.png,181
+hishi_amazon_completionist,Hishi Amazon Completionist,Obtain all G1 to G3 trophies with Hishi Amazon,hishi_amazon_completionist.png,182
+mejiro_mcqueen_new_fan,Mejiro McQueen New Fan,View Episode 4 of Mejiro McQueen's Umamusume Story,mejiro_mcqueen_new_fan.png,183
+mejiro_mcqueen_fan_club,Mejiro McQueen Fan Club,"Get 10,000,000 total fans for Mejiro McQueen",mejiro_mcqueen_fan_club.png,184
+mejiro_mcqueen_biggest_fan,Mejiro McQueen Biggest Fan,"Get 50,000,000 total fans for Mejiro McQueen",mejiro_mcqueen_biggest_fan.png,185
+mejiro_mcqueen_expert,Mejiro McQueen Expert,"Get 100,000,000 total fans for Mejiro McQueen",mejiro_mcqueen_expert.png,186
+mejiro_mcqueen_completionist,Mejiro McQueen Completionist,Obtain all G1 to G3 trophies with Mejiro McQueen,mejiro_mcqueen_completionist.png,187
+el_condor_pasa_new_fan,El Condor Pasa New Fan,View Episode 4 of El Condor Pasa's Umamusume Story,el_condor_pasa_new_fan.png,188
+el_condor_pasa_fan_club,El Condor Pasa Fan Club,"Get 10,000,000 total fans for El Condor Pasa",el_condor_pasa_fan_club.png,189
+el_condor_pasa_biggest_fan,El Condor Pasa Biggest Fan,"Get 50,000,000 total fans for El Condor Pasa",el_condor_pasa_biggest_fan.png,190
+el_condor_pasa_expert,El Condor Pasa Expert,"Get 100,000,000 total fans for El Condor Pasa",el_condor_pasa_expert.png,191
+el_condor_pasa_completionist,El Condor Pasa Completionist,Obtain all G1 to G3 trophies with El Condor Pasa,el_condor_pasa_completionist.png,192
+t_m_opera_o_new_fan,T.M. Opera O New Fan,View Episode 4 of T.M. Opera O's Umamusume Story,t_m_opera_o_new_fan.png,193
+t_m_opera_o_fan_club,T.M. Opera O Fan Club,"Get 10,000,000 total fans for T.M. Opera O",t_m_opera_o_fan_club.png,194
+t_m_opera_o_biggest_fan,T.M. Opera O Biggest Fan,"Get 50,000,000 total fans for T.M. Opera O",t_m_opera_o_biggest_fan.png,195
+t_m_opera_o_expert,T.M. Opera O Expert,"Get 100,000,000 total fans for T.M. Opera O",t_m_opera_o_expert.png,196
+t_m_opera_o_completionist,T.M. Opera O Completionist,Obtain all G1 to G3 trophies with T.M. Opera O,t_m_opera_o_completionist.png,197
+symboli_rudolf_new_fan,Symboli Rudolf New Fan,View Episode 4 of Symboli Rudolf's Umamusume Story,symboli_rudolf_new_fan.png,198
+symboli_rudolf_fan_club,Symboli Rudolf Fan Club,"Get 10,000,000 total fans for Symboli Rudolf",symboli_rudolf_fan_club.png,199
+symboli_rudolf_biggest_fan,Symboli Rudolf Biggest Fan,"Get 50,000,000 total fans for Symboli Rudolf",symboli_rudolf_biggest_fan.png,200
+symboli_rudolf_expert,Symboli Rudolf Expert,"Get 100,000,000 total fans for Symboli Rudolf",symboli_rudolf_expert.png,201
+symboli_rudolf_completionist,Symboli Rudolf Completionist,Obtain all G1 to G3 trophies with Symboli Rudolf,symboli_rudolf_completionist.png,202
+air_groove_new_fan,Air Groove New Fan,View Episode 4 of Air Groove's Umamusume Story,air_groove_new_fan.png,203
+air_groove_fan_club,Air Groove Fan Club,"Get 10,000,000 total fans for Air Groove",air_groove_fan_club.png,204
+air_groove_biggest_fan,Air Groove Biggest Fan,"Get 50,000,000 total fans for Air Groove",air_groove_biggest_fan.png,205
+air_groove_expert,Air Groove Expert,"Get 100,000,000 total fans for Air Groove",air_groove_expert.png,206
+air_groove_completionist,Air Groove Completionist,Obtain all G1 to G3 trophies with Air Groove,air_groove_completionist.png,207
+seiun_sky_new_fan,Seiun Sky New Fan,View Episode 4 of Seiun Sky's Umamusume Story,seiun_sky_new_fan.png,208
+seiun_sky_fan_club,Seiun Sky Fan Club,"Get 10,000,000 total fans for Seiun Sky",seiun_sky_fan_club.png,209
+seiun_sky_biggest_fan,Seiun Sky Biggest Fan,"Get 50,000,000 total fans for Seiun Sky",seiun_sky_biggest_fan.png,210
+seiun_sky_expert,Seiun Sky Expert,"Get 100,000,000 total fans for Seiun Sky",seiun_sky_expert.png,211
+seiun_sky_completionist,Seiun Sky Completionist,Obtain all G1 to G3 trophies with Seiun Sky,seiun_sky_completionist.png,212
+mayano_top_gun_new_fan,Mayano Top Gun New Fan,View Episode 4 of Mayano Top Gun's Umamusume Story,mayano_top_gun_new_fan.png,213
+mayano_top_gun_fan_club,Mayano Top Gun Fan Club,"Get 10,000,000 total fans for Mayano Top Gun",mayano_top_gun_fan_club.png,214
+mayano_top_gun_biggest_fan,Mayano Top Gun Biggest Fan,"Get 50,000,000 total fans for Mayano Top Gun",mayano_top_gun_biggest_fan.png,215
+mayano_top_gun_expert,Mayano Top Gun Expert,"Get 100,000,000 total fans for Mayano Top Gun",mayano_top_gun_expert.png,216
+mayano_top_gun_completionist,Mayano Top Gun Completionist,Obtain all G1 to G3 trophies with Mayano Top Gun,mayano_top_gun_completionist.png,217
+mejiro_ryan_new_fan,Mejiro Ryan New Fan,View Episode 4 of Mejiro Ryan's Umamusume Story,mejiro_ryan_new_fan.png,218
+mejiro_ryan_fan_club,Mejiro Ryan Fan Club,"Get 10,000,000 total fans for Mejiro Ryan",mejiro_ryan_fan_club.png,219
+mejiro_ryan_biggest_fan,Mejiro Ryan Biggest Fan,"Get 50,000,000 total fans for Mejiro Ryan",mejiro_ryan_biggest_fan.png,220
+mejiro_ryan_expert,Mejiro Ryan Expert,"Get 100,000,000 total fans for Mejiro Ryan",mejiro_ryan_expert.png,221
+mejiro_ryan_completionist,Mejiro Ryan Completionist,Obtain all G1 to G3 trophies with Mejiro Ryan,mejiro_ryan_completionist.png,222
+rice_shower_new_fan,Rice Shower New Fan,View Episode 4 of Rice Shower's Umamusume Story,rice_shower_new_fan.png,223
+rice_shower_fan_club,Rice Shower Fan Club,"Get 10,000,000 total fans for Rice Shower",rice_shower_fan_club.png,224
+rice_shower_biggest_fan,Rice Shower Biggest Fan,"Get 50,000,000 total fans for Rice Shower",rice_shower_biggest_fan.png,225
+rice_shower_expert,Rice Shower Expert,"Get 100,000,000 total fans for Rice Shower",rice_shower_expert.png,226
+rice_shower_completionist,Rice Shower Completionist,Obtain all G1 to G3 trophies with Rice Shower,rice_shower_completionist.png,227
+agnes_tachyon_new_fan,Agnes Tachyon New Fan,View Episode 4 of Agnes Tachyon's Umamusume Story,agnes_tachyon_new_fan.png,228
+agnes_tachyon_fan_club,Agnes Tachyon Fan Club,"Get 10,000,000 total fans for Agnes Tachyon",agnes_tachyon_fan_club.png,229
+agnes_tachyon_biggest_fan,Agnes Tachyon Biggest Fan,"Get 50,000,000 total fans for Agnes Tachyon",agnes_tachyon_biggest_fan.png,230
+agnes_tachyon_expert,Agnes Tachyon Expert,"Get 100,000,000 total fans for Agnes Tachyon",agnes_tachyon_expert.png,231
+agnes_tachyon_completionist,Agnes Tachyon Completionist,Obtain all G1 to G3 trophies with Agnes Tachyon,agnes_tachyon_completionist.png,232
+winning_ticket_new_fan,Winning Ticket New Fan,View Episode 4 of Winning Ticket's Umamusume Story,winning_ticket_new_fan.png,233
+winning_ticket_fan_club,Winning Ticket Fan Club,"Get 10,000,000 total fans for Winning Ticket",winning_ticket_fan_club.png,234
+winning_ticket_biggest_fan,Winning Ticket Biggest Fan,"Get 50,000,000 total fans for Winning Ticket",winning_ticket_biggest_fan.png,235
+winning_ticket_expert,Winning Ticket Expert,"Get 100,000,000 total fans for Winning Ticket",winning_ticket_expert.png,236
+winning_ticket_completionist,Winning Ticket Completionist,Obtain all G1 to G3 trophies with Winning Ticket,winning_ticket_completionist.png,237
+gold_city_new_fan,Gold City New Fan,View Episode 4 of Gold City's Umamusume Story,gold_city_new_fan.png,238
+gold_city_fan_club,Gold City Fan Club,"Get 10,000,000 total fans for Gold City",gold_city_fan_club.png,239
+gold_city_biggest_fan,Gold City Biggest Fan,"Get 50,000,000 total fans for Gold City",gold_city_biggest_fan.png,240
+gold_city_expert,Gold City Expert,"Get 100,000,000 total fans for Gold City",gold_city_expert.png,241
+gold_city_completionist,Gold City Completionist,Obtain all G1 to G3 trophies with Gold City,gold_city_completionist.png,242
+sakura_bakushin_o_new_fan,Sakura Bakushin O New Fan,View Episode 4 of Sakura Bakushin O's Umamusume Story,sakura_bakushin_o_new_fan.png,243
+sakura_bakushin_o_fan_club,Sakura Bakushin O Fan Club,"Get 10,000,000 total fans for Sakura Bakushin O",sakura_bakushin_o_fan_club.png,244
+sakura_bakushin_o_biggest_fan,Sakura Bakushin O Biggest Fan,"Get 50,000,000 total fans for Sakura Bakushin O",sakura_bakushin_o_biggest_fan.png,245
+sakura_bakushin_o_expert,Sakura Bakushin O Expert,"Get 100,000,000 total fans for Sakura Bakushin O",sakura_bakushin_o_expert.png,246
+sakura_bakushin_o_completionist,Sakura Bakushin O Completionist,Obtain all G1 to G3 trophies with Sakura Bakushin O,sakura_bakushin_o_completionist.png,247
+super_creek_new_fan,Super Creek New Fan,View Episode 4 of Super Creek's Umamusume Story,super_creek_new_fan.png,248
+super_creek_fan_club,Super Creek Fan Club,"Get 10,000,000 total fans for Super Creek",super_creek_fan_club.png,249
+super_creek_biggest_fan,Super Creek Biggest Fan,"Get 50,000,000 total fans for Super Creek",super_creek_biggest_fan.png,250
+super_creek_expert,Super Creek Expert,"Get 100,000,000 total fans for Super Creek",super_creek_expert.png,251
+super_creek_completionist,Super Creek Completionist,Obtain all G1 to G3 trophies with Super Creek,super_creek_completionist.png,252
+haru_urara_new_fan,Haru Urara New Fan,View Episode 4 of Haru Urara's Umamusume Story,haru_urara_new_fan.png,253
+haru_urara_fan_club,Haru Urara Fan Club,"Get 10,000,000 total fans for Haru Urara",haru_urara_fan_club.png,254
+haru_urara_biggest_fan,Haru Urara Biggest Fan,"Get 50,000,000 total fans for Haru Urara",haru_urara_biggest_fan.png,255
+haru_urara_expert,Haru Urara Expert,"Get 100,000,000 total fans for Haru Urara",haru_urara_expert.png,256
+haru_urara_completionist,Haru Urara Completionist,Obtain all G1 to G3 trophies with Haru Urara,haru_urara_completionist.png,257
+matikanefukukitaru_new_fan,Matikanefukukitaru New Fan,View Episode 4 of Matikanefukukitaru's Umamusume Story,matikanefukukitaru_new_fan.png,258
+matikanefukukitaru_fan_club,Matikanefukukitaru Fan Club,"Get 10,000,000 total fans for Matikanefukukitaru",matikanefukukitaru_fan_club.png,259
+matikanefukukitaru_biggest_fan,Matikanefukukitaru Biggest Fan,"Get 50,000,000 total fans for Matikanefukukitaru",matikanefukukitaru_biggest_fan.png,260
+matikanefukukitaru_expert,Matikanefukukitaru Expert,"Get 100,000,000 total fans for Matikanefukukitaru",matikanefukukitaru_expert.png,261
+matikanefukukitaru_completionist,Matikanefukukitaru Completionist,Obtain all G1 to G3 trophies with Matikanefukukitaru,matikanefukukitaru_completionist.png,262
+nice_nature_new_fan,Nice Nature New Fan,View Episode 4 of Nice Nature's Umamusume Story,nice_nature_new_fan.png,263
+nice_nature_fan_club,Nice Nature Fan Club,"Get 10,000,000 total fans for Nice Nature",nice_nature_fan_club.png,264
+nice_nature_biggest_fan,Nice Nature Biggest Fan,"Get 50,000,000 total fans for Nice Nature",nice_nature_biggest_fan.png,265
+nice_nature_expert,Nice Nature Expert,"Get 100,000,000 total fans for Nice Nature",nice_nature_expert.png,266
+nice_nature_completionist,Nice Nature Completionist,Obtain all G1 to G3 trophies with Nice Nature,nice_nature_completionist.png,267
+king_halo_new_fan,King Halo New Fan,View Episode 4 of King Halo's Umamusume Story,king_halo_new_fan.png,268
+king_halo_fan_club,King Halo Fan Club,"Get 10,000,000 total fans for King Halo",king_halo_fan_club.png,269
+king_halo_biggest_fan,King Halo Biggest Fan,"Get 50,000,000 total fans for King Halo",king_halo_biggest_fan.png,270
+king_halo_expert,King Halo Expert,"Get 100,000,000 total fans for King Halo",king_halo_expert.png,271
+king_halo_completionist,King Halo Completionist,Obtain all G1 to G3 trophies with King Halo,king_halo_completionist.png,272
+mihono_bourbon_new_fan,Mihono Bourbon New Fan,View Episode 4 of Mihono Bourbon's Umamusume Story,mihono_bourbon_new_fan.png,273
+mihono_bourbon_fan_club,Mihono Bourbon Fan Club,"Get 10,000,000 total fans for Mihono Bourbon",mihono_bourbon_fan_club.png,274
+mihono_bourbon_biggest_fan,Mihono Bourbon Biggest Fan,"Get 50,000,000 total fans for Mihono Bourbon",mihono_bourbon_biggest_fan.png,275
+mihono_bourbon_expert,Mihono Bourbon Expert,"Get 100,000,000 total fans for Mihono Bourbon",mihono_bourbon_expert.png,276
+mihono_bourbon_completionist,Mihono Bourbon Completionist,Obtain all G1 to G3 trophies with Mihono Bourbon,mihono_bourbon_completionist.png,277
+biwa_hayahide_new_fan,Biwa Hayahide New Fan,View Episode 4 of Biwa Hayahide's Umamusume Story,biwa_hayahide_new_fan.png,278
+biwa_hayahide_fan_club,Biwa Hayahide Fan Club,"Get 10,000,000 total fans for Biwa Hayahide",biwa_hayahide_fan_club.png,279
+biwa_hayahide_biggest_fan,Biwa Hayahide Biggest Fan,"Get 50,000,000 total fans for Biwa Hayahide",biwa_hayahide_biggest_fan.png,280
+biwa_hayahide_expert,Biwa Hayahide Expert,"Get 100,000,000 total fans for Biwa Hayahide",biwa_hayahide_expert.png,281
+biwa_hayahide_completionist,Biwa Hayahide Completionist,Obtain all G1 to G3 trophies with Biwa Hayahide,biwa_hayahide_completionist.png,282
+curren_chan_new_fan,Curren Chan New Fan,View Episode 4 of Curren Chan's Umamusume Story,curren_chan_new_fan.png,283
+curren_chan_fan_club,Curren Chan Fan Club,"Get 10,000,000 total fans for Curren Chan",curren_chan_fan_club.png,284
+curren_chan_biggest_fan,Curren Chan Biggest Fan,"Get 50,000,000 total fans for Curren Chan",curren_chan_biggest_fan.png,285
+curren_chan_expert,Curren Chan Expert,"Get 100,000,000 total fans for Curren Chan",curren_chan_expert.png,286
+curren_chan_completionist,Curren Chan Completionist,Obtain all G1 to G3 trophies with Curren Chan,curren_chan_completionist.png,287
+narita_taishin_new_fan,Narita Taishin New Fan,View Episode 4 of Narita Taishin's Umamusume Story,narita_taishin_new_fan.png,288
+narita_taishin_fan_club,Narita Taishin Fan Club,"Get 10,000,000 total fans for Narita Taishin",narita_taishin_fan_club.png,289
+narita_taishin_biggest_fan,Narita Taishin Biggest Fan,"Get 50,000,000 total fans for Narita Taishin",narita_taishin_biggest_fan.png,290
+narita_taishin_expert,Narita Taishin Expert,"Get 100,000,000 total fans for Narita Taishin",narita_taishin_expert.png,291
+narita_taishin_completionist,Narita Taishin Completionist,Obtain all G1 to G3 trophies with Narita Taishin,narita_taishin_completionist.png,292
+smart_falcon_new_fan,Smart Falcon New Fan,View Episode 4 of Smart Falcon's Umamusume Story,smart_falcon_new_fan.png,293
+smart_falcon_fan_club,Smart Falcon Fan Club,"Get 10,000,000 total fans for Smart Falcon",smart_falcon_fan_club.png,294
+smart_falcon_biggest_fan,Smart Falcon Biggest Fan,"Get 50,000,000 total fans for Smart Falcon",smart_falcon_biggest_fan.png,295
+smart_falcon_expert,Smart Falcon Expert,"Get 100,000,000 total fans for Smart Falcon",smart_falcon_expert.png,296
+smart_falcon_completionist,Smart Falcon Completionist,Obtain all G1 to G3 trophies with Smart Falcon,smart_falcon_completionist.png,297
+narita_brian_new_fan,Narita Brian New Fan,View Episode 4 of Narita Brian's Umamusume Story,narita_brian_new_fan.png,298
+narita_brian_fan_club,Narita Brian Fan Club,"Get 10,000,000 total fans for Narita Brian",narita_brian_fan_club.png,299
+narita_brian_biggest_fan,Narita Brian Biggest Fan,"Get 50,000,000 total fans for Narita Brian",narita_brian_biggest_fan.png,300
+narita_brian_expert,Narita Brian Expert,"Get 100,000,000 total fans for Narita Brian",narita_brian_expert.png,301
+narita_brian_completionist,Narita Brian Completionist,Obtain all G1 to G3 trophies with Narita Brian,narita_brian_completionist.png,302
+meisho_doto_new_fan,Meisho Doto New Fan,View Episode 4 of Meisho Doto's Umamusume Story,meisho_doto_new_fan.png,303
+meisho_doto_fan_club,Meisho Doto Fan Club,"Get 10,000,000 total fans for Meisho Doto",meisho_doto_fan_club.png,304
+meisho_doto_biggest_fan,Meisho Doto Biggest Fan,"Get 50,000,000 total fans for Meisho Doto",meisho_doto_biggest_fan.png,305
+meisho_doto_expert,Meisho Doto Expert,"Get 100,000,000 total fans for Meisho Doto",meisho_doto_expert.png,306
+meisho_doto_completionist,Meisho Doto Completionist,Obtain all G1 to G3 trophies with Meisho Doto,meisho_doto_completionist.png,307
+eishin_flash_new_fan,Eishin Flash New Fan,View Episode 4 of Eishin Flash's Umamusume Story,eishin_flash_new_fan.png,308
+eishin_flash_fan_club,Eishin Flash Fan Club,"Get 10,000,000 total fans for Eishin Flash",eishin_flash_fan_club.png,309
+eishin_flash_biggest_fan,Eishin Flash Biggest Fan,"Get 50,000,000 total fans for Eishin Flash",eishin_flash_biggest_fan.png,310
+eishin_flash_expert,Eishin Flash Expert,"Get 100,000,000 total fans for Eishin Flash",eishin_flash_expert.png,311
+eishin_flash_completionist,Eishin Flash Completionist,Obtain all G1 to G3 trophies with Eishin Flash,eishin_flash_completionist.png,312
+hishi_akebono_new_fan,Hishi Akebono New Fan,View Episode 4 of Hishi Akebono's Umamusume Story,hishi_akebono_new_fan.png,313
+hishi_akebono_fan_club,Hishi Akebono Fan Club,"Get 10,000,000 total fans for Hishi Akebono",hishi_akebono_fan_club.png,314
+hishi_akebono_biggest_fan,Hishi Akebono Biggest Fan,"Get 50,000,000 total fans for Hishi Akebono",hishi_akebono_biggest_fan.png,315
+hishi_akebono_expert,Hishi Akebono Expert,"Get 100,000,000 total fans for Hishi Akebono",hishi_akebono_expert.png,316
+hishi_akebono_completionist,Hishi Akebono Completionist,Obtain all G1 to G3 trophies with Hishi Akebono,hishi_akebono_completionist.png,317
+agnes_digital_new_fan,Agnes Digital New Fan,View Episode 4 of Agnes Digital's Umamusume Story,agnes_digital_new_fan.png,318
+agnes_digital_fan_club,Agnes Digital Fan Club,"Get 10,000,000 total fans for Agnes Digital",agnes_digital_fan_club.png,319
+agnes_digital_biggest_fan,Agnes Digital Biggest Fan,"Get 50,000,000 total fans for Agnes Digital",agnes_digital_biggest_fan.png,320
+agnes_digital_expert,Agnes Digital Expert,"Get 100,000,000 total fans for Agnes Digital",agnes_digital_expert.png,321
+agnes_digital_completionist,Agnes Digital Completionist,Obtain all G1 to G3 trophies with Agnes Digital,agnes_digital_completionist.png,322
+kawakami_princess_new_fan,Kawakami Princess New Fan,View Episode 4 of Kawakami Princess's Umamusume Story,kawakami_princess_new_fan.png,323
+kawakami_princess_fan_club,Kawakami Princess Fan Club,"Get 10,000,000 total fans for Kawakami Princess",kawakami_princess_fan_club.png,324
+kawakami_princess_biggest_fan,Kawakami Princess Biggest Fan,"Get 50,000,000 total fans for Kawakami Princess",kawakami_princess_biggest_fan.png,325
+kawakami_princess_expert,Kawakami Princess Expert,"Get 100,000,000 total fans for Kawakami Princess",kawakami_princess_expert.png,326
+kawakami_princess_completionist,Kawakami Princess Completionist,Obtain all G1 to G3 trophies with Kawakami Princess,kawakami_princess_completionist.png,327
+manhattan_cafe_new_fan,Manhattan Cafe New Fan,View Episode 4 of Manhattan Cafe's Umamusume Story,manhattan_cafe_new_fan.png,328
+manhattan_cafe_fan_club,Manhattan Cafe Fan Club,"Get 10,000,000 total fans for Manhattan Cafe",manhattan_cafe_fan_club.png,329
+manhattan_cafe_biggest_fan,Manhattan Cafe Biggest Fan,"Get 50,000,000 total fans for Manhattan Cafe",manhattan_cafe_biggest_fan.png,330
+manhattan_cafe_expert,Manhattan Cafe Expert,"Get 100,000,000 total fans for Manhattan Cafe",manhattan_cafe_expert.png,331
+manhattan_cafe_completionist,Manhattan Cafe Completionist,Obtain all G1 to G3 trophies with Manhattan Cafe,manhattan_cafe_completionist.png,332
+tosen_jordan_new_fan,Tosen Jordan New Fan,View Episode 4 of Tosen Jordan's Umamusume Story,tosen_jordan_new_fan.png,333
+tosen_jordan_fan_club,Tosen Jordan Fan Club,"Get 10,000,000 total fans for Tosen Jordan",tosen_jordan_fan_club.png,334
+tosen_jordan_biggest_fan,Tosen Jordan Biggest Fan,"Get 50,000,000 total fans for Tosen Jordan",tosen_jordan_biggest_fan.png,335
+tosen_jordan_expert,Tosen Jordan Expert,"Get 100,000,000 total fans for Tosen Jordan",tosen_jordan_expert.png,336
+tosen_jordan_completionist,Tosen Jordan Completionist,Obtain all G1 to G3 trophies with Tosen Jordan,tosen_jordan_completionist.png,337
+mejiro_dober_new_fan,Mejiro Dober New Fan,View Episode 4 of Mejiro Dober's Umamusume Story,mejiro_dober_new_fan.png,338
+mejiro_dober_fan_club,Mejiro Dober Fan Club,"Get 10,000,000 total fans for Mejiro Dober",mejiro_dober_fan_club.png,339
+mejiro_dober_biggest_fan,Mejiro Dober Biggest Fan,"Get 50,000,000 total fans for Mejiro Dober",mejiro_dober_biggest_fan.png,340
+mejiro_dober_expert,Mejiro Dober Expert,"Get 100,000,000 total fans for Mejiro Dober",mejiro_dober_expert.png,341
+mejiro_dober_completionist,Mejiro Dober Completionist,Obtain all G1 to G3 trophies with Mejiro Dober,mejiro_dober_completionist.png,342
+fine_motion_new_fan,Fine Motion New Fan,View Episode 4 of Fine Motion's Umamusume Story,fine_motion_new_fan.png,343
+fine_motion_fan_club,Fine Motion Fan Club,"Get 10,000,000 total fans for Fine Motion",fine_motion_fan_club.png,344
+fine_motion_biggest_fan,Fine Motion Biggest Fan,"Get 50,000,000 total fans for Fine Motion",fine_motion_biggest_fan.png,345
+fine_motion_expert,Fine Motion Expert,"Get 100,000,000 total fans for Fine Motion",fine_motion_expert.png,346
+fine_motion_completionist,Fine Motion Completionist,Obtain all G1 to G3 trophies with Fine Motion,fine_motion_completionist.png,347
+tamamo_cross_new_fan,Tamamo Cross New Fan,View Episode 4 of Tamamo Cross's Umamusume Story,tamamo_cross_new_fan.png,348
+tamamo_cross_fan_club,Tamamo Cross Fan Club,"Get 10,000,000 total fans for Tamamo Cross",tamamo_cross_fan_club.png,349
+tamamo_cross_biggest_fan,Tamamo Cross Biggest Fan,"Get 50,000,000 total fans for Tamamo Cross",tamamo_cross_biggest_fan.png,350
+tamamo_cross_expert,Tamamo Cross Expert,"Get 100,000,000 total fans for Tamamo Cross",tamamo_cross_expert.png,351
+tamamo_cross_completionist,Tamamo Cross Completionist,Obtain all G1 to G3 trophies with Tamamo Cross,tamamo_cross_completionist.png,352
+sakura_chiyono_o_new_fan,Sakura Chiyono O New Fan,View Episode 4 of Sakura Chiyono O's Umamusume Story,sakura_chiyono_o_new_fan.png,353
+sakura_chiyono_o_fan_club,Sakura Chiyono O Fan Club,"Get 10,000,000 total fans for Sakura Chiyono O",sakura_chiyono_o_fan_club.png,354
+sakura_chiyono_o_biggest_fan,Sakura Chiyono O Biggest Fan,"Get 50,000,000 total fans for Sakura Chiyono O",sakura_chiyono_o_biggest_fan.png,355
+sakura_chiyono_o_expert,Sakura Chiyono O Expert,"Get 100,000,000 total fans for Sakura Chiyono O",sakura_chiyono_o_expert.png,356
+sakura_chiyono_o_completionist,Sakura Chiyono O Completionist,Obtain all G1 to G3 trophies with Sakura Chiyono O,sakura_chiyono_o_completionist.png,357
+mejiro_ardan_new_fan,Mejiro Ardan New Fan,View Episode 4 of Mejiro Ardan's Umamusume Story,mejiro_ardan_new_fan.png,358
+mejiro_ardan_fan_club,Mejiro Ardan Fan Club,"Get 10,000,000 total fans for Mejiro Ardan",mejiro_ardan_fan_club.png,359
+mejiro_ardan_biggest_fan,Mejiro Ardan Biggest Fan,"Get 50,000,000 total fans for Mejiro Ardan",mejiro_ardan_biggest_fan.png,360
+mejiro_ardan_expert,Mejiro Ardan Expert,"Get 100,000,000 total fans for Mejiro Ardan",mejiro_ardan_expert.png,361
+mejiro_ardan_completionist,Mejiro Ardan Completionist,Obtain all G1 to G3 trophies with Mejiro Ardan,mejiro_ardan_completionist.png,362
+admire_vega_new_fan,Admire Vega New Fan,View Episode 4 of Admire Vega's Umamusume Story,admire_vega_new_fan.png,363
+admire_vega_fan_club,Admire Vega Fan Club,"Get 10,000,000 total fans for Admire Vega",admire_vega_fan_club.png,364
+admire_vega_biggest_fan,Admire Vega Biggest Fan,"Get 50,000,000 total fans for Admire Vega",admire_vega_biggest_fan.png,365
+admire_vega_expert,Admire Vega Expert,"Get 100,000,000 total fans for Admire Vega",admire_vega_expert.png,366
+admire_vega_completionist,Admire Vega Completionist,Obtain all G1 to G3 trophies with Admire Vega,admire_vega_completionist.png,367
+kitasan_black_new_fan,Kitasan Black New Fan,View Episode 4 of Kitasan Black's Umamusume Story,kitasan_black_new_fan.png,368
+kitasan_black_fan_club,Kitasan Black Fan Club,"Get 10,000,000 total fans for Kitasan Black",kitasan_black_fan_club.png,369
+kitasan_black_biggest_fan,Kitasan Black Biggest Fan,"Get 50,000,000 total fans for Kitasan Black",kitasan_black_biggest_fan.png,370
+kitasan_black_expert,Kitasan Black Expert,"Get 100,000,000 total fans for Kitasan Black",kitasan_black_expert.png,371
+kitasan_black_completionist,Kitasan Black Completionist,Obtain all G1 to G3 trophies with Kitasan Black,kitasan_black_completionist.png,372
+matikanetannhauser_new_fan,Matikanetannhauser New Fan,View Episode 4 of Matikanetannhauser's Umamusume Story,matikanetannhauser_new_fan.png,373
+matikanetannhauser_fan_club,Matikanetannhauser Fan Club,"Get 10,000,000 total fans for Matikanetannhauser",matikanetannhauser_fan_club.png,374
+matikanetannhauser_biggest_fan,Matikanetannhauser Biggest Fan,"Get 50,000,000 total fans for Matikanetannhauser",matikanetannhauser_biggest_fan.png,375
+matikanetannhauser_expert,Matikanetannhauser Expert,"Get 100,000,000 total fans for Matikanetannhauser",matikanetannhauser_expert.png,376
+matikanetannhauser_completionist,Matikanetannhauser Completionist,Obtain all G1 to G3 trophies with Matikanetannhauser,matikanetannhauser_completionist.png,377
+satono_diamond_new_fan,Satono Diamond New Fan,View Episode 4 of Satono Diamond's Umamusume Story,satono_diamond_new_fan.png,378
+satono_diamond_fan_club,Satono Diamond Fan Club,"Get 10,000,000 total fans for Satono Diamond",satono_diamond_fan_club.png,379
+satono_diamond_biggest_fan,Satono Diamond Biggest Fan,"Get 50,000,000 total fans for Satono Diamond",satono_diamond_biggest_fan.png,380
+satono_diamond_expert,Satono Diamond Expert,"Get 100,000,000 total fans for Satono Diamond",satono_diamond_expert.png,381
+satono_diamond_completionist,Satono Diamond Completionist,Obtain all G1 to G3 trophies with Satono Diamond,satono_diamond_completionist.png,382
+mejiro_bright_new_fan,Mejiro Bright New Fan,View Episode 4 of Mejiro Bright's Umamusume Story,mejiro_bright_new_fan.png,383
+mejiro_bright_fan_club,Mejiro Bright Fan Club,"Get 10,000,000 total fans for Mejiro Bright",mejiro_bright_fan_club.png,384
+mejiro_bright_biggest_fan,Mejiro Bright Biggest Fan,"Get 50,000,000 total fans for Mejiro Bright",mejiro_bright_biggest_fan.png,385
+mejiro_bright_expert,Mejiro Bright Expert,"Get 100,000,000 total fans for Mejiro Bright",mejiro_bright_expert.png,386
+mejiro_bright_completionist,Mejiro Bright Completionist,Obtain all G1 to G3 trophies with Mejiro Bright,mejiro_bright_completionist.png,387
+nishino_flower_new_fan,Nishino Flower New Fan,View Episode 4 of Nishino Flower's Umamusume Story,nishino_flower_new_fan.png,388
+nishino_flower_fan_club,Nishino Flower Fan Club,"Get 10,000,000 total fans for Nishino Flower",nishino_flower_fan_club.png,389
+nishino_flower_biggest_fan,Nishino Flower Biggest Fan,"Get 50,000,000 total fans for Nishino Flower",nishino_flower_biggest_fan.png,390
+nishino_flower_expert,Nishino Flower Expert,"Get 100,000,000 total fans for Nishino Flower",nishino_flower_expert.png,391
+nishino_flower_completionist,Nishino Flower Completionist,Obtain all G1 to G3 trophies with Nishino Flower,nishino_flower_completionist.png,392
+yaeno_muteki_new_fan,Yaeno Muteki New Fan,View Episode 4 of Yaeno Muteki's Umamusume Story,yaeno_muteki_new_fan.png,393
+yaeno_muteki_fan_club,Yaeno Muteki Fan Club,"Get 10,000,000 total fans for Yaeno Muteki",yaeno_muteki_fan_club.png,394
+yaeno_muteki_biggest_fan,Yaeno Muteki Biggest Fan,"Get 50,000,000 total fans for Yaeno Muteki",yaeno_muteki_biggest_fan.png,395
+yaeno_muteki_expert,Yaeno Muteki Expert,"Get 100,000,000 total fans for Yaeno Muteki",yaeno_muteki_expert.png,396
+yaeno_muteki_completionist,Yaeno Muteki Completionist,Obtain all G1 to G3 trophies with Yaeno Muteki,yaeno_muteki_completionist.png,397
+ines_fujin_new_fan,Ines Fujin New Fan,View Episode 4 of Ines Fujin's Umamusume Story,ines_fujin_new_fan.png,398
+ines_fujin_fan_club,Ines Fujin Fan Club,"Get 10,000,000 total fans for Ines Fujin",ines_fujin_fan_club.png,399
+ines_fujin_biggest_fan,Ines Fujin Biggest Fan,"Get 50,000,000 total fans for Ines Fujin",ines_fujin_biggest_fan.png,400
+ines_fujin_expert,Ines Fujin Expert,"Get 100,000,000 total fans for Ines Fujin",ines_fujin_expert.png,401
+ines_fujin_completionist,Ines Fujin Completionist,Obtain all G1 to G3 trophies with Ines Fujin,ines_fujin_completionist.png,402
+mejiro_palmer_new_fan,Mejiro Palmer New Fan,View Episode 4 of Mejiro Palmer's Umamusume Story,mejiro_palmer_new_fan.png,403
+mejiro_palmer_fan_club,Mejiro Palmer Fan Club,"Get 10,000,000 total fans for Mejiro Palmer",mejiro_palmer_fan_club.png,404
+mejiro_palmer_biggest_fan,Mejiro Palmer Biggest Fan,"Get 50,000,000 total fans for Mejiro Palmer",mejiro_palmer_biggest_fan.png,405
+mejiro_palmer_expert,Mejiro Palmer Expert,"Get 100,000,000 total fans for Mejiro Palmer",mejiro_palmer_expert.png,406
+mejiro_palmer_completionist,Mejiro Palmer Completionist,Obtain all G1 to G3 trophies with Mejiro Palmer,mejiro_palmer_completionist.png,407
+inari_one_new_fan,Inari One New Fan,View Episode 4 of Inari One's Umamusume Story,inari_one_new_fan.png,408
+inari_one_fan_club,Inari One Fan Club,"Get 10,000,000 total fans for Inari One",inari_one_fan_club.png,409
+inari_one_biggest_fan,Inari One Biggest Fan,"Get 50,000,000 total fans for Inari One",inari_one_biggest_fan.png,410
+inari_one_expert,Inari One Expert,"Get 100,000,000 total fans for Inari One",inari_one_expert.png,411
+inari_one_completionist,Inari One Completionist,Obtain all G1 to G3 trophies with Inari One,inari_one_completionist.png,412
+sweep_tosho_new_fan,Sweep Tosho New Fan,View Episode 4 of Sweep Tosho's Umamusume Story,sweep_tosho_new_fan.png,413
+sweep_tosho_fan_club,Sweep Tosho Fan Club,"Get 10,000,000 total fans for Sweep Tosho",sweep_tosho_fan_club.png,414
+sweep_tosho_biggest_fan,Sweep Tosho Biggest Fan,"Get 50,000,000 total fans for Sweep Tosho",sweep_tosho_biggest_fan.png,415
+sweep_tosho_expert,Sweep Tosho Expert,"Get 100,000,000 total fans for Sweep Tosho",sweep_tosho_expert.png,416
+sweep_tosho_completionist,Sweep Tosho Completionist,Obtain all G1 to G3 trophies with Sweep Tosho,sweep_tosho_completionist.png,417
+air_shakur_new_fan,Air Shakur New Fan,View Episode 4 of Air Shakur's Umamusume Story,air_shakur_new_fan.png,418
+air_shakur_fan_club,Air Shakur Fan Club,"Get 10,000,000 total fans for Air Shakur",air_shakur_fan_club.png,419
+air_shakur_biggest_fan,Air Shakur Biggest Fan,"Get 50,000,000 total fans for Air Shakur",air_shakur_biggest_fan.png,420
+air_shakur_expert,Air Shakur Expert,"Get 100,000,000 total fans for Air Shakur",air_shakur_expert.png,421
+air_shakur_completionist,Air Shakur Completionist,Obtain all G1 to G3 trophies with Air Shakur,air_shakur_completionist.png,422
+bamboo_memory_new_fan,Bamboo Memory New Fan,View Episode 4 of Bamboo Memory's Umamusume Story,bamboo_memory_new_fan.png,423
+bamboo_memory_fan_club,Bamboo Memory Fan Club,"Get 10,000,000 total fans for Bamboo Memory",bamboo_memory_fan_club.png,424
+bamboo_memory_biggest_fan,Bamboo Memory Biggest Fan,"Get 50,000,000 total fans for Bamboo Memory",bamboo_memory_biggest_fan.png,425
+bamboo_memory_expert,Bamboo Memory Expert,"Get 100,000,000 total fans for Bamboo Memory",bamboo_memory_expert.png,426
+bamboo_memory_completionist,Bamboo Memory Completionist,Obtain all G1 to G3 trophies with Bamboo Memory,bamboo_memory_completionist.png,427
+copano_rickey_new_fan,Copano Rickey New Fan,View Episode 4 of Copano Rickey's Umamusume Story,copano_rickey_new_fan.png,428
+copano_rickey_fan_club,Copano Rickey Fan Club,"Get 10,000,000 total fans for Copano Rickey",copano_rickey_fan_club.png,429
+copano_rickey_biggest_fan,Copano Rickey Biggest Fan,"Get 50,000,000 total fans for Copano Rickey",copano_rickey_biggest_fan.png,430
+copano_rickey_expert,Copano Rickey Expert,"Get 100,000,000 total fans for Copano Rickey",copano_rickey_expert.png,431
+copano_rickey_completionist,Copano Rickey Completionist,Obtain all G1 to G3 trophies with Copano Rickey,copano_rickey_completionist.png,432
+yukino_bijin_new_fan,Yukino Bijin New Fan,View Episode 4 of Yukino Bijin's Umamusume Story,yukino_bijin_new_fan.png,433
+yukino_bijin_fan_club,Yukino Bijin Fan Club,"Get 10,000,000 total fans for Yukino Bijin",yukino_bijin_fan_club.png,434
+yukino_bijin_biggest_fan,Yukino Bijin Biggest Fan,"Get 50,000,000 total fans for Yukino Bijin",yukino_bijin_biggest_fan.png,435
+yukino_bijin_expert,Yukino Bijin Expert,"Get 100,000,000 total fans for Yukino Bijin",yukino_bijin_expert.png,436
+yukino_bijin_completionist,Yukino Bijin Completionist,Obtain all G1 to G3 trophies with Yukino Bijin,yukino_bijin_completionist.png,437
+seeking_the_pearl_new_fan,Seeking the Pearl New Fan,View Episode 4 of Seeking the Pearl's Umamusume Story,seeking_the_pearl_new_fan.png,438
+seeking_the_pearl_fan_club,Seeking the Pearl Fan Club,"Get 10,000,000 total fans for Seeking the Pearl",seeking_the_pearl_fan_club.png,439
+seeking_the_pearl_biggest_fan,Seeking the Pearl Biggest Fan,"Get 50,000,000 total fans for Seeking the Pearl",seeking_the_pearl_biggest_fan.png,440
+seeking_the_pearl_expert,Seeking the Pearl Expert,"Get 100,000,000 total fans for Seeking the Pearl",seeking_the_pearl_expert.png,441
+seeking_the_pearl_completionist,Seeking the Pearl Completionist,Obtain all G1 to G3 trophies with Seeking the Pearl,seeking_the_pearl_completionist.png,442
+aston_machan_new_fan,Aston Machan New Fan,View Episode 4 of Aston Machan's Umamusume Story,aston_machan_new_fan.png,443
+aston_machan_fan_club,Aston Machan Fan Club,"Get 10,000,000 total fans for Aston Machan",aston_machan_fan_club.png,444
+aston_machan_biggest_fan,Aston Machan Biggest Fan,"Get 50,000,000 total fans for Aston Machan",aston_machan_biggest_fan.png,445
+aston_machan_expert,Aston Machan Expert,"Get 100,000,000 total fans for Aston Machan",aston_machan_expert.png,446
+aston_machan_completionist,Aston Machan Completionist,Obtain all G1 to G3 trophies with Aston Machan,aston_machan_completionist.png,447
+yamanin_zephyr_new_fan,Yamanin Zephyr New Fan,View Episode 4 of Yamanin Zephyr's Umamusume Story,yamanin_zephyr_new_fan.png,448
+yamanin_zephyr_fan_club,Yamanin Zephyr Fan Club,"Get 10,000,000 total fans for Yamanin Zephyr",yamanin_zephyr_fan_club.png,449
+yamanin_zephyr_biggest_fan,Yamanin Zephyr Biggest Fan,"Get 50,000,000 total fans for Yamanin Zephyr",yamanin_zephyr_biggest_fan.png,450
+yamanin_zephyr_expert,Yamanin Zephyr Expert,"Get 100,000,000 total fans for Yamanin Zephyr",yamanin_zephyr_expert.png,451
+yamanin_zephyr_completionist,Yamanin Zephyr Completionist,Obtain all G1 to G3 trophies with Yamanin Zephyr,yamanin_zephyr_completionist.png,452
+nakayama_festa_new_fan,Nakayama Festa New Fan,View Episode 4 of Nakayama Festa's Umamusume Story,nakayama_festa_new_fan.png,453
+nakayama_festa_fan_club,Nakayama Festa Fan Club,"Get 10,000,000 total fans for Nakayama Festa",nakayama_festa_fan_club.png,454
+nakayama_festa_biggest_fan,Nakayama Festa Biggest Fan,"Get 50,000,000 total fans for Nakayama Festa",nakayama_festa_biggest_fan.png,455
+nakayama_festa_expert,Nakayama Festa Expert,"Get 100,000,000 total fans for Nakayama Festa",nakayama_festa_expert.png,456
+nakayama_festa_completionist,Nakayama Festa Completionist,Obtain all G1 to G3 trophies with Nakayama Festa,nakayama_festa_completionist.png,457
+wonder_acute_new_fan,Wonder Acute New Fan,View Episode 4 of Wonder Acute's Umamusume Story,wonder_acute_new_fan.png,458
+wonder_acute_fan_club,Wonder Acute Fan Club,"Get 10,000,000 total fans for Wonder Acute",wonder_acute_fan_club.png,459
+wonder_acute_biggest_fan,Wonder Acute Biggest Fan,"Get 50,000,000 total fans for Wonder Acute",wonder_acute_biggest_fan.png,460
+wonder_acute_expert,Wonder Acute Expert,"Get 100,000,000 total fans for Wonder Acute",wonder_acute_expert.png,461
+wonder_acute_completionist,Wonder Acute Completionist,Obtain all G1 to G3 trophies with Wonder Acute,wonder_acute_completionist.png,462
+dashing_towards_your_dreams,Dashing towards Your Dreams,Clear all Event Special Missions,dashing_towards_your_dreams.png,463
+brand_new_friends,Brand New Friends,Clear all Event Special Missions,brand_new_friends.png,464
+racing_hearts_beauty_in_bloom,Racing Hearts Beauty in Bloom,Clear all Event Special Missions,racing_hearts_beauty_in_bloom.png,465
+epic_odyssey_uma_quest,Epic Odyssey Uma Quest,Clear all Event Special Missions,epic_odyssey_uma_quest.png,466
+beaches_bathing_suits_blazing_trails,"Beaches, Bathing Suits & Blazing Trails",Clear all Event Special Missions,beaches_bathing_suits_blazing_trails.png,467
+halloween_makeover,Halloween Makeover!,Clear all Event Special Missions,halloween_makeover.png,468
+orchestra_in_late_autumn,Orchestra in Late Autumn,Clear all Event Special Missions,orchestra_in_late_autumn.png,469
+hungry_for_a_miracle,Hungry for a Miracle,Clear all Event Special Missions,hungry_for_a_miracle.png,470
+blossoming_beginnings_new_year_s_karuta_showdown,Blossoming Beginnings! New Year's Karuta Showdown,Clear all Event Special Missions,blossoming_beginnings_new_year_s_karuta_showdown.png,471
+the_peak_of_confection,The Peak of Confection,Clear all Event Special Missions,the_peak_of_confection.png,472
+flying_run_up,Flying Run-Up!,Clear all Event Special Missions,flying_run_up.png,473
+tonight_at_the_ligne_droite,Tonight at the Ligne Droite,Clear all Event Special Missions,tonight_at_the_ligne_droite.png,474
+let_those_cheers_roar_tracen_cheer_squad,Let Those Cheers Roar! Tracen Cheer Squad,Clear all Event Special Missions,let_those_cheers_roar_tracen_cheer_squad.png,475
+the_promised_hour_silks_three_riddles,The Promised Hour: Silks & Three Riddles,Clear all Event Special Missions,the_promised_hour_silks_three_riddles.png,476
+search_solve_summer,Search! Solve! Summer!,Clear all Event Special Missions,search_solve_summer.png,477
+make_a_splash_summer_showdown,Make a Splash! Summer Showdown! ☆,Clear all Event Special Missions,make_a_splash_summer_showdown.png,478
+wings_of_steam_and_steel,Wings of Steam and Steel,Clear all Event Special Missions,wings_of_steam_and_steel.png,479
+days_flying_by,Days Flying By,Clear all Event Special Missions,days_flying_by.png,480
+hark_back_run_forward,"Hark Back, Run Forward",Clear all Event Special Missions,hark_back_run_forward.png,481
+unity_cup_straight_a_trainer,Unity Cup Straight-A Trainer,Achieve excellent results in the Trainer Aptitude Test,unity_cup_straight_a_trainer.png,482
+climax_straight_a_trainer,Climax Straight A Trainer,Achieve excellent results in the Trainer Aptitude Test,climax_straight_a_trainer.png,483
+our_grand_concert_straight_a_trainer,Our Grand Concert Straight A Trainer,Achieve excellent results in the Trainer Aptitude Test,our_grand_concert_straight_a_trainer.png,484
+to_the_top_project_umadol,To the Top! Project Umadol,Complete the individual rewards for Top Umadol Project,to_the_top_project_umadol.png,485
+it_s_not_about_the_start,It's Not About the Start,View a Good Ending while playing on Ultra Golshi Mode,it_s_not_about_the_start.png,486
+capricorn_cup_platinum,Capricorn Cup Platinum,Achieve legendary results in the Capricorn Cup,capricorn_cup_platinum.png,487
+capricorn_cup_gold,Capricorn Cup Gold,Achieve outstanding results in the Capricorn Cup,capricorn_cup_gold.png,488
+capricorn_cup_silver,Capricorn Cup Silver,Achieve shining results in the Capricorn Cup,capricorn_cup_silver.png,489
+capricorn_cup_bronze,Capricorn Cup Bronze,Achieve great results in the Capricorn Cup,capricorn_cup_bronze.png,490
+aquarius_cup_platinum,Aquarius Cup Platinum,Achieve legendary results in the Aquarius Cup,aquarius_cup_platinum.png,491
+aquarius_cup_gold,Aquarius Cup Gold,Achieve outstanding results in the Aquarius Cup,aquarius_cup_gold.png,492
+aquarius_cup_silver,Aquarius Cup Silver,Achieve shining results in the Aquarius Cup,aquarius_cup_silver.png,493
+aquarius_cup_bronze,Aquarius Cup Bronze,Achieve great results in the Aquarius Cup,aquarius_cup_bronze.png,494
+pisces_cup_platinum,Pisces Cup Platinum,Achieve legendary results in the Pisces Cup,pisces_cup_platinum.png,495
+pisces_cup_gold,Pisces Cup Gold,Achieve outstanding results in the Pisces Cup,pisces_cup_gold.png,496
+pisces_cup_silver,Pisces Cup Silver,Achieve shining results in the Pisces Cup,pisces_cup_silver.png,497
+pisces_cup_bronze,Pisces Cup Bronze,Achieve great results in the Pisces Cup,pisces_cup_bronze.png,498
+aries_cup_platinum,Aries Cup Platinum,Achieve legendary results in the Aries Cup,aries_cup_platinum.png,499
+aries_cup_gold,Aries Cup Gold,Achieve outstanding results in the Aries Cup,aries_cup_gold.png,500
+aries_cup_silver,Aries Cup Silver,Achieve shining results in the Aries Cup,aries_cup_silver.png,501
+aries_cup_bronze,Aries Cup Bronze,Achieve great results in the Aries Cup,aries_cup_bronze.png,502
+taurus_cup_platinum,Taurus Cup Platinum,Achieve legendary results in the Taurus Cup,taurus_cup_platinum.png,503
+taurus_cup_platinum_405102,Taurus Cup Platinum ★,Achieve legendary results in the Taurus Cup twice,taurus_cup_platinum_405102.png,504
+taurus_cup_gold,Taurus Cup Gold,Achieve outstanding results in the Taurus Cup,taurus_cup_gold.png,505
+taurus_cup_gold_405202,Taurus Cup Gold ★,Achieve outstanding results in the Taurus Cup twice,taurus_cup_gold_405202.png,506
+taurus_cup_silver,Taurus Cup Silver,Achieve shining results in the Taurus Cup,taurus_cup_silver.png,507
+taurus_cup_silver_405302,Taurus Cup Silver ★,Achieve shining results in the Taurus Cup twice,taurus_cup_silver_405302.png,508
+taurus_cup_bronze,Taurus Cup Bronze,Achieve great results in the Taurus Cup,taurus_cup_bronze.png,509
+taurus_cup_bronze_405402,Taurus Cup Bronze ★,Achieve great results in the Taurus Cup twice,taurus_cup_bronze_405402.png,510
+gemini_cup_platinum,Gemini Cup Platinum,Achieve legendary results in the Gemini Cup,gemini_cup_platinum.png,511
+gemini_cup_platinum_406102,Gemini Cup Platinum ★,Achieve legendary results in the Gemini Cup twice,gemini_cup_platinum_406102.png,512
+gemini_cup_gold,Gemini Cup Gold,Achieve outstanding results in the Gemini Cup,gemini_cup_gold.png,513
+gemini_cup_gold_406202,Gemini Cup Gold ★,Achieve outstanding results in the Gemini Cup twice,gemini_cup_gold_406202.png,514
+gemini_cup_silver,Gemini Cup Silver,Achieve shining results in the Gemini Cup,gemini_cup_silver.png,515
+gemini_cup_silver_406302,Gemini Cup Silver ★,Achieve shining results in the Gemini Cup twice,gemini_cup_silver_406302.png,516
+gemini_cup_bronze,Gemini Cup Bronze,Achieve great results in the Gemini Cup,gemini_cup_bronze.png,517
+gemini_cup_bronze_406402,Gemini Cup Bronze ★,Achieve great results in the Gemini Cup twice,gemini_cup_bronze_406402.png,518
+cancer_cup_platinum,Cancer Cup Platinum,Achieve legendary results in the Cancer Cup,cancer_cup_platinum.png,519
+cancer_cup_platinum_407102,Cancer Cup Platinum ★,Achieve legendary results in the Cancer Cup twice,cancer_cup_platinum_407102.png,520
+cancer_cup_gold,Cancer Cup Gold,Achieve outstanding results in the Cancer Cup,cancer_cup_gold.png,521
+cancer_cup_gold_407202,Cancer Cup Gold ★,Achieve outstanding results in the Cancer Cup twice,cancer_cup_gold_407202.png,522
+cancer_cup_silver,Cancer Cup Silver,Achieve shining results in the Cancer Cup,cancer_cup_silver.png,523
+cancer_cup_silver_407302,Cancer Cup Silver ★,Achieve shining results in the Cancer Cup twice,cancer_cup_silver_407302.png,524
+cancer_cup_bronze,Cancer Cup Bronze,Achieve great results in the Cancer Cup,cancer_cup_bronze.png,525
+cancer_cup_bronze_407402,Cancer Cup Bronze ★,Achieve great results in the Cancer Cup twice,cancer_cup_bronze_407402.png,526
+leo_cup_platinum,Leo Cup Platinum,Achieve legendary results in the Leo Cup,leo_cup_platinum.png,527
+leo_cup_platinum_408102,Leo Cup Platinum ★,Achieve legendary results in the Leo Cup twice,leo_cup_platinum_408102.png,528
+leo_cup_gold,Leo Cup Gold,Achieve outstanding results in the Leo Cup,leo_cup_gold.png,529
+leo_cup_gold_408202,Leo Cup Gold ★,Achieve outstanding results in the Leo Cup twice,leo_cup_gold_408202.png,530
+leo_cup_silver,Leo Cup Silver,Achieve shining results in the Leo Cup,leo_cup_silver.png,531
+leo_cup_silver_408302,Leo Cup Silver ★,Achieve shining results in the Leo Cup twice,leo_cup_silver_408302.png,532
+leo_cup_bronze,Leo Cup Bronze,Achieve great results in the Leo Cup,leo_cup_bronze.png,533
+leo_cup_bronze_408402,Leo Cup Bronze ★,Achieve great results in the Leo Cup twice,leo_cup_bronze_408402.png,534
+virgo_cup_platinum,Virgo Cup Platinum,Achieve legendary results in the Virgo Cup,virgo_cup_platinum.png,535
+virgo_cup_platinum_409102,Virgo Cup Platinum ★,Achieve legendary results in the Virgo Cup twice,virgo_cup_platinum_409102.png,536
+virgo_cup_gold,Virgo Cup Gold,Achieve outstanding results in the Virgo Cup,virgo_cup_gold.png,537
+virgo_cup_gold_409202,Virgo Cup Gold ★,Achieve outstanding results in the Virgo Cup twice,virgo_cup_gold_409202.png,538
+virgo_cup_silver,Virgo Cup Silver,Achieve shining results in the Virgo Cup,virgo_cup_silver.png,539
+virgo_cup_silver_409302,Virgo Cup Silver ★,Achieve shining results in the Virgo Cup twice,virgo_cup_silver_409302.png,540
+virgo_cup_bronze,Virgo Cup Bronze,Achieve great results in the Virgo Cup,virgo_cup_bronze.png,541
+virgo_cup_bronze_409402,Virgo Cup Bronze ★,Achieve great results in the Virgo Cup twice,virgo_cup_bronze_409402.png,542
+libra_cup_platinum,Libra Cup Platinum,Achieve legendary results in the Libra Cup,libra_cup_platinum.png,543
+libra_cup_platinum_410102,Libra Cup Platinum ★,Achieve legendary results in the Libra Cup twice,libra_cup_platinum_410102.png,544
+libra_cup_gold,Libra Cup Gold,Achieve outstanding results in the Libra Cup,libra_cup_gold.png,545
+libra_cup_gold_410202,Libra Cup Gold ★,Achieve outstanding results in the Libra Cup twice,libra_cup_gold_410202.png,546
+libra_cup_silver,Libra Cup Silver,Achieve shining results in the Libra Cup,libra_cup_silver.png,547
+libra_cup_silver_410302,Libra Cup Silver ★,Achieve shining results in the Libra Cup twice,libra_cup_silver_410302.png,548
+libra_cup_bronze,Libra Cup Bronze,Achieve great results in the Libra Cup,libra_cup_bronze.png,549
+libra_cup_bronze_410402,Libra Cup Bronze ★,Achieve great results in the Libra Cup twice,libra_cup_bronze_410402.png,550
+scorpio_cup_platinum,Scorpio Cup Platinum,Achieve legendary results in the Scorpio Cup,scorpio_cup_platinum.png,551
+scorpio_cup_platinum_411102,Scorpio Cup Platinum ★,Achieve legendary results in the Scorpio Cup twice,scorpio_cup_platinum_411102.png,552
+scorpio_cup_gold,Scorpio Cup Gold,Achieve outstanding results in the Scorpio Cup,scorpio_cup_gold.png,553
+scorpio_cup_gold_411202,Scorpio Cup Gold ★,Achieve outstanding results in the Scorpio Cup twice,scorpio_cup_gold_411202.png,554
+scorpio_cup_silver,Scorpio Cup Silver,Achieve shining results in the Scorpio Cup,scorpio_cup_silver.png,555
+scorpio_cup_silver_411302,Scorpio Cup Silver ★,Achieve shining results in the Scorpio Cup twice,scorpio_cup_silver_411302.png,556
+scorpio_cup_bronze,Scorpio Cup Bronze,Achieve great results in the Scorpio Cup,scorpio_cup_bronze.png,557
+scorpio_cup_bronze_411402,Scorpio Cup Bronze ★,Achieve great results in the Scorpio Cup twice,scorpio_cup_bronze_411402.png,558
+sagittarius_cup_platinum,Sagittarius Cup Platinum,Achieve legendary results in the Sagittarius Cup,sagittarius_cup_platinum.png,559
+sagittarius_cup_gold,Sagittarius Cup Gold,Achieve outstanding results in the Sagittarius Cup,sagittarius_cup_gold.png,560
+sagittarius_cup_silver,Sagittarius Cup Silver,Achieve shining results in the Sagittarius Cup,sagittarius_cup_silver.png,561
+sagittarius_cup_bronze,Sagittarius Cup Bronze,Achieve great results in the Sagittarius Cup,sagittarius_cup_bronze.png,562
+amazing_superb_well_done,Amazing! Superb! Well Done!,Obtain all Scenario Record rewards from the URA Finale,amazing_superb_well_done.png,563
+may_we_race_again,May We Race Again,Obtain all Scenario Record rewards from the Unity Cup,may_we_race_again.png,564
+shine_on_team_spirit,"Shine On, Team Spirit!",Win the Unity Cup,shine_on_team_spirit.png,565
+team_carrot,Team Carrot,Raise the Team Power of Team Carrot to S in Unity Cup,team_carrot.png,566
+happy_hoppers,Happy Hoppers,Raise the Team Power of Happy Hoppers to S in Unity Cup,happy_hoppers.png,567
+sunny_runners,Sunny Runners,Raise the Team Power of Sunny Runners to S in Unity Cup,sunny_runners.png,568
+carrot_pudding,Carrot Pudding,Raise the Team Power of Carrot Pudding to S in Unity Cup,carrot_pudding.png,569
+blue_bloom,Blue Bloom,Raise the Team Power of Blue Bloom to S in Unity Cup,blue_bloom.png,570
+team_player_star_slayer,Team Player Star Slayer,Take on those two in the URA Finale finals in Unity Cup and win,team_player_star_slayer.png,571
+cheering_for_them,Cheering for Them,Obtain all Scenario Record rewards from Our Grand Concert,cheering_for_them.png,572
+brighter_together,Brighter Together,Achieve a Great Success rating on all concerts in Our Grand Concert,brighter_together.png,573
+dream_yearn_run,"Dream, Yearn, Run",Watch a special Grand Concert,dream_yearn_run.png,574
+concert_technician,Concert Technician,Learn a concert technique 1200 times,concert_technician.png,575
+grand_champion,Grand Champion,Obtain all Scenario Record rewards from Trackblazer,grand_champion.png,576
+twinkle_top_star,Twinkle Top Star,Win the Twinkle Star Climax finals,twinkle_top_star.png,577
+shopping_addict,Shopping Addict,Buy a total of 1000 training items from the TS Climax Pro Shop,shopping_addict.png,578

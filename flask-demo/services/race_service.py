@@ -5,11 +5,22 @@ from flask import url_for
 
 from config import BASE_DIR
 from services.item_service import load_items_by_id
-from utils import read_csv_file
+from utils import fetch_all_supabase_rows, normalize_supabase_row, read_csv_file
 
 
 def load_races():
-    return read_csv_file("races.csv")
+    """Đọc Races từ Supabase; fallback races.csv nếu rỗng."""
+    raw_rows = fetch_all_supabase_rows("races", order_column="slug")
+    races = []
+    for raw_row in raw_rows:
+        row = normalize_supabase_row(raw_row)
+        if (row.get("slug") or "").strip():
+            races.append(row)
+    if not races:
+        print("[races] Supabase 0 dòng — fallback races.csv")
+        races = read_csv_file("races.csv")
+    return races
+
 
 
 def build_race_slug_by_name():
@@ -72,6 +83,9 @@ def linkify_race_names(text):
     return re.sub(pattern, replace, text)
 
 
+
+
+
 def load_race_rewards(race_slug):
     reward_rows = read_csv_file("race_rewards.csv")
     items_by_id = load_items_by_id()
@@ -111,7 +125,7 @@ def get_races_by_slugs(slugs):
     """
     Đọc nhiều Race cùng lúc theo slug, dùng cho mục Objectives ở trang
     character detail. Hiện tại race vẫn đang lưu ở races.csv (local),
-    chưa đưa lên Supabase, nên đọc thẳng từ đó qua load_races().
+    đọc từ Supabase qua load_races().
     """
     normalized_slugs = {
         slug.strip()

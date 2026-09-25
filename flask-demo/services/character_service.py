@@ -5,7 +5,7 @@ import re
 from services.item_service import load_items_by_id
 from services.race_service import get_races_by_slugs, load_races
 from services.skill_service import get_skills_by_ids
-from utils import read_csv_file
+from utils import fetch_all_supabase_rows, normalize_supabase_row, read_csv_file
 
 
 CHARACTER_SKILL_FIELDS = [
@@ -73,27 +73,69 @@ RACE_SLUG_ALIASES = {
 
 
 def load_characters():
+    """
+    Đọc Characters từ Supabase (bảng public.characters).
+    Pattern giống load_skills() — nếu Supabase rỗng thì fallback CSV.
+    """
+    raw_rows = fetch_all_supabase_rows(
+        "characters",
+        order_column="id",
+    )
+
     character_list = []
 
-    with open("characters.csv", newline="", encoding="utf-8-sig") as file:
-        reader = csv.DictReader(file)
+    for raw_row in raw_rows:
+        row = normalize_supabase_row(raw_row)
 
-        for row in reader:
-            try:
-                row["id"] = int(row.get("id") or 0)
-            except ValueError:
-                row["id"] = 0
-            try:
-                row["rarity"] = int(row.get("rarity") or 0)
-            except ValueError:
-                row["rarity"] = 0
+        # Bỏ dòng không có slug (không mở detail được)
+        slug = (row.get("slug") or "").strip()
+        if slug == "":
+            continue
+        row["slug"] = slug
 
-            for field_name in CHARACTER_SKILL_FIELDS:
-                row.setdefault(field_name, "")
+        try:
+            row["id"] = int(float(row.get("id") or 0))
+        except (TypeError, ValueError):
+            row["id"] = 0
 
-            character_list.append(row)
+        try:
+            row["rarity"] = int(float(row.get("rarity") or 0))
+        except (TypeError, ValueError):
+            row["rarity"] = 0
+
+        for field_name in CHARACTER_SKILL_FIELDS:
+            if field_name not in row or row[field_name] is None:
+                row[field_name] = ""
+
+        character_list.append(row)
+
+    # Fallback local CSV nếu Supabase trả 0 (RLS / key / bảng sai)
+    if not character_list:
+        print(
+            "[characters] Supabase trả 0 dòng — fallback characters.csv. "
+            "Nếu muốn chỉ dùng Supabase: tắt RLS hoặc thêm policy SELECT cho anon."
+        )
+        try:
+            import csv as _csv
+            with open("characters.csv", newline="", encoding="utf-8-sig") as f:
+                for row in _csv.DictReader(f):
+                    try:
+                        row["id"] = int(row.get("id") or 0)
+                    except ValueError:
+                        row["id"] = 0
+                    try:
+                        row["rarity"] = int(row.get("rarity") or 0)
+                    except ValueError:
+                        row["rarity"] = 0
+                    for field_name in CHARACTER_SKILL_FIELDS:
+                        row.setdefault(field_name, "")
+                    if (row.get("slug") or "").strip():
+                        character_list.append(row)
+        except FileNotFoundError:
+            print("[characters] Không có characters.csv để fallback.")
 
     return character_list
+
 
 
 def character_lookup_slugs(character_slug, character=None):
