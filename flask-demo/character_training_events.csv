@@ -307,7 +307,7 @@ fuji-kiseki-shooting-star-revue,date,the_greatest_blessing_in_life,The Greatest 
 fuji-kiseki-shooting-star-revue,date,one_act_from_the_wings,One Act from the Wings,Top::Guts +10||Bot::Stamina +10,4
 fuji-kiseki-shooting-star-revue,date,stargazing,Stargazing,Top::Speed +10||Bot::Power +10,5
 fuji-kiseki-shooting-star-revue,secret,words_do_no_justice,Words Do No Justice,conditions::3_crown_route|Win the Satsuki Sho|Win the Tokyo Yushun (Japanese Derby)|Win the Kikuka Sho||reward::Speed +20|Stamina +20|Power +20|Prepared to Pass hint +1,1
-fuji-kiseki-shooting-star-revue,secret,can_t_stop_the_beat,Can't Stop the Beat,"conditions::win_g1_cnt_class_distance:3|3|[0, 1]|Win the Takamatsunomiya Kinen||reward::Mood +1|Power +20|Wit +20|Unyielding Spirit hint +1",2
+fuji-kiseki-shooting-star-revue,secret,can_t_stop_the_beat,Can't Stop the Beat,"conditions::win_g1_cnt_class_distance: 3|3|[0, 1]|Win the Takamatsunomiya Kinen||reward::Mood +1|Power +20|Wit +20|Unyielding Spirit hint +1",2
 fuji-kiseki-shooting-star-revue,secret,my_lucky_star,My Lucky Star,conditions::Win the Tenno Sho (Autumn) (Senior)|Win the Japan Cup (Senior)|Win the Arima Kinen (Senior)|Win the Takarazuka Kinen (Senior)||reward::Mood +1|Speed +25|Stamina +25|Guts +25|Preferred Position hint +1,3
 fuji-kiseki-shooting-star-revue,no_choices,act_2_tonight_the_world_is_wild,"Act 2: Tonight, the World Is Wild",Stamina +5,1
 fuji-kiseki-shooting-star-revue,no_choices,act_3_a_rose_by_any_other_name,Act 3: A Rose by Any Other Name,Speed +5,2
@@ -348,9 +348,9 @@ oguri-cap-starlight-beat,date,oguri_perseveres,Oguri Perseveres,Top::Guts +10||B
 oguri-cap-starlight-beat,date,oguri_matures,Oguri Matures,Top::Wit +10||Bot::Stamina +10||Mid::Power +10,3
 oguri-cap-starlight-beat,date,something_smells_good,Something Smells Good!,Top::Speed +10||Bot::Guts +10,4
 oguri-cap-starlight-beat,date,high_level_rival,High-Level Rival,Top::Speed +5|Stamina +5||Bot::Power +5|Wit +5,5
-oguri-cap-starlight-beat,secret,at_the_tenno_sho_spring,At the Tenno Sho (Spring),conditions::participate:100601||reward::Energy -20/-15|Mood +1|1 random stat +4/+10|Skill points +25/+45,1
-oguri-cap-starlight-beat,secret,at_the_tenno_sho_spring,At the Tenno Sho (Spring),conditions::do_not_participate:100601||reward::Mood +1,2
-oguri-cap-starlight-beat,secret,together_forever,Together Forever,conditions::Win the Kikuka Sho|Win the Arima Kinen (Classic)|Win the Osaka Hai|Win the Tenno Sho (Spring)|Triggers at date 3|12|2||reward::Speed +10|Stamina +10|Skill points +30|Hydrate hint +1,3
+oguri-cap-starlight-beat,secret,at_the_tenno_sho_spring,At the Tenno Sho (Spring),conditions::Participate in the Tenno Sho (Spring)||reward::Energy -20/-15|Mood +1|1 random stat +4/+10|Skill points +25/+45,1
+oguri-cap-starlight-beat,secret,at_the_tenno_sho_spring,At the Tenno Sho (Spring),conditions::Do not participate in the Tenno Sho (Spring)||reward::Mood +1,2
+oguri-cap-starlight-beat,secret,together_forever,Together Forever,conditions::Win the Kikuka Sho|Win the Arima Kinen (Classic)|Win the Osaka Hai|Win the Tenno Sho (Spring)|Triggers during Late December Senior Year||reward::Speed +10|Stamina +10|Skill points +30|Hydrate hint +1,3
 oguri-cap-starlight-beat,no_choices,that_s_why_i_ll_win,That's Why I'll Win,Power +5,1
 oguri-cap-starlight-beat,no_choices,spread_the_word,Spread the Word,Guts +5,2
 oguri-cap-starlight-beat,no_choices,a_gathering_of_greats,A Gathering of Greats,Stamina +5,3
@@ -434,10 +434,10 @@ vodka-wild-top-gear,date,the_way_of_cool,The Way of Cool,Top::Power +10||Bot::Sp
 vodka-wild-top-gear,date,let_s_take_a_little_detour,Let's Take a Little Detour,Top::Speed +10||Bot::Energy +5|Mood +1,4
 vodka-wild-top-gear,date,sugar_and_spice,Sugar and Spice,Top::Energy +5/+10||Bot::Power +10,5
 vodka-wild-top-gear,secret,the_coolest_and_number_one,The Coolest and Number One,conditions::Win the Tulip Sho|Win the Oka Sho|Win the Shuka Sho|Win the Queen Elizabeth II Cup (Classic)|Win the Osaka Hai|Win the Tenno Sho (Autumn)|Win the Arima Kinen (Classic)|Win the Arima Kinen (Senior)||reward::Speed +25|Power +25|Stamina +25|Skill points +25|All I've Got hint +1|Slick Surge hint +1|Pedal to the Metal hint +1,1
-vodka-wild-top-gear,secret,after_the_queen_elizabeth_ii_cup_tyrannical_queen,After the Queen Elizabeth II Cup: Tyrannical Queen!,conditions::beat_rival:101701|2|1009||reward::Energy -15|Mood +1|1 random stat +10|Skill points +45,2
-vodka-wild-top-gear,secret,after_the_queen_elizabeth_ii_cup_tsundere_queen,After the Queen Elizabeth II Cup: Tsundere Queen,conditions::lose_to_rival:101701|2|1009||reward::Energy -20|1 random stat +8|Skill points +45,3
+vodka-wild-top-gear,secret,after_the_queen_elizabeth_ii_cup_tyrannical_queen,After the Queen Elizabeth II Cup: Tyrannical Queen!,conditions::beat_rival: 101701|2|1009||reward::Energy -15|Mood +1|1 random stat +10|Skill points +45,2
+vodka-wild-top-gear,secret,after_the_queen_elizabeth_ii_cup_tsundere_queen,After the Queen Elizabeth II Cup: Tsundere Queen,conditions::lose_to_rival: 101701|2|1009||reward::Energy -20|1 random stat +8|Skill points +45,3
 vodka-wild-top-gear,secret,after_the_yasuda_kinen_pedal_to_the_metal,After the Yasuda Kinen: Pedal to the Metal!,conditions::Win the Yasuda Kinen (Senior)||reward::RR|Nimble Navigator hint +1,4
-vodka-wild-top-gear,secret,after_the_yasuda_kinen_consecutive_celebration,After the Yasuda Kinen: Consecutive Celebration,conditions::race_w2:101101||reward::All stats +3|Power +20|Skill points +65|Nimble Navigator hint +1|Get Practice Perfect ○ status|Yayoi Akikawa bond +4,5
+vodka-wild-top-gear,secret,after_the_yasuda_kinen_consecutive_celebration,After the Yasuda Kinen: Consecutive Celebration,conditions::race_w2: 101101||reward::All stats +3|Power +20|Skill points +65|Nimble Navigator hint +1|Get Practice Perfect ○ status|Yayoi Akikawa bond +4,5
 vodka-wild-top-gear,no_choices,crossroads,Crossroads,Power +5,1
 vodka-wild-top-gear,no_choices,dream_junction,Dream Junction,Power +5,2
 vodka-wild-top-gear,no_choices,can_t_all_be_sunshine,Can't All Be Sunshine,Guts +5,3
@@ -477,10 +477,10 @@ daiwa-scarlet-top-of-blue,date,just_a_little_more,Just a Little More,Top::Skill 
 daiwa-scarlet-top-of-blue,date,under_the_evening_star,Under the Evening Star,Top::Skill points +30||Bot::Speed +5|Stamina +5||Mid::Power +10,3
 daiwa-scarlet-top-of-blue,date,rained_on,Rained On,Top::Guts +10||Bot::Wit +10,4
 daiwa-scarlet-top-of-blue,date,how_to_spend_a_day_off,How to Spend a Day Off,Top::Energy +10||Bot::Mood +1|Wit +5,5
-daiwa-scarlet-top-of-blue,secret,number_one_and_the_coolest,Number One and the Coolest,conditions::Win the Hanshin Juvenile Fillies|Win the Oka Sho|Win the Tokyo Yushun (Japanese Derby)|Win the Takarazuka Kinen (Classic)|Win the Shuka Sho|Win the Queen Elizabeth II Cup (Classic)|Win the Japan Cup (Classic)|Win the Osaka Hai|Win the Tenno Sho (Autumn)|Win the Japan Cup (Senior)|Triggers at date 3|12|2||reward::All stats +15|Skill points +50|Unyielding Spirit hint +1|Head-On hint +1|Nimble Navigator hint +1,1
-daiwa-scarlet-top-of-blue,secret,the_japanese_derby,The Japanese Derby,conditions::participate:100901||reward::RR|Mood +1,2
-daiwa-scarlet-top-of-blue,secret,after_the_shuka_sho_obviously,After the Shuka Sho: Obviously!,conditions::beat_rival:101401|1008||reward::RR,3
-daiwa-scarlet-top-of-blue,secret,after_the_shuka_sho_aching_legs,After the Shuka Sho: Aching Legs,conditions::lose_to_rival:101401|1008||reward::RR,4
+daiwa-scarlet-top-of-blue,secret,number_one_and_the_coolest,Number One and the Coolest,conditions::Win the Hanshin Juvenile Fillies|Win the Oka Sho|Win the Tokyo Yushun (Japanese Derby)|Win the Takarazuka Kinen (Classic)|Win the Shuka Sho|Win the Queen Elizabeth II Cup (Classic)|Win the Japan Cup (Classic)|Win the Osaka Hai|Win the Tenno Sho (Autumn)|Win the Japan Cup (Senior)|Triggers during Late December Senior Year||reward::All stats +15|Skill points +50|Unyielding Spirit hint +1|Head-On hint +1|Nimble Navigator hint +1,1
+daiwa-scarlet-top-of-blue,secret,the_japanese_derby,The Japanese Derby,conditions::Participate in the Japanese Oaks||reward::RR|Mood +1,2
+daiwa-scarlet-top-of-blue,secret,after_the_shuka_sho_obviously,After the Shuka Sho: Obviously!,conditions::beat_rival: 101401|1008||reward::RR,3
+daiwa-scarlet-top-of-blue,secret,after_the_shuka_sho_aching_legs,After the Shuka Sho: Aching Legs,conditions::lose_to_rival: 101401|1008||reward::RR,4
 daiwa-scarlet-top-of-blue,secret,after_the_tenno_sho_autumn_they_haven_t_changed,After the Tenno Sho (Autumn): They Haven't Changed,conditions::Win the Tenno Sho (Autumn) (Senior)||reward::RR|Steadfast hint +1,5
 daiwa-scarlet-top-of-blue,no_choices,there_can_only_be_one,There Can Only Be One,Wit +5,1
 daiwa-scarlet-top-of-blue,no_choices,my_number_one,My Number One,Wit +5,2
@@ -523,10 +523,10 @@ taiki-shuttle-wild-frontier,date,rainy_rescue,Rainy Rescue,Top::Skill points +30
 taiki-shuttle-wild-frontier,date,let_s_patrol,Let's Patrol!,Top::Power +10||Bot::Energy +10,4
 taiki-shuttle-wild-frontier,date,going_home_together,Going Home Together,Top::Mood +1|Speed +5||Bot::Mood +1|Stamina +5,5
 taiki-shuttle-wild-frontier,secret,beyond_the_mile,Beyond the Mile,conditions::Win the Mile Championship (Classic)|Win the Kinko Sho|Win the Takarazuka Kinen (Senior)|Win the Mainichi Okan (Senior)|Win the Tenno Sho (Autumn) (Senior)||reward::Speed +25|Power +25|Guts +25|Skill points +50|All I've Got hint +1|No Looking Back hint +1|Head-On hint +1,1
-taiki-shuttle-wild-frontier,secret,silence_suzuka_awakening_1,Silence Suzuka: Awakening 1,conditions::do_not_race:3|3|1||reward::NO,2
-taiki-shuttle-wild-frontier,secret,silence_suzuka_awakening_2,Silence Suzuka: Awakening 2,conditions::do_not_race:3|6|2||reward::NO,3
-taiki-shuttle-wild-frontier,secret,silence_suzuka_awakening_3,Silence Suzuka: Awakening 3,conditions::do_not_race:3|10|1||reward::NO,4
-taiki-shuttle-wild-frontier,secret,silence_suzuka_awakening_4,Silence Suzuka: Awakening 4,conditions::do_not_race:3|10|2||reward::NO,5
+taiki-shuttle-wild-frontier,secret,silence_suzuka_awakening_1,Silence Suzuka: Awakening 1,conditions::do_not_race: 3|3|1||reward::NO,2
+taiki-shuttle-wild-frontier,secret,silence_suzuka_awakening_2,Silence Suzuka: Awakening 2,conditions::do_not_race: 3|6|2||reward::NO,3
+taiki-shuttle-wild-frontier,secret,silence_suzuka_awakening_3,Silence Suzuka: Awakening 3,conditions::do_not_race: 3|10|1||reward::NO,4
+taiki-shuttle-wild-frontier,secret,silence_suzuka_awakening_4,Silence Suzuka: Awakening 4,conditions::do_not_race: 3|10|2||reward::NO,5
 taiki-shuttle-wild-frontier,no_choices,racing_dreams,Racing Dreams,Speed +5,1
 taiki-shuttle-wild-frontier,no_choices,frontier_spirit,Frontier Spirit,Power +5,2
 taiki-shuttle-wild-frontier,no_choices,a_path_forward,A Path Forward,Power +5,3
@@ -885,8 +885,8 @@ narita-brian-maverick,date,digging_in,Digging In,Top::Speed +10||Bot::Stamina +1
 narita-brian-maverick,date,a_lone_wolf_hunts_alone,A Lone Wolf Hunts Alone,Top::Stamina +5|Guts +5||Bot::Power +5|Wit +5,4
 narita-brian-maverick,date,breakthrough,Breakthrough,Top::Stamina +10||Bot::Wit +10,5
 narita-brian-maverick,secret,public_appearance,Public Appearance,conditions::triple_crown|brian_five||reward::BRIAN_TRYHARD|NO,1
-narita-brian-maverick,secret,after_the_takarazuka_kinen_talent,After the Takarazuka Kinen: Talent,conditions::beat_rival:101201|2|1023||reward::Energy -15|1 random stat +10|Skill points +45,2
-narita-brian-maverick,secret,after_the_takarazuka_kinen_composure,After the Takarazuka Kinen: Composure,conditions::lose_to_rival:101201|2|1023||reward::Energy -15|1 random stat +8|Skill points +45,3
+narita-brian-maverick,secret,after_the_takarazuka_kinen_talent,After the Takarazuka Kinen: Talent,conditions::beat_rival: 101201|2|1023||reward::Energy -15|1 random stat +10|Skill points +45,2
+narita-brian-maverick,secret,after_the_takarazuka_kinen_composure,After the Takarazuka Kinen: Composure,conditions::lose_to_rival: 101201|2|1023||reward::Energy -15|1 random stat +8|Skill points +45,3
 narita-brian-maverick,no_choices,hold_back,Hold Back,Power +10,1
 narita-brian-maverick,no_choices,now,Now,Guts +5,2
 narita-brian-maverick,no_choices,peak,Peak,Stamina +5,3
@@ -932,9 +932,9 @@ symboli-rudolf-road-of-emperor,date,a_clear_and_beautiful_night,A Clear and Beau
 symboli-rudolf-road-of-emperor,date,the_emperor_s_daily_routine,The Emperor's Daily Routine,Top::Power +10||Bot::Guts +10,4
 symboli-rudolf-road-of-emperor,date,the_emperor_s_path,The Emperor's Path,Top::Wit +10||Bot::Power +10,5
 symboli-rudolf-road-of-emperor,secret,after_the_kikuka_sho_three_crowns_attained,After the Kikuka Sho: Three Crowns Attained,conditions::triple_crown||reward::All stats +3|Guts +15|Skill points +45|Be Still hint +1|Yayoi Akikawa bond +4,1
-symboli-rudolf-road-of-emperor,secret,challenge_met,Challenge Met,"conditions::win_g1:[0, 6]||reward::1 random stat +10",2
-symboli-rudolf-road-of-emperor,secret,seven_crowns_attained,Seven Crowns Attained,conditions::win_g1:7||reward::Energy +15|Mood +1|1 random stat +10,3
-symboli-rudolf-road-of-emperor,secret,current_of_success,Current of Success,conditions::win_g1:8||reward::Energy +30|Mood +3|1 random stat +15,4
+symboli-rudolf-road-of-emperor,secret,challenge_met,Challenge Met,"conditions::win_g1: [0, 6]||reward::1 random stat +10",2
+symboli-rudolf-road-of-emperor,secret,seven_crowns_attained,Seven Crowns Attained,conditions::win_g1: 7||reward::Energy +15|Mood +1|1 random stat +10,3
+symboli-rudolf-road-of-emperor,secret,current_of_success,Current of Success,conditions::win_g1: 8||reward::Energy +30|Mood +3|1 random stat +15,4
 symboli-rudolf-road-of-emperor,no_choices,trusty_aids,Trusty Aids,Wit +5,1
 symboli-rudolf-road-of-emperor,no_choices,silent_contemplation,Silent Contemplation,Speed +5,2
 symboli-rudolf-road-of-emperor,no_choices,discord,Discord,Speed +5,3
@@ -1062,8 +1062,8 @@ agnes-digital-super-express-full-color-special,date,the_oshi_report_peak_arc,The
 agnes-digital-super-express-full-color-special,date,the_oshi_report_recognition_arc,The Oshi Report –Recognition Arc–,Top::Guts +10||Bot::Speed +10||Mid::Skill points +30,3
 agnes-digital-super-express-full-color-special,date,the_best_life_is_the_simp_life,The Best Life Is the Simp Life,Top::Speed +10||Bot::Guts +10,4
 agnes-digital-super-express-full-color-special,date,oshi_proximity_alert,Oshi Proximity Alert?!,Top::Power +10||Bot::Energy +10,5
-agnes-digital-super-express-full-color-special,secret,all_round_ruler,All-Round Ruler,conditions::win_or:102101|102201|Win the Oka Sho|Win the NHK Mile Cup|win_or:101801|2|101801|3|Win the February Stakes|Win the Victoria Mile|win_or:101101|2|101101|3||reward::Speed +20|Power +20|Skill points +30|Updrafters hint +1|Unyielding Spirit hint +1,1
-agnes-digital-super-express-full-color-special,secret,after_the_takarazuka_kinen_on_fire_like_no_one_s_ever_seen,After the Takarazuka Kinen: On Fire Like No One's Ever Seen,conditions::participate:101201|2||reward::1 random stat +4/+5/+10|Skill points +25/+40/+45,2
+agnes-digital-super-express-full-color-special,secret,all_round_ruler,All-Round Ruler,conditions::win_or: 102101|102201|Win the Oka Sho|Win the NHK Mile Cup|win_or: 101801|2|101801|3|Win the February Stakes|Win the Victoria Mile|win_or: 101101|2|101101|3||reward::Speed +20|Power +20|Skill points +30|Updrafters hint +1|Unyielding Spirit hint +1,1
+agnes-digital-super-express-full-color-special,secret,after_the_takarazuka_kinen_on_fire_like_no_one_s_ever_seen,After the Takarazuka Kinen: On Fire Like No One's Ever Seen,conditions::Participate in the Takarazuka Kinen (Classic)||reward::1 random stat +4/+5/+10|Skill points +25/+40/+45,2
 agnes-digital-super-express-full-color-special,secret,after_the_mile_ch_nambu_hai_this_is_heaven,After the Mile Ch. Nambu Hai: This Is Heaven,conditions::Win the M.C. Nambu Hai||reward::Energy -15|Speed +5|Stamina +5|Power +10|1 random stat +10|Skill points +45|Morioka Racecourse ○ hint +1|Rapid Gain hint +1,3
 agnes-digital-super-express-full-color-special,no_choices,no_backseating,No Backseating!,Wit +5,1
 agnes-digital-super-express-full-color-special,no_choices,what_comes_of_connecting,What Comes of Connecting,Power +5,2
@@ -1105,8 +1105,8 @@ seiun-sky-blue-cloud-thumbing,date,cat_patrol,Cat Patrol,Top::Stamina +10||Bot::
 seiun-sky-blue-cloud-thumbing,date,goodbye_cat,"Goodbye, Cat",Top::Wit +10||Bot::Stamina +10||Mid::Power +10,3
 seiun-sky-blue-cloud-thumbing,date,nap_master,Nap Master,Top::Stamina +10||Bot::Wit +10,4
 seiun-sky-blue-cloud-thumbing,date,cloudy_followed_by,"Cloudy, Followed By...",Top::Guts +10||Bot::Speed +10,5
-seiun-sky-blue-cloud-thumbing,secret,east_vs_west,East vs. West,conditions::participate:202701|2||reward::NO,1
-seiun-sky-blue-cloud-thumbing,secret,facing_the_otherworldly_front_runner,Facing the Otherworldly Front-Runner,conditions::participate:202601|2||reward::NO,2
+seiun-sky-blue-cloud-thumbing,secret,east_vs_west,East vs. West,conditions::Participate in the Kyoto Daishoten (Classic)||reward::NO,1
+seiun-sky-blue-cloud-thumbing,secret,facing_the_otherworldly_front_runner,Facing the Otherworldly Front-Runner,conditions::Participate in the Mainichi Okan (Classic)||reward::NO,2
 seiun-sky-blue-cloud-thumbing,secret,landed_that_triple_crown,Landed That Triple Crown!,conditions::triple_crown||reward::Mood +1|Speed +5|Power +5|Fast-Paced hint +1,3
 seiun-sky-blue-cloud-thumbing,no_choices,the_ultimate_generation,The Ultimate Generation,Stamina +5,1
 seiun-sky-blue-cloud-thumbing,no_choices,a_shadow_on_the_trickster_s_path,A Shadow on the Trickster's Path,Power +5,2
@@ -1148,7 +1148,7 @@ biwa-hayahide-pf-victory-formula,date,emergency_presentation,Emergency Presentat
 biwa-hayahide-pf-victory-formula,date,hide_and_seek_master,Hide and Seek Master,Top::Guts +10||Bot::Speed +10,4
 biwa-hayahide-pf-victory-formula,date,game_theory,Game Theory,Top::Wit +10||Bot::Power +10,5
 biwa-hayahide-pf-victory-formula,secret,our_method,Our Method,conditions::triple_crown||reward::RESULT_GOOD|Speed +10|Guts +10|Skill points +10|Straightaway Acceleration hint +1|RESULT_BAD|Speed +5|Guts +5,1
-biwa-hayahide-pf-victory-formula,secret,unruly_equation,Unruly Equation,conditions::ev:501023520|rt_race_w:10009|1||reward::Energy +20|Hanshin Racecourse ○ hint +1,2
+biwa-hayahide-pf-victory-formula,secret,unruly_equation,Unruly Equation,conditions::ev: 501023520|rt_race_w: 10009|1||reward::Energy +20|Hanshin Racecourse ○ hint +1,2
 biwa-hayahide-pf-victory-formula,secret,after_the_takarazuka_kinen_the_top,After the Takarazuka Kinen: The Top,conditions::Win the Takarazuka Kinen (Senior)||reward::All stats +3|Skill points +45|Yayoi Akikawa bond +4|Prepared to Pass hint +1,3
 biwa-hayahide-pf-victory-formula,no_choices,a_description_of_the_present_moment,A Description of the Present Moment,Wit +5,1
 biwa-hayahide-pf-victory-formula,no_choices,principles_beyond_recollection,Principles Beyond Recollection,Guts +5,2
@@ -1188,7 +1188,7 @@ mayano-top-gun-scramble-zone,date,maya_s_euphoric_livestream,Maya's Euphoric ☆
 mayano-top-gun-scramble-zone,date,maya_s_twinkly_determination,Maya's Twinkly ☆ Determination!,Top::Speed +5|Stamina +5||Bot::Power +10||Mid::Wit +10,3
 mayano-top-gun-scramble-zone,date,maya_s_special_someone,Maya's Special Someone!,Top::Speed +10||Bot::Guts +10,4
 mayano-top-gun-scramble-zone,date,wish_on_a_star,Wish on a Star,Top::Wit +10||Bot::Speed +10,5
-mayano-top-gun-scramble-zone,secret,the_fruits_of_my_labor,The Fruits of My Labor,conditions::win_g1_strat:1|win_g1_strat:2|win_g1_strat:3|win_g1_strat:4|Triggers at date 3|12|2||reward::All stats +5|Skill points +30|Final Push hint +1|Head-On hint +1|Slick Surge hint +1|Straightaway Spurt hint +1,1
+mayano-top-gun-scramble-zone,secret,the_fruits_of_my_labor,The Fruits of My Labor,conditions::win_g1_strat: 1|win_g1_strat: 2|win_g1_strat: 3|win_g1_strat: 4|Triggers during Late December Senior Year||reward::All stats +5|Skill points +30|Final Push hint +1|Head-On hint +1|Slick Surge hint +1|Straightaway Spurt hint +1,1
 mayano-top-gun-scramble-zone,no_choices,i_wanna_twinkle,I Wanna Twinkle!,Wit +5,1
 mayano-top-gun-scramble-zone,no_choices,wanna_go_on_a_date,Wanna Go on a Date?,Stamina +5,2
 mayano-top-gun-scramble-zone,no_choices,take_aim,Take Aim,Guts +5,3
@@ -1229,7 +1229,7 @@ mayano-top-gun-sunlight-bouquet,date,maya_s_euphoric_livestream,Maya's Euphoric 
 mayano-top-gun-sunlight-bouquet,date,maya_s_twinkly_determination,Maya's Twinkly ☆ Determination!,Top::Speed +5|Stamina +5||Bot::Power +10||Mid::Wit +10,3
 mayano-top-gun-sunlight-bouquet,date,maya_s_special_someone,Maya's Special Someone!,Top::Speed +10||Bot::Guts +10,4
 mayano-top-gun-sunlight-bouquet,date,wish_on_a_star,Wish on a Star,Top::Wit +10||Bot::Speed +10,5
-mayano-top-gun-sunlight-bouquet,secret,the_fruits_of_my_labor,The Fruits of My Labor,conditions::win_g1_strat:1|win_g1_strat:2|win_g1_strat:3|win_g1_strat:4|Triggers at date 3|12|2||reward::All stats +5|Skill points +30|Final Push hint +1|Head-On hint +1|Slick Surge hint +1|Straightaway Spurt hint +1,1
+mayano-top-gun-sunlight-bouquet,secret,the_fruits_of_my_labor,The Fruits of My Labor,conditions::win_g1_strat: 1|win_g1_strat: 2|win_g1_strat: 3|win_g1_strat: 4|Triggers during Late December Senior Year||reward::All stats +5|Skill points +30|Final Push hint +1|Head-On hint +1|Slick Surge hint +1|Straightaway Spurt hint +1,1
 mayano-top-gun-sunlight-bouquet,no_choices,i_wanna_twinkle,I Wanna Twinkle!,Wit +5,1
 mayano-top-gun-sunlight-bouquet,no_choices,wanna_go_on_a_date,Wanna Go on a Date?,Stamina +5,2
 mayano-top-gun-sunlight-bouquet,no_choices,take_aim,Take Aim,Guts +5,3
@@ -1391,7 +1391,7 @@ rice-shower-rose-dream,date,even_when_clouds_cover_the_sky,Even When Clouds Cove
 rice-shower-rose-dream,date,my_sun,My Sun,Top::Guts +5|Wit +5||Bot::Speed +5|Power +5||Mid::Stamina +10,3
 rice-shower-rose-dream,date,i_ve_got_this,I've Got This!,Top::Guts +10||Bot::Speed +10,4
 rice-shower-rose-dream,date,a_page_about_sunsets,A Page about Sunsets,Top::Power +5|Guts +5||Bot::Stamina +5|Wit +5,5
-rice-shower-rose-dream,secret,a_tale_that_blooms_from_the_heart,A Tale That Blooms from the Heart,conditions::racetrack_wins_branch:10008||reward::CT|Speed +15|Stamina +15|Guts +15|Skill points +25|Kyoto Racecourse ○ hint +1|Firm Conditions ○ hint +1|CT|Speed +10|Stamina +10|Skill points +5|Kyoto Racecourse ○ hint +1|CT|Speed +5|Stamina +5|Kyoto Racecourse ○ hint +1,1
+rice-shower-rose-dream,secret,a_tale_that_blooms_from_the_heart,A Tale That Blooms from the Heart,conditions::racetrack_wins_branch: 10008||reward::CT|Speed +15|Stamina +15|Guts +15|Skill points +25|Kyoto Racecourse ○ hint +1|Firm Conditions ○ hint +1|CT|Speed +10|Stamina +10|Skill points +5|Kyoto Racecourse ○ hint +1|CT|Speed +5|Stamina +5|Kyoto Racecourse ○ hint +1,1
 rice-shower-rose-dream,no_choices,the_flower_that_blooms_in_yodo,The Flower that Blooms in Yodo,Stamina +5,1
 rice-shower-rose-dream,no_choices,a_rival_s_misfortune,A Rival's Misfortune,Guts +5,2
 rice-shower-rose-dream,no_choices,you_can_t_bloom_alone,You Can't Bloom Alone,Guts +5,3
@@ -1430,7 +1430,7 @@ agnes-tachyon-tach-nology,date,the_significance_of_research,The Significance of 
 agnes-tachyon-tach-nology,date,no_shortcuts,No Shortcuts,Top::Guts +10||Bot::Wit +10||Mid::Power +10,3
 agnes-tachyon-tach-nology,date,a_gift_from_the_dark_sky,A Gift From the Dark Sky,Top::Speed +5|Power +5||Bot::Guts +10,4
 agnes-tachyon-tach-nology,date,body_modification,Body Modification!,Top::Power +5|Wit +5||Bot::Stamina +10,5
-agnes-tachyon-tach-nology,secret,report_a_clear_gaze,Report: A Clear Gaze,conditions::participate:100501||reward::MOOD_MIN|Wit +5|MOOD_MAX|Wit +5|RC,1
+agnes-tachyon-tach-nology,secret,report_a_clear_gaze,Report: A Clear Gaze,conditions::Participate in the Satsuki Sho||reward::MOOD_MIN|Wit +5|MOOD_MAX|Wit +5|RC,1
 agnes-tachyon-tach-nology,secret,the_triple_crown_champion_that_was,The Triple Crown Champion That Was,conditions::triple_crown||reward::All stats +3|Skill points +10|Tactical Tweak hint +1,2
 agnes-tachyon-tach-nology,no_choices,report_uncertain_promises,Report: Uncertain Promises,Power +5,1
 agnes-tachyon-tach-nology,no_choices,report_will,Report: Will,Wit +5,2
@@ -1474,7 +1474,7 @@ winning-ticket-go-to-winning,date,futsal_now,"Futsal, Now?!",Top::Guts +10||Bot:
 winning-ticket-go-to-winning,date,the_last_ticket,The Last Ticket,Top::Guts +10||Bot::Speed +10||Mid::Power +10,3
 winning-ticket-go-to-winning,date,shake_off_your_blues,Shake Off Your Blues!,Top::Mood +1|Power +5||Bot::Speed +5|Skill points +15,4
 winning-ticket-go-to-winning,date,big_girls_cry_too,Big Girls Cry Too,Top::Guts +5|Skill points +15||Bot::Mood +1|Power +5,5
-winning-ticket-go-to-winning,secret,temporary_truce,Temporary Truce,"conditions::win_n_of:1|['102201|1', '100501|2', '101001|2', '101501|2', '102301|2', '100301|3', '100601|3', '101201|3', '102301|3']|Triggers at date 3|12|2||reward::W_E|Speed +15|Power +15|Skill points +15|Outer Swell hint +1|W_E|Speed +10|Power +10|W_E|Speed +10",1
+winning-ticket-go-to-winning,secret,temporary_truce,Temporary Truce,"conditions::win_n_of: 1|['102201|1', '100501|2', '101001|2', '101501|2', '102301|2', '100301|3', '100601|3', '101201|3', '102301|3']|Triggers during Late December Senior Year||reward::W_E|Speed +15|Power +15|Skill points +15|Outer Swell hint +1|W_E|Speed +10|Power +10|W_E|Speed +10",1
 winning-ticket-go-to-winning,no_choices,rivals,Rivals,Stamina +5,1
 winning-ticket-go-to-winning,no_choices,i_wanna_win,I Wanna Win!,Guts +5,2
 winning-ticket-go-to-winning,no_choices,what_makes_a_good_race,What Makes a Good Race,Guts +5,3
@@ -1516,9 +1516,9 @@ eishin-flash-meisterschaft,date,conveying_sincerity,Conveying Sincerity,Top::Spe
 eishin-flash-meisterschaft,date,reminiscing_at_the_freizeitpark,Reminiscing at the Freizeitpark,Top::Power +10||Bot::Stamina +10,5
 eishin-flash-meisterschaft,secret,after_the_japanese_derby_der_sieg,After the Japanese Derby: Der Sieg,conditions::Win the Tokyo Yushun (Japanese Derby)||reward::RR|Fighter hint +1,1
 eishin-flash-meisterschaft,secret,after_the_kikuka_sho_blick_nach_vorn,After the Kikuka Sho: Blick nach vorn,conditions::Win the Kikuka Sho||reward::Energy -15|1 random stat +10|Skill points +45,2
-eishin-flash-meisterschaft,secret,erinnerung_an_tokyo,Erinnerung an Tokyo,conditions::win_g1_track:10006|2|Win the Arima Kinen (Senior)||reward::Speed +10|Tokyo Racecourse ○ hint +1,3
-eishin-flash-meisterschaft,secret,erinnerung_an_den_sieg,Erinnerung an den Sieg,conditions::win_g1_track:10006|3|Win the Arima Kinen (Senior)||reward::Speed +10|Power +10|Tokyo Racecourse ○ hint +1,4
-eishin-flash-meisterschaft,secret,der_rekord,Der Rekord,conditions::win_g1_track:10006|5|Win the Arima Kinen (Senior)||reward::Speed +15|Stamina +15|Power +15|Skill points +25|Tokyo Racecourse ○ hint +1|Standard Distance ○ hint +1,5
+eishin-flash-meisterschaft,secret,erinnerung_an_tokyo,Erinnerung an Tokyo,conditions::win_g1_track: 10006|2|Win the Arima Kinen (Senior)||reward::Speed +10|Tokyo Racecourse ○ hint +1,3
+eishin-flash-meisterschaft,secret,erinnerung_an_den_sieg,Erinnerung an den Sieg,conditions::win_g1_track: 10006|3|Win the Arima Kinen (Senior)||reward::Speed +10|Power +10|Tokyo Racecourse ○ hint +1,4
+eishin-flash-meisterschaft,secret,der_rekord,Der Rekord,conditions::win_g1_track: 10006|5|Win the Arima Kinen (Senior)||reward::Speed +15|Stamina +15|Power +15|Skill points +25|Tokyo Racecourse ○ hint +1|Standard Distance ○ hint +1,5
 eishin-flash-meisterschaft,no_choices,die_achtung,Die Achtung,Wit +5,1
 eishin-flash-meisterschaft,no_choices,das_erlebnis,Das Erlebnis,Power +5,2
 eishin-flash-meisterschaft,no_choices,das_vorbild,Das Vorbild,Guts +5,3
@@ -1561,7 +1561,7 @@ curren-chan-fille-eclair,date,making_connections,Making Connections,Top::Guts +1
 curren-chan-fille-eclair,date,universal_cutie,Universal Cutie,Top::Speed +5|Power +5||Bot::Speed +10||Mid::Speed +5|Wit +5,3
 curren-chan-fille-eclair,date,a_nostalgic_flavor,A Nostalgic Flavor,Top::Stamina +10||Bot::Power +10,4
 curren-chan-fille-eclair,date,rattle_rattle_clunk,"Rattle, Rattle, Clunk",Top::Wit +10||Bot::Stamina +10,5
-curren-chan-fille-eclair,secret,the_essence_of_cuteness,The Essence of Cuteness,conditions::Triggers at date 2|5|2||reward::Mood +1,1
+curren-chan-fille-eclair,secret,the_essence_of_cuteness,The Essence of Cuteness,conditions::Triggers during Late May Classic Year||reward::Mood +1,1
 curren-chan-fille-eclair,secret,summer_sprint_series_conquered,Summer Sprint Series Conquered!,conditions::Win the Hakodate Sprint Stakes (Senior)|Win the Keeneland Cup (Senior)|Win the Centaur Stakes (Senior)||reward::Energy +25|Mood +1|Speed +15|Power +15|Guts +15|Sprinting Gear hint +1,2
 curren-chan-fille-eclair,no_choices,my_cute_ambitions,My Cute Ambitions,Speed +10,1
 curren-chan-fille-eclair,no_choices,cute_posts,Cute Posts,Power +5,2
@@ -1689,7 +1689,7 @@ super-creek-murmuring-stream,date,let_s_share,Let's Share,Top::Stamina +10||Bot:
 super-creek-murmuring-stream,date,rough_massage,Rough Massage!,Top::Guts +10||Bot::Speed +5|Wit +5,4
 super-creek-murmuring-stream,date,stargazing_is_better_together,Stargazing is Better Together,Top::Power +5|Guts +5||Bot::Stamina +10,5
 super-creek-murmuring-stream,secret,our_dream_lives_on,Our Dream Lives On,conditions::Win the Arima Kinen (Classic)|Win the Tenno Sho (Spring)|autumn_triple_crown_senior||reward::Power +20|Guts +20|Prepared to Pass hint +1,1
-super-creek-murmuring-stream,secret,after_the_sumire_s_short_of_breath,After the Sumire S.: Short of Breath,conditions::participate:402001||reward::1 random stat +3|Skill points +30|Get Under the Weather status|Yayoi Akikawa bond +4,2
+super-creek-murmuring-stream,secret,after_the_sumire_s_short_of_breath,After the Sumire S.: Short of Breath,conditions::Participate in the Sumire Stakes||reward::1 random stat +3|Skill points +30|Get Under the Weather status|Yayoi Akikawa bond +4,2
 super-creek-murmuring-stream,secret,after_the_satsuki_sho_a_spring_miracle,After the Satsuki Sho: A Spring Miracle!,conditions::Win the Satsuki Sho||reward::Energy -15|1 random stat +10|Skill points +45|Yayoi Akikawa bond +4,3
 super-creek-murmuring-stream,secret,after_the_japanese_derby_a_super_umamusume_feat,After the Japanese Derby: A Super-Umamusume Feat?!,conditions::Win the Tokyo Yushun (Japanese Derby)||reward::Energy -15|1 random stat +10|Skill points +45|Yayoi Akikawa bond +4,4
 super-creek-murmuring-stream,secret,after_the_kikuka_sho_triumph_of_bonds,After the Kikuka Sho: Triumph of Bonds!,conditions::Win the Kikuka Sho||reward::All stats +3|Skill points +45|Get Shining Brightly status|HE|Yayoi Akikawa bond +4,5
@@ -1733,7 +1733,7 @@ smart-falcon-absolute-love,date,sharing_memories,Sharing ☆ Memories,Top::Stami
 smart-falcon-absolute-love,date,location_scouting,Location ☆ Scouting,Top::Wit +10||Bot::Power +10,5
 smart-falcon-absolute-love,secret,coming_to_a_city_near_you,Coming to a City Near You ☆,Get Fan Promise (Hokkaido) status|!Randomly either|Get Fan Promise (Hokuto) status|!Randomly either|Get Fan Promise (Nakayama) status|!Randomly either|Get Fan Promise (Kansai) status|!Randomly either|Get Fan Promise (Kokura) status|!Randomly either|Get Idol's Promise (Kawasaki) status,1
 smart-falcon-absolute-love,secret,connecting_inspiration,Connecting ☆ Inspiration,conditions::win_connect_live||reward::Mood +1|UNSPECIFIED_STATS +10|Skill points +10|TRACK_HINT +5,2
-smart-falcon-absolute-love,secret,center_of_everyone_s_heart,Center of Everyone's Heart ☆,conditions::fans_before_finals:120000||reward::Mood +1|Guts +20|Top Pick hint +1,3
+smart-falcon-absolute-love,secret,center_of_everyone_s_heart,Center of Everyone's Heart ☆,conditions::fans_before_finals: 120000||reward::Mood +1|Guts +20|Top Pick hint +1,3
 smart-falcon-absolute-love,secret,after_the_kawasaki_kinen_hearts_aflutter,After the Kawasaki Kinen: Hearts Aflutter!,conditions::Win the Kawasaki Kinen||reward::Energy -15|Power +20|1 random stat +10|Skill points +45|Kawasaki Racecourse ○ hint +1|Sunny Sign hint +1,4
 smart-falcon-absolute-love,no_choices,looking_to_the_otherworldly,Looking to the Otherworldly ☆,Speed +10,1
 smart-falcon-absolute-love,no_choices,the_next_grand_prix_girl,The Next Grand Prix ☆ Girl!,Power +5,2
@@ -1936,8 +1936,8 @@ meisho-doto-blue-raging,date,lost_and_alone,Lost and Alone,Top::Stamina +10||Bot
 meisho-doto-blue-raging,date,are_my_feelings_reaching_you,Are My Feelings Reaching You?,Top::Power +10||Bot::Speed +10||Mid::Guts +10,3
 meisho-doto-blue-raging,date,twilight_ice_cream,Twilight Ice Cream,Top::Wit +10||Bot::Speed +5|Stamina +5,4
 meisho-doto-blue-raging,date,equivalent_exchange,Equivalent Exchange?,Top::Speed +10||Bot::Wit +10,5
-meisho-doto-blue-raging,secret,after_the_debut_feeling_dizzy,After the Debut: Feeling... Dizzy...,conditions::participate:debut||reward::All stats +3|Skill points +20|Get Not Ready status|Yayoi Akikawa bond +4,1
-meisho-doto-blue-raging,secret,goal_achieved_a_fallen_star,Goal Achieved: A Fallen Star,conditions::fan:15000|Triggers at date 2|10|2||reward::All stats +3|Skill points +20|HE +1|Yayoi Akikawa bond +4,2
+meisho-doto-blue-raging,secret,after_the_debut_feeling_dizzy,After the Debut: Feeling... Dizzy...,conditions::Participate in the debut||reward::All stats +3|Skill points +20|Get Not Ready status|Yayoi Akikawa bond +4,1
+meisho-doto-blue-raging,secret,goal_achieved_a_fallen_star,Goal Achieved: A Fallen Star,conditions::fan: 15000|Triggers during Late October Classic Year||reward::All stats +3|Skill points +20|HE +1|Yayoi Akikawa bond +4,2
 meisho-doto-blue-raging,secret,triumph_i_m_the_overlord,Triumph! I'm the Overlord?!,conditions::Win the Satsuki Sho|Win the Tenno Sho (Spring)|Win the Takarazuka Kinen (Senior)|Win the Tenno Sho (Autumn) (Senior)|Win the Japan Cup (Senior)|Win the Arima Kinen (Senior)||reward::All stats +10|Skill points +20|Prepared to Pass hint +1|Up-Tempo hint +1,3
 meisho-doto-blue-raging,no_choices,the_derby_already,The Derby?! Already?!,Power +5,1
 meisho-doto-blue-raging,no_choices,arrival_of_the_lone_star,Arrival of the Lone Star,Stamina +5,2
@@ -1981,10 +1981,10 @@ nice-nature-poinsettia-ribbon,date,snapshot_of_emotions,Snapshot of Emotions,Top
 nice-nature-poinsettia-ribbon,date,let_s_watch_the_fish,Let's Watch the Fish,Top::Guts +10||Bot::Speed +10,5
 nice-nature-poinsettia-ribbon,secret,choosing_to_do_my_best,Choosing to Do My Best,conditions::Win the Kyoto Shimbun Hai|Win the Naruo Kinen (Classic)|Win the Kokura Kinen (Classic)||reward::Speed +25|Stamina +25|Skill points +20|Homestretch Haste hint +1,1
 nice-nature-poinsettia-ribbon,secret,very_me_results,"Very ""Me"" Results",conditions::third_any_non_objective||reward::1 random stat +3|Skill points +65,2
-nice-nature-poinsettia-ribbon,secret,after_the_satsuki_sho_an_unsatisfying_victory,After the Satsuki Sho: An Unsatisfying Victory,conditions::beat_rival:100501|1003||reward::1 random stat +9|Skill points +45,3
-nice-nature-poinsettia-ribbon,secret,after_the_satsuki_sho_still_can_t_catch_up,After the Satsuki Sho: Still Can't Catch Up,conditions::lose_to_rival:100501|1003||reward::1 random stat +5|Skill points +35,4
-nice-nature-poinsettia-ribbon,secret,after_the_japanese_derby_no_matter_what,After the Japanese Derby: No Matter What,conditions::beat_rival:101001|1003||reward::1 random stat +9|Skill points +45,5
-nice-nature-poinsettia-ribbon,secret,after_the_japanese_derby_the_spotlight,After the Japanese Derby: The Spotlight,conditions::lose_to_rival:101001|1003||reward::1 random stat +5|Skill points +35,6
+nice-nature-poinsettia-ribbon,secret,after_the_satsuki_sho_an_unsatisfying_victory,After the Satsuki Sho: An Unsatisfying Victory,conditions::beat_rival: 100501|1003||reward::1 random stat +9|Skill points +45,3
+nice-nature-poinsettia-ribbon,secret,after_the_satsuki_sho_still_can_t_catch_up,After the Satsuki Sho: Still Can't Catch Up,conditions::lose_to_rival: 100501|1003||reward::1 random stat +5|Skill points +35,4
+nice-nature-poinsettia-ribbon,secret,after_the_japanese_derby_no_matter_what,After the Japanese Derby: No Matter What,conditions::beat_rival: 101001|1003||reward::1 random stat +9|Skill points +45,5
+nice-nature-poinsettia-ribbon,secret,after_the_japanese_derby_the_spotlight,After the Japanese Derby: The Spotlight,conditions::lose_to_rival: 101001|1003||reward::1 random stat +5|Skill points +35,6
 nice-nature-poinsettia-ribbon,no_choices,doting_family,Doting Family,Wit +5,1
 nice-nature-poinsettia-ribbon,no_choices,what_cheers_me_up,What Cheers Me Up,Guts +5,2
 nice-nature-poinsettia-ribbon,no_choices,behind_the_throne,Behind the Throne,Wit +5,3
@@ -2027,7 +2027,7 @@ king-halo-king-of-emeralds,date,first_rate_harvest,First-Rate Harvest,Top::Power
 king-halo-king-of-emeralds,date,first_rate_terms,First-Rate Terms,Top::Power +10||Bot::Wit +10||Mid::Guts +10,3
 king-halo-king-of-emeralds,date,crowds_are_no_problem,Crowds Are No Problem,Top::Speed +10||Bot::Power +10,4
 king-halo-king-of-emeralds,date,breaking_curfew_is_second_rate,Breaking Curfew is Second-Rate,Top::Guts +5|Wit +5||Bot::Speed +5|Power +5,5
-king-halo-king-of-emeralds,secret,a_kingly_smile,A Kingly Smile,conditions::win_or:101101|2|101101|3|win_or:100501|101001|win_or:101501|102301|Triggers at date 3|12|2||reward::All stats +10|Skill points +20,1
+king-halo-king-of-emeralds,secret,a_kingly_smile,A Kingly Smile,conditions::win_or: 101101|2|101101|3|win_or: 100501|101001|win_or: 101501|102301|Triggers during Late December Senior Year||reward::All stats +10|Skill points +20,1
 king-halo-king-of-emeralds,secret,after_the_arima_kinen_royal_inheritance,After the Arima Kinen: Royal Inheritance,conditions::Win the Arima Kinen (Senior)||reward::Energy -15|1 random stat +10|Skill points +45|Yayoi Akikawa bond +4,2
 king-halo-king-of-emeralds,no_choices,to_pursue_and_be_pursued,To Pursue and Be Pursued,Guts +5,1
 king-halo-king-of-emeralds,no_choices,we_made_our_debut,We Made Our Debut,Guts +5,2
@@ -2068,7 +2068,7 @@ rice-shower-make-up-vampire,date,even_when_clouds_cover_the_sky,Even When Clouds
 rice-shower-make-up-vampire,date,my_sun,My Sun,Top::Guts +5|Wit +5||Bot::Speed +5|Power +5||Mid::Stamina +10,3
 rice-shower-make-up-vampire,date,i_ve_got_this,I've Got This!,Top::Guts +10||Bot::Speed +10,4
 rice-shower-make-up-vampire,date,a_page_about_sunsets,A Page about Sunsets,Top::Power +5|Guts +5||Bot::Stamina +5|Wit +5,5
-rice-shower-make-up-vampire,secret,a_tale_that_blooms_from_the_heart,A Tale That Blooms from the Heart,conditions::racetrack_wins_branch:10008||reward::CT|Speed +15|Stamina +15|Guts +15|Skill points +25|Kyoto Racecourse ○ hint +1|Firm Conditions ○ hint +1|CT|Speed +10|Stamina +10|Skill points +5|Kyoto Racecourse ○ hint +1|CT|Speed +5|Stamina +5|Kyoto Racecourse ○ hint +1,1
+rice-shower-make-up-vampire,secret,a_tale_that_blooms_from_the_heart,A Tale That Blooms from the Heart,conditions::racetrack_wins_branch: 10008||reward::CT|Speed +15|Stamina +15|Guts +15|Skill points +25|Kyoto Racecourse ○ hint +1|Firm Conditions ○ hint +1|CT|Speed +10|Stamina +10|Skill points +5|Kyoto Racecourse ○ hint +1|CT|Speed +5|Stamina +5|Kyoto Racecourse ○ hint +1,1
 rice-shower-make-up-vampire,no_choices,the_flower_that_blooms_in_yodo,The Flower that Blooms in Yodo,Stamina +5,1
 rice-shower-make-up-vampire,no_choices,a_rival_s_misfortune,A Rival's Misfortune,Guts +5,2
 rice-shower-make-up-vampire,no_choices,you_can_t_bloom_alone,You Can't Bloom Alone,Guts +5,3
@@ -2109,7 +2109,7 @@ super-creek-chiffon-ribbon-mummy,date,let_s_share,Let's Share,Top::Stamina +10||
 super-creek-chiffon-ribbon-mummy,date,rough_massage,Rough Massage!,Top::Guts +10||Bot::Speed +5|Wit +5,4
 super-creek-chiffon-ribbon-mummy,date,stargazing_is_better_together,Stargazing is Better Together,Top::Power +5|Guts +5||Bot::Stamina +10,5
 super-creek-chiffon-ribbon-mummy,secret,our_dream_lives_on,Our Dream Lives On,conditions::Win the Arima Kinen (Classic)|Win the Tenno Sho (Spring)|autumn_triple_crown_senior||reward::Power +20|Guts +20|Prepared to Pass hint +1,1
-super-creek-chiffon-ribbon-mummy,secret,after_the_sumire_s_short_of_breath,After the Sumire S.: Short of Breath,conditions::participate:402001||reward::1 random stat +3|Skill points +30|Get Under the Weather status|Yayoi Akikawa bond +4,2
+super-creek-chiffon-ribbon-mummy,secret,after_the_sumire_s_short_of_breath,After the Sumire S.: Short of Breath,conditions::Participate in the Sumire Stakes||reward::1 random stat +3|Skill points +30|Get Under the Weather status|Yayoi Akikawa bond +4,2
 super-creek-chiffon-ribbon-mummy,secret,after_the_satsuki_sho_a_spring_miracle,After the Satsuki Sho: A Spring Miracle!,conditions::Win the Satsuki Sho||reward::Energy -15|1 random stat +10|Skill points +45|Yayoi Akikawa bond +4,3
 super-creek-chiffon-ribbon-mummy,secret,after_the_japanese_derby_a_super_umamusume_feat,After the Japanese Derby: A Super-Umamusume Feat?!,conditions::Win the Tokyo Yushun (Japanese Derby)||reward::Energy -15|1 random stat +10|Skill points +45|Yayoi Akikawa bond +4,4
 super-creek-chiffon-ribbon-mummy,secret,after_the_kikuka_sho_triumph_of_bonds,After the Kikuka Sho: Triumph of Bonds!,conditions::Win the Kikuka Sho||reward::All stats +3|Skill points +45|Get Shining Brightly status|HE|Yayoi Akikawa bond +4,5
@@ -2152,11 +2152,11 @@ kawakami-princess-princess-of-pink,date,the_former_rascal_leader_s_example,The F
 kawakami-princess-princess-of-pink,date,the_former_rascal_leader_s_oath,The Former Rascal Leader's Oath,Top::Speed +10||Bot::Stamina +10||Mid::Power +10,3
 kawakami-princess-princess-of-pink,date,a_waltz_of_effort,A Waltz of Effort,Top::Power +10||Bot::Guts +10,4
 kawakami-princess-princess-of-pink,date,these_abounding_feelings,These Abounding Feelings!,Top::Power +5|Guts +5||Bot::Speed +10,5
-kawakami-princess-princess-of-pink,secret,finding_the_line_between_individuality_and_ego,Finding the Line between Individuality and Ego,conditions::do_not_participate:100201||reward::Homestretch Haste hint +1,1
+kawakami-princess-princess-of-pink,secret,finding_the_line_between_individuality_and_ego,Finding the Line between Individuality and Ego,conditions::Do not participate in the Takamatsunomiya Kinen||reward::Homestretch Haste hint +1,1
 kawakami-princess-princess-of-pink,secret,the_umamusume_who_claimed_all_tiaras,The Umamusume Who Claimed All Tiaras,conditions::Win the Hanshin Juvenile Fillies|Win the Oka Sho|Win the Japanese Oaks|Win the Shuka Sho|Win the Victoria Mile|Win the Queen Elizabeth II Cup (Classic)|Win the Queen Elizabeth II Cup (Senior)||reward::Speed +15|Power +15|Skill points +25|Outer Swell hint +1,2
 kawakami-princess-princess-of-pink,secret,after_the_takamatsunomiya_kinen_this_is_my_choice,After the Takamatsunomiya Kinen: This Is My Choice,conditions::Win the Takamatsunomiya Kinen||reward::RR|Homestretch Haste hint +1,3
-kawakami-princess-princess-of-pink,secret,after_the_takamatsunomiya_kinen_your_image,After the Takamatsunomiya Kinen: Your Image,conditions::lose_to_rival:100201|1061||reward::RR|Homestretch Haste hint +1,4
-kawakami-princess-princess-of-pink,secret,after_the_takamatsunomiya_kinen_buck_up,After the Takamatsunomiya Kinen: Buck Up,conditions::rival_draw:100201|1061||reward::RR|Homestretch Haste hint +1,5
+kawakami-princess-princess-of-pink,secret,after_the_takamatsunomiya_kinen_your_image,After the Takamatsunomiya Kinen: Your Image,conditions::lose_to_rival: 100201|1061||reward::RR|Homestretch Haste hint +1,4
+kawakami-princess-princess-of-pink,secret,after_the_takamatsunomiya_kinen_buck_up,After the Takamatsunomiya Kinen: Buck Up,conditions::rival_draw: 100201|1061||reward::RR|Homestretch Haste hint +1,5
 kawakami-princess-princess-of-pink,no_choices,a_princess_roaring_down_princess_road,A Princess Roaring Down Princess Road!,Power +5,1
 kawakami-princess-princess-of-pink,no_choices,secret_date_a_heart_pounding_rendezvous,Secret Date?! A Heart-Pounding Rendezvous,Speed +5,2
 kawakami-princess-princess-of-pink,no_choices,archrival_a_feud_with_the_selfish_queen,Archrival! A Feud with the Selfish Queen,Stamina +5,3
@@ -2195,7 +2195,7 @@ manhattan-cafe-creeping-black,date,just_how_you_like_it,Just How You Like It,Top
 manhattan-cafe-creeping-black,date,a_flavor_just_for_us,A Flavor Just for Us,Top::Stamina +10||Bot::Power +10||Mid::Speed +5|Stamina +5,3
 manhattan-cafe-creeping-black,date,a_cafe_for_cafe,A Cafe for Cafe,Top::Wit +10||Bot::Stamina +10,4
 manhattan-cafe-creeping-black,date,a_spirited_audience,A Spirited Audience,Top::Guts +10||Bot::Power +10,5
-manhattan-cafe-creeping-black,secret,the_tireless_wonder,The Tireless Wonder,conditions::dist_wins_branch:3|2+|Triggers at date 3|12|2||reward::CT|Stamina +10|Long Straightaways ○ hint +1|CT|Stamina +10|Guts +10|Long Straightaways ○ hint +1|CT|Stamina +10|Guts +10|Skill points +10|Long Straightaways ○ hint +1|Long Corners ○ hint +1,1
+manhattan-cafe-creeping-black,secret,the_tireless_wonder,The Tireless Wonder,conditions::dist_wins_branch: 3|2+|Triggers during Late December Senior Year||reward::CT|Stamina +10|Long Straightaways ○ hint +1|CT|Stamina +10|Guts +10|Long Straightaways ○ hint +1|CT|Stamina +10|Guts +10|Skill points +10|Long Straightaways ○ hint +1|Long Corners ○ hint +1,1
 manhattan-cafe-creeping-black,secret,after_the_japanese_derby_standing_tall,After the Japanese Derby: Standing Tall,conditions::Win the Tokyo Yushun (Japanese Derby)||reward::Energy -15|1 random stat +10|Skill points +45,2
 manhattan-cafe-creeping-black,no_choices,unworldly_ailment,Unworldly Ailment,Stamina +5,1
 manhattan-cafe-creeping-black,no_choices,stepping_back,Stepping Back,Wit +5,2
@@ -2240,9 +2240,9 @@ symboli-rudolf-archer-of-the-white-moon,date,a_clear_and_beautiful_night,A Clear
 symboli-rudolf-archer-of-the-white-moon,date,the_emperor_s_daily_routine,The Emperor's Daily Routine,Top::Power +10||Bot::Guts +10,4
 symboli-rudolf-archer-of-the-white-moon,date,the_emperor_s_path,The Emperor's Path,Top::Wit +10||Bot::Power +10,5
 symboli-rudolf-archer-of-the-white-moon,secret,after_the_kikuka_sho_three_crowns_attained,After the Kikuka Sho: Three Crowns Attained,conditions::triple_crown||reward::All stats +3|Guts +15|Skill points +45|Be Still hint +1|Yayoi Akikawa bond +4,1
-symboli-rudolf-archer-of-the-white-moon,secret,challenge_met,Challenge Met,"conditions::win_g1:[0, 6]||reward::1 random stat +10",2
-symboli-rudolf-archer-of-the-white-moon,secret,seven_crowns_attained,Seven Crowns Attained,conditions::win_g1:7||reward::Energy +15|Mood +1|1 random stat +10,3
-symboli-rudolf-archer-of-the-white-moon,secret,current_of_success,Current of Success,conditions::win_g1:8||reward::Energy +30|Mood +3|1 random stat +15,4
+symboli-rudolf-archer-of-the-white-moon,secret,challenge_met,Challenge Met,"conditions::win_g1: [0, 6]||reward::1 random stat +10",2
+symboli-rudolf-archer-of-the-white-moon,secret,seven_crowns_attained,Seven Crowns Attained,conditions::win_g1: 7||reward::Energy +15|Mood +1|1 random stat +10,3
+symboli-rudolf-archer-of-the-white-moon,secret,current_of_success,Current of Success,conditions::win_g1: 8||reward::Energy +30|Mood +3|1 random stat +15,4
 symboli-rudolf-archer-of-the-white-moon,no_choices,trusty_aids,Trusty Aids,Wit +5,1
 symboli-rudolf-archer-of-the-white-moon,no_choices,silent_contemplation,Silent Contemplation,Speed +5,2
 symboli-rudolf-archer-of-the-white-moon,no_choices,discord,Discord,Speed +5,3
@@ -2327,7 +2327,7 @@ tosen-jordan-pop-joker,date,just_because,Just Because,Top::Power +10||Bot::Wit +
 tosen-jordan-pop-joker,date,gotta_start_somewhere,Gotta Start Somewhere,Top::Guts +10||Bot::Power +10||Mid::Wit +10,3
 tosen-jordan-pop-joker,date,gyaru_talks_art,Gyaru Talks Art,Top::Speed +10||Bot::Power +10,4
 tosen-jordan-pop-joker,date,trends_come_and_go,Trends Come and Go!,Top::Speed +10||Bot::Guts +10,5
-tosen-jordan-pop-joker,secret,after_the_copa_republica_argentina_i_can_do_it,After the Copa Republica Argentina: I Can Do It,conditions::participate:203101|2||reward::PS_H|Mood +1|1 random stat +2/+3|Skill points +105|PS_NH|1 random stat +2/+3|Skill points +85,1
+tosen-jordan-pop-joker,secret,after_the_copa_republica_argentina_i_can_do_it,After the Copa Republica Argentina: I Can Do It,conditions::Participate in the Copa Republica Argentina (Classic)||reward::PS_H|Mood +1|1 random stat +2/+3|Skill points +105|PS_NH|1 random stat +2/+3|Skill points +85,1
 tosen-jordan-pop-joker,no_choices,split,Split,Guts +5,1
 tosen-jordan-pop-joker,no_choices,ouch,Ouch,Guts +5,2
 tosen-jordan-pop-joker,no_choices,why_not,Why Not?,Power +5,3
@@ -2370,9 +2370,9 @@ mejiro-dober-twisted-line,date,friends_and_fangirls,Friends and Fangirls,Top::Wi
 mejiro-dober-twisted-line,date,fluttering_hearts_at_sunset,Fluttering Hearts at Sunset,Top::Speed +10||Bot::Wit +10,5
 mejiro-dober-twisted-line,secret,an_ounce_of_courage,An Ounce of Courage,conditions::obj|Win the Hanshin Juvenile Fillies||reward::Wit +10,1
 mejiro-dober-twisted-line,secret,proof_of_progress,Proof of Progress,conditions::triple_tiara||reward::Mood +1|Speed +5|Stamina +5|Unyielding Spirit hint +1,2
-mejiro-dober-twisted-line,secret,after_the_tenno_sho_spring_blinding_brilliance,After the Tenno Sho (Spring): Blinding Brilliance,conditions::lose_to_rival:100601|1074||reward::RR,3
-mejiro-dober-twisted-line,secret,after_the_tenno_sho_spring_flickering_spring_light,After the Tenno Sho (Spring): Flickering Spring Light,conditions::beat_rival:100601|1074||reward::RR,4
-mejiro-dober-twisted-line,secret,from_admiring_to_admired,From Admiring to Admired,conditions::Win the Osaka Hai|Win the Takarazuka Kinen (Senior)|Win the Queen Elizabeth II Cup (Senior)|win_g1_year:3|5||reward::Speed +20|Power +20|All I've Got hint +1,5
+mejiro-dober-twisted-line,secret,after_the_tenno_sho_spring_blinding_brilliance,After the Tenno Sho (Spring): Blinding Brilliance,conditions::lose_to_rival: 100601|1074||reward::RR,3
+mejiro-dober-twisted-line,secret,after_the_tenno_sho_spring_flickering_spring_light,After the Tenno Sho (Spring): Flickering Spring Light,conditions::beat_rival: 100601|1074||reward::RR,4
+mejiro-dober-twisted-line,secret,from_admiring_to_admired,From Admiring to Admired,conditions::Win the Osaka Hai|Win the Takarazuka Kinen (Senior)|Win the Queen Elizabeth II Cup (Senior)|win_g1_year: 3|5||reward::Speed +20|Power +20|All I've Got hint +1,5
 mejiro-dober-twisted-line,no_choices,our_promise,Our Promise,Speed +5,1
 mejiro-dober-twisted-line,no_choices,a_trembling_heart,A Trembling Heart,Guts +5,2
 mejiro-dober-twisted-line,no_choices,heating_up,Heating Up,Stamina +5,3
@@ -2412,9 +2412,9 @@ oguri-cap-miraculous-white-star,date,oguri_perseveres,Oguri Perseveres,Top::Guts
 oguri-cap-miraculous-white-star,date,oguri_matures,Oguri Matures,Top::Wit +10||Bot::Stamina +10||Mid::Power +10,3
 oguri-cap-miraculous-white-star,date,something_smells_good,Something Smells Good!,Top::Speed +10||Bot::Guts +10,4
 oguri-cap-miraculous-white-star,date,high_level_rival,High-Level Rival,Top::Speed +5|Stamina +5||Bot::Power +5|Wit +5,5
-oguri-cap-miraculous-white-star,secret,at_the_tenno_sho_spring,At the Tenno Sho (Spring),conditions::participate:100601||reward::Energy -20/-15|Mood +1|1 random stat +4/+10|Skill points +25/+45,1
-oguri-cap-miraculous-white-star,secret,at_the_tenno_sho_spring,At the Tenno Sho (Spring),conditions::do_not_participate:100601||reward::Mood +1,2
-oguri-cap-miraculous-white-star,secret,together_forever,Together Forever,conditions::Win the Kikuka Sho|Win the Arima Kinen (Classic)|Win the Osaka Hai|Win the Tenno Sho (Spring)|Triggers at date 3|12|2||reward::Speed +10|Stamina +10|Skill points +30|Hydrate hint +1,3
+oguri-cap-miraculous-white-star,secret,at_the_tenno_sho_spring,At the Tenno Sho (Spring),conditions::Participate in the Tenno Sho (Spring)||reward::Energy -20/-15|Mood +1|1 random stat +4/+10|Skill points +25/+45,1
+oguri-cap-miraculous-white-star,secret,at_the_tenno_sho_spring,At the Tenno Sho (Spring),conditions::Do not participate in the Tenno Sho (Spring)||reward::Mood +1,2
+oguri-cap-miraculous-white-star,secret,together_forever,Together Forever,conditions::Win the Kikuka Sho|Win the Arima Kinen (Classic)|Win the Osaka Hai|Win the Tenno Sho (Spring)|Triggers during Late December Senior Year||reward::Speed +10|Stamina +10|Skill points +30|Hydrate hint +1,3
 oguri-cap-miraculous-white-star,no_choices,that_s_why_i_ll_win,That's Why I'll Win,Power +5,1
 oguri-cap-miraculous-white-star,no_choices,spread_the_word,Spread the Word,Guts +5,2
 oguri-cap-miraculous-white-star,no_choices,a_gathering_of_greats,A Gathering of Greats,Stamina +5,3
@@ -2454,7 +2454,7 @@ biwa-hayahide-noel-rouge-carol,date,emergency_presentation,Emergency Presentatio
 biwa-hayahide-noel-rouge-carol,date,hide_and_seek_master,Hide and Seek Master,Top::Guts +10||Bot::Speed +10,4
 biwa-hayahide-noel-rouge-carol,date,game_theory,Game Theory,Top::Wit +10||Bot::Power +10,5
 biwa-hayahide-noel-rouge-carol,secret,our_method,Our Method,conditions::triple_crown||reward::RESULT_GOOD|Speed +10|Guts +10|Skill points +10|Straightaway Acceleration hint +1|RESULT_BAD|Speed +5|Guts +5,1
-biwa-hayahide-noel-rouge-carol,secret,unruly_equation,Unruly Equation,conditions::ev:501023520|rt_race_w:10009|1||reward::Energy +20|Hanshin Racecourse ○ hint +1,2
+biwa-hayahide-noel-rouge-carol,secret,unruly_equation,Unruly Equation,conditions::ev: 501023520|rt_race_w: 10009|1||reward::Energy +20|Hanshin Racecourse ○ hint +1,2
 biwa-hayahide-noel-rouge-carol,secret,after_the_takarazuka_kinen_the_top,After the Takarazuka Kinen: The Top,conditions::Win the Takarazuka Kinen (Senior)||reward::All stats +3|Skill points +45|Yayoi Akikawa bond +4|Prepared to Pass hint +1,3
 biwa-hayahide-noel-rouge-carol,no_choices,a_description_of_the_present_moment,A Description of the Present Moment,Wit +5,1
 biwa-hayahide-noel-rouge-carol,no_choices,principles_beyond_recollection,Principles Beyond Recollection,Guts +5,2
@@ -2497,13 +2497,13 @@ fine-motion-noble-seamair,date,official_duties,Official Duties,Top::Stamina +10|
 fine-motion-noble-seamair,date,a_bazaar_afternoon,"A ""Bazaar"" Afternoon",Top::Wit +10||Bot::Power +10,4
 fine-motion-noble-seamair,date,learning_the_local_oshi_culture,"Learning the Local ""Oshi"" Culture",Top::Speed +10||Bot::Guts +10,5
 fine-motion-noble-seamair,secret,after_the_shuka_sho_beautiful_sky,After the Shuka Sho: Beautiful Sky,conditions::Win the Shuka Sho||reward::All stats +3|Skill points +45|Ramp Up hint +1|Yayoi Akikawa bond +4,1
-fine-motion-noble-seamair,secret,after_the_sapporo_kinen_home_straight,After the Sapporo Kinen: Home Straight,conditions::win_as_strat:202001|3|4||reward::1 random stat +3|Speed +5|Power +5|Guts +5|Skill points +35|Standing By hint +1|Yayoi Akikawa bond +4,2
-fine-motion-noble-seamair,secret,after_the_sapporo_kinen_home_straight,After the Sapporo Kinen: Home Straight,conditions::win_as_not_strat:202001|3|4||reward::1 random stat +3|Skill points +35|Yayoi Akikawa bond +4,3
-fine-motion-noble-seamair,secret,after_the_tenno_sho_autumn_ever_after,After the Tenno Sho (Autumn): Ever After,conditions::pick_and_win:101601|3||reward::All stats +3|Skill points +45|Up-Tempo hint +1|Yayoi Akikawa bond +4,4
-fine-motion-noble-seamair,secret,after_the_queen_elizabeth_ii_cup_respect,After the Queen Elizabeth II Cup: Respect,conditions::pick_and_win:101701|3||reward::All stats +3|Skill points +45|Straight Descent hint +1|Yayoi Akikawa bond +4,5
-fine-motion-noble-seamair,secret,after_the_mile_ch_rival,After the Mile Ch.: Rival,conditions::pick_and_win:101801|3||reward::All stats +3|Skill points +45|Updrafters hint +1|Yayoi Akikawa bond +4,6
-fine-motion-noble-seamair,secret,after_the_arima_kinen_sweet_memories,After the Arima Kinen: Sweet Memories,conditions::pick_and_win:102301|3||reward::All stats +3|Skill points +45|Preferred Position hint +1|Head-On hint +1|Yayoi Akikawa bond +4,7
-fine-motion-noble-seamair,secret,after_the_arima_kinen_still_with_you,After the Arima Kinen: Still with You,conditions::dont_pick_and_win:102301|3||reward::Energy -15|1 random stat +10|Skill points +45|Preferred Position hint +1,8
+fine-motion-noble-seamair,secret,after_the_sapporo_kinen_home_straight,After the Sapporo Kinen: Home Straight,conditions::win_as_strat: 202001|3|4||reward::1 random stat +3|Speed +5|Power +5|Guts +5|Skill points +35|Standing By hint +1|Yayoi Akikawa bond +4,2
+fine-motion-noble-seamair,secret,after_the_sapporo_kinen_home_straight,After the Sapporo Kinen: Home Straight,conditions::win_as_not_strat: 202001|3|4||reward::1 random stat +3|Skill points +35|Yayoi Akikawa bond +4,3
+fine-motion-noble-seamair,secret,after_the_tenno_sho_autumn_ever_after,After the Tenno Sho (Autumn): Ever After,conditions::pick_and_win: 101601|3||reward::All stats +3|Skill points +45|Up-Tempo hint +1|Yayoi Akikawa bond +4,4
+fine-motion-noble-seamair,secret,after_the_queen_elizabeth_ii_cup_respect,After the Queen Elizabeth II Cup: Respect,conditions::pick_and_win: 101701|3||reward::All stats +3|Skill points +45|Straight Descent hint +1|Yayoi Akikawa bond +4,5
+fine-motion-noble-seamair,secret,after_the_mile_ch_rival,After the Mile Ch.: Rival,conditions::pick_and_win: 101801|3||reward::All stats +3|Skill points +45|Updrafters hint +1|Yayoi Akikawa bond +4,6
+fine-motion-noble-seamair,secret,after_the_arima_kinen_sweet_memories,After the Arima Kinen: Sweet Memories,conditions::pick_and_win: 102301|3||reward::All stats +3|Skill points +45|Preferred Position hint +1|Head-On hint +1|Yayoi Akikawa bond +4,7
+fine-motion-noble-seamair,secret,after_the_arima_kinen_still_with_you,After the Arima Kinen: Still with You,conditions::dont_pick_and_win: 102301|3||reward::Energy -15|1 random stat +10|Skill points +45|Preferred Position hint +1,8
 fine-motion-noble-seamair,no_choices,this_is_who_i_am,This Is Who I Am,Wit +5,1
 fine-motion-noble-seamair,no_choices,my_dear,My Dear...,NO,2
 fine-motion-noble-seamair,no_choices,something_special,Something Special,Stamina +5,3
@@ -2668,8 +2668,8 @@ sakura-chiyono-o-hinoshita-kaisanhana-akari,date,what_dependability_means,What D
 sakura-chiyono-o-hinoshita-kaisanhana-akari,date,arcade_buddies,Arcade Buddies,Top::Speed +10||Bot::Stamina +10,4
 sakura-chiyono-o-hinoshita-kaisanhana-akari,date,umamusume_enka_contest,Umamusume Enka Contest!,Top::Power +10||Bot::Speed +5|Guts +5,5
 sakura-chiyono-o-hinoshita-kaisanhana-akari,secret,after_the_tenno_sho_autumn_a_hand_to_the_sky,After the Tenno Sho (Autumn): A Hand to the Sky,conditions::Win the Tenno Sho (Autumn) (Classic)||reward::All stats +3|Speed +45|Tazuna Hayakawa bond +4|RC|All stats +3|Speed +45|Tazuna Hayakawa bond +4|RC,1
-sakura-chiyono-o-hinoshita-kaisanhana-akari,secret,after_the_tenno_sho_autumn_a_thick_wall,After the Tenno Sho (Autumn): A Thick Wall,conditions::race_pn:101601|2|2||reward::All stats +2|Speed +45|Tazuna Hayakawa bond +4|RC|All stats +2|Speed +45|Tazuna Hayakawa bond +4|RC,2
-sakura-chiyono-o-hinoshita-kaisanhana-akari,secret,after_the_tenno_sho_autumn_all_my_heart,After the Tenno Sho (Autumn): All My Heart,conditions::participate:101601|2||reward::All stats +1|Speed +35|Tazuna Hayakawa bond +4|RC|All stats +1|Speed +35|Tazuna Hayakawa bond +4|RC,3
+sakura-chiyono-o-hinoshita-kaisanhana-akari,secret,after_the_tenno_sho_autumn_a_thick_wall,After the Tenno Sho (Autumn): A Thick Wall,conditions::race_pn: 101601|2|2||reward::All stats +2|Speed +45|Tazuna Hayakawa bond +4|RC|All stats +2|Speed +45|Tazuna Hayakawa bond +4|RC,2
+sakura-chiyono-o-hinoshita-kaisanhana-akari,secret,after_the_tenno_sho_autumn_all_my_heart,After the Tenno Sho (Autumn): All My Heart,conditions::Participate in the Tenno Sho (Autumn) (Classic)||reward::All stats +1|Speed +35|Tazuna Hayakawa bond +4|RC|All stats +1|Speed +35|Tazuna Hayakawa bond +4|RC,3
 sakura-chiyono-o-hinoshita-kaisanhana-akari,secret,after_the_japan_cup_overcoming_fate,After the Japan Cup: Overcoming Fate,conditions::obj|Win the Japan Cup (Senior)||reward::All stats +3|Skill points +75|Head-On hint +1|Yayoi Akikawa bond +4,4
 sakura-chiyono-o-hinoshita-kaisanhana-akari,secret,after_the_arima_kinen_victory,After the Arima Kinen: Victory,conditions::Win the Arima Kinen (Senior)||reward::Energy -15|1 random stat +10|Skill points +75|Feature Act hint +1,5
 sakura-chiyono-o-hinoshita-kaisanhana-akari,no_choices,the_secret_to_good_curry_is_chocolate,The Secret to Good Curry is Chocolate,Power +5,1
@@ -2755,9 +2755,9 @@ eishin-flash-collectchocolatier,date,conveying_sincerity,Conveying Sincerity,Top
 eishin-flash-collectchocolatier,date,reminiscing_at_the_freizeitpark,Reminiscing at the Freizeitpark,Top::Power +10||Bot::Stamina +10,5
 eishin-flash-collectchocolatier,secret,after_the_japanese_derby_der_sieg,After the Japanese Derby: Der Sieg,conditions::Win the Tokyo Yushun (Japanese Derby)||reward::RR|Fighter hint +1,1
 eishin-flash-collectchocolatier,secret,after_the_kikuka_sho_blick_nach_vorn,After the Kikuka Sho: Blick nach vorn,conditions::Win the Kikuka Sho||reward::Energy -15|1 random stat +10|Skill points +45,2
-eishin-flash-collectchocolatier,secret,erinnerung_an_tokyo,Erinnerung an Tokyo,conditions::win_g1_track:10006|2|Win the Arima Kinen (Senior)||reward::Speed +10|Tokyo Racecourse ○ hint +1,3
-eishin-flash-collectchocolatier,secret,erinnerung_an_den_sieg,Erinnerung an den Sieg,conditions::win_g1_track:10006|3|Win the Arima Kinen (Senior)||reward::Speed +10|Power +10|Tokyo Racecourse ○ hint +1,4
-eishin-flash-collectchocolatier,secret,der_rekord,Der Rekord,conditions::win_g1_track:10006|5|Win the Arima Kinen (Senior)||reward::Speed +15|Stamina +15|Power +15|Skill points +25|Tokyo Racecourse ○ hint +1|Standard Distance ○ hint +1,5
+eishin-flash-collectchocolatier,secret,erinnerung_an_tokyo,Erinnerung an Tokyo,conditions::win_g1_track: 10006|2|Win the Arima Kinen (Senior)||reward::Speed +10|Tokyo Racecourse ○ hint +1,3
+eishin-flash-collectchocolatier,secret,erinnerung_an_den_sieg,Erinnerung an den Sieg,conditions::win_g1_track: 10006|3|Win the Arima Kinen (Senior)||reward::Speed +10|Power +10|Tokyo Racecourse ○ hint +1,4
+eishin-flash-collectchocolatier,secret,der_rekord,Der Rekord,conditions::win_g1_track: 10006|5|Win the Arima Kinen (Senior)||reward::Speed +15|Stamina +15|Power +15|Skill points +25|Tokyo Racecourse ○ hint +1|Standard Distance ○ hint +1,5
 eishin-flash-collectchocolatier,no_choices,die_achtung,Die Achtung,Wit +5,1
 eishin-flash-collectchocolatier,no_choices,das_erlebnis,Das Erlebnis,Power +5,2
 eishin-flash-collectchocolatier,no_choices,das_vorbild,Das Vorbild,Guts +5,3
@@ -2802,12 +2802,12 @@ mejiro-ardan-clinochlore-line,date,ardan_s_guide_to_detours_for_the_adventurous,
 mejiro-ardan-clinochlore-line,date,ardan_s_guide_to_detours_for_the_wistful,Ardan's Guide to Detours: For the Wistful,Top::Speed +10||Bot::Wit +10||Mid::Stamina +10,3
 mejiro-ardan-clinochlore-line,date,films_with_friends,Films with Friends,Top::Wit +10||Bot::Speed +10,4
 mejiro-ardan-clinochlore-line,date,improbably_tough,Improbably Tough?,Top::Stamina +10||Bot::Guts +10,5
-mejiro-ardan-clinochlore-line,secret,after_the_debut_evening_rift,After the Debut: Evening Rift,conditions::participate:debut||reward::RR|Get Legs of Glass status,1
+mejiro-ardan-clinochlore-line,secret,after_the_debut_evening_rift,After the Debut: Evening Rift,conditions::Participate in the debut||reward::RR|Get Legs of Glass status,1
 mejiro-ardan-clinochlore-line,secret,after_the_japanese_derby_shattering_fate,After the Japanese Derby: Shattering Fate,conditions::Win the Tokyo Yushun (Japanese Derby)||reward::RR|All I've Got hint +1,2
 mejiro-ardan-clinochlore-line,secret,after_the_kikuka_sho_fighting_the_current,After the Kikuka Sho: Fighting the Current,conditions::Win the Kikuka Sho||reward::All stats +3|Skill points +45|Pressure hint +1|Yayoi Akikawa bond +4,3
 mejiro-ardan-clinochlore-line,secret,after_the_tenno_sho_autumn_against_the_thunder,After the Tenno Sho (Autumn): Against the Thunder,conditions::Win the Tenno Sho (Autumn) (Classic)||reward::All stats +3|Skill points +45|Steadfast hint +1|Yayoi Akikawa bond +4,4
-mejiro-ardan-clinochlore-line,secret,after_the_tenno_sho_autumn_now_vivid_lights_converge,"After the Tenno Sho (Autumn): Now, Vivid Lights Converge",conditions::participate:101501|2|Win the Tenno Sho (Autumn) (Senior)||reward::RR|Ramp Up hint +1|HE,5
-mejiro-ardan-clinochlore-line,secret,after_the_tenno_sho_autumn_now_lights_at_their_zenith,"After the Tenno Sho (Autumn): Now, Lights at Their Zenith",conditions::participate:101601|2|Win the Tenno Sho (Autumn) (Senior)||reward::RR|Corner Recovery ○ hint +1|HE,6
+mejiro-ardan-clinochlore-line,secret,after_the_tenno_sho_autumn_now_vivid_lights_converge,"After the Tenno Sho (Autumn): Now, Vivid Lights Converge",conditions::Participate in the Kikuka Sho (Classic)|Win the Tenno Sho (Autumn) (Senior)||reward::RR|Ramp Up hint +1|HE,5
+mejiro-ardan-clinochlore-line,secret,after_the_tenno_sho_autumn_now_lights_at_their_zenith,"After the Tenno Sho (Autumn): Now, Lights at Their Zenith",conditions::Participate in the Tenno Sho (Autumn) (Classic)|Win the Tenno Sho (Autumn) (Senior)||reward::RR|Corner Recovery ○ hint +1|HE,6
 mejiro-ardan-clinochlore-line,no_choices,fates_intertwined,Fates Intertwined,Power +5,1
 mejiro-ardan-clinochlore-line,no_choices,to_blot_out_the_sunlight,To Blot Out the Sunlight,Guts +5,2
 mejiro-ardan-clinochlore-line,no_choices,what_the_setting_sun_shines_upon,What the Setting Sun Shines Upon,Power +10,3
@@ -2847,7 +2847,7 @@ admire-vega-starry-nocturne,date,more_than_words,More than Words,Top::Energy +10
 admire-vega-starry-nocturne,date,accepting_gratitude,Accepting Gratitude,Top::Guts +10||Bot::Stamina +10||Mid::Wit +10,3
 admire-vega-starry-nocturne,date,an_eye_for_fluff,An Eye for Fluff,Top::Wit +10||Bot::Power +10,4
 admire-vega-starry-nocturne,date,scene_from_a_dream,Scene from a Dream,Top::Stamina +10||Bot::Speed +10,5
-admire-vega-starry-nocturne,secret,a_synergy_of_stars,A Synergy of Stars,"conditions::Triggers at date 3|12|2|rn_race_w:[1015, 1058, 1077]|8||reward::CT|Speed +15|Power +15|Skill points +20|End Closer Straightaways ○ hint +1|End Closer Corners ○ hint +1|CT|Speed +10|Power +10|End Closer Corners ○ hint +1|CT|Power +10|End Closer Corners ○ hint +1",1
+admire-vega-starry-nocturne,secret,a_synergy_of_stars,A Synergy of Stars,"conditions::Triggers during Late December Senior Year|rn_race_w: [1015, 1058, 1077]|8||reward::CT|Speed +15|Power +15|Skill points +20|End Closer Straightaways ○ hint +1|End Closer Corners ○ hint +1|CT|Speed +10|Power +10|End Closer Corners ○ hint +1|CT|Power +10|End Closer Corners ○ hint +1",1
 admire-vega-starry-nocturne,no_choices,mysterious_comet,Mysterious Comet,Wit +5,1
 admire-vega-starry-nocturne,no_choices,procyon_takes_aim,Procyon Takes Aim,Power +5,2
 admire-vega-starry-nocturne,no_choices,destined_gemini,Destined Gemini,NO,3
@@ -2888,10 +2888,10 @@ matikanetannhauser-pan-paka-tiru-toto,date,hospitali_don_t,Hospitali-Don't,Top::
 matikanetannhauser-pan-paka-tiru-toto,date,machitan_hospitality,Machitan Hospitality!,Top::Wit +10||Bot::Speed +10||Mid::Guts +10,3
 matikanetannhauser-pan-paka-tiru-toto,date,i_ll_be_a_dependable_big_sis,I'll Be a Dependable Big Sis!,Top::Power +10||Bot::Guts +10,4
 matikanetannhauser-pan-paka-tiru-toto,date,machitan_s_first_hat,Machitan's First Hat,Top::Stamina +5|Wit +5||Bot::Speed +10,5
-matikanetannhauser-pan-paka-tiru-toto,secret,after_the_mile_championship_high_key_happy,After the Mile Championship: High-Key Happy,conditions::beat_rival:101801|2|1065||reward::RR|Power +20|Skill points +20|Mile Corners ○ hint +1,1
-matikanetannhauser-pan-paka-tiru-toto,secret,after_the_arima_kinen_ramen_to_wash_down_the_win,After the Arima Kinen: Ramen to Wash Down the Win,conditions::beat_rival:102301|2|1060||reward::RR|Stamina +20|Skill points +20|Inside Scoop hint +1,2
-matikanetannhauser-pan-paka-tiru-toto,secret,after_the_yasuda_kinen_a_triumphant_bath,After the Yasuda Kinen: A Triumphant Bath,conditions::beat_rival:101101|3|1063||reward::RR|Guts +20|Skill points +20|Updrafters hint +1,3
-matikanetannhauser-pan-paka-tiru-toto,secret,after_the_all_comers_win_and_run_wild,After the All Comers: Win and Run Wild,conditions::beat_rival:202501|3|1066||reward::RR|Speed +20|Skill points +20|All I've Got hint +1,4
+matikanetannhauser-pan-paka-tiru-toto,secret,after_the_mile_championship_high_key_happy,After the Mile Championship: High-Key Happy,conditions::beat_rival: 101801|2|1065||reward::RR|Power +20|Skill points +20|Mile Corners ○ hint +1,1
+matikanetannhauser-pan-paka-tiru-toto,secret,after_the_arima_kinen_ramen_to_wash_down_the_win,After the Arima Kinen: Ramen to Wash Down the Win,conditions::beat_rival: 102301|2|1060||reward::RR|Stamina +20|Skill points +20|Inside Scoop hint +1,2
+matikanetannhauser-pan-paka-tiru-toto,secret,after_the_yasuda_kinen_a_triumphant_bath,After the Yasuda Kinen: A Triumphant Bath,conditions::beat_rival: 101101|3|1063||reward::RR|Guts +20|Skill points +20|Updrafters hint +1,3
+matikanetannhauser-pan-paka-tiru-toto,secret,after_the_all_comers_win_and_run_wild,After the All Comers: Win and Run Wild,conditions::beat_rival: 202501|3|1066||reward::RR|Speed +20|Skill points +20|All I've Got hint +1,4
 matikanetannhauser-pan-paka-tiru-toto,no_choices,this_girl_that_girl_and_the_other_one,"This Girl, That Girl, and the Other One",Guts +5,1
 matikanetannhauser-pan-paka-tiru-toto,no_choices,i_still_dream_of_taking_first,I Still Dream of Taking First!,Guts +5,2
 matikanetannhauser-pan-paka-tiru-toto,no_choices,dizzy_burning_and_fighting_for_the_win,"Dizzy, Burning, and Fighting for the Win",Stamina +5,3
@@ -3017,7 +3017,7 @@ mejiro-bright-brunissage-line,date,save_the_lucky_cat_figurine,Save the Lucky Ca
 mejiro-bright-brunissage-line,secret,a_mejiro_s_path_two_plaques,A Mejiro's Path: Two Plaques,conditions::Win the Tenno Sho (Spring)|Win the Tenno Sho (Autumn) (Senior)||reward::Speed +10|Stamina +10|Inside Scoop hint +1,1
 mejiro-bright-brunissage-line,secret,a_mejiro_s_path_consecutive_queen,A Mejiro's Path: Consecutive Queen,conditions::Win the Queen Elizabeth II Cup (Classic)|Win the Queen Elizabeth II Cup (Senior)||reward::Speed +10|Skill points +10|Steadfast hint +1,2
 mejiro-bright-brunissage-line,secret,a_mejiro_s_path_dual_party_fever,A Mejiro's Path: Dual Party Fever,conditions::Win the Takarazuka Kinen (Senior)|Win the Arima Kinen (Senior)||reward::Guts +10|Skill points +10|Non-Standard Distance ○ hint +1,3
-mejiro-bright-brunissage-line,secret,peerless_stayer,Peerless Stayer,conditions::dist_wins_branch:3|Triggers at date 3|12|2||reward::CT|Stamina +10|Long Corners ○ hint +1|CT|Stamina +10|Guts +5|Wit +5|Long Corners ○ hint +1|CT|Stamina +10|Guts +10|Long Corners ○ hint +1|Passing Pro hint +1|Smoke Screen hint +1,4
+mejiro-bright-brunissage-line,secret,peerless_stayer,Peerless Stayer,conditions::dist_wins_branch: 3|Triggers during Late December Senior Year||reward::CT|Stamina +10|Long Corners ○ hint +1|CT|Stamina +10|Guts +5|Wit +5|Long Corners ○ hint +1|CT|Stamina +10|Guts +10|Long Corners ○ hint +1|Passing Pro hint +1|Smoke Screen hint +1,4
 mejiro-bright-brunissage-line,no_choices,the_time_to_spread_my_wings,The Time to Spread My Wings,Speed +5,1
 mejiro-bright-brunissage-line,no_choices,an_inherited_dream,An Inherited Dream,Power +5,2
 mejiro-bright-brunissage-line,no_choices,pursuing_the_fleeing_wind,Pursuing the Fleeing Wind,Wit +5,3
@@ -3058,7 +3058,7 @@ fuji-kiseki-succes-etoile,date,the_greatest_blessing_in_life,The Greatest Blessi
 fuji-kiseki-succes-etoile,date,one_act_from_the_wings,One Act from the Wings,Top::Guts +10||Bot::Stamina +10,4
 fuji-kiseki-succes-etoile,date,stargazing,Stargazing,Top::Speed +10||Bot::Power +10,5
 fuji-kiseki-succes-etoile,secret,words_do_no_justice,Words Do No Justice,conditions::3_crown_route|Win the Satsuki Sho|Win the Tokyo Yushun (Japanese Derby)|Win the Kikuka Sho||reward::Speed +20|Stamina +20|Power +20|Prepared to Pass hint +1,1
-fuji-kiseki-succes-etoile,secret,can_t_stop_the_beat,Can't Stop the Beat,"conditions::win_g1_cnt_class_distance:3|3|[0, 1]|Win the Takamatsunomiya Kinen||reward::Mood +1|Power +20|Wit +20|Unyielding Spirit hint +1",2
+fuji-kiseki-succes-etoile,secret,can_t_stop_the_beat,Can't Stop the Beat,"conditions::win_g1_cnt_class_distance: 3|3|[0, 1]|Win the Takamatsunomiya Kinen||reward::Mood +1|Power +20|Wit +20|Unyielding Spirit hint +1",2
 fuji-kiseki-succes-etoile,secret,my_lucky_star,My Lucky Star,conditions::Win the Tenno Sho (Autumn) (Senior)|Win the Japan Cup (Senior)|Win the Arima Kinen (Senior)|Win the Takarazuka Kinen (Senior)||reward::Mood +1|Speed +25|Stamina +25|Guts +25|Preferred Position hint +1,3
 fuji-kiseki-succes-etoile,no_choices,act_2_tonight_the_world_is_wild,"Act 2: Tonight, the World Is Wild",Stamina +5,1
 fuji-kiseki-succes-etoile,no_choices,act_3_a_rose_by_any_other_name,Act 3: A Rose by Any Other Name,Speed +5,2
@@ -3099,8 +3099,8 @@ seiun-sky-soiree-de-chaton,date,cat_patrol,Cat Patrol,Top::Stamina +10||Bot::Gut
 seiun-sky-soiree-de-chaton,date,goodbye_cat,"Goodbye, Cat",Top::Wit +10||Bot::Stamina +10||Mid::Power +10,3
 seiun-sky-soiree-de-chaton,date,nap_master,Nap Master,Top::Stamina +10||Bot::Wit +10,4
 seiun-sky-soiree-de-chaton,date,cloudy_followed_by,"Cloudy, Followed By...",Top::Guts +10||Bot::Speed +10,5
-seiun-sky-soiree-de-chaton,secret,east_vs_west,East vs. West,conditions::participate:202701|2||reward::NO,1
-seiun-sky-soiree-de-chaton,secret,facing_the_otherworldly_front_runner,Facing the Otherworldly Front-Runner,conditions::participate:202601|2||reward::NO,2
+seiun-sky-soiree-de-chaton,secret,east_vs_west,East vs. West,conditions::Participate in the Kyoto Daishoten (Classic)||reward::NO,1
+seiun-sky-soiree-de-chaton,secret,facing_the_otherworldly_front_runner,Facing the Otherworldly Front-Runner,conditions::Participate in the Mainichi Okan (Classic)||reward::NO,2
 seiun-sky-soiree-de-chaton,secret,landed_that_triple_crown,Landed That Triple Crown!,conditions::triple_crown||reward::Mood +1|Speed +5|Power +5|Fast-Paced hint +1,3
 seiun-sky-soiree-de-chaton,no_choices,the_ultimate_generation,The Ultimate Generation,Stamina +5,1
 seiun-sky-soiree-de-chaton,no_choices,a_shadow_on_the_trickster_s_path,A Shadow on the Trickster's Path,Power +5,2
@@ -3184,7 +3184,7 @@ yaeno-muteki-attack-of-the-four-white-meteors,date,to_my_dear_student,To My Dear
 yaeno-muteki-attack-of-the-four-white-meteors,date,strive_always_to_be_a_mentor,Strive Always to Be a Mentor,Top::Power +10||Bot::Wit +10||Mid::Guts +10,3
 yaeno-muteki-attack-of-the-four-white-meteors,date,finding_the_legendary_tome,Finding the Legendary Tome,Top::Speed +5|Guts +5||Bot::Stamina +5|Power +5,4
 yaeno-muteki-attack-of-the-four-white-meteors,date,the_way_of_the_bubble,The Way of the Bubble,Top::Power +10||Bot::Speed +5|Wit +5,5
-yaeno-muteki-attack-of-the-four-white-meteors,secret,her_proof_of_invincibility,Her Proof of Invincibility,"conditions::rn_race_w:[1006, 1045, 1034]|8||reward::All stats +10|Ramp Up hint +1|Homestretch Haste hint +1",1
+yaeno-muteki-attack-of-the-four-white-meteors,secret,her_proof_of_invincibility,Her Proof of Invincibility,"conditions::rn_race_w: [1006, 1045, 1034]|8||reward::All stats +10|Ramp Up hint +1|Homestretch Haste hint +1",1
 yaeno-muteki-attack-of-the-four-white-meteors,no_choices,the_virtue_in_integrity,The Virtue in Integrity,Guts +5,1
 yaeno-muteki-attack-of-the-four-white-meteors,no_choices,the_courtesy_in_sincerity,The Courtesy in Sincerity,Guts +10,2
 yaeno-muteki-attack-of-the-four-white-meteors,no_choices,the_wisdom_in_learning,The Wisdom in Learning,Wit +5,3
@@ -3224,10 +3224,10 @@ nice-nature-run-win,date,snapshot_of_emotions,Snapshot of Emotions,Top::Speed +1
 nice-nature-run-win,date,let_s_watch_the_fish,Let's Watch the Fish,Top::Guts +10||Bot::Speed +10,5
 nice-nature-run-win,secret,choosing_to_do_my_best,Choosing to Do My Best,conditions::Win the Kyoto Shimbun Hai|Win the Naruo Kinen (Classic)|Win the Kokura Kinen (Classic)||reward::Speed +25|Stamina +25|Skill points +20|Homestretch Haste hint +1,1
 nice-nature-run-win,secret,very_me_results,"Very ""Me"" Results",conditions::third_any_non_objective||reward::1 random stat +3|Skill points +65,2
-nice-nature-run-win,secret,after_the_satsuki_sho_an_unsatisfying_victory,After the Satsuki Sho: An Unsatisfying Victory,conditions::beat_rival:100501|1003||reward::1 random stat +9|Skill points +45,3
-nice-nature-run-win,secret,after_the_satsuki_sho_still_can_t_catch_up,After the Satsuki Sho: Still Can't Catch Up,conditions::lose_to_rival:100501|1003||reward::1 random stat +5|Skill points +35,4
-nice-nature-run-win,secret,after_the_japanese_derby_no_matter_what,After the Japanese Derby: No Matter What,conditions::beat_rival:101001|1003||reward::1 random stat +9|Skill points +45,5
-nice-nature-run-win,secret,after_the_japanese_derby_the_spotlight,After the Japanese Derby: The Spotlight,conditions::lose_to_rival:101001|1003||reward::1 random stat +5|Skill points +35,6
+nice-nature-run-win,secret,after_the_satsuki_sho_an_unsatisfying_victory,After the Satsuki Sho: An Unsatisfying Victory,conditions::beat_rival: 100501|1003||reward::1 random stat +9|Skill points +45,3
+nice-nature-run-win,secret,after_the_satsuki_sho_still_can_t_catch_up,After the Satsuki Sho: Still Can't Catch Up,conditions::lose_to_rival: 100501|1003||reward::1 random stat +5|Skill points +35,4
+nice-nature-run-win,secret,after_the_japanese_derby_no_matter_what,After the Japanese Derby: No Matter What,conditions::beat_rival: 101001|1003||reward::1 random stat +9|Skill points +45,5
+nice-nature-run-win,secret,after_the_japanese_derby_the_spotlight,After the Japanese Derby: The Spotlight,conditions::lose_to_rival: 101001|1003||reward::1 random stat +5|Skill points +35,6
 nice-nature-run-win,no_choices,doting_family,Doting Family,Wit +5,1
 nice-nature-run-win,no_choices,what_cheers_me_up,What Cheers Me Up,Guts +5,2
 nice-nature-run-win,no_choices,behind_the_throne,Behind the Throne,Wit +5,3
@@ -3270,7 +3270,7 @@ king-halo-noble-white-cheer-attire,date,first_rate_harvest,First-Rate Harvest,To
 king-halo-noble-white-cheer-attire,date,first_rate_terms,First-Rate Terms,Top::Power +10||Bot::Wit +10||Mid::Guts +10,3
 king-halo-noble-white-cheer-attire,date,crowds_are_no_problem,Crowds Are No Problem,Top::Speed +10||Bot::Power +10,4
 king-halo-noble-white-cheer-attire,date,breaking_curfew_is_second_rate,Breaking Curfew is Second-Rate,Top::Guts +5|Wit +5||Bot::Speed +5|Power +5,5
-king-halo-noble-white-cheer-attire,secret,a_kingly_smile,A Kingly Smile,conditions::win_or:101101|2|101101|3|win_or:100501|101001|win_or:101501|102301|Triggers at date 3|12|2||reward::All stats +10|Skill points +20,1
+king-halo-noble-white-cheer-attire,secret,a_kingly_smile,A Kingly Smile,conditions::win_or: 101101|2|101101|3|win_or: 100501|101001|win_or: 101501|102301|Triggers during Late December Senior Year||reward::All stats +10|Skill points +20,1
 king-halo-noble-white-cheer-attire,secret,after_the_arima_kinen_royal_inheritance,After the Arima Kinen: Royal Inheritance,conditions::Win the Arima Kinen (Senior)||reward::Energy -15|1 random stat +10|Skill points +45|Yayoi Akikawa bond +4,2
 king-halo-noble-white-cheer-attire,no_choices,to_pursue_and_be_pursued,To Pursue and Be Pursued,Guts +5,1
 king-halo-noble-white-cheer-attire,no_choices,we_made_our_debut,We Made Our Debut,Guts +5,2
@@ -3311,7 +3311,7 @@ ines-fujin-all-time-fever,date,part_time_practice,Part-Time Practice!,Top::Power
 ines-fujin-all-time-fever,date,full_time_gratitude,Full-Time Gratitude!,Top::Guts +10||Bot::Power +10||Mid::Speed +10,3
 ines-fujin-all-time-fever,date,not_even_big_sisters_are_perfect,Not Even Big Sisters Are Perfect,Top::Guts +10||Bot::Power +10,4
 ines-fujin-all-time-fever,date,against_the_norm,Against the Norm,Top::Stamina +10||Bot::Speed +10,5
-ines-fujin-all-time-fever,secret,you_are_the_wind,You Are the Wind,conditions::Triggers at date 3|12|2||reward::SC|Speed +15|Guts +15|Early Lead hint +1|Front Runner Straightaways ○ hint +1|SC|Speed +10|Guts +10|Front Runner Straightaways ○ hint +1|SC|Speed +10,1
+ines-fujin-all-time-fever,secret,you_are_the_wind,You Are the Wind,conditions::Triggers during Late December Senior Year||reward::SC|Speed +15|Guts +15|Early Lead hint +1|Front Runner Straightaways ○ hint +1|SC|Speed +10|Guts +10|Front Runner Straightaways ○ hint +1|SC|Speed +10,1
 ines-fujin-all-time-fever,no_choices,it_s_like_this_every_day_for_her,It's Like This Every Day for Her,Stamina +5,1
 ines-fujin-all-time-fever,no_choices,cheering_you_on,Cheering You On,Stamina +5|Power +5,2
 ines-fujin-all-time-fever,no_choices,the_sound_of_spring_on_the_breeze,The Sound of Spring on the Breeze,Guts +5,3
@@ -3391,13 +3391,13 @@ fine-motion-titania,date,official_duties,Official Duties,Top::Stamina +10||Bot::
 fine-motion-titania,date,a_bazaar_afternoon,"A ""Bazaar"" Afternoon",Top::Wit +10||Bot::Power +10,4
 fine-motion-titania,date,learning_the_local_oshi_culture,"Learning the Local ""Oshi"" Culture",Top::Speed +10||Bot::Guts +10,5
 fine-motion-titania,secret,after_the_shuka_sho_beautiful_sky,After the Shuka Sho: Beautiful Sky,conditions::Win the Shuka Sho||reward::All stats +3|Skill points +45|Ramp Up hint +1|Yayoi Akikawa bond +4,1
-fine-motion-titania,secret,after_the_sapporo_kinen_home_straight,After the Sapporo Kinen: Home Straight,conditions::win_as_strat:202001|3|4||reward::1 random stat +3|Speed +5|Power +5|Guts +5|Skill points +35|Standing By hint +1|Yayoi Akikawa bond +4,2
-fine-motion-titania,secret,after_the_sapporo_kinen_home_straight,After the Sapporo Kinen: Home Straight,conditions::win_as_not_strat:202001|3|4||reward::1 random stat +3|Skill points +35|Yayoi Akikawa bond +4,3
-fine-motion-titania,secret,after_the_tenno_sho_autumn_ever_after,After the Tenno Sho (Autumn): Ever After,conditions::pick_and_win:101601|3||reward::All stats +3|Skill points +45|Up-Tempo hint +1|Yayoi Akikawa bond +4,4
-fine-motion-titania,secret,after_the_queen_elizabeth_ii_cup_respect,After the Queen Elizabeth II Cup: Respect,conditions::pick_and_win:101701|3||reward::All stats +3|Skill points +45|Straight Descent hint +1|Yayoi Akikawa bond +4,5
-fine-motion-titania,secret,after_the_mile_ch_rival,After the Mile Ch.: Rival,conditions::pick_and_win:101801|3||reward::All stats +3|Skill points +45|Updrafters hint +1|Yayoi Akikawa bond +4,6
-fine-motion-titania,secret,after_the_arima_kinen_sweet_memories,After the Arima Kinen: Sweet Memories,conditions::pick_and_win:102301|3||reward::All stats +3|Skill points +45|Preferred Position hint +1|Head-On hint +1|Yayoi Akikawa bond +4,7
-fine-motion-titania,secret,after_the_arima_kinen_still_with_you,After the Arima Kinen: Still with You,conditions::dont_pick_and_win:102301|3||reward::Energy -15|1 random stat +10|Skill points +45|Preferred Position hint +1,8
+fine-motion-titania,secret,after_the_sapporo_kinen_home_straight,After the Sapporo Kinen: Home Straight,conditions::win_as_strat: 202001|3|4||reward::1 random stat +3|Speed +5|Power +5|Guts +5|Skill points +35|Standing By hint +1|Yayoi Akikawa bond +4,2
+fine-motion-titania,secret,after_the_sapporo_kinen_home_straight,After the Sapporo Kinen: Home Straight,conditions::win_as_not_strat: 202001|3|4||reward::1 random stat +3|Skill points +35|Yayoi Akikawa bond +4,3
+fine-motion-titania,secret,after_the_tenno_sho_autumn_ever_after,After the Tenno Sho (Autumn): Ever After,conditions::pick_and_win: 101601|3||reward::All stats +3|Skill points +45|Up-Tempo hint +1|Yayoi Akikawa bond +4,4
+fine-motion-titania,secret,after_the_queen_elizabeth_ii_cup_respect,After the Queen Elizabeth II Cup: Respect,conditions::pick_and_win: 101701|3||reward::All stats +3|Skill points +45|Straight Descent hint +1|Yayoi Akikawa bond +4,5
+fine-motion-titania,secret,after_the_mile_ch_rival,After the Mile Ch.: Rival,conditions::pick_and_win: 101801|3||reward::All stats +3|Skill points +45|Updrafters hint +1|Yayoi Akikawa bond +4,6
+fine-motion-titania,secret,after_the_arima_kinen_sweet_memories,After the Arima Kinen: Sweet Memories,conditions::pick_and_win: 102301|3||reward::All stats +3|Skill points +45|Preferred Position hint +1|Head-On hint +1|Yayoi Akikawa bond +4,7
+fine-motion-titania,secret,after_the_arima_kinen_still_with_you,After the Arima Kinen: Still with You,conditions::dont_pick_and_win: 102301|3||reward::Energy -15|1 random stat +10|Skill points +45|Preferred Position hint +1,8
 fine-motion-titania,no_choices,this_is_who_i_am,This Is Who I Am,Wit +5,1
 fine-motion-titania,no_choices,my_dear,My Dear...,NO,2
 fine-motion-titania,no_choices,something_special,Something Special,Stamina +5,3
@@ -3438,7 +3438,7 @@ curren-chan-ma-cherie,date,making_connections,Making Connections,Top::Guts +10||
 curren-chan-ma-cherie,date,universal_cutie,Universal Cutie,Top::Speed +5|Power +5||Bot::Speed +10||Mid::Speed +5|Wit +5,3
 curren-chan-ma-cherie,date,a_nostalgic_flavor,A Nostalgic Flavor,Top::Stamina +10||Bot::Power +10,4
 curren-chan-ma-cherie,date,rattle_rattle_clunk,"Rattle, Rattle, Clunk",Top::Wit +10||Bot::Stamina +10,5
-curren-chan-ma-cherie,secret,the_essence_of_cuteness,The Essence of Cuteness,conditions::Triggers at date 2|5|2||reward::Mood +1,1
+curren-chan-ma-cherie,secret,the_essence_of_cuteness,The Essence of Cuteness,conditions::Triggers during Late May Classic Year||reward::Mood +1,1
 curren-chan-ma-cherie,secret,summer_sprint_series_conquered,Summer Sprint Series Conquered!,conditions::Win the Hakodate Sprint Stakes (Senior)|Win the Keeneland Cup (Senior)|Win the Centaur Stakes (Senior)||reward::Energy +25|Mood +1|Speed +15|Power +15|Guts +15|Sprinting Gear hint +1,2
 curren-chan-ma-cherie,no_choices,my_cute_ambitions,My Cute Ambitions,Speed +10,1
 curren-chan-ma-cherie,no_choices,cute_posts,Cute Posts,Power +5,2
@@ -3480,8 +3480,8 @@ inari-one-inari-yukari-edomurasaki,date,helpers_exit_with_style,Helpers Exit wit
 inari-one-inari-yukari-edomurasaki,date,a_good_partner,A Good Partner,Top::Guts +10||Bot::Power +10||Mid::Stamina +10,3
 inari-one-inari-yukari-edomurasaki,date,i_don_t_mind_takin_care_of_others,I Don't Mind Takin' Care of Others,Top::Speed +10||Bot::Power +10,4
 inari-one-inari-yukari-edomurasaki,date,waitin_in_line_isn_t_so_bad,Waitin' in Line Isn't So Bad,Top::Power +10||Bot::Wit +10,5
-inari-one-inari-yukari-edomurasaki,secret,come_see_the_never_ending_festival,Come See the Never-Ending Festival!,"conditions::win_all:['202601|3', '101601|3', '101901|3', '102301|3']||reward::Power +15|Guts +15|Skill points +15|Eager hint +1",1
-inari-one-inari-yukari-edomurasaki,secret,behold_the_thunder_wind_and_light,"Behold the Thunder, Wind, and Light","conditions::win_n_of:2|['101201|2', '101601|2', '101901|2']||reward::Speed +20|Power +20|Skill points +20|All I've Got hint +1|Fighting Spirit hint +1",2
+inari-one-inari-yukari-edomurasaki,secret,come_see_the_never_ending_festival,Come See the Never-Ending Festival!,"conditions::win_all: ['202601|3', '101601|3', '101901|3', '102301|3']||reward::Power +15|Guts +15|Skill points +15|Eager hint +1",1
+inari-one-inari-yukari-edomurasaki,secret,behold_the_thunder_wind_and_light,"Behold the Thunder, Wind, and Light","conditions::win_n_of: 2|['101201|2', '101601|2', '101901|2']||reward::Speed +20|Power +20|Skill points +20|All I've Got hint +1|Fighting Spirit hint +1",2
 inari-one-inari-yukari-edomurasaki,no_choices,a_festival_needs_prep,A Festival Needs Prep,Guts +5,1
 inari-one-inari-yukari-edomurasaki,no_choices,flimsy_words_mean_diddly_squat,Flimsy Words Mean Diddly Squat,NO,2
 inari-one-inari-yukari-edomurasaki,no_choices,you_can_t_put_on_a_festival_alone,You Can't Put on a Festival Alone,Speed +10,3
@@ -3520,8 +3520,8 @@ sweep-tosho-platanus-witch,date,sweepy_and_the_magical_journey,Sweepy and the Ma
 sweep-tosho-platanus-witch,date,sweepy_and_the_legendary_teachings,Sweepy and the Legendary Teachings,Top::Wit +10||Bot::Guts +10||Mid::Power +10,3
 sweep-tosho-platanus-witch,date,i_m_taking_you_home,I'm Taking You Home!,Top::Power +10||Bot::Wit +10,4
 sweep-tosho-platanus-witch,date,i_don_t_wanna_go_home,I Don't Wanna Go Home!,Top::Power +10||Bot::Speed +10,5
-sweep-tosho-platanus-witch,secret,the_secret_of_the_hat,The Secret of the Hat,conditions::triple_tiara|use_strategy:4||reward::Speed +15|End Closer Corners ○ hint +1,1
-sweep-tosho-platanus-witch,secret,after_the_debut_bring_the_brat,After the Debut: Bring the Brat,conditions::participate:debut||reward::RR|SG,2
+sweep-tosho-platanus-witch,secret,the_secret_of_the_hat,The Secret of the Hat,conditions::triple_tiara|use_strategy: 4||reward::Speed +15|End Closer Corners ○ hint +1,1
+sweep-tosho-platanus-witch,secret,after_the_debut_bring_the_brat,After the Debut: Bring the Brat,conditions::Participate in the debut||reward::RR|SG,2
 sweep-tosho-platanus-witch,secret,after_the_takarazuka_kinen_a_strong_umamusume,After the Takarazuka Kinen: A Strong Umamusume,conditions::Win the Takarazuka Kinen (Senior)||reward::All stats +3|Skill points +45|Restraint hint +1|HP|Yayoi Akikawa bond +4,3
 sweep-tosho-platanus-witch,no_choices,household_of_magic,Household of Magic,Wit +5,1
 sweep-tosho-platanus-witch,no_choices,twinkle_twinkle,Twinkle Twinkle ☆,Power +5,2
@@ -3567,10 +3567,10 @@ taiki-shuttle-bubblegum-memories,date,rainy_rescue,Rainy Rescue,Top::Skill point
 taiki-shuttle-bubblegum-memories,date,let_s_patrol,Let's Patrol!,Top::Power +10||Bot::Energy +10,4
 taiki-shuttle-bubblegum-memories,date,going_home_together,Going Home Together,Top::Mood +1|Speed +5||Bot::Mood +1|Stamina +5,5
 taiki-shuttle-bubblegum-memories,secret,beyond_the_mile,Beyond the Mile,conditions::Win the Mile Championship (Classic)|Win the Kinko Sho|Win the Takarazuka Kinen (Senior)|Win the Mainichi Okan (Senior)|Win the Tenno Sho (Autumn) (Senior)||reward::Speed +25|Power +25|Guts +25|Skill points +50|All I've Got hint +1|No Looking Back hint +1|Head-On hint +1,1
-taiki-shuttle-bubblegum-memories,secret,silence_suzuka_awakening_1,Silence Suzuka: Awakening 1,conditions::do_not_race:3|3|1||reward::NO,2
-taiki-shuttle-bubblegum-memories,secret,silence_suzuka_awakening_2,Silence Suzuka: Awakening 2,conditions::do_not_race:3|6|2||reward::NO,3
-taiki-shuttle-bubblegum-memories,secret,silence_suzuka_awakening_3,Silence Suzuka: Awakening 3,conditions::do_not_race:3|10|1||reward::NO,4
-taiki-shuttle-bubblegum-memories,secret,silence_suzuka_awakening_4,Silence Suzuka: Awakening 4,conditions::do_not_race:3|10|2||reward::NO,5
+taiki-shuttle-bubblegum-memories,secret,silence_suzuka_awakening_1,Silence Suzuka: Awakening 1,conditions::do_not_race: 3|3|1||reward::NO,2
+taiki-shuttle-bubblegum-memories,secret,silence_suzuka_awakening_2,Silence Suzuka: Awakening 2,conditions::do_not_race: 3|6|2||reward::NO,3
+taiki-shuttle-bubblegum-memories,secret,silence_suzuka_awakening_3,Silence Suzuka: Awakening 3,conditions::do_not_race: 3|10|1||reward::NO,4
+taiki-shuttle-bubblegum-memories,secret,silence_suzuka_awakening_4,Silence Suzuka: Awakening 4,conditions::do_not_race: 3|10|2||reward::NO,5
 taiki-shuttle-bubblegum-memories,no_choices,racing_dreams,Racing Dreams,Speed +5,1
 taiki-shuttle-bubblegum-memories,no_choices,frontier_spirit,Frontier Spirit,Power +5,2
 taiki-shuttle-bubblegum-memories,no_choices,a_path_forward,A Path Forward,Power +5,3
@@ -3612,9 +3612,9 @@ mejiro-dober-vacances-saphir,date,friends_and_fangirls,Friends and Fangirls,Top:
 mejiro-dober-vacances-saphir,date,fluttering_hearts_at_sunset,Fluttering Hearts at Sunset,Top::Speed +10||Bot::Wit +10,5
 mejiro-dober-vacances-saphir,secret,an_ounce_of_courage,An Ounce of Courage,conditions::obj|Win the Hanshin Juvenile Fillies||reward::Wit +10,1
 mejiro-dober-vacances-saphir,secret,proof_of_progress,Proof of Progress,conditions::triple_tiara||reward::Mood +1|Speed +5|Stamina +5|Unyielding Spirit hint +1,2
-mejiro-dober-vacances-saphir,secret,after_the_tenno_sho_spring_blinding_brilliance,After the Tenno Sho (Spring): Blinding Brilliance,conditions::lose_to_rival:100601|1074||reward::RR,3
-mejiro-dober-vacances-saphir,secret,after_the_tenno_sho_spring_flickering_spring_light,After the Tenno Sho (Spring): Flickering Spring Light,conditions::beat_rival:100601|1074||reward::RR,4
-mejiro-dober-vacances-saphir,secret,from_admiring_to_admired,From Admiring to Admired,conditions::Win the Osaka Hai|Win the Takarazuka Kinen (Senior)|Win the Queen Elizabeth II Cup (Senior)|win_g1_year:3|5||reward::Speed +20|Power +20|All I've Got hint +1,5
+mejiro-dober-vacances-saphir,secret,after_the_tenno_sho_spring_blinding_brilliance,After the Tenno Sho (Spring): Blinding Brilliance,conditions::lose_to_rival: 100601|1074||reward::RR,3
+mejiro-dober-vacances-saphir,secret,after_the_tenno_sho_spring_flickering_spring_light,After the Tenno Sho (Spring): Flickering Spring Light,conditions::beat_rival: 100601|1074||reward::RR,4
+mejiro-dober-vacances-saphir,secret,from_admiring_to_admired,From Admiring to Admired,conditions::Win the Osaka Hai|Win the Takarazuka Kinen (Senior)|Win the Queen Elizabeth II Cup (Senior)|win_g1_year: 3|5||reward::Speed +20|Power +20|All I've Got hint +1,5
 mejiro-dober-vacances-saphir,no_choices,our_promise,Our Promise,Speed +5,1
 mejiro-dober-vacances-saphir,no_choices,a_trembling_heart,A Trembling Heart,Guts +5,2
 mejiro-dober-vacances-saphir,no_choices,heating_up,Heating Up,Stamina +5,3
@@ -3656,7 +3656,7 @@ air-shakur-unsigned,date,accessories_are_like_parts,Accessories Are like Parts,T
 air-shakur-unsigned,date,insane_consensus,Insane Consensus,Top::Wit +10||Bot::Power +10,5
 air-shakur-unsigned,secret,just_as_planned,Just as Planned!,conditions::spring_triple_crown||reward::Stamina +20|Power +20|Spring Runner ○ hint +1,1
 air-shakur-unsigned,secret,it_s_a_new_day,It's a New Day,conditions::autumn_triple_crown_senior||reward::Speed +20|Power +20|Fall Runner ○ hint +1,2
-air-shakur-unsigned,secret,before_the_japan_cup,Before the Japan Cup,conditions::Triggers at date 2|11|2||reward::SG,3
+air-shakur-unsigned,secret,before_the_japan_cup,Before the Japan Cup,conditions::Triggers during Late November Classic Year||reward::SG,3
 air-shakur-unsigned,secret,after_the_kikuka_sho_king_of_the_game,After the Kikuka Sho: King of the Game,conditions::triple_crown||reward::Speed +15|All stats +3|Skill points +45|Corner Adept ○ hint +1|Yayoi Akikawa bond +4,4
 air-shakur-unsigned,secret,after_the_japan_c_noise,After the Japan C.: Noise,conditions::Win the Japan Cup (Classic)||reward::All stats +3|Skill points +75|Fighting Spirit hint +1|SRE|BO_CH +4,5
 air-shakur-unsigned,no_choices,noizy_dayz,Noizy Dayz,Stamina +5,1
@@ -3821,7 +3821,7 @@ bamboo-memory-ambition-of-the-black-iron,date,bamboo_s_dilemma,Bamboo's Dilemma,
 bamboo-memory-ambition-of-the-black-iron,date,run_into_the_sunset,Run into the Sunset!,Top::Guts +10||Bot::Power +10||Mid::Speed +10,3
 bamboo-memory-ambition-of-the-black-iron,date,bamboo_and_the_troubled_student,Bamboo and the Troubled Student,Top::Wit +10||Bot::Stamina +10,4
 bamboo-memory-ambition-of-the-black-iron,date,swords_and_racing,Swords and Racing,Top::Speed +10||Bot::Guts +10,5
-bamboo-memory-ambition-of-the-black-iron,secret,i_m_the_best_of_the_best,I'm the BEST OF THE BEST!,conditions::Win the Sprinters Stakes|Win the Takamatsunomiya Kinen|y_dt_gn_race_no_w:3|dist|0|g|2||reward::Power +30|Guts +30|Sprint Straightaways ○ hint +1|Homestretch Haste hint +1,1
+bamboo-memory-ambition-of-the-black-iron,secret,i_m_the_best_of_the_best,I'm the BEST OF THE BEST!,conditions::Win the Sprinters Stakes|Win the Takamatsunomiya Kinen|y_dt_gn_race_no_w: 3|dist|0|g|2||reward::Power +30|Guts +30|Sprint Straightaways ○ hint +1|Homestretch Haste hint +1,1
 bamboo-memory-ambition-of-the-black-iron,no_choices,a_dream_like_a_fierce_blaze,A Dream like a Fierce Blaze!,Guts +5,1
 bamboo-memory-ambition-of-the-black-iron,no_choices,a_dream_of_cherry_blossoms_in_full_bloom,A Dream of Cherry Blossoms in Full Bloom!,Stamina +5,2
 bamboo-memory-ambition-of-the-black-iron,no_choices,till_we_race_again,Till We Race Again!,Speed +5,3
@@ -3861,14 +3861,14 @@ copano-rickey-yin-yang-bagua-lucky-costume,date,let_s_make_some_good_memories,Le
 copano-rickey-yin-yang-bagua-lucky-costume,date,a_customized_and_special_day,A Customized and Special Day,Top::Speed +10||Bot::Power +10||Mid::Wit +10,3
 copano-rickey-yin-yang-bagua-lucky-costume,date,happiness_luck_come_forth,Happiness! ☆ Luck! ☆ Come Forth!,Top::Wit +10||Bot::Guts +10,4
 copano-rickey-yin-yang-bagua-lucky-costume,date,a_happy_barbecue_for_one_and_all,A Happy Barbecue for One and All ☆,Top::Power +10||Bot::Speed +10,5
-copano-rickey-yin-yang-bagua-lucky-costume,secret,in_the_circle_of_light,In the Circle of Light,conditions::Triggers at date 2|6|2||reward::Speed +5|Get Ominous Portent status,1
-copano-rickey-yin-yang-bagua-lucky-costume,secret,eleven_stars_in_the_sky,Eleven Stars in the Sky,"conditions::win_g1_length:4|11||reward::Speed +25|Power +25|Wit +25|Skill points +30|Top Pick hint +1|Forward, March! hint +1",2
+copano-rickey-yin-yang-bagua-lucky-costume,secret,in_the_circle_of_light,In the Circle of Light,conditions::Triggers during Late June Classic Year||reward::Speed +5|Get Ominous Portent status,1
+copano-rickey-yin-yang-bagua-lucky-costume,secret,eleven_stars_in_the_sky,Eleven Stars in the Sky,"conditions::win_g1_length: 4|11||reward::Speed +25|Power +25|Wit +25|Skill points +30|Top Pick hint +1|Forward, March! hint +1",2
 copano-rickey-yin-yang-bagua-lucky-costume,secret,after_the_japanese_derby_the_spreading_dew,After the Japanese Derby: The Spreading Dew,conditions::Win the Tokyo Yushun (Japanese Derby)||reward::RR,3
 copano-rickey-yin-yang-bagua-lucky-costume,secret,after_the_jbc_classic_the_mark_of_a_winner,After the JBC Classic: The Mark of a Winner,conditions::Win the JBC Classic (Classic)||reward::RR,4
 copano-rickey-yin-yang-bagua-lucky-costume,secret,after_the_tokyo_daishoten_an_irresistible_vortex,After the Tokyo Daishoten: An Irresistible Vortex,conditions::Win the Tokyo Daishoten (Classic)||reward::RR,5
 copano-rickey-yin-yang-bagua-lucky-costume,secret,after_the_february_s_soaring_dragon,After the February S.: Soaring Dragon,conditions::Win the February Stakes (Senior)|never_won_g1_before||reward::Mood +1|All stats +8|Skill points +65|HE|BO_CH +4,6
 copano-rickey-yin-yang-bagua-lucky-costume,secret,after_the_february_s_proof_of_the_dragon_s_ascension,After the February S.: Proof of the Dragon's Ascension,conditions::Win the February Stakes (Senior)|won_g1_before||reward::Mood +2|All stats +8|Skill points +65|HE|BO_CH +4,7
-copano-rickey-yin-yang-bagua-lucky-costume,secret,after_the_february_s_win_or_lose_take_to_the_sky,"After the February S.: Win or Lose, Take to the Sky",conditions::lose:100101|3||reward::Mood +2|All stats +7|Skill points +65|HE|BO_CH +4|Mood +2|All stats +6|Skill points +65|HE|BO_CH +4,8
+copano-rickey-yin-yang-bagua-lucky-costume,secret,after_the_february_s_win_or_lose_take_to_the_sky,"After the February S.: Win or Lose, Take to the Sky",conditions::lose: 100101|3||reward::Mood +2|All stats +7|Skill points +65|HE|BO_CH +4|Mood +2|All stats +6|Skill points +65|HE|BO_CH +4,8
 copano-rickey-yin-yang-bagua-lucky-costume,secret,after_the_kashiwa_kinen_but_i_won_t_sing,After the Kashiwa Kinen: But I Won't Sing,conditions::Win the Kashiwa Kinen (Senior)||reward::All stats +3|Skill points +45|Sunny Sign hint +1|BO_CH +4,9
 copano-rickey-yin-yang-bagua-lucky-costume,no_choices,let_long_held_relationships_flow_like_rivers,Let Long-Held Relationships Flow like Rivers,Wit +5,1
 copano-rickey-yin-yang-bagua-lucky-costume,no_choices,which_path_should_i_take,Which Path Should I Take?,Guts +5,2
@@ -3910,7 +3910,7 @@ smart-falcon-twilight-triumph,date,sharing_memories,Sharing ☆ Memories,Top::St
 smart-falcon-twilight-triumph,date,location_scouting,Location ☆ Scouting,Top::Wit +10||Bot::Power +10,5
 smart-falcon-twilight-triumph,secret,coming_to_a_city_near_you,Coming to a City Near You ☆,Get Fan Promise (Hokkaido) status|!Randomly either|Get Fan Promise (Hokuto) status|!Randomly either|Get Fan Promise (Nakayama) status|!Randomly either|Get Fan Promise (Kansai) status|!Randomly either|Get Fan Promise (Kokura) status|!Randomly either|Get Idol's Promise (Kawasaki) status,1
 smart-falcon-twilight-triumph,secret,connecting_inspiration,Connecting ☆ Inspiration,conditions::win_connect_live||reward::Mood +1|UNSPECIFIED_STATS +10|Skill points +10|TRACK_HINT +5,2
-smart-falcon-twilight-triumph,secret,center_of_everyone_s_heart,Center of Everyone's Heart ☆,conditions::fans_before_finals:120000||reward::Mood +1|Guts +20|Top Pick hint +1,3
+smart-falcon-twilight-triumph,secret,center_of_everyone_s_heart,Center of Everyone's Heart ☆,conditions::fans_before_finals: 120000||reward::Mood +1|Guts +20|Top Pick hint +1,3
 smart-falcon-twilight-triumph,secret,after_the_kawasaki_kinen_hearts_aflutter,After the Kawasaki Kinen: Hearts Aflutter!,conditions::Win the Kawasaki Kinen||reward::Energy -15|Power +20|1 random stat +10|Skill points +45|Kawasaki Racecourse ○ hint +1|Sunny Sign hint +1,4
 smart-falcon-twilight-triumph,no_choices,looking_to_the_otherworldly,Looking to the Otherworldly ☆,Speed +10,1
 smart-falcon-twilight-triumph,no_choices,the_next_grand_prix_girl,The Next Grand Prix ☆ Girl!,Power +5,2
@@ -3950,7 +3950,7 @@ winning-ticket-dream-deliverer,date,futsal_now,"Futsal, Now?!",Top::Guts +10||Bo
 winning-ticket-dream-deliverer,date,the_last_ticket,The Last Ticket,Top::Guts +10||Bot::Speed +10||Mid::Power +10,3
 winning-ticket-dream-deliverer,date,shake_off_your_blues,Shake Off Your Blues!,Top::Mood +1|Power +5||Bot::Speed +5|Skill points +15,4
 winning-ticket-dream-deliverer,date,big_girls_cry_too,Big Girls Cry Too,Top::Guts +5|Skill points +15||Bot::Mood +1|Power +5,5
-winning-ticket-dream-deliverer,secret,temporary_truce,Temporary Truce,"conditions::win_n_of:1|['102201|1', '100501|2', '101001|2', '101501|2', '102301|2', '100301|3', '100601|3', '101201|3', '102301|3']|Triggers at date 3|12|2||reward::W_E|Speed +15|Power +15|Skill points +15|Outer Swell hint +1|W_E|Speed +10|Power +10|W_E|Speed +10",1
+winning-ticket-dream-deliverer,secret,temporary_truce,Temporary Truce,"conditions::win_n_of: 1|['102201|1', '100501|2', '101001|2', '101501|2', '102301|2', '100301|3', '100601|3', '101201|3', '102301|3']|Triggers during Late December Senior Year||reward::W_E|Speed +15|Power +15|Skill points +15|Outer Swell hint +1|W_E|Speed +10|Power +10|W_E|Speed +10",1
 winning-ticket-dream-deliverer,no_choices,rivals,Rivals,Stamina +5,1
 winning-ticket-dream-deliverer,no_choices,i_wanna_win,I Wanna Win!,Guts +5,2
 winning-ticket-dream-deliverer,no_choices,what_makes_a_good_race,What Makes a Good Race,Guts +5,3
@@ -4034,7 +4034,7 @@ yukino-bijin-cute-sweet-flower-of-mutsu,date,journey_through_the_stars,Journey T
 yukino-bijin-cute-sweet-flower-of-mutsu,date,gotta_stay_quiet,Gotta Stay Quiet,Top::Speed +10||Bot::Guts +10,5
 yukino-bijin-cute-sweet-flower-of-mutsu,secret,the_path_beyond_the_tiara,The Path Beyond the Tiara,conditions::triple_tiara|Win the Hanshin Juvenile Fillies||reward::Guts +10|Wit +10|Skill points +10|Corner Acceleration ○ hint +1|Head-On hint +1|SC|Guts +10|Wit +10|Skill points +10|RESULT_BAD|Guts +5|Wit +5,1
 yukino-bijin-cute-sweet-flower-of-mutsu,secret,after_the_mile_ch_nambu_hai_dazzl_n_ties,After the Mile Ch. Nambu Hai: Dazzl'n Ties,conditions::Win the M.C. Nambu Hai (Classic)||reward::Energy -15|1 random stat +10|Power +20|Guts +10|Skill points +45|Morioka Racecourse ○ hint +1|Full Tilt hint +1,2
-yukino-bijin-cute-sweet-flower-of-mutsu,secret,after_the_mile_ch_nambu_hai_dazzl_n_ties,After the Mile Ch. Nambu Hai: Dazzl'n Ties,conditions::do_not_win:111001|2|Win the M.C. Nambu Hai (Senior)||reward::Energy -15|1 random stat +10|Power +20|Guts +10|Skill points +45|Morioka Racecourse ○ hint +1|Full Tilt hint +1,3
+yukino-bijin-cute-sweet-flower-of-mutsu,secret,after_the_mile_ch_nambu_hai_dazzl_n_ties,After the Mile Ch. Nambu Hai: Dazzl'n Ties,conditions::do_not_win: 111001|2|Win the M.C. Nambu Hai (Senior)||reward::Energy -15|1 random stat +10|Power +20|Guts +10|Skill points +45|Morioka Racecourse ○ hint +1|Full Tilt hint +1,3
 yukino-bijin-cute-sweet-flower-of-mutsu,no_choices,dazzl_n_admiration,Dazzl'n Admiration,Power +5,1
 yukino-bijin-cute-sweet-flower-of-mutsu,no_choices,blow_n_up,Blow'n Up!,Guts +5,2
 yukino-bijin-cute-sweet-flower-of-mutsu,no_choices,shining_in_the_night,Shining in the Night,Speed +5,3
@@ -4117,8 +4117,8 @@ agnes-digital-agnesjiangshi,date,the_oshi_report_peak_arc,The Oshi Report –Pea
 agnes-digital-agnesjiangshi,date,the_oshi_report_recognition_arc,The Oshi Report –Recognition Arc–,Top::Guts +10||Bot::Speed +10||Mid::Skill points +30,3
 agnes-digital-agnesjiangshi,date,the_best_life_is_the_simp_life,The Best Life Is the Simp Life,Top::Speed +10||Bot::Guts +10,4
 agnes-digital-agnesjiangshi,date,oshi_proximity_alert,Oshi Proximity Alert?!,Top::Power +10||Bot::Energy +10,5
-agnes-digital-agnesjiangshi,secret,all_round_ruler,All-Round Ruler,conditions::win_or:102101|102201|Win the Oka Sho|Win the NHK Mile Cup|win_or:101801|2|101801|3|Win the February Stakes|Win the Victoria Mile|win_or:101101|2|101101|3||reward::Speed +20|Power +20|Skill points +30|Updrafters hint +1|Unyielding Spirit hint +1,1
-agnes-digital-agnesjiangshi,secret,after_the_takarazuka_kinen_on_fire_like_no_one_s_ever_seen,After the Takarazuka Kinen: On Fire Like No One's Ever Seen,conditions::participate:101201|2||reward::1 random stat +4/+5/+10|Skill points +25/+40/+45,2
+agnes-digital-agnesjiangshi,secret,all_round_ruler,All-Round Ruler,conditions::win_or: 102101|102201|Win the Oka Sho|Win the NHK Mile Cup|win_or: 101801|2|101801|3|Win the February Stakes|Win the Victoria Mile|win_or: 101101|2|101101|3||reward::Speed +20|Power +20|Skill points +30|Updrafters hint +1|Unyielding Spirit hint +1,1
+agnes-digital-agnesjiangshi,secret,after_the_takarazuka_kinen_on_fire_like_no_one_s_ever_seen,After the Takarazuka Kinen: On Fire Like No One's Ever Seen,conditions::Participate in the Takarazuka Kinen (Classic)||reward::1 random stat +4/+5/+10|Skill points +25/+40/+45,2
 agnes-digital-agnesjiangshi,secret,after_the_mile_ch_nambu_hai_this_is_heaven,After the Mile Ch. Nambu Hai: This Is Heaven,conditions::Win the M.C. Nambu Hai||reward::Energy -15|Speed +5|Stamina +5|Power +10|1 random stat +10|Skill points +45|Morioka Racecourse ○ hint +1|Rapid Gain hint +1,3
 agnes-digital-agnesjiangshi,no_choices,no_backseating,No Backseating!,Wit +5,1
 agnes-digital-agnesjiangshi,no_choices,what_comes_of_connecting,What Comes of Connecting,Power +5,2
@@ -4160,8 +4160,8 @@ meisho-doto-dot-o-lantern,date,lost_and_alone,Lost and Alone,Top::Stamina +10||B
 meisho-doto-dot-o-lantern,date,are_my_feelings_reaching_you,Are My Feelings Reaching You?,Top::Power +10||Bot::Speed +10||Mid::Guts +10,3
 meisho-doto-dot-o-lantern,date,twilight_ice_cream,Twilight Ice Cream,Top::Wit +10||Bot::Speed +5|Stamina +5,4
 meisho-doto-dot-o-lantern,date,equivalent_exchange,Equivalent Exchange?,Top::Speed +10||Bot::Wit +10,5
-meisho-doto-dot-o-lantern,secret,after_the_debut_feeling_dizzy,After the Debut: Feeling... Dizzy...,conditions::participate:debut||reward::All stats +3|Skill points +20|Get Not Ready status|Yayoi Akikawa bond +4,1
-meisho-doto-dot-o-lantern,secret,goal_achieved_a_fallen_star,Goal Achieved: A Fallen Star,conditions::fan:15000|Triggers at date 2|10|2||reward::All stats +3|Skill points +20|HE +1|Yayoi Akikawa bond +4,2
+meisho-doto-dot-o-lantern,secret,after_the_debut_feeling_dizzy,After the Debut: Feeling... Dizzy...,conditions::Participate in the debut||reward::All stats +3|Skill points +20|Get Not Ready status|Yayoi Akikawa bond +4,1
+meisho-doto-dot-o-lantern,secret,goal_achieved_a_fallen_star,Goal Achieved: A Fallen Star,conditions::fan: 15000|Triggers during Late October Classic Year||reward::All stats +3|Skill points +20|HE +1|Yayoi Akikawa bond +4,2
 meisho-doto-dot-o-lantern,secret,triumph_i_m_the_overlord,Triumph! I'm the Overlord?!,conditions::Win the Satsuki Sho|Win the Tenno Sho (Spring)|Win the Takarazuka Kinen (Senior)|Win the Tenno Sho (Autumn) (Senior)|Win the Japan Cup (Senior)|Win the Arima Kinen (Senior)||reward::All stats +10|Skill points +20|Prepared to Pass hint +1|Up-Tempo hint +1,3
 meisho-doto-dot-o-lantern,no_choices,the_derby_already,The Derby?! Already?!,Power +5,1
 meisho-doto-dot-o-lantern,no_choices,arrival_of_the_lone_star,Arrival of the Lone Star,Stamina +5,2
@@ -4204,8 +4204,8 @@ aston-machan-flare,date,where_s_your_lens_pointing,Where's Your Lens Pointing?,T
 aston-machan-flare,date,even_when_i_make_it_big_someday,Even When I Make It Big Someday,Top::Stamina +10||Bot::Speed +10||Mid::Wit +10,3
 aston-machan-flare,date,toby_the_kid_and_the_stolen_ham_cutlet,Toby the Kid and the Stolen Ham Cutlet,Top::Wit +10||Bot::Power +10,4
 aston-machan-flare,date,machan_wants_to_forget,Machan Wants to Forget,Top::Guts +10||Bot::Wit +10,5
-aston-machan-flare,secret,tell_machan,Tell Machan,"conditions::win_n_of:4|[102101, 401401, 100401, 100801, '101101|3', '202601|3']|Triggers at date 3|12|2||reward::Speed +20|Guts +20|Skill points +30|Shifting Gears hint +1",1
-aston-machan-flare,secret,say_it_to_machan_too,"Say It to Machan, Too","conditions::win_n_of:3|[406801, 300301, 100401, 202201]|Triggers at date 2|12|2||reward::Power +20|Wit +20|Skill points +30|Productive Plan hint +1",2
+aston-machan-flare,secret,tell_machan,Tell Machan,"conditions::win_n_of: 4|[102101, 401401, 100401, 100801, '101101|3', '202601|3']|Triggers during Late December Senior Year||reward::Speed +20|Guts +20|Skill points +30|Shifting Gears hint +1",1
+aston-machan-flare,secret,say_it_to_machan_too,"Say It to Machan, Too","conditions::win_n_of: 3|[406801, 300301, 100401, 202201]|Triggers during Late December Classic Year||reward::Power +20|Wit +20|Skill points +30|Productive Plan hint +1",2
 aston-machan-flare,secret,after_the_shuka_sho_machan_s_here_too,After the Shuka Sho: Machan's Here Too,conditions::Win the Shuka Sho||reward::RR|Rosy Outlook hint +1,3
 aston-machan-flare,secret,after_the_tenno_sho_autumn_a_legendary_clash,After the Tenno Sho (Autumn): A Legendary Clash,conditions::Win the Tenno Sho (Autumn) (Senior)||reward::RR|Up-Tempo hint +1,4
 aston-machan-flare,no_choices,the_cherry_blossoms_must_be_in_full_bloom,The Cherry Blossoms Must Be in Full Bloom,Guts +5,1
@@ -4330,8 +4330,8 @@ inari-one-fields-of-gold,date,helpers_exit_with_style,Helpers Exit with Style,To
 inari-one-fields-of-gold,date,a_good_partner,A Good Partner,Top::Guts +10||Bot::Power +10||Mid::Stamina +10,3
 inari-one-fields-of-gold,date,i_don_t_mind_takin_care_of_others,I Don't Mind Takin' Care of Others,Top::Speed +10||Bot::Power +10,4
 inari-one-fields-of-gold,date,waitin_in_line_isn_t_so_bad,Waitin' in Line Isn't So Bad,Top::Power +10||Bot::Wit +10,5
-inari-one-fields-of-gold,secret,come_see_the_never_ending_festival,Come See the Never-Ending Festival!,"conditions::win_all:['202601|3', '101601|3', '101901|3', '102301|3']||reward::Power +15|Guts +15|Skill points +15|Eager hint +1",1
-inari-one-fields-of-gold,secret,behold_the_thunder_wind_and_light,"Behold the Thunder, Wind, and Light","conditions::win_n_of:2|['101201|2', '101601|2', '101901|2']||reward::Speed +20|Power +20|Skill points +20|All I've Got hint +1|Fighting Spirit hint +1",2
+inari-one-fields-of-gold,secret,come_see_the_never_ending_festival,Come See the Never-Ending Festival!,"conditions::win_all: ['202601|3', '101601|3', '101901|3', '102301|3']||reward::Power +15|Guts +15|Skill points +15|Eager hint +1",1
+inari-one-fields-of-gold,secret,behold_the_thunder_wind_and_light,"Behold the Thunder, Wind, and Light","conditions::win_n_of: 2|['101201|2', '101601|2', '101901|2']||reward::Speed +20|Power +20|Skill points +20|All I've Got hint +1|Fighting Spirit hint +1",2
 inari-one-fields-of-gold,no_choices,a_festival_needs_prep,A Festival Needs Prep,Guts +5,1
 inari-one-fields-of-gold,no_choices,flimsy_words_mean_diddly_squat,Flimsy Words Mean Diddly Squat,NO,2
 inari-one-fields-of-gold,no_choices,you_can_t_put_on_a_festival_alone,You Can't Put on a Festival Alone,Speed +10,3
@@ -4371,7 +4371,7 @@ nakayama-festa-dramatic-turnabout,date,shaking_catwalk,Shaking Catwalk,Top::Powe
 nakayama-festa-dramatic-turnabout,date,the_awakened_risk_junkie,The Awakened Risk-Junkie,Top::Guts +10||Bot::Power +10||Mid::Stamina +10,3
 nakayama-festa-dramatic-turnabout,date,too_young_for_the_thrill,Too Young for the Thrill,Top::Guts +10||Bot::Speed +10,4
 nakayama-festa-dramatic-turnabout,date,seeking_excitement,Seeking Excitement,Top::Stamina +10||Bot::Wit +10,5
-nakayama-festa-dramatic-turnabout,secret,the_gold_beyond_the_ship,The Gold Beyond the Ship,conditions::Win the Kikuka Sho (Classic)|Win the Tenno Sho (Spring) (Senior)|Win the Takarazuka Kinen (Senior)|Win the Tenno Sho (Autumn) (Senior)|Win the Japan Cup (Senior)|Win the Arima Kinen (Senior)|Triggers at date 3|12|2||reward::Speed +30|Stamina +30|Skill points +35|Nimble Navigator hint +1|Be Still hint +1,1
+nakayama-festa-dramatic-turnabout,secret,the_gold_beyond_the_ship,The Gold Beyond the Ship,conditions::Win the Kikuka Sho (Classic)|Win the Tenno Sho (Spring) (Senior)|Win the Takarazuka Kinen (Senior)|Win the Tenno Sho (Autumn) (Senior)|Win the Japan Cup (Senior)|Win the Arima Kinen (Senior)|Triggers during Late December Senior Year||reward::Speed +30|Stamina +30|Skill points +35|Nimble Navigator hint +1|Be Still hint +1,1
 nakayama-festa-dramatic-turnabout,secret,after_the_takarazuka_kinen_loud_and_proud,After the Takarazuka Kinen: Loud and Proud,conditions::Win the Takarazuka Kinen (Senior)||reward::RR|Slick Surge hint +1,2
 nakayama-festa-dramatic-turnabout,no_choices,the_howl_from_outside_the_pack,The Howl from Outside the Pack,Wit +5,1
 nakayama-festa-dramatic-turnabout,no_choices,the_taste_of_dust_clouds,The Taste of Dust Clouds,Power +5,2

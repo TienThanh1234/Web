@@ -1,1 +1,543 @@
 character_slug,title,requirement,sort_order
+haru-urara-uraran-first-prize,Hard-Trying Haru Urara,Earn a total of at least 550000 fans,1
+haru-urara-first-urara-saku-sakura,Hard-Trying Haru Urara,Earn a total of at least 550000 fans,1
+air-groove-empress-road,Empress,Inherit memories from a parent that won the Japanese Oaks,1
+air-groove-empress-road,Empress,Earn a total of at least 320000 fans,2
+air-groove-empress-road,Empress,Win the Japanese Oaks,3
+air-groove-empress-road,Empress,Win the Tenno Sho (Autumn),4
+air-groove-quercus-civilis,Empress,Inherit memories from a parent that won the Japanese Oaks,1
+air-groove-quercus-civilis,Empress,Earn a total of at least 320000 fans,2
+air-groove-quercus-civilis,Empress,Win the Japanese Oaks,3
+air-groove-quercus-civilis,Empress,Win the Tenno Sho (Autumn),4
+gold-city-authentic-1928,Beauty of the Century,Win the Hanshin Juvenile Fillies,1
+gold-city-authentic-1928,Beauty of the Century,"Be at a Mood level of Perfect and don't have either the Slow Metabolism, Skin Outbreak or Slacker condition for all races",2
+gold-city-authentic-1928,Beauty of the Century,Raise the level of all trainings to at least 3,3
+gold-city-authentic-1928,Beauty of the Century,Complete the Career,4
+gold-city-akizakura-danzatrice,Beauty of the Century,Win the Hanshin Juvenile Fillies,1
+gold-city-akizakura-danzatrice,Beauty of the Century,"Be at a Mood level of Perfect and don't have either the Slow Metabolism, Skin Outbreak or Slacker condition for all races",2
+gold-city-akizakura-danzatrice,Beauty of the Century,Raise the level of all trainings to at least 3,3
+gold-city-akizakura-danzatrice,Beauty of the Century,Complete the Career,4
+rice-shower-rose-dream,Sable Assassin,Participate in at least 23 graded races,1
+rice-shower-rose-dream,Sable Assassin,Win the Kikuka Sho as the 2nd most or most popular,2
+rice-shower-rose-dream,Sable Assassin,Win the Tenno Sho (Spring) as the 2nd most or most popular,3
+rice-shower-rose-dream,Sable Assassin,Earn a total of at least 320000 fans,4
+rice-shower-make-up-vampire,Sable Assassin,Participate in at least 23 graded races,1
+rice-shower-make-up-vampire,Sable Assassin,Win the Kikuka Sho as the 2nd most or most popular,2
+rice-shower-make-up-vampire,Sable Assassin,Win the Tenno Sho (Spring) as the 2nd most or most popular,3
+rice-shower-make-up-vampire,Sable Assassin,Earn a total of at least 320000 fans,4
+eishin-flash-meisterschaft,Blinding Flash,Win the Tokyo Yushun (Japanese Derby) as a Late Surger,1
+eishin-flash-meisterschaft,Blinding Flash,Win the Tenno Sho (Autumn) as a Late Surger,2
+eishin-flash-meisterschaft,Blinding Flash,Complete the Career with the Fast Learner condition,3
+eishin-flash-collectchocolatier,Blinding Flash,Win the Tokyo Yushun (Japanese Derby) as a Late Surger,1
+eishin-flash-collectchocolatier,Blinding Flash,Win the Tenno Sho (Autumn) as a Late Surger,2
+eishin-flash-collectchocolatier,Blinding Flash,Complete the Career with the Fast Learner condition,3
+winning-ticket-go-to-winning,Herald of a New Age,Win the Yayoi Sho as the most popular,1
+winning-ticket-go-to-winning,Herald of a New Age,Win the Satsuki Sho as the most popular,2
+winning-ticket-go-to-winning,Herald of a New Age,Win the Tokyo Yushun (Japanese Derby) as the most popular,3
+winning-ticket-go-to-winning,Herald of a New Age,Win the Kikuka Sho as the most popular,4
+winning-ticket-go-to-winning,Herald of a New Age,Win the [[race|102301|2]],5
+winning-ticket-go-to-winning,Herald of a New Age,Earn a total of at least 240000 fans,6
+winning-ticket-dream-deliverer,Herald of a New Age,Win the Yayoi Sho as the most popular,1
+winning-ticket-dream-deliverer,Herald of a New Age,Win the Satsuki Sho as the most popular,2
+winning-ticket-dream-deliverer,Herald of a New Age,Win the Tokyo Yushun (Japanese Derby) as the most popular,3
+winning-ticket-dream-deliverer,Herald of a New Age,Win the Kikuka Sho as the most popular,4
+winning-ticket-dream-deliverer,Herald of a New Age,Win the [[race|102301|2]],5
+winning-ticket-dream-deliverer,Herald of a New Age,Earn a total of at least 240000 fans,6
+agnes-tachyon-tach-nology,Faster than Light,Inherit memories from a parent with at least S rank,1
+agnes-tachyon-tach-nology,Faster than Light,"Win the Hopeful Stakes, Yayoi Sho, and Satsuki Sho without losing any other races",2
+agnes-tachyon-tach-nology,Faster than Light,Reach 1200 or more Speed,3
+special-week-special-dreamer,Ruler of Japan,Win the Tokyo Yushun (Japanese Derby) with a difference of at least 5 lengths while also being the most popular,1
+special-week-special-dreamer,Ruler of Japan,Win the Tenno Sho (Spring),2
+special-week-special-dreamer,Ruler of Japan,Win the Tenno Sho (Autumn),3
+special-week-special-dreamer,Ruler of Japan,Win the Japan Cup,4
+special-week-hopping-vitamin-heart,Ruler of Japan,Win the Tokyo Yushun (Japanese Derby) with a difference of at least 5 lengths while also being the most popular,1
+special-week-hopping-vitamin-heart,Ruler of Japan,Win the Tenno Sho (Spring),2
+special-week-hopping-vitamin-heart,Ruler of Japan,Win the Tenno Sho (Autumn),3
+special-week-hopping-vitamin-heart,Ruler of Japan,Win the Japan Cup,4
+special-week-supreme-commander-of-the-rising-sun,Ruler of Japan,Win the Tokyo Yushun (Japanese Derby) with a difference of at least 5 lengths while also being the most popular,1
+special-week-supreme-commander-of-the-rising-sun,Ruler of Japan,Win the Tenno Sho (Spring),2
+special-week-supreme-commander-of-the-rising-sun,Ruler of Japan,Win the Tenno Sho (Autumn),3
+special-week-supreme-commander-of-the-rising-sun,Ruler of Japan,Win the Japan Cup,4
+silence-suzuka-silent-innocence,Otherworldly Front-Runner,"Without losing any races inbetween, win at least 6 graded races while using the Front Runner strategy and being the most popular, with one of them being the Takarazuka Kinen",1
+silence-suzuka-silent-innocence,Otherworldly Front-Runner,Win the Takarazuka Kinen while staying in the lead from the 200m mark to the goal line,2
+el-condor-pasa-el-numero-1,Phantom Bird,Finish 2nd or better in every race,1
+el-condor-pasa-el-numero-1,Phantom Bird,Win the [[race|101901|2]] as a Pace Chaser,2
+el-condor-pasa-el-numero-1,Phantom Bird,Earn a total of at least 320000 fans,3
+el-condor-pasa-el-numero-1,Phantom Bird,Complete the Career,4
+el-condor-pasa-kukulkan-monk,Phantom Bird,Finish 2nd or better in every race,1
+el-condor-pasa-kukulkan-monk,Phantom Bird,Win the [[race|101901|2]] as a Pace Chaser,2
+el-condor-pasa-kukulkan-monk,Phantom Bird,Earn a total of at least 320000 fans,3
+el-condor-pasa-kukulkan-monk,Phantom Bird,Complete the Career,4
+maruzensky-rouge-formula,Hot Rod,Win 8 consecutive races while being undefeated,1
+maruzensky-rouge-formula,Hot Rod,Have an average win length difference of at least 7 lengths,2
+maruzensky-blasting-off-summer-night,Hot Rod,Win 8 consecutive races while being undefeated,1
+maruzensky-blasting-off-summer-night,Hot Rod,Have an average win length difference of at least 7 lengths,2
+mayano-top-gun-scramble-zone,Free Spirit,Win a G1 race as a Front Runner,1
+mayano-top-gun-scramble-zone,Free Spirit,Win a G1 race as a Pace Chaser,2
+mayano-top-gun-scramble-zone,Free Spirit,Win a G1 race as a Late Surger,3
+mayano-top-gun-scramble-zone,Free Spirit,Win a G1 race as a End Closer,4
+mayano-top-gun-sunlight-bouquet,Free Spirit,Win a G1 race as a Front Runner,1
+mayano-top-gun-sunlight-bouquet,Free Spirit,Win a G1 race as a Pace Chaser,2
+mayano-top-gun-sunlight-bouquet,Free Spirit,Win a G1 race as a Late Surger,3
+mayano-top-gun-sunlight-bouquet,Free Spirit,Win a G1 race as a End Closer,4
+sakura-bakushin-o-sakura-forward,Bakushin King,Win 11 races with a length of 1400m or lower,1
+sakura-bakushin-o-sakura-forward,Bakushin King,Win the [[race|101301|3]] with a difference of at least 4 lengths while being the most popular,2
+super-creek-murmuring-stream,Speedy Stayer,Win the Kikuka Sho with difference of at least 5 lengths,1
+super-creek-murmuring-stream,Speedy Stayer,"Win 6 graded races with a length of 2400m or higher, including the Tenno Sho (Spring)",2
+super-creek-chiffon-ribbon-mummy,Speedy Stayer,Win the Kikuka Sho with difference of at least 5 lengths,1
+super-creek-chiffon-ribbon-mummy,Speedy Stayer,"Win 6 graded races with a length of 2400m or higher, including the Tenno Sho (Spring)",2
+grass-wonder-rock-piercing-blue,Phoenix,Win the Asahi Hai Futurity Stakes with a Mood level of Good or lower,1
+grass-wonder-rock-piercing-blue,Phoenix,Win the [[race|102301|2]] with a Mood level of Good or lower,2
+grass-wonder-rock-piercing-blue,Phoenix,Win the [[race|101201|3]] with a Mood level of Good or lower,3
+grass-wonder-rock-piercing-blue,Phoenix,Win the [[race|102301|3]] with a Mood level of Good or lower,4
+grass-wonder-saint-jade-healer,Phoenix,Win the Asahi Hai Futurity Stakes with a Mood level of Good or lower,1
+grass-wonder-saint-jade-healer,Phoenix,Win the [[race|102301|2]] with a Mood level of Good or lower,2
+grass-wonder-saint-jade-healer,Phoenix,Win the [[race|101201|3]] with a Mood level of Good or lower,3
+grass-wonder-saint-jade-healer,Phoenix,Win the [[race|102301|3]] with a Mood level of Good or lower,4
+vodka-wild-top-gear,Extraordinary Empress,"Win 7 G1 races, including the Tokyo Yushun (Japanese Derby), Yasuda Kinen, Japan Cup, Tenno Sho (Autumn), and Victoria Mile",1
+daiwa-scarlet-top-of-blue,Miss Perfect,Inherit memories from a parent that won the Satsuki Sho,1
+daiwa-scarlet-top-of-blue,Miss Perfect,Finish 2nd or better in every race you participate in,2
+daiwa-scarlet-top-of-blue,Miss Perfect,"Win 10 graded races, including the Oka Sho, Shuka Sho and Queen Elizabeth II Cup",3
+tokai-teio-top-of-joyful,Monarch,Inherit memories from a parent that won at least 7 G1 races,1
+tokai-teio-top-of-joyful,Monarch,Be the most popular in at least 4 G1 races,2
+tokai-teio-top-of-joyful,Monarch,Win the Satsuki Sho and Tokyo Yushun (Japanese Derby) while being undefeated,3
+tokai-teio-top-of-joyful,Monarch,Win the [[race|102301|3]],4
+tokai-teio-beyond-the-horizon,Monarch,Inherit memories from a parent that won at least 7 G1 races,1
+tokai-teio-beyond-the-horizon,Monarch,Be the most popular in at least 4 G1 races,2
+tokai-teio-beyond-the-horizon,Monarch,Win the Satsuki Sho and Tokyo Yushun (Japanese Derby) while being undefeated,3
+tokai-teio-beyond-the-horizon,Monarch,Win the [[race|102301|3]],4
+gold-ship-red-strife,Unpredictable,"Win at least 6 G1 races, including the Satsuki Sho, Kikuka Sho, and Takarazuka Kinen",1
+gold-ship-red-strife,Unpredictable,Earn a total of at least 480000 fans,2
+gold-ship-run-fun-watergun,Unpredictable,"Win at least 6 G1 races, including the Satsuki Sho, Kikuka Sho, and Takarazuka Kinen",1
+gold-ship-run-fun-watergun,Unpredictable,Earn a total of at least 480000 fans,2
+symboli-rudolf-road-of-emperor,Emperor,"Win the Satsuki Sho, Tokyo Yushun (Japanese Derby) and Kikuka Sho while being undefeated",1
+symboli-rudolf-road-of-emperor,Emperor,Win the Japan Cup,2
+symboli-rudolf-road-of-emperor,Emperor,Win the Tenno Sho (Spring),3
+symboli-rudolf-road-of-emperor,Emperor,Win the Arima Kinen twice,4
+symboli-rudolf-archer-of-the-white-moon,Emperor,"Win the Satsuki Sho, Tokyo Yushun (Japanese Derby) and Kikuka Sho while being undefeated",1
+symboli-rudolf-archer-of-the-white-moon,Emperor,Win the Japan Cup,2
+symboli-rudolf-archer-of-the-white-moon,Emperor,Win the Tenno Sho (Spring),3
+symboli-rudolf-archer-of-the-white-moon,Emperor,Win the Arima Kinen twice,4
+matikanefukukitaru-rising-luck-flood-of-happiness,Fortune's Smile,Participate in at least 15 G1 or G2 races with a Mood level of Perfect,1
+matikanefukukitaru-rising-luck-flood-of-happiness,Fortune's Smile,"Win at least 3 G2 or higher races in a row, including the Kikuka Sho",2
+matikanefukukitaru-good-omenfirst-storm,Fortune's Smile,Participate in at least 15 G1 or G2 races with a Mood level of Perfect,1
+matikanefukukitaru-good-omenfirst-storm,Fortune's Smile,"Win at least 3 G2 or higher races in a row, including the Kikuka Sho",2
+fuji-kiseki-shooting-star-revue,Enchanting Triple Crown,Win the Make Debut with a difference of at least 8 lengths,1
+fuji-kiseki-shooting-star-revue,Enchanting Triple Crown,Win the Asahi Hai Futurity Stakes as the most popular,2
+fuji-kiseki-shooting-star-revue,Enchanting Triple Crown,Win the Satsuki Sho as the most popular,3
+fuji-kiseki-shooting-star-revue,Enchanting Triple Crown,Win the Tokyo Yushun (Japanese Derby) as the most popular,4
+fuji-kiseki-shooting-star-revue,Enchanting Triple Crown,Win the Kikuka Sho as the most popular,5
+fuji-kiseki-succes-etoile,Enchanting Triple Crown,Win the Make Debut with a difference of at least 8 lengths,1
+fuji-kiseki-succes-etoile,Enchanting Triple Crown,Win the Asahi Hai Futurity Stakes as the most popular,2
+fuji-kiseki-succes-etoile,Enchanting Triple Crown,Win the Satsuki Sho as the most popular,3
+fuji-kiseki-succes-etoile,Enchanting Triple Crown,Win the Tokyo Yushun (Japanese Derby) as the most popular,4
+fuji-kiseki-succes-etoile,Enchanting Triple Crown,Win the Kikuka Sho as the most popular,5
+nice-nature-poinsettia-ribbon,Supporting Star,Finish 3rd in at least 3 G1 races,1
+nice-nature-poinsettia-ribbon,Supporting Star,Earn a total of at least 320000 fans,2
+nice-nature-run-win,Supporting Star,Finish 3rd in at least 3 G1 races,1
+nice-nature-run-win,Supporting Star,Earn a total of at least 320000 fans,2
+mejiro-ryan-straight-line,Mesmerizing Muscle,Win a G1 race against a Mejiro at least once,1
+mejiro-ryan-straight-line,Mesmerizing Muscle,Win the Kikuka Sho,2
+mejiro-ryan-straight-line,Mesmerizing Muscle,Win the Takarazuka Kinen,3
+mejiro-ryan-straight-line,Mesmerizing Muscle,Win the Arima Kinen,4
+mejiro-ryan-straight-line,Mesmerizing Muscle,Earn a total of at least 240000 fans,5
+taiki-shuttle-wild-frontier,Mightiest Miler,"Win 5 graded races, including the Unicorn Stakes and Yasuda Kinen, with one of them being in rainy weather",1
+taiki-shuttle-wild-frontier,Mightiest Miler,Win the Mile Championship with a difference of at least 5 lengths,2
+taiki-shuttle-bubblegum-memories,Mightiest Miler,"Win 5 graded races, including the Unicorn Stakes and Yasuda Kinen, with one of them being in rainy weather",1
+taiki-shuttle-bubblegum-memories,Mightiest Miler,Win the Mile Championship with a difference of at least 5 lengths,2
+oguri-cap-starlight-beat,Ideal Idol,Participate in at least 6 G1 races while being the 1st popular,1
+oguri-cap-starlight-beat,Ideal Idol,Win the Mile Championship,2
+oguri-cap-starlight-beat,Ideal Idol,Win the Yasuda Kinen,3
+oguri-cap-starlight-beat,Ideal Idol,Win the Arima Kinen,4
+oguri-cap-starlight-beat,Ideal Idol,Earn a total of at least 240000 fans,5
+oguri-cap-miraculous-white-star,Ideal Idol,Participate in at least 6 G1 races while being the 1st popular,1
+oguri-cap-miraculous-white-star,Ideal Idol,Win the Mile Championship,2
+oguri-cap-miraculous-white-star,Ideal Idol,Win the Yasuda Kinen,3
+oguri-cap-miraculous-white-star,Ideal Idol,Win the Arima Kinen,4
+oguri-cap-miraculous-white-star,Ideal Idol,Earn a total of at least 240000 fans,5
+hishi-amazon-amazoness-lapis,Queen of the Amazons,"Without losing any races inbetween, win at least 6 graded races in which you are the most popular as a End Closer, and overtake 5 others on the last straight in at least 2 of them",1
+tm-opera-o-o-sole-so,Centurial Overlord,"Without losing any races inbetween, win at least 8 races including the Tenno Sho (Spring), Takarazuka Kinen, Tenno Sho (Autumn), Japan Cup, and Arima Kinen",1
+tm-opera-o-blue-dazzle,Centurial Overlord,"Without losing any races inbetween, win at least 8 races including the Tenno Sho (Spring), Takarazuka Kinen, Tenno Sho (Autumn), Japan Cup, and Arima Kinen",1
+mihono-bourbon-mb-19890425,Incline Invicta,"Win the Asahi Hai Futurity Stakes, Satsuki Sho, and Tokyo Yushun (Japanese Derby) while being undefeated and the most popular as a Front Runner",1
+mihono-bourbon-mb-19890425,Incline Invicta,Reach 1200 or more Stamina,2
+mihono-bourbon-code-glacage,Incline Invicta,"Win the Asahi Hai Futurity Stakes, Satsuki Sho, and Tokyo Yushun (Japanese Derby) while being undefeated and the most popular as a Front Runner",1
+mihono-bourbon-code-glacage,Incline Invicta,Reach 1200 or more Stamina,2
+smart-falcon-absolute-love,Sand Falcon,"Without losing any races inbetween, win at least 9 dirt graded races as a Front Runner, including the JBC Classic, Teio Sho, and Tokyo Daishoten",1
+smart-falcon-twilight-triumph,Sand Falcon,"Without losing any races inbetween, win at least 9 dirt graded races as a Front Runner, including the JBC Classic, Teio Sho, and Tokyo Daishoten",1
+curren-chan-fille-eclair,Sprint Sweetheart,"Win at least 9 races with a length of of 1200m, including the Sprinters Stakes and Takamatsunomiya Kinen",1
+curren-chan-fille-eclair,Sprint Sweetheart,Earn a total of at least 240000 fans,2
+curren-chan-ma-cherie,Sprint Sweetheart,"Win at least 9 races with a length of of 1200m, including the Sprinters Stakes and Takamatsunomiya Kinen",1
+curren-chan-ma-cherie,Sprint Sweetheart,Earn a total of at least 240000 fans,2
+king-halo-king-of-emeralds,Generation King,Inherit memories from a parent whose parents won a total of at least 11 G1 races,1
+king-halo-king-of-emeralds,Generation King,Place higher than Special Week 3 times,2
+king-halo-king-of-emeralds,Generation King,Place higher than Seiun Sky 3 times,3
+king-halo-king-of-emeralds,Generation King,Place higher than Grass Wonder 3 times,4
+king-halo-king-of-emeralds,Generation King,Place higher than El Condor Pasa 3 times,5
+king-halo-noble-white-cheer-attire,Generation King,Inherit memories from a parent whose parents won a total of at least 11 G1 races,1
+king-halo-noble-white-cheer-attire,Generation King,Place higher than Special Week 3 times,2
+king-halo-noble-white-cheer-attire,Generation King,Place higher than Seiun Sky 3 times,3
+king-halo-noble-white-cheer-attire,Generation King,Place higher than Grass Wonder 3 times,4
+king-halo-noble-white-cheer-attire,Generation King,Place higher than El Condor Pasa 3 times,5
+mejiro-mcqueen-elegance-line,Best Actress,Win the Kikuka Sho,1
+mejiro-mcqueen-elegance-line,Best Actress,Win the Tenno Sho (Spring),2
+mejiro-mcqueen-elegance-line,Best Actress,Reach 1200 or more Stamina,3
+mejiro-mcqueen-elegance-line,Best Actress,Earn a total of at least 320000 fans,4
+mejiro-mcqueen-end-of-sky,Best Actress,Win the Kikuka Sho,1
+mejiro-mcqueen-end-of-sky,Best Actress,Win the Tenno Sho (Spring),2
+mejiro-mcqueen-end-of-sky,Best Actress,Reach 1200 or more Stamina,3
+mejiro-mcqueen-end-of-sky,Best Actress,Earn a total of at least 320000 fans,4
+mejiro-mcqueen-fair-lady-of-the-waves,Best Actress,Win the Kikuka Sho,1
+mejiro-mcqueen-fair-lady-of-the-waves,Best Actress,Win the Tenno Sho (Spring),2
+mejiro-mcqueen-fair-lady-of-the-waves,Best Actress,Reach 1200 or more Stamina,3
+mejiro-mcqueen-fair-lady-of-the-waves,Best Actress,Earn a total of at least 320000 fans,4
+biwa-hayahide-pf-victory-formula,Victory Derived,Finish 2nd or better in every race you participate in,1
+biwa-hayahide-pf-victory-formula,Victory Derived,Win the Kikuka Sho,2
+biwa-hayahide-pf-victory-formula,Victory Derived,Win the Tenno Sho (Spring),3
+biwa-hayahide-pf-victory-formula,Victory Derived,Win the Takarazuka Kinen,4
+biwa-hayahide-pf-victory-formula,Victory Derived,Clear all training objectives,5
+biwa-hayahide-pf-victory-formula,Victory Derived,Complete the Career,6
+biwa-hayahide-noel-rouge-carol,Victory Derived,Finish 2nd or better in every race you participate in,1
+biwa-hayahide-noel-rouge-carol,Victory Derived,Win the Kikuka Sho,2
+biwa-hayahide-noel-rouge-carol,Victory Derived,Win the Tenno Sho (Spring),3
+biwa-hayahide-noel-rouge-carol,Victory Derived,Win the Takarazuka Kinen,4
+biwa-hayahide-noel-rouge-carol,Victory Derived,Clear all training objectives,5
+biwa-hayahide-noel-rouge-carol,Victory Derived,Complete the Career,6
+narita-taishin-nevertheless,Comeback Champion,"Win the Satsuki Sho as a End Closer, overtaking at least 4 people in the last straight",1
+narita-taishin-nevertheless,Comeback Champion,Win the Tenno Sho (Spring) as a End Closer,2
+narita-taishin-nevertheless,Comeback Champion,Reach 1200 or more Guts,3
+narita-taishin-difference-engineer,Comeback Champion,"Win the Satsuki Sho as a End Closer, overtaking at least 4 people in the last straight",1
+narita-taishin-difference-engineer,Comeback Champion,Win the Tenno Sho (Spring) as a End Closer,2
+narita-taishin-difference-engineer,Comeback Champion,Reach 1200 or more Guts,3
+narita-brian-maverick,Monster in the Shadows,Win the Satsuki Sho with a difference of at least 3 1/2 lengths,1
+narita-brian-maverick,Monster in the Shadows,Win the Tokyo Yushun (Japanese Derby) with a difference of at least 5 lengths,2
+narita-brian-maverick,Monster in the Shadows,Win the Kikuka Sho with a difference of at least 7 lengths,3
+narita-brian-maverick,Monster in the Shadows,Win the Arima Kinen twice,4
+seiun-sky-blue-cloud-thumbing,Trickster,Win the Satsuki Sho as a Front Runner,1
+seiun-sky-blue-cloud-thumbing,Trickster,Win the Kikuka Sho as a Front Runner while staying in the lead from the 200m mark to the goal line,2
+seiun-sky-blue-cloud-thumbing,Trickster,Win the [[race|102301|2]] as a Front Runner,3
+seiun-sky-blue-cloud-thumbing,Trickster,Win the Tenno Sho (Spring) as a Front Runner,4
+seiun-sky-soiree-de-chaton,Trickster,Win the Satsuki Sho as a Front Runner,1
+seiun-sky-soiree-de-chaton,Trickster,Win the Kikuka Sho as a Front Runner while staying in the lead from the 200m mark to the goal line,2
+seiun-sky-soiree-de-chaton,Trickster,Win the [[race|102301|2]] as a Front Runner,3
+seiun-sky-soiree-de-chaton,Trickster,Win the Tenno Sho (Spring) as a Front Runner,4
+meisho-doto-blue-raging,Unrelenting Challenger,"Without losing any races inbetween, win 9 or more graded races including the Tenno Sho (Spring), Takarazuka Kinen and Arima Kinen",1
+meisho-doto-dot-o-lantern,Unrelenting Challenger,"Without losing any races inbetween, win 9 or more graded races including the Tenno Sho (Spring), Takarazuka Kinen and Arima Kinen",1
+hishi-akebono-bono-alla-moda,Colossus,Win the Yasuda Kinen,1
+hishi-akebono-bono-alla-moda,Colossus,Win the Mile Championship,2
+hishi-akebono-bono-alla-moda,Colossus,Win the Sprinters Stakes twice,3
+hishi-akebono-bono-alla-moda,Colossus,Reach 1200 or more Power,4
+agnes-digital-super-express-full-color-special,All-Around Otaku,Win the Japan Dirt Derby,1
+agnes-digital-super-express-full-color-special,All-Around Otaku,Win the Mile Championship,2
+agnes-digital-super-express-full-color-special,All-Around Otaku,Win the February Stakes,3
+agnes-digital-super-express-full-color-special,All-Around Otaku,Win the Yasuda Kinen,4
+agnes-digital-super-express-full-color-special,All-Around Otaku,Win the Tenno Sho (Autumn),5
+agnes-digital-super-express-full-color-special,All-Around Otaku,Win the [[race|102301|3]],6
+agnes-digital-agnesjiangshi,All-Around Otaku,Win the Japan Dirt Derby,1
+agnes-digital-agnesjiangshi,All-Around Otaku,Win the Mile Championship,2
+agnes-digital-agnesjiangshi,All-Around Otaku,Win the February Stakes,3
+agnes-digital-agnesjiangshi,All-Around Otaku,Win the Yasuda Kinen,4
+agnes-digital-agnesjiangshi,All-Around Otaku,Win the Tenno Sho (Autumn),5
+agnes-digital-agnesjiangshi,All-Around Otaku,Win the [[race|102301|3]],6
+kawakami-princess-princess-of-pink,Precocious Princess,Inherit the memories of a parent who won the Takamatsunomiya Kinen,1
+kawakami-princess-princess-of-pink,Precocious Princess,"Win the Japanese Oaks, Shuka Sho and Queen Elizabeth II Cup while being undefeated",2
+manhattan-cafe-creeping-black,Looming Shadow,Win the Kikuka Sho as a Late Surger,1
+manhattan-cafe-creeping-black,Looming Shadow,Win the Arima Kinen twice as a Late Surger,2
+manhattan-cafe-creeping-black,Looming Shadow,Win the Tenno Sho (Spring) as a Late Surger,3
+manhattan-cafe-creeping-black,Looming Shadow,Reach 1200 or more Stamina,4
+tosen-jordan-pop-joker,L Hater,Win the Japan Cup,1
+tosen-jordan-pop-joker,L Hater,Win the Tenno Sho (Spring),2
+tosen-jordan-pop-joker,L Hater,Win the Tenno Sho (Autumn) with a Mood level of Perfect twice,3
+tosen-jordan-pop-joker,L Hater,Win against [[character|1007]] at least 3 times,4
+mejiro-dober-twisted-line,Coolheaded Beauty,Win the Hanshin Juvenile Fillies as a Late Surger while being most popular,1
+mejiro-dober-twisted-line,Coolheaded Beauty,Win the Oka Sho as a Late Surger while being most popular,2
+mejiro-dober-twisted-line,Coolheaded Beauty,Win the Japanese Oaks as a Late Surger while being most popular,3
+mejiro-dober-twisted-line,Coolheaded Beauty,Win the Shuka Sho as a Late Surger while being most popular,4
+mejiro-dober-twisted-line,Coolheaded Beauty,Win the Queen Elizabeth II Cup twice,5
+mejiro-dober-twisted-line,Coolheaded Beauty,Earn a total of at least 240000 fans,6
+mejiro-dober-vacances-saphir,Coolheaded Beauty,Win the Hanshin Juvenile Fillies as a Late Surger while being most popular,1
+mejiro-dober-vacances-saphir,Coolheaded Beauty,Win the Oka Sho as a Late Surger while being most popular,2
+mejiro-dober-vacances-saphir,Coolheaded Beauty,Win the Japanese Oaks as a Late Surger while being most popular,3
+mejiro-dober-vacances-saphir,Coolheaded Beauty,Win the Shuka Sho as a Late Surger while being most popular,4
+mejiro-dober-vacances-saphir,Coolheaded Beauty,Win the Queen Elizabeth II Cup twice,5
+mejiro-dober-vacances-saphir,Coolheaded Beauty,Earn a total of at least 240000 fans,6
+fine-motion-noble-seamair,Capricious Clover,"Win the Shuka Sho, Queen Elizabeth II Cup, and [[race|102301|2]] while being undefeated and most popular",1
+fine-motion-noble-seamair,Capricious Clover,Win the Shuka Sho with a difference of at least 3 1/2 lengths,2
+fine-motion-titania,Capricious Clover,"Win the Shuka Sho, Queen Elizabeth II Cup, and [[race|102301|2]] while being undefeated and most popular",1
+fine-motion-titania,Capricious Clover,Win the Shuka Sho with a difference of at least 3 1/2 lengths,2
+tamamo-cross-with-lightning-speed,Now That's White Lightning!,"Win at least 8 graded races, including the Tenno Sho (Spring), [[race|101201|3]], [[race|101601|3]]",1
+tamamo-cross-with-lightning-speed,Now That's White Lightning!,Earn a total of at least 240000 fans,2
+tamamo-cross-ferocious-thunder,Now That's White Lightning!,"Win at least 8 graded races, including the Tenno Sho (Spring), [[race|101201|3]], [[race|101601|3]]",1
+tamamo-cross-ferocious-thunder,Now That's White Lightning!,Earn a total of at least 240000 fans,2
+sakura-chiyono-o-hinoshita-kaisanhana-akari,Blooming Sakura,Inherit the memories of a parent who won the Asahi Hai Futurity Stakes and reached 1200 or more speed,1
+sakura-chiyono-o-hinoshita-kaisanhana-akari,Blooming Sakura,"Win the Asahi Hai Futurity Stakes, Satsuki Sho, Tokyo Yushun (Japanese Derby), and Japan Cup.",2
+mejiro-ardan-clinochlore-line,Unbreakable,"Win the Tokyo Yushun (Japanese Derby), and the Tenno Sho (Autumn) twice",1
+mejiro-ardan-clinochlore-line,Unbreakable,Enter every race with a Mood level of Perfect,2
+mejiro-ardan-clinochlore-line,Unbreakable,Don't fail a single training,3
+admire-vega-starry-nocturne,Brightest Star,"Win the Satsuki Sho, Tokyo Yushun (Japanese Derby) and Takarazuka Kinen as most popular",1
+admire-vega-starry-nocturne,Brightest Star,Place higher than TM Opera O at least 3 times,2
+admire-vega-starry-nocturne,Brightest Star,Place higher than Narita Top Road at least 3 times,3
+admire-vega-starry-nocturne,Brightest Star,Place higher than Meisho Doto at least 3 times,4
+matikanetannhauser-pan-paka-tiru-toto,Talent Takes Time,Participate in 12 or more G1 races,1
+matikanetannhauser-pan-paka-tiru-toto,Talent Takes Time,"Win at least 4 graded races of 2500m or longer, including the Kikuka Sho and [[race|102301|3]]",2
+kitasan-black-crowning-ooban,Bring Down the House,"Win 7 or more G1 races, including the Kikuka Sho, Tenno Sho (Spring), Takarazuka Kinen, [[race|101601|3]] and [[race|102301|3]]",1
+kitasan-black-crowning-ooban,Bring Down the House,Earn a total of at least 480000 fans,2
+satono-diamond-natural-brilliance,Gem of Dreams,Inherit memories of a parent with training rank S or higher,1
+satono-diamond-natural-brilliance,Gem of Dreams,Win the Kikuka Sho,2
+satono-diamond-natural-brilliance,Gem of Dreams,Win the Tenno Sho (Spring),3
+satono-diamond-natural-brilliance,Gem of Dreams,Win the [[race|101901|3]],4
+satono-diamond-natural-brilliance,Gem of Dreams,Win the Arima Kinen twice,5
+mejiro-bright-brunissage-line,Stress-Free Stayer,Inherit memories from parents carrying the Mejiro name,1
+mejiro-bright-brunissage-line,Stress-Free Stayer,"Win at least 4 G2 or G1 races with a length of 3000m or more, one of them being the Tenno Sho (Spring)",2
+mejiro-bright-brunissage-line,Stress-Free Stayer,Earn a total of at least 240000 fans,3
+nishino-flower-tiered-petal,Little Miss Prodigy,Inherit memories from a parent that did not win any G1 races,1
+nishino-flower-tiered-petal,Little Miss Prodigy,"Win the Hanshin Juvenile Fillies, Oka Sho and Sprinters Stakes twice",2
+nishino-flower-tiered-petal,Little Miss Prodigy,Earn a total of 100000 fans within the Classic class,3
+yaeno-muteki-attack-of-the-four-white-meteors,Will of Steel,Win the Satsuki Sho without having won any other turf G1s before,1
+yaeno-muteki-attack-of-the-four-white-meteors,Will of Steel,"Win the Osaka Hai, Yasuda Kinen, Takarazuka Kinen, [[race|102301|3]]",2
+yaeno-muteki-attack-of-the-four-white-meteors,Will of Steel,Reach 1200 or more Power,3
+ines-fujin-all-time-fever,God of Wind,"Win the Asahi Hai Futurity Stakes, Satsuki Sho, Tokyo Yushun (Japanese Derby) and [[race|101901|3]] as a Front Runner",1
+ines-fujin-all-time-fever,God of Wind,Reach 1200 or more Speed,2
+ines-fujin-all-time-fever,God of Wind,Reach 1200 or more Guts,3
+mejiro-palmer-line-breakthrough,Stormy Front Runner,Raise your Front Runner aptitude to S,1
+mejiro-palmer-line-breakthrough,Stormy Front Runner,Win a G1 as a Front Runner while being 4th most popular or worse,2
+mejiro-palmer-line-breakthrough,Stormy Front Runner,"Win the Tenno Sho (Spring), [[race|101201|3]], [[race|102301|3]] as a Front Runner",3
+inari-one-inari-yukari-edomurasaki,Warlord from Oi,"Win 4 G1 races on both turf and dirt terrain, including winning the Tokyo Daishoten, [[race|101201|3]] as a Pace Chaser and winning the Tenno Sho (Spring), Arima Kinen as a Late Surger or End Closer",1
+inari-one-fields-of-gold,Warlord from Oi,"Win 4 G1 races on both turf and dirt terrain, including winning the Tokyo Daishoten, [[race|101201|3]] as a Pace Chaser and winning the Tenno Sho (Spring), Arima Kinen as a Late Surger or End Closer",1
+sweep-tosho-platanus-witch,Pouty Witch,Win the Tulip Sho and Shuka Sho as a End Closer,1
+sweep-tosho-platanus-witch,Pouty Witch,"Win the [[race|101201|3]], [[race|101701|3]] and [[race|102301|3]] as a Late Surger or End Closer",2
+air-shakur-unsigned,Barrier-Breaking Genius,"Win the Satsuki Sho, Tokyo Yushun (Japanese Derby), and Kikuka Sho",1
+air-shakur-unsigned,Barrier-Breaking Genius,"Win the Tenno Sho (Spring), [[race|101201|3]], [[race|101601|3]] and [[race|102301|3]]",2
+air-shakur-unsigned,Barrier-Breaking Genius,Reach 1200 or more Wisdom,3
+bamboo-memory-ambition-of-the-black-iron,Embodiment of Dreams,Participate in at least 23 graded races,1
+bamboo-memory-ambition-of-the-black-iron,Embodiment of Dreams,Win the [[race|101101|3]],2
+bamboo-memory-ambition-of-the-black-iron,Embodiment of Dreams,Win the Takarazuka Kinen,3
+bamboo-memory-ambition-of-the-black-iron,Embodiment of Dreams,Win the Sprinters Stakes,4
+bamboo-memory-ambition-of-the-black-iron,Embodiment of Dreams,Win the Mile Championship,5
+copano-rickey-yin-yang-bagua-lucky-costume,Talisman of Victory,Win 11 or more dirt G1s,1
+copano-rickey-yin-yang-bagua-lucky-costume,Talisman of Victory,Have a Mood level of Perfect in all races,2
+copano-rickey-yin-yang-bagua-lucky-costume,Talisman of Victory,Complete the Career,3
+yukino-bijin-cute-sweet-flower-of-mutsu,Iwate's Natural Beauty,Win a graded race held in Morioka,1
+yukino-bijin-cute-sweet-flower-of-mutsu,Iwate's Natural Beauty,"Win the Oka Sho, Japanese Oaks and Shuka Sho",2
+yukino-bijin-cute-sweet-flower-of-mutsu,Iwate's Natural Beauty,Earn a total of at least 320000 fans,3
+seeking-the-pearl-rocket-star,Twinkling Pearl,Win the Oka Sho,1
+seeking-the-pearl-rocket-star,Twinkling Pearl,Win the NHK Mile Cup,2
+seeking-the-pearl-rocket-star,Twinkling Pearl,Win the Japanese Oaks,3
+seeking-the-pearl-rocket-star,Twinkling Pearl,Win the Shuka Sho,4
+seeking-the-pearl-rocket-star,Twinkling Pearl,Win the Takamatsunomiya Kinen,5
+seeking-the-pearl-rocket-star,Twinkling Pearl,Win the [[race|101301|3]],6
+aston-machan-flare,Undying Machan,Win the Sprinters Stakes,1
+aston-machan-flare,Undying Machan,Win at least twice against both [[character|1009]] and [[character|1008]],2
+aston-machan-flare,Undying Machan,Earn a total of at least 320000 fans and complete the Career having cleared all objectives,3
+yamanin-zephyr-fluttertail-spirit,Wind Incarnate,Win the Yasuda Kinen twice,1
+yamanin-zephyr-fluttertail-spirit,Wind Incarnate,Win the Sprinters Stakes,2
+yamanin-zephyr-fluttertail-spirit,Wind Incarnate,Win the [[race|101201|3]],3
+yamanin-zephyr-fluttertail-spirit,Wind Incarnate,Reach 1200 or more Speed,4
+nakayama-festa-dramatic-turnabout,Trueborn Gambler,Win both the Takarazuka Kinen and the [[race|101901|3]],1
+nakayama-festa-dramatic-turnabout,Trueborn Gambler,Succeed a training that has a failure rate of at least 30%,2
+nakayama-festa-dramatic-turnabout,Trueborn Gambler,Never fail a training during the entire run,3
+nakayama-festa-dramatic-turnabout,Trueborn Gambler,Complete the Career,4
+wonder-acute,Stalwart Silver,Win the [[race|110601|2]],1
+wonder-acute,Stalwart Silver,Win the Kashiwa Kinen,2
+wonder-acute,Stalwart Silver,Win the Teio Sho,3
+wonder-acute,Stalwart Silver,Win the [[race|110501|3]],4
+wonder-acute,Stalwart Silver,Reach 1200 or more Guts,5
+zenno-rob-roy,Grand Hero,"Win the [[race|101601|3]], [[race|101901|3]] and [[race|102301|3]], all while being the most popular",1
+zenno-rob-roy,Grand Hero,Earn a total of at least 320000 fans,2
+hokko-tarumae,Star of Tomakomai,Win at least 10 dirt G1 races,1
+hokko-tarumae,Star of Tomakomai,Earn a total of at least 320000 fans,2
+daitaku-helios,Major Vibes Party Girl,Win the Milers Cup,1
+daitaku-helios,Major Vibes Party Girl,Win the Mile Championship twice,2
+daitaku-helios,Major Vibes Party Girl,Have a Mood level of Perfect in all races,3
+daitaku-helios,Major Vibes Party Girl,Reach 1200 or more Power,4
+daitaku-helios,Major Vibes Party Girl,Complete the Career,5
+shinko-windy,Bitey Prankster Girl,Win the February Stakes,1
+shinko-windy,Bitey Prankster Girl,Win two or more races in which you were rushing,2
+shinko-windy,Bitey Prankster Girl,Reach 1200 or more Power,3
+twin-turbo,Turbo Escape Girl,"Use the ""Great Escape"" strategy in the [[race|102301|3]] and stay in first place from 200m since the start until the end and win the race",1
+twin-turbo,Turbo Escape Girl,Reach 1200 or more Speed,2
+mr-c-b,Director of the Turf,Win the Satsuki Sho and Tokyo Yushun (Japanese Derby) as a End Closer,1
+mr-c-b,Director of the Turf,Win the Kikuka Sho as a End Closer with a lead of at least 3 horse lengths,2
+mr-c-b,Director of the Turf,Earn a total of at least 320000 fans,3
+daiichi-ruby,Brilliant Young Lady,Inherit memories from parents that won the Oka Sho and Queen Elizabeth II Cup,1
+daiichi-ruby,Brilliant Young Lady,Win the [[race|101101|3]],2
+daiichi-ruby,Brilliant Young Lady,Win the [[race|101301|3]],3
+symboli-kris-s,Jet-Black Emperor,Win the Tenno Sho (Autumn),1
+symboli-kris-s,Jet-Black Emperor,Win the [[race|102301|2]],2
+symboli-kris-s,Jet-Black Emperor,Win the [[race|102301|3]] with a lead of at least 9 horse lengths,3
+symboli-kris-s,Jet-Black Emperor,Reach 1200 or more Power,4
+sakura-laurel,Late-Blooming Cherry Blossom,Win the Tenno Sho (Spring) with a lead of at least 2.5 horse lengths,1
+sakura-laurel,Late-Blooming Cherry Blossom,Win the [[race|102301|3]],2
+sakura-laurel,Late-Blooming Cherry Blossom,Reach 1200 or more Stamina,3
+neo-universe,Cosmicverse,Win the Satsuki Sho,1
+neo-universe,Cosmicverse,Win the Tokyo Yushun (Japanese Derby),2
+neo-universe,Cosmicverse,Win the [[race|101201|2]],3
+neo-universe,Cosmicverse,Win the Kikuka Sho,4
+neo-universe,Cosmicverse,Win the [[race|101901|2]],5
+neo-universe,Cosmicverse,Win the Osaka Hai,6
+neo-universe,Cosmicverse,Win the Tenno Sho (Spring),7
+neo-universe,Cosmicverse,Reach 1200 or more Wisdom,8
+hishi-miracle,Laid-back Soothing Horsegirl,Win the Kikuka Sho,1
+hishi-miracle,Laid-back Soothing Horsegirl,Win the Tenno Sho (Spring),2
+hishi-miracle,Laid-back Soothing Horsegirl,Win the [[race|101201|3]],3
+hishi-miracle,Laid-back Soothing Horsegirl,Rest at least 7 times during the Career,4
+hishi-miracle,Laid-back Soothing Horsegirl,Complete the Career without the Night Owl condition,5
+tanino-gimlet,God of Aesthetic Destruction,"Win the Satsuki Sho, NHK Mile Cup and Tokyo Yushun (Japanese Derby) as a End Closer while being undefeated",1
+tanino-gimlet,God of Aesthetic Destruction,Reach 1200 or more Power,2
+marvelous-sunday,Preacher of Marvelous,Win the Osaka Hai,1
+marvelous-sunday,Preacher of Marvelous,Win the [[race|101201|3]],2
+marvelous-sunday,Preacher of Marvelous,Have a Mood level of Perfect for all races,3
+marvelous-sunday,Preacher of Marvelous,Earn a total of at least 240000 fans,4
+marvelous-sunday,Preacher of Marvelous,Complete the Career,5
+katsuragi-ace,The World-Reigning Ace,Win the [[race|101601|3]],1
+katsuragi-ace,The World-Reigning Ace,Win the [[race|101901|3]],2
+katsuragi-ace,The World-Reigning Ace,Win the [[race|102301|3]] having the [[skill|202051]] skill,3
+katsuragi-ace,The World-Reigning Ace,Earn a total of at least 320000 fans,4
+sirius-symboli,Alpha Canis Majoris,Win the Tokyo Yushun (Japanese Derby) with a lead of at least 3 horse lengths,1
+sirius-symboli,Alpha Canis Majoris,Win against [[character|1017]] at least twice,2
+sirius-symboli,Alpha Canis Majoris,Earn a total of at least 320000 fans,3
+narita-top-road,Beautiful Stayer,Win 4 G1 races with a length of 2400m or higher,1
+narita-top-road,Beautiful Stayer,Raise your Long-distance aptitude to S,2
+narita-top-road,Beautiful Stayer,Reach 1200 or more Stamina,3
+k-s-miracle,Miracle Worker,Win the Sprinters Stakes,1
+k-s-miracle,Miracle Worker,Reach 1200 or more Guts,2
+k-s-miracle,Miracle Worker,Reach 1200 or more Speed,3
+k-s-miracle,Miracle Worker,Earn a total of at least 320000 fans,4
+mejiro-ramonu,Femme Fatale,Win the Oka Sho,1
+mejiro-ramonu,Femme Fatale,Win the Japanese Oaks,2
+mejiro-ramonu,Femme Fatale,Win the [[race|102301|2]],3
+mejiro-ramonu,Femme Fatale,Win the [[race|101701|3]],4
+mejiro-ramonu,Femme Fatale,Earn a total of at least 320000 fans,5
+tap-dance-city,Dream-Chasing Dancer,Win the [[race|101201|3]] as the most popular,1
+tap-dance-city,Dream-Chasing Dancer,Win the [[race|101901|3]] with a lead of at least 9 horse lengths,2
+tap-dance-city,Dream-Chasing Dancer,Earn a total of at least 320000 fans,3
+satono-crown,Magic Crown,Win the Yayoi Sho while being undefeated and most popular,1
+satono-crown,Magic Crown,Win the Satsuki Sho,2
+satono-crown,Magic Crown,Win the Tokyo Yushun (Japanese Derby),3
+satono-crown,Magic Crown,Win the Osaka Hai,4
+satono-crown,Magic Crown,Win the Takarazuka Kinen,5
+satono-crown,Magic Crown,Win the Tenno Sho (Autumn),6
+satono-crown,Magic Crown,Win the Japan Cup,7
+satono-crown,Magic Crown,Reach 1200 or more Power,8
+cheval-grand,Grand Horsegirl,Win the [[race|101901|3]],1
+cheval-grand,Grand Horsegirl,"Win at least one race against [[character|1090]], [[character|1091]] and [[character|1067]]",2
+cheval-grand,Grand Horsegirl,Win at least three races against [[character|1068]] and [[character|1088]],3
+vivlos,Impish Horsegirl,Win at least 6 graded races while being the most popular,1
+vivlos,Impish Horsegirl,Win the Shuka Sho,2
+vivlos,Impish Horsegirl,Win the [[race|101701|3]],3
+vivlos,Impish Horsegirl,Win the Victoria Mile,4
+vivlos,Impish Horsegirl,Earn a total of at least 320000 fans,5
+biko-pegasus,Justice Biko,Win the Sprinters Stakes twice,1
+biko-pegasus,Justice Biko,Win the [[race|101801|3]] while being the most popular,2
+biko-pegasus,Justice Biko,Win against [[character|1012]] at least 2 times,3
+biko-pegasus,Justice Biko,Win against [[character|1028]] at least 2 times,4
+ikuno-dictus,Iron Woman,Participate in at least 30 graded races,1
+ikuno-dictus,Iron Woman,Win the [[race|101101|3]],2
+ikuno-dictus,Iron Woman,Win the [[race|101201|3]],3
+ikuno-dictus,Iron Woman,Reach 1200 or more Guts,4
+duramente,Embodiment of Strength,Inherit memories from an S-rank or higher parent,1
+duramente,Embodiment of Strength,"Win at least 7 G1 races, including the Satsuki Sho and Tokyo Yushun (Japanese Derby)",2
+duramente,Embodiment of Strength,Win against [[character|1088]] at least 3 times,3
+duramente,Embodiment of Strength,Win against [[character|1068]] at least 3 times,4
+transcend,Pursuer of the Unknown,Win the Champions Cup twice,1
+transcend,Pursuer of the Unknown,Win the Leopard Stakes,2
+transcend,Pursuer of the Unknown,Win the Miyako Stakes,3
+transcend,Pursuer of the Unknown,Win the February Stakes,4
+transcend,Pursuer of the Unknown,Win the M.C. Nambu Hai,5
+transcend,Pursuer of the Unknown,Win the JBC Classic,6
+transcend,Pursuer of the Unknown,Reach 1200 or more Wisdom,7
+rhein-kraft,Budding Pioneer,Win the Oka Sho,1
+rhein-kraft,Budding Pioneer,Win the NHK Mile Cup,2
+rhein-kraft,Budding Pioneer,Win the [[race|101701|3]],3
+rhein-kraft,Budding Pioneer,Reach 1200 or more Guts,4
+sounds-of-earth,Passionate Artist,Win the Arima Kinen twice,1
+sounds-of-earth,Passionate Artist,Win the Kikuka Sho,2
+sounds-of-earth,Passionate Artist,Win the [[race|101901|3]],3
+sounds-of-earth,Passionate Artist,Earn a total of at least 320000 fans,4
+north-flight,Sparkling Fu-chan,Win the [[race|202801|2]],1
+north-flight,Sparkling Fu-chan,Win the Shuka Sho,2
+north-flight,Sparkling Fu-chan,Win the Milers Cup,3
+north-flight,Sparkling Fu-chan,Win the [[race|101101|3]],4
+north-flight,Sparkling Fu-chan,Win the [[race|101801|3]],5
+north-flight,Sparkling Fu-chan,Reach 1200 or more Speed,6
+jungle-pocket,Strongest Howling Horsegirl,Win the Tokyo Yushun (Japanese Derby),1
+jungle-pocket,Strongest Howling Horsegirl,Win the Japan Cup twice,2
+jungle-pocket,Strongest Howling Horsegirl,Place higher than Agnes Tachyon 2 times,3
+jungle-pocket,Strongest Howling Horsegirl,Place higher than Dantsu Flame 2 times,4
+jungle-pocket,Strongest Howling Horsegirl,Place higher than Manhattan Cafe 2 times,5
+jungle-pocket,Strongest Howling Horsegirl,Place higher than Narita Top Road 2 times,6
+dream-journey,Witness of the Journey's End,Win the Kikuka Sho,1
+dream-journey,Witness of the Journey's End,Win the [[race|101201|3]],2
+dream-journey,Witness of the Journey's End,Win the [[race|102301|3]],3
+dream-journey,Witness of the Journey's End,Reach 1200 or more Wisdom,4
+calstone-light-o,Divine Speed Dragster,"Win at least 9 graded short-distance races as a Front Runner, including winning the Ibis Summer Dash twice as well as winning the Sprinters Stakes with a lead of at least 4 horse lengths",1
+gentildonna,Unshakeable Lady,Win the Oka Sho,1
+gentildonna,Unshakeable Lady,Win the Japanese Oaks with a lead of at least 5 horse lengths,2
+gentildonna,Unshakeable Lady,Win the Shuka Sho,3
+gentildonna,Unshakeable Lady,Win the Japan Cup twice,4
+gentildonna,Unshakeable Lady,Reach 1200 or more Power,5
+cesario,Beauty from Venus,Inherit memories from a parent that won the Japan Cup,1
+cesario,Beauty from Venus,Win the Oka Sho,2
+cesario,Beauty from Venus,Win the Japanese Oaks,3
+cesario,Beauty from Venus,Win the Shuka Sho,4
+cesario,Beauty from Venus,Win the Japan Cup,5
+cesario,Beauty from Venus,Reach 1200 or more Speed,6
+durandal,Holy Sword,Win the Sprinters Stakes twice,1
+durandal,Holy Sword,Win the Mile Championship twice,2
+durandal,Holy Sword,Win against Believe at least 3 times,3
+durandal,Holy Sword,Win against [[character|1120]] at least 3 times,4
+durandal,Holy Sword,Reach 1200 or more Power,5
+bubble-gum-fellow,Generational Spearhead,Win the Asahi Hai Futurity Stakes,1
+bubble-gum-fellow,Generational Spearhead,Win the Satsuki Sho,2
+bubble-gum-fellow,Generational Spearhead,Win the Tokyo Yushun (Japanese Derby),3
+bubble-gum-fellow,Generational Spearhead,Win the Japan Cup,4
+bubble-gum-fellow,Generational Spearhead,Win the Takarazuka Kinen,5
+bubble-gum-fellow,Generational Spearhead,Win the Tenno Sho (Autumn) twice,6
+bubble-gum-fellow,Generational Spearhead,Reach 1200 or more Wisdom,7
+air-messiah,Fulfiller of Destiny,Win the Oka Sho,1
+air-messiah,Fulfiller of Destiny,Win the Japanese Oaks,2
+air-messiah,Fulfiller of Destiny,Win the Victoria Mile,3
+air-messiah,Fulfiller of Destiny,Win the Queen Elizabeth II Cup twice,4
+air-messiah,Fulfiller of Destiny,Reach 1200 or more Wisdom,5
+win-variation,Indomitable Principal,Win the Satsuki Sho,1
+win-variation,Indomitable Principal,Win the Tokyo Yushun (Japanese Derby),2
+win-variation,Indomitable Principal,Win the Kikuka Sho,3
+win-variation,Indomitable Principal,Win the Tenno Sho (Spring),4
+win-variation,Indomitable Principal,Win the [[race|101201|3]],5
+win-variation,Indomitable Principal,Win the [[race|102301|3]],6
+win-variation,Indomitable Principal,Reach 1200 or more Guts,7
+furioso,Hero of Funabashi,"Win at least one G1 race held at the Kawasaki, Ooi and Funabashi racecourses each",1
+furioso,Hero of Funabashi,Reach 1200 or more Guts,2
+tsurumaru-tsuyoshi,Full-Power Optimistic Tsuyoshi,Inherit memories from a parent that won at least 7 G1 races,1
+tsurumaru-tsuyoshi,Full-Power Optimistic Tsuyoshi,Win at least once against [[character|1001]],2
+tsurumaru-tsuyoshi,Full-Power Optimistic Tsuyoshi,Win at least once against [[character|1011]],3
+tsurumaru-tsuyoshi,Full-Power Optimistic Tsuyoshi,Win at least once against [[character|1014]],4
+tsurumaru-tsuyoshi,Full-Power Optimistic Tsuyoshi,Win at least once against [[character|1020]],5
+tsurumaru-tsuyoshi,Full-Power Optimistic Tsuyoshi,Win at least once against [[character|1061]],6
+orfevre,Golden Tyrant,Win the Satsuki Sho,1
+orfevre,Golden Tyrant,Win the Tokyo Yushun (Japanese Derby),2
+orfevre,Golden Tyrant,Win the Kikuka Sho,3
+orfevre,Golden Tyrant,Win the [[race|101201|3]],4
+orfevre,Golden Tyrant,Win the [[race|102301|2]],5
+orfevre,Golden Tyrant,Win the [[race|102301|3]] with a lead of at least 8 horse lengths,6
+gran-alegria,Absolute Queen of the Mile,"Win at least 5 Mile G1 races, including the Oka Sho, [[race|101101|3]] and Mile Championship",1
+gran-alegria,Absolute Queen of the Mile,Reach 1200 or more Power,2
+no-reason,Turbulent Conquest,Win the Satsuki Sho as the 2nd most or less popular,1
+no-reason,Turbulent Conquest,Enter the Kikuka Sho as the most popular,2
+no-reason,Turbulent Conquest,Win the Tokyo Yushun (Japanese Derby),3
+no-reason,Turbulent Conquest,Win the [[race|101201|3]],4
+no-reason,Turbulent Conquest,Win the [[race|101601|3]],5
+no-reason,Turbulent Conquest,Win the [[race|101901|3]],6
+fenomeno,Jet-Black Monster,Win the Tenno Sho (Spring),1
+fenomeno,Jet-Black Monster,"Win at least 2 races against [[character|1007]], [[character|1116]], [[character|1037]] and [[character|1115]] each",2
+verxina,I Won't Give Up the Top,Win the Oka Sho,1
+verxina,I Won't Give Up the Top,Win the Japanese Oaks,2
+verxina,I Won't Give Up the Top,Win the Shuka Sho,3
+verxina,I Won't Give Up the Top,Win the Victoria Mile,4
+verxina,I Won't Give Up the Top,Win the Queen Elizabeth II Cup,5
+verxina,I Won't Give Up the Top,Win at least 3 races against [[character|1116]],6
+verxina,I Won't Give Up the Top,Reach 1200 or more Guts,7
+loves-only-you,Spreading Love Through the World,Win the Japanese Oaks,1
+loves-only-you,Spreading Love Through the World,Win the Queen Elizabeth II Cup,2
+loves-only-you,Spreading Love Through the World,Win at least 1 race against [[character|1134]],3
+loves-only-you,Spreading Love Through the World,Win at least 1 race against [[character|1133]],4
+loves-only-you,Spreading Love Through the World,Win at least 1 race against [[character|1130]],5
