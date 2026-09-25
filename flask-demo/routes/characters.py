@@ -12,6 +12,7 @@ from services.character_service import (
     load_character_epithets,
     load_character_training_events,
     load_characters,
+    load_status_effects,
 )
 
 
@@ -30,14 +31,15 @@ def character_detail(slug):
             return render_template(
                 "character_detail.html",
                 character=character,
-                epithets=load_character_epithets(slug),
+                epithets=load_character_epithets(slug, character),
                 unique_skills=get_character_unique_skills(character),
                 innate_skills=get_character_innate_skills(character),
                 event_skills=get_character_event_skills(character),
                 awakenings=get_character_awakenings(character),
-                objectives=get_character_objectives(slug),
-                training_events=load_character_training_events(slug),
-                training_event_groups=CHARACTER_TRAINING_EVENT_GROUPS
+                objectives=get_character_objectives(slug, character),
+                training_events=load_character_training_events(slug, character),
+                training_event_groups=CHARACTER_TRAINING_EVENT_GROUPS,
+                status_effects=load_status_effects()[0],
             )
 
     return "Character not found", 404
