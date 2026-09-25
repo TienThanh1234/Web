@@ -10,10 +10,100 @@ My Character List
 
     <h1>My Character List</h1>
 
-    <div class="characters-grid">
+    <div class="characters-toolbar">
+        <div class="search-row">
+            <input
+                type="search"
+                id="character-search"
+                class="character-search-input"
+                placeholder="Search characters"
+                autocomplete="off"
+                spellcheck="false"
+            >
+            <button type="button" id="character-search-clear" class="search-clear-btn" hidden>
+                × Clear
+            </button>
+        </div>
+
+        <div class="sort-row">
+            <span class="sort-label">Sort by:</span>
+            <select id="character-sort-field" class="character-sort-select" aria-label="Sort field">
+                <option value="name">Name</option>
+                <option value="rarity" selected>Rarity</option>
+                <option value="release_date">Release date</option>
+                <optgroup label="Aptitude">
+                    <option value="turf">Turf aptitude</option>
+                    <option value="dirt">Dirt aptitude</option>
+                    <option value="short">Sprint aptitude</option>
+                    <option value="mile">Mile aptitude</option>
+                    <option value="medium">Medium aptitude</option>
+                    <option value="long">Long aptitude</option>
+                    <option value="front">Front aptitude</option>
+                    <option value="pace">Pace aptitude</option>
+                    <option value="late">Late aptitude</option>
+                    <option value="end">End aptitude</option>
+                </optgroup>
+                <optgroup label="Stat bonuses">
+                    <option value="bonus_speed">Speed bonus</option>
+                    <option value="bonus_stamina">Stamina bonus</option>
+                    <option value="bonus_power">Power bonus</option>
+                    <option value="bonus_guts">Guts bonus</option>
+                    <option value="bonus_wit">Wit bonus</option>
+                </optgroup>
+                <optgroup label="Stats">
+                    <option value="base_speed">Base speed</option>
+                    <option value="base_stamina">Base stamina</option>
+                    <option value="base_power">Base power</option>
+                    <option value="base_guts">Base guts</option>
+                    <option value="base_wit">Base wit</option>
+                </optgroup>
+            </select>
+            <select id="character-sort-dir" class="character-sort-select" aria-label="Sort direction">
+                <option value="desc" selected>Descending ↓</option>
+                <option value="asc">Ascending ↑</option>
+            </select>
+            <span id="character-count" class="character-count"></span>
+        </div>
+    </div>
+
+    <p id="character-empty" class="character-empty" hidden>
+        No characters match your search.
+    </p>
+
+    <div class="characters-grid" id="characters-grid">
 
         {% for character in characters %}
-        <a href="{{ url_for('character_detail', slug=character.slug) }}" class="character-card">
+        <a
+            href="{{ url_for('character_detail', slug=character.slug) }}"
+            class="character-card"
+            data-name="{{ character.name | lower }}"
+            data-version="{{ (character.version or '') | lower }}"
+            data-japanese="{{ (character.japanese_name or '') | lower }}"
+            data-slug="{{ character.slug | lower }}"
+            data-rarity="{{ character.rarity | int }}"
+            data-id="{{ character.id | int }}"
+            data-release_date="{{ character.release_date or '' }}"
+            data-turf="{{ character.turf or '' }}"
+            data-dirt="{{ character.dirt or '' }}"
+            data-short="{{ character.short or '' }}"
+            data-mile="{{ character.mile or '' }}"
+            data-medium="{{ character.medium or '' }}"
+            data-long="{{ character.long or '' }}"
+            data-front="{{ character.front or '' }}"
+            data-pace="{{ character.pace or '' }}"
+            data-late="{{ character.late or '' }}"
+            data-end="{{ character['end'] or '' }}"
+            data-bonus_speed="{{ character.bonus_speed | int }}"
+            data-bonus_stamina="{{ character.bonus_stamina | int }}"
+            data-bonus_power="{{ character.bonus_power | int }}"
+            data-bonus_guts="{{ character.bonus_guts | int }}"
+            data-bonus_wit="{{ character.bonus_wit | int }}"
+            data-base_speed="{{ character.base_speed_5 | int }}"
+            data-base_stamina="{{ character.base_stamina_5 | int }}"
+            data-base_power="{{ character.base_power_5 | int }}"
+            data-base_guts="{{ character.base_guts_5 | int }}"
+            data-base_wit="{{ character.base_wit_5 | int }}"
+        >
 
             <div class="character-image">
                 <img src="{{ url_for('static', filename='images/characters/' + character.image) }}"
@@ -27,7 +117,7 @@ My Character List
             </p>
 
             <div class="stars">
-                {% for i in range(character.rarity) %}
+                {% for i in range(character.rarity | int) %}
                     ★
                 {% endfor %}
             </div>
@@ -61,7 +151,116 @@ My Character List
         font-size: 36px;
         font-weight: 800;
         color: #111111;
-        margin-bottom: 25px;
+        margin-bottom: 18px;
+    }
+
+    .characters-toolbar {
+        width: 100%;
+        box-sizing: border-box;
+        background: #e8e8e8;
+        border: 1px solid #b7c9c5;
+        border-radius: 12px;
+        padding: 16px 18px 14px;
+        margin-bottom: 22px;
+    }
+
+    .search-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+    .character-search-input {
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+        padding: 0 16px;
+        border: 1px solid #c5c5c5;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #111;
+        outline: none;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.06);
+    }
+
+    .character-search-input:focus {
+        border-color: #6a9e94;
+        box-shadow: 0 0 0 3px rgba(106, 158, 148, 0.22);
+    }
+
+    .search-clear-btn {
+        flex: 0 0 auto;
+        height: 44px;
+        padding: 0 14px;
+        border: none;
+        border-radius: 8px;
+        background: transparent;
+        color: #4b6cb7;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .search-clear-btn:hover {
+        text-decoration: underline;
+    }
+
+    .sort-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 12px;
+        width: 100%;
+        font-size: 15px;
+        color: #333;
+    }
+
+    .sort-label {
+        flex: 0 0 auto;
+        font-weight: 600;
+    }
+
+    .character-sort-select {
+        flex: 0 0 auto;
+        min-width: 160px;
+        height: 36px;
+        padding: 0 12px;
+        border: 1px solid #c5c5c5;
+        border-radius: 10px;
+        background: #ffffff;
+        font-size: 14px;
+        color: #111;
+        cursor: pointer;
+    }
+
+    .character-sort-select:focus {
+        border-color: #6a9e94;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(106, 158, 148, 0.18);
+    }
+
+    .character-count {
+        margin-left: auto;
+        font-size: 14px;
+        color: #666;
+        white-space: nowrap;
+    }
+
+    .character-empty {
+        margin: 0 0 16px;
+        font-size: 16px;
+        color: #777;
+        font-style: italic;
+    }
+
+    .character-card.is-hidden {
+        display: none;
     }
 
     .characters-grid {
@@ -73,16 +272,14 @@ My Character List
     .character-card {
         min-height: 330px;
         padding: 14px 12px 16px;
-
         background: #dddddd;
         border-radius: 12px;
-
         display: flex;
         flex-direction: column;
         align-items: center;
-
         box-shadow: 0 2px 7px rgba(0, 0, 0, 0.18);
         transition: 0.2s;
+        text-decoration: none;
     }
 
     .character-card:hover {
@@ -93,11 +290,9 @@ My Character List
     .character-image {
         width: 100%;
         height: 155px;
-
         display: flex;
         justify-content: center;
         align-items: center;
-
         margin-bottom: 12px;
         overflow: hidden;
     }
@@ -110,18 +305,15 @@ My Character List
 
     .character-card h3 {
         margin: 0;
-
         font-size: 22px;
         font-weight: 600;
         line-height: 1.15;
-
         color: #0000aa;
         text-align: center;
     }
 
     .version {
         margin: 8px 0 0;
-
         font-size: 15px;
         font-weight: 600;
         color: #5c4b1f;
@@ -130,7 +322,6 @@ My Character List
 
     .stars {
         margin-top: 10px;
-
         font-size: 18px;
         color: #f2c230;
         letter-spacing: 3px;
@@ -138,7 +329,6 @@ My Character List
 
     .aptitude-box {
         margin-top: 12px;
-
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -147,40 +337,143 @@ My Character List
 
     .aptitude-box span {
         padding: 4px 8px;
-
         background: #ffffff;
         border-radius: 999px;
-
         font-size: 12px;
         font-weight: 700;
         color: #333333;
     }
 
     @media (max-width: 1200px) {
-        .characters-grid {
-            grid-template-columns: repeat(4, 1fr);
-        }
+        .characters-grid { grid-template-columns: repeat(4, 1fr); }
     }
-
     @media (max-width: 900px) {
-        .characters-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
+        .characters-grid { grid-template-columns: repeat(3, 1fr); }
     }
-
     @media (max-width: 650px) {
-        .characters-page {
-            padding: 25px 18px;
-        }
-
-        .characters-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .character-card h3 {
-            font-size: 19px;
-        }
+        .characters-page { padding: 25px 18px; }
+        .characters-grid { grid-template-columns: repeat(2, 1fr); }
+        .character-card h3 { font-size: 19px; }
+        .character-count { margin-left: 0; width: 100%; }
+        .character-sort-select { min-width: 140px; flex: 1 1 auto; }
     }
 </style>
+
+<script>
+(function () {
+    var input = document.getElementById("character-search");
+    var clearBtn = document.getElementById("character-search-clear");
+    var fieldSelect = document.getElementById("character-sort-field");
+    var dirSelect = document.getElementById("character-sort-dir");
+    var grid = document.getElementById("characters-grid");
+    var emptyMsg = document.getElementById("character-empty");
+    var countEl = document.getElementById("character-count");
+
+    if (!input || !grid) return;
+
+    var cards = Array.prototype.slice.call(grid.querySelectorAll(".character-card"));
+
+    var RANK_VALUE = { s: 7, a: 6, b: 5, c: 4, d: 3, e: 2, f: 1, g: 0 };
+
+    function normalize(text) {
+        return String(text || "")
+            .toLowerCase()
+            .normalize("NFKD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .trim();
+    }
+
+    function rankValue(letter) {
+        var key = String(letter || "").trim().toLowerCase();
+        return Object.prototype.hasOwnProperty.call(RANK_VALUE, key) ? RANK_VALUE[key] : -1;
+    }
+
+    function numericValue(raw) {
+        var n = parseFloat(String(raw || "").replace(/,/g, ""));
+        return isNaN(n) ? 0 : n;
+    }
+
+    function dateValue(raw) {
+        var s = String(raw || "").trim();
+        if (!s) return 0;
+        var t = Date.parse(s);
+        return isNaN(t) ? 0 : t;
+    }
+
+    function getSortValue(card, field) {
+        if (field === "name") return card.dataset.name || "";
+        if (field === "release_date") return dateValue(card.dataset.release_date);
+        if (
+            field === "turf" || field === "dirt" || field === "short" ||
+            field === "mile" || field === "medium" || field === "long" ||
+            field === "front" || field === "pace" || field === "late" ||
+            field === "end"
+        ) {
+            return rankValue(card.dataset[field]);
+        }
+        return numericValue(card.dataset[field]);
+    }
+
+    function applyFilterAndSort() {
+        var q = normalize(input.value);
+        var tokens = q ? q.split(/\s+/).filter(Boolean) : [];
+        var visible = 0;
+
+        cards.forEach(function (card) {
+            var hay = [
+                card.dataset.name || "",
+                card.dataset.version || "",
+                card.dataset.japanese || "",
+                card.dataset.slug || ""
+            ].join(" ");
+            var match = tokens.every(function (token) {
+                return hay.indexOf(token) !== -1;
+            });
+            card.classList.toggle("is-hidden", !match);
+            if (match) visible += 1;
+        });
+
+        var field = (fieldSelect && fieldSelect.value) || "rarity";
+        var dir = (dirSelect && dirSelect.value) || "desc";
+        var asc = dir === "asc";
+
+        var sorted = cards.slice().sort(function (a, b) {
+            var va = getSortValue(a, field);
+            var vb = getSortValue(b, field);
+            var cmp;
+            if (typeof va === "string" || typeof vb === "string") {
+                cmp = String(va).localeCompare(String(vb));
+            } else {
+                cmp = va - vb;
+            }
+            if (cmp === 0) {
+                cmp = (a.dataset.name || "").localeCompare(b.dataset.name || "");
+            }
+            return asc ? cmp : -cmp;
+        });
+
+        sorted.forEach(function (card) {
+            grid.appendChild(card);
+        });
+
+        if (emptyMsg) emptyMsg.hidden = visible > 0;
+        if (countEl) countEl.textContent = visible + " / " + cards.length + " characters";
+        if (clearBtn) clearBtn.hidden = !q;
+    }
+
+    input.addEventListener("input", applyFilterAndSort);
+    if (fieldSelect) fieldSelect.addEventListener("change", applyFilterAndSort);
+    if (dirSelect) dirSelect.addEventListener("change", applyFilterAndSort);
+    if (clearBtn) {
+        clearBtn.addEventListener("click", function () {
+            input.value = "";
+            input.focus();
+            applyFilterAndSort();
+        });
+    }
+
+    applyFilterAndSort();
+})();
+</script>
 
 {% endblock %}

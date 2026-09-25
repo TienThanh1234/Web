@@ -136,7 +136,12 @@
                 <div class="tevent-section-title">Reward:</div>
 
                 {% for line in lines %}
+                {% set low = line|lower %}
+                {% if line[:1] == '※' or 'was healed' in low or 'was not healed' in low or low in ['good result', 'bad result'] or line[:1] == '!' %}
+                <div class="tevent-line tevent-branch-header">{{ line.lstrip('!') }}</div>
+                {% else %}
                 <div class="tevent-line">{{ line }}</div>
+                {% endif %}
                 {% endfor %}
             </div>
 
@@ -566,6 +571,41 @@
 
         <div class="objective-list">
             {% for objective in objectives %}
+            {% set req_l = (objective.requirement or '')|lower %}
+            {% set is_nolink = objective.is_nolink_goal or objective.is_fan_goal
+                or (not objective.race_slug)
+                or req_l.startswith('have at least')
+                or ('fan' in req_l)
+                or ('g1' in req_l and 'race' in req_l)
+                or ('g2' in req_l and 'race' in req_l)
+                or ('g3' in req_l and 'race' in req_l) %}
+            {% if is_nolink %}
+            <div
+                class="objective-row {{ 'objective-mint' if objective.index is odd else 'objective-white' }}"
+            >
+                <div class="objective-banner-box objective-fan-box">
+                    <img
+                        class="objective-banner objective-fan-icon"
+                        src="{{ url_for('static', filename='images/characters/' ~ (objective.race_image or 'fans.png')) }}"
+                        alt="Fans"
+                    >
+                </div>
+
+                <div class="objective-content">
+                    <p class="objective-title">
+                        {{ objective.index }}. {{ objective.requirement }}
+                    </p>
+
+                    <p class="objective-line">{{ objective.turn_label }}</p>
+
+                    {% if objective.class_label or objective.month_label %}
+                    <p class="objective-line">
+                        {{ objective.class_label }}{% if objective.month_label %}, {{ objective.month_label }}{% endif %}
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+            {% else %}
             <a
                 class="objective-row {{ 'objective-mint' if objective.index is odd else 'objective-white' }}"
                 href="{{ url_for('race_detail', slug=objective.race_slug) }}"
@@ -594,6 +634,7 @@
                     {% endif %}
                 </div>
             </a>
+            {% endif %}
             {% endfor %}
         </div>
         {% endif %}
@@ -610,6 +651,16 @@
 
     </div>
 
+</div>
+
+
+<div id="status-popup" class="status-popup" hidden>
+    <button type="button" class="status-popup-close" onclick="closeStatusPopup()">×</button>
+    <div class="status-popup-title-row">
+        <h3 id="status-popup-name" class="status-popup-name"></h3>
+        <span id="status-popup-type" class="status-type-badge"></span>
+    </div>
+    <p id="status-popup-description" class="status-popup-description"></p>
 </div>
 
 <div id="item-popup" class="item-popup" hidden>
@@ -1501,10 +1552,264 @@
             row-gap: 10px;
         }
     }
+
+    .tevent-status-link {
+        color: #4b6cb7;
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 2px;
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+    }
+
+    .tevent-status-link:hover {
+        color: #2a4a8f;
+    }
+
+    .status-popup {
+        position: absolute;
+        z-index: 1000;
+        min-width: 220px;
+        max-width: 320px;
+        padding: 14px 16px 16px;
+        background: #eef6f4;
+        border: 1px solid #c5d9d4;
+        border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    .status-popup-close {
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        border: none;
+        background: transparent;
+        font-size: 18px;
+        line-height: 1;
+        cursor: pointer;
+        color: #666;
+    }
+
+    .status-popup-name {
+        margin: 0 24px 8px 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    .status-popup-description {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.45;
+        color: #333;
+        white-space: pre-wrap;
+    }
+
+
+    .tevent-status-link.status-good {
+        color: #1a7a4c;
+    }
+    .tevent-status-link.status-bad {
+        color: #b33a3a;
+    }
+    .tevent-status-link.status-neutral {
+        color: #4b6cb7;
+    }
+
+    .status-popup-title-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-right: 24px;
+        margin-bottom: 8px;
+    }
+
+    .status-popup-title-row .status-popup-name {
+        margin: 0;
+    }
+
+    .status-type-badge {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 2px 8px;
+        border-radius: 999px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    .status-type-badge.good {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .status-type-badge.bad {
+        background: #f8d7da;
+        color: #721c24;
+    }
+
+    .status-type-badge.neutral {
+        background: #e2e6ea;
+        color: #383d41;
+    }
+
+    .status-popup.status-good {
+        background: #eef8f2;
+        border-color: #b7dfc8;
+    }
+
+    .status-popup.status-bad {
+        background: #fdf0f0;
+        border-color: #e8bcbc;
+    }
+
+
+    .objective-fan-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+
+    .objective-fan-icon {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+    }
+
+
+    .tevent-branch-header {
+        font-weight: 700;
+        color: #1a6b5a;
+        margin-top: 10px;
+    }
+    .tevent-branch-header:first-child {
+        margin-top: 0;
+    }
+
 </style>
 
 <script>
-    function eventSkillNameToId(skillName) {
+    
+    // --- Status effect tooltips (from status_effects.csv) ---
+    var STATUS_EFFECTS = {{ status_effects | default([]) | tojson }};
+
+    var STATUS_BY_NAME = (function () {
+        var map = {};
+        (STATUS_EFFECTS || []).forEach(function (s) {
+            if (!s || !s.name) return;
+            map[String(s.name).toLowerCase()] = s;
+            // strip ○/◎ for fuzzy match
+            var bare = String(s.name).replace(/[○◎]/g, "").trim().toLowerCase();
+            if (bare) map[bare] = s;
+        });
+        return map;
+    })();
+
+    function findStatusParts(rawText) {
+        var text = String(rawText || "").trim();
+        if (!text) return null;
+
+        // "(random) Get Practice Poor status"
+        // "Get Slow Metabolism status"
+        // "Heal a negative status effect" — skip (no specific name)
+        var match = text.match(/^(.*?\b(?:Get|Obtain)\s+)(.+?)(\s+status\b.*)$/i);
+        if (match) {
+            return {
+                prefix: match[1],
+                statusName: match[2].trim(),
+                suffix: match[3]
+            };
+        }
+        return null;
+    }
+
+    function showStatusPopup(event, status) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        var popup = document.getElementById("status-popup");
+        if (!popup) return;
+
+        var kind = (status.type || "neutral").toLowerCase();
+        document.getElementById("status-popup-name").textContent = status.name || "";
+        document.getElementById("status-popup-description").textContent = status.description || "";
+
+        var typeEl = document.getElementById("status-popup-type");
+        if (typeEl) {
+            var label = kind === "good" ? "Buff" : (kind === "bad" ? "Debuff" : "Status");
+            typeEl.textContent = label;
+            typeEl.className = "status-type-badge " + kind;
+        }
+        popup.className = "status-popup status-" + kind;
+
+        var buttonRect = event.currentTarget.getBoundingClientRect();
+        popup.style.top = (buttonRect.bottom + window.scrollY + 8) + "px";
+        popup.style.left = (buttonRect.left + window.scrollX) + "px";
+        popup.hidden = false;
+
+        requestAnimationFrame(function () {
+            var popupRect = popup.getBoundingClientRect();
+            var overflowRight = popupRect.right - (window.innerWidth - 10);
+            if (overflowRight > 0) {
+                popup.style.left = (parseFloat(popup.style.left) - overflowRight) + "px";
+            }
+        });
+    }
+
+    function closeStatusPopup() {
+        var popup = document.getElementById("status-popup");
+        if (popup) popup.hidden = true;
+    }
+
+    function addTeventStatusLinks() {
+        document.querySelectorAll(".tevent-line").forEach(function (line) {
+            if (line.querySelector("button.tevent-status-link, a.tevent-status-link")) {
+                return;
+            }
+
+            var rawText = line.textContent.trim();
+            var parts = findStatusParts(rawText);
+            if (!parts) return;
+
+            var key = parts.statusName.toLowerCase();
+            var bare = parts.statusName.replace(/[○◎]/g, "").trim().toLowerCase();
+            var status = STATUS_BY_NAME[key] || STATUS_BY_NAME[bare];
+            if (!status) return;
+
+            var btn = document.createElement("button");
+            btn.type = "button";
+            var kind = (status.type || "neutral").toLowerCase();
+            btn.className = "tevent-status-link status-" + kind;
+            btn.textContent = parts.statusName;
+            btn.title = (kind === "good" ? "Buff: " : kind === "bad" ? "Debuff: " : "") + (status.description || status.name);
+            btn.addEventListener("click", function (e) {
+                showStatusPopup(e, status);
+            });
+
+            line.replaceChildren();
+            if (parts.prefix) line.appendChild(document.createTextNode(parts.prefix));
+            line.appendChild(btn);
+            if (parts.suffix) line.appendChild(document.createTextNode(parts.suffix));
+        });
+    }
+
+    document.addEventListener("click", function (event) {
+        var popup = document.getElementById("status-popup");
+        if (!popup || popup.hidden) return;
+        if (popup.contains(event.target)) return;
+        if (event.target.closest(".tevent-status-link")) return;
+        closeStatusPopup();
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeStatusPopup();
+    });
+
+function eventSkillNameToId(skillName) {
         return String(skillName || "")
             .trim()
             .toLowerCase()
@@ -1517,10 +1822,21 @@
             .replace(/^_+|_+$/g, "");
     }
 
-    function findEventSkillParts(rawText) {
+        function findEventSkillParts(rawText) {
         var text = String(rawText || "").trim();
 
         if (!text) {
+            return null;
+        }
+
+        var lower = text.toLowerCase();
+
+        // Không phải skill cụ thể — để text thường
+        if (
+            lower.indexOf("relevant track skill") !== -1 ||
+            lower.indexOf("track proficiency") !== -1 ||
+            lower.indexOf("track skill hint") !== -1
+        ) {
             return null;
         }
 
@@ -1532,7 +1848,7 @@
 
             Giữ nguyên chữ "Obtain" ở ngoài link. Chỉ tên skill được bấm.
         */
-        var match = text.match(/^(.*?\bObtain\s+)(.+?)(\s+skill\b.*)$/i);
+        var match = text.match(/^(.*?Obtain\s+)(.+?)(\s+skill.*)$/i);
 
         if (match) {
             return {
@@ -1550,9 +1866,18 @@
         match = text.match(/^(.+?)(\s+hint\s*\+\s*\d+.*)$/i);
 
         if (match) {
+            var skillName = match[1].trim();
+            var sn = skillName.toLowerCase();
+            if (
+                sn.indexOf("track skill") !== -1 ||
+                sn.indexOf("track proficiency") !== -1 ||
+                sn === "relevant track skill"
+            ) {
+                return null;
+            }
             return {
                 prefix: "",
-                skillName: match[1].trim(),
+                skillName: skillName,
                 suffix: match[2]
             };
         }
@@ -1592,6 +1917,12 @@
                 return;
             }
 
+            // Không link "Relevant track skill hint" (không phải skill cụ thể)
+            var sn = (parts.skillName || "").toLowerCase();
+            if (sn.indexOf("track skill") !== -1 || sn.indexOf("track proficiency") !== -1) {
+                return;
+            }
+
             var link = document.createElement("a");
             link.className = "tevent-skill-link";
             link.href = skillUrlTemplate.replace("__SKILL_ID__", encodeURIComponent(skillId));
@@ -1611,7 +1942,10 @@
         });
     }
 
-    document.addEventListener("DOMContentLoaded", addTeventSkillLinks);
+    document.addEventListener("DOMContentLoaded", function () {
+        addTeventSkillLinks();
+        addTeventStatusLinks();
+    });
 
     function toggleTrainingEvent(eventKey, clickedButton) {
         var target = document.getElementById("tevent-" + eventKey);
