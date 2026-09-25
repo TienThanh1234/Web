@@ -1,0 +1,315 @@
+banner_id,name,detail,rate_pct,status,link_type,link_slug,sort_order,card_id
+30002,Special Week,Special Dreamer,0.3334,New,character,special-week,1,100101
+30002,Silence Suzuka,Innocent Silence,0.3334,New,character,silence-suzuka,2,100201
+30002,Tokai Teio,Peak Joy,0.3334,New,character,tokai-teio,3,100301
+30002,Maruzensky,Formula R,0.3333,New,character,maruzensky,4,100401
+30002,Oguri Cap,Starlight Beat,0.3333,New,character,oguri-cap,5,100601
+30002,Taiki Shuttle,Wild Frontier,0.3333,New,character,taiki-shuttle,6,101001
+30002,Mejiro McQueen,Frontline Elegance,0.3333,New,character,mejiro-mcqueen,7,101301
+30002,Symboli Rudolf,Emperor's Path,0.3333,New,character,symboli-rudolf,8,101701
+30002,Rice Shower,Rosy Dreams,0.3333,New,character,rice-shower,9,103001
+30004,TM Opera O,O Sole Suo!,0.75,New,character,tm-opera-o,1,101501
+30006,Mihono Bourbon,MB-19890425,0.75,New,character,mihono-bourbon,1,102601
+30008,Biwa Hayahide,pf. Winning Equation...,0.75,New,character,biwa-hayahide,1,102301
+30130,Special Week,Special Dreamer,0.3334,Rerun,character,special-week,1,100101
+30130,Silence Suzuka,Innocent Silence,0.3334,Rerun,character,silence-suzuka,2,100201
+30130,Tokai Teio,Peak Joy,0.3334,Rerun,character,tokai-teio,3,100301
+30130,Maruzensky,Formula R,0.3333,Rerun,character,maruzensky,4,100401
+30130,Oguri Cap,Starlight Beat,0.3333,Rerun,character,oguri-cap,5,100601
+30130,Taiki Shuttle,Wild Frontier,0.3333,Rerun,character,taiki-shuttle,6,101001
+30130,Mejiro McQueen,Frontline Elegance,0.3333,Rerun,character,mejiro-mcqueen,7,101301
+30130,Symboli Rudolf,Emperor's Path,0.3333,Rerun,character,symboli-rudolf,8,101701
+30130,Rice Shower,Rosy Dreams,0.3333,Rerun,character,rice-shower,9,103001
+30010,Tokai Teio,Beyond the Horizon,0.5,New,character,tokai-teio,1,100302
+30010,Mejiro McQueen,End of the Skies,0.5,New,character,mejiro-mcqueen,2,101302
+30012,Curren Chan,Fille Éclair,0.75,New,character,curren-chan,1,103801
+30014,Narita Taishin,Nevertheless,0.75,New,character,narita-taishin,1,105001
+30016,Smart Falcon,LOVE☆4EVER,0.75,New,character,smart-falcon,1,104601
+30018,Narita Brian,Maverick,0.75,New,character,narita-brian,1,101601
+30020,Mayano Top Gun,Sunlight Bouquet,0.75,New,character,mayano-top-gun,1,102402
+30020,Air Groove,Quercus Civilis,0.75,New,character,air-groove,2,101802
+30022,Seiun Sky,Reeling in the Big One,0.75,New,character,seiun-sky,1,102001
+30024,Hishi Amazon,Azure Amazon,0.75,New,character,hishi-amazon,1,101201
+30026,El Condor Pasa,Kukulkan Warrior,0.75,New,character,el-condor-pasa,1,101402
+30026,Grass Wonder,Saintly Jade Cleric,0.75,New,character,grass-wonder,2,101102
+30028,Fuji Kiseki,Shooting Star Revue,0.75,New,character,fuji-kiseki,1,100501
+30030,Gold City,Authentic / 1928,0.75,New,character,gold-city,1,104001
+30032,Special Week,Hopp'n♪Happy Heart,0.75,New,character,special-week,1,100102
+30032,Maruzensky,Hot☆Summer Night,0.75,New,character,maruzensky,2,100402
+30034,Meisho Doto,Turbulent Blue,0.75,New,character,meisho-doto,1,105801
+30036,Eishin Flash,Meisterschaft,0.75,New,character,eishin-flash,1,103701
+30038,Matikanefukukitaru,Lucky Tidings,0.75,New,character,matikanefukukitaru,1,105602
+30040,Hishi Akebono,Buono ☆ Alla Moda,0.75,New,character,hishi-akebono,1,102801
+30042,Agnes Digital,Full-Color Fangirling,0.75,New,character,agnes-digital,1,101901
+30044,Rice Shower,Vampire Makeover!,0.75,New,character,rice-shower,1,103002
+30044,Super Creek,Chiffon-Wrapped Mummy,0.75,New,character,super-creek,2,104502
+30046,Kawakami Princess,Princess of Pink,0.75,New,character,kawakami-princess,1,103901
+30048,Manhattan Cafe,Creeping Shadow,0.75,New,character,manhattan-cafe,1,102501
+30050,Symboli Rudolf,Archer by Moonlight,0.75,New,character,symboli-rudolf,1,101702
+30050,Gold City,Autumn Cosmos,0.75,New,character,gold-city,2,104002
+30052,Tosen Jordan,Jokester ☆ Vibes,0.75,New,character,tosen-jordan,1,104801
+30054,Mejiro Dober,Off the Line,0.75,New,character,mejiro-dober,1,105901
+30056,Oguri Cap,Ashen Miracle,0.75,New,character,oguri-cap,1,100602
+30056,Biwa Hayahide,Rouge Caroler,0.75,New,character,biwa-hayahide,2,102302
+30058,Fine Motion,Noble Seamair,0.75,New,character,fine-motion,1,102201
+30060,Tamamo Cross,Fast as Lightning,0.75,New,character,tamamo-cross,1,102101
+30062,Haru Urara,New Year ♪ New Urara!,0.75,New,character,haru-urara,1,105202
+30062,TM Opera O,"New Year, Same Radiance!",0.75,New,character,tm-opera-o,2,101502
+30064,Special Week,Special Dreamer,0.0639,Rerun,character,special-week,1,100101
+30064,Silence Suzuka,Innocent Silence,0.0639,Rerun,character,silence-suzuka,2,100201
+30064,Tokai Teio,Peak Joy,0.0639,Rerun,character,tokai-teio,3,100301
+30064,Maruzensky,Formula R,0.0639,Rerun,character,maruzensky,4,100401
+30064,Oguri Cap,Starlight Beat,0.0639,Rerun,character,oguri-cap,5,100601
+30064,Taiki Shuttle,Wild Frontier,0.0639,Rerun,character,taiki-shuttle,6,101001
+30064,Mejiro McQueen,Frontline Elegance,0.0639,Rerun,character,mejiro-mcqueen,7,101301
+30064,TM Opera O,O Sole Suo!,0.0639,Rerun,character,tm-opera-o,8,101501
+30064,Symboli Rudolf,Emperor's Path,0.0639,Rerun,character,symboli-rudolf,9,101701
+30064,Rice Shower,Rosy Dreams,0.0639,Rerun,character,rice-shower,10,103001
+30064,Mihono Bourbon,MB-19890425,0.0639,Rerun,character,mihono-bourbon,11,102601
+30064,Biwa Hayahide,pf. Winning Equation...,0.0639,Rerun,character,biwa-hayahide,12,102301
+30064,Tokai Teio,Beyond the Horizon,0.0639,Rerun,character,tokai-teio,13,100302
+30064,Mejiro McQueen,End of the Skies,0.0639,Rerun,character,mejiro-mcqueen,14,101302
+30064,Curren Chan,Fille Éclair,0.0638,Rerun,character,curren-chan,15,103801
+30064,Narita Taishin,Nevertheless,0.0638,Rerun,character,narita-taishin,16,105001
+30064,Smart Falcon,LOVE☆4EVER,0.0638,Rerun,character,smart-falcon,17,104601
+30064,Narita Brian,Maverick,0.0638,Rerun,character,narita-brian,18,101601
+30064,Mayano Top Gun,Sunlight Bouquet,0.0638,Rerun,character,mayano-top-gun,19,102402
+30064,Air Groove,Quercus Civilis,0.0638,Rerun,character,air-groove,20,101802
+30064,Seiun Sky,Reeling in the Big One,0.0638,Rerun,character,seiun-sky,21,102001
+30064,Hishi Amazon,Azure Amazon,0.0638,Rerun,character,hishi-amazon,22,101201
+30064,El Condor Pasa,Kukulkan Warrior,0.0638,Rerun,character,el-condor-pasa,23,101402
+30064,Grass Wonder,Saintly Jade Cleric,0.0638,Rerun,character,grass-wonder,24,101102
+30064,Fuji Kiseki,Shooting Star Revue,0.0638,Rerun,character,fuji-kiseki,25,100501
+30064,Gold City,Authentic / 1928,0.0638,Rerun,character,gold-city,26,104001
+30064,Special Week,Hopp'n♪Happy Heart,0.0638,Rerun,character,special-week,27,100102
+30064,Maruzensky,Hot☆Summer Night,0.0638,Rerun,character,maruzensky,28,100402
+30064,Meisho Doto,Turbulent Blue,0.0638,Rerun,character,meisho-doto,29,105801
+30064,Eishin Flash,Meisterschaft,0.0638,Rerun,character,eishin-flash,30,103701
+30064,Matikanefukukitaru,Lucky Tidings,0.0638,Rerun,character,matikanefukukitaru,31,105602
+30064,Hishi Akebono,Buono ☆ Alla Moda,0.0638,Rerun,character,hishi-akebono,32,102801
+30064,Agnes Digital,Full-Color Fangirling,0.0638,Rerun,character,agnes-digital,33,101901
+30064,Rice Shower,Vampire Makeover!,0.0638,Rerun,character,rice-shower,34,103002
+30064,Super Creek,Chiffon-Wrapped Mummy,0.0638,Rerun,character,super-creek,35,104502
+30064,Kawakami Princess,Princess of Pink,0.0638,Rerun,character,kawakami-princess,36,103901
+30064,Manhattan Cafe,Creeping Shadow,0.0638,Rerun,character,manhattan-cafe,37,102501
+30064,Symboli Rudolf,Archer by Moonlight,0.0638,Rerun,character,symboli-rudolf,38,101702
+30064,Gold City,Autumn Cosmos,0.0638,Rerun,character,gold-city,39,104002
+30064,Tosen Jordan,Jokester ☆ Vibes,0.0638,Rerun,character,tosen-jordan,40,104801
+30064,Mejiro Dober,Off the Line,0.0638,Rerun,character,mejiro-dober,41,105901
+30064,Oguri Cap,Ashen Miracle,0.0638,Rerun,character,oguri-cap,42,100602
+30064,Biwa Hayahide,Rouge Caroler,0.0638,Rerun,character,biwa-hayahide,43,102302
+30064,Fine Motion,Noble Seamair,0.0638,Rerun,character,fine-motion,44,102201
+30064,Tamamo Cross,Fast as Lightning,0.0638,Rerun,character,tamamo-cross,45,102101
+30064,Haru Urara,New Year ♪ New Urara!,0.0638,Rerun,character,haru-urara,46,105202
+30064,TM Opera O,"New Year, Same Radiance!",0.0638,Rerun,character,tm-opera-o,47,101502
+30066,Sakura Chiyono O,Strength in Full Bloom,0.75,New,character,sakura-chiyono-o,1,106901
+30068,Mihono Bourbon,CODE: ICING,0.75,New,character,mihono-bourbon,1,102602
+30068,Eishin Flash,Precise Chocolatier,0.75,New,character,eishin-flash,2,103702
+30070,Mejiro Ardan,Crystalline,0.75,New,character,mejiro-ardan,1,107101
+30072,Admire Vega,Starry Nocturne,0.75,New,character,admire-vega,1,103301
+30074,Matikanetannhauser,Clippety-Tippety-Clop,2.25,New,character,matikanetannhauser,1,106201
+30074,Kitasan Black,Gilded Shrine to Glory,0.75,New,character,kitasan-black,2,106801
+30076,Satono Diamond,Natural Brilliance,0.75,New,character,satono-diamond,1,106701
+30078,Mejiro Bright,Brunissage Line,0.75,New,character,mejiro-bright,1,107401
+30080,Seiun Sky,Soirée des Chatons,0.75,New,character,seiun-sky,1,102002
+30080,Fuji Kiseki,Succès Étoilé,0.75,New,character,fuji-kiseki,2,100502
+30082,Nishino Flower,Layered Petals,0.75,New,character,nishino-flower,1,105101
+30084,Yaeno Muteki,"Blazed Head, Covered Fists",0.75,New,character,yaeno-muteki,1,107201
+30086,Nice Nature,Run & Win,0.75,New,character,nice-nature,1,106002
+30086,King Halo,Cheerleader in Noble White,0.75,New,character,king-halo,2,106102
+30088,Ines Fujin,Always Electrifying,0.75,New,character,ines-fujin,1,103101
+30090,Mejiro Palmer,Line Breakthrough,0.75,New,character,mejiro-palmer,1,106401
+30092,Curren Chan,Ma Chérie of the New Moon,0.75,New,character,curren-chan,1,103802
+30092,Fine Motion,Titania,0.75,New,character,fine-motion,2,102202
+30094,Inari One,Edomurasaki,0.75,New,character,inari-one,1,103401
+30096,Sweep Tosho,Platanus Witch,0.75,New,character,sweep-tosho,1,104401
+30098,Taiki Shuttle,Bubblegum☆Memories,0.75,New,character,taiki-shuttle,1,101002
+30098,Mejiro Dober,Sapphire Sojourn,0.75,New,character,mejiro-dober,2,105902
+30100,Air Shakur,unsigned,0.75,New,character,air-shakur,1,103601
+30102,Narita Brian,Maverick,0.75,Rerun,character,narita-brian,1,101601
+30102,Seiun Sky,Reeling in the Big One,0.75,Rerun,character,seiun-sky,2,102001
+30104,Mejiro McQueen,Fair Lady of the Waves,0.75,New,character,mejiro-mcqueen,1,101303
+30104,Gold Ship,RUN! RUIN! LAUNCHER!,0.75,New,character,gold-ship,2,100702
+30106,Bamboo Memory,Iron Ambition,0.75,New,character,bamboo-memory,1,105301
+30108,Copano Rickey,Eightfold☆Fortune,0.75,New,character,copano-rickey,1,109801
+30110,Smart Falcon,Twilight Triumph,0.75,New,character,smart-falcon,1,104602
+30112,Winning Ticket,Dream Deliverer,0.75,New,character,winning-ticket,1,103502
+30112,Narita Taishin,Difference Engineer,0.75,New,character,narita-taishin,2,105002
+30114,Yukino Bijin,Darl'n Snowflake,0.75,New,character,yukino-bijin,1,102901
+30116,Seeking the Pearl,Rocket☆Star,0.75,New,character,seeking-the-pearl,1,104201
+30118,Agnes Digital,Fanatic♡Jiangshi,0.75,New,character,agnes-digital,1,101902
+30118,Meisho Doto,Dot-o'-Lantern,0.75,New,character,meisho-doto,2,105802
+30120,Aston Machan,Flare,0.75,New,character,aston-machan,1,108701
+30122,Yamanin Zephyr,Fluttertail Spirit,0.75,New,character,yamanin-zephyr,1,107801
+30124,Tamamo Cross,Raging Thunder,0.75,New,character,tamamo-cross,1,102102
+30124,Inari One,Golden Dream,0.75,New,character,inari-one,2,103402
+30126,Nakayama Festa,Desperate Measures,0.75,New,character,nakayama-festa,1,104901
+30128,Wonder Acute,Butterfly Sting,0.75,New,character,wonder-acute,1,110001
+30003,Special Week,SSR Guts,0.15,New,support,30001,1,30001
+30003,Silence Suzuka,SSR Speed,0.15,New,support,30002,2,30002
+30003,Tokai Teio,SSR Speed,0.15,New,support,30003,3,30003
+30003,Gold Ship,SSR Stamina,0.15,New,support,30004,4,30004
+30003,Vodka,SSR Power,0.15,New,support,30005,5,30005
+30003,Grass Wonder,SSR Guts,0.15,New,support,30006,6,30006
+30003,El Condor Pasa,SSR Power,0.15,New,support,30007,7,30007
+30003,Seiun Sky,SSR Stamina,0.15,New,support,30008,8,30008
+30003,Tamamo Cross,SSR Stamina,0.15,New,support,30009,9,30009
+30003,Fine Motion,SSR Intelligence,0.15,New,support,30010,10,30010
+30003,Ines Fujin,SSR Guts,0.15,New,support,30011,11,30011
+30003,Winning Ticket,SSR Guts,0.15,New,support,30012,12,30012
+30003,Air Shakur,SSR Intelligence,0.15,New,support,30013,13,30013
+30003,Gold City,SSR Speed,0.15,New,support,30014,14,30014
+30003,Sakura Bakushin O,SSR Speed,0.15,New,support,30015,15,30015
+30003,Super Creek,SSR Stamina,0.15,New,support,30016,16,30016
+30003,Smart Falcon,SSR Power,0.15,New,support,30017,17,30017
+30003,Nishino Flower,SSR Speed,0.15,New,support,30018,18,30018
+30003,Biko Pegasus,SSR Speed,0.15,New,support,30020,19,30020
+30003,Tazuna Hayakawa,SSR Friend,0.15,New,support,30021,20,30021
+30005,Sweep Tosho,SR Speed,2.25,New,support,20023,1,20023
+30005,Oguri Cap,SSR Power,0.75,New,support,30024,2,30024
+30007,Daitaku Helios,SR Power,2.25,New,support,20024,1,20024
+30007,Twin Turbo,SSR Speed,0.75,New,support,30026,2,30026
+30009,Ikuno Dictus,SR Intelligence,2.25,New,support,20025,1,20025
+30009,Mejiro Palmer,SSR Guts,0.75,New,support,30027,2,30027
+30131,Special Week,SSR Guts,0.15,Rerun,support,30001,1,30001
+30131,Silence Suzuka,SSR Speed,0.15,Rerun,support,30002,2,30002
+30131,Tokai Teio,SSR Speed,0.15,Rerun,support,30003,3,30003
+30131,Gold Ship,SSR Stamina,0.15,Rerun,support,30004,4,30004
+30131,Vodka,SSR Power,0.15,Rerun,support,30005,5,30005
+30131,Grass Wonder,SSR Guts,0.15,Rerun,support,30006,6,30006
+30131,El Condor Pasa,SSR Power,0.15,Rerun,support,30007,7,30007
+30131,Seiun Sky,SSR Stamina,0.15,Rerun,support,30008,8,30008
+30131,Tamamo Cross,SSR Stamina,0.15,Rerun,support,30009,9,30009
+30131,Fine Motion,SSR Intelligence,0.15,Rerun,support,30010,10,30010
+30131,Ines Fujin,SSR Guts,0.15,Rerun,support,30011,11,30011
+30131,Winning Ticket,SSR Guts,0.15,Rerun,support,30012,12,30012
+30131,Air Shakur,SSR Intelligence,0.15,Rerun,support,30013,13,30013
+30131,Gold City,SSR Speed,0.15,Rerun,support,30014,14,30014
+30131,Sakura Bakushin O,SSR Speed,0.15,Rerun,support,30015,15,30015
+30131,Super Creek,SSR Stamina,0.15,Rerun,support,30016,16,30016
+30131,Smart Falcon,SSR Power,0.15,Rerun,support,30017,17,30017
+30131,Nishino Flower,SSR Speed,0.15,Rerun,support,30018,18,30018
+30131,Biko Pegasus,SSR Speed,0.15,Rerun,support,30020,19,30020
+30131,Tazuna Hayakawa,SSR Friend,0.15,Rerun,support,30021,20,30021
+30011,Kitasan Black,SSR Speed,0.5,New,support,30028,1,30028
+30011,Satono Diamond,SSR Stamina,0.5,New,support,30029,2,30029
+30013,Nishino Flower,SR Power,2.25,New,support,20027,1,20027
+30013,Yukino Bijin,SSR Intelligence,0.75,New,support,30031,2,30031
+30015,Zenno Rob Roy,SR Stamina,2.25,New,support,20028,1,20028
+30015,Yaeno Muteki,SSR Power,0.75,New,support,30032,2,30032
+30017,Super Creek,SSR Stamina,0.75,Rerun,support,30016,1,30016
+30017,Tazuna Hayakawa,SSR Friend,0.75,Rerun,support,30021,2,30021
+30019,Seeking the Pearl,SR Guts,2.25,New,support,20029,1,20029
+30019,Sakura Chiyono O,SSR Stamina,0.75,New,support,30038,2,30038
+30021,Kawakami Princess,SSR Speed,0.75,New,support,30039,1,30039
+30021,Hishi Akebono,SSR Guts,0.75,New,support,30040,2,30040
+30023,Silence Suzuka,SSR Speed,0.7501,Rerun,support,30002,1,30002
+30023,Tamamo Cross,SSR Stamina,0.7501,Rerun,support,30009,2,30009
+30025,Shinko Windy,SR Speed,2.25,New,support,20031,1,20031
+30025,Bamboo Memory,SSR Power,0.75,New,support,30042,2,30042
+30027,Seiun Sky,SSR Intelligence,0.75,New,support,30055,1,30055
+30027,King Halo,SSR Power,0.75,New,support,30056,2,30056
+30029,Mejiro Ardan,SR Intelligence,2.25,New,support,20034,1,20034
+30029,Mejiro Ryan,SSR Guts,0.75,New,support,30048,2,30048
+30031,Vodka,SSR Power,0.7501,Rerun,support,30005,1,30005
+30031,Nishino Flower,SSR Speed,0.75,Rerun,support,30018,2,30018
+30033,Sweep Tosho,SSR Speed,0.75,New,support,30045,1,30045
+30033,Winning Ticket,SSR Stamina,0.75,New,support,30046,2,30046
+30035,Special Week,SSR Guts,0.7501,Rerun,support,30001,1,30001
+30035,Tokai Teio,SSR Speed,0.7501,Rerun,support,30003,2,30003
+30037,Tosen Jordan,SR Stamina,2.25,New,support,20035,1,20035
+30037,Nice Nature,SSR Intelligence,0.75,New,support,30054,2,30054
+30039,Rice Shower,SSR Power,0.75,New,support,30034,1,30034
+30039,Riko Kashimoto,SSR Friend,0.75,New,support,30036,2,30036
+30041,Sakura Bakushin O,SSR Speed,0.7501,Rerun,support,30015,1,30015
+30041,Biko Pegasus,SSR Speed,0.75,Rerun,support,30020,2,30020
+30043,Fine Motion,SR Power,2.25,New,support,20037,1,20037
+30043,Ikuno Dictus,SSR Guts,0.75,New,support,30063,2,30063
+30045,Tamamo Cross,SSR Power,0.75,New,support,30064,1,30064
+30045,Zenno Rob Roy,SSR Speed,0.75,New,support,30065,2,30065
+30047,Seiun Sky,SSR Stamina,0.75,Rerun,support,30008,1,30008
+30047,Yaeno Muteki,SSR Power,0.75,Rerun,support,30032,2,30032
+30049,Sirius Symboli,SR Guts,2.25,New,support,20038,1,20038
+30049,Nakayama Festa,SSR Stamina,0.75,New,support,30043,2,30043
+30051,Curren Chan,SSR Intelligence,0.75,New,support,30068,1,30068
+30051,Narita Brian,SSR Stamina,0.75,New,support,30069,2,30069
+30053,El Condor Pasa,SSR Power,0.7501,Rerun,support,30007,1,30007
+30053,Kitasan Black,SSR Speed,0.7501,Rerun,support,30028,2,30028
+30055,Vodka,SR Speed,2.25,New,support,20039,1,20039
+30055,Daitaku Helios,SSR Power,0.75,New,support,30071,2,30071
+30057,Mayano Top Gun,SSR Speed,0.75,New,support,30072,1,30072
+30057,Narita Taishin,SSR Intelligence,0.75,New,support,30073,2,30073
+30059,Inari One,SR Power,2.25,New,support,20032,1,20032
+30059,Manhattan Cafe,SSR Stamina,0.75,New,support,30075,2,30075
+30061,Oguri Cap,SSR Power,0.75,Rerun,support,30024,1,30024
+30061,Nice Nature,SSR Intelligence,0.75,Rerun,support,30054,2,30054
+30063,Admire Vega,SSR Power,0.75,New,support,30077,1,30077
+30063,Matikanefukukitaru,SSR Speed,0.75,New,support,30078,2,30078
+30065,Tamamo Cross,SR Guts,2.25,New,support,20022,1,20022
+30065,Sasami Anshinzawa,SSR Friend,0.75,New,support,30080,2,30080
+30067,Tazuna Hayakawa,SSR Friend,0.75,Rerun,support,30021,1,30021
+30067,Riko Kashimoto,SSR Friend,0.75,Rerun,support,30036,2,30036
+30069,Nishino Flower,SSR Intelligence,0.75,New,support,30082,1,30082
+30069,Sakura Bakushin O,SSR Guts,0.75,New,support,30083,2,30083
+30071,Ines Fujin,SR Intelligence,2.25,New,support,20030,1,20030
+30071,Agnes Digital,SSR Power,0.75,New,support,30085,2,30085
+30073,Fine Motion,SSR Intelligence,0.75,Rerun,support,30010,1,30010
+30073,Kawakami Princess,SSR Speed,0.75,Rerun,support,30039,2,30039
+30075,Mejiro Ryan,SR Stamina,1,New,support,20040,1,20040
+30075,Admire Vega,SR Guts,1,New,support,20041,2,20041
+30075,Sakura Bakushin O,SR Power,1,New,support,20042,3,20042
+30075,Narita Top Road,SSR Speed,0.75,New,support,30086,4,30086
+30077,Curren Chan,SR Speed,2.25,New,support,20044,1,20044
+30077,Marvelous Sunday,SSR Guts,0.75,New,support,30089,2,30089
+30079,Zenno Rob Roy,SSR Speed,0.75,Rerun,support,30065,1,30065
+30079,Curren Chan,SSR Intelligence,0.75,Rerun,support,30068,2,30068
+30081,Symboli Rudolf,SSR Stamina,0.75,New,support,30090,1,30090
+30081,Sirius Symboli,SSR Intelligence,0.75,New,support,30091,2,30091
+30083,Sweep Tosho,SR Intelligence,2.25,New,support,20046,1,20046
+30083,Daiwa Scarlet,SSR Power,0.75,New,support,30093,2,30093
+30085,Ines Fujin,SSR Guts,0.7501,Rerun,support,30011,1,30011
+30085,Twin Turbo,SSR Speed,0.7501,Rerun,support,30026,2,30026
+30087,Bamboo Memory,SSR Guts,0.75,New,support,30094,1,30094
+30087,Seeking the Pearl,SSR Speed,0.75,New,support,30095,2,30095
+30089,Tokai Teio,SR Stamina,2.25,New,support,20047,1,20047
+30089,Mr. C.B.,SSR Intelligence,0.75,New,support,30097,2,30097
+30091,Rice Shower,SSR Power,0.75,Rerun,support,30034,1,30034
+30091,Matikanefukukitaru,SSR Speed,0.75,Rerun,support,30078,2,30078
+30093,Haru Urara,SSR Power,0.75,New,support,30098,1,30098
+30093,Ikuno Dictus,SSR Stamina,0.75,New,support,30099,2,30099
+30095,Sakura Chiyono O,SSR Stamina,0.75,Rerun,support,30038,1,30038
+30095,Admire Vega,SSR Power,0.75,Rerun,support,30077,2,30077
+30097,Oguri Cap,SR Guts,2.25,New,support,20048,1,20048
+30097,Taiki Shuttle,SSR Speed,0.75,New,support,30053,2,30053
+30099,El Condor Pasa,SSR Guts,0.75,New,support,30102,1,30102
+30099,Matikanetannhauser,SSR Intelligence,0.75,New,support,30103,2,30103
+30101,Gold City,SR Intelligence,2.25,New,support,20049,1,20049
+30101,Air Groove,SSR Power,0.75,New,support,30106,2,30106
+30103,El Condor Pasa,SR Speed,2.25,New,support,20033,1,20033
+30103,The Throne's Assemblage,SSR Group,0.75,New,support,30067,2,30067
+30105,Maruzensky,SSR Speed,0.75,New,support,30107,1,30107
+30105,Nakayama Festa,SSR Intelligence,0.75,New,support,30108,2,30108
+30107,Yukino Bijin,SSR Intelligence,0.75,Rerun,support,30031,1,30031
+30107,Ikuno Dictus,SSR Guts,0.75,Rerun,support,30063,2,30063
+30109,Seiun Sky,SR Intelligence,2.25,New,support,20050,1,20050
+30109,Manhattan Cafe,SSR Stamina,0.75,New,support,30110,2,30110
+30111,Light Hello,SSR Friend,0.75,New,support,30052,1,30052
+30111,Agnes Tachyon,SSR Speed,0.75,New,support,30101,2,30101
+30113,Tokai Teio,SSR Intelligence,0.75,New,support,30111,1,30111
+30113,Twin Turbo,SSR Guts,0.75,New,support,30112,2,30112
+30115,Silence Suzuka,SSR Speed,0.75,Rerun,support,30002,1,30002
+30115,Smart Falcon,SSR Power,0.75,Rerun,support,30017,2,30017
+30117,K.S.Miracle,SR Guts,2.25,New,support,20051,1,20051
+30117,Daiichi Ruby,SSR Power,0.75,New,support,30114,2,30114
+30119,Mejiro Palmer,SSR Stamina,0.75,New,support,30115,1,30115
+30119,Daitaku Helios,SSR Speed,0.75,New,support,30116,2,30116
+30121,Fine Motion,SSR Intelligence,0.75,Rerun,support,30010,1,30010
+30121,Maruzensky,SSR Speed,0.75,Rerun,support,30107,2,30107
+30123,Tsurumaru Tsuyoshi,SR Guts,2.25,New,support,20052,1,20052
+30123,Symboli Kris S,SSR Stamina,0.75,New,support,30118,2,30118
+30125,Oguri Cap,SSR Intelligence,0.75,New,support,30146,1,30146
+30125,Yaeno Muteki,SSR Guts,0.75,New,support,30120,2,30120
+30127,Super Creek,SSR Stamina,0.75,Rerun,support,30016,1,30016
+30127,Mr. C.B.,SSR Intelligence,0.75,Rerun,support,30097,2,30097
+30129,Narita Top Road,SR Power,2.25,New,support,20053,1,20053
+30129,Eishin Flash,SSR Speed,0.75,New,support,30122,2,30122
