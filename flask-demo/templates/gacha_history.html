@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+
+{% macro rateup_line(item) -%}
+  {%- set label = item.name -%}
+  {%- if item.detail -%}{%- set label = item.name ~ ' (' ~ item.detail ~ ')' -%}{%- endif -%}
+  {%- if item.link_type == 'character' and item.link_slug -%}
+    <a class="gacha-rateup-link" href="{{ url_for('character_detail', slug=item.link_slug) }}">{{ label }}</a>
+  {%- elif item.link_type == 'support' and (item.link_slug or item.card_id) -%}
+    <a class="gacha-rateup-link" href="{{ url_for('support_detail', card_id=item.link_slug or item.card_id) }}">{{ label }}</a>
+  {%- else -%}
+    <span class="gacha-rateup-name">{{ label }}</span>
+  {%- endif -%}
+  {%- if item.status %} <span class="gacha-rateup-status">{{ item.status }}</span>{%- endif -%}
+  {%- if item.rate_pct %}, {{ item.rate_pct }}%{%- endif -%}
+{%- endmacro %}
+
+<div class="gacha-page">
+  <a href="{{ url_for('gacha') }}" class="gacha-back-link">&lt; Back to the main gacha page</a>
+  <h1 class="gacha-page-title">{{ heading }}</h1>
+  <p class="gacha-sub">Global · {{ filter_year if filter_year != 'all' else 'All years' }} ·
+    {% if filter_type in ['character', 'characters'] %}characters
+    {% elif filter_type in ['support', 'supports'] %}supports
+    {% else %}all banners{% endif %}
+  </p>
+
+  <div class="gacha-filter-bar">
+    <div class="gacha-filter-row">
+      <span class="gacha-filter-label">Server</span>
+      <span class="gacha-chip active">Global</span>
+    </div>
+    <div class="gacha-filter-row">
+      <span class="gacha-filter-label">Year</span>
+      <a class="gacha-chip {% if filter_year == 'all' %}active{% endif %}"
+         href="{{ url_for('gacha_history', year='all', type=filter_type if filter_type != 'all' else 'all') }}">All</a>
+      <a class="gacha-chip {% if filter_year == '2025' %}active{% endif %}"
+         href="{{ url_for('gacha_history', year='2025', type=filter_type if filter_type != 'all' else 'character') }}">2025</a>
+      <a class="gacha-chip {% if filter_year == '2026' %}active{% endif %}"
+         href="{{ url_for('gacha_history', year='2026', type=filter_type if filter_type != 'all' else 'character') }}">2026</a>
+    </div>
+    <div class="gacha-filter-row">
+      <span class="gacha-filter-label">Type</span>
+      <a class="gacha-chip {% if filter_type in ['character', 'characters'] %}active{% endif %}"
+         href="{{ url_for('gacha_history', year=filter_year, type='character') }}">Characters</a>
+      <a class="gacha-chip {% if filter_type in ['support', 'supports'] %}active{% endif %}"
+         href="{{ url_for('gacha_history', year=filter_year, type='support') }}">Supports</a>
+      <a class="gacha-chip {% if filter_type == 'all' %}active{% endif %}"
+         href="{{ url_for('gacha_history', year=filter_year, type='all') }}">All</a>
+    </div>
+  </div>
+
+  <div class="gacha-history-list">
+    {% for banner in banners %}
+    <div class="gacha-banner-card">
+      <div class="gacha-banner-left">
+        {% if banner.image %}
+        <img
+          class="gacha-banner-img"
+          src="{{ url_for('static', filename='images/gacha/' ~ banner.image) }}"
+          alt="{{ banner.title }}"
+          onerror="this.style.display='none'"
+        >
+        {% endif %}
+        <div class="gacha-banner-period">{{ banner.period_label }}</div>
+      </div>
+      <div class="gacha-banner-rateups">
+        <ul>
+          {% for item in banner.rateups %}
+          <li>{{ rateup_line(item) }}</li>
+          {% else %}
+          <li class="muted">No rate-up listed</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% else %}
+    <p class="muted">Không có banner. Chạy crawler:
+      <code>python Crawler/crawl_gametora_gacha.py</code>
+    </p>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+
+  .gacha-page-title {
+    font-weight: 700;
+    color: #111;
+    font-size: 2rem;
+    margin: 0 0 12px;
+  }
+  .gacha-section-title {
+    font-weight: 700;
+    color: #1c6b66;
+    font-size: 1.35rem;
+    margin: 28px 0 12px;
+  }
+  .gacha-back-link {
+    display: inline-block !important;
+    visibility: visible !important;
+    margin: 0 0 16px 0;
+    padding: 0;
+    color: #4c6ef5 !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  .gacha-back-link:hover {
+    text-decoration: underline !important;
+    color: #364fc7 !important;
+  }
+
+  .gacha-page {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 0 8px 32px;
+  }
+  .gacha-sub { color: #666; margin-top: -8px; }
+  .gacha-filter-bar {
+    background: #e6e6e6;
+    border: 1px solid #9fd0d0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 16px 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .gacha-filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .gacha-filter-label { min-width: 64px; font-weight: 600; color: #333; }
+  .gacha-chip {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .gacha-chip.active {
+    background: #fff;
+    border-color: #e6b422;
+    box-shadow: 0 0 0 1px #e6b422;
+    font-weight: 600;
+  }
+  .gacha-history-list { display: flex; flex-direction: column; gap: 14px; }
+  .gacha-banner-card {
+    display: grid;
+    grid-template-columns: minmax(280px, 420px) 1fr;
+    gap: 20px 32px;
+    align-items: center;
+    background: #e4e4e4;
+    border-radius: 12px;
+    padding: 16px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  @media (max-width: 720px) {
+    .gacha-banner-card { grid-template-columns: 1fr; }
+  }
+  .gacha-banner-left { display: flex; flex-direction: column; gap: 8px; }
+  .gacha-banner-img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 8px;
+    background: #ccc;
+    display: block;
+  }
+  .gacha-banner-period { color: #555; font-size: 0.95rem; }
+  .gacha-banner-rateups ul { margin: 0; padding-left: 1.2em; line-height: 1.7; }
+  .gacha-rateup-link { color: #3b5bdb; text-decoration: none; font-weight: 500; }
+  .gacha-rateup-link:hover { text-decoration: underline; }
+  .gacha-rateup-status { color: #666; }
+  .muted { color: #888; }
+</style>
+{% endblock %}

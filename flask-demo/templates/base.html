@@ -564,14 +564,16 @@
                             'character_detail',
                             'support_card',
                             'support_detail',
+                            'gacha',
+                            'gacha_history',
+                            'gacha_special',
                             'banner_history',
                             'races',
                             'items',
                             'cm_guide',
                             'scenario_guide',
                             'skills',
-                            'skill_detail',
-                            'titles'
+                            'skill_detail'
                         ] %}
                             active
                         {% endif %}"
@@ -613,13 +615,13 @@
 
                         <a
                             class="
-                            {% if request.endpoint == 'banner_history' %}
+                            {% if request.endpoint in ('gacha', 'gacha_history', 'gacha_special', 'banner_history') %}
                                 active
                             {% endif %}"
-                            href="{{ url_for('banner_history') }}"
+                            href="{{ url_for('gacha') }}"
                         >
                             <i class="fa-solid fa-clock-rotate-left"></i>
-                            Banner History
+                            Gacha
                         </a>
                         <a
                             class="

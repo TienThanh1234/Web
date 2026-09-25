@@ -3,7 +3,17 @@
 
 def register_blueprints(app):
     # Tên hàm giữ nguyên để tương thích với url_for() trong template cũ.
-    from routes import auth, characters, items, pages, races, skills, supports, titles
+    from routes import (
+        auth,
+        characters,
+        gacha,
+        items,
+        pages,
+        races,
+        skills,
+        supports,
+        titles,
+    )
 
     auth.init_app(app)
     pages.init_app(app)
@@ -13,3 +23,4 @@ def register_blueprints(app):
     items.init_app(app)
     races.init_app(app)
     titles.init_app(app)
+    gacha.init_app(app)

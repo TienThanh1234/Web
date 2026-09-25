@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block title %}Gacha{% endblock %}
+
+{% block content %}
+
+{% macro rateup_line(item) -%}
+  {%- set label = item.name -%}
+  {%- if item.detail -%}{%- set label = item.name ~ ' (' ~ item.detail ~ ')' -%}{%- endif -%}
+  {%- if item.link_type == 'character' and item.link_slug -%}
+    <a class="gacha-rateup-link" href="{{ url_for('character_detail', slug=item.link_slug) }}">{{ label }}</a>
+  {%- elif item.link_type == 'support' and (item.link_slug or item.card_id) -%}
+    <a class="gacha-rateup-link" href="{{ url_for('support_detail', card_id=item.link_slug or item.card_id) }}">{{ label }}</a>
+  {%- else -%}
+    <span class="gacha-rateup-name">{{ label }}</span>
+  {%- endif -%}
+  {%- if item.status %} <span class="gacha-rateup-status">{{ item.status }}</span>{%- endif -%}
+  {%- if item.rate_pct %}, {{ item.rate_pct }}%{%- endif -%}
+{%- endmacro %}
+
+<div class="gacha-page">
+  <h1 class="gacha-page-title">Gacha</h1>
+  <a href="{{ url_for('home') }}" class="gacha-back-link">&lt; Back to Home</a>
+
+  <h2 class="gacha-section-title">Current banners</h2>
+
+  <div class="gacha-current-list">
+    {% for banner in current_banners %}
+    <div class="gacha-banner-card">
+      <div class="gacha-banner-left">
+        {% if banner.image %}
+        <img
+          class="gacha-banner-img"
+          src="{{ url_for('static', filename='images/gacha/' ~ banner.image) }}"
+          alt="{{ banner.title }}"
+          onerror="this.style.display='none'"
+        >
+        {% endif %}
+        <div class="gacha-banner-meta">
+          <div class="gacha-banner-title">{{ banner.title }}</div>
+          <div class="gacha-banner-period">{{ banner.period_label }}</div>
+        </div>
+      </div>
+
+      <div class="gacha-banner-rateups">
+        <ul>
+          {% for item in banner.rateups %}
+          <li>{{ rateup_line(item) }}</li>
+          {% else %}
+          <li class="muted">No rate-up listed</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% else %}
+    <p class="muted">No current banners. Chạy: <code>python Crawler/crawl_gametora_gacha.py</code></p>
+    {% endfor %}
+  </div>
+
+  <h2 class="gacha-section-title">Gacha in Uma Musume</h2>
+  <p>
+    Gacha is fully separated between support cards and characters.
+    There are always two banners active (one for supports, one for characters), called pickup banners.
+    On every pickup banner, at least one support/character will be on a rate up.
+  </p>
+  <p>
+    The gacha rates in Uma Musume are 3% for an SSR card (or a 3☆ character),
+    18% for an SR card (or a 2☆ character), and 79% for an R card (or a 1☆ character).
+    Pulling 10 at once will guarantee an SR (or a 2☆) or higher on the 10th pull.
+  </p>
+  <p>
+    Note that the rates shown in-game are rounded to three decimal places,
+    while this page lists the exact values, so there can be some very small differences between the numbers.
+  </p>
+
+  <h2 class="gacha-section-title">Special</h2>
+  <p>
+    Apart from the two pickup banners that are always active several special banners also exist.
+    Some are time-limited some can only be pulled on once.
+    Any gacha tickets you obtain are also used on separate banners.
+  </p>
+  <ul>
+    <li><a href="{{ url_for('gacha_special') }}">Special banners</a></li>
+  </ul>
+
+  <h2 class="gacha-section-title">Banner history</h2>
+  <ul class="gacha-history-links">
+    {% for link in history_links %}
+    <li>
+      <a href="{{ url_for('gacha_history', year=link.year, type=link.banner_type) }}">
+        {{ link.label }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<style>
+
+  .gacha-page-title {
+    font-weight: 700;
+    color: #111;
+    font-size: 2rem;
+    margin: 0 0 12px;
+  }
+  .gacha-section-title {
+    font-weight: 700;
+    color: #1c6b66;
+    font-size: 1.35rem;
+    margin: 28px 0 12px;
+  }
+.gacha-back-link {
+    display: inline-block !important;
+    visibility: visible !important;
+    margin: 0 0 16px 0;
+    color: #4c6ef5 !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .gacha-back-link:hover {
+    text-decoration: underline !important;
+    color: #364fc7 !important;
+  }
+
+  /* Full width trong khung content */
+  .gacha-page {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 0 8px 32px;
+  }
+  .gacha-current-list,
+  .gacha-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .gacha-banner-card {
+    display: grid;
+    grid-template-columns: minmax(280px, 420px) 1fr;
+    gap: 20px 32px;
+    align-items: center;
+    background: #e4e4e4;
+    border-radius: 12px;
+    padding: 16px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  @media (max-width: 720px) {
+    .gacha-banner-card { grid-template-columns: 1fr; }
+  }
+  .gacha-banner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .gacha-banner-img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 8px;
+    background: #ccc;
+    display: block;
+  }
+  .gacha-banner-title { font-weight: 600; font-size: 1.05rem; }
+  .gacha-banner-period { color: #555; font-size: 0.95rem; }
+  .gacha-banner-rateups ul { margin: 0; padding-left: 1.2em; line-height: 1.7; }
+  .gacha-rateup-link { color: #3b5bdb; text-decoration: none; font-weight: 500; }
+  .gacha-rateup-link:hover { text-decoration: underline; }
+  .gacha-rateup-status { color: #666; }
+  .gacha-history-links { line-height: 1.9; }
+  .muted { color: #888; }
+</style>
+{% endblock %}
