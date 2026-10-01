@@ -1,0 +1,535 @@
+{% extends "base.html" %}
+
+{% block title %}{{ scenario.title }} - Scenario Guide{% endblock %}
+
+{% block extra_css %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    body { background-color: #f7f7f7; }
+    .guide {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 0 50px;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 1.12rem;
+        line-height: 1.6;
+        color: #111;
+    }
+    .guide h1, .guide h2, .guide h3 {
+        font-family: "Nunito", "Open Sans", Arial, sans-serif;
+        font-weight: 800;
+    }
+    .guide h1 {
+        font-size: 2.9rem;
+        margin: 0 0 18px;
+        line-height: 1.15;
+        color: #000;
+    }
+    .guide h2 {
+        font-size: 2rem;
+        margin: 42px 0 16px;
+        line-height: 1.25;
+        color: #1c6b66;
+    }
+    .guide h3 {
+        font-size: 1.35rem;
+        margin: 28px 0 12px;
+        color: #1c6b66;
+    }
+    .guide-meta { font-size: 0.95rem; line-height: 1.4; margin-bottom: 26px; }
+    .guide p { margin: 0 0 16px; }
+    .guide ul { margin: 0 0 16px; padding-left: 32px; }
+    .guide ul li { margin-bottom: 2px; }
+    .guide ul ul { margin: 4px 0 8px; }
+    .guide a, .guide .guide-link { color: #6058d6; text-decoration: none; }
+    .guide a:hover, .guide .guide-link:hover { text-decoration: underline; }
+    .guide-figure { text-align: center; margin: 6px 0 20px; }
+    .guide-figure img { width: 100%; height: auto; display: inline-block; }
+    .guide-table {
+        border-collapse: collapse;
+        margin: 4px 0 22px;
+        max-width: 100%;
+        background: transparent;
+    }
+    .guide-table th, .guide-table td {
+        border: 1px solid #333;
+        padding: 2px 8px;
+        text-align: center;
+    }
+    .guide-table th { background: #e0e0e0; font-weight: 600; }
+    .guide-table-wrap { overflow-x: auto; }
+    .guide-table-icon {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        display: block;
+        margin: 2px auto;
+        vertical-align: middle;
+    }
+    .guide-table th.icon-cell,
+    .guide-table td.icon-cell {
+        width: 56px;
+        padding: 4px 6px;
+        background: #fff;
+    }
+    .guide-update-box {
+        border: 1px solid #7a9aa0;
+        border-radius: 6px;
+        margin: 18px 0 28px;
+        overflow: hidden;
+    }
+    .guide-update-box h2 {
+        margin: 0;
+        padding: 12px 16px;
+        background: #7a9aa0;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    .guide-update-box .box-body { padding: 14px 16px 8px; background: #fff; }
+    .guide-toc { margin-bottom: 8px; }
+
+    .guide-skill-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 10px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .guide-skill-row:nth-child(even) { background: #f7f7f7; }
+    .guide-skill-icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+    .guide-skill-body { flex: 1; min-width: 0; }
+    .guide-skill-desc { color: #555; font-size: 0.95rem; margin-top: 2px; }
+    .guide-skill-more {
+        color: #6058d6;
+        text-decoration: none;
+        font-weight: 600;
+        flex-shrink: 0;
+        padding-top: 2px;
+    }
+    .guide-skill-more:hover { text-decoration: underline; }
+    .guide-note {
+        margin: 0 0 16px;
+        padding: 10px 12px;
+        background: #f0f0f0;
+        border-left: 4px solid #888;
+    }
+
+    .guide-status-link {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        font: inherit;
+        color: #6058d6;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .guide-status-link:hover { text-decoration: underline; }
+    .guide-status-link.status-good { color: #2a7a4b; }
+    .guide-status-link.status-bad { color: #c0392b; }
+    .guide-status-link.status-neutral { color: #6058d6; }
+
+    .status-popup {
+        position: absolute;
+        z-index: 1000;
+        max-width: 340px;
+        min-width: 240px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        padding: 14px 16px 12px;
+    }
+    .status-popup-close {
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        border: none;
+        background: transparent;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #666;
+        line-height: 1;
+    }
+    .status-popup-title-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 20px 8px 0;
+        flex-wrap: wrap;
+    }
+    .status-popup-name {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .status-popup-description {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.45;
+        color: #333;
+    }
+    .status-type-badge {
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 999px;
+        text-transform: uppercase;
+    }
+    .status-type-badge.good { background: #d4edda; color: #155724; }
+    .status-type-badge.bad { background: #f8d7da; color: #721c24; }
+    .status-type-badge.neutral { background: #e2e3e5; color: #383d41; }
+    .status-popup.status-good { border-left: 4px solid #2a7a4b; }
+    .status-popup.status-bad { border-left: 4px solid #c0392b; }
+
+    @media (max-width: 768px) {
+        .guide { font-size: 1rem; }
+        .guide h1 { font-size: 2.1rem; }
+        .guide h2 { font-size: 1.6rem; }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{% set img_folder = scenario.image_folder %}
+
+<div class="guide">
+    <p><a href="{{ url_for('scenario_guide') }}">&larr; Back to Scenarios</a></p>
+
+    <h1>{{ scenario.title }}</h1>
+    <div class="guide-meta">
+        By {{ scenario.authors }}<br>
+        Last updated on {{ scenario.last_updated }}
+    </div>
+
+    {% set ns = namespace(toc_done=false, in_update=false, body_started=false) %}
+
+    {% for block in blocks %}
+        {% set bt = block.block_type %}
+
+        {% if not ns.body_started %}
+            {% if bt == 'intro' %}
+                <p>{{ block.html|safe }}</p>
+
+            {% elif bt == 'image' %}
+                <div class="guide-figure">
+                    <img src="{{ url_for('static', filename='images/scenarios_guide/' ~ img_folder ~ '/' ~ block.image) }}"
+                         alt="" style="max-width: {{ block.image_max }};"
+                         onerror="this.parentNode.style.display='none'">
+                </div>
+
+            {% elif bt == 'update_box_start' %}
+                {% set ns.in_update = true %}
+                <div class="guide-update-box">
+                    <h2>{{ block.heading }}</h2>
+                    <div class="box-body">
+
+            {% elif bt == 'update_box_end' %}
+                </div></div>
+                {% set ns.in_update = false %}
+
+            {% elif ns.in_update and bt == 'paragraph' %}
+                <p>{{ block.html|safe }}</p>
+
+            {% elif ns.in_update and bt == 'list' %}
+                <ul>
+                {% for it in block.list_items %}
+                    <li>{{ it.html|safe }}
+                    {% if it.children %}
+                        <ul>
+                        {% for ch in it.children %}
+                            <li>{{ ch.html|safe }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+
+            {% elif bt == 'heading' or bt == 'subheading' %}
+                {% set ns.body_started = true %}
+
+                {% if not ns.toc_done and toc %}
+                    {% set ns.toc_done = true %}
+                    <h2 id="toc">Table of Contents</h2>
+                    <ul class="guide-toc">
+                    {% for item in toc %}
+                        {% if item.level == 1 %}
+                        <li style="margin-top:4px;"><a href="#{{ item.id }}">{{ item.title }}</a></li>
+                        {% else %}
+                        <li style="margin-left:18px; list-style:circle;"><a href="#{{ item.id }}">{{ item.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+
+                {% if bt == 'heading' %}
+                    <h2 id="{{ block.heading_id }}">{{ block.heading }}</h2>
+                {% else %}
+                    <h3 id="{{ block.heading_id }}">{{ block.heading }}</h3>
+                {% endif %}
+            {% endif %}
+
+        {% else %}
+            {% if not ns.toc_done and toc and (bt == 'heading' or bt == 'subheading') %}
+                {% set ns.toc_done = true %}
+                <h2 id="toc">Table of Contents</h2>
+                <ul class="guide-toc">
+                {% for item in toc %}
+                    {% if item.level == 1 %}
+                    <li style="margin-top:4px;"><a href="#{{ item.id }}">{{ item.title }}</a></li>
+                    {% else %}
+                    <li style="margin-left:18px; list-style:circle;"><a href="#{{ item.id }}">{{ item.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            {% endif %}
+
+            {% if bt == 'heading' %}
+                <h2 id="{{ block.heading_id }}">{{ block.heading }}</h2>
+
+            {% elif bt == 'subheading' %}
+                <h3 id="{{ block.heading_id }}">{{ block.heading }}</h3>
+
+            {% elif bt == 'paragraph' %}
+                <p>{{ block.html|safe }}</p>
+
+            {% elif bt == 'note' %}
+                <p class="guide-note"><strong>Note:</strong> {{ block.html|safe }}</p>
+
+            {% elif bt == 'image' %}
+                <div class="guide-figure">
+                    <img src="{{ url_for('static', filename='images/scenarios_guide/' ~ img_folder ~ '/' ~ block.image) }}"
+                         alt="" style="max-width: {{ block.image_max }};"
+                         onerror="this.parentNode.style.display='none'">
+                </div>
+
+            {% elif bt == 'list' %}
+                <ul>
+                {% for it in block.list_items %}
+                    <li>{{ it.html|safe }}
+                    {% if it.children %}
+                        <ul>
+                        {% for ch in it.children %}
+                            <li>{{ ch.html|safe }}</li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+
+            {% elif bt == 'skill_item' and block.skill %}
+                <div class="guide-skill-row">
+                    {% if block.skill.icon %}
+                    <img class="guide-skill-icon"
+                         src="{{ url_for('static', filename='images/scenarios_guide/' ~ img_folder ~ '/' ~ block.skill.icon) }}"
+                         alt=""
+                         onerror="this.style.display='none'">
+                    {% endif %}
+                    <div class="guide-skill-body">
+                        {% if block.skill.href %}
+                        <a class="guide-link" href="{{ block.skill.href }}"><strong>{{ block.skill.name }}</strong></a>
+                        {% else %}
+                        <strong class="guide-link">{{ block.skill.name }}</strong>
+                        {% endif %}
+                        <div class="guide-skill-desc">{{ block.skill.desc|safe }}</div>
+                    </div>
+                    {% if block.skill.href %}
+                    <a class="guide-skill-more" href="{{ block.skill.href }}">More</a>
+                    {% endif %}
+                </div>
+
+            {% elif bt == 'table' and block.table %}
+                <div class="guide-table-wrap">
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                            {% for h in block.table.headers %}
+                                {% if h and (h.endswith('.png') or h.endswith('.webp') or h.endswith('.jpg') or h.endswith('.jpeg')) %}
+                                <th class="icon-cell">
+                                    <img class="guide-table-icon"
+                                         src="{{ url_for('static', filename='images/scenarios_guide/' ~ img_folder ~ '/' ~ h) }}"
+                                         alt=""
+                                         onerror="this.style.display='none'">
+                                </th>
+                                {% else %}
+                                <th>{{ h|safe }}</th>
+                                {% endif %}
+                            {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for row in block.table.rows %}
+                            <tr>
+                            {% for c in row %}
+                                {% if c and (c.endswith('.png') or c.endswith('.webp') or c.endswith('.jpg') or c.endswith('.jpeg')) %}
+                                <td class="icon-cell">
+                                    <img class="guide-table-icon"
+                                         src="{{ url_for('static', filename='images/scenarios_guide/' ~ img_folder ~ '/' ~ c) }}"
+                                         alt=""
+                                         onerror="this.style.display='none'">
+                                </td>
+                                {% else %}
+                                <td>{{ c|safe }}</td>
+                                {% endif %}
+                            {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    <p style="margin-top: 30px;">
+        <a href="{{ url_for('scenario_guide') }}">&larr; Back to Scenarios</a>
+    </p>
+</div>
+
+<div id="status-popup" class="status-popup" hidden>
+    <button type="button" class="status-popup-close" onclick="closeStatusPopup()">×</button>
+    <div class="status-popup-title-row">
+        <h3 id="status-popup-name" class="status-popup-name"></h3>
+        <span id="status-popup-type" class="status-type-badge"></span>
+    </div>
+    <p id="status-popup-description" class="status-popup-description"></p>
+</div>
+
+<script>
+(function () {
+    var STATUS_EFFECTS = {{ status_effects | default([]) | tojson }};
+
+    var STATUS_BY_NAME = (function () {
+        var map = {};
+        (STATUS_EFFECTS || []).forEach(function (s) {
+            if (!s || !s.name) return;
+            map[String(s.name).toLowerCase()] = s;
+            var bare = String(s.name).replace(/[○◎]/g, "").trim().toLowerCase();
+            if (bare) map[bare] = s;
+        });
+        return map;
+    })();
+
+    function lookupStatus(name) {
+        if (!name) return null;
+        var key = String(name).trim().toLowerCase();
+        var bare = key.replace(/[○◎]/g, "").trim();
+        return STATUS_BY_NAME[key] || STATUS_BY_NAME[bare] || null;
+    }
+
+    function findStatusParts(rawText) {
+        var text = String(rawText || "").trim();
+        if (!text) return null;
+
+        var m = text.match(/^(.*?\b(?:Get|Obtain)\s+)(.+?)(\s+status(?:\s+effect)?.*)$/i);
+        if (m) {
+            return { prefix: m[1], statusName: m[2].trim(), suffix: m[3] };
+        }
+
+        m = text.match(/^(Heal\s+)(.+)$/i);
+        if (m) {
+            var candidate = m[2].trim();
+            if (/^all\b/i.test(candidate)) return null;
+            if (lookupStatus(candidate)) {
+                return { prefix: m[1], statusName: candidate, suffix: "" };
+            }
+        }
+        return null;
+    }
+
+    function showStatusPopup(event, status) {
+        event.preventDefault();
+        event.stopPropagation();
+        var popup = document.getElementById("status-popup");
+        if (!popup) return;
+
+        var kind = (status.type || "neutral").toLowerCase();
+        document.getElementById("status-popup-name").textContent = status.name || "";
+        document.getElementById("status-popup-description").textContent = status.description || "";
+
+        var typeEl = document.getElementById("status-popup-type");
+        if (typeEl) {
+            typeEl.textContent = kind === "good" ? "Buff" : (kind === "bad" ? "Debuff" : "Status");
+            typeEl.className = "status-type-badge " + kind;
+        }
+        popup.className = "status-popup status-" + kind;
+
+        var rect = event.currentTarget.getBoundingClientRect();
+        popup.style.top = (rect.bottom + window.scrollY + 8) + "px";
+        popup.style.left = (rect.left + window.scrollX) + "px";
+        popup.hidden = false;
+
+        requestAnimationFrame(function () {
+            var pr = popup.getBoundingClientRect();
+            var overflow = pr.right - (window.innerWidth - 10);
+            if (overflow > 0) {
+                popup.style.left = (parseFloat(popup.style.left) - overflow) + "px";
+            }
+        });
+    }
+
+    window.closeStatusPopup = function () {
+        var popup = document.getElementById("status-popup");
+        if (popup) popup.hidden = true;
+    };
+
+    function linkifyNode(node) {
+        if (!node) return;
+        if (node.querySelector && node.querySelector("button.guide-status-link")) return;
+        if (node.querySelector && node.querySelector("img.guide-table-icon") && !(node.textContent || "").trim()) return;
+
+        var rawText = (node.textContent || "").trim();
+        var parts = findStatusParts(rawText);
+        if (!parts) return;
+
+        var status = lookupStatus(parts.statusName);
+        if (!status) return;
+
+        var kind = (status.type || "neutral").toLowerCase();
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "guide-status-link status-" + kind;
+        btn.textContent = parts.statusName;
+        btn.title = (kind === "good" ? "Buff: " : kind === "bad" ? "Debuff: " : "") + (status.description || status.name);
+        btn.addEventListener("click", function (e) { showStatusPopup(e, status); });
+
+        node.replaceChildren();
+        if (parts.prefix) node.appendChild(document.createTextNode(parts.prefix));
+        node.appendChild(btn);
+        if (parts.suffix) node.appendChild(document.createTextNode(parts.suffix));
+    }
+
+    function addGuideStatusLinks() {
+        document.querySelectorAll(".guide-table td, .guide p, .guide li").forEach(linkifyNode);
+    }
+
+    document.addEventListener("click", function (event) {
+        var popup = document.getElementById("status-popup");
+        if (!popup || popup.hidden) return;
+        if (popup.contains(event.target)) return;
+        if (event.target.closest(".guide-status-link")) return;
+        window.closeStatusPopup();
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") window.closeStatusPopup();
+    });
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", addGuideStatusLinks);
+    } else {
+        addGuideStatusLinks();
+    }
+})();
+</script>
+{% endblock %}

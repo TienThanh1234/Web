@@ -1,0 +1,348 @@
+{% extends "base.html" %}
+
+{% block title %}Scenario List{% endblock %}
+
+{% block content %}
+<div class="scenario-page">
+  <a href="{{ url_for('home') }}" class="scenario-back-link">&lt; Back to Home</a>
+
+  <h1 class="scenario-page-title">Scenario List</h1>
+
+  <p class="scenario-intro">
+    A list of all scenarios (career modes) ever released in Umamusume.
+  </p>
+  <p class="scenario-intro">
+    Scenario-linked characters listed on this page are up to date with current data.
+    Some of them were added <em>after</em> the scenario was initially released
+    (usually because the character didn't exist back then).
+  </p>
+
+  {# ========== CURRENT SCENARIOS ========== #}
+  <h2 class="scenario-section-title">Current scenarios</h2>
+
+  <div class="scenario-list">
+    {% for s in current_scenarios %}
+    <article class="scenario-card" style="border-color: #{{ s.bg_color or '4caf50' }};">
+      <div class="scenario-card-header" style="border-bottom-color: #{{ s.bg_color or '4caf50' }};">
+        <div class="scenario-card-hero">
+          {% if s.image %}
+          <img
+            src="{{ url_for('static', filename='images/scenarios/' ~ s.image) }}"
+            alt="{{ s.name }}"
+            onerror="this.style.display='none'"
+          >
+          {% endif %}
+        </div>
+        <div class="scenario-card-titles">
+          <h3 class="scenario-name">
+            {% if s.slug in detail_slugs %}
+            <a href="{{ url_for('scenario_detail', slug=s.slug) }}" class="scenario-title-link">{{ s.name }}</a>
+            {% else %}
+            {{ s.name }}
+            {% endif %}
+          </h3>
+          <p class="scenario-fullname">{{ s.name_full or s.name }}</p>
+        </div>
+      </div>
+
+      <div class="scenario-card-body">
+        <p><strong>Release date:</strong> {{ s.release_date or "TBD" }}</p>
+        <p><strong>Secret events:</strong> {{ s.secret_events or "—" }}</p>
+
+        <p><strong>Scenario-linked characters:</strong></p>
+        {% if s.linked_characters %}
+        <div class="scenario-linked-chars">
+          {% for ch in s.linked_characters %}
+          <div class="scenario-char-chip">
+            {% if ch.image %}
+            <img
+              class="scenario-char-icon"
+              src="{{ url_for('static', filename='images/' ~ (ch.image_dir or 'scenario_chars') ~ '/' ~ ch.image) }}"
+              alt="{{ ch.name }}"
+              onerror="this.style.display='none'"
+            >
+            {% endif %}
+            <span class="scenario-char-name">{{ ch.name }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p class="muted">None listed</p>
+        {% endif %}
+
+        <p><strong>Stat caps{% if s.cap_note %} ({{ s.cap_note }}){% endif %}:</strong></p>
+        <table class="scenario-caps-table">
+          <thead>
+            <tr>
+              <th>Speed</th>
+              <th>Stamina</th>
+              <th>Power</th>
+              <th>Guts</th>
+              <th>Wit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ s.cap_speed or "—" }}</td>
+              <td>{{ s.cap_stamina or "—" }}</td>
+              <td>{{ s.cap_power or "—" }}</td>
+              <td>{{ s.cap_guts or "—" }}</td>
+              <td>{{ s.cap_wit or "—" }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        {% if s.slug in detail_slugs %}
+        <div class="scenario-detail-link-wrap">
+          <a href="{{ url_for('scenario_detail', slug=s.slug) }}" class="scenario-detail-link">
+            Detailed {{ s.name }} info →
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% else %}
+    <p class="muted">No current scenarios found.</p>
+    {% endfor %}
+  </div>
+
+  {# ========== UPCOMING / OTHER ========== #}
+  {% if upcoming_scenarios %}
+  <h2 class="scenario-section-title">Upcoming / other</h2>
+  <div class="scenario-list">
+    {% for s in upcoming_scenarios %}
+    <article class="scenario-card" style="border-color: #{{ s.bg_color or 'e53935' }};">
+      <div class="scenario-card-header" style="border-bottom-color: #{{ s.bg_color or 'e53935' }};">
+        <div class="scenario-card-hero">
+          {% if s.image %}
+          <img
+            src="{{ url_for('static', filename='images/scenarios/' ~ s.image) }}"
+            alt="{{ s.name }}"
+            onerror="this.style.display='none'"
+          >
+          {% endif %}
+        </div>
+        <div class="scenario-card-titles">
+          <h3 class="scenario-name">
+            {% if s.slug in detail_slugs %}
+            <a href="{{ url_for('scenario_detail', slug=s.slug) }}" class="scenario-title-link">{{ s.name }}</a>
+            {% else %}
+            {{ s.name }}
+            {% endif %}
+          </h3>
+          <p class="scenario-fullname">{{ s.name_full or s.name }}</p>
+        </div>
+      </div>
+
+      <div class="scenario-card-body">
+        <p><strong>Release date:</strong> {{ s.release_date or "Not on Global yet" }}</p>
+
+        {% if s.secret_events %}
+        <p><strong>Secret events:</strong> {{ s.secret_events }}</p>
+        {% endif %}
+
+        {% if s.linked_characters %}
+        <p><strong>Scenario-linked characters:</strong></p>
+        <div class="scenario-linked-chars">
+          {% for ch in s.linked_characters %}
+          <div class="scenario-char-chip">
+            {% if ch.image %}
+            <img
+              class="scenario-char-icon"
+              src="{{ url_for('static', filename='images/' ~ (ch.image_dir or 'scenario_chars') ~ '/' ~ ch.image) }}"
+              alt="{{ ch.name }}"
+              onerror="this.style.display='none'"
+            >
+            {% endif %}
+            <span class="scenario-char-name">{{ ch.name }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if s.cap_speed or s.cap_stamina %}
+        <p><strong>Stat caps{% if s.cap_note %} ({{ s.cap_note }}){% endif %}:</strong></p>
+        <table class="scenario-caps-table">
+          <thead>
+            <tr>
+              <th>Speed</th>
+              <th>Stamina</th>
+              <th>Power</th>
+              <th>Guts</th>
+              <th>Wit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ s.cap_speed or "—" }}</td>
+              <td>{{ s.cap_stamina or "—" }}</td>
+              <td>{{ s.cap_power or "—" }}</td>
+              <td>{{ s.cap_guts or "—" }}</td>
+              <td>{{ s.cap_wit or "—" }}</td>
+            </tr>
+          </tbody>
+        </table>
+        {% endif %}
+
+        {% if s.slug in detail_slugs %}
+        <div class="scenario-detail-link-wrap">
+          <a href="{{ url_for('scenario_detail', slug=s.slug) }}" class="scenario-detail-link">
+            Detailed {{ s.name }} info →
+          </a>
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+<style>
+  .scenario-page {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 0 8px 40px;
+  }
+  .scenario-back-link {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #4c6ef5;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .scenario-back-link:hover { text-decoration: underline; }
+  .scenario-page-title {
+    font-weight: 700;
+    color: #111;
+    font-size: 2rem;
+    margin: 0 0 12px;
+  }
+  .scenario-section-title {
+    font-weight: 700;
+    color: #1c6b66;
+    font-size: 1.35rem;
+    margin: 28px 0 14px;
+  }
+  .scenario-intro {
+    color: #333;
+    line-height: 1.55;
+    max-width: 900px;
+  }
+  .scenario-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .scenario-card {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .scenario-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 18px;
+    background: #e8e8e8;
+    border-bottom: 2px solid #ccc;
+  }
+  .scenario-card-hero img {
+    width: 120px;
+    height: auto;
+    max-height: 90px;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+  }
+  .scenario-name {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .scenario-fullname {
+    margin: 4px 0 0;
+    color: #444;
+    font-size: 0.98rem;
+  }
+  .scenario-card-body {
+    padding: 16px 18px 18px;
+  }
+  .scenario-card-body p {
+    margin: 0 0 8px;
+    color: #222;
+  }
+  .scenario-linked-chars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px 0 14px;
+  }
+  .scenario-char-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #e9e9e9;
+    border-radius: 12px;
+    padding: 6px 12px 6px 6px;
+    min-width: 120px;
+  }
+  .scenario-char-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #ccc;
+    flex-shrink: 0;
+  }
+  .scenario-char-name {
+    font-size: 0.9rem;
+    color: #222;
+    line-height: 1.25;
+    max-width: 110px;
+  }
+  .scenario-caps-table {
+    border-collapse: collapse;
+    margin-top: 6px;
+    min-width: 320px;
+  }
+  .scenario-caps-table th,
+  .scenario-caps-table td {
+    border: 1px solid #bbb;
+    padding: 6px 14px;
+    text-align: center;
+  }
+  .scenario-caps-table th {
+    background: #f3f3f3;
+    font-weight: 600;
+  }
+  .muted { color: #888; }
+
+  .scenario-title-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .scenario-title-link:hover {
+    color: #4c6ef5;
+    text-decoration: underline;
+  }
+  .scenario-detail-link-wrap {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+  }
+  .scenario-detail-link {
+    color: #4c6ef5;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .scenario-detail-link:hover {
+    text-decoration: underline;
+  }
+</style>
+{% endblock %}

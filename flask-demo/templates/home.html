@@ -69,6 +69,13 @@ Home
             <h3>Characters</h3>
         </a>
 
+        <a href="{{ url_for('profiles') }}" class="database-card">
+            <div class="card-icon same-icon">
+                <img src="{{ url_for('static', filename='images/profiles.png') }}" alt="Profile">
+            </div>
+            <h3>Profile</h3>
+        </a>
+
         <a href="{{ url_for('support_card') }}" class="database-card">
             <div class="card-icon">
                 <img src="{{ url_for('static', filename='images/support_card.png') }}" alt="Support Card">
@@ -117,8 +124,7 @@ Home
             </div>
             <h3>Titles</h3>
         </a>
-
-    </div>
+</div>
 
 </section>
 

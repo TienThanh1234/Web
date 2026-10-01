@@ -8,7 +8,11 @@ My Character List
 
 <div class="characters-page">
 
-    <h1>My Character List</h1>
+    <h1>Character Profile List</h1>
+
+    {% set active_tab = 'trainees' %}
+    {% include "trainee_profile_tabs.html" %}
+
 
     <div class="characters-toolbar">
         <div class="search-row">

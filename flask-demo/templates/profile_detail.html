@@ -1,0 +1,429 @@
+{% extends "base.html" %}
+{% block title %}{{ profile.name }} — Profile{% endblock %}
+{% block content %}
+{% set P = 'images/profiles/' ~ profile.slug ~ '/' %}
+{% set V = 'videos/profiles/' ~ profile.slug ~ '/' %}
+
+{% macro ped_node(n) %}
+<div class="ped-node">
+  <div class="ped-self">
+    <div class="ped-ico {{ n.sex }}">
+      {% if n.char_slug %}
+      <img src="{{ url_for('static', filename='images/profiles/' ~ n.char_slug ~ '/face.png') }}" alt="" onerror="this.remove()">
+      {% endif %}
+      <span class="ped-horse">&#9822;&#xFE0E;</span>
+    </div>
+    {% if n.char_slug %}<a class="ped-name" href="{{ url_for('profile_detail', slug=n.char_slug) }}">{{ n.name }}</a>
+    {% else %}<div class="ped-name">{{ n.name }}</div>{% endif %}
+  </div>
+  {% if n.children %}
+  <div class="ped-kids">
+    {% for c in n.children %}<div class="ped-kid {{ c.sex }}">{{ ped_node(c) }}</div>{% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+<div class="pd-page" style="--c-main:#{{ profile.color_main }};--c-sub:#{{ profile.color_sub }}">
+  <p class="pd-back"><a href="{{ url_for('profiles') }}">← Back to Profiles</a></p>
+
+  {# ===== HERO ===== #}
+  <div class="pd-hero">
+    <div class="pd-hero-art">
+      {% if profile.hero_video %}
+      <video autoplay loop muted playsinline preload="auto"
+             poster="{{ url_for('static', filename=P ~ profile.main_image) }}"
+             src="{{ url_for('static', filename=V ~ profile.hero_video) }}"></video>
+      {% else %}
+      <img src="{{ url_for('static', filename=P ~ profile.main_image) }}" alt="{{ profile.name }}"
+           onerror="this.onerror=null;this.src='{{ url_for('static', filename=P ~ profile.face_image) }}';">
+      {% endif %}
+    </div>
+    <div class="pd-hero-info">
+      <h1 class="pd-name">{{ profile.name }}</h1>
+      {% if profile.tagline %}<p class="pd-tagline">{{ profile.tagline }}</p>{% endif %}
+      <div class="pd-color-bar"><span style="background:var(--c-main)"></span><span style="background:var(--c-sub)"></span></div>
+      <div class="pd-chips">
+        {% if profile.name_ja %}
+        <div class="pd-chip pd-chip-wide"><div class="pd-chip-label">Japanese name</div><div class="pd-chip-value">{{ profile.name_ja }}</div></div>
+        {% endif %}
+        {% if profile.voice_actor %}
+        <div class="pd-chip"><div class="pd-chip-label">Voice actor</div><div class="pd-chip-value">
+          {% if profile.voice_actor_link %}<a href="{{ profile.voice_actor_link }}" target="_blank" rel="noopener">{{ profile.voice_actor }}</a>{% else %}{{ profile.voice_actor }}{% endif %}
+        </div></div>
+        {% endif %}
+        {% if profile.birthday %}
+        <div class="pd-chip"><div class="pd-chip-label">Birthday</div><div class="pd-chip-value">{{ profile.birthday }}</div></div>
+        {% endif %}
+        {% if profile.school %}
+        <div class="pd-chip"><div class="pd-chip-label">School</div><div class="pd-chip-value">{{ profile.school }}</div></div>
+        {% endif %}
+        {% if profile.dorm %}
+        <div class="pd-chip"><div class="pd-chip-label">Dorm</div><div class="pd-chip-value">{{ profile.dorm }}</div></div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  {% if profile.self_intro %}
+  <div class="pd-intro-card">
+    <img class="pd-intro-face" src="{{ url_for('static', filename=P ~ profile.face_image) }}" alt="" onerror="this.style.display='none'">
+    <p>{{ profile.self_intro }}</p>
+  </div>
+  {% endif %}
+
+  <div class="pd-color-codes">
+    <span class="pd-line" style="background:var(--c-main)"></span><code>#{{ profile.color_main | lower }}</code><span class="pd-line" style="background:var(--c-main)"></span>
+    <span class="pd-gap"></span>
+    <span class="pd-line" style="background:var(--c-sub)"></span><code>#{{ profile.color_sub | lower }}</code><span class="pd-line" style="background:var(--c-sub)"></span>
+  </div>
+
+  {# ===== GALLERY ===== #}
+  {% if profile.gallery %}
+  <section class="pd-section">
+    <h2 class="pd-section-title">Gallery</h2>
+    {% if profile.has_extra_gallery %}
+    <label class="pd-more"><input type="checkbox" id="pd-more" checked autocomplete="off"><span class="pd-check"></span> More pictures</label>
+    {% endif %}
+    <div class="pd-gallery-wrap">
+      <div class="pd-gallery" id="pd-gallery">
+        {% for g in profile.gallery %}
+        <button type="button" class="pd-gal-item{% if g.extra %} is-extra{% endif %}"
+                data-type="{{ g.media_type }}"
+                data-full="{{ url_for('static', filename=P ~ g.file) }}"
+                {% if g.alts %}data-alts="{{ g.alts | join('|') }}"{% endif %}
+                {% if g.video %}data-video="{{ url_for('static', filename=V ~ g.video) }}"{% endif %}
+                data-label="{{ g.label }}">
+          <span class="pd-gal-media">
+            <img src="{{ url_for('static', filename=P ~ g.thumb) }}" alt="{{ g.label }}" loading="lazy"
+                 data-base="{{ url_for('static', filename=P) }}"
+                 data-alts="{{ (g.alts or []) | join('|') }}"
+                 data-file="{{ g.file }}"
+                 onerror="(function(img){var base=img.dataset.base||'';var alts=(img.dataset.alts||'').split('|').filter(Boolean);var i=parseInt(img.dataset.i||'0',10);if(i<alts.length){img.dataset.i=String(i+1);img.src=base+alts[i];return;}if(!img.dataset.f){img.dataset.f=1;img.src=base+img.dataset.file;return;}var it=img.closest('.pd-gal-item');if(it)it.style.opacity=.3;})(this)">
+            {% if g.video %}<i class="pd-play">▶</i>{% endif %}
+          </span>
+          <span class="pd-gal-label">{{ g.label }}</span>
+        </button>
+        {% endfor %}
+      </div>
+      <button type="button" class="pd-gal-nav" id="pd-gal-next" aria-label="Next">›</button>
+    </div>
+  </section>
+
+  <div class="pd-modal" id="pd-modal" hidden>
+    <button type="button" class="pd-modal-close" id="pd-modal-close" aria-label="Close">✕</button>
+    <div class="pd-modal-body" id="pd-modal-body"></div>
+    <div class="pd-modal-label" id="pd-modal-label"></div>
+  </div>
+  {% endif %}
+
+  {# ===== MEASUREMENTS ===== #}
+  <section class="pd-section">
+    <h2 class="pd-section-title">Measurements</h2>
+    <div class="pd-card">
+      <div class="pd-grid-2">
+        <div class="pd-cell"><div class="pd-cell-label">Height</div><div class="pd-cell-value">{% if profile.height %}{{ profile.height }}{% if 'cm' not in profile.height %} cm{% endif %}{% else %}—{% endif %}</div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Weight</div><div class="pd-cell-value">{{ profile.weight or '—' }}</div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Three sizes</div><div class="pd-cell-value">{{ profile.three_sizes or '—' }}</div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Shoe size</div><div class="pd-cell-value">{{ profile.shoe_size or '—' }}</div></div>
+      </div>
+    </div>
+  </section>
+
+  {# ===== PROFILE ===== #}
+  <section class="pd-section">
+    <h2 class="pd-section-title">Profile</h2>
+    <div class="pd-card">
+      <div class="pd-grid-2">
+        <div class="pd-cell"><div class="pd-cell-label">Strong points</div><div class="pd-cell-value">{{ profile.strong or '—' }}</div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Weak points</div><div class="pd-cell-value">{{ profile.weak or '—' }}</div></div>
+      </div>
+      <div class="pd-row"><span class="pd-row-k">Ears</span><span class="pd-row-v">{{ profile.ears or '—' }}</span></div>
+      <div class="pd-row"><span class="pd-row-k">Tail</span><span class="pd-row-v">{{ profile.tail or '—' }}</span></div>
+      <div class="pd-row"><span class="pd-row-k">Family</span><span class="pd-row-v">{{ profile.family or '—' }}</span></div>
+    </div>
+  </section>
+
+  {# ===== SECRETS ===== #}
+  {% if profile.secrets %}
+  <section class="pd-section">
+    <h2 class="pd-section-title">Secrets</h2>
+    <div class="pd-secrets">
+      {% for s in profile.secrets %}<div class="pd-secret-card">{{ s }}</div>{% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# ===== RL COUNTERPART ===== #}
+  {% if profile.rl %}
+  {% set rl = profile.rl %}
+  <section class="pd-section">
+    <h2 class="pd-section-title">RL Counterpart</h2>
+    <div class="pd-emoji">🏇</div>
+    <div class="pd-card">
+      <div class="pd-grid-3">
+        <div class="pd-cell"><div class="pd-cell-label">Country of birth</div><div class="pd-cell-value">
+          {% if rl.country %}<img class="pd-flag" src="{{ url_for('static', filename='images/flags/' ~ rl.country ~ '.png') }}" alt="{{ rl.country | upper }}" onerror="this.replaceWith(document.createTextNode('{{ rl.country | upper }}'))">{% else %}—{% endif %}
+        </div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Races</div><div class="pd-cell-value">{{ rl.races or '—' }}</div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Wins</div><div class="pd-cell-value">{{ rl.wins or '—' }}</div></div>
+      </div>
+      <div class="pd-grid-2">
+        <div class="pd-cell"><div class="pd-cell-label">Record</div><div class="pd-cell-value">{{ rl.record or '—' }}</div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Earnings</div><div class="pd-cell-value">{% for e in rl.earnings %}{{ e }}{% if not loop.last %}<br>{% endif %}{% else %}—{% endfor %}</div></div>
+      </div>
+      <div class="pd-grid-2">
+        <div class="pd-cell"><div class="pd-cell-label">Date of birth</div><div class="pd-cell-value">{{ rl.date_of_birth or '—' }}</div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Date of death</div><div class="pd-cell-value">{{ rl.date_of_death }}</div></div>
+      </div>
+      <div class="pd-grid-2 last">
+        <div class="pd-cell"><div class="pd-cell-label">Siblings</div><div class="pd-cell-value">{{ rl.siblings or '—' }}</div></div>
+        <div class="pd-cell"><div class="pd-cell-label">Offspring</div><div class="pd-cell-value">{{ rl.offspring or '—' }}</div></div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {# ===== PEDIGREE ===== #}
+  {% if profile.pedigree_tree %}
+  <section class="pd-section">
+    <h2 class="pd-section-title">Pedigree</h2>
+    <div class="pd-emoji">🏇</div>
+    <div class="pd-card pd-ped-card">
+      <div class="ped-node ped-root">
+        <div class="ped-self">
+          <div class="ped-ico me"><img src="{{ url_for('static', filename=P ~ profile.face_image) }}" alt="" onerror="this.remove()"></div>
+          <div class="ped-name">{{ profile.name }}</div>
+        </div>
+        <div class="ped-kids">
+          {% for c in profile.pedigree_tree %}<div class="ped-kid {{ c.sex }}">{{ ped_node(c) }}</div>{% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {# ===== RACE HISTORY ===== #}
+  {% if profile.race_history %}
+  <section class="pd-section">
+    <h2 class="pd-section-title">Race History</h2>
+    <div class="pd-emoji">🏇</div>
+    <div class="pd-race-list" id="pd-race-list">
+      {% for race in profile.race_history %}
+      <div class="pd-race-row{% if loop.index > 15 %} is-more{% endif %}">
+        <div class="pd-race-place">
+          <span class="pd-place {% if race.place == '1' %}gold{% elif race.place == '2' %}silver{% elif race.place == '3' %}bronze{% endif %}">{{ race.place_label or race.place }}</span>
+        </div>
+        <div class="pd-race-body">
+          <div class="pd-race-name">{{ race.race_name }}
+            {% if race.netkeiba_url %}<a class="pd-ext n" href="{{ race.netkeiba_url }}" target="_blank" rel="noopener">N</a>{% endif %}
+            {% if race.jbis_url %}<a class="pd-ext j" href="{{ race.jbis_url }}" target="_blank" rel="noopener" title="JBIS">J</a>{% endif %}
+          </div>
+          <div class="pd-race-meta">
+            {% if race.date %}<span>{{ race.date }}</span>{% endif %}
+            {% if race.winner %}<span>Winner: {% if race.winner_slug %}<a href="{{ url_for('profile_detail', slug=race.winner_slug) }}">{{ race.winner }}</a>{% else %}{{ race.winner }}{% endif %}</span>{% endif %}
+          </div>
+          <div class="pd-race-meta">
+            {% if race.track %}<span>{{ race.track }}</span>{% endif %}
+            {% if race.surface %}<span>{{ race.surface }}</span>{% endif %}
+            {% if race.distance %}<span>{{ race.distance }}m</span>{% endif %}
+            {% if race.grade %}<span class="pd-grade g-{{ race.grade | lower | replace(' ', '-') }}">{{ race.grade | upper }}</span>{% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if profile.race_history | length > 15 %}
+    <div class="pd-race-toggle"><button type="button" id="pd-race-toggle" data-total="{{ profile.race_history | length }}">Show all ({{ profile.race_history | length }})</button></div>
+    {% endif %}
+  </section>
+  {% endif %}
+</div>
+
+<style>
+/* nền xám đặc trưng */
+body:has(.pd-page){background:#e0e0e0}
+.pd-page{--bg:#f7f7f7;--line:#c9c9c9;max-width:960px;margin:0 auto;padding:12px 16px 56px;font-family:"Nunito","Noto Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color:#1c1c1c;
+  box-shadow:0 0 0 100vmax #e0e0e0;clip-path:inset(0 -100vmax)}
+.pd-back a{color:#1c6b66;font-weight:600;text-decoration:none}
+.pd-back a:hover{text-decoration:underline}
+
+/* hero */
+.pd-hero{display:grid;grid-template-columns:1fr 1.4fr;background:var(--bg);border:1px solid var(--c-main);border-radius:12px;overflow:hidden;margin:12px 0 14px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.pd-hero-art{border-right:1px solid #8a8a8a;display:flex;align-items:flex-end;justify-content:center;min-height:360px;
+  background:radial-gradient(ellipse 90% 60% at 0% 100%,color-mix(in srgb,var(--c-main) 75%,transparent),transparent 70%),
+             radial-gradient(ellipse 90% 60% at 100% 100%,color-mix(in srgb,var(--c-sub) 80%,transparent),transparent 70%),#f4f4f4}
+.pd-hero-art img,.pd-hero-art video{max-width:100%;max-height:540px;width:auto;height:auto;object-fit:contain;display:block}
+.pd-hero-info{padding:26px 24px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.pd-name{margin:0 0 10px;font-size:1.6rem;font-weight:800}
+.pd-tagline{margin:0 0 16px;font-style:italic;font-size:1.15rem;line-height:1.4}
+.pd-color-bar{display:flex;width:275px;max-width:80%;height:6px;margin:0 auto 22px;border-radius:4px;overflow:hidden}
+.pd-color-bar span{flex:1}
+.pd-chips{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pd-chip{background:#e6e6e6;border-radius:14px;padding:12px 10px}
+.pd-chip-wide{grid-column:1/-1}
+.pd-chip-label{font-size:14px;color:#333;margin-bottom:2px}
+.pd-chip-value{font-size:1.15rem}
+.pd-chip-value a{color:#5b4fd6;text-decoration:none}
+.pd-chip-value a:hover{text-decoration:underline}
+
+.pd-intro-card{display:flex;gap:24px;align-items:center;background:var(--bg);border:1px solid var(--c-sub);border-radius:12px;padding:20px 30px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.pd-intro-face{width:104px;height:104px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;background:#fff;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.pd-intro-card p{margin:0;font-size:1.15rem;line-height:1.5}
+.pd-color-codes{display:flex;align-items:center;justify-content:center;gap:8px;margin:26px 0 8px;font-size:13px;color:#333}
+.pd-color-codes code{font-family:inherit}
+.pd-line{display:inline-block;width:min(146px,16vw);height:4px;border-radius:2px}
+.pd-gap{width:20px}
+
+/* section */
+.pd-section{margin:34px 0}
+.pd-section-title{text-align:center;font-size:1.7rem;font-weight:800;margin:0 0 14px;color:#1c6b66}
+.pd-section-title::after{content:"";display:block;width:90px;height:4px;margin:8px auto 0;background:linear-gradient(90deg,var(--c-main) 50%,var(--c-sub) 50%)}
+.pd-emoji{text-align:center;font-size:24px;margin:-6px 0 8px}
+.pd-card{background:var(--bg);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.pd-grid-2,.pd-grid-3{display:grid;border-bottom:1px solid var(--line)}
+.pd-grid-2{grid-template-columns:1fr 1fr}.pd-grid-3{grid-template-columns:1fr 1fr 1fr}
+.pd-grid-2.last{border-bottom:0}
+.pd-card>.pd-grid-2:last-child{border-bottom:0}
+.pd-cell{padding:18px 14px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.pd-grid-2>.pd-cell:nth-child(odd),.pd-grid-3>.pd-cell:not(:last-child){border-right:1px solid var(--line)}
+.pd-cell-label{font-size:14px;margin-bottom:6px}
+.pd-cell-value{font-size:1.2rem;line-height:1.35}
+.pd-flag{height:40px;width:auto;display:block}
+.pd-row{display:grid;grid-template-columns:140px 1fr;gap:12px;padding:14px 20px;border-top:1px solid var(--line);align-items:center}
+.pd-row-k{font-size:14px;font-weight:600}
+.pd-row-v{font-size:1.15rem}
+.pd-secrets{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pd-secret-card{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:20px;font-size:1.1rem;line-height:1.5;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+
+/* gallery */
+.pd-more{display:flex;align-items:center;justify-content:flex-end;gap:8px;margin:0 4px 10px;cursor:pointer;user-select:none;font-size:1.05rem}
+.pd-more input{display:none}
+.pd-check{width:22px;height:22px;border-radius:5px;background:#e9e9e9;border:1px solid #bbb;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:14px}
+.pd-more input:checked+.pd-check{background:#6f9c99;border-color:#6f9c99}
+.pd-more input:checked+.pd-check::after{content:"✓"}
+.pd-gallery-wrap{position:relative;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:24px 14px 14px;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.pd-gallery{display:flex;gap:18px;overflow-x:auto;scroll-behavior:smooth;padding:0 20px 18px;scrollbar-width:thin;scrollbar-color:#666 #ddd}
+.pd-gallery::-webkit-scrollbar{height:7px}
+.pd-gallery::-webkit-scrollbar-track{background:#ddd;border-radius:4px}
+.pd-gallery::-webkit-scrollbar-thumb{background:#666;border-radius:4px}
+.pd-gal-item{flex:0 0 auto;width:150px;text-align:center;background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inherit}
+.pd-gal-item.is-hidden{display:none}
+.pd-gal-media{position:relative;height:200px;display:flex;align-items:flex-end;justify-content:center}
+.pd-gal-media img{max-width:150px;max-height:200px;object-fit:contain}
+.pd-play{position:absolute;right:8px;bottom:8px;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;font-style:normal;font-size:11px;display:flex;align-items:center;justify-content:center}
+.pd-gal-label{display:block;margin-top:12px;font-size:1.05rem;line-height:1.25;min-height:2.5em}
+.pd-gal-nav{position:absolute;top:42%;right:8px;width:30px;height:44px;border:0;background:transparent;font-size:34px;cursor:pointer;color:#111;z-index:2}
+.pd-modal{position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+.pd-modal[hidden]{display:none}
+.pd-modal-body img,.pd-modal-body video{max-width:92vw;max-height:80vh;display:block;background:#222;border-radius:8px}
+.pd-modal-label{color:#fff;margin-top:12px;font-size:1.05rem}
+.pd-modal-close{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
+
+/* pedigree tree */
+.pd-ped-card{padding:24px 16px;overflow-x:auto}
+.ped-node{display:flex;align-items:center}
+.ped-root{width:max-content;min-width:100%}
+.ped-self{flex:0 0 auto;width:110px;text-align:center}
+.ped-ico{position:relative;width:64px;height:64px;margin:0 auto 4px;border-radius:50%;border:2px solid;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.ped-ico.sire{background:#dff1ff;border-color:#6fb3dd;color:#2a7db0}
+.ped-ico.dam{background:#fbdde6;border-color:#d9708f;color:#a8486a}
+.ped-ico.me{width:84px;height:84px;background:#fff;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3)}
+.ped-ico img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.ped-horse{font-size:34px;line-height:1}
+.ped-name{display:block;font-size:13px;font-weight:700;line-height:1.2;color:#111;text-decoration:none;word-break:break-word}
+a.ped-name:hover{text-decoration:underline}
+.ped-kids{position:relative;display:flex;flex-direction:column}
+.ped-kids::before{content:"";position:absolute;left:0;top:50%;width:20px;border-top:2px solid #b3a8d2}
+.ped-kid{position:relative;padding:7px 0 7px 40px}
+.ped-kid::before{content:"";position:absolute;left:20px;top:50%;width:20px;border-top:2px solid}
+.ped-kid::after{content:"";position:absolute;left:20px;border-left:2px solid}
+.ped-kid:first-child::after{top:50%;bottom:0}
+.ped-kid:last-child::after{top:0;bottom:50%}
+.ped-kid.sire::before,.ped-kid.sire::after{border-color:#7dbbe0}
+.ped-kid.dam::before,.ped-kid.dam::after{border-color:#e08aa5}
+
+/* race history */
+.pd-race-list{background:var(--bg);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.pd-race-list.collapsed .is-more{display:none}
+.pd-race-row{display:flex;border-bottom:1px solid var(--line)}
+.pd-race-row:last-child{border-bottom:0}
+.pd-race-place{flex:0 0 100px;display:flex;align-items:center;justify-content:center;background:#e6e6e6;border-right:1px solid var(--line)}
+.pd-place{display:inline-block;min-width:58px;text-align:center;padding:4px 10px;border-radius:8px;font-weight:700;font-size:1.1rem;color:#222}
+.pd-place.gold{background:#f4be30;border:1px solid #d79e10}
+.pd-place.silver{background:#a7bccb;border:1px solid #7e97a8}
+.pd-place.bronze{background:#b85c38;border:1px solid #8f4326;color:#fff}
+.pd-race-body{padding:14px 16px;flex:1;min-width:0}
+.pd-race-name{font-size:1.2rem;font-weight:600;margin-bottom:6px}
+.pd-ext{font-size:.75rem;font-weight:600;text-decoration:none;margin-left:3px}
+.pd-ext.n{color:#8c8cf0}.pd-ext.j{color:#2b9a8d}
+.pd-race-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:1rem;color:#555;margin-top:5px;align-items:center}
+.pd-race-meta a{color:#6a5acd;text-decoration:none}
+.pd-race-meta a:hover{text-decoration:underline}
+.pd-grade{display:inline-block;min-width:64px;text-align:center;padding:1px 14px 1px 10px;color:#fff;font-size:.85rem;font-weight:800;background:#4a90e2;clip-path:polygon(0 0,100% 0,92% 50%,100% 100%,0 100%)}
+.g-g1,.g-jpn1{background:#4a90e2}.g-g2,.g-jpn2{background:#e0607e}.g-g3,.g-jpn3{background:#4caf6a}
+.g-op,.g-pre-op,.g-l{background:#f0a030}.g-maiden,.g-debut{background:#9acd32}
+.pd-race-toggle{text-align:center;margin-top:12px}
+.pd-race-toggle button{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 22px;font-size:1.05rem;cursor:pointer;font-family:inherit}
+.pd-race-toggle button:hover{background:#f0f0f0}
+
+@media(max-width:720px){
+  .pd-hero{grid-template-columns:1fr}
+  .pd-hero-art{border-right:0;border-bottom:1px solid #8a8a8a}
+  .pd-chips,.pd-secrets{grid-template-columns:1fr}
+  .pd-grid-3{grid-template-columns:1fr 1fr 1fr}
+  .pd-intro-card{flex-direction:column;text-align:center;padding:18px}
+  .pd-row{grid-template-columns:1fr;gap:2px}
+  .pd-race-place{flex-basis:70px}
+  .pd-color-codes{flex-wrap:wrap}
+}
+</style>
+<script>
+(function(){
+  /* gallery */
+  var gal=document.getElementById("pd-gallery");
+  if(gal){
+    var next=document.getElementById("pd-gal-next");
+    next&&next.addEventListener("click",function(){gal.scrollBy({left:gal.clientWidth*0.6,behavior:"smooth"})});
+    var more=document.getElementById("pd-more");
+    function applyMore(){
+      var show=!more||more.checked;
+      gal.querySelectorAll(".is-extra").forEach(function(el){el.classList.toggle("is-hidden",!show)});
+    }
+    more&&more.addEventListener("change",applyMore);applyMore();
+
+    var modal=document.getElementById("pd-modal"),body=document.getElementById("pd-modal-body"),lab=document.getElementById("pd-modal-label");
+    function closeModal(){modal.hidden=true;body.innerHTML=""}
+    gal.addEventListener("click",function(e){
+      var it=e.target.closest(".pd-gal-item");if(!it)return;
+      body.innerHTML="";
+      if(it.dataset.video){
+        var v=document.createElement("video");v.src=it.dataset.video;v.controls=true;v.autoplay=true;v.loop=true;v.muted=true;v.playsInline=true;body.appendChild(v);
+      }else{
+        var im=document.createElement("img");im.alt=it.dataset.label;
+        var candidates=[it.dataset.full].concat((it.dataset.alts||"").split("|").filter(Boolean).map(function(a){
+          var base=it.dataset.full||"";
+          var idx=base.lastIndexOf("/");
+          return (idx>=0?base.slice(0,idx+1):"")+a;
+        }));
+        var ci=0;im.onerror=function(){ci++;if(ci<candidates.length)im.src=candidates[ci];};
+        im.src=candidates[0];
+        body.appendChild(im);
+      }
+      lab.textContent=it.dataset.label;modal.hidden=false;
+    });
+    modal.addEventListener("click",function(e){if(e.target===modal||e.target.id==="pd-modal-close")closeModal()});
+    document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!modal.hidden)closeModal()});
+  }
+  /* race history */
+  var list=document.getElementById("pd-race-list"),tg=document.getElementById("pd-race-toggle");
+  if(list&&tg){
+    list.classList.add("collapsed");
+    tg.addEventListener("click",function(){
+      var c=list.classList.toggle("collapsed");
+      tg.textContent=c?"Show all ("+tg.dataset.total+")":"Show less";
+    });
+  }
+})();
+</script>
+{% endblock %}

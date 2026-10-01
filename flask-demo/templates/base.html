@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="ny-nRziNnnacEOIS93N3pdife3ZEdKvpc1XcIr91hM0" />
 
     <title>{% block title %}Thanh's Uma Website{% endblock %}</title>
 
@@ -563,6 +562,8 @@
                         {% if request.endpoint in [
                             'characters',
                             'character_detail',
+                            'profiles',
+                            'profile_detail',
                             'support_card',
                             'support_detail',
                             'gacha',
@@ -574,7 +575,8 @@
                             'cm_guide',
                             'scenario_guide',
                             'skills',
-                            'skill_detail'
+                            'skill_detail',
+                            'titles'
                         ] %}
                             active
                         {% endif %}"
@@ -598,6 +600,20 @@
                         >
                             <i class="fa-solid fa-person-running"></i>
                             Characters
+                        </a>
+
+                        <a
+                            class="
+                            {% if request.endpoint in [
+                                'profiles',
+                                'profile_detail'
+                            ] %}
+                                active
+                            {% endif %}"
+                            href="{{ url_for('profiles') }}"
+                        >
+                            <i class="fa-solid fa-id-card"></i>
+                            Profile
                         </a>
 
                         <a
@@ -636,9 +652,8 @@
                         >
                             <i class="fa-solid fa-flag-checkered"></i>
                             Races
-                        </a>    
-
-                        <a
+                        </a>
+<a
                             class="
                             {% if request.endpoint == 'items' %}
                                 active

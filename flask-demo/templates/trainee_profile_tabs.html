@@ -1,0 +1,75 @@
+{# Usage: {% include "partials/trainee_profile_tabs.html" %} with active_tab #}
+{% set active_tab = active_tab|default('trainees') %}
+<div class="tp-tabs">
+    <a href="{{ url_for('characters') }}"
+       class="tp-tab {% if active_tab == 'trainees' %}active{% endif %}">
+        <div class="tp-tab-art">
+            <img src="{{ url_for('static', filename='images/tab_character.png') }}"
+                 alt="Trainees">
+        </div>
+        <span class="tp-tab-label">Trainees</span>
+    </a>
+    <a href="{{ url_for('profiles') }}"
+       class="tp-tab {% if active_tab == 'profiles' %}active{% endif %}">
+        <div class="tp-tab-art">
+            <img src="{{ url_for('static', filename='images/tab_profile.png') }}"
+                 alt="Profiles">
+        </div>
+        <span class="tp-tab-label">Profiles</span>
+    </a>
+</div>
+
+<style>
+    .tp-tabs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border: 1px solid #e5e5e5;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #fff;
+        margin: 0 0 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .tp-tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 18px 12px 14px;
+        text-decoration: none;
+        background: #fafafa;
+        border-right: 1px solid #eee;
+        transition: background 0.15s, box-shadow 0.15s;
+        min-height: 110px;
+        box-sizing: border-box;
+    }
+    .tp-tab:last-child { border-right: none; }
+    .tp-tab:hover { background: #f5f7ff; }
+    .tp-tab.active {
+        background: #fff;
+        box-shadow: inset 0 0 0 2px #f0a500;
+        position: relative;
+        z-index: 1;
+    }
+    .tp-tab-art {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tp-tab-art img {
+        max-height: 56px;
+        max-width: 160px;
+        object-fit: contain;
+    }
+    .tp-tab-label {
+        font-size: 16px;
+        font-weight: 600;
+        color: #5b6cff;
+    }
+    .tp-tab.active .tp-tab-label {
+        color: #333;
+    }
+</style>
